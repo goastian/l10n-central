@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Hindre at standardnettlesaren gjer noko. Det
 policy-DisableDeveloperTools = Blokker tilgang til utviklarverktøya.
 policy-DisableFeedbackCommands = Deaktiver kommandoar for å sende tilbakemelding frå Hjelp-menyen (Gje tilbakemelding og Rapporter villeiande nettstad).
 policy-DisableFirefoxAccounts = Deaktiver { -fxaccount-brand-name }-baserte tenester, inkludert Sync.
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Deaktiver funksjonen Floorp Screenshots
+# Midori Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Deaktiver funksjonen Midori Screenshots
 policy-DisableFirefoxStudies = Hindre { -brand-short-name } frå å køyre undersøkingar.
 policy-DisableForgetButton = Hindre tilgang til knappen Gløym.
 policy-DisableFormHistory = Ikkje lagre søkje- og skjemahistorikk.

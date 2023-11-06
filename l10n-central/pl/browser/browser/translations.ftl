@@ -13,7 +13,7 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Floorp Translations settings.
+## Options in the Midori Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Zarządzaj językami
