@@ -100,7 +100,7 @@ TST = ツリー型タブ
 treestyletab-Settings =
   .label = フォーカスされた場合にツリースタイルタブを展開する
 
-about-TST = ツリー型タブは Midori 10 で内蔵されていた垂直タブを作成するアドオンです。このアドオンをインストールすると、固有の設定が使用でき、Floorp 10 と同じ使用感に戻せます。
+about-TST = ツリー型タブは Midori 10 で内蔵されていた垂直タブを作成するアドオンです。このアドオンをインストールすると、固有の設定が使用でき、Midori 10 と同じ使用感に戻せます。
 
 ## ↓ Will be deleted
 vertical-tab-reverse-position = 垂直タブの位置を反転させる

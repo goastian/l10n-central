@@ -454,14 +454,14 @@ floorp-notes = { -brand-short-name } 备忘录
 restore-from-backup = 从备份中恢复备忘录
 enable-notes-sync = 
  .label = 启用 { -brand-short-name } 备忘录同步
-about-notes-backup-tips  = Floorp 备忘录使用 Firefox Sync 将您的备忘录与其他设备同步。如果您丢失了备忘录，您可以从备份中恢复。在您启动{ -brand-short-name } 时，会自动创建一个备份。
+about-notes-backup-tips  = Midori 备忘录使用 Firefox Sync 将您的备忘录与其他设备同步。如果您丢失了备忘录，您可以从备份中恢复。在您启动{ -brand-short-name } 时，会自动创建一个备份。
 notes-sync-description = 这可以解决由于同步过程中覆盖备忘录而导致内容丢失的问题。
 backuped-time = 备份时间
 notes-backup-option = 备份选项
 backup-option-button = 打开备份选项...
 
-restore-from-backup-prompt-title = Floorp 备忘录还原服务
-restore-from-this-backup = 还原备份到 Floorp 备忘录 ?
+restore-from-backup-prompt-title = Midori 备忘录还原服务
+restore-from-this-backup = 还原备份到 Midori 备忘录 ?
 
 restore-button = 还原
 
@@ -481,7 +481,7 @@ userjs-select-option = 选择 user.js
 apply-userjs-button = 应用
 ## userjs Options
 
-default-userjs-label = Floorp 默认值
+default-userjs-label = Midori 默认值
 about-default-userjs = 已禁用 Telemetry。启用了各种自定义设置的{ -brand-short-name }，达到了良好的平衡。
 
 Securefox-label = Yokoffing Securefox
@@ -503,7 +503,7 @@ about-Smoothfox = 在您喜爱的浏览器上获得类似Edge般的流畅滚动�
 floorp-workspaces-title = { -brand-short-name } 工作空间
 workspaces-backup-discription = 备份 & 还原工作空间
 
-workspaces-restore-service-title = Floorp 工作空间备份服务
+workspaces-restore-service-title = Midori 工作空间备份服务
 workspaces-restore-warning = 警告！运行此操作将导致浏览器暂时冻结，并自动重新启动
 floorp-workspace-settings-button = 工作空间设置...
 
@@ -572,7 +572,7 @@ workspace-icon-chill =
  
 # CSK
 floorp-CSK-title = 自定义快捷键
-floorp-CSK-description = 自定义 { -brand-short-name } 的快捷键。Floorp 提供了超过80个快捷键选项。重新启动 { -brand-short-name } 以应用这些设置。重复的设置将不起作用。
+floorp-CSK-description = 自定义 { -brand-short-name } 的快捷键。Midori 提供了超过80个快捷键选项。重新启动 { -brand-short-name } 以应用这些设置。重复的设置将不起作用。
 disable-fx-actions =
 .label = 禁用 Firefox 的默认快捷键
 customize-Action =
@@ -840,7 +840,7 @@ update-portable-notification-found-message = 下载更新中...
 update-portable-notification-ready-title = 更新已下载！
 update-portable-notification-ready-message = 下次启动浏览器时，将自动更新。
 update-portable-notification-success-title = 更新成功！
-update-portable-notification-success-message = 更新成功！希望你喜欢新版本的Floorp！
+update-portable-notification-success-message = 更新成功！希望你喜欢新版本的Midori！
 update-portable-notification-failed-title = 更新失败。
 update-portable-notification-failed-redirector-message = 更新失败。也许重启浏览器能解决这个问题，
 update-portable-notification-failed-prepare-message = 准备更新失败。
@@ -866,9 +866,9 @@ memo-input-placeholder = 键入内容
 delete-memo = 删除
 save-memo = 保存
 memo-welcome-title = 欢迎!
-memo-first-tip = 欢迎使用 Floorp 备忘录！以下是一些使用说明：
-memo-second-tip = Floorp 备忘录是一个便签应用，可让您在多台设备上同步存储多个备忘录。要启用同步功能，您需要使用 Firefox 账户登录 Floorp。
-memo-third-tip = Floorp 笔记将保存在您的 Floorp 设置中。此外，Firefox Sync 会使用您的 Firefox 账户密码对同步的内容进行加密，因此除了您之外，没有其他人能够访问这些内容。
+memo-first-tip = 欢迎使用 Midori 备忘录！以下是一些使用说明：
+memo-second-tip = Midori 备忘录是一个便签应用，可让您在多台设备上同步存储多个备忘录。要启用同步功能，您需要使用 Firefox 账户登录 Floorp。
+memo-third-tip = Midori 笔记将保存在您的 Midori 设置中。此外，Firefox Sync 会使用您的 Firefox 账户密码对同步的内容进行加密，因此除了您之外，没有其他人能够访问这些内容。
 memo-import-data-tip = Firefox Sync 不是备份服务。我们建议您定期创建备份。
 memo-new-title = 新建备忘录
 chage-view-mode = 切换 只读/编辑 模式
@@ -876,7 +876,7 @@ readonly-mode = 离线 (只读)
 
 ######################################################################### Default bookmarks ###############################################################
 default-bookmark-ablaze-support = Ablaze 支持
-default-bookmark-notes = Floorp 备忘录
+default-bookmark-notes = Midori 备忘录
 
 ######################################################################### Like Chrome Download mgr ###############################################################
 
@@ -892,7 +892,7 @@ floorp-show-all-downloads =
 
 ######################################################################### workspace ###############################################################
 
-workspace-prompt-title = Floorp 工作空间
+workspace-prompt-title = Midori 工作空间
 please-enter-workspace-name = 请输入新的工作空间名称。
 please-enter-workspace-name-2 = 请输入除了空格以外的非符号字符。
 workspace-error = 错误！
