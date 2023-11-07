@@ -543,7 +543,7 @@ choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Midori Home Content Customization
 
 home-prefs-content-header = „Firefox“ pradžios turinys
 home-prefs-content-description = Pasirinkite, kokį turinį norite matyti „Firefox“ pradžios ekrane

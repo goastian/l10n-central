@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Не позволяет агенту бра�
 policy-DisableDeveloperTools = Блокирует доступ к инструментам разработчика.
 policy-DisableFeedbackCommands = Отключает команды отправки отзывов в меню Справка («Отправить отзыв...» и «Сообщить о поддельном сайте...»).
 policy-DisableFirefoxAccounts = Отключает службы, основанные на { -fxaccount-brand-name(case: "prepositional") }, включая Синхронизацию.
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Отключает функцию Floorp Screenshots.
+# Midori Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Отключает функцию Midori Screenshots.
 policy-DisableFirefoxStudies = Запрещает { -brand-short-name } выполнять исследования.
 policy-DisableForgetButton = Закрывает доступ к кнопке «Забыть».
 policy-DisableFormHistory = Отключает запоминание истории поиска и данных форм.

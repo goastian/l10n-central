@@ -100,7 +100,7 @@ TST = ツリー型タブ
 treestyletab-Settings =
   .label = フォーカスされた場合にツリースタイルタブを展開する
 
-about-TST = ツリー型タブは Floorp 10 で内蔵されていた垂直タブを作成するアドオンです。このアドオンをインストールすると、固有の設定が使用でき、Floorp 10 と同じ使用感に戻せます。
+about-TST = ツリー型タブは Midori 10 で内蔵されていた垂直タブを作成するアドオンです。このアドオンをインストールすると、固有の設定が使用でき、Floorp 10 と同じ使用感に戻せます。
 
 ## ↓ Will be deleted
 vertical-tab-reverse-position = 垂直タブの位置を反転させる
@@ -173,13 +173,13 @@ firefox-photon-lepton =
  .label = Firefox Photon・Lepton デザイン
 
 floorp-legacy =
- .label = Floorp Legacy デザイン（サポート対象外）
+ .label = Midori Legacy デザイン（サポート対象外）
 
 floorp-fluentUI =
  .label = Microsoft Fluent UI デザイン
 
 floorp-fluerialUI =
- .label = Floorp Fluerial UI デザイン
+ .label = Midori Fluerial UI デザイン
 
 floorp-gnomeUI =
  .label = GNOME デスクトップのデザイン（システムテーマ & GTK が必要）
@@ -357,7 +357,7 @@ disable-blur-on-newtab =
 
 ## lepton preferences
 
-about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに Floorp は Lepton を再適用します。
+about-lepton = { -brand-short-name } を Lepton を使用してカスタマイズします。設定の変更に、{ -brand-short-name } の再起動は必要ありません。代わりに Midori は Lepton を再適用します。
 
 lepton-preference-button =
     .label = Lepton の設定を開く
@@ -445,22 +445,22 @@ floorp-lepton-enable-overlap-sidebar =
     .label = サイドバーをウェブサイトビューワーの上にオーバーラップする
 
 floorp-home-mode-choice-default =
-    .label = Floorp Home (既定)
-floorp-home-prefs-content-header = Floorp Home コンテンツ
-floorp-home-prefs-content-description = Floorp Home に表示するコンテンツを選びましょう。
+    .label = Midori Home (既定)
+floorp-home-prefs-content-header = Midori Home コンテンツ
+floorp-home-prefs-content-description = Midori Home に表示するコンテンツを選びましょう。
 
 ## Notes
 floorp-notes = { -brand-short-name } Notes
 restore-from-backup = Notes をバックアップから復元する
 enable-notes-sync = 
  .label = Notes の Firefox Sync による同期を有効にする
-about-notes-backup-tips = Floorp Notes は、Firefox Sync を使用して、他のデバイスとノートを同期します。ノートを紛失した場合、バックアップから復元することができます。バックアップは { -brand-short-name } を起動すると作成されます。
+about-notes-backup-tips = Midori Notes は、Firefox Sync を使用して、他のデバイスとノートを同期します。ノートを紛失した場合、バックアップから復元することができます。バックアップは { -brand-short-name } を起動すると作成されます。
 notes-sync-description = これにより、同期時にメモが上書きされ、コンテンツが失われる問題を解決することができます。
 backuped-time = バックアップ時刻
 notes-backup-option = バックアップ設定
 backup-option-button = バックアップ設定を開く...
 
-restore-from-backup-prompt-title = Floorp Notes 復元サービス
+restore-from-backup-prompt-title = Midori Notes 復元サービス
 restore-from-this-backup = このバックアップの状態に Notes を復元しますか？
 
 restore-button = 復元
@@ -472,10 +472,10 @@ userjs-select-option =  user.js を選択
 
 header-userjs = user.js
 userjs-customize = user.js で { -brand-short-name } をカスタマイズする。
-about-userjs-customize = user.jsは、{ -brand-short-name } をカスタマイズするための設定ファイルです。user.js はインターネットからダウンロードされ、元の user.js ファイルを上書きします。元の user.js のバックアップをとってから使用してください。ダウンロード先の user.js により発生した問題は Floorp は無関係として処理します。
+about-userjs-customize = user.jsは、{ -brand-short-name } をカスタマイズするための設定ファイルです。user.js はインターネットからダウンロードされ、元の user.js ファイルを上書きします。元の user.js のバックアップをとってから使用してください。ダウンロード先の user.js により発生した問題は Midori は無関係として処理します。
 
 userjs-label = user.js リスト
-userjs-prompt = Floorp user.js
+userjs-prompt = Midori user.js
 apply-userjs-attention = これにより、元の user.js ファイルは上書きされます。
 apply-userjs-attention2 = 使用する前に、元の user.js ファイルをバックアップしてください。
 
@@ -483,7 +483,7 @@ apply-userjs-button = 適用する
 
 ## userjs Options
 
-default-userjs-label = Floorp Default
+default-userjs-label = Midori Default
 about-default-userjs = テレメトリー無効。様々なカスタマイズが有効なバランスの良い { -brand-short-name } 設定です。
 
 Securefox-label = Yokoffing Securefox
@@ -522,7 +522,7 @@ workspaces-reset-label =
 workspaces-reset-description = ワークスペースをリセットするとグループ化が解除され、初期状態に戻ります。
 workspaces-reset-button = ワークスペースのリセットを実行する...
 
-workspaces-reset-service-title = Floorp ワークスペース
+workspaces-reset-service-title = Midori ワークスペース
 workspaces-reset-warning = 警告！この操作を実行すると、すべてのワークスペースが削除され、ブラウザーが数秒間使えなくなります。この操作は取り消せません。
 
 manage-workspace-on-bms-option =
@@ -829,53 +829,53 @@ status-bar =
 
 ##################################################################### Gesturefly ###############################################################
 
-gf-floorp-open-tree-style-tab-name = [Floorp] ツリー型タブを開く
-gf-floorp-open-tree-style-tab-description = Floorpのツリー型タブをサイドバーを開きます。
+gf-floorp-open-tree-style-tab-name = [Midori] ツリー型タブを開く
+gf-floorp-open-tree-style-tab-description = Midoriのツリー型タブをサイドバーを開きます。
 
-gf-floorp-open-bookmarks-sidebar-name = [Floorp] サイドバーでブックマークを開く
-gf-floorp-open-bookmarks-sidebar-description = Floorpのサイドバーのブックマークを開きます。
+gf-floorp-open-bookmarks-sidebar-name = [Midori] サイドバーでブックマークを開く
+gf-floorp-open-bookmarks-sidebar-description = Midoriのサイドバーのブックマークを開きます。
 
-gf-floorp-open-history-sidebar-name = [Floorp] サイドバーで履歴を開く
-gf-floorp-open-history-sidebar-description = Floorpのサイドバーの履歴を開きます。
+gf-floorp-open-history-sidebar-name = [Midori] サイドバーで履歴を開く
+gf-floorp-open-history-sidebar-description = Midoriのサイドバーの履歴を開きます。
 
-gf-floorp-open-synctabs-sidebar-name = [Floorp] サイドバーで同期タブを開く
-gf-floorp-open-synctabs-sidebar-description = Floorpのサイドバーの同期タブを開きます。
+gf-floorp-open-synctabs-sidebar-name = [Midori] サイドバーで同期タブを開く
+gf-floorp-open-synctabs-sidebar-description = Midoriのサイドバーの同期タブを開きます。
 
-gf-floorp-close-sidebar-name = [Floorp] サイドバーを閉じる
-gf-floorp-close-sidebar-description = Floorpのサイドバーを閉じます。
+gf-floorp-close-sidebar-name = [Midori] サイドバーを閉じる
+gf-floorp-close-sidebar-description =
 
-gf-floorp-open-browser-manager-sidebar-name = [Floorp] BMSを開く
-gf-floorp-open-browser-manager-sidebar-description = Floorpのブラウザマネージャーサイドバーで最後に開いていたウェブパネルがロードされている場合開きます。
+gf-floorp-open-browser-manager-Midoriのサイドバーを閉じます。sidebar-name = [Midori] BMSを開く
+gf-floorp-open-browser-manager-sidebar-description = Midoriのブラウザマネージャーサイドバーで最後に開いていたウェブパネルがロードされている場合開きます。
 
-gf-floorp-close-browser-manager-sidebar-name = [Floorp] BMSを閉じる
-gf-floorp-close-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを閉じます。
+gf-floorp-close-browser-manager-sidebar-name = [Midori] BMSを閉じる
+gf-floorp-close-browser-manager-sidebar-description = Midori のブラウザマネージャーサイドバーを閉じます。
 
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] BMS の表示の切り替える
-gf-floorp-toggle-browser-manager-sidebar-description = Floorp のブラウザマネージャーサイドバーを表示または非表示にします。
+gf-floorp-toggle-browser-manager-sidebar-name = [Midori] BMS の表示の切り替える
+gf-floorp-toggle-browser-manager-sidebar-description = Midori のブラウザマネージャーサイドバーを表示または非表示にします。
 
-gf-floorp-show-statusbar-name = [Floorp] ステータスバーを表示する
-gf-floorp-show-statusbar-description = Floorpのステータスバーを表示します。
+gf-floorp-show-statusbar-name = [Midori] ステータスバーを表示する
+gf-floorp-show-statusbar-description = Midoriのステータスバーを表示します。
 
-gf-floorp-hide-statusbar-name = [Floorp] ステータスバーを非表示にする
-gf-floorp-hide-statusbar-description = Floorpのステータスバーを非表示にします。
+gf-floorp-hide-statusbar-name = [Midori] ステータスバーを非表示にする
+gf-floorp-hide-statusbar-description = Midoriのステータスバーを非表示にします。
 
-gf-floorp-toggle-statusbar-name = [Floorp] ステータスバーの表示の切り替え
+gf-floorp-toggle-statusbar-name = [Midori] ステータスバーの表示の切り替え
 gf-floorp-toggle-statusbar-description = ステータスバーを表示または非表示にします。
 
-gf-floorp-open-extension-sidebar-name = [Floorp] サイドバーで選択したアドオンを開く
+gf-floorp-open-extension-sidebar-name = [Midori] サイドバーで選択したアドオンを開く
 gf-floorp-open-extension-sidebar-description = サイドバーで指定したアドオンを開きます。
 gf-floorp-open-extension-sidebar-settings-addons-id = アドオン ID
 gf-floorp-open-extension-sidebar-settings-addons-id-description = サイドバーで開くアドオンです。
 gf-floorp-open-extension-sidebar-settings-list-default = アドオンを選択してください
 gf-floorp-open-extension-sidebar-settings-list-unknwon = 不明なアドオン
-##################################################################### Floorp System Update Portable Version ###############################################################
+##################################################################### Midori System Update Portable Version ###############################################################
 
-update-portable-notification-found-title = Floorpの最新バージョンがリリースされました。
+update-portable-notification-found-title = Midoriの最新バージョンがリリースされました。
 update-portable-notification-found-message = ダウンロードしています...
 update-portable-notification-ready-title = アップデートする準備ができました。
 update-portable-notification-ready-message = 次回ブラウザー起動時にアップデートが開始されます。
 update-portable-notification-success-title = アップデートが完了しました！
-update-portable-notification-success-message = アップデートが完了しました！新しいバージョンのFloorpをお楽しみください。
+update-portable-notification-success-message = アップデートが完了しました！新しいバージョンのMidoriをお楽しみください。
 update-portable-notification-failed-title = アップデートに失敗しました。
 update-portable-notification-failed-redirector-message = アップデートに失敗しました。ブラウザーを再起動すると、問題が解決する場合があります。
 update-portable-notification-failed-prepare-message = アップデートの準備に失敗しました。
@@ -900,24 +900,24 @@ open-link-in-external-tab-dialog-message-default-browser-not-found =
      }
 open-link-in-external-tab-dialog-message-selected-browser-not-found = 選択されたブラウザーは存在しません。
 
-######################################################################### Floorp Notes ###############################################################
+######################################################################### Midori Notes ###############################################################
 
 new-memo = 新規作成
 memo-title-input-placeholder = ここにタイトルを入力
 memo-input-placeholder = ここにメモを入力または貼り付け
 delete-memo = 削除
 save-memo = 保存
-memo-welcome-title = Floorp Notes へようこそ !
-memo-first-tip = Floorp Notes へようこそ！ここでは、使い方を説明します。
-memo-second-tip = Floorp Notes は、メモを作成・編集・保存・削除するための機能です。メモは、ブラウザーを閉じても保存されます。また、Firefox Syncを使用して、他の端末にも同期することができます。同期を有効にするには、Floorp に Firefox アカウントでログインしてください。
-memo-third-tip = あなたのメモは Floorp ブラウザーの設定に保存されます。Firefox Sync は、パスワードによって暗号化されているため、あなた以外の他の人に見られることはありません。もちろん Ablaze や Floorp は、あなたのメモを読むことはできません。Firefox Sync はバックアップ機能ではないため、メモは必ずバックアップを取ってください。
-memo-fourth-tip = Floorp Notes は、Floorp のブラウザーマネージャーサイドバーまたは、「about:notes」を URL に入力すること開くことができます。
+memo-welcome-title = Midori Notes へようこそ !
+memo-first-tip = Midori Notes へようこそ！ここでは、使い方を説明します。
+memo-second-tip = Midori Notes は、メモを作成・編集・保存・削除するための機能です。メモは、ブラウザーを閉じても保存されます。また、Firefox Syncを使用して、他の端末にも同期することができます。同期を有効にするには、Midori に Firefox アカウントでログインしてください。
+memo-third-tip = あなたのメモは Midori ブラウザーの設定に保存されます。Firefox Sync は、パスワードによって暗号化されているため、あなた以外の他の人に見られることはありません。もちろん Ablaze や Midori は、あなたのメモを読むことはできません。Firefox Sync はバックアップ機能ではないため、メモは必ずバックアップを取ってください。
+memo-fourth-tip = Midori Notes Midori のブラウザーマネージャーサイドバーまたは、「about:notes」を URL に入力すること開くことができます。
 memo-new-title = 新規メモ
 chage-view-mode = 編集/表示モード切り替え
 
 ######################################################################### workspace ###############################################################
 
-workspace-prompt-title = Floorp ワークスペース
+workspace-prompt-title = Midori ワークスペース
 please-enter-workspace-name = 新しいワークスペース名を入力してください。
 please-enter-workspace-name-2 = 記号と空白以外の文字かつ20文字以内で入力してください。
 workspace-error = エラー！
@@ -983,7 +983,7 @@ welcome-discribe-browser-design = サードパーティによる素晴らしい�
 welcome-design-lepton-name = Lepton オリジナルデザイン
 welcome-design-photon-name = Lepton Photon デザイン
 welcome-design-ProtonFix-name = Lepton ProtonFix デザイン
-welcome-design-floorp-fluerial-name = Floorp Fluerial デザイン
+welcome-design-floorp-fluerial-name = Midori Fluerial デザイン
 welcome-design-firefox-proton-name = Firefox Proton デザイン
 welcome-import-data = ユーザーデータのインポート
 welcome-import-data-description = 迅速なセットアップ！古いブラウザからブックマークやパスワードなどをインポートできます。Firefox ユーザーは Firefox Sync からデータをインポートできます。
@@ -1173,7 +1173,7 @@ show-workspace-name-option = ワークスペース名をタブバーに表示
     .label = ワークスペース名をタブバーに表示
 
 
-##################################################################### Floorp Portable Preferences ###############################################################
+##################################################################### Midori Portable Preferences ###############################################################
 
 floorp-portable-update-application-allow = { -brand-short-name } ポータブル アップデート
 floorp-update-application-auto-enabled-option =

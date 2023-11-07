@@ -36,7 +36,7 @@ policy-DisableDefaultBrowserAgent = 기본 브라우저 에이전트가 작업�
 policy-DisableDeveloperTools = 개발자 도구 접근을 차단합니다.
 policy-DisableFeedbackCommands = 도움말 메뉴의 의견 보내기 명령 (의견 보내기 및 가짜 사이트 신고)을 사용 안 합니다.
 policy-DisableFirefoxAccounts = 동기화를 포함한 { -fxaccount-brand-name } 기반의 서비스를 사용 안 합니다.
-# Floorp Screenshots is the name of the feature, and should not be translated.
+# Midori Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Firefox 스크린샷 기능을 사용 안 합니다.
 policy-DisableFirefoxStudies = { -brand-short-name } 연구 실행을 막습니다.
 policy-DisableForgetButton = Forget 버튼 접근을 막습니다.

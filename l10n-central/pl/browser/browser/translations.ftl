@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Floorp Translations" in the url bar.
+# The button for "Midori Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Przetłumacz tę stronę
 translations-panel-settings-button =
@@ -89,7 +89,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Wyświetl w oryginale
 
-## Floorp Translations language management in about:preferences.
+## Midori Translations language management in about:preferences.
 
 translations-manage-header = Tłumaczenia
 translations-manage-settings-button =

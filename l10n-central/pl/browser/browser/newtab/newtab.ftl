@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Floorp Home / New Tab strings for about:home / about:newtab.
+### Midori Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nowa karta
 newtab-settings-button =

@@ -545,7 +545,7 @@ choose-bookmark =
     .label = Χρήση σελιδοδείκτη…
     .accesskey = σ
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Midori Home Content Customization
 
 home-prefs-content-header = Περιεχόμενο αρχικής σελίδας Firefox
 home-prefs-content-description = Επιλέξτε τι περιεχόμενο θέλετε στην αρχική σελίδα του Firefox σας.

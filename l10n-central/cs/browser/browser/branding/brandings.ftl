@@ -92,7 +92,7 @@
         [ins] Firefoxem Send
     }
     .gender = masculine
--screenshots-brand-name = Floorp Screenshots
+-screenshots-brand-name = Midori Screenshots
 -mozilla-vpn-brand-name =
     { $case ->
        *[nom] Mozilla VPN
@@ -115,7 +115,7 @@
        *[nom] Firefox Profiler
     }
     .gender = masculine
--translations-brand-name = Floorp Translations
+-translations-brand-name = Midori Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 -focus-brand-name =

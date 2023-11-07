@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = 不讓預設瀏覽器代理工具作任何�
 policy-DisableDeveloperTools = 防止使用開發者工具。
 policy-DisableFeedbackCommands = 停用於「說明」選單中傳送意見回饋的相關指令（「送出意見回饋」與「回報詐騙網站」）。
 policy-DisableFirefoxAccounts = 停用 { -fxaccount-brand-name }相關服務，包含 Sync。
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = 停用 Floorp Screenshots 功能。
+# Midori Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = 停用 Midori Screenshots 功能。
 policy-DisableFirefoxStudies = 防止 { -brand-short-name } 進行使用者研究。
 policy-DisableForgetButton = 防止使用「忘記」功能。
 policy-DisableFormHistory = 不要記住搜尋與表單填寫紀錄。
@@ -70,7 +70,7 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 針對特定網�
 policy-Extensions = 安裝、移除或鎖定擴充套件。安裝選項可加入網址或路徑作為參數。移除和鎖定選項則需要擴充套件 ID 作為參數。
 policy-ExtensionSettings = 管理擴充套件的各種安裝設定。
 policy-ExtensionUpdate = 開啟或關閉擴充套件自動更新。
-policy-FirefoxHome = 設定 Floorp Home。
+policy-FirefoxHome = 設定 Midori Home。
 policy-FirefoxHome2 = 設定 { -firefox-home-brand-name }。
 policy-FlashPlugin = 允許或拒絕使用 Flash 擴充套件。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = 在網址列輸入單一文字時，強制導航到企業內部網站，而非進行線上搜尋。

@@ -22,17 +22,17 @@
 -monitor-brand-short-name = Monitor
 -pocket-brand-name = Pocket
 -send-brand-name = Firefox Send
--screenshots-brand-name = Floorp Screenshots
+-screenshots-brand-name = Midori Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
 -profiler-brand-name = Firefox Profiler
--translations-brand-name = Floorp Translations
+-translations-brand-name = Midori Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 -focus-brand-name = Firefox Focus
 
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Floorp Suggesties
+-firefox-suggest-brand-name = Midori Suggesties
 
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
@@ -40,7 +40,7 @@
 
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefoxview-brand-name = Floorp View
+-firefoxview-brand-name = Midori View
 
 -relay-brand-name = Firefox Relay
 -relay-brand-short-name = Relay

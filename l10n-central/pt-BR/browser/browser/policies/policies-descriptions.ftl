@@ -36,7 +36,7 @@ policy-DisableDefaultBrowserAgent = Impedir que o agente padrão do navegador ex
 policy-DisableDeveloperTools = Bloquear acesso às ferramentas de desenvolvimento.
 policy-DisableFeedbackCommands = Desativar comandos de envio de comentários no menu Ajuda (Enviar opinião e Denunciar site enganoso).
 policy-DisableFirefoxAccounts = Desativar serviços baseados em { -fxaccount-brand-name }, incluindo a sincronização.
-# Floorp Screenshots is the name of the feature, and should not be translated.
+# Midori Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Desativar o recurso de captura de tela do Firefox.
 policy-DisableFirefoxStudies = Impedir que o { -brand-short-name } execute estudos.
 policy-DisableForgetButton = Impedir acesso ao botão "Esquecer".

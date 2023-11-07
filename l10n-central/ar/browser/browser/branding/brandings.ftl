@@ -22,10 +22,10 @@
 -monitor-brand-short-name = Monitor
 -pocket-brand-name = Pocket
 -send-brand-name = Firefox Send
--screenshots-brand-name = Floorp Screenshots
+-screenshots-brand-name = Midori Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
 -profiler-brand-name = Firefox Profiler
--translations-brand-name = Floorp Translations
+-translations-brand-name = Midori Translations
 -rally-brand-name = Mozilla Rally
 -rally-short-name = Rally
 

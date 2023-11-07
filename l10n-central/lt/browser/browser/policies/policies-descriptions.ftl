@@ -34,7 +34,7 @@ policy-DisableDefaultBrowserAgent = Neleisti numatytajam naršyklės agentui atl
 policy-DisableDeveloperTools = Blokuoti prieigą prie programuotojų priemonių.
 policy-DisableFeedbackCommands = Išjungti komandas, skirtas siųsti atsiliepimus iš „Žinyno“ meniu („Siųsti atsiliepimą“ ir „Pranešti apie apgaulingą svetainę“).
 policy-DisableFirefoxAccounts = Išjungti „{ -fxaccount-brand-name }“ paremtas paslaugas, įskaitant „Sync“.
-# Floorp Screenshots is the name of the feature, and should not be translated.
+# Midori Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Išjungti „Firefox“ ekrano nuotraukų funkcionalumą.
 policy-DisableFirefoxStudies = Neleisti „{ -brand-short-name }“ vykdyti tyrimų.
 policy-DisableForgetButton = Blokuoti prieigą prie mygtuką „Pamiršti“.

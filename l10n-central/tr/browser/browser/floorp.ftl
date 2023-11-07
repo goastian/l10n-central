@@ -146,7 +146,7 @@ system-theme-auto =
 ## user interface prefernces
 
 ui-preference = Tarayıcı görünümü
-preferences-browser-appearance-description = Harika üçüncü taraf Floorp tasarımlarından birini seçebilirsiniz. Bazı tasarımlar yapılandırmanızla uyumlu olmayabilir.
+preferences-browser-appearance-description = Harika üçüncü taraf Midori tasarımlarından birini seçebilirsiniz. Bazı tasarımlar yapılandırmanızla uyumlu olmayabilir.
 
 firefox-proton =
  .label = Firefox modern Proton kullanıcı arayüzü
@@ -158,13 +158,13 @@ firefox-photon-lepton =
  .label = Firefox Photon ・ Lepton Kullanıcı Arayüzü
  
 floorp-legacy =
- .label = Floorp Eski Kullanıcı Arayüzü ・ Desteklenmiyor
+ .label = Midori Eski Kullanıcı Arayüzü ・ Desteklenmiyor
 
 floorp-fluentUI =
  .label = Microsoft Fluent Kullanıcı Arayüzü
  
 floorp-fluerialUI =
- .label = Floorp Fluerial Kullanıcı Arayüzü
+ .label = Midori Fluerial Kullanıcı Arayüzü
 
 floorp-gnomeUI =
  .label = Gnome Teması
@@ -436,22 +436,22 @@ floorp-lepton-enable-overlap-sidebar =
     .label = Kenar Çubuğunun Ana Görüntüleyiciyle çakışmasını göster
 
 floorp-home-mode-choice-default =
-    .label = Floorp Ana Sayfa (Varsayılan)
-floorp-home-prefs-content-header = Floorp Ana Sayfa İçeriği
-floorp-home-prefs-content-description = Floorp Ana Sayfasında görmek istediğiniz içeriği seçin.
+    .label = Midori Ana Sayfa (Varsayılan)
+floorp-home-prefs-content-header = Midori Ana Sayfa İçeriği
+floorp-home-prefs-content-description = Midori Ana Sayfasında görmek istediğiniz içeriği seçin.
 
 ## Notes
 floorp-notes = { -brand-short-name } Notes
 restore-from-backup = Notları Yedekten Geri Yükle
 enable-notes-sync = 
  .label = { -brand-short-name } Notes senkronizasyonunu etkinleştir
-about-notes-backup-tips = Floorp Notes, notlarınızı diğer cihazlarla senkronize etmek için Firefox Sync'i kullanır. Notlarınızı kaybederseniz, onları bir yedekten geri yükleyebilirsiniz. { -brand-short-name }'u başlattığınızda bir yedekleme oluşturulur.
+about-notes-backup-tips = Midori Notes, notlarınızı diğer cihazlarla senkronize etmek için Firefox Sync'i kullanır. Notlarınızı kaybederseniz, onları bir yedekten geri yükleyebilirsiniz. { -brand-short-name }'u başlattığınızda bir yedekleme oluşturulur.
 notes-sync-description = Bu, senkronizasyon sırasında notların üzerine yazılması nedeniyle içerik kaybı sorununu çözebilir.
 backuped-time = Yedekleme zamanı
 notes-backup-option = Yedekleme Seçenekleri
 backup-option-button = Yedekleme Seçeneklerini Aç
 
-restore-from-backup-prompt-title = Floorp Notları Geri Yükleme Hizmeti
+restore-from-backup-prompt-title = Midori Notları Geri Yükleme Hizmeti
 restore-from-this-backup = Notları bu yedeklemenin durumuna geri yükle?
 
 restore-button = Geri Yükle
@@ -462,7 +462,7 @@ userjs-customize = { -brand-short-name }'u user.js ile özelleştir
 about-userjs-customize = user.js, { -brand-short-name }'u özelleştirmenizi sağlayan bir yapılandırma dosyasıdır. user.js internetten indirilecek ve orijinal user.js dosyasının üzerine yazılacaktır. Lütfen kullanmadan önce orijinal user.js dosyasını yedekleyin. Yapılandırma, { -brand-short-name } yeniden başlatıldıktan sonra uygulanacaktır.
 
 userjs-label = user.js listesi
-userjs-prompt = Floorp user.js
+userjs-prompt = Midori user.js
 apply-userjs-attention = Bu, orijinal user.js dosyasının üzerine yazacaktır.
 apply-userjs-attention2 = Lütfen kullanmadan önce orijinal user.js dosyasını yedekleyin.
 
@@ -472,7 +472,7 @@ userjs-select-option = user.js seç
 apply-userjs-button = Uygula
 ## userjs Seçenekler
 
-default-userjs-label = Floorp Varsayılanı
+default-userjs-label = Midori Varsayılanı
 about-default-userjs = Telemetry devre dışı. Çeşitli özelleştirmelerin etkin olduğu, iyi dengelenmiş { -brand-short-name }
 
 Securefox-label = Yokoffing Securefox
@@ -493,7 +493,7 @@ about-Smoothfox = Favori tarayıcınızda tıpkı Microsoft Edge'de olduğu gibi
 floorp-workspaces-title = { -brand-short-name } Çalışma Alanları
 workspaces-backup-discription = Çalışma Alanlarınızı Yedekle & Geri Yükle
 
-workspaces-restore-service-title = Floorp Çalışma Alanı Yedekleme Hizmeti
+workspaces-restore-service-title = Midori Çalışma Alanı Yedekleme Hizmeti
 workspaces-restore-warning = Uyarı! Bu işlemi çalıştırmak tarayıcının geçici olarak donmasına ve otomatik olarak yeniden başlamasına neden olacaktır.
 floorp-workspace-settings-button = Çalışma Alanı Ayarlarını Açın...
 
@@ -508,7 +508,7 @@ workspaces-reset-label =
 workspaces-reset-description = Yedekleme çalışmazsa ve çalışma alanı başlamazsa, çalışma alanını sıfırlayın.
 workspaces-reset-button = Çalışma Alanlarını Sıfırla
 
-workspaces-reset-service-title = Floorp Çalışma Alanları
+workspaces-reset-service-title = Midori Çalışma Alanları
 workspaces-reset-warning = Uyarı! Bu işlem tüm çalışma alanlarınızı silecek ve tarayıcıyı yeniden başlatacaktır.
 
 ## Mouse Gesture
@@ -697,54 +697,54 @@ status-bar =
 
 ##################################################################### Gesturefy ###############################################################
 
-gf-floorp-open-tree-style-tab-name = [Floorp] Ağaç Stili Sekme Panelini Aç
+gf-floorp-open-tree-style-tab-name = [Midori] Ağaç Stili Sekme Panelini Aç
 gf-floorp-open-tree-style-tab-description = Kenar Çubuğunun Ağaç Stili Sekme Panelini Aç
 
-gf-floorp-open-bookmarks-sidebar-name = [Floorp] Kenar Çubuğunun Yer İmleri Panelini Aç
+gf-floorp-open-bookmarks-sidebar-name = [Midori] Kenar Çubuğunun Yer İmleri Panelini Aç
 gf-floorp-open-bookmarks-sidebar-description = Kenar Çubuğunun Yer İmleri Panelini Aç
 
-gf-floorp-open-history-sidebar-name = [Floorp] Kenar Çubuğunun Geçmiş Panelini Aç
+gf-floorp-open-history-sidebar-name = [Midori] Kenar Çubuğunun Geçmiş Panelini Aç
 gf-floorp-open-history-sidebar-description = Kenar Çubuğunun Geçmiş Panelini Aç
 
-gf-floorp-open-synctabs-sidebar-name = [Floorp] Kenar Çubuğunun Senkronize Sekmeler Panelini Aç
+gf-floorp-open-synctabs-sidebar-name = [Midori] Kenar Çubuğunun Senkronize Sekmeler Panelini Aç
 gf-floorp-open-synctabs-sidebar-description = Kenar Çubuğunun Senkronize Sekmeler Panelini Aç
 
-gf-floorp-close-sidebar-name = [Floorp] Kenar Çubuğunu Kapat
+gf-floorp-close-sidebar-name = [Midori] Kenar Çubuğunu Kapat
 gf-floorp-close-sidebar-description = Kenar Çubuğunu Kapat
 
 
-gf-floorp-open-browser-manager-sidebar-name = [Floorp] BMS'yi Açın
+gf-floorp-open-browser-manager-sidebar-name = [Midori] BMS'yi Açın
 gf-floorp-open-browser-manager-sidebar-description =  Tarayıcı Kenar Çubuğu web paneli yüklüyse, Tarayıcı Kenar Çubuğunu açın
 
-gf-floorp-close-browser-manager-sidebar-name = [Floorp] Close BMS
+gf-floorp-close-browser-manager-sidebar-name = [Midori] Close BMS
 gf-floorp-close-browser-manager-sidebar-description = Tarayıcı Kenar Çubuğunu Kapat
 
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] Toggle BMS
+gf-floorp-toggle-browser-manager-sidebar-name = [Midori] Toggle BMS
 gf-floorp-toggle-browser-manager-sidebar-description = Tarayıcı Kenar Çubuğunu Değiştir
 
-gf-floorp-show-statusbar-name = [Floorp] Durum Çubuğunu Göster
+gf-floorp-show-statusbar-name = [Midori] Durum Çubuğunu Göster
 gf-floorp-show-statusbar-description = Durum Çubuğunu Göster
 
-gf-floorp-hide-statusbar-name = [Floorp] Durum Çubuğunu Gizle
+gf-floorp-hide-statusbar-name = [Midori] Durum Çubuğunu Gizle
 gf-floorp-hide-statusbar-description = Durum Çubuğunu Gizle
 
-gf-floorp-toggle-statusbar-name = [Floorp] Durum Çubuğunu Değiştir
+gf-floorp-toggle-statusbar-name = [Midori] Durum Çubuğunu Değiştir
 gf-floorp-toggle-statusbar-description = Durum Çubuğunu Göster veya Gizle
 
-gf-floorp-open-extension-sidebar-name = [Floorp] Kenar Çubuğu'nun seçili eklentisini aç
+gf-floorp-open-extension-sidebar-name = [Midori] Kenar Çubuğu'nun seçili eklentisini aç
 gf-floorp-open-extension-sidebar-description = Kenar Çubuğu'nun seçili eklentisini aç
 gf-floorp-open-extension-sidebar-settings-addons-id = Kenar Çubuğu Eklentisi
 gf-floorp-open-extension-sidebar-settings-addons-id-description = The extension of the add-on open of sidebar
 gf-floorp-open-extension-sidebar-settings-list-default = Lütfen eklenti seçin
 gf-floorp-open-extension-sidebar-settings-list-unknwon = Bilinmeyen eklenti
-##################################################################### Floorp System Update Portable Version ###############################################################
+##################################################################### Midori System Update Portable Version ###############################################################
 
 update-portable-notification-found-title = Güncellemeler bulundu!
 update-portable-notification-found-message = Güncellemeler indiriliyor...
 update-portable-notification-ready-title = Güncellemeye hazır!
 update-portable-notification-ready-message = Tarayıcıyı bir sonraki başlatılışında güncelleme başlayacak.
 update-portable-notification-success-title = Güncelleme başarılı!
-update-portable-notification-success-message = Güncelleme başarılı! Umarım Floorp'un yeni sürümünü beğenirsiniz!
+update-portable-notification-success-message = Güncelleme başarılı! Umarım Midori'un yeni sürümünü beğenirsiniz!
 update-portable-notification-failed-title = Güncelleme başarısız oldu.
 update-portable-notification-failed-redirector-message = Güncelleme başarısız oldu. Tarayıcıyı yeniden başlatmak sorunu çözebilir.
 update-portable-notification-failed-prepare-message = Güncelleme hazırlanamadı.
@@ -761,7 +761,7 @@ open-link-in-external-tab-dialog-title-error = Hata
 open-link-in-external-tab-dialog-message-default-browser-not-found = Varsayılan tarayıcı bulunamadı veya yapılandırılmadı.
 open-link-in-external-tab-dialog-message-selected-browser-not-found = Seçili tarayıcı yüklü değil.
 
-######################################################################### Floorp Notes ###############################################################
+######################################################################### Midori Notes ###############################################################
 
 new-memo = Yeni
 memo-title-input-placeholder = Buraya bir başlık yaz
@@ -769,9 +769,9 @@ memo-input-placeholder = Buraya bir not yaz veya yapıştır
 delete-memo = Sil
 save-memo = Kaydet
 memo-welcome-title = Hoşgeldin!
-memo-first-tip = Floorp Notes'a hoş geldin! İşte nasıl kullanılacağına dair bazı yönergeler!
-memo-second-tip =  Floorp Notes, cihazlar arasında senkronize olan ve çoklu not saklayabileceğin bir not defteridir. Senkronizasyonu etkinleştirmek için Firefox hesabınızla Floorp'ta oturum açman gerekir.
-memo-third-tip = Floorp Notları, Floorp ayarlarınıza kaydedilecek ve Firefox Sync kullanılarak cihazlar arasında senkronize edilecektir. Firefox Sync, senkronizasyonun içeriğini Firefox hesap parolanızla şifreler, böylece sizden başka kimse içeriğini bilmez.
+memo-first-tip = Midori Notes'a hoş geldin! İşte nasıl kullanılacağına dair bazı yönergeler!
+memo-second-tip =  Midori Notes, cihazlar arasında senkronize olan ve çoklu not saklayabileceğin bir not defteridir. Senkronizasyonu etkinleştirmek için Firefox hesabınızla Midori'ta oturum açman gerekir.
+memo-third-tip = Midori Notları, Midori ayarlarınıza kaydedilecek ve Firefox Sync kullanılarak cihazlar arasında senkronize edilecektir. Firefox Sync, senkronizasyonun içeriğini Firefox hesap parolanızla şifreler, böylece sizden başka kimse içeriğini bilmez.
 memo-import-data-tip = Firefox Sync bir yedekleme hizmeti değildir. Yedekleme oluşturmanızı öneririz.
 memo-new-title = Yeni Not
 chage-view-mode = Görünüm/Düzenleme Modunu Değiştir
@@ -779,7 +779,7 @@ readonly-mode = Çevrimdışı (Salt okunur)
 
 ######################################################################### Default bookmarks ###############################################################
 default-bookmark-ablaze-support = Ablaze Destek
-default-bookmark-notes = Floorp Notes
+default-bookmark-notes = Midori Notes
 
 ######################################################################### Like Chrome Download mgr ###############################################################
 
@@ -795,7 +795,7 @@ floorp-show-all-downloads =
 
 ######################################################################### workspace ###############################################################
 
-workspace-prompt-title = Floorp Çalışma Alanu
+workspace-prompt-title = Midori Çalışma Alanu
 please-enter-workspace-name = Lütfen yeni çalışma alanı adı girin.
 please-enter-workspace-name-2 = Lütfen boşluk harici sembol kullanmayın
 workspace-error = HATA!
@@ -843,7 +843,7 @@ welcome-discribe-browser-design = Harika üçüncü taraf { -brand-short-name } 
 welcome-design-lepton-name = Lepton Özgün Tasarımı
 welcome-design-photon-name = Lepton Photon Tasarımı
 welcome-design-ProtonFix-name = Lepton ProtonFix Tasarımı
-welcome-design-floorp-fluerial-name = Floorp Fluerial Tasarımı
+welcome-design-floorp-fluerial-name = Midori Fluerial Tasarımı
 welcome-design-firefox-proton-name = Firefox Proton Tasarımı
 welcome-import-data = Tarayıcı Verilerini İçe Aktar
 welcome-import-data-description = Hızlı kurulum! Yer imlerinizi, parolalarınızı ve daha fazlasını eski tarayıcınızdan içe aktarın. Firefox kullanıcısıysan Firefox Sync'ten veri aktarabilirsin.

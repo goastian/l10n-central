@@ -44,8 +44,8 @@ policy-DisableDefaultBrowserAgent = Zabraňuje „výchozímu agentovi prohlíž
 policy-DisableDeveloperTools = Blokování přístupu k nástrojům pro vývojáře.
 policy-DisableFeedbackCommands = Blokování odeslání zpětné vazby z nabídky Nápověda (volby Odeslat zpětnou vazbu a Nahlásit klamavou stránku).
 policy-DisableFirefoxAccounts = Vypnutí služeb používajících { -fxaccount-brand-name(case: "acc", capitalization: "lower") }, včetně Syncu.
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Vypnutí funkce Floorp Screenshots.
+# Midori Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Vypnutí funkce Midori Screenshots.
 policy-DisableFirefoxStudies =
     { -brand-short-name.case-status ->
         [with-cases] Zablokování spouštění studií { -brand-short-name(case: "gen") }.

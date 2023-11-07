@@ -545,7 +545,7 @@ choose-bookmark =
     .label = Marque-page…
     .accesskey = m
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Midori Home Content Customization
 
 home-prefs-content-header = Contenu de la page d’accueil de Firefox
 home-prefs-content-description = Choisissez le contenu que vous souhaitez pour la page d’accueil de Firefox.

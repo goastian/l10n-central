@@ -521,7 +521,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Floorp Home (Default)
+    .label = Midori Home (Default)
 home-mode-choice-default-fx =
     .label = { -firefox-home-brand-name } (Default)
 home-mode-choice-custom =
@@ -545,10 +545,10 @@ choose-bookmark =
     .label = Use Bookmark…
     .accesskey = B
 
-## Home Section - Floorp Home Content Customization
+## Home Section - Midori Home Content Customization
 
-home-prefs-content-header = Floorp Home Content
-home-prefs-content-description = Choose what content you want on your Floorp Home screen.
+home-prefs-content-header = Midori Home Content
+home-prefs-content-description = Choose what content you want on your Midori Home screen.
 home-prefs-content-header2 = { -firefox-home-brand-name } Content
 home-prefs-content-description2 = Choose what content you want on your { -firefox-home-brand-name } screen.
 home-prefs-search-header =

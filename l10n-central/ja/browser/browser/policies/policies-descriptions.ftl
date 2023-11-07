@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Default Browser Agent のアクションを�
 policy-DisableDeveloperTools = 開発ツールへのアクセスをブロックします。
 policy-DisableFeedbackCommands = ヘルプメニューのフィードバックの送信 (フィードバックと詐欺サイトの報告の送信) を無効にします。
 policy-DisableFirefoxAccounts = Sync を含む { -fxaccount-brand-name } を利用したサービスを無効にします。
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Floorp Screenshots 機能を無効にします。
+# Midori Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Midori Screenshots 機能を無効にします。
 policy-DisableFirefoxStudies = { -brand-short-name } による Shield 調査の実行を抑止します。
 policy-DisableForgetButton = [忘れる] ボタンへのアクセスを抑止します。
 policy-DisableFormHistory = 検索とフォームの履歴を記憶しないようにします。
@@ -70,7 +70,7 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 指定のドメ�
 policy-Extensions = 拡張機能をインストール、削除、またはロックします。インストールオプションは URL とパスを指定します。削除とロックは拡張機能の ID を指定します。
 policy-ExtensionSettings = 拡張機能のインストール全般を管理します。
 policy-ExtensionUpdate = 拡張機能の自動更新を有効または無効にします。
-policy-FirefoxHome = Floorp Home を設定します。
+policy-FirefoxHome = Midori Home を設定します。
 policy-FirefoxHome2 = { -firefox-home-brand-name } を設定します。
 policy-FlashPlugin = Flash プラグインの実行を許可、または拒否します。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = アドレスバーに単語を入力すると、検索の代わりにイントラネットサイトへの案内を強制します。

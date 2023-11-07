@@ -93,7 +93,7 @@ hover-vertical-tab =
  .label = 鼠标移动到垂直标签栏处后垂直标签栏自动扩展
 
 TST = Tree Style Tab
-about-TST = Tree Style Tab是一个受欢迎的插件，可以将标签以树状结构显示。Floorp 10内置了这个插件。请安装此插件以恢复Floorp 10内置的Tree Style Tab功能。
+about-TST = Tree Style Tab是一个受欢迎的插件，可以将标签以树状结构显示。Midori 10内置了这个插件。请安装此插件以恢复Midori 10内置的Tree Style Tab功能。
 treestyletab-Settings = 
  .label = 折叠 Tree Style Tab
 
@@ -153,7 +153,7 @@ system-theme-auto =
 ## user interface prefernces
 
 ui-preference = 浏览器外观
-preferences-browser-appearance-description = 你可以从第三方编写的优秀 Floorp 外观中进行选择。有些设计可能与您的配置文件不兼容。
+preferences-browser-appearance-description = 你可以从第三方编写的优秀 Midori 外观中进行选择。有些设计可能与您的配置文件不兼容。
 
 firefox-proton =
  .label = Firefox Proton 设计
@@ -165,13 +165,13 @@ firefox-photon-lepton =
  .label = Firefox Photon・Lepton 设计
  
 floorp-legacy =  
- .label = Floorp 传统设计（未来的版本可能不支持）
+ .label = Midori 传统设计（未来的版本可能不支持）
 
 floorp-fluentUI =
  .label = Microsoft Fluent UI 设计
  
 floorp-fluerialUI =
- .label = Floorp Fluerial UI
+ .label = Midori Fluerial UI
 
 floorp-gnomeUI =
  .label = GNOME 桌面设计（依赖于系统主题和 GTK）
@@ -471,7 +471,7 @@ userjs-customize = 使用 user.js 文件自定义 { -brand-short-name }。
 about-userjs-customize = user.js 是一个配置文件，用于自定义 { -brand-short-name }。即将从互联网下载 user.js ，并覆盖原始的 user.js 文件。在使用它之前，请备份原始的 user.js 文件。配置将在重新启动 { -brand-short-name } 后生效。
 
 userjs-label = user.js 列表
-userjs-prompt = Floorp user.js
+userjs-prompt = Midori user.js
 apply-userjs-attention = 这将覆盖原始的 user.js 文件。
 apply-userjs-attention2 = 在使用之前，请备份原始的user.js文件。
 
@@ -518,7 +518,7 @@ workspaces-reset-label =
 workspaces-reset-description = 如果还原备份不起作用，工作空间无法启动，请重置工作空间
 workspaces-reset-button = 重置工作空间
 
-workspaces-reset-service-title = Floorp 工作空间
+workspaces-reset-service-title = Midori 工作空间
 workspaces-reset-warning = 警告！此操作将删除所有工作空间并重新启动浏览器
 
 manage-workspace-on-bms-option =
@@ -793,41 +793,41 @@ status-bar =
      
 ##################################################################### Gesturefy ###############################################################
 
-gf-floorp-open-tree-style-tab-name = [Floorp] 打开垂直标签栏
+gf-floorp-open-tree-style-tab-name = [Midori] 打开垂直标签栏
 gf-floorp-open-tree-style-tab-description = 在侧边栏中打开垂直标签栏
 
-gf-floorp-open-bookmarks-sidebar-name = [Floorp] 打开侧边栏书签面板
+gf-floorp-open-bookmarks-sidebar-name = [Midori] 打开侧边栏书签面板
 gf-floorp-open-bookmarks-sidebar-description = 在侧边栏中打开书签面板
 
-gf-floorp-open-history-sidebar-name = [Floorp] 打开侧边栏历史面板
+gf-floorp-open-history-sidebar-name = [Midori] 打开侧边栏历史面板
 gf-floorp-open-history-sidebar-description = 在侧边栏中打开历史面板
 
-gf-floorp-open-synctabs-sidebar-name = [Floorp] 打开侧边栏同步标签页
+gf-floorp-open-synctabs-sidebar-name = [Midori] 打开侧边栏同步标签页
 gf-floorp-open-synctabs-sidebar-description = 在侧边栏打开同步标签页
 
-gf-floorp-close-sidebar-name = [Floorp] 关闭侧边栏
+gf-floorp-close-sidebar-name = [Midori] 关闭侧边栏
 gf-floorp-close-sidebar-description = 关闭侧边栏
 
 
-gf-floorp-open-browser-manager-sidebar-name = [Floorp] 打开侧边工具栏
+gf-floorp-open-browser-manager-sidebar-name = [Midori] 打开侧边工具栏
 gf-floorp-open-browser-manager-sidebar-description =  打开侧边工具栏（若功能已启用）
 
-gf-floorp-close-browser-manager-sidebar-name = [Floorp] 关闭侧边工具栏
+gf-floorp-close-browser-manager-sidebar-name = [Midori] 关闭侧边工具栏
 gf-floorp-close-browser-manager-sidebar-description = 关闭侧边工具栏
 
-gf-floorp-toggle-browser-manager-sidebar-name = [Floorp] 显示/隐藏侧边工具栏
+gf-floorp-toggle-browser-manager-sidebar-name = [Midori] 显示/隐藏侧边工具栏
 gf-floorp-toggle-browser-manager-sidebar-description = 显示/隐藏侧边工具栏
 
-gf-floorp-show-statusbar-name = [Floorp] 显示状态栏
+gf-floorp-show-statusbar-name = [Midori] 显示状态栏
 gf-floorp-show-statusbar-description = 显示状态栏
 
-gf-floorp-hide-statusbar-name = [Floorp] 隐藏状态栏
+gf-floorp-hide-statusbar-name = [Midori] 隐藏状态栏
 gf-floorp-hide-statusbar-description = 隐藏状态栏
 
-gf-floorp-toggle-statusbar-name = [Floorp] 切换状态栏
+gf-floorp-toggle-statusbar-name = [Midori] 切换状态栏
 gf-floorp-toggle-statusbar-description = 切换状态栏显示状态
 
-gf-floorp-open-extension-sidebar-name = [Floorp] 在侧边栏中打开选定的扩展
+gf-floorp-open-extension-sidebar-name = [Midori] 在侧边栏中打开选定的扩展
 gf-floorp-open-extension-sidebar-description = 在侧边栏中打开选定的扩展
 gf-floorp-open-extension-sidebar-settings-addons-id = 有侧边栏工具扩展
 gf-floorp-open-extension-sidebar-settings-addons-id-description = 有侧边栏工具扩展
@@ -858,7 +858,7 @@ open-link-in-external-tab-dialog-message-default-browser-not-found = 默认浏�
 open-link-in-external-tab-dialog-message-selected-browser-not-found = 选中的浏览器不存在
 
 
-######################################################################### Floorp Notes ###############################################################
+######################################################################### Midori Notes ###############################################################
 
 new-memo = 新建
 memo-title-input-placeholder = 键入标题
@@ -943,7 +943,7 @@ welcome-discribe-browser-design = 您可以选择其中一个精美的第三方 
 welcome-design-lepton-name = Lepton 原始设计
 welcome-design-photon-name = Lepton Photon 设计
 welcome-design-ProtonFix-name = Lepton ProtonFix 设计
-welcome-design-floorp-fluerial-name = Floorp Fluerial 设计
+welcome-design-floorp-fluerial-name = Midori Fluerial 设计
 welcome-design-firefox-proton-name = Firefox Proton 设计
 welcome-import-data = 导入您的浏览器数据
 welcome-import-data-description = 快速设置！从旧浏览器中导入书签、密码和其他数据。Firefox 用户可以从 Firefox Sync 导入数据。

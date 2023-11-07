@@ -2,13 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Floorp Translations" in the url bar.
+# The button for "Midori Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = แปลหน้านี้
 translations-panel-settings-button =
     .aria-label = จัดการการตั้งค่าการแปล
 
-## Options in the Floorp Translations settings.
+## Options in the Midori Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = จัดการภาษา
@@ -47,7 +47,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = แสดงต้นฉบับ
 
-## Floorp Translations language management in about:preferences.
+## Midori Translations language management in about:preferences.
 
 translations-manage-header = การแปล
 translations-manage-all-language = ภาษาทั้งหมด

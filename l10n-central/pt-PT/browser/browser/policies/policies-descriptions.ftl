@@ -36,8 +36,8 @@ policy-DisableDefaultBrowserAgent = Impedir que o agente do navegador predefinid
 policy-DisableDeveloperTools = Bloquear acesso às ferramentas de programador.
 policy-DisableFeedbackCommands = Desativar comandos para enviar comentários a partir do menu de Ajuda (enviar feedback e reportar sites fraudulentos)
 policy-DisableFirefoxAccounts = Desativar os serviços baseados na { -fxaccount-brand-name }, incluindo o Sync.
-# Floorp Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Desativar a funcionalidade Floorp Screenshots.
+# Midori Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Desativar a funcionalidade Midori Screenshots.
 policy-DisableFirefoxStudies = Impedir o { -brand-short-name } de executar estudos.
 policy-DisableForgetButton = Impedir o acesso ao botão Esquecer.
 policy-DisableFormHistory = Não guardar histórico de pesquisas ou de formulários.
@@ -70,7 +70,7 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Desative os aviso
 policy-Extensions = Instalar, desinstalar ou bloquear extensões. A opção Instalar usa URLs ou caminhos como parâmetros. As opções Desinstalar e Bloquear usam IDs de extensões.
 policy-ExtensionSettings = Gerir todos os aspetos de instalação de extensões.
 policy-ExtensionUpdate = Ativar ou desativar atualizações automáticas de extensões.
-policy-FirefoxHome = Configurar o Floorp Home.
+policy-FirefoxHome = Configurar o Midori Home.
 policy-FirefoxHome2 = Configurar o { -firefox-home-brand-name }.
 policy-FlashPlugin = Permitir ou negar a utilização do plugin Flash.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Força a navegação direta no site da intranet em vez de pesquisar ao digitar entradas de uma única palavra na barra de endereço.

@@ -50,7 +50,7 @@ vertical-tabbar = Вертикальная панель вкладок
 tabbar-style-description = Для применения этой настройки требуется перезапустить { -brand-short-name }.
 
 TST = Панель вкладок в стиле древа
-about-TST = Tree Style Tab - популярное дополнение, позволяющее отображать вкладки в виде древовидной структуры. Начиная с Floorp 10, это дополнение встроено в браузер.
+about-TST = Tree Style Tab - популярное дополнение, позволяющее отображать вкладки в виде древовидной структуры. Начиная с Midori 10, это дополнение встроено в браузер.
 
 sidebar-reverse-position-toolbar = Отображать боковую панель на противоположной стороне
 
@@ -90,7 +90,7 @@ tabbar-on-bottom =
 tabbar-favicon-color =
  .label = Использовать цвет иконки сайта для цвета фона панели вкладок
 
-native-tabbar-tip = Эта функция использует встроенную боковую панель Firefox, поэтому вы не можете использовать ее с другими дополнениями боковой панели и боковыми панелями Floorp.
+native-tabbar-tip = Эта функция использует встроенную боковую панель Firefox, поэтому вы не можете использовать ее с другими дополнениями боковой панели и боковыми панелями Midori.
 
 hover-vertical-tab = Разворачивать вертикальные вкладки при наведении курсора мыши
 
@@ -391,20 +391,20 @@ floorp-lepton-enable-overlap-sidebar =
 
 floorp-home-mode-choice-default =
  .label = Домашняя страница { -brand-short-name } (по умолчанию)
-floorp-home-prefs-content-header = Содержимое стартовой страницы Floorp
-floorp-home-prefs-content-description = Выберите содержимое, которое вы хотите видеть на главной странице Floorp.
+floorp-home-prefs-content-header = Содержимое стартовой страницы Midori
+floorp-home-prefs-content-description = Выберите содержимое, которое вы хотите видеть на главной странице Midori.
 
 floorp-notes = Заметки { -brand-short-name }
 restore-from-backup = Восстановить заметки из резервной копии
 enable-notes-sync = Включить синхронизацию заметок { -brand-short-name }
-about-notes-backup-tips = Заметки Floorp используют Firefox Sync для синхронизации ваших заметок с другими устройствами. Если вы потеряете свои заметки, вы можете восстановить их из резервной копии. Резервная копия создается при запуске { -brand-short-name }.
+about-notes-backup-tips = Заметки Midori используют Firefox Sync для синхронизации ваших заметок с другими устройствами. Если вы потеряете свои заметки, вы можете восстановить их из резервной копии. Резервная копия создается при запуске { -brand-short-name }.
 notes-sync-description = Это может решить проблему потери содержимого из-за перезаписи заметок во время синхронизации
 
 backuped-time = Резервная копия создана в
 notes-backup-option = Настройки резервного копирования
 backup-option-button = Настройки резервного копирования...
 
-restore-from-backup-prompt-title = Служба восстановления заметок Floorp
+restore-from-backup-prompt-title = Служба восстановления заметок Midori
 restore-from-this-backup = Восстановить заметки до состояния, в котором они были в этой резервной копии?
 
 change-workspace-with-default-key-option =
@@ -464,7 +464,7 @@ workspace-icon-chill =
 
 # CSK
 floorp-CSK-title = Настройка пользовательских горячих клавиш
-floorp-CSK-description = Настройте горячие клавиши { -brand-short-name }. Floorp предоставляет более 80 горячих клавиш. Перезапустите { -brand-short-name }, чтобы применить эти настройки.
+floorp-CSK-description = Настройте горячие клавиши { -brand-short-name }. Midori предоставляет более 80 горячих клавиш. Перезапустите { -brand-short-name }, чтобы применить эти настройки.
 
 disable-fx-actions =
  .label = Отключить стандартные горячие клавиши Firefox
@@ -620,56 +620,56 @@ feature-requires-restart = Изменения настроек вступят в
 
 ##################################################################### Gesturefy ###############################################################
 
-gf-floorp-open-tree-style-tab-name = [Floorp] Открыть панель вкладкок в стиле дерева
+gf-floorp-open-tree-style-tab-name = [Midori] Открыть панель вкладкок в стиле дерева
 gf-floorp-open-tree-style-tab-description = Открыть панель вкладкок в стиле дерева на боковой панели
 
-gf-floorp-open-bookmarks-sidebar-name = [Floorp] Открыть панель закладок на боковой панели
+gf-floorp-open-bookmarks-sidebar-name = [Midori] Открыть панель закладок на боковой панели
 gf-floorp-open-bookmarks-sidebar-description = Открыть панель закладок на боковой панели
 
-gf-floorp-open-history-sidebar-name = [Floorp] Открыть панель истории на боковой панели
+gf-floorp-open-history-sidebar-name = [Midori] Открыть панель истории на боковой панели
 gf-floorp-open-history-sidebar-description = Открыть панель истории на боковой панели
 
-gf-floorp-open-synctabs-sidebar-name = [Floorp] Открыть панель синхронизированных вкладок на боковой панели
+gf-floorp-open-synctabs-sidebar-name = [Midori] Открыть панель синхронизированных вкладок на боковой панели
 gf-floorp-open-synctabs-sidebar-description = Открыть панель синхронизированных вкладок на боковой панели
 
-gf-floorp-close-sidebar-name = [Floorp] Закрыть боковую панель
+gf-floorp-close-sidebar-name = [Midori] Закрыть боковую панель
 gf-floorp-close-sidebar-description = Закрыть боковую панель
 
-gf-floorp-open-browser-manager-sidebar-name = [Floorp] Открыть боковую панель менеджера браузера
+gf-floorp-open-browser-manager-sidebar-name = [Midori] Открыть боковую панель менеджера браузера
 gf-floorp-open-browser-manager-sidebar-description = Открывать боковую панель менеджера браузера, если веб-панель менеджера браузера была загружена
 
-gf-floorp-close-browser-manager-sidebar-name = [Floorp] Закрыть боковую панель менеджера браузера
+gf-floorp-close-browser-manager-sidebar-name = [Midori] Закрыть боковую панель менеджера браузера
 gf-floorp-close-browser-manager-sidebar-description = Закрыть боковую панель менеджера браузера
 
-gf-floorp-show-browser-manager-sidebar-name = [Floorp] Переключить боковую панель менеджера браузера
+gf-floorp-show-browser-manager-sidebar-name = [Midori] Переключить боковую панель менеджера браузера
 gf-floorp-show-browser-manager-sidebar-description = Переключить боковую панель менеджера браузера
 
-gf-floorp-open-extension-sidebar-name = [Floorp] Открыть выбранное дополнение боковой панели
+gf-floorp-open-extension-sidebar-name = [Midori] Открыть выбранное дополнение боковой панели
 gf-floorp-open-extension-sidebar-description = Открыть выбранное дополнение боковой панели
 gf-floorp-open-extension-sidebar-settings-addons-id = Дополнение боковой панели
 gf-floorp-open-extension-sidebar-settings-addons-id-description = Расширение дополнения боковой панели, которое нужно открыть
 gf-floorp-open-extension-sidebar-settings-list-default = Пожалуйста, выберите дополнение
 gf-floorp-open-extension-sidebar-settings-list-unknwon = Неизвестное дополнение
 
-gf-floorp-show-statusbar-name = [Floorp] Отображать строку состояния
+gf-floorp-show-statusbar-name = [Midori] Отображать строку состояния
 gf-floorp-show-statusbar-description = Отображать строку состояния
 
-gf-floorp-hide-statusbar-name = [Floorp] Скрывать строку состояния
+gf-floorp-hide-statusbar-name = [Midori] Скрывать строку состояния
 gf-floorp-hide-statusbar-description = Скрывать строку состояния
 
-##################################################################### Floorp System Update Portable Version ###############################################################
+##################################################################### Midori System Update Portable Version ###############################################################
 
 update-portable-notification-found-title = Доступны обновления!
 update-portable-notification-found-message = Загрузка обновлений...
 update-portable-notification-ready-title = Обновления готовы к установке!
 update-portable-notification-ready-message = Обновления будут установлены при следующем запуске браузера.
 update-portable-notification-success-title = Обновление прошло успешно!
-update-portable-notification-success-message = Обновление прошло успешно! Надеемся, вам понравится новая версия Floorp!
+update-portable-notification-success-message = Обновление прошло успешно! Надеемся, вам понравится новая версия Midori!
 update-portable-notification-failed-title = Не удалось установить обновление.
 update-portable-notification-failed-redirector-message = Не удалось установить обновление. Перезапуск браузера может решить проблему.
 update-portable-notification-failed-prepare-message = Не удалось подготовить обновление.
 
-##################################################################### Floorp Portable Preferences ###############################################################
+##################################################################### Midori Portable Preferences ###############################################################
 
 floorp-portable-update-application-allow = Обновления { -brand-short-name } Portable
 floorp-update-application-auto-enabled-option =
@@ -687,7 +687,7 @@ open-link-in-external-tab-dialog-title-error = Ошибка
 open-link-in-external-tab-dialog-message-default-browser-not-found = Браузер по умолчанию не задан или не сконфигурирован.
 open-link-in-external-tab-dialog-message-selected-browser-not-found = Выбранный браузер не найден.
 
-######################################################################### Floorp Notes ###############################################################
+######################################################################### Midori Notes ###############################################################
 
 new-memo = Новая заметка
 memo-title-input-placeholder = Задайте заголовок
@@ -695,9 +695,9 @@ memo-input-placeholder = Введите или вставьте текст
 delete-memo = Удалить
 save-memo = Сохранить
 memo-welcome-title = Добро пожаловать!
-memo-first-tip = Добро пожаловать в Floorp Notes! Вот несколько инструкций по его использованию!
-memo-second-tip = Floorp Notes - записная книжка для хранения заметок с синхронизацией между устройствами. Для включения синхронизации необходимо войти в { -brand-short-name } с учетной записью Firefox.
-memo-third-tip = Заметки будут сохранены в настройках Floorp. Кроме того, Firefox Sync шифрует содержимое синхронизации с помощью пароля вашей учетной записи Firefox, поэтому никто, кроме вас, не сможет прочитать их содержимое.
+memo-first-tip = Добро пожаловать в Midori Notes! Вот несколько инструкций по его использованию!
+memo-second-tip = Midori Notes - записная книжка для хранения заметок с синхронизацией между устройствами. Для включения синхронизации необходимо войти в { -brand-short-name } с учетной записью Firefox.
+memo-third-tip = Заметки будут сохранены в настройках Midori. Кроме того, Firefox Sync шифрует содержимое синхронизации с помощью пароля вашей учетной записи Firefox, поэтому никто, кроме вас, не сможет прочитать их содержимое.
 memo-import-data-tip = Firefox Sync не является службой резервного копирования. Рекомендуется создавать резервные копии.
 memo-new-title = Новая заметка
 chage-view-mode = Переключить режим просмотра/редактирования.
@@ -721,7 +721,7 @@ floorp-show-all-downloads =
 
 ######################################################################### workspace ###############################################################
 
-workspace-prompt-title = Рабочие пространства Floorp
+workspace-prompt-title = Рабочие пространства Midori
 please-enter-workspace-name = Пожалуйста, введите новое название рабочего пространства.
 please-enter-workspace-name-2 = В названиях рабочих пространств разрешены только буквенно-цифровые символы.
 workspace-error = Ошибка!
@@ -757,7 +757,7 @@ header-userjs = user.js
 userjs-customize = Настройте { -brand-short-name } с помощью user.js
 about-userjs-customize = Файл user.js - это конфигурационный файл для настройки { -brand-short-name }. Он будет загружен из Интернета и перезапишет оригинальный файл. Перед использованием создайте резервную копию. Конфигурация вступит в силу после перезапуска { -brand-short-name }.
 userjs-label = Список user.js
-userjs-prompt = Floorp user.js
+userjs-prompt = Midori user.js
 apply-userjs-attention = Это действие перезапишет оригинальный файл user.js
 apply-userjs-attention2 = Перед использованием необходимо создать резервную копию оригинального файла user.js.
 
@@ -767,7 +767,7 @@ userjs-select-option = Выберите user.js
 apply-userjs-button = Применить
 ## userjs Options
 
-default-userjs-label = Floorp Default
+default-userjs-label = Midori Default
 about-default-userjs = Телеметрия отключена. Хорошо сбалансированный { -brand-short-name } с различными включёнными надстройками.
 Securefox-label = Yokoffing Securefox
 about-Securefox = HTTPS по умолчанию. Полная защита куки с изоляцией сайтов.
@@ -783,7 +783,7 @@ about-Smoothfox = Получите плавную прокрутку, как в 
 ## Workspaces
 floorp-workspaces-title = Рабочие пространства { -brand-short-name }
 workspaces-backup-discription = Резервное копирование и восстановление ваших рабочих пространств
-workspaces-restore-service-title = Служба резервного копирования рабочих пространств Floorp
+workspaces-restore-service-title = Служба резервного копирования рабочих пространств Midori
 workspaces-restore-warning = Внимание! Выполнение этой операции приведет к временному зависанию и автоматическому перезапуску браузера
 
 floorp-workspace-settings-button = Настройки резервного копирования...
@@ -798,7 +798,7 @@ workspaces-reset-label =
  .label = Сбросить рабочие пространства
 workspaces-reset-description = Если резервная копия не работает и рабочее пространство не запускается, перезапустить рабочее пространство.
 workspaces-reset-button = Сбросить рабочие пространства
-workspaces-reset-service-title = Рабочие пространства Floorp
+workspaces-reset-service-title = Рабочие пространства Midori
 workspaces-reset-warning = Внимание! Выполнение данной операции приведет к удалению всех рабочих пространств и перезапуску браузера.
 
 manage-workspace-on-bms-option =
@@ -834,7 +834,7 @@ about-Facebook-Container = Предотвратите слежку Facebook за
 fingerprint-header = Защита от фингерпринтинга и утечки IP-адреса
 block-fingerprint = Фингерпринтинг - механизм отслеживания, основанный на уникальных характеристиках вашего браузера и операционной системы. Этот раздел содержит настройки, позволяющие улучшить защиту от фингерпринтинга.
 enable-firefox-fingerprint-protections = Включить надёжную защиту от фингерпринтинга.
-about-firefox-fingerprint-protection = Включение защиты в Floorp активирует принудительную светлую тему, отключает некоторые API и т.д. Некоторые сайты могут работать некорректно.
+about-firefox-fingerprint-protection = Включение защиты в Midori активирует принудительную светлую тему, отключает некоторые API и т.д. Некоторые сайты могут работать некорректно.
 fingerprint-Protection =
  .label = Защита от фингерпринтинга
 html5-canvas-prompt-settings =
@@ -875,7 +875,7 @@ welcome-discribe-browser-design = Вы можете выбрать один из
 welcome-design-lepton-name = Lepton Original Design
 welcome-design-photon-name = Lepton Photon Design
 welcome-design-ProtonFix-name = Lepton ProtonFix Design
-welcome-design-floorp-fluerial-name = Floorp Fluerial Design
+welcome-design-floorp-fluerial-name = Midori Fluerial Design
 welcome-design-firefox-proton-name = Firefox Proton Design
 welcome-import-data = Импортировать ваши данные
 welcome-import-data-description = Быстрая настройка! Импортируйте свои закладки, пароли и многое другое из вашего старого браузера. Пользователи Firefox могут импортировать данные из Firefox Sync.
