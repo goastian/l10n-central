@@ -967,7 +967,7 @@ floorp-show-all-downloads =
 
 welcome-login-to-firefox-account = Firefox アカウントにログイン
 welcome-to-floorp = { -brand-short-name } へようこそ !
-welcome-discribe-floorp = { -brand-short-name } は、Firefox ベースの、様々な機能を搭載した日本で開発されているフレキシブルなブラウザーです！
+welcome-discribe-floorp = { -brand-short-name } これは、ユーザーのプライバシーとセキュリティに重点を置いた、高速で安全な軽量ブラウザです。
 welcome-start-setup = セットアップを開始する
 welcome-skip-to-start-browsing = 今すぐブラウジングを開始する
 welcome-select-preferences-template = テンプレートを選択

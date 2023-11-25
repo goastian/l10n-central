@@ -859,7 +859,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = Вход в учетную запись Firefox
 welcome-to-floorp = Добро пожаловать в { -brand-short-name }!
-welcome-discribe-floorp = { -brand-short-name } - это гибкий, многофункциональный браузер, поддерживающий различные пользовательские окружения и основанный на Firefox.
+welcome-discribe-floorp = { -brand-short-name } - Это быстрый и безопасный легкий браузер, обеспечивающий конфиденциальность и безопасность пользователей.
 welcome-start-setup = Готовы приступить?
 welcome-skip-to-start-browsing = Пропустить и начать просмотр.
 welcome-select-preferences-template = Выберите преднастройку

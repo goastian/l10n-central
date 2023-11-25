@@ -927,7 +927,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = 登录到 Firefox 账户
 welcome-to-floorp = 欢迎使用 { -brand-short-name } ！
-welcome-discribe-floorp = { -brand-short-name } 是一个功能丰富、灵活的浏览器，支持多种环境，基于 Firefox。
+welcome-discribe-floorp = { -brand-short-name } 它是一款快速、安全的轻量级浏览器，致力于用户隐私和安全。
 welcome-start-setup = 准备好开始了吗？
 welcome-skip-to-start-browsing = 跳过，开始上网
 welcome-select-preferences-template = 请选择一个模板

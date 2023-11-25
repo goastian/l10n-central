@@ -827,7 +827,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = Firefox Hesabına Giriş Yap
 welcome-to-floorp = { -brand-short-name }'a hoşgeldin!
-welcome-discribe-floorp = { -brand-short-name } Firefox tabanlı, zengin özelliklere sahip, çeşitli ortamları destekleyen esnek bir tarayıcıdır.
+welcome-discribe-floorp = { -brand-short-name } Kullanıcı gizliliğine ve güvenliğine önem veren hızlı ve güvenli, hafif bir tarayıcıdır.
 welcome-start-setup = Katılmaya hazır mısın?
 welcome-skip-to-start-browsing = Atla ve kullanmaya başla
 welcome-select-preferences-template = Bir şablon seç
