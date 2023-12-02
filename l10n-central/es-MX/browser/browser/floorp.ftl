@@ -1160,3 +1160,7 @@ floorp-toggle-private-container =
   .accesskey = P
 open-in_private-container =
   .label = Abrir en una pestaña nueva con contenedor privado
+
+## about:telemetry
+telemetry-page-subtitle = Midori Browser no recopila telemetría sobre su instalación; todos los módulos de telemetría se desactivan cuando se crea el navegador. Lo que haces en tu navegador sólo lo sabes tú.
+telemetry-privacy-policy = Política de privacidad
