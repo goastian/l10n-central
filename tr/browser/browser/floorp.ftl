@@ -778,7 +778,7 @@ chage-view-mode = Görünüm/Düzenleme Modunu Değiştir
 readonly-mode = Çevrimdışı (Salt okunur)
 
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze Destek
+default-bookmark-ablaze-support = Astian Destek
 default-bookmark-notes = Midori Notes
 
 ######################################################################### Like Chrome Download mgr ###############################################################

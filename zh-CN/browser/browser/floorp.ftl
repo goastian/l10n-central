@@ -5,8 +5,6 @@
 ###################################################################### about:Dialog #################################################################################
 
 about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>是日本开发浏览器之一。 基于 Firefox 开发并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
-icon-creator = 图标作者： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
-contributors =  这是一份<label data-l10n-name="about-contributor">贡献者和开发者名单</label>。
 
 #################################################################### about:preferences ####################################################################
 
@@ -875,7 +873,7 @@ chage-view-mode = 切换 只读/编辑 模式
 readonly-mode = 离线 (只读)
 
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze 支持
+default-bookmark-ablaze-support = Astian 支持
 default-bookmark-notes = Midori 备忘录
 
 ######################################################################### Like Chrome Download mgr ###############################################################
