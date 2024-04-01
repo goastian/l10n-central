@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>是日本开发浏览器之一。 基于 Firefox 开发并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>它是一款轻量、快速、安全的浏览器，致力于保护用户的隐私和安全 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
 
 #################################################################### about:preferences ####################################################################
 

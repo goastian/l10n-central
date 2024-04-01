@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Es un navegador ligero rapido y seguro comprometido con la privacidad y la seguridad de los usuarios. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, para mejorar la web. Quieres Ayudar? <label data-l10n-name="helpus-donateLink">Make a donation</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Es un navegador ligero rapido y seguro comprometido con la privacidad y la seguridad de los usuarios. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, para mejorar la web. Quieres Ayudar? <label data-l10n-name="helpus-donateLink">Dona Ahora!!!</label>
 
 #################################################################### about:preferences ####################################################################
 

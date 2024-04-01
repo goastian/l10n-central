@@ -5,7 +5,6 @@
 ###################################################################### about:Dialog #################################################################################
 
 about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> It is a light, fast and secure browser committed to the privacy and security of users. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, to improve the web. Want to help? <label data-l10n-name="helpus-donateLink">Make a donation</label>
-icon-creator = Icon creator <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> and <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = A list of <label data-l10n-name="about-contributor">contributors and Developers</label>
 
 #################################################################### about:preferences ####################################################################
