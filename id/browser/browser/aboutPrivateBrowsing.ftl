@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Tidak ada kuki tersimpan atau riwayat, 
 about-private-browsing-cookie-banners-promo-header = Lenyapkan spanduk kuki!
 about-private-browsing-cookie-banners-promo-button = Kurangi Spanduk Kuki
 about-private-browsing-cookie-banners-promo-message = Izinkan { -brand-short-name } menjawab pop-up kuki secara otomatis agar Anda dapat kembali ke penjelajahan bebas gangguan. { -brand-short-name } akan menolak semua permintaan jika memungkinkan.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } mengurus spanduk kuki untuk Anda
+about-private-browsing-cookie-banners-promo-body = Kini kami menolak banyak spanduk kuki secara otomatis agar Anda bisa lebih sedikit dilacak dan kembali ke penjelajahan bebas gangguan.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Jangan tinggalkan jejak di perangkat ini
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } menghapus kuki, riwayat, dan data situs ketika Anda menutup semua jendela pribadi.
+about-private-browsing-felt-privacy-v1-info-link = Siapa yang mungkin bisa melihat aktivitas saya?

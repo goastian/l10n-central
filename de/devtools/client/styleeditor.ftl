@@ -20,7 +20,6 @@ styleeditor-save-button = Speichern
     .accesskey = S
 styleeditor-options-button =
     .tooltiptext = Einstellungen für Stilbearbeitung
-styleeditor-media-rules = @media-Regeln
 styleeditor-at-rules = @-Regeln
 styleeditor-editor-textbox =
     .data-placeholder = CSS hier eingeben.
@@ -49,3 +48,9 @@ styleeditor-stylesheet-rule-count =
         [one] { $ruleCount } Regel.
        *[other] { $ruleCount } Regeln.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Stil-Dokument einheitlich formatieren
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Kann nur CSS-Dateien einheitlich formatieren

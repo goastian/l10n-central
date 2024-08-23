@@ -4,6 +4,7 @@
 
 about-networking-title = Om netværk
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = Ryd HTTP-cache
 about-networking-sockets = Sockets
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = Ryd DNS-cache
@@ -34,15 +35,6 @@ about-networking-messages-received = Meddelelser modtaget
 about-networking-bytes-sent = Bytes sendt
 about-networking-bytes-received = Bytes modtaget
 about-networking-logging = Logning
-about-networking-log-tutorial =
-    Læs <a data-l10n-name="logging">HTTP Logging</a> 
-    for vejledning til at bruge dette værktøj.
-about-networking-current-log-file = Aktuel logfil:
-about-networking-current-log-modules = Aktuelle logmoduler:
-about-networking-set-log-file = Angiv logfil
-about-networking-set-log-modules = Angiv logmoduler
-about-networking-start-logging = Start logning
-about-networking-stop-logging = Stop logning
 about-networking-dns-lookup = DNS-opslag
 about-networking-dns-lookup-button = Slå op
 about-networking-dns-domain = Domæne:

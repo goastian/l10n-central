@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -151,11 +145,25 @@ webrtc-allow-share-microphone = Tillad { $origin } at bruge din mikrofon?
 webrtc-allow-share-screen = Tillad { $origin } at se din skærm?
 # "Speakers" is used in a general sense that might include headphones or
 # another audio output connection.
-webrtc-allow-share-speaker = Tillad { $origin } at bruge andre højtalere?
+webrtc-allow-share-speaker = Tillad { $origin } at bruge afspille lyd på andre enheder?
 webrtc-allow-share-camera-and-microphone = Tillad { $origin } at bruge dit kamera og din mikrofon?
 webrtc-allow-share-camera-and-audio-capture = Tillad { $origin } at bruge dit kamera og lytte til lyd i dette faneblad?
 webrtc-allow-share-screen-and-microphone = Tillad { $origin } at bruge din mikrofon og se din skærm?
 webrtc-allow-share-screen-and-audio-capture = Tillad { $origin } at lytte til lyd i dette faneblad og se din skærm?
+
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Tillad denne lokale fil at lytte til lyden i dette faneblad?
+webrtc-allow-share-camera-with-file = Tillad denne lokale fil at bruge dit kamera?
+webrtc-allow-share-microphone-with-file = Tillad denne lokale fil at bruge din mikrofon?
+webrtc-allow-share-screen-with-file = Tillad denne lokale fil at se indholdet på din skærm?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Tillad denne lokale fil at afspille lyd på andre enheder?
+webrtc-allow-share-camera-and-microphone-with-file = Tillad denne lokale fil at bruge dit kamera og din mikrofon?
+webrtc-allow-share-camera-and-audio-capture-with-file = Tillad denne lokale fil at bruge dit kamera og lytte til lyden i dette faneblad?
+webrtc-allow-share-screen-and-microphone-with-file = Tillad denne lokale fil at bruge din mikrofon og se din skærm?
+webrtc-allow-share-screen-and-audio-capture-with-file = Tillad denne lokale fil at lytte til lyden i dette faneblad og se din skærm?
 
 ## Variables:
 ##   $origin (String): the first party origin.
@@ -163,12 +171,11 @@ webrtc-allow-share-screen-and-audio-capture = Tillad { $origin } at lytte til ly
 
 webrtc-allow-share-audio-capture-unsafe-delegation = Tillad { $origin } at give { $thirdParty } tilladelse til at lytte til lyden i dette faneblad?
 webrtc-allow-share-camera-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til dit kamera?
-webrtc-allow-share-microphone-unsafe-delegations = Tillad { $origin } at give { $thirdParty } adgang til din mikrofon?
 webrtc-allow-share-microphone-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til din mikrofon?
 webrtc-allow-share-screen-unsafe-delegation = Tillad { $origin } at give { $thirdParty } tilladelse til at se din skærm?
 # "Speakers" is used in a general sense that might include headphones or
 # another audio output connection.
-webrtc-allow-share-speaker-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til andre højtalere?
+webrtc-allow-share-speaker-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til at afspille lyd på andre enheder?
 webrtc-allow-share-camera-and-microphone-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til dit kamera og din mikrofon?
 webrtc-allow-share-camera-and-audio-capture-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til dit kamera og til at lytte til lyden i dette faneblad?
 webrtc-allow-share-screen-and-microphone-unsafe-delegation = Tillad { $origin } at give { $thirdParty } adgang til din mikrofon og til at se din skærm?
@@ -212,6 +219,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Husk dette valg
+webrtc-remember-allow-checkbox-camera = Husk for alle kameraer
+webrtc-remember-allow-checkbox-microphone = Husk for alle mikrofoner
+webrtc-remember-allow-checkbox-camera-and-microphone = Husk for alle kameraer og mikrofoner
 webrtc-mute-notifications-checkbox = Slå websteds-beskeder fra ved deling
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } kan ikke tillade permanent adgang til din skærm.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } kan ikke tillade permanent adgang til dit faneblads lyd uden først at spørge, hvilket faneblad der skal deles.

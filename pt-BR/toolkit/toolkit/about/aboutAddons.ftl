@@ -6,8 +6,6 @@ addons-page-title = Gerenciador de extensões
 search-header =
     .placeholder = Pesquisar em addons.mozilla.org
     .searchbuttonlabel = Pesquisar
-search-header-shortcut =
-    .key = f
 
 ## Variables
 ##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
@@ -158,11 +156,20 @@ addon-sitepermission-host = Permissões de sites de { $host }
 
 extensions-warning-safe-mode = Todas as extensões foram desativadas pelo modo de segurança.
 extensions-warning-check-compatibility = A verificação de compatibilidade de extensões está desativada. Você pode ter extensões incompatíveis.
+extensions-warning-safe-mode2 =
+    .message = Todas as extensões foram desativadas pelo modo de segurança.
+extensions-warning-check-compatibility2 =
+    .message = A verificação de compatibilidade de extensões está desativada. Você pode ter extensões incompatíveis.
 extensions-warning-check-compatibility-button = Ativar
     .title = Ativar verificação de compatibilidade de extensões
 extensions-warning-update-security = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer seu computador.
+extensions-warning-update-security2 =
+    .message = A verificação de segurança de atualizações de extensões está desativada. Atualizações de extensões podem comprometer seu computador.
 extensions-warning-update-security-button = Ativar
     .title = Ativar verificação de segurança da atualização de extensões
+extensions-warning-imported-addons2 =
+    .message = Finalize a instalação das extensões importadas para o { -brand-short-name }.
+extensions-warning-imported-addons-button = Instalar extensões
 
 ## Strings connected to add-on updates
 
@@ -213,6 +220,9 @@ shortcuts-no-addons = Você não tem nenhuma extensão ativada.
 shortcuts-no-commands = As seguintes extensões não têm atalhos de teclado:
 shortcuts-input =
     .placeholder = Digite um atalho
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = Remover atalho
 shortcuts-browserAction2 = Ativar botão na barra de ferramentas
 shortcuts-pageAction = Ativar ação de página
 shortcuts-sidebarAction = Exibir/ocultar o painel lateral
@@ -227,6 +237,11 @@ shortcuts-duplicate = Atalho duplicado
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = { $shortcut } está sendo usado como atalho em mais de um caso. Atalhos duplicados podem causar comportamento inesperado.
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = { $shortcut } está sendo usado como atalho em mais de um caso. Atalhos duplicados podem causar comportamento inesperado.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -256,6 +271,11 @@ discopane-intro =
 discopane-notice-recommendations =
     Algumas dessas recomendações são personalizadas. Elas são feitas com base 
     em outras extensões que você instalou, preferências de perfil e estatísticas de uso.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message =
+        Algumas dessas recomendações são personalizadas. Elas são feitas com base 
+        em outras extensões que você instalou, preferências de perfil e estatísticas de uso.
 discopane-notice-learn-more = Saiba mais
 privacy-policy = Política de privacidade
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -301,17 +321,7 @@ permissions-addon-button = Permissões
 extension-enabled-heading = Ativado
 extension-disabled-heading = Desativado
 theme-enabled-heading = Ativado
-theme-disabled-heading = Desativado
 theme-disabled-heading2 = Temas salvos
-theme-monochromatic-heading = Esquemas de cores
-theme-monochromatic-subheading = Novos esquemas vibrantes de cores do { -brand-product-name }. Disponíveis por tempo limitado.
-# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
-theme-colorways-button = Experimentar esquemas de cores
-# Refers to the button label for the colorways card when a user has a colorway theme enabled.
-theme-colorways-button-colorway-enabled = Mudar esquema de cores
-# Variables:
-#   $expiryDate (string) - Date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
-colorway-collection-expiry-label = Expira em { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Ativado
 plugin-disabled-heading = Desativado
 dictionary-enabled-heading = Ativado
@@ -329,6 +339,9 @@ addon-detail-homepage-label = Página web
 addon-detail-rating-label = Classificação
 # Message for add-ons with a staged pending update.
 install-postponed-message = Esta extensão será atualizada quando o { -brand-short-name } for reiniciado.
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message = Esta extensão será atualizada quando o { -brand-short-name } for reiniciado.
 install-postponed-button = Atualizar agora
 # The average rating that the add-on has received.
 # Variables:
@@ -353,6 +366,10 @@ addon-detail-reviews-link =
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> foi removido.
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = { $addon } foi removido.
 pending-uninstall-undo-button = Desfazer
 addon-detail-updates-label = Atualização automática
 addon-detail-updates-radio-default = Padrão
@@ -360,6 +377,10 @@ addon-detail-updates-radio-on = Ativada
 addon-detail-updates-radio-off = Desativada
 addon-detail-update-check-label = Procurar atualização
 install-update-button = Atualizar
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -368,6 +389,24 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Com permissão, a extensão tem acesso à sua atividade online durante a navegação privativa. <a data-l10n-name="learn-more">Saiba mais</a>
 addon-detail-private-browsing-allow = Permitir
 addon-detail-private-browsing-disallow = Não permitir
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
+
+## "sites with restrictions" (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = Funcionamento em sites com restrições
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = Quando permitido, a extensão terá acesso a sites restritos pela { -vendor-short-name }. Permita apenas se você confiar nesta extensão.
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = Permitir
+addon-detail-quarantined-domains-disallow = Não permitir
+# aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
+addon-detail-group-label-quarantined-domains =
+    .aria-label = { addon-detail-quarantined-domains-label }
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -422,23 +461,41 @@ addon-page-options-button =
 
 ## Detail notifications
 ## Variables:
-##   $name (String): name of the add-on.
-
-
-## Detail notifications
-## Variables:
 ##   $name (string) - Name of the add-on.
 
 # Variables:
 #   $version (string) - Application version.
 details-notification-incompatible = { $name } não é compatível com o { -brand-short-name } { $version }.
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message = { $name } não é compatível com o { -brand-short-name } { $version }.
 details-notification-incompatible-link = Mais informações
 details-notification-unsigned-and-disabled = { $name } não pôde ser verificado para uso em { -brand-short-name } e foi desativado.
+details-notification-unsigned-and-disabled2 =
+    .message = { $name } não pôde ser verificado para uso em { -brand-short-name } e foi desativado.
 details-notification-unsigned-and-disabled-link = Mais informações
 details-notification-unsigned = { $name } não pôde ser verificado para uso em { -brand-short-name }. Proceda com cautela.
+details-notification-unsigned2 =
+    .message = { $name } não pôde ser verificado para uso em { -brand-short-name }. Proceda com cautela.
 details-notification-unsigned-link = Mais informações
 details-notification-blocked = O { $name } foi desativado devido a problemas de segurança ou estabilidade.
+details-notification-blocked2 =
+    .message = O { $name } foi desativado devido a problemas de segurança ou estabilidade.
 details-notification-blocked-link = Mais informações
 details-notification-softblocked = O { $name } é reconhecido como causa de problemas de segurança ou estabilidade.
+details-notification-softblocked2 =
+    .message = O { $name } é reconhecido como causa de problemas de segurança ou estabilidade.
 details-notification-softblocked-link = Mais informações
 details-notification-gmp-pending = { $name } será instalado em instantes.
+details-notification-gmp-pending2 =
+    .message = { $name } será instalado em instantes.
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = Informações da licença
+plugins-gmp-privacy-info = Informações de privacidade
+plugins-openh264-name = Codec de vídeo OpenH264 fornecido por Cisco Systems, Inc.
+plugins-openh264-description = Este plugin é instalado automaticamente pela Mozilla em conformidade com a especificação WebRTC e para habilitar chamadas WebRTC com dispositivos que requerem o codec de vídeo H.264. Visite http://www.openh264.org/ para ver o código-fonte do codec e saber mais sobre a implementação.
+plugins-widevine-name = Módulo de descriptografia de conteúdo Widevine fornecido pela Google Inc.
+plugins-widevine-description = Este plugin ativa a reprodução de mídia criptografada, em conformidade com a especificação Encrypted Media Extensions. Mídia criptografada é usada tipicamente por sites para se proteger contra cópia de conteúdo de mídia premium. Visite https://www.w3.org/TR/encrypted-media/ para mais informações sobre Encrypted Media Extensions.

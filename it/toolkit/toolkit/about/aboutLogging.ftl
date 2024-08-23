@@ -38,10 +38,19 @@ about-logging-preset-networking-websocket-label = WebSocket
 about-logging-preset-networking-websocket-description = Moduli di registrazione per diagnosticare problemi con WebSocket
 about-logging-preset-networking-http3-label = HTTP/3
 about-logging-preset-networking-http3-description = Moduli di registrazione per diagnosticare problemi con HTTP/3 e QUIC
+about-logging-preset-networking-http3-upload-speed-label = Velocità di caricamento HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Moduli di registrazione per diagnosticare problemi con la velocità di caricamento con HTTP/3
 about-logging-preset-media-playback-label = Riproduzione file multimediali
 about-logging-preset-media-playback-description = Moduli di registrazione per diagnosticare problemi con la riproduzione di file multimediali (non relativi ad applicazioni di videoconferenza)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = Moduli di registrazione per diagnosticare problemi con chiamate WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Moduli di registrazione per diagnosticare problemi con WebGPU
+about-logging-preset-gfx-label = Grafica
+about-logging-preset-gfx-description = Moduli di registrazione per diagnosticare problemi grafici
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Moduli di registrazione per diagnosticare problemi specifici con Microsoft Windows
 about-logging-preset-custom-label = Personalizzato
 about-logging-preset-custom-description = Moduli di registrazione selezionati manualmente
 # Error handling

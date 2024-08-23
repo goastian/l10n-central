@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Uitzonderingen
-    .style = width: 45em
 permissions-window2 =
     .title = Uitzonderingen
     .style = min-width: 45em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Voer een geldige hostnaam in
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Uitzonderingen voor Verbeterde bescherming tegen volgen
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = U hebt beschermingen voor deze websites uitgeschakeld.
 permissions-exceptions-etp-window2 =
     .title = Uitzonderingen voor Verbeterde bescherming tegen volgen
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = U kunt opgeven bij welke websites Verbe
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Uitzonderingen - Cookies en websitegegevens
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Uitzonderingen - Cookies en websitegegevens
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = U kunt opgeven welke websites altijd of noo
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Uitzonderingen – Alleen-HTTPS-modus
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Uitzonderingen – Alleen-HTTPS-modus
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = U kunt de Alleen-HTTPS-modus voor specifieke websites uitschakelen. { -brand-short-name } zal voor die websites niet proberen de verbinding naar veilige HTTPS te upgraden. Uitzonderingen zijn niet van toepassing op privévensters.
+permissions-exceptions-https-only-desc2 = U kunt de Alleen-HTTPS-modus voor specifieke websites uitschakelen. { -brand-short-name } zal voor die websites niet proberen de verbinding naar veilige HTTPS te upgraden.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Websites met toestemming - Pop-ups
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Websites met toestemming - Pop-ups
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = U kunt opgeven welke websites toestemming he
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Uitzonderingen - Opgeslagen aanmeldingen
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Uitzonderingen - Opgeslagen aanmeldingen
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Aanmeldingen voor de volgende websites zullen niet worden opgeslagen
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Uitzonderingen - Opgeslagen wachtwoorden
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } slaat geen wachtwoorden op voor hier vermelde websites.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Websites met toestemming - Installatie van add-ons
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Websites met toestemming - Installatie van add-ons
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = U kunt opgeven welke websites toestemming h
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Instellingen - Automatisch afspelen
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Instellingen - Automatisch afspelen
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = U kunt hier de websites beheren die uw standaar
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Instellingen - Toestemmingen voor notificaties
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Instellingen - Toestemmingen voor notificaties
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Dit voorkomt dat websites die hierb
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Instellingen - Toestemmingen voor locatie
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Instellingen - Toestemmingen voor locatie
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Dit voorkomt dat websites die hierboven
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Instellingen - Toestemmingen voor virtual reality
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Instellingen - Toestemmingen voor virtual reality
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Dit voorkomt dat websites die hierboven niet 
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Instellingen - Toestemmingen voor camera
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Instellingen - Toestemmingen voor camera
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Dit voorkomt dat websites die hierboven n
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Instellingen - Toestemmingen voor microfoon
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Instellingen - Toestemmingen voor microfoon
     .style = { permissions-window2.style }

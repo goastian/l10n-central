@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Забути про цей сайт
     .accesskey = З
+places-forget-domain-data =
+    .label = Забути про цей сайт…
+    .accesskey = б
 places-sortby-name =
     .label = Впорядкувати за назвою
     .accesskey = н
@@ -96,7 +99,7 @@ places-delete-page =
            *[other] Видалити сторінки
         }
     .accesskey = В
-# Managed bookmarks are created by an administrator and cannot be changed by the user.
+# Managed bookmarks are created by enterprise policy and cannot be changed by the user.
 managed-bookmarks =
     .label = Керовані закладки
 # This label is used when a managed bookmarks folder doesn't have a name.
@@ -136,7 +139,7 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Забути цей сайт
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-msg = Ця дія вилучить дані, пов'язані з { $hostOrBaseDomain }, включно з історією, куками, кешем і налаштуваннями вмісту. Пов'язані закладки та паролі не буде вилучено. Ви дійсно хочете продовжити?
+places-forget-about-this-site-confirmation-msg = Ця дія вилучить дані, пов'язані з { $hostOrBaseDomain }, включно з історією, файлами cookie, кешем і налаштуваннями вмісту. Пов'язані закладки та паролі не буде вилучено. Ви дійсно хочете продовжити?
 places-forget-about-this-site-forget = Забути
 places-library3 =
     .title = Бібліотека
@@ -242,7 +245,7 @@ places-forward-button =
     .tooltiptext = Перейти вперед
 places-details-pane-select-an-item-description = Додати елемент до перегляду та редагувати його властивості
 places-details-pane-no-items =
-    .value = Жодного елементу
+    .value = Немає елементів
 # Variables:
 #   $count (Number): number of items
 places-details-pane-items-count =

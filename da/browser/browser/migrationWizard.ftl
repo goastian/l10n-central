@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Adgangskoder fra CSV-fil
 migration-wizard-migrator-display-name-file-bookmarks = Bogmærker fra HTML-fil
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Læseliste (fra Safari)
+migration-imported-edge-reading-list = Læseliste (fra Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } har ikke adgang til andre browseres profiler installeret på denne enhed.
+migration-no-permissions-instructions = For at fortsætte med at importere data fra en anden browser skal du give { -brand-short-name } adgang til browserens profilmappe.
+migration-no-permissions-instructions-step1 = Vælg "Fortsæt"
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = Gå til <code>{ $permissionsPath }</code> i filvælgeren og klik på "Vælg"
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = Bogmærker
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Favoritter
 migration-logins-and-passwords-option-label = Gemte logins og adgangskoder
+migration-passwords-option-label = Gemte adgangskoder
 migration-history-option-label = Browserhistorik
 migration-extensions-option-label = Udvidelser
 migration-form-autofill-option-label = Data til autofyldning af formularer
@@ -158,7 +178,14 @@ migration-list-payment-methods-label = betalingsmetoder
 ##
 
 migration-wizard-progress-header = Importerer data
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Data blev importeret
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Import af data fuldført
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importerer…
 migration-wizard-progress-icon-completed =

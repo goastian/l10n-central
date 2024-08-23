@@ -20,7 +20,6 @@ styleeditor-save-button = Gem
     .accesskey = G
 styleeditor-options-button =
     .tooltiptext = Indstillinger for CSS-editor
-styleeditor-media-rules = @media-regler
 styleeditor-at-rules = @-regler
 styleeditor-editor-textbox =
     .data-placeholder = Skriv CSS her.
@@ -49,3 +48,9 @@ styleeditor-stylesheet-rule-count =
         [one] { $ruleCount } regel.
        *[other] { $ruleCount } regler.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Pretty-print stylesheet
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Kan kun pretty-printe CSS-filer

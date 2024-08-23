@@ -53,7 +53,7 @@ import-from-chromium =
     .label = Chromium
     .accesskey = u
 import-from-firefox =
-    .label = Firefox
+    .label = Midori
     .accesskey = x
 import-from-360se =
     .label = 360 Secure Browser
@@ -65,9 +65,7 @@ no-migration-sources = ไม่พบโปรแกรมที่มีข้
 import-source-page-title = นำเข้าการตั้งค่าและข้อมูล
 import-items-page-title = รายการที่จะนำเข้า
 import-items-description = เลือกรายการที่จะนำเข้า:
-import-permissions-page-title = โปรดมอบสิทธิอนุญาตแก่ { -brand-short-name }
-# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
-import-permissions-description = macOS ต้องการให้คุณอนุญาตให้ { -brand-short-name } เข้าถึงที่คั่นหน้าของ Safari อย่างชัดเจน คลิก “ดำเนินการต่อ” แล้วเลือกไฟล์ “Bookmarks.plist” ในแผงการเปิดไฟล์ที่ปรากฏ
+import-permissions-page-title = โปรดอนุญาตสิทธิ์ให้กับ { -brand-short-name }
 # Do not translate "Safari" (the name of the browser on Apple devices)
 import-safari-permissions-string = macOS ต้องการให้คุณอนุญาต { -brand-short-name } ให้เข้าถึงข้อมูลของ Safari อย่างชัดเจน กรุณาคลิก “ดำเนินการต่อ” จากนั้นเลือกโฟลเดอร์ “Safari“ ในกล่องโต้ตอบของ Finder ที่จะปรากฏขึ้น แล้วคลิก “เปิด”
 import-migrating-page-title = กำลังนำเข้า…

@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Aktivera stackspårningar för log
 
 about-logging-preset-networking-label = Nätverk
 about-logging-preset-networking-description = Logga moduler för att diagnostisera nätverksproblem
+about-logging-preset-networking-cookie-label = Kakor
+about-logging-preset-networking-cookie-description = Logga moduler för att diagnostisera kakproblem
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Logga moduler för att diagnostisera WebSocket-problem
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Logga moduler för att diagnostisera HTTP/3- och QUIC-problem
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3 uppladdningshastighet
+about-logging-preset-networking-http3-upload-speed-description = Logga moduler för att diagnostisera problem med HTTP/3-uppladdningshastighet
 about-logging-preset-media-playback-label = Uppspelning av media
 about-logging-preset-media-playback-description = Logga moduler för att diagnostisera uppspelningsproblem av media (inte videokonferensproblem)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Logga moduler för att diagnostisera WebRTC-anrop
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Logga moduler för att diagnostisera WebGPU-problem
+about-logging-preset-gfx-label = Grafik
+about-logging-preset-gfx-description = Logga moduler för att diagnostisera grafikproblem
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Logga moduler för att diagnostisera problem som är specifika för Microsoft Windows
 about-logging-preset-custom-label = Anpassad
 about-logging-preset-custom-description = Loggmoduler manuellt valda
 # Error handling

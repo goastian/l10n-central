@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -133,13 +127,26 @@ webrtc-allow-share-camera-and-audio-capture = 要允許 { $origin } 使用您的
 webrtc-allow-share-screen-and-microphone = 要允許 { $origin } 使用您的麥克風，並看到您的畫面嗎？
 webrtc-allow-share-screen-and-audio-capture = 要允許 { $origin } 聽到這個分頁的聲音，並看到您的畫面嗎？
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = 要允許這個本機檔案聆聽這個分頁的聲音嗎？
+webrtc-allow-share-camera-with-file = 要允許這個本機檔案使用您的攝影機嗎？
+webrtc-allow-share-microphone-with-file = 要允許這個本機檔案使用您的麥克風嗎？
+webrtc-allow-share-screen-with-file = 要允許這個本機檔案看到您的畫面嗎？
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = 要允許這個本機檔案使用其他喇叭嗎？
+webrtc-allow-share-camera-and-microphone-with-file = 要允許這個本機檔案使用您的攝影機與麥克風嗎？
+webrtc-allow-share-camera-and-audio-capture-with-file = 要允許這個本機檔案使用您的攝影機並聆聽這個分頁的聲音嗎？
+webrtc-allow-share-screen-and-microphone-with-file = 要允許這個本機檔案使用您的麥克風並看到您的畫面嗎？
+webrtc-allow-share-screen-and-audio-capture-with-file = 要允許這個本機檔案聆聽這個分頁的聲音，並看到您的畫面嗎？
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = 要允許 { $origin } 授權 { $thirdParty } 聽到此分頁播放的音訊嗎？
 webrtc-allow-share-camera-unsafe-delegation = 要允許 { $origin } 授權 { $thirdParty } 使用您的攝影機與麥克風嗎？
-webrtc-allow-share-microphone-unsafe-delegations = 要允許 { $origin } 授權 { $thirdParty } 使用您的麥克風嗎？
 webrtc-allow-share-microphone-unsafe-delegation = 要允許 { $origin } 授權 { $thirdParty } 使用您的麥克風嗎？
 webrtc-allow-share-screen-unsafe-delegation = 要允許 { $origin } 授權 { $thirdParty } 看到您的螢幕畫面嗎？
 # "Speakers" is used in a general sense that might include headphones or
@@ -184,6 +191,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = 記住此決定
+webrtc-remember-allow-checkbox-camera = 記住所有攝影機
+webrtc-remember-allow-checkbox-microphone = 記住所有麥克風
+webrtc-remember-allow-checkbox-camera-and-microphone = 記住所有攝影機與麥克風
 webrtc-mute-notifications-checkbox = 分享視窗或畫面時，隱藏網站通知
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } 無法永久允許存取您的畫面
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } 無法永久允許不先詢問要分享哪一個分頁就直接存取音訊內容。

@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Adicionar separadores aos marcadores…
     .accesskey = m
-bookmark-tab =
-    .label = Adicionar separador aos marcadores
-    .accesskey = m
 tab-context-bookmark-tab =
     .label = Adicionar separador aos marcadores…
     .accesskey = B
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Fechar múltiplos separadores
     .accesskey = m
+tab-context-close-duplicate-tabs =
+    .label = Fechar separadores duplicados
+    .accesskey = u
 tab-context-share-url =
     .label = Partilhar
     .accesskey = h
@@ -106,7 +106,6 @@ tab-context-move-tabs =
            *[other] Mover separadores
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

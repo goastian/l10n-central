@@ -7,9 +7,6 @@ password-not-set =
 failed-pp-change = Nelze změnit hlavní heslo.
 incorrect-pp = Nezadali jste správné hlavní heslo. Zkuste to prosím znovu.
 pp-change-ok = Hlavní heslo bylo úspěšně změněno.
-pp-empty-warning = Vaše uložená hesla, data pro formuláře a soukromé klíče nebudou chráněny.
-pp-erased-ok = Varování! Odstranili jste své hlavní heslo. { pp-empty-warning }
-pp-not-wanted = Varování! Přestali jste používat své hlavní heslo. { pp-empty-warning }
 settings-pp-erased-ok =
     { -brand-short-name.case-status ->
         [with-cases] Smazali jste své hlavní heslo. Uložená hesla a soukromé klíče certifikátů spravované { -brand-short-name(case: "ins") } nebudou chráněné.
@@ -33,6 +30,7 @@ set-password-reenter-password = Zopakujte heslo:
 set-password-meter = Kvalita hesla
 set-password-meter-loading = Načítání
 primary-password-admin = Správce vašeho systému vyžaduje před ukládání hesel nastavení hlavního hesla.
+primary-password-required-by-policy = Vaše organizace vyžaduje, abyste měli nastavené primární heslo, abyste mohli ukládat přihlašovací jména a hesla.
 primary-password-description = Hlavní heslo slouží k ochraně citlivých údajů, jako jsou třeba hesla k webovým účtům. Pokud si vytvoříte hlavní heslo, budete na něj dotázáni jednou během každé relace, pokud bude { -brand-short-name } potřebovat pracovat s uloženými údaji chráněnými tímto heslem.
 primary-password-warning = Ujistěte se, že si toto hlavní heslo opravdu pamatujete. Bez jeho znalosti nebudete moci přistupovat k uloženým údajům chráněným tímto heslem.
 remove-primary-password =

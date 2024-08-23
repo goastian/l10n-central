@@ -12,8 +12,6 @@ update-updateButton =
     .label = 重启 { -brand-shorter-name } 以更新
     .accesskey = R
 update-checkingForUpdates = 正在检查更新…
-update-downloading = <img data-l10n-name="icon"/>正在下载更新 — <label data-l10n-name="download-status"/>
-update-downloading-message = 正在下载更新 — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = 正在应用更新…
 update-failed = 更新失败。 <label data-l10n-name="failed-link">下载最新版本</label>
 update-failed-main = 更新失败。 <a data-l10n-name="failed-link-main">下载最新版本</a>
 update-adminDisabled = 更新已被系统管理员禁用
+update-policy-disabled = 您的组织禁用了更新
 update-noUpdatesFound = { -brand-short-name } 已是最新
 aboutdialog-update-checking-failed = 检查更新失败。
 update-otherInstanceHandlingUpdates = { -brand-short-name } 正在由其他实例更新
-update-manual = 可访问 <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = 可访问 <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,8 +37,6 @@ aboutdialog-update-manual-with-link = 可访问 <label data-l10n-name="manual-li
 settings-update-manual-with-link = 可访问 <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = 您无法在这个系统上进一步更新。<label data-l10n-name="unsupported-link">详细了解</label>
 update-restarting = 正在重启浏览器…
-channel-description = 您目前在 <label data-l10n-name="current-channel"></label> 更新通道。
-update-internal-error = 发生内部错误，无法检查更新。可访问 <label data-l10n-name="manual-link"/> 手动下载更新。
 update-internal-error2 = 发生内部错误，无法检查更新。可访问 <label data-l10n-name="manual-link">{ $displayUrl }</label> 手动下载更新。
 
 ##

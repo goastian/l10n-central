@@ -15,6 +15,10 @@ support-addons-type = 유형
 support-addons-enabled = 사용
 support-addons-version = 버전
 support-addons-id = ID
+legacy-user-stylesheets-title = 레거시 사용자 스타일시트
+legacy-user-stylesheets-enabled = 활성화
+legacy-user-stylesheets-stylesheet-types = 스타일시트
+legacy-user-stylesheets-no-stylesheets-found = 스타일시트를 찾을 수 없음
 security-software-title = 보안 소프트웨어
 security-software-type = 유형
 security-software-name = 이름
@@ -70,10 +74,11 @@ app-basics-remote-processes-count = 원격 프로세스
 app-basics-enterprise-policies = 엔터프라이즈 정책
 app-basics-location-service-key-google = Google 위치 서비스 키
 app-basics-safebrowsing-key-google = Google Safebrowsing 키
-app-basics-key-mozilla = Mozilla 위치 서비스 키
+app-basics-key-mozilla = Ablaze 위치 서비스 키
 app-basics-safe-mode = 안전 모드
 app-basics-memory-size = 메모리 크기 (램)
 app-basics-disk-available = 사용 가능한 디스크 공간
+app-basics-pointing-devices = 포인팅 기기
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -179,6 +184,25 @@ media-codec-support-hw-decoding = 하드웨어 디코딩
 media-codec-support-codec-name = 코덱 이름
 media-codec-support-supported = 지원됨
 media-codec-support-unsupported = 지원 안 됨
+media-codec-support-error = 코덱 지원 정보를 사용할 수 없습니다. 미디어 파일 재생 후 다시 시도하세요.
+media-codec-support-lack-of-extension = 확장 기능 설치
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = 콘텐츠 복호화 모듈 정보
+media-key-system-name = 키 시스템 이름
+media-video-robustness = 비디오 견고성
+media-audio-robustness = 오디오 견고성
+media-cdm-capabilities = 기능
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = 리드 지우기
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2 호환
 
 ##
 
@@ -238,6 +262,7 @@ try-newer-driver = 그래픽 드라이버는 그리기 지원이 차단되었습
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType 매개 변수
 compositing = 합성
+support-font-determination = 글꼴 가시성 디버그 정보
 hardware-h264 = 하드웨어 H264 디코딩
 main-thread-no-omtc = 주 스레드, OMTC 아님
 yes = 예
@@ -299,6 +324,9 @@ has-seccomp-bpf = Seccomp-BPF (시스템 호출 필터링)
 has-seccomp-tsync = Seccomp 스레드 동기화
 has-user-namespaces = 사용자 네임스페이스
 has-privileged-user-namespaces = 권한있는 프로세스를 위한 사용자 네임스페이스
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — 이 기능은 사용자의 시스템에서 허용되지 않습니다. 이는 { -brand-short-name }의 보안 기능을 제한할 수 있습니다.
 can-sandbox-content = 콘텐트 프로세스 샌드박싱
 can-sandbox-media = 미디어 플러그인 샌드박싱
 content-sandbox-level = 콘텐츠 프로세스 샌드박스 수준
@@ -367,6 +395,20 @@ support-printing-modified-settings = 수정한 인쇄 설정
 support-printing-prefs-name = 이름
 support-printing-prefs-value = 값
 
+## Remote Settings sections
+
+support-remote-settings-title = 원격 설정
+support-remote-settings-status = 상태
+support-remote-settings-status-ok = 확인
+# Status when synchronization is not working.
+support-remote-settings-status-broken = 작동 안 함
+support-remote-settings-last-check = 마지막 확인
+support-remote-settings-local-timestamp = 로컬 타임스탬프
+support-remote-settings-sync-history = 기록
+support-remote-settings-sync-history-status = 상태
+support-remote-settings-sync-history-datetime = 날짜
+support-remote-settings-sync-history-infos = 정보
+
 ## Normandy sections
 
 support-remote-experiments-title = 원격 실험
@@ -376,3 +418,22 @@ support-remote-experiments-see-about-studies = 개별 실험을 비활성화하�
 support-remote-features-title = 원격 기능
 support-remote-features-name = 이름
 support-remote-features-status = 상태
+
+## Pointing devices
+
+pointing-device-mouse = 마우스
+pointing-device-touchscreen = 터치 스크린
+pointing-device-pen-digitizer = 펜 디지타이저
+pointing-device-none = 포인팅 기기 없음
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = 콘텐츠 분석 (DLP)
+content-analysis-active = 활성화
+content-analysis-connected-to-agent = 에이전트에 연결됨
+content-analysis-agent-path = 에이전트 경로
+content-analysis-agent-failed-signature-verification = 에이전트가 서명 확인에 실패함
+content-analysis-request-count = 요청 수

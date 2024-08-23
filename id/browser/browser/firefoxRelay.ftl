@@ -14,16 +14,19 @@ firefox-relay-get-reusable-masks-failed = { -relay-brand-name } tidak dapat mene
 ##
 
 firefox-relay-must-login-to-fxa = Anda harus masuk ke { -fxaccount-brand-name } untuk menggunakan { -relay-brand-name }.
+firefox-relay-must-login-to-account = Masuk ke akun Anda untuk menggunakan topeng surel { -relay-brand-name } Anda.
 firefox-relay-get-unlimited-masks =
     .label = Kelola topeng
     .accesskey = t
-firefox-relay-opt-in-title = Lindungi alamat email Anda
-firefox-relay-opt-in-subtitle = Tambahkan { -relay-brand-name }
-firefox-relay-generate-mask-title = Lindungi alamat email Anda
-firefox-relay-generate-mask-subtitle = Buat topeng { -relay-brand-short-name }
-firefox-relay-opt-in-confirmation-enable =
-    .label = Lanjutkan
-    .accesskey = L
+# This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
+firefox-relay-opt-in-title-1 = Lindungi alamat email Anda:
+# This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
+# ends with a colon. You might need to adapt the capitalization of this string.
+firefox-relay-opt-in-subtitle-1 = Gunakan topeng surel { -relay-brand-name }
+firefox-relay-use-mask-title = Gunakan topeng surel { -relay-brand-name }
+firefox-relay-opt-in-confirmation-enable-button =
+    .label = Gunakan topeng surel
+    .accesskey = t
 firefox-relay-opt-in-confirmation-disable =
     .label = Jangan tampilkan lagi
     .accesskey = J

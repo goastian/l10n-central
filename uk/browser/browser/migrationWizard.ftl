@@ -18,7 +18,7 @@ migration-wizard-selection-option-without-profile = { $sourceBrowser }
 # Variables:
 #  $sourceBrowser (String): the name of the browser to import from.
 #  $profileName (String): the name of the user profile to import from.
-migration-wizard-selection-option-with-profile = { $sourceBrowser } — { $profileName }
+migration-wizard-selection-option-with-profile = { $sourceBrowser } – { $profileName }
 
 # Each migrator is expected to include a display name string, and that display
 # name string should have a key with "migration-wizard-migrator-display-name-"
@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge (застарілий)
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Паролі з файлу CSV
 migration-wizard-migrator-display-name-file-bookmarks = Закладки з файлу HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,11 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Список читання (з Safari)
+migration-imported-edge-reading-list = Список читання (з Edge)
 
 ## These strings are shown if the selected browser data directory is unreadable.
 ## In practice, this tends to only occur on Linux when Firefox
@@ -55,7 +60,7 @@ migration-no-permissions-instructions-step1 = Виберіть “Продовж
 #
 # Variables:
 #  $permissionsPath (String): the file system path that the user will need to grant read permission to.
-migration-no-permissions-instructions-step2 = У засобі вибору файлів перейдіть до <code>{ $permissionsPath }</code> і натисніть «Вибрати»
+migration-no-permissions-instructions-step2 = У засобі вибору файлів перейдіть до <code>{ $permissionsPath }</code> і натисніть "Вибрати"
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -71,11 +76,12 @@ migration-bookmarks-option-label = Закладки
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Обране
 migration-logins-and-passwords-option-label = Збережені паролі
+migration-passwords-option-label = Збережені паролі
 migration-history-option-label = Історія перегляду
 migration-extensions-option-label = Розширення
 migration-form-autofill-option-label = Дані автозаповнення форм
 migration-payment-methods-option-label = Способи оплати
-migration-cookies-option-label = Куки
+migration-cookies-option-label = Файли cookie
 migration-session-option-label = Вікна та вкладки
 migration-otherdata-option-label = Інші дані
 migration-passwords-from-file-progress-header = Імпортувати паролі з файлу

@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Mer information om Förbättrat spårningsskydd
 protections-panel-etp-on-header = Förbättrat spårningsskydd är PÅ för den här webbplatsen
 protections-panel-etp-off-header = Förbättrat spårningsskydd är AV för den här webbplatsen
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Förbättrat spårningsskydd
+    .description = På för denna webbplats
+    .aria-label = Förbättrat spårningsskydd: På för { $host }
+protections-panel-etp-toggle-off =
+    .label = Förbättrat spårningsskydd
+    .description = Av för denna webbplats
+    .aria-label = Förbättrat spårningsskydd: Av för { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Fungerar inte webbplatsen?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Varför?
 protections-panel-not-blocking-why-etp-on-tooltip = Blockering av dessa kan förstöra delar av vissa webbplatser. Utan spårare fungerar kanske inte vissa knappar, formulär och inloggningsfält.
 protections-panel-not-blocking-why-etp-off-tooltip = Alla spårare på denna webbplats har laddats eftersom skyddet är avstängt.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Blockering av dessa kan förstöra delar av vissa webbplatser. Utan spårare fungerar kanske inte vissa knappar, formulär och inloggningsfält.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Alla spårare på denna webbplats har laddats eftersom skyddet är avstängt.
 
 ##
 
@@ -105,6 +123,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Reducering av kakbanner
+protections-panel-cookie-banner-blocker-header = Blockering kakbanners
 protections-panel-cookie-banner-handling-enabled = På för denna webbplats
 protections-panel-cookie-banner-handling-disabled = Av för denna webbplats
 protections-panel-cookie-banner-handling-undetected = Webbplatsen stöds för närvarande inte
@@ -114,8 +133,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Vill du stänga av reducering av kakbanners för { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Vill du aktivera reducering av kakbanners för den här webbplatsen?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Blockering kakbanners
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Vill du stänga av blockering av kakbanners för { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Vill du aktivera blockering av kakbanners för den här webbplatsen?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } rensar webbplatsens kakor och uppdaterar sidan. Rensa alla kakor kan logga ut dig eller tömma kundvagnar.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } försöker automatiskt avvisa alla kak-förfrågningar på webbplatser som stöds.
 protections-panel-cookie-banner-view-cancel = Avbryt
 protections-panel-cookie-banner-view-turn-off = Stäng av
 protections-panel-cookie-banner-view-turn-on = Slå på
+protections-panel-cookie-banner-blocker-view-turn-on-description = Slå på och { -brand-short-name } kommer att försöka automatiskt neka kakbanners på den här webbplatsen.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Avbryt
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Stäng av
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Slå på
+protections-panel-report-broken-site =
+    .label = Rapportera trasig webbplats
+    .title = Rapportera trasig webbplats
+
+## Protections panel info message
+
+cfr-protections-panel-header = Surfa utan att bli följd
+cfr-protections-panel-body = Behåll dina data för dig själv. { -brand-short-name } skyddar dig från många av de vanligaste spårarna som följer vad du gör online.
+cfr-protections-panel-link-text = Läs mer

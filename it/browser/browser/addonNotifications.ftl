@@ -14,6 +14,7 @@ xpinstall-prompt-message = Si sta cercando di installare un componente aggiuntiv
 
 xpinstall-prompt-header-unknown = Consentire a questo sito sconosciuto di installare un componente aggiuntivo?
 xpinstall-prompt-message-unknown = Si sta cercando di installare un componente aggiuntivo da un sito sconosciuto. Assicurarsi che il sito sia affidabile prima di proseguire.
+
 xpinstall-prompt-dont-allow =
     .label = Non consentire
     .accesskey = N
@@ -40,18 +41,23 @@ site-permission-install-first-prompt-midi-message = Questo accesso potrebbe non 
 ##
 
 xpinstall-disabled-locked = L’installazione di software è stata disattivata dall’amministratore di sistema.
+xpinstall-disabled-by-policy = L’installazione di software è stata disattivata dalla tua organizzazione.
 xpinstall-disabled = L’installazione di software è attualmente disattivata. Fare clic su Attiva e riprovare.
 xpinstall-disabled-button =
     .label = Attiva
     .accesskey = A
+
 # This message is shown when the installation of an add-on is blocked by enterprise policy.
 # Variables:
 #   $addonName (String): the name of the add-on.
 #   $addonId (String): the ID of add-on.
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) è stato bloccato dall’amministratore di sistema.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) è stato bloccato dalla tua organizzazione.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = L’amministratore di sistema ha impedito a questo sito di richiedere l’installazione di software sul computer.
+addon-install-domain-blocked-by-policy = La tua organizzazione ha impedito a questo sito di richiedere l’installazione di software sul computer.
 addon-install-full-screen-blocked = L’installazione di un componente aggiuntivo non è consentita in modalità a schermo intero, oppure prima di passare a schermo intero.
+
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
 webext-perms-sideload-menu-item = { $addonName } installato in { -brand-short-name }
@@ -74,6 +80,7 @@ addon-removal-title = Rimuovere { $name }?
 addon-removal-message = Rimuovere { $name } da { -brand-shorter-name }?
 addon-removal-button = Rimuovi
 addon-removal-abuse-report-checkbox = Segnala questa estensione a { -vendor-short-name }
+
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -82,6 +89,7 @@ addon-downloading-and-verifying =
        *[other] Download e verifica { $addonCount } comp. aggiuntivi…
     }
 addon-download-verifying = Verifica in corso
+
 addon-install-cancel-button =
     .label = Annulla
     .accesskey = n
@@ -125,4 +133,5 @@ addon-local-install-error-not-signed = Impossibile installare questo componente 
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = Impossibile installare { $addonName } in quanto non compatibile con { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = Impossibile installare { $addonName } in quanto comporta un rischio elevato per la stabilità o la sicurezza.
-
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Non è possibile installare { $addonName } come utente finale, può essere installato solo da un’organizzazione che utilizza criteri aziendali.

@@ -2,29 +2,19 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
 # refactoring them in some way, the script will need updating.
 
-# Variables:
-# $hostname (String) - Hostname of the website with SSL error.
-# $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = Ocorreu um erro durante a ligação a { $hostname }. { $errorMessage }
-
-# Variables:
-# $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
-cert-error-code-prefix = Código de erro: { $error }
-
 psmerr-ssl-disabled = Não é possível ligar de forma segura porque o protocolo SSL foi desativado.
 psmerr-ssl2-disabled = Não é possível ligar de forma segura porque o site utiliza uma versão do protocolo SSL antiga e é insegura.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Recebeu um certificado inválido.  Por favor contacte o administrador do servidor ou endereço de email equivalente e dê-lhes a seguinte informação:
     
     O seu certificado contém o mesmo número de série que o de outro certificado emitido pela mesma autoridade certificadora.  Por favor obtenha um novo certificado com um número de série único.
-
 ssl-error-export-only-server = Não foi possível comunicar de forma segura. O par não suporta encriptação de alta qualidade.
 ssl-error-us-only-server = Não foi possível comunicar de forma segura. O par requer uma encriptação de alta qualidade que não é suportada.
 ssl-error-no-cypher-overlap = Não foi possível comunicar de forma segura com o par: não existe(m) algoritmo(s) de encriptação em comum.
@@ -125,7 +115,7 @@ ssl-error-protocol-version-alert = O par indica uma versão do protocolo não su
 ssl-error-insufficient-security-alert = O servidor requer cifras mais seguras do que as suportadas pelo cliente.
 ssl-error-internal-error-alert = O par indicou que teve um erro interno.
 ssl-error-user-canceled-alert = O utilizador do par cancelou o handshake.
-ssl-error-no-renegotiation-alert = O par não permite a re-negociação dos parâmetros de segurança SSL.
+ssl-error-no-renegotiation-alert = O par não permite a renegociação dos parâmetros de segurança SSL.
 ssl-error-server-cache-not-configured = Cache do servidor SSL não configurado e não desativado para este socket.
 ssl-error-unsupported-extension-alert = O par SSL não tem suporte à extensão TLS hello.
 ssl-error-certificate-unobtainable-alert = O par SSL não conseguiu obter o seu certificado a partir do URL fornecido.
@@ -211,14 +201,6 @@ sec-error-pkcs7-keyalg-mismatch = Não é possível desencriptar: a chave do alg
 sec-error-pkcs7-bad-signature = Falhou a verificação da assinatura: nenhum assinante encontrado, encontrados demasiados assinantes, ou dados impróprios ou corrompidos.
 sec-error-unsupported-keyalg = Algoritmo de chave desconhecido ou não suportado.
 sec-error-decryption-disallowed = Não é possível desencriptar: encriptado utilizando um algoritmo ou tamanho de chave não permitido.
-xp-sec-fortezza-bad-card = O cartão Fortezza não foi iniciado corretamente. Por favor remova-o e devolva-o ao seu emissor.
-xp-sec-fortezza-no-card = Não foram encontrados cartões Fortezza
-xp-sec-fortezza-none-selected = Nenhum cartão Fortezza selecionado
-xp-sec-fortezza-more-info = Por favor escolha uma personalidade para obter informação de
-xp-sec-fortezza-person-not-found = Personalidade não encontrada
-xp-sec-fortezza-no-more-info = Não existe mais informação sobre essa Personalidade
-xp-sec-fortezza-bad-pin = Pin inválido
-xp-sec-fortezza-person-error = Não foi possível inicializar personalidades Fortezza.
 sec-error-no-krl = Não foi encontrado um KRL para o certificado deste site.
 sec-error-krl-expired = O KRL para o certificado deste site expirou.
 sec-error-krl-bad-signature = O KRL para o certificado deste site tem uma assinatura inválida.
@@ -233,9 +215,6 @@ sec-error-cert-nickname-collision = Já existe um certificado com a mesma alcunh
 sec-error-key-nickname-collision = Já existe uma chave com a mesma alcunha.
 sec-error-safe-not-created = erro ao criar o objeto seguro
 sec-error-baggage-not-created = erro ao criar objeto bagagem
-xp-java-remove-principal-error = Não foi possível remover o principal
-xp-java-delete-privilege-error = Não foi possível apagar o privilégio
-xp-java-cert-not-exists-error = Este principal não tem um certificado
 sec-error-bad-export-algorithm = Algoritmo necessário não é permitido.
 sec-error-exporting-certificates = Erro ao tentar exportar certificados.
 sec-error-importing-certificates = Erro ao tentar importar certificados.
@@ -352,3 +331,14 @@ mozilla-pkix-error-invalid-integer-encoding = O servidor apresentou um certifica
 mozilla-pkix-error-empty-issuer-name = O servidor apresentou um certificado com um nome de emissor distinto vazio.
 mozilla-pkix-error-additional-policy-constraint-failed = Uma restrição de política adicional falhou ao validar este certificado.
 mozilla-pkix-error-self-signed-cert = O certificado não é de confiança porque é auto-assinado.
+xp-java-remove-principal-error = Não foi possível remover o principal
+xp-java-delete-privilege-error = Não foi possível apagar o privilégio
+xp-java-cert-not-exists-error = Este principal não tem um certificado
+xp-sec-fortezza-bad-card = O cartão Fortezza não foi iniciado corretamente. Por favor remova-o e devolva-o ao seu emissor.
+xp-sec-fortezza-no-card = Não foram encontrados cartões Fortezza
+xp-sec-fortezza-none-selected = Nenhum cartão Fortezza selecionado
+xp-sec-fortezza-more-info = Por favor escolha uma personalidade para obter informação de
+xp-sec-fortezza-person-not-found = Personalidade não encontrada
+xp-sec-fortezza-no-more-info = Não existe mais informação sobre essa Personalidade
+xp-sec-fortezza-bad-pin = Pin inválido
+xp-sec-fortezza-person-error = Não foi possível inicializar personalidades Fortezza.

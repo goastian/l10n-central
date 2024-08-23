@@ -12,17 +12,31 @@ about-webrtc-document-title = WebRTC-internt
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = spara about:webrtc som
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Visa stängda PeerConnections
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Dölj stängda PeerConnections
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = AEC-loggning
 about-webrtc-aec-logging-off-state-label = Starta AEC-loggning
 about-webrtc-aec-logging-on-state-label = Stoppa AEC-loggning
 about-webrtc-aec-logging-on-state-msg = AEC-loggning aktiv (tala med den som ringer i några minuter och stoppa sedan fångst)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Automatisk omladdning
+about-webrtc-aec-logging-toggled-on-state-msg = AEC-loggning aktiv (tala med den som ringer i några minuter och stoppa sedan fångst)
+about-webrtc-aec-logging-unavailable-sandbox = Miljövariabeln MOZ_DISABLE_CONTENT_SANDBOX=1 krävs för att exportera AEC-loggar. Ställ bara in denna variabel om du förstår de möjliga riskerna.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Fångade loggfiler kan hittas i: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Automatisk omladdning
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = Uppdatera automatiskt som standard
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Uppdatera
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
@@ -84,7 +98,11 @@ about-webrtc-save-page-label = Spara sida
 about-webrtc-debug-mode-msg-label = Felsökningsläge
 about-webrtc-debug-mode-off-state-label = Starta felsökningsläge
 about-webrtc-debug-mode-on-state-label = Stoppa felsökningsläge
+about-webrtc-enable-logging-label = Aktivera WebRTC-loggförinställning
 about-webrtc-stats-heading = Sessionsstatistik
+about-webrtc-peerconnections-section-heading = RTCPeerConnection-statistik
+about-webrtc-peerconnections-section-show-msg = Visa RTCPeerConnection-statistik
+about-webrtc-peerconnections-section-hide-msg = Dölj RTCPeerConnection-statistik
 about-webrtc-stats-clear = Rensa historik
 about-webrtc-log-heading = Anslutningslogg
 about-webrtc-log-clear = Rensa logg
@@ -92,6 +110,10 @@ about-webrtc-log-show-msg = visa logg
     .title = klicka för att expandera denna sektion
 about-webrtc-log-hide-msg = dölj logg
     .title = klicka för att minimera denna sektion
+about-webrtc-log-section-show-msg = Visa logg
+    .title = Klicka för att expandera denna sektion
+about-webrtc-log-section-hide-msg = Dölj logg
+    .title = Klicka för att minimera denna sektion
 about-webrtc-copy-report-button = Kopiera rapport
 about-webrtc-copy-report-history-button = Kopiera rapporthistorik
 
@@ -105,6 +127,14 @@ about-webrtc-copy-report-history-button = Kopiera rapporthistorik
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (stängd) { $now }
 
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Skicka / ta emot: { $codecs }
+about-webrtc-short-send-direction = Skicka: { $codecs }
+about-webrtc-short-receive-direction = Ta emot: { $codecs }
+
 ##
 
 about-webrtc-local-candidate = Lokal kandidat
@@ -116,11 +146,19 @@ about-webrtc-raw-cand-show-msg = visa råa kandidater
     .title = klicka för att expandera denna sektion
 about-webrtc-raw-cand-hide-msg = dölj råa kandidater
     .title = klicka för att minimera denna sektion
+about-webrtc-raw-cand-section-show-msg = Visa råa kandidater
+    .title = Klicka för att expandera denna sektion
+about-webrtc-raw-cand-section-hide-msg = Dölj råa kandidater
+    .title = Klicka för att minimera denna sektion
 about-webrtc-priority = Prioritet
 about-webrtc-fold-show-msg = visa detaljer
     .title = klicka för att expandera denna sektion
 about-webrtc-fold-hide-msg = dölj detaljer
     .title = klicka för att minimera denna sektion
+about-webrtc-fold-default-show-msg = Visa detaljer
+    .title = Klicka för att expandera denna sektion
+about-webrtc-fold-default-hide-msg = Dölj detaljer
+    .title = Klicka för att minimera denna sektion
 about-webrtc-dropped-frames-label = Utelämnade bildrutor:
 about-webrtc-discarded-packets-label = Ignorerade paket:
 about-webrtc-decoder-label = Avkodare
@@ -159,6 +197,17 @@ about-webrtc-configuration-element-provided = Har angetts
 about-webrtc-configuration-element-not-provided = Har inte angetts
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Användarinställda WebRTC-inställningar
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Användarmodifierad WebRTC-konfiguration
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Visa användarmodifierad konfiguration
+about-webrtc-user-modified-configuration-hide-msg = Dölj användarmodifierad konfiguration
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Uppskattad bandbredd
 # The ID of the MediaStreamTrack
@@ -189,9 +238,11 @@ about-webrtc-save-page-msg = sida sparad till: { $path }
 about-webrtc-debug-mode-off-state-msg = spårlogg kan hittas på: { $path }
 about-webrtc-debug-mode-on-state-msg = felsökningsläge aktivt, spårlogg kan hittas på: { $path }
 about-webrtc-aec-logging-off-state-msg = fångade loggfiler kan hittas i: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Sida sparad till: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.

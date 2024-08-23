@@ -14,10 +14,27 @@ default-browser-notification-button =
 
 default-browser-prompt-title-pin = ต้องการทำให้ { -brand-short-name } เป็นเบราว์เซอร์หลักของคุณหรือไม่
 default-browser-prompt-message-pin = นำ { -brand-short-name } มาไว้ที่ปลายนิ้วมือของคุณโดยทำให้เป็นเบราว์เซอร์เริ่มต้นของคุณและปักหมุดเข้ากับแถบงานของคุณ
-default-browser-prompt-message-pin-mac = ให้ { -brand-short-name } อยู่เพียงปลายนี้วของคุณ — ทำให้เป็นเบราว์เซอร์เริ่มต้นและเก็บไว้ใน Dock
+default-browser-prompt-message-pin-mac = นำ { -brand-short-name } มาไว้ที่ปลายนิ้วมือของคุณโดยทำให้เป็นเบราว์เซอร์เริ่มต้นและเก็บไว้บน Dock ของคุณ
 default-browser-prompt-button-primary-pin = ทำให้เป็นเบราว์เซอร์หลัก
 default-browser-prompt-title-alt = ต้องการทำให้ { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้นของคุณหรือไม่
 default-browser-prompt-message-alt = รับความเร็ว ความปลอดภัย และความเป็นส่วนตัวในทุกครั้งที่คุณเรียกดู
 default-browser-prompt-button-primary-alt = ตั้งเป็นเบราว์เซอร์เริ่มต้น
 default-browser-prompt-checkbox-not-again-label = อย่าแสดงข้อความนี้อีก
 default-browser-prompt-button-secondary = ไม่ใช่ตอนนี้
+
+## Strings for a Windows native guidance notification when the user is forced to
+## use Windows Settings to set the default browser. Instructions differ for
+## Windows 10 and 11.
+
+default-browser-guidance-notification-title = ทำให้ { -brand-short-name } เป็นค่าเริ่มต้นของคุณสำเร็จแล้ว
+# Quoted text are keywords to look for in the Windows Settings app.
+default-browser-guidance-notification-body-instruction-win10 =
+    ขั้นตอนที่ 1: ไปที่ การตั้งค่า > แอปเริ่มต้น
+    ขั้นตอนที่ 2: เลื่อนลงไปที่ “เว็บเบราว์เซอร์”
+    ขั้นตอนที่ 3: กดเข้าไปและเลือก { -brand-short-name }
+# Quoted text are keywords to look for in the Windows Settings app.
+default-browser-guidance-notification-body-instruction-win11 =
+    ขั้นตอนที่ 1: ไปที่ การตั้งค่า > แอปเริ่มต้น
+    ขั้นตอนที่ 2: เลือก “ตั้งค่าเริ่มต้น” สำหรับ { -brand-short-name }
+default-browser-guidance-notification-info-page = แสดงให้ฉันเห็น
+default-browser-guidance-notification-dismiss = เสร็จสิ้น

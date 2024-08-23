@@ -3,6 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 tabbrowser-empty-tab-title = لسان جديد
+tabbrowser-empty-private-tab-title = لسان خاص جديد
 tabbrowser-menuitem-close-tab =
     .label = أغلق اللّسان
 tabbrowser-menuitem-close =
@@ -120,6 +121,9 @@ tabbrowser-confirm-close-windows-button =
 
 tabbrowser-confirm-close-tabs-with-key-title = أتريد إغلاق النافذة ومغادرة { -brand-short-name }؟
 tabbrowser-confirm-close-tabs-with-key-button = غادِر { -brand-short-name }
+# Variables:
+#   $quitKey (String): the text of the keyboard shortcut for quitting.
+tabbrowser-confirm-close-tabs-with-key-checkbox = أكّد علي قبل المغادرة باستعمال { $quitKey }
 
 ## Confirmation dialog when opening multiple tabs simultaneously
 
@@ -141,6 +145,10 @@ tabbrowser-confirm-caretbrowsing-checkbox = لا تعرض هذا الحوار م
 
 ##
 
+# Variables:
+#   $domain (String): URL of the page that is trying to steal focus.
+tabbrowser-allow-dialogs-to-get-focus =
+    .label = اسمح لإشعارات مثل هذه من { $domain } بنقلك إلى لسانها
 tabbrowser-customizemode-tab-title = خصّص { -brand-short-name }
 
 ## Context menu buttons, of which only one will be visible at a time
@@ -159,6 +167,8 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = أطلِق صوت الألسنة
     .accesskey = ط
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = يشغّل صوتا
 
 ## Ctrl-Tab dialog
 
@@ -172,3 +182,12 @@ tabbrowser-ctrl-tab-list-all-tabs =
             [many] اعرض { $tabCount } لسانًا
            *[other] اعرض { $tabCount } لسان
         }
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = اكتم اللسان
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = أطلِق صوت اللسان
+tabbrowser-manager-close-tab =
+    .tooltiptext = أغلِق اللسان

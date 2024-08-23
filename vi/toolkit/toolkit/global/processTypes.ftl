@@ -17,6 +17,8 @@ process-type-privilegedmozilla = Nội dung Mozilla đặc quyền
 process-type-extension = Tiện ích mở rộng
 # process used to open file:// URLs
 process-type-file = Tập tin cục bộ
+# process used to instantiate new child processes
+process-type-forkserver = Fork máy chủ
 # process used to isolate a webpage from other web pages
 # to improve security
 process-type-webisolated = Nội dung web bị cô lập
@@ -41,6 +43,13 @@ process-type-socket = Socket
 process-type-rdd = RDD
 # process used to run some IPC actor in their own sandbox
 process-type-utility = Tác nhân IPC hộp cát
+process-type-utility-actor-audio-decoder-generic = Tiện ích Generic Audio Decoder
+process-type-utility-actor-audio-decoder-applemedia = Tiện ích AppleMedia
+process-type-utility-actor-audio-decoder-wmf = Tiện ích Windows Media Foundation
+process-type-utility-actor-mf-media-engine = Tiện ích Media Foundation Engine
+process-type-utility-actor-js-oracle = Tiện ích JavaScript Oracle
+process-type-utility-actor-windows-utils = Tiện ích Windows Utils
+process-type-utility-actor-windows-file-dialog = Tiện ích Windows File Dialog
 
 ##
 ## Other

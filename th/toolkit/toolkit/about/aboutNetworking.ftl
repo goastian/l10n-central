@@ -4,6 +4,7 @@
 
 about-networking-title = เกี่ยวกับเครือข่าย
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = ล้างแคช HTTP
 about-networking-sockets = ซ็อกเก็ต
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = ล้างแคช DNS
@@ -27,20 +28,13 @@ about-networking-family = กลุ่ม
 about-networking-trr = TRR
 about-networking-addresses = ที่อยู่
 about-networking-expires = หมดอายุ (วินาที)
-about-networking-originAttributesSuffix = คีย์การแยก
+about-networking-originAttributesSuffix = คีย์การคัดแยก
 about-networking-flags = ค่าสถานะพิเศษ
 about-networking-messages-sent = ข้อความที่ส่ง
 about-networking-messages-received = ข้อความที่รับ
 about-networking-bytes-sent = จำนวนไบต์ที่ส่ง
 about-networking-bytes-received = จำนวนไบต์ที่รับ
 about-networking-logging = การบันทึก
-about-networking-log-tutorial = ดู<a data-l10n-name="logging">การบันทึกล็อก HTTP</a>สำหรับคำแนะนำเกี่ยวกับวิธีการใช้เครื่องมือนี้
-about-networking-current-log-file = ไฟล์รายการบันทึกปัจจุบัน:
-about-networking-current-log-modules = โมดูลรายการบันทึกปัจจุบัน:
-about-networking-set-log-file = ตั้งไฟล์รายการบันทึก
-about-networking-set-log-modules = ตั้งโมดูลรายการบันทึก
-about-networking-start-logging = เริ่มการบันทึก
-about-networking-stop-logging = หยุดการบันทึก
 about-networking-dns-lookup = การค้นหา DNS
 about-networking-dns-lookup-button = แปลงที่อยู่
 about-networking-dns-domain = โดเมน:

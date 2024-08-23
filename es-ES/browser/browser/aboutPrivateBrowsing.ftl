@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Sin cookies guardadas ni historial, dir
 about-private-browsing-cookie-banners-promo-header = ¡Se acabaron los avisos de cookies!
 about-private-browsing-cookie-banners-promo-button = Reducir los avisos de cookies
 about-private-browsing-cookie-banners-promo-message = Dejar que { -brand-short-name } responda automáticamente las ventanas emergentes de cookies para que pueda volver a navegar sin distracciones. { -brand-short-name } rechazará todas las solicitudes si es posible.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } se encarga de los avisos de cookies por usted
+about-private-browsing-cookie-banners-promo-body = Ahora rechazamos automáticamente muchos avisos de cookies para que pueda ser menos rastreado y volver a navegar sin distracciones.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = No dejar rastro en este dispositivo
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } elimina tus cookies, historial y datos del sitio cuando cierras todas tus ventanas privadas.
+about-private-browsing-felt-privacy-v1-info-link = ¿Quién podría ver mi actividad?

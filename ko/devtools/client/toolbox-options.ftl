@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = prefers-reduced-motion에 단순한 하이라이터 사용
 options-inspector-simplified-highlighters-tooltip =
     .title = prefers-reduced-motion이 활성화되면 단순한 하이라이터를 활성화합니다. 깜박이는 효과를 피하기 위해 강조 표시된 요소 주위에 채워진 사각형 대신 선을 그립니다.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = <kbd>Enter</kbd> 키를 누르면 다음 입력으로 포커스 이동
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = 활성화되면 선택기를 편집할 때 Enter 키를 누르면 속성 이름이나 값이 다음 입력으로 포커스를 이동합니다.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = 색상 이름
+
+## Web Console section
+
+# The heading
+options-webconsole-label = 웹 콘솔
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = 분할 콘솔 사용
+options-webconsole-split-console-tooltip =
+    .title = Esc 키로 분할 콘솔 열기
 
 ## Style Editor section
 

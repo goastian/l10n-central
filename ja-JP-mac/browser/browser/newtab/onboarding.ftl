@@ -51,6 +51,9 @@ mr1-onboarding-import-primary-button-label-attribution = { $previous } から読
 mr1-onboarding-theme-header = 自分らしく
 mr1-onboarding-theme-subtitle = テーマで { -brand-short-name } をパーソナライズできます。
 mr1-onboarding-theme-secondary-button-label = 後で
+newtab-wallpaper-onboarding-title = カラフルな壁紙を試しましょう
+newtab-wallpaper-onboarding-subtitle = 壁紙を選んで新規タブをカラフルに彩りましょう。
+newtab-wallpaper-onboarding-primary-button-label = 壁紙を設定
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = システムテーマ
 mr1-onboarding-theme-label-light = Light
@@ -244,8 +247,8 @@ mr2022-onboarding-colorway-tooltip-dreamer2 =
 mr2022-onboarding-colorway-description-dreamer = <b>Dreamer</b>: 大胆に幸運を引き寄せろ。夢を掲げるあなたの姿は人の勇気を呼び覚ます。
 mr2022-onboarding-colorway-label-innovator = Innovator
 mr2022-onboarding-colorway-tooltip-innovator2 =
-    .title = Innovator (橙)
-mr2022-onboarding-colorway-description-innovator = <b>Innovator</b>: あらゆる場所で機会を掴め。あなたがもたらす革新は周囲の人生を震わせる。
+    .title = Innovator (オレンジ)
+mr2022-onboarding-colorway-description-innovator = <b>Innovator</b>: あらゆる場所で機会をつかめ。あなたがもたらす革新は周囲の人生を震わせる。
 
 ## MR2022 Multistage Mobile Download screen strings
 
@@ -276,7 +279,7 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = 詳細情報を�
 ## MR2022 Multistage Gratitude screen strings
 
 mr2022-onboarding-gratitude-title = より良いウェブ構築の助けになります
-mr2022-onboarding-gratitude-subtitle = Mozilla Foundation が提供する { -brand-short-name } のご利用ありがとうございます。あなたのご協力とともに、よりオープンでアクセシブルな、すべての人にとってのより良いインターネットの構築に努めます。
+mr2022-onboarding-gratitude-subtitle = Ablaze Foundation が提供する { -brand-short-name } のご利用ありがとうございます。あなたのご協力とともに、よりオープンでアクセシブルな、すべての人にとってのより良いインターネットの構築に努めます。
 mr2022-onboarding-gratitude-primary-button-label = 新機能を確認する
 mr2022-onboarding-gratitude-secondary-button-label = ブラウジングを開始する
 
@@ -312,4 +315,38 @@ onboarding-device-migration-image-alt =
     .aria-label = ラップトップコンピューターの画面上のキツネがウェーブしています。ラップトップにマウスが接続されています。
 onboarding-device-migration-title = おかえりなさい！
 onboarding-device-migration-subtitle = { -fxaccount-brand-name(capitalization: "sentence") } にログインして、ブックマークやパスワード、履歴を新しい端末とともに持ち歩きましょう。
+onboarding-device-migration-subtitle2 = アカウントにログインして、ブックマークやパスワード、履歴を新しい端末とともに持ち歩きましょう。
 onboarding-device-migration-primary-button-label = ログイン
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = あなたの安全を守ります
+onboarding-easy-setup-security-and-privacy-subtitle = 私たちの非営利組織によるブラウザーがウェブ上であなたを秘密裏に付け回す企業を阻止します。
+
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = 端末を切り替える時も暗号化されます
+onboarding-mobile-download-security-and-privacy-subtitle = 同期した端末でも { -brand-short-name } があなたのパスワードやブックマークを暗号化して保護します。さらに開いているタブを他の端末から持ち出すことができます。
+
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } はあなたの味方です
+onboarding-gratitude-security-and-privacy-subtitle = Ablaze Foundation による { -brand-short-name } をご使用くださりありがとうございます。あなたのご支援によって、私たちはインターネットをすべての人々のために安全でアクセシブルなものにすることができます。
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = { -brand-short-name } をどのくらい長く使っていますか？
+onboarding-new-user-familiarity-based-survey-title = { -brand-short-name } にどのくらい親しんでいますか？
+onboarding-new-user-survey-subtitle = あなたのフィードバックが { -brand-short-name } をより良くします。
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = 次へ
+onboarding-new-user-survey-legal-link-label = “{ onboarding-new-user-survey-next-button-label }” を選択すると、{ -brand-product-name } の <a data-l10n-name="privacy_notice">プライバシー通知</a> に同意したものとみなされます。
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = 初めて使う
+onboarding-new-user-survey-time-based-option-2 = 使い始めて 1 か月未満
+onboarding-new-user-survey-time-based-option-3 = 1 か月以上、よく使う
+onboarding-new-user-survey-time-based-option-4 = 1 か月以上、たまに使う
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = 初めて使う
+onboarding-new-user-survey-familiarity-based-option-2 = 何度か使っている
+onboarding-new-user-survey-familiarity-based-option-3 = よく使っている
+onboarding-new-user-survey-familiarity-based-option-4 = 以前使ったことがあり、久しぶりに使う

@@ -59,6 +59,7 @@ about-processes-fork-server-process = Fork server ({ $pid })
 about-processes-preallocated-process = Preallocato ({ $pid })
 
 about-processes-utility-process = Utilità ({ $pid })
+about-processes-inference-process = Inferenza ({ $pid })
 
 about-processes-unknown-process = Altro: { $type } ({ $pid })
 
@@ -113,7 +114,6 @@ about-processes-frame-name-many = Sottoframe ({ $number }): { $shortUrl }
 
 # Utility process actor names
 about-processes-utility-actor-unknown = Attore sconosciuto
-about-processes-utility-actor-audio-decoder = Decodificatore audio
 
 about-processes-utility-actor-audio-decoder-generic = Decodificatore audio generico
 about-processes-utility-actor-audio-decoder-applemedia = Decodificatore audio Apple Media
@@ -122,6 +122,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Utilità Windows
+about-processes-utility-actor-windows-file-dialog = Finestra di dialogo per i file di Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:
@@ -182,3 +183,4 @@ memory-unit-GB = GB
 memory-unit-TB = TB
 memory-unit-PB = PB
 memory-unit-EB = EB
+

@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Żadnych zapisanych ciasteczek ani hist
 about-private-browsing-cookie-banners-promo-header = Koniec z komunikatami o ciasteczkach!
 about-private-browsing-cookie-banners-promo-button = Ogranicz informacje o ciasteczkach
 about-private-browsing-cookie-banners-promo-message = Pozwól { -brand-short-name(case: "dat") } automatycznie odpowiadać na komunikaty o ciasteczkach, aby nie odrywać się od przeglądania. { -brand-short-name } odrzuci wszystkie prośby, jeśli to możliwe.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } zajmie się za Ciebie informacjami o ciasteczkach
+about-private-browsing-cookie-banners-promo-body = Teraz automatycznie odrzucamy wiele próśb o akceptację ciasteczek, dzięki czemu mniej Cię śledzą i możesz nie odrywać się od przeglądania.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Nie zostawiaj śladów na tym urządzeniu
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } usuwa Twoje ciasteczka, historię i dane witryn po zamknięciu wszystkich prywatnych okien.
+about-private-browsing-felt-privacy-v1-info-link = Kto może zobaczyć co robię?

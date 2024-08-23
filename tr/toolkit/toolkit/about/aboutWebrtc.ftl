@@ -24,6 +24,7 @@ about-webrtc-aec-logging-off-state-label = AEC kaydını başlat
 about-webrtc-aec-logging-on-state-label = AEC kaydını durdur
 about-webrtc-aec-logging-on-state-msg = AEC kaydı etkin (Arayanla birkaç dakika konuştuktan sonra yakalamayı durdurun)
 about-webrtc-aec-logging-toggled-on-state-msg = AEC kaydı etkin (Arayanla birkaç dakika konuştuktan sonra yakalamayı durdurun)
+about-webrtc-aec-logging-unavailable-sandbox = AEC günlüklerini dışa aktarmak için MOZ_DISABLE_CONTENT_SANDBOX=1 ortam değişkeni gerekiyor. Bu değişkeni yalnızca olası risklerin farkındaysanız ayarlayın.
 # Variables:
 #  $path (String) - The path to which the aec log file is saved.
 about-webrtc-aec-logging-toggled-off-state-msg = Yakalanan günlük dosyaları şurada bulunabilir: { $path }
@@ -32,14 +33,12 @@ about-webrtc-aec-logging-toggled-off-state-msg = Yakalanan günlük dosyaları �
 
 # The autorefresh checkbox causes a stats section to autorefresh its content when checked
 about-webrtc-auto-refresh-label = Otomatik yenile
-# Determines the default state of the Auto Refresh check boxes
-about-webrtc-auto-refresh-default-label = Varsayılan olarak otomatik yenile
 # A button which forces a refresh of displayed statistics
 about-webrtc-force-refresh-button = Yenile
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
-about-webrtc-peerconnection-id-label = PeerConnection ID:
+about-webrtc-peerconnection-id-label = PeerConnection kimliği:
 # The number of DataChannels that a PeerConnection has opened
 about-webrtc-data-channels-opened-label = Açılan veri kanalları:
 # The number of once open DataChannels that a PeerConnection has closed
@@ -98,6 +97,10 @@ about-webrtc-debug-mode-msg-label = Hata ayıklama modu
 about-webrtc-debug-mode-off-state-label = Hata ayıklama modunu başlat
 about-webrtc-debug-mode-on-state-label = Hata ayıklama modunu durdur
 about-webrtc-stats-heading = Oturum istatistikleri
+about-webrtc-enable-logging-label = WebRTC log ön ayarını etkinleştir
+about-webrtc-peerconnections-section-heading = RTCPeerConnection istatistikleri
+about-webrtc-peerconnections-section-show-msg = RTCPeerConnection istatistiklerini göster
+about-webrtc-peerconnections-section-hide-msg = RTCPeerConnection istatistiklerini gizle
 about-webrtc-stats-clear = Geçmişi temizle
 about-webrtc-log-heading = Bağlantı günlüğü
 about-webrtc-log-clear = Günlüğü temizle
@@ -192,6 +195,17 @@ about-webrtc-configuration-element-provided = Sağlandı
 about-webrtc-configuration-element-not-provided = Sağlanmadı
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Kullanıcı tanımlı WebRTC tercihleri
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Kullanıcı tarafından değiştirilen WebRTC yapılandırması
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Kullanıcı tarafından değiştirilen yapılandırmayı göster
+about-webrtc-user-modified-configuration-hide-msg = Kullanıcı tarafından değiştirilen yapılandırmayı gizle
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Tahmini bant genişliği
 # The ID of the MediaStreamTrack
@@ -222,12 +236,11 @@ about-webrtc-save-page-msg = sayfa { $path } konumuna kaydedildi
 about-webrtc-debug-mode-off-state-msg = izleme günlüğü { $path } konumunda bulunabilir
 about-webrtc-debug-mode-on-state-msg = hata ayıklama modu etkin, izleme günlük konumu: { $path }
 about-webrtc-aec-logging-off-state-msg = yakalanan günlük dosyaları şurada bulunabilir: { $path }
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
 about-webrtc-save-page-complete-msg = Sayfa { $path } konumuna kaydedildi
-about-webrtc-debug-mode-toggled-off-state-msg = Izleme günlüğü { $path } konumunda bulunabilir
-about-webrtc-debug-mode-toggled-on-state-msg = Hata ayıklama modu etkin, izleme günlük konumu: { $path }
-
-##
-
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.

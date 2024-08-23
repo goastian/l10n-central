@@ -7,7 +7,7 @@
 
 site-data-settings-window =
     .title = Quản lý cookie  và dữ liệu trang
-site-data-settings-description = Các trang web sau lưu trữ cookie và dữ liệu trang web trên máy tính của bạn. { -brand-short-name } lưu giữ dữ liệu từ các trang web có lưu trữ liên tục cho đến khi bạn xóa, xóa dữ liệu khỏi các trang web với bộ nhớ không lâu dài khi cần thiết.
+site-data-settings-description = Các trang web sau lưu trữ cookie và dữ liệu trang web trên máy tính của bạn. { -brand-short-name } lưu giữ dữ liệu từ các trang web có lưu trữ lâu dài cho đến khi bạn xóa, xóa dữ liệu khỏi các trang web với bộ nhớ không lâu dài khi cần thiết.
 site-data-search-textbox =
     .placeholder = Tìm kiếm trang web
     .accesskey = S

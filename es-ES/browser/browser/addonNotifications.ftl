@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = No se garantiza que este acc
 ##
 
 xpinstall-disabled-locked = La instalación de software ha sido desactivada por el administrador de su sistema.
+xpinstall-disabled-by-policy = La instalación de software ha sido desactivada por su organización.
 xpinstall-disabled = La instalación de software está actualmente desactivada. Pulse Activar y vuelva a intentarlo.
 xpinstall-disabled-button =
     .label = Activar
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) está bloqueado por el administrador del sistema.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = El administrador del sistema evitó que este sitio pida instalar software en su ordenador.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) está bloqueado por su organización.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Su organización impidió que este sitio le pidiera que instalara software en su equipo.
 addon-install-full-screen-blocked = No se permite la instalación de complementos durante o tras acceder al modo de pantalla completa.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -58,6 +66,10 @@ webext-perms-sideload-menu-item = { $addonName } añadido a { -brand-short-name 
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } requiere nuevos permisos
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = Finalizar la instalación de extensiones importadas a { -brand-short-name }
 
 ## Add-on removal warning
 
@@ -120,3 +132,5 @@ addon-local-install-error-not-signed = Este complemento no ha podido ser instala
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } no ha podido ser instalado porque no es compatible con { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = { $addonName } no ha podido ser instalado porque tiene un alto riesgo de causar problemas de estabilidad o seguridad.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = No se puede instalar { $addonName } como usuario final, solo puede instalarlo una organización que use políticas empresariales.

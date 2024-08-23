@@ -111,8 +111,8 @@ downloads-cmd-delete-file =
     .accesskey = E
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
-    .label = Permitir download
-    .accesskey = o
+    .label = Permitir baixar
+    .accesskey = b
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
     .tooltiptext = Remover arquivo
@@ -149,11 +149,6 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = Será aberto em { $hours }h { $minutes }m…
-downloading-file-opens-in-minutes = Será aberto em { $minutes }m…
-downloading-file-opens-in-minutes-and-seconds = Será aberto em { $minutes }m { $seconds }s…
-downloading-file-opens-in-seconds = Será aberto em { $seconds }s…
-downloading-file-opens-in-some-time = Será aberto quando concluir…
 downloading-file-opens-in-hours-and-minutes-2 =
     .value = Será aberto em { $hours }h e { $minutes }min…
 downloading-file-opens-in-minutes-2 =
@@ -183,7 +178,7 @@ downloads-cancel-download =
 downloads-history =
     .label = Mostrar todos os downloads
     .accesskey = s
-# This string is shown at the top of the Download Details Panel, to indicate
+# This string is shown at the top of the download details sub-panel to indicate
 # that we are showing the details of a single download.
 downloads-details =
     .title = Detalhes do download

@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -157,13 +151,26 @@ webrtc-allow-share-camera-and-audio-capture = Να επιτρέπεται στο
 webrtc-allow-share-screen-and-microphone = Να επιτρέπεται στο { $origin } η χρήση του μικροφώνου και η θέαση της οθόνης σας;
 webrtc-allow-share-screen-and-audio-capture = Να επιτρέπεται στο { $origin } η ακρόαση του ήχου αυτής της καρτέλας και η θέαση της οθόνης σας;
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η ακρόαση του ήχου αυτής της καρτέλας;
+webrtc-allow-share-camera-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η χρήση της κάμεράς σας;
+webrtc-allow-share-microphone-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η χρήση του μικροφώνου σας;
+webrtc-allow-share-screen-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η θέαση της οθόνης σας;
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η χρήση άλλων ηχείων;
+webrtc-allow-share-camera-and-microphone-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η χρήση της κάμερας και του μικροφώνου σας;
+webrtc-allow-share-camera-and-audio-capture-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η χρήση της κάμερας και η ακρόαση του ήχου αυτής της καρτέλας;
+webrtc-allow-share-screen-and-microphone-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η χρήση του μικροφώνου και η θέαση της οθόνης σας;
+webrtc-allow-share-screen-and-audio-capture-with-file = Να επιτρέπεται σε αυτό το τοπικό αρχείο η ακρόαση του ήχου αυτής της καρτέλας και η θέαση της οθόνης σας;
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = Να επιτρέπεται στο { $origin } να παραχωρεί στο { $thirdParty } άδεια για ακρόαση του ήχου αυτής της καρτέλας;
 webrtc-allow-share-camera-unsafe-delegation = Να επιτρέπεται στο { $origin } να παραχωρεί στο { $thirdParty } πρόσβαση στην κάμερά σας;
-webrtc-allow-share-microphone-unsafe-delegations = Να επιτρέπεται στο { $origin } να παραχωρεί στο { $thirdParty } πρόσβαση στο μικρόφωνό σας;
 webrtc-allow-share-microphone-unsafe-delegation = Να επιτρέπεται στο { $origin } να παραχωρεί στο { $thirdParty } πρόσβαση στο μικρόφωνό σας;
 webrtc-allow-share-screen-unsafe-delegation = Να επιτρέπεται στο { $origin } να παραχωρεί στο { $thirdParty } άδεια για θέαση της οθόνης σας;
 # "Speakers" is used in a general sense that might include headphones or
@@ -211,7 +218,10 @@ webrtc-action-not-now =
 
 ##
 
-webrtc-remember-allow-checkbox = Απομνημόνευση επιλογής
+webrtc-remember-allow-checkbox = Απομνημόνευση απόφασης
+webrtc-remember-allow-checkbox-camera = Απομνημόνευση για όλες τις κάμερες
+webrtc-remember-allow-checkbox-microphone = Απομνημόνευση για όλα τα μικρόφωνα
+webrtc-remember-allow-checkbox-camera-and-microphone = Απομνημόνευση για όλες τις κάμερες και τα μικρόφωνα
 webrtc-mute-notifications-checkbox = Σίγαση ειδοποιήσεων ιστοτόπου κατά την κοινή χρήση
 webrtc-reason-for-no-permanent-allow-screen = Το { -brand-short-name } δεν μπορεί να επιτρέψει μόνιμη πρόσβαση στην οθόνη σας.
 webrtc-reason-for-no-permanent-allow-audio = Το { -brand-short-name } δεν μπορεί να επιτρέψει μόνιμη πρόσβαση στον ήχο της καρτέλας σας χωρίς να ρωτήσει ποια καρτέλα θα διαμοιραστεί.

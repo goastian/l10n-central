@@ -7,6 +7,7 @@
 
 confirmation-hint-breakage-report-sent = Звіт надіслано. Дякуємо!
 confirmation-hint-login-removed = Запис вилучено!
+confirmation-hint-password-removed = Пароль вилучено!
 confirmation-hint-page-bookmarked = Збережено до закладок
 confirmation-hint-password-saved = Пароль збережено!
 confirmation-hint-password-created = Пароль збережено
@@ -21,3 +22,11 @@ confirmation-hint-send-to-device = Надіслано!
 confirmation-hint-firefox-relay-mask-created = Нова маска створена!
 confirmation-hint-firefox-relay-mask-reused = Наявна маска використана повторно!
 confirmation-hint-screenshot-copied = Знімок екрана скопійовано!
+# Variables:
+#   $tabCount (Number): The number of duplicate tabs closed, at least 1.
+confirmation-hint-duplicate-tabs-closed =
+    { $tabCount ->
+        [one] Закрито { $tabCount } вкладку
+        [few] Закрито { $tabCount } вкладки
+       *[many] Закрито { $tabCount } вкладок
+    }

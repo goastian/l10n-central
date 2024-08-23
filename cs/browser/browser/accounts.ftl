@@ -45,6 +45,9 @@ account-send-tab-to-device-verify = Ověřit účet…
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = Účet
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Tento počítač je nyní propojený se zařízením { $deviceName }.
@@ -95,4 +98,18 @@ account-multiple-tabs-arriving-from-unknown-device =
         [one] Byl přijat { $tabCount } panel
         [few] Byly přijaty { $tabCount } panely
        *[other] Bylo přijato { $tabCount } panelů
+    }
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = Zobrazit nedávno zavřené panely
+account-tabs-closed-remotely =
+    { $closedCount ->
+        [one] { $closedCount } panel aplikace { -brand-short-name } byl zavřen
+        [few] { $closedCount } panely aplikace { -brand-short-name } byly zavřeny
+        [many] { $closedCount } panelů aplikace { -brand-short-name } bylo zavřeno
+       *[other] { $closedCount } panelů aplikace { -brand-short-name } bylo zavřeno
     }

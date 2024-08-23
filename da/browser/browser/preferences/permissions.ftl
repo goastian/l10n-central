@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Undtagelser
-    .style = width: 36em
 permissions-window2 =
     .title = Undtagelser
     .style = min-width: 36em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Indtast venligst et gyldigt værtsnavn
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Undtagelser for udvidet beskyttelse mod sporing
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Du har slået beskyttelse fra for disse websteder.
 permissions-exceptions-etp-window2 =
     .title = Undtagelser for udvidet beskyttelse mod sporing
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Du kan angive, hvilke websteder der har
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Undtagelser - cookies og websteds-data
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Undtagelser - cookies og websteds-data
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Du kan angive, hvilke websteder der altid e
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Undtagelser - Tilstanden Kun-HTTPS
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Undtagelser - Tilstanden Kun-HTTPS
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Du kan slå tilstanden Kun-HTTPS fra for bestemte websteder. { -brand-short-name } vil ikke forsøge at opgradere til en sikker forbindelse for de valgte websteder. Undtagelser gælder ikke for private vinduer.
+permissions-exceptions-https-only-desc2 = Du kan slå tilstanden Kun-HTTPS fra for bestemte websteder. { -brand-short-name } vil ikke forsøge at opgradere til en sikker forbindelse for de valgte websteder.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Tilladte websteder - Pop op-vinduer
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Tilladte websteder - Pop op-vinduer
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Du kan angive hvilke websteder, der må åbn
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Undtagelser - gemte logins
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Undtagelser - gemte logins
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Logins for følgende websteder vil ikke blive gemt
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Undtagelser - Gemte Kodeord
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } gemmer ikke adgangskoder til websteder vist her.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Tilladte websteder - Installation af tilføjelser
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Tilladte websteder - Installation af tilføjelser
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Du kan angive hvilke websteder der må inst
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Indstillinger - automatisk afspilning
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Indstillinger - automatisk afspilning
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Her kan du håndtere de websteder, der ikke ska
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Indstillinger - Tilladelser for beskeder
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Indstillinger - Tilladelser for beskeder
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Dette vil forhindre websteder, der 
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Indstillinger - Tilladelser for position
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Indstillinger - Tilladelser for position
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Dette vil forhindre websteder, der ikke
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Indstillinger - Tilladelser for virtual reality
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Indstillinger - Tilladelser for virtual reality
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Dette vil forhindre websteder, der ikke er an
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Indstillinger - Tilladelser for kamera
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Indstillinger - Tilladelser for kamera
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Dette vil forhindre websteder, der ikke e
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Indstillinger - Tilladelser for mikrofon
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Indstillinger - Tilladelser for mikrofon
     .style = { permissions-window2.style }

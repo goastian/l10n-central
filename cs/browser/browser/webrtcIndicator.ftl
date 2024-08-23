@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -175,6 +169,20 @@ webrtc-allow-share-camera-and-audio-capture = Chcete serveru { $origin } povolit
 webrtc-allow-share-screen-and-microphone = Chcete serveru { $origin } povolit používat váš mikrofon a vidět vaši obrazovku?
 webrtc-allow-share-screen-and-audio-capture = Chcete serveru { $origin } povolit poslouchat zvuky z tohoto panelu a vidět vaši obrazovku?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Povolit tomuto místnímu souboru poslouchat zvuky z tohoto panelu?
+webrtc-allow-share-camera-with-file = Povolit tomuto místnímu souboru používat vaši webkameru?
+webrtc-allow-share-microphone-with-file = Povolit tomuto místnímu souboru používat váš mikrofon?
+webrtc-allow-share-screen-with-file = Povolit tomuto místnímu souboru vidět vaši obrazovku?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Povolit tomuto místnímu souboru používat další zvukové výstupní zařízení?
+webrtc-allow-share-camera-and-microphone-with-file = Povolit tomuto místnímu souboru používat vaši webkameru a mikrofon?
+webrtc-allow-share-camera-and-audio-capture-with-file = Povolit tomuto místnímu souboru používat vaší webkameru a poslouchat zvuky z tohoto panelu?
+webrtc-allow-share-screen-and-microphone-with-file = Povolit tomuto místnímu souboru používat váš mikrofon a vidět vaši obrazovku?
+webrtc-allow-share-screen-and-audio-capture-with-file = Povolit tomuto místnímu souboru poslouchat zvuky z tohoto panelu a vidět vaši obrazovku?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
@@ -234,6 +242,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Zapamatovat si toto rozhodnutí
+webrtc-remember-allow-checkbox-camera = Zapamatovat pro všechny kamery
+webrtc-remember-allow-checkbox-microphone = Zapamatovat pro všechny mikrofony
+webrtc-remember-allow-checkbox-camera-and-microphone = Zapamatovat pro všechny kamery a mikrofony
 webrtc-mute-notifications-checkbox = Ztlumit oznámení ze serverů během sdílení
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } nemůže povolit trvalý přístup k vaší obrazovce.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } nemůže povolit trvalý přístup ke zvuku z vašich panelů bez dotazu, který panel sdílet.

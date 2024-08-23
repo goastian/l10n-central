@@ -70,6 +70,17 @@
         [ins] Monitorem
     }
     .gender = masculine
+-mozmonitor-brand-name =
+    { $case ->
+        [gen] Mozilla Monitoru
+        [dat] Mozilla Monitoru
+        [acc] Mozilla Monitor
+        [voc] Mozilla Monitore
+        [loc] Mozilla Monitoru
+        [ins] Mozilla Monitorem
+       *[nom] Mozilla Monitor
+    }
+    .gender = masculine
 -pocket-brand-name =
     { $case ->
        *[nom] Pocket
@@ -139,6 +150,22 @@
     }
     .gender = masculine
 -relay-brand-short-name = Relay
+-fakespot-brand-name =
+    { $case ->
+        [gen] Fakespotu
+        [dat] Fakespotu
+        [acc] Fakespot
+        [voc] Fakespote
+        [loc] Fakespotu
+        [ins] Fakespotem
+       *[nom] Fakespot
+    }
+    .gender = masculine
+    .case-status = with-cases
+# Note the name of the website is capitalized.
+-fakespot-website-name = Fakespot.com
+# The particle "by" can be localized, "Fakespot" and "Mozilla" should not be localized or transliterated.
+-fakespot-brand-full-name = Fakespot od Mozilly
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name =
@@ -259,3 +286,8 @@
                 [lower] přehledem Firefoxu
             }
     }
+# Firefox Labs is the name for a page in Settings to allow users to learn about
+# experimental and in-development features, and turn those features on and off.
+# The "Labs" portion can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefoxlabs-brand-name = Midori Labs

@@ -19,6 +19,10 @@ support-addons-type = Typ
 support-addons-enabled = Włączone
 support-addons-version = Wersja
 support-addons-id = ID
+legacy-user-stylesheets-title = Przestarzałe arkusze stylów użytkownika
+legacy-user-stylesheets-enabled = Aktywne
+legacy-user-stylesheets-stylesheet-types = Arkusze stylów
+legacy-user-stylesheets-no-stylesheets-found = Nie znaleziono arkuszy stylów
 security-software-title = Oprogramowanie zabezpieczające
 security-software-type = Typ
 security-software-name = Nazwa
@@ -78,6 +82,7 @@ app-basics-key-mozilla = Klucz usługi lokalizacji Mozilli
 app-basics-safe-mode = Tryb awaryjny
 app-basics-memory-size = Rozmiar pamięci (RAM)
 app-basics-disk-available = Dostępne miejsce na dysku
+app-basics-pointing-devices = Urządzenia wskazujące
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -183,6 +188,25 @@ media-codec-support-hw-decoding = Dekodowanie sprzętowe
 media-codec-support-codec-name = Nazwa kodeku
 media-codec-support-supported = Obsługiwane
 media-codec-support-unsupported = Nieobsługiwane
+media-codec-support-error = Informacje o obsłudze kodeków są niedostępne. Spróbuj ponownie po odtworzeniu pliku multimedialnego.
+media-codec-support-lack-of-extension = Zainstaluj rozszerzenie
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informacje o modułach deszyfrowania treści
+media-key-system-name = Nazwa systemu kluczy
+media-video-robustness = Siła wideo
+media-audio-robustness = Siła dźwięku
+media-cdm-capabilities = Możliwości
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Niezaszyfrowana czołówka
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Zgodne z HDCP 2.2
 
 ##
 
@@ -267,6 +291,7 @@ try-newer-driver = Zablokowane dla zainstalowanej wersji sterownika grafiki. Zal
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Parametry ClearType
 compositing = Komponowanie
+support-font-determination = Informacje o debugowaniu widoczności czcionki
 hardware-h264 = Sprzętowe dekodowanie H.264
 main-thread-no-omtc = główny wątek, brak OMTC
 yes = Tak
@@ -396,6 +421,20 @@ support-printing-modified-settings = Zmienione ustawienia drukowania
 support-printing-prefs-name = Nazwa
 support-printing-prefs-value = Wartość
 
+## Remote Settings sections
+
+support-remote-settings-title = Ustawienia zdalne
+support-remote-settings-status = Stan
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Nie działa
+support-remote-settings-last-check = Ostatnie sprawdzenie
+support-remote-settings-local-timestamp = Lokalny czas
+support-remote-settings-sync-history = Historia
+support-remote-settings-sync-history-status = Stan
+support-remote-settings-sync-history-datetime = Data
+support-remote-settings-sync-history-infos = Informacje
+
 ## Normandy sections
 
 support-remote-experiments-title = Zdalne eksperymenty
@@ -405,3 +444,22 @@ support-remote-experiments-see-about-studies = <a data-l10n-name="support-about-
 support-remote-features-title = Zdalne funkcje
 support-remote-features-name = Nazwa
 support-remote-features-status = Stan
+
+## Pointing devices
+
+pointing-device-mouse = Mysz
+pointing-device-touchscreen = Ekran dotykowy
+pointing-device-pen-digitizer = Rysik
+pointing-device-none = Brak urządzeń wskazujących
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Analiza treści (DLP)
+content-analysis-active = Aktywna
+content-analysis-connected-to-agent = Połączono z agentem
+content-analysis-agent-path = Ścieżka do agenta
+content-analysis-agent-failed-signature-verification = Weryfikacja podpisu agenta się nie powiodła
+content-analysis-request-count = Liczba żądań

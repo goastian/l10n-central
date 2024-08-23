@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = Vous êtes actuellement en mode FIPS. Ce m
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = Effacer le mot de passe principal
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = Effacer le mot de passe principal
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = Votre mot de passe principal a ét�
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = Téléchargement du certificat
-    .style = width: 46em
 download-cert-window2 =
     .title = Téléchargement du certificat
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = Examiner le certificat d’AC
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = Requête d’identification d’utilisateur
 client-auth-site-description = Ce site vous demande de vous identifier avec un certificat de sécurité :
 client-auth-choose-cert = Choisir un certificat à présenter comme identification :
+client-auth-send-no-certificate =
+    .label = Ne pas envoyer de certificat
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = « { $hostname } » vous demande de vous identifier avec un certificat de sécurité :
 client-auth-cert-details = Détails du certificat sélectionné :
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = Émis pour : { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = Numéro de série : { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = Valide du { $notBefore } au { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = Utilisations de la clé : { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = Adresses e-mail : { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = Émis par : { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = Stocké sur : { $storedOn }
+client-auth-cert-remember-box =
+    .label = Se souvenir de cette décision
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Mot de passe de sauvegarde du certificat (encore) :
 set-password-reminder = Important : si vous avez oublié votre mot de passe de sécurité, vous ne pourrez plus importer cette sauvegarde plus tard. Veuillez le conserver en un lieu sûr.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = Authentification protégée par jeton
-protected-auth-msg = Veuillez vous authentifier au jeton. La méthode d’authentification dépend du type de votre jeton.
-protected-auth-token = Jeton :
 
 ## Protected authentication alert
 

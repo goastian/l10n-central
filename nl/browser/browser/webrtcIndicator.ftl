@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -157,13 +151,26 @@ webrtc-allow-share-camera-and-audio-capture = { $origin } toestaan om uw camera 
 webrtc-allow-share-screen-and-microphone = { $origin } toestaan uw microfoon te gebruiken en uw scherm te zien?
 webrtc-allow-share-screen-and-audio-capture = { $origin } toestaan om het geluid van dit tabblad te beluisteren en uw scherm te zien?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Toestaan om dit lokale bestand het geluid van dit tabblad te beluisteren?
+webrtc-allow-share-camera-with-file = Toestaan om dit lokale bestand uw camera te gebruiken?
+webrtc-allow-share-microphone-with-file = Toestaan om dit lokale bestand uw microfoon te gebruiken?
+webrtc-allow-share-screen-with-file = Toestaan om dit lokale bestand uw scherm te bekijken?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Toestaan om dit lokale bestand andere luidsprekers te gebruiken?
+webrtc-allow-share-camera-and-microphone-with-file = Toestaan om dit lokale bestand uw camera en microfoon te gebruiken?
+webrtc-allow-share-camera-and-audio-capture-with-file = Toestaan om dit lokale bestand uw camera te gebruiken en het geluid van dit tabblad te beluisteren?
+webrtc-allow-share-screen-and-microphone-with-file = Toestaan om dit lokale bestand uw microfoon te gebruiken en uw scherm te zien?
+webrtc-allow-share-screen-and-audio-capture-with-file = Toestaan om dit lokale bestand het geluid van dit tabblad te beluisteren en uw scherm te zien?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = { $origin } toestaan om { $thirdParty } toestemming te geven om naar de audio van dit tabblad te luisteren?
 webrtc-allow-share-camera-unsafe-delegation = { $origin } toestaan om { $thirdParty } toegang tot uw camera te geven?
-webrtc-allow-share-microphone-unsafe-delegations = { $origin } toestaan om { $thirdParty } toegang tot uw microfoon te geven?
 webrtc-allow-share-microphone-unsafe-delegation = { $origin } toestaan om { $thirdParty } toegang tot uw microfoon te geven?
 webrtc-allow-share-screen-unsafe-delegation = { $origin } toestaan om { $thirdParty } uw scherm te laten zien?
 # "Speakers" is used in a general sense that might include headphones or
@@ -212,6 +219,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Deze beslissing onthouden
+webrtc-remember-allow-checkbox-camera = Onthouden voor alle camera’s
+webrtc-remember-allow-checkbox-microphone = Onthouden voor alle microfoons
+webrtc-remember-allow-checkbox-camera-and-microphone = Onthouden voor alle camera’s en microfoons
 webrtc-mute-notifications-checkbox = Websitemeldingen dempen tijdens delen
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } kan geen permanente toegang tot uw scherm toestaan.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } kan geen permanente toegang tot het geluid van uw tabblad toestaan zonder te vragen welk tabblad moet worden gedeeld.

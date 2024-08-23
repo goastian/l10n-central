@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = 현재 FIPS 모드입니다. FIPS는 비�
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = 기본 비밀번호 재설정
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = 기본 비밀번호 재설정
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = 기본 비밀번호가 재설정되
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = 인증서 다운로드 중
-    .style = width: 46em
 download-cert-window2 =
     .title = 인증서 다운로드 중
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = 인증 기관 인증서 조사
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = 개인 인증서 요청
-client-auth-site-description = 웹 사이트에서 신원을 보증할 인증서를 요청합니다.:
+client-auth-site-description = 이 사이트에서 인증서로 본인을 식별하도록 요청:
 client-auth-choose-cert = 제공할 인증서 선택:
+client-auth-send-no-certificate =
+    .label = 인증서를 보내지 않음
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = “{ $hostname }” 사이트에서 인증서로 본인을 식별하도록 요청:
 client-auth-cert-details = 선택한 인증서 상세 정보
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = 발급 대상: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = 일련 번호: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = { $notBefore }에서 { $notAfter }까지 유효
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = 키 사용처: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = 이메일 주소: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = 발급자: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = 저장소: { $storedOn }
+client-auth-cert-remember-box =
+    .label = 이 선택 기억하기
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = 인증서 백업 비밀번호 (재입력):
 set-password-reminder = 중요: 만약 인증서 백업 비밀번호를 분실하면 백업한 인증서를 다시 가져올 수 없습니다.  안전한 곳에 기록해 두세요.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = 잠금 방식 토큰 인증
-protected-auth-msg = 토큰을 인증하세요. 인증 방식은 토큰의 유형에 따라 다릅니다.
-protected-auth-token = 토큰:
 
 ## Protected authentication alert
 

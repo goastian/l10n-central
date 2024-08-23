@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = Σχετικά με το Glean
-about-glean-description = Το <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a> είναι μια βιβλιοθήκη συλλογής δεδομένων, η οποία χρησιμοποιείται στα προϊόντα της Mozilla. Αυτή η σελίδα απευθύνεται σε προγραμματιστές και δοκιμαστές που πρέπει να <a data-l10n-name="fog-debug-doc-link">ρυθμίσουν τον έλεγχο σφαλμάτων και την καταγραφή κατάστασης στο Glean SDK</a>.
-about-glean-warning = Η κατάχρηση αυτού του περιβάλλοντος ενδέχεται να προκαλέσει κατάρρευση του { -brand-short-name }.
-tag-pings-label = Προσθήκη ετικέτας σε όλα τα απεσταλμένα pings
-log-pings-label = Καταγραφή φόρτου ping σε αρχείο πριν από την αποστολή;
-send-pings-label = Αποστολή ping με όνομα
-controls-button-label = Υποβολή ρυθμίσεων
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -64,6 +54,8 @@ about-glean-manual-testing =
 about-glean-no-ping-label = (χωρίς υποβολή ping)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = Στο προηγούμενο πεδίο, βεβαιωθείτε ότι υπάρχει μια ετικέτα ελέγχου σφαλμάτων που θα θυμάστε εύκολα, ώστε να μπορέσετε να αναγνωρίσετε τα ping σας αργότερα.
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = Ορίστε μια ετικέτα ελέγχου σφαλμάτων που θα θυμάστε εύκολα <span>(20 χαρακτήρες ή λιγότεροι, μόνο αλφαριθμητικά και -)</span>, ώστε να αναγνωρίσετε αργότερα τα ping σας.
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -95,6 +87,19 @@ about-glean-adhoc-explanation =
     ανοίγοντας μια κονσόλα devtools εδώ στο <code>about:glean</code>
     και χρησιμοποιώντας το <code>testGetValue()</code> API όπως το
     <code>Glean.metricCategory.metricName.testGetValue()</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 =
+    Για περισσότερες δοκιμές <i>ad hoc</i>,
+    μπορείτε να καθορίσετε την τρέχουσα τιμή ενός συγκεκριμένου τμήματος ενοργάνισης
+    ανοίγοντας μια κονσόλα devtools εδώ στο <code>about:glean</code>
+    και χρησιμοποιώντας το API <code>testGetValue()</code>, όπως το
+    <code>Glean.metricCategory.metricName.testGetValue()</code>,
+    για μια μέτρηση με το όνομα <code>metric.category.metric_name</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    Σημειώστε ότι χρησιμοποιείτε το API του Glean JS μέσω της κονσόλας εργαλείων ανάπτυξης.
+    Αυτό σημαίνει ότι οι κατηγορίες και τα ονόματα των μετρήσεων μορφοποιούνται σε
+    <code>camelCase</code>, σε αντίθεση με τα API των Rust και C++.
 controls-button-label-verbose = Εφαρμογή ρυθμίσεων και υποβολή ping
 about-glean-about-data-header = Σχετικά με τα δεδομένα
 about-glean-about-data-explanation =

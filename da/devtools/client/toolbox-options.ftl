@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Brug mere enkel markering med prefers-reduced-motion
 options-inspector-simplified-highlighters-tooltip =
     .title = Aktiverer forenklet markering, når prefers-reduced-motion er aktiveret. Tegner linjer i stedet for fyldte rektangler rundt om markerede elementer for at undgå blinkende effekter.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Fokuser næste input på <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Når dette er aktiveret vil en egenskabs navn eller værdi flytte fokus til det næste input, når du trykker på Enter-tasten ved redigering af en selektor.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Farvenavne
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Webkonsol
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Aktiver opdelt konsol
+options-webconsole-split-console-tooltip =
+    .title = Åbn opdelt konsol med Escape-tasten
 
 ## Style Editor section
 
@@ -126,7 +140,7 @@ options-enable-service-workers-http-label = Aktiver service workers over HTTP (n
 options-enable-service-workers-http-tooltip =
     .title = Aktiverer du denne funktion, vil du aktivere service workers over HTTP i alle faneblade, hvor værktøjerne er åbnet.
 # The label for the checkbox that toggles source maps in all tools.
-options-source-maps-label = Aktiver Source-maps
+options-source-maps-label = Aktiver source-maps
 options-source-maps-tooltip =
     .title = Hvis du aktiverer denne indstilling, vil sources blive mappet i værktøjerne.
 # The message shown for settings that trigger page reload

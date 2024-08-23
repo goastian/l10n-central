@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = by { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Recommendation
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Recommendation
     .tooltiptext = Extension recommendation
     .a11y-announcement = Extension recommendation available
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Recommendation
     .tooltiptext = Feature recommendation
     .a11y-announcement = Feature recommendation available
@@ -61,6 +63,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Synchronise your bookmarks everywhere.
 cfr-doorhanger-bookmark-fxa-body = Great find! Now don’t be left without this bookmark on your mobile devices. Get Started with a { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body-2 = Great find! Now don’t be left without this bookmark on your mobile devices. Get started with an account.
 cfr-doorhanger-bookmark-fxa-link-text = Synchronise bookmarks now…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Close button
@@ -105,28 +108,12 @@ cfr-doorhanger-doh-primary-button-2 = Okay
 cfr-doorhanger-doh-secondary-button = Disable
     .accesskey = D
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Your privacy matters. { -brand-short-name } now isolates, or sandboxes, web sites from each other, which makes it harder for hackers to steal passwords, credit card numbers, and other sensitive information.
-cfr-doorhanger-fission-header = Site Isolation
-cfr-doorhanger-fission-primary-button = OK, Got it
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = Learn more
-    .accesskey = L
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Videos on this site may not play correctly on this version of { -brand-short-name }. For full video support, update { -brand-short-name } now.
 cfr-doorhanger-video-support-header = Update { -brand-short-name } to play video
 cfr-doorhanger-video-support-primary-button = Update Now
     .accesskey = U
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = Learn more
-    .title = Expand to learn more about the feature
-spotlight-learn-more-expanded = Learn more
-    .title = Close
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -141,20 +128,6 @@ spotlight-public-wifi-vpn-primary-button = Stay private with { -mozilla-vpn-bran
     .accesskey = S
 spotlight-public-wifi-vpn-link = Not Now
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Test pilot our most powerful
-    privacy experience ever
-spotlight-total-cookie-protection-body = Total Cookie Protection stops trackers from using cookies to stalk you around the web.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } builds a fence around cookies, limiting them to the site you’re on so trackers can’t use them to follow you. With early access, you’ll help optimise this feature so we can keep building a better web for everyone.
-spotlight-total-cookie-protection-primary-button = Turn on Total Cookie Protection
-spotlight-total-cookie-protection-secondary-button = Not now
 
 ## Emotive Continuous Onboarding
 
@@ -231,6 +204,9 @@ cfr-cbh-confirm-button = Reject cookie banners
     .accesskey = R
 cfr-cbh-dismiss-button = Not now
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } just refused a cookie banner for you
+cookie-banner-blocker-onboarding-body = Less distractions, less cookies tracking you on this site.
+cookie-banner-blocker-onboarding-learn-more = Learn more
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -260,7 +236,48 @@ fxa-sync-cfr-secondary = Remind me later
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = Using an older device?
-device-migration-fxa-spotlight-body = Back up your data to make sure you don’t lose important info like bookmarks and passwords — especially if you switch to a new device.
-device-migration-fxa-spotlight-primary-button = How to back up my data
-device-migration-fxa-spotlight-link = Remind me later
+device-migration-fxa-spotlight-heavy-user-header = Don’t forget to back up your data
+device-migration-fxa-spotlight-heavy-user-body = Make sure important info — like bookmarks and passwords — is updated and protected across all your devices.
+device-migration-fxa-spotlight-heavy-user-primary-button = Get started
+device-migration-fxa-spotlight-older-device-header = Peace of mind, from { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = An account keeps your important info updated and protected on any device you connect.
+device-migration-fxa-spotlight-older-device-primary-button = Create an account
+device-migration-fxa-spotlight-getting-new-device-header-2 = New device in your future?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Follow a few simple steps to bring your bookmarks, history, and passwords with you when you get started on a new device.
+device-migration-fxa-spotlight-getting-new-device-primary-button = How to back up my data
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>Make { -brand-short-name } your default PDF reader?</strong> Use { -brand-short-name } to read and edit PDFs saved to your computer.
+pdf-default-notification-set-default-button =
+    .label = Set as default
+pdf-default-notification-decline-button =
+    .label = Not now
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>Open { -brand-short-name } every time you restart your computer?</strong> Now you can set { -brand-short-name } to open automatically when you restart your device.
+launch-on-login-learnmore = Learn more
+launch-on-login-infobar-confirm-button = Yes, open { -brand-short-name }
+    .accesskey = Y
+launch-on-login-infobar-reject-button = Not now
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>Open { -brand-short-name } every time you restart your computer?</strong> To manage your Startup preferences, search “startup” in settings.
+launch-on-login-infobar-final-reject-button = No thanks
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Keep pesky trackers off your tail
+tail-fox-spotlight-subtitle = Say goodbye to annoying ad trackers and settle into a safer, speedy internet experience.
+tail-fox-spotlight-primary-button = Open my links with { -brand-short-name }
+tail-fox-spotlight-secondary-button = Not now

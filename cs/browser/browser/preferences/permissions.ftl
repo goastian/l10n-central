@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Výjimky
-    .style = width: 36em
 permissions-window2 =
     .title = Výjimky
     .style = min-width: 36em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Vložte prosím platný název serveru
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Výjimky pro používání rozšířené ochrany proti sledování
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Pro tyto servery jste ochranu proti sledování vypnuli.
 permissions-exceptions-etp-window2 =
     .title = Výjimky pro používání rozšířené ochrany proti sledování
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Zde můžete určit, které servery maj
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Výjimky pro používání cookies a dat stránek
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Výjimky pro používání cookies a dat stránek
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Zde můžete určit, které servery mohou n
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Servery, které mohou používat nezabezpečený protokol HTTP
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Servery, které mohou používat nezabezpečený protokol HTTP
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Zde můžete určit, které servery mohou používat nezabezpečený protokol HTTP. Na těchto serverech se { -brand-short-name } nebude pokoušet o automatické navázání spojení skrze protokol HTTPS. Pro anonymní okna tento seznam výjimek neplatí.
+permissions-exceptions-https-only-desc2 = Zde můžete určit, které servery mohou používat nezabezpečený protokol HTTP. Na těchto serverech se { -brand-short-name } nebude pokoušet o automatické navázání spojení skrze protokol HTTPS.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Servery, které mohou otevírat vyskakovací okna
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Servery, které mohou otevírat vyskakovací okna
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Zde můžete určit, které servery mohou ot
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Výjimky pro ukládání přihlašovacích údajů
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Výjimky pro ukládání přihlašovacích údajů
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Pro následující servery se nebudou přihlašovací údaje ukládat.
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Výjimky pro ukládání hesel
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } neuloží hesla pro weby uvedené v tomto seznamu.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Důvěryhodné servery pro instalaci doplňků
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Důvěryhodné servery pro instalaci doplňků
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Zde můžete určit, které servery mohou i
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Oprávnění automatického přehrávání
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Oprávnění automatického přehrávání
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Níže můžete nastavit výjimky a vlastní na
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Oprávnění posílat oznámení
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Oprávnění posílat oznámení
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Tímto zakážete všem serverům, 
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Oprávnění zjišťovat polohu
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Oprávnění zjišťovat polohu
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Tímto zakážete všem serverům, kter
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Oprávnění pro virtuální realitu
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Oprávnění pro virtuální realitu
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Tímto zakážete všem serverům, které nej
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Oprávnění přístupu ke kameře
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Oprávnění přístupu ke kameře
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Tímto zakážete všem serverům, které
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Oprávnění přístupu k mikrofonu
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Oprávnění přístupu k mikrofonu
     .style = { permissions-window2.style }

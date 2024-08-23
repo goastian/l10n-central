@@ -20,7 +20,6 @@ styleeditor-save-button = Enregistrer
     .accesskey = S
 styleeditor-options-button =
     .tooltiptext = Options de l’éditeur de style
-styleeditor-media-rules = Règles @media
 styleeditor-at-rules = Règles @
 styleeditor-editor-textbox =
     .data-placeholder = Saisissez du CSS ici.
@@ -49,3 +48,9 @@ styleeditor-stylesheet-rule-count =
         [one] { $ruleCount } règle.
        *[other] { $ruleCount } règles.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Formater la feuille de style
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Formatage des fichiers CSS uniquement

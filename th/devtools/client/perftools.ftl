@@ -30,7 +30,7 @@ perftools-description-intro =
     การอัดบันทึกจะเปิด <a>profiler.firefox.com</a> ในแท็บใหม่ ข้อมูลทั้งหมดจะถูกเก็บ
     ในเครื่อง แต่คุณสามารถเลือกที่จะอัปโหลดเพื่อแบ่งปันได้
 perftools-description-local-build =
-    หากคุณกำลังสร้างโปรไฟล์ให้กับบิลด์ที่คุณคอมไพล์ด้วยตัวเอง บนเครื่องนี้
+    ถ้าคุณกำลังสร้างโปรไฟล์ให้กับบิลด์ที่คุณคอมไพล์ด้วยตัวเอง บนเครื่องนี้
     โปรดเพิ่ม objdir ของบิลด์ของคุณลงในรายการด้านล่างเพื่อให้สามารถ
     นำมาใช้ในการค้นหาข้อมูลสัญลักษณ์ได้
 
@@ -43,7 +43,7 @@ perftools-range-interval-milliseconds = { NUMBER($interval, maxFractionalUnits: 
 
 # The size of the memory buffer used to store things in the profiler.
 perftools-range-entries-label = ขนาดบัฟเฟอร์:
-perftools-custom-threads-label = เพิ่มหัวข้อที่กำหนดเองตามชื่อ:
+perftools-custom-threads-label = เพิ่มเธรดกำหนดเองตามชื่อ:
 perftools-devtools-interval-label = ช่วงเวลา:
 perftools-devtools-threads-label = เธรด:
 perftools-devtools-settings-label = การตั้งค่า
@@ -72,17 +72,15 @@ perftools-button-edit-settings = แก้ไขการตั้งค่า�
 ## These messages are descriptions of the threads that can be enabled for the profiler.
 
 perftools-thread-gecko-main =
-    .title = โปรเซสหลักสำหรับทั้งโปรเซสแม่และโปรเซสเนื้อหา
+    .title = โพรเซสหลักสำหรับทั้งโพรเซสแม่และโพรเซสเนื้อหา
 perftools-thread-compositor =
-    .title = รวมองค์ประกอบที่ถูกระบายสีต่าง ๆ บนหน้านี้เข้าด้วยกัน
+    .title = รวมอิลิเมนต์ที่ถูกระบายสีต่าง ๆ บนหน้านี้เข้าด้วยกัน
 perftools-thread-dom-worker =
     .title = เธรดนี้จัดการทั้ง Web Worker และ Service Worker
 perftools-thread-renderer =
     .title = เมื่อเปิดใช้งาน WebRender แล้ว เธรดที่ดำเนินการเรียก OpenGL
 perftools-thread-render-backend =
     .title = เธรด RenderBackend ของ WebRender
-perftools-thread-paint-worker =
-    .title = เมื่อเปิดใช้งานการวาดนอกเธรดหลักแล้ว เธรดที่ทำการวาด
 perftools-thread-timer =
     .title = ตัวจับเวลาการจัดการเธรด (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
@@ -127,7 +125,12 @@ perftools-onboarding-close-button =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = นักพัฒนาเว็บ

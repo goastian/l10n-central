@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name(capitalization: "upper") }
     .tooltiptext = { -fxaccount-brand-name(capitalization: "upper") }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Účet
+    .tooltiptext = Účet
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Přidat stránku do záložek
-    .accesskey = P
-    .tooltiptext = Přidá tuto stránku do záložek
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Přidat stránku do záložek
-    .accesskey = P
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Upravit záložku
-    .accesskey = p
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Přidat stránku do záložek
-    .accesskey = P
-    .tooltiptext = Přidá tuto stránku do záložek ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Upravit záložku
-    .accesskey = P
-    .tooltiptext = Upraví tuto záložku
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Upravit záložku
-    .accesskey = P
-    .tooltiptext = Upraví tuto záložku ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Přidat stránku do záložek…
     .accesskey = P
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Otevřít odkaz v novém anonymním okně
     .accesskey = t
-main-context-menu-bookmark-link =
-    .label = Přidat do záložek
-    .accesskey = d
 main-context-menu-bookmark-link-2 =
     .label = Přidat do záložek…
     .accesskey = P
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Zkopírovat odkaz
     .accesskey = a
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Zkopírovat odkaz bez sledovacích prvků
+    .accesskey = k
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Poslat audio e-mailem…
     .accesskey = a
-main-context-menu-plugin-play =
-    .label = Spustit zásuvný modul
-    .accesskey = p
-main-context-menu-plugin-hide =
-    .label = Skrýt zásuvný modul
-    .accesskey = S
 main-context-menu-save-to-pocket =
     .label = Uložit stránku do { -pocket-brand-name(case: "gen") }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Použit uložené uživatelské jméno
     .accesskey = u
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Použít uložené heslo
     .accesskey = u
@@ -341,6 +312,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = g
 main-context-menu-manage-logins2 =
     .label = Správa přihlašovacích údajů
+    .accesskey = S
+main-context-menu-manage-passwords =
+    .label = Správa hesel
     .accesskey = S
 main-context-menu-keyword =
     .label = Přiřadit k tomuto vyhledávání klíčové slovo…
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Znovu načíst rám
     .accesskey = m
-main-context-menu-frame-bookmark =
-    .label = Přidat rám do záložek
-    .accesskey = d
 main-context-menu-frame-add-bookmark =
     .label = Přidat rám do záložek…
     .accesskey = P
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Zobrazit informace o rámu
     .accesskey = i
-main-context-menu-print-selection =
-    .label = Vytisknout výběr
-    .accesskey = r
 main-context-menu-print-selection-2 =
     .label = Vytisknout výběr…
     .accesskey = r

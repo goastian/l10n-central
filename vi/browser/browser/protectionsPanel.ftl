@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Thông tin thêm về trình chống theo dõi nâng cao
 protections-panel-etp-on-header = Trình chống theo dõi nâng cao đã được BẬT cho trang này
 protections-panel-etp-off-header = Trình chống theo dõi nâng cao đã bị TẮT cho trang này
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Trình chống theo dõi nâng cao
+    .description = Đã bật trên trang này
+    .aria-label = Trình chống theo dõi nâng cao: Đã bật cho { $host }
+protections-panel-etp-toggle-off =
+    .label = Trình chống theo dõi nâng cao
+    .description = Đã tắt trên trang này
+    .aria-label = Trình chống theo dõi nâng cao: Đã tắt cho { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Trang web không hoạt động?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Tại sao?
 protections-panel-not-blocking-why-etp-on-tooltip = Chặn những thứ này có thể phá vỡ các yếu tố của một số trang web. Không có trình theo dõi, một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động.
 protections-panel-not-blocking-why-etp-off-tooltip = Tất cả các trình theo dõi trên trang web này đã được tải vì bảo vệ bị tắt.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Chặn những thứ này có thể phá vỡ các yếu tố của một số trang web. Không có trình theo dõi, một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Tất cả các trình theo dõi trên trang web này đã được tải vì bảo vệ bị tắt.
 
 ##
 
@@ -105,6 +123,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Giảm biểu ngữ cookie
+protections-panel-cookie-banner-blocker-header = Trình chặn biểu ngữ cookie
 protections-panel-cookie-banner-handling-enabled = Bật cho trang web này
 protections-panel-cookie-banner-handling-disabled = Tắt cho trang web này
 protections-panel-cookie-banner-handling-undetected = Trang web hiện không được hỗ trợ
@@ -114,8 +133,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Tắt giảm biểu ngữ cookie cho { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Bật giảm biểu ngữ cookie cho trang này?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Trình chặn biểu ngữ cookie
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Tắt trình chặn biểu ngữ cookie cho { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Bật trình chặn biểu ngữ cookie cho trang web này?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } sẽ xóa cookie của trang web này và làm mới trang. Xóa tất cả cookie có thể khiến bạn đăng xuất hoặc làm trống giỏ hàng.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } sẽ thử tự động từ chối tất cả các yêu cầu cookie trên các trang web được hỗ trợ.
 protections-panel-cookie-banner-view-cancel = Hủy bỏ
 protections-panel-cookie-banner-view-turn-off = Tắt
 protections-panel-cookie-banner-view-turn-on = Bật
+protections-panel-cookie-banner-blocker-view-turn-on-description = Bật nó và { -brand-short-name } sẽ cố gắng tự động từ chối các biểu ngữ cookie trên trang này.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Hủy bỏ
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Tắt
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Bật
+protections-panel-report-broken-site =
+    .label = Báo cáo trang web bị hỏng
+    .title = Báo cáo trang web bị hỏng
+
+## Protections panel info message
+
+cfr-protections-panel-header = Duyệt mà không bị theo dõi
+cfr-protections-panel-body = Giữ dữ liệu của bạn cho chính mình. { -brand-short-name } bảo vệ bạn khỏi nhiều trình theo dõi phổ biến nhất theo dõi những gì bạn làm trực tuyến.
+cfr-protections-panel-link-text = Tìm hiểu thêm

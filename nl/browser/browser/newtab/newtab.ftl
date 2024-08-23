@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nieuw tabblad
 newtab-settings-button =
@@ -20,13 +20,12 @@ newtab-personalize-dialog-label =
 newtab-search-box-search-button =
     .title = Zoeken
     .aria-label = Zoeken
-
-# Variables
-#  $engine (String): the name of the user's default search engine
+# Variables:
+#   $engine (string) - The name of the user's default search engine
 newtab-search-box-handoff-text = Met { $engine } zoeken of voer adres in
 newtab-search-box-handoff-text-no-engine = Voer zoekterm of adres in
-# Variables
-#  $engine (String): the name of the user's default search engine
+# Variables:
+#   $engine (string) - The name of the user's default search engine
 newtab-search-box-handoff-input =
     .placeholder = Met { $engine } zoeken of voer adres in
     .title = Met { $engine } zoeken of voer adres in
@@ -35,7 +34,6 @@ newtab-search-box-handoff-input-no-engine =
     .placeholder = Voer zoekterm of adres in
     .title = Voer zoekterm of adres in
     .aria-label = Voer zoekterm of adres in
-
 newtab-search-box-text = Zoeken op het web
 newtab-search-box-input =
     .placeholder = Zoeken op het web
@@ -47,15 +45,14 @@ newtab-topsites-add-search-engine-header = Zoekmachine toevoegen
 newtab-topsites-add-shortcut-header = Nieuwe snelkoppeling
 newtab-topsites-edit-topsites-header = Topwebsite bewerken
 newtab-topsites-edit-shortcut-header = Snelkoppeling bewerken
+newtab-topsites-add-shortcut-label = Snelkoppeling toevoegen
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Voer een titel in
-
 newtab-topsites-url-label = URL
 newtab-topsites-url-input =
     .placeholder = Typ of plak een URL
 newtab-topsites-url-validation = Geldige URL vereist
-
 newtab-topsites-image-url-label = URL van aangepaste afbeelding
 newtab-topsites-use-image-link = Een aangepaste afbeelding gebruiken…
 newtab-topsites-image-validation = Afbeelding kon niet worden geladen. Probeer een andere URL.
@@ -84,15 +81,13 @@ newtab-topsite-sponsored = Gesponsord
 newtab-menu-section-tooltip =
     .title = Menu openen
     .aria-label = Menu openen
-
 # Tooltip for dismiss button
 newtab-dismiss-button-tooltip =
     .title = Verwijderen
     .aria-label = Verwijderen
-
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
-#  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
+#   $title (string) - The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
 newtab-menu-content-tooltip =
     .title = Menu openen
     .aria-label = Contextmenu openen voor { $title }
@@ -162,21 +157,18 @@ newtab-label-removed-bookmark = Bladwijzer verwijderd
 newtab-label-recommended = Trending
 newtab-label-saved = Opgeslagen naar { -pocket-brand-name }
 newtab-label-download = Gedownload
-
 # This string is used in the story cards to indicate sponsored content
 # Variables:
-#  $sponsorOrSource (String): This is the name of a company or their domain
+#   $sponsorOrSource (string) - The name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Gesponsord
-
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
-#  $sponsor (String): This is the name of a sponsor
+#   $sponsor (string) - The name of a sponsor
 newtab-label-sponsored-by = Gesponsord door { $sponsor }
-
 # This string is used under the image of story cards to indicate source and time to read
 # Variables:
-#  $source (String): This is the name of a company or their domain
-#  $timeToRead (Number): This is the estimated number of minutes to read this story
+#   $source (string) - The name of a company or their domain
+#   $timeToRead (number) - The estimated number of minutes to read this story
 newtab-label-source-read-time = { $source } · { $timeToRead } min.
 
 ## Section Menu: These strings are displayed in the section context menu and are
@@ -205,17 +197,19 @@ newtab-section-expand-section-label =
 newtab-section-header-topsites = Topwebsites
 newtab-section-header-recent-activity = Recente activiteit
 # Variables:
-#  $provider (String): Name of the corresponding content provider.
+#   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Aanbevolen door { $provider }
+newtab-section-header-stories = Verhalen die tot nadenken stemmen
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
 newtab-empty-section-highlights = Begin met surfen, en we tonen hier een aantal geweldige artikelen, video’s en andere pagina’s die u onlangs hebt bezocht of waarvoor u een bladwijzer hebt gemaakt.
-
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
-#  $provider (String): Name of the content provider for this section, e.g "Pocket".
+#   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = U bent weer bij. Kijk later nog eens voor meer topverhalen van { $provider }. Kunt u niet wachten? Selecteer een populair onderwerp voor meer geweldige verhalen van het hele web.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = U bent weer bij. Kijk later nog eens voor meer verhalen. Kunt u niet wachten? Selecteer een populair onderwerp voor meer geweldige verhalen van het hele web.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -236,25 +230,27 @@ newtab-pocket-learn-more = Meer info
 newtab-pocket-cta-button = { -pocket-brand-name } gebruiken
 newtab-pocket-cta-text = Bewaar de verhalen die u interessant vindt in { -pocket-brand-name }, en stimuleer uw gedachten met boeiende leesstof.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } maakt deel uit van de { -brand-product-name }-familie
-
-# A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Opslaan naar { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Opgeslagen naar { -pocket-brand-name }
-
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Meer verhalen laden
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = U bent helemaal bij!
-newtab-pocket-last-card-desc = Kom later terug voor meer.
-newtab-pocket-last-card-image =
-    .alt = U bent helemaal bij
-
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Opslaan
 newtab-pocket-saved = Opgeslagen
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Meer zoals dit
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Niets voor mij
+newtab-toast-thumbs-up-or-down = Bedankt. Uw feedback helpt ons uw feed te verbeteren.
+newtab-toast-dismiss-button =
+    .title = Sluiten
+    .aria-label = Sluiten
+
+## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
+
+newtab-pocket-onboarding-discover = Ontdek het beste van internet
+newtab-pocket-onboarding-cta = { -pocket-brand-name } verkent een breed scala aan publicaties om de meest informatieve, inspirerende en betrouwbare inhoud rechtstreeks naar uw { -brand-product-name }-browser te brengen.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
@@ -266,6 +262,11 @@ newtab-error-fallback-refresh-link = Vernieuw de pagina om het opnieuw te prober
 
 newtab-custom-shortcuts-title = Snelkoppelingen
 newtab-custom-shortcuts-subtitle = Opgeslagen of bezochte websites
+newtab-custom-shortcuts-toggle =
+    .label = Snelkoppelingen
+    .description = Opgeslagen of bezochte websites
+# Variables
+#   $num (number) - Number of rows to display
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } rij
@@ -274,9 +275,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Gesponsorde snelkoppelingen
 newtab-custom-pocket-title = Aanbevolen door { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Uitzonderlijke inhoud, samengesteld door { -pocket-brand-name }, onderdeel van de { -brand-product-name }-familie
+newtab-custom-stories-toggle =
+    .label = Aanbevolen verhalen
+    .description = Uitzonderlijke inhoud, verzameld door de { -brand-product-name }-familie
 newtab-custom-pocket-sponsored = Gesponsorde verhalen
 newtab-custom-pocket-show-recent-saves = Onlangs opgeslagen items tonen
 newtab-custom-recent-title = Recente activiteit
 newtab-custom-recent-subtitle = Een selectie van recente websites en inhoud
+newtab-custom-recent-toggle =
+    .label = Recente activiteit
+    .description = Een selectie van recente websites en inhoud
+newtab-custom-weather-toggle =
+    .label = Weer
+    .description = De weersverwachting van vandaag in een oogopslag
 newtab-custom-close-button = Sluiten
 newtab-custom-settings = Meer instellingen beheren
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Achtergronden
+newtab-wallpaper-reset = Standaardwaarden
+newtab-wallpaper-light-red-panda = Rode panda
+newtab-wallpaper-light-mountain = Witte berg
+newtab-wallpaper-light-sky = Lucht met paarse en roze wolken
+newtab-wallpaper-light-color = Blauwe, roze en gele vormen
+newtab-wallpaper-light-landscape = Berglandschap met blauwe mist
+newtab-wallpaper-light-beach = Strand met palmboom
+newtab-wallpaper-dark-aurora = Aurora Borealis
+newtab-wallpaper-dark-color = Rode en blauwe vormen
+newtab-wallpaper-dark-panda = Rode panda verborgen in bos
+newtab-wallpaper-dark-sky = Stadslandschap met een nachtelijke hemel
+newtab-wallpaper-dark-mountain = Landschap met berg
+newtab-wallpaper-dark-city = Paars stadslandschap
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Effen kleuren
+newtab-wallpaper-blue = Blauw
+newtab-wallpaper-light-blue = Lichtblauw
+newtab-wallpaper-light-purple = Lichtpaars
+newtab-wallpaper-light-green = Lichtgroen
+newtab-wallpaper-green = Groen
+newtab-wallpaper-beige = Beige
+newtab-wallpaper-yellow = Geel
+newtab-wallpaper-orange = Oranje
+newtab-wallpaper-pink = Roze
+newtab-wallpaper-light-pink = Lichtroze
+newtab-wallpaper-red = Rood
+newtab-wallpaper-dark-blue = Donkerblauw
+newtab-wallpaper-dark-purple = Donkerpaars
+newtab-wallpaper-dark-green = Donkergroen
+newtab-wallpaper-brown = Bruin
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Abstract
+newtab-wallpaper-abstract-green = Groene vormen
+newtab-wallpaper-abstract-blue = Blauwe vormen
+newtab-wallpaper-abstract-purple = Paarse vormen
+newtab-wallpaper-abstract-orange = Oranje vormen
+newtab-wallpaper-gradient-orange = Verloop oranje en roze
+newtab-wallpaper-abstract-blue-purple = Blauwe en paarse vormen
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Foto’s
+newtab-wallpaper-beach-at-sunrise = Strand bij zonsopgang
+newtab-wallpaper-beach-at-sunset = Strand bij zonsondergang
+newtab-wallpaper-storm-sky = Onweerslucht
+newtab-wallpaper-sky-with-pink-clouds = Lucht met roze wolken
+newtab-wallpaper-red-panda-yawns-in-a-tree = Rode panda gaapt in een boom
+newtab-wallpaper-white-mountains = Witte bergen
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Foto door <a data-l10n-name="name-link">{ $author_string }</a> op <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Probeer een vleugje kleur
+newtab-wallpaper-feature-highlight-content = Geef uw Nieuw-tabbladpagina een frisse uitstraling met achtergronden.
+newtab-wallpaper-feature-highlight-button = Begrepen
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Sluiten
+    .aria-label = Pop-up sluiten
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Weersverwachting bekijken voor { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Gesponsord
+newtab-weather-menu-change-location = Locatie wijzigen
+newtab-weather-change-location-search-input = Locatie zoeken
+newtab-weather-menu-weather-display = Weerweergave
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Eenvoudig
+newtab-weather-menu-change-weather-display-simple = Wisselen naar eenvoudige weergave
+newtab-weather-menu-weather-display-option-detailed = Gedetailleerd
+newtab-weather-menu-change-weather-display-detailed = Wisselen naar gedetailleerde weergave
+newtab-weather-menu-temperature-units = Temperatuureenheden
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenheit
+newtab-weather-menu-temperature-option-celsius = Celsius
+newtab-weather-menu-change-temperature-units-fahrenheit = Wisselen naar Fahrenheit
+newtab-weather-menu-change-temperature-units-celsius = Wisselen naar Celsius
+newtab-weather-menu-hide-weather = Weer op nieuw tabblad verbergen
+newtab-weather-menu-learn-more = Meer info
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Weergegevens zijn momenteel niet beschikbaar.

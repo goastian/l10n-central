@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = รหัสผ่านจากไฟล์ CSV
 migration-wizard-migrator-display-name-file-bookmarks = ที่คั่นหน้าจากไฟล์ HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = รายการอ่าน (จาก Safari)
+migration-imported-edge-reading-list = รายการอ่าน (จาก Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } ไม่มีสิทธิ์เข้าถึงโปรไฟล์ของเบราว์เซอร์อื่น ๆ ซึ่งติดตั้งบนอุปกรณ์นี้
+migration-no-permissions-instructions = ถ้าต้องการนำเข้าข้อมูลจากเบราว์เซอร์อื่นต่อ ให้มอบสิทธิ์เข้าถึงโฟลเดอร์โปรไฟล์ของเบราว์เซอร์นั้นแก่ { -brand-short-name }
+migration-no-permissions-instructions-step1 = ให้เลือก “ดำเนินการต่อ”
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = ในเครื่องมือเลือกไฟล์ ให้นำทางไปที่ <code>{ $permissionsPath }</code> แล้วคลิก “เลือก”
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,7 +76,9 @@ migration-bookmarks-option-label = ที่คั่นหน้า
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = รายการโปรด
 migration-logins-and-passwords-option-label = การเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
+migration-passwords-option-label = รหัสผ่านที่บันทึกไว้
 migration-history-option-label = ประวัติการเรียกดู
+migration-extensions-option-label = ส่วนขยาย
 migration-form-autofill-option-label = ข้อมูลกรอกแบบฟอร์มอัตโนมัติ
 migration-payment-methods-option-label = วิธีการชำระเงิน
 migration-cookies-option-label = คุกกี้
@@ -68,6 +89,7 @@ migration-passwords-from-file-success-header = นำเข้ารหัสผ
 migration-passwords-from-file = กำลังตรวจสอบหารหัสผ่านในไฟล์
 migration-passwords-new = รหัสผ่านใหม่
 migration-passwords-updated = รหัสผ่านที่มีอยู่
+migration-passwords-from-file-no-valid-data = ไฟล์นี้ไม่มีข้อมูลรหัสผ่านที่ถูกต้องใด ๆ โปรดเลือกไฟล์อื่น
 migration-passwords-from-file-picker-title = นำเข้าไฟล์รหัสผ่าน
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -107,9 +129,23 @@ migration-bookmarks-from-file-picker-title = นำเข้าไฟล์ท�
 migration-bookmarks-from-file-progress-header = นำเข้าที่คั่นหน้า
 migration-bookmarks-from-file = ที่คั่นหน้า
 migration-bookmarks-from-file-success-header = นำเข้าที่คั่นหน้าสำเร็จแล้ว
+migration-bookmarks-from-file-no-valid-data = ไฟล์นี้ไม่มีข้อมูลที่คั่นหน้าใด ๆ โปรดเลือกไฟล์อื่น
+# A description for the .html file format that may be shown as the file type
+# filter by the operating system.
+migration-bookmarks-from-file-html-filter-title =
+    { PLATFORM() ->
+        [macos] เอกสาร HTML
+       *[other] ไฟล์ HTML
+    }
 # A description for the .json file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-json-filter-title = ไฟล์ JSON
+# Shown in the migration wizard after importing bookmarks from a file
+# has completed.
+#
+# Variables:
+#  $newEntries (Number): the number of imported bookmarks.
+migration-wizard-progress-success-new-bookmarks = { $newEntries } ที่คั่นหน้า
 migration-import-button-label = นำเข้า
 migration-choose-to-import-from-file-button-label = นำเข้าจากไฟล์
 migration-import-from-file-button-label = เลือกไฟล์
@@ -131,19 +167,27 @@ migration-list-bookmark-label = ที่คั่นหน้า
 migration-list-favorites-label = รายการโปรด
 migration-list-password-label = รหัสผ่าน
 migration-list-history-label = ประวัติ
+migration-list-extensions-label = ส่วนขยาย
 migration-list-autofill-label = ข้อมูลกรอกอัตโนมัติ
 migration-list-payment-methods-label = วิธีการชำระเงิน
 
 ##
 
 migration-wizard-progress-header = กำลังนำเข้าข้อมูล
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = นำเข้าข้อมูลสำเร็จแล้ว
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = การนำเข้าข้อมูลเสร็จสมบูรณ์
 migration-wizard-progress-icon-in-progress =
     .aria-label = กำลังนำเข้า…
 migration-wizard-progress-icon-completed =
     .aria-label = เสร็จสมบูรณ์
 migration-safari-password-import-header = นำเข้ารหัสผ่านจาก Safari
-migration-safari-password-import-steps-header = หากต้องการนำเข้ารหัสผ่านจาก Safari:
+migration-safari-password-import-steps-header = ถ้าต้องการนำเข้ารหัสผ่านจาก Safari:
 migration-safari-password-import-step1 = ใน Safari ให้เปิดเมนู “Safari” แล้วไปที่ การตั้งค่า > รหัสผ่าน
 migration-safari-password-import-step2 = เลือกปุ่ม <img data-l10n-name="safari-icon-3dots"/> แล้วเลือก “ส่งออกรหัสผ่านทั้งหมด”
 migration-safari-password-import-step3 = บันทึกไฟล์รหัสผ่าน
@@ -172,6 +216,32 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } รายการโปรด
        *[other] { $quantity } รายการโปรด
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions = { $quantity } ส่วนขยาย
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } จาก { $quantity } ส่วนขยาย
+migration-wizard-progress-extensions-support-link = เรียนรู้ว่า { -brand-product-name } จับคู่ส่วนขยายอย่างไร
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = ไม่มีส่วนขยายที่ตรงกัน
+migration-wizard-progress-extensions-addons-link = เรียกดูส่วนขยายสำหรับ { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #
@@ -193,6 +263,12 @@ migration-wizard-progress-success-history =
        *[other] จาก { $maxAgeInDays } วันก่อน
     }
 migration-wizard-progress-success-formdata = ประวัติแบบฟอร์ม
-migration-wizard-safari-permissions-sub-header = หากต้องการนำเข้าที่คั่นหน้าและประวัติการเรียกดูจาก Safari:
+# Shown in the migration wizard after importing payment methods from another
+# browser has completed.
+#
+# Variables:
+#  $quantity (Number): the number of successfully imported payment methods
+migration-wizard-progress-success-payment-methods = { $quantity } วิธีการชำระเงิน
+migration-wizard-safari-permissions-sub-header = ถ้าต้องการนำเข้าที่คั่นหน้าและประวัติการเรียกดูจาก Safari:
 migration-wizard-safari-instructions-continue = ให้เลือก “ดำเนินการต่อ”
 migration-wizard-safari-instructions-folder = เลือกโฟลเดอร์ Safari จากในรายการ แล้วเลือก “เปิด”

@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = Cài đặt kết nối
-    .style =
-        { PLATFORM() ->
-            [macos] width: 44em
-           *[other] width: 49em
-        }
 connection-window2 =
     .title = Cài đặt kết nối
     .style =
@@ -27,6 +20,9 @@ connection-proxy-option-no =
 connection-proxy-option-system =
     .label = Dùng các thiết lập proxy của hệ thống
     .accesskey = D
+connection-proxy-option-wpad =
+    .label = Sử dụng Tự động phát hiện cài đặt Proxy của hệ thống
+    .accesskey = g
 connection-proxy-option-auto =
     .label = Tự động dò thiết lập của proxy cho mạng này
     .accesskey = m
@@ -73,14 +69,12 @@ connection-proxy-autologin-checkbox =
     .label = Không yêu cầu xác nhận nếu đã lưu mật khẩu
     .accesskey = n
     .tooltiptext = Tùy chọn này xác thực ngầm bạn với proxy khi bạn đã lưu thông tin ủy nhiệm của chúng. Bạn sẽ được yêu cầu nếu việc xác thực thất bại.
+connection-proxy-socks4-remote-dns =
+    .label = DNS của proxy khi sử dụng SOCKS v4
+    .accesskey = 4
 connection-proxy-socks-remote-dns =
     .label = DNS của proxy khi dùng SOCKS v5
     .accesskey = d
-connection-dns-over-https =
-    .label = Kích hoạt DNS qua HTTPS
-    .accesskey = b
-connection-dns-over-https-url-resolver = Sử dụng nhà cung cấp
-    .accesskey = c
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

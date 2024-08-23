@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = 显示更多标签页
     .tooltiptext = 显示此设备的更多标签页
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = 休眠标签页
+    .tooltiptext = 查看本设备的休眠标签页
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = 没有打开的标签页
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -89,11 +93,12 @@ appmenu-remote-tabs-noclients = 想查看您在其他设备上的标签页吗？
 appmenu-remote-tabs-connectdevice =
     .label = 关联其他设备
 appmenu-remote-tabs-welcome = 查看您的其他设备上的标签页列表。
-appmenu-remote-tabs-unverified = 您的账号需要验证。
+appmenu-remote-tabs-unverified = 您的账户需要验证。
 appmenuitem-fxa-toolbar-sync-now2 = 立即同步
 appmenuitem-fxa-sign-in = 登录 { -brand-product-name }
 appmenuitem-fxa-manage-account = 管理账户
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = 账户
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = 性能分析器
     .tooltiptext = 分析器正在捕捉性能分析记录
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 展示更多信息
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = 适合调试大部分 Web 应用程序，开销较低。
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = 排查 { -brand-shorter-name } 功耗
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = 功耗
+profiler-popup-presets-debug-description = 在 { -brand-shorter-name } 中调试时使用。开销较高，请勿用于性能用途，仅应用于了解浏览器行为。
+profiler-popup-presets-debug-label =
+    .label = 调试
 profiler-popup-presets-custom-label =
     .label = 自定义
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = 管理历史
-appmenu-reopen-all-tabs = 重新打开所有标签页
-appmenu-reopen-all-windows = 重新打开所有窗口
 appmenu-restore-session =
     .label = 恢复先前的浏览状态
 appmenu-clear-history =
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = 浏览器工具
 appmenu-developer-tools-extensions =
     .label = 面向开发者的扩展
+appmenuitem-report-broken-site =
+    .label = 反馈网站问题
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = 登录账户
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = 接收数据外泄警报
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = 掩藏真实邮箱地址和电话号码
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = 保护在线活动

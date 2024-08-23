@@ -4,595 +4,482 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>它是一款轻量、快速、安全的浏览器，致力于保护用户的隐私和安全 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在促进网络发展。 想支持我们？ <label data-l10n-name="helpus-donateLink">点此捐款</label>
-
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的国产浏览器。 它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在提升网络浏览体验。 想要帮助我们吗？ 请考虑 <label data-l10n-name="helpus-donateLink">捐赠支持</label> 。
+icon-creator = 图标设计师： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
+contributors = 查看 <label data-l10n-name="about-contributor">贡献者与开发者名单</label>
 #################################################################### about:preferences ####################################################################
 
 pane-design-title = 设计
-category-design =
+category-design = 
     .tooltiptext = { pane-design-title }
-design-header = 设计
-
-feature-requires-restart = 更改设置后需要重新启动
-
-tab-width = 标签的最小宽度
-preferences-tabs-newtab-position = 新标签页的位置
-open-new-tab-use-default =
- .label = 在默认位置打开新标签页
-open-new-tab-at-the-end =
- .label = 在标签栏末尾打开新标签
+design-header = { pane-design-title }
+feature-requires-restart = 需要重启以应用更改
+tab-width = 标签页的最小宽度
+tab-height = Minimum height of tabs
+preferences-tabs-newtab-position = 新标签页位置
+open-new-tab-use-default = 
+    .label = 在默认位置打开新标签页
+open-new-tab-at-the-end = 
+    .label = 在标签栏末尾打开新标签页
 open-new-tab-next-to-current = 
- .label = 在当前标签右侧打开新标签
-enable-multitab = 
- .label = 启用多行标签 
+    .label = 在当前标签页右侧打开新标签页
 multirow-tabs-limit = 
- .label = 启用标签行数限制
+    .label = 启用多行标签页的行数限制
 multirow-tabs-newtab = 
- .label = 始终将 "打开新标签 "按钮放在多行标签内
-multirow-tabs-value = 多行标签栏标签最大行数
+    .label = 将 “打开新标签页” 按钮放在标签栏的最底行末尾
+multirow-tabs-value = 启用多行标签页时的行数
 enable-tab-sleep = 
- .label = 启用标签休眠
-tab-sleep-timeout-minutes-value = 多久后休眠未激活标签 (单位：分钟)
+    .label = 启用标签页自动休眠
+tab-sleep-timeout-minutes-value = 标签页在未活动多久后进入休眠状态 (分钟)
 tab-sleep-settings-button = 设置...
-tab-sleep-settings-dialog-title =
- .title = 标签休眠设置
-tab-sleep-settings-dialog-excludehosts-label = 排除域名
-tab-sleep-settings-dialog-excludehosts-label-2 = 一行一个赢
-tab-sleep-tab-context-menu-excludetab = 请勿让此标签页进入休眠状态
-enable-floorp-workspace =
- .label = 启用工作空间
-workspace-warring = 工作空间无法与标签分组插件一同使用。如果您想要使用标签分组插件，请禁用工作空间并重新启动 { -brand-short-name}。
+tab-sleep-settings-dialog-title = 
+    .title = 标签页自动休眠设置
+tab-sleep-settings-dialog-excludehosts-label = 排除主机名
+tab-sleep-settings-dialog-excludehosts-label-2 = 每行输入一个主机名。
+tab-sleep-tab-context-menu-excludetab = 保持此标签页处于活动状态
 enable-tab-scroll-change = 
- .label = 通过滚轮切换标签
-enable-tab-scroll-reverse =
- .label = 反转标签页滚动方向
-enable-tab-scroll-wrap =
- .label = 在边缘处循环滚动标签页
+    .label = 使用鼠标滚轮切换标签页
+enable-tab-scroll-reverse = 
+    .label = 反转滚动标签页的方向
+enable-tab-scroll-wrap = 
+    .label = 在边缘处循环滚动标签页
 enable-double-click-block = 
- .label = 双击关闭标签
-enable-show-pinned-tabs-title =
- .label = 显示固定标签页的标题
-Mouse-side-button = 
- .label = 带侧键鼠标模式（隐藏前进和后退按钮）
-
+    .label = 双击关闭标签页
+enable-show-pinned-tabs-title = 
+    .label = 显示已固定标签页的标题
 tabbar-preference = 标签栏
-
-None-mode = 
- .label= 默认模式
-
+tab-normal-mode = 
+    .label = 默认模式
 hide-horizontality-tabs = 
- .label= 隐藏横向标签栏（横向标签栏留白）
-
+    .label = 隐藏在横向标签栏上的标签页
 verticalTab-setting = 
- .label = 隐藏横向标签栏（横向标签栏不留白）
-
-move-tabbar-position =
- .label = 标签栏在书签栏下方
-
+    .label = 优化浏览器以适应垂直标签栏
+move-tabbar-position = 
+    .label = 在工具栏下方显示标签栏
 tabbar-on-bottom = 
- .label = 标签栏在窗口下方
-
-tabbar-favicon-color =
- .label = 标签栏图标颜色
-
+    .label = 在窗口底部显示标签栏
+tabbar-favicon-color = 
+    .label = 使用当前网站的图标颜色为标签栏着色
 tabbar-style-preference = 标签栏样式
-
-horizontal-tabbar =
- .label = 横向标签栏
-
-tabbar-style-description = 需要重新启动 { -brand-short-name } 以完全应用此设置。
-multirow-tabbar =
- .label = 多行标签栏
-vertical-tabbar =
- .label = 垂直标签栏 (实验性)
-native-tabbar-tip = 这个功能基于 Firefox 侧边栏，所以你不能与其他侧边栏插件同时使用。
-
-hover-vertical-tab =
- .label = 鼠标移动到垂直标签栏处后垂直标签栏自动扩展
-
+horizontal-tabbar = 
+    .label = 横向标签栏
+tabbar-style-description = 需要重新启动 { -brand-short-name } 才能完全应用此设置。
+multirow-tabbar = 
+    .label = 多行标签栏
+vertical-tabbar = 
+    .label = 垂直标签栏 (实验性功能)
+native-vertical-tab-show-right = 
+    .label = 在窗口右侧显示垂直标签栏
+native-vertical-tab-show-padding = 
+    .label = 在窗口顶部显示空白间隙
+hover-vertical-tab = 
+    .label = 折叠垂直标签栏
+floorp-show-vertical-tab-newtab-button = 
+    .label = 在垂直标签栏内显示 “打开新标签页” 按钮
+floorp-show-vertical-tab-scrollbar = 
+    .label = 在垂直标签栏上显示滚动条
 TST = Tree Style Tab
-about-TST = Tree Style Tab是一个受欢迎的插件，可以将标签以树状结构显示。Midori 10内置了这个插件。请安装此插件以恢复Midori 10内置的Tree Style Tab功能。
+about-TST = Tree Style Tab 是一个受欢迎的扩展，允许您以树状结构显示标签页。 { -brand-short-name } 已经内置了这个插件。请安装此插件以恢复 { -brand-short-name } 内置的垂直标签栏功能。
 treestyletab-Settings = 
- .label = 折叠 Tree Style Tab
-
+    .label = 折叠 Tree Style Tab
 sidebar-reverse-position-toolbar = 在另一侧显示侧边栏
+bookmarks-bar-settings = 书签工具栏 (每次只能选择一个选项)
+bookmarks-focus-mode = 
+    .label = 隐藏书签工具栏，除非悬停在导航栏上
+bookmarks-bottom-mode = 
+    .label = 在 { -brand-short-name } 底部显示书签工具栏
+navbar-settings = 导航栏
+show-nav-bar-bottom = 
+    .label = 在 { -brand-short-name } 底部显示工具栏 (实验性功能)
+disable-extension-check-compatibility-option = 
+    .label = 不检查与附加组件的兼容性(已废弃)
+other-preference = 其他设置
+search-positon-top = 
+    .label = 在页面顶部显示搜索栏
+allow-auto-restart = 
+    .label = 在更改需要重启的设置时，会自动重新启动
+disable-fullscreen-notification = 
+    .label = 进入全屏时不显示通知
 
-bookmarks-bar-settings = 书签工具栏（每次只能选择一个选项）
-bookmarks-focus-mode =
- .label = 书签栏自动隐藏
-bookmarks-bottom-mode =
- .label = 书签栏显示在浏览器窗口底部
+## Browser Theme
 
-nav-bar-settings = 导航栏设置
-show-nav-bar-bottom =
- .label =  在 { -brand-short-name } 窗口底部显示导航栏
-
-material-effect =
- .label = 允许 Mica for Everyone 修改浏览器外观
-disable-extension-check-compatibility-option =
- .label =  不检查附加组件的兼容性
-other-preference = 其他选项
-
-enable-userscript = 
- .label = 启用旧版组件
-about-legacy-components = 启用此功能可能会导致意外错误或致命错误
-
-Search-positon-top =
- .label = 在页面顶部显示搜索栏
-allow-auto-restart =
- .label = 更改需要重新启动的设置时自动重新启动
-
-browser-rest-mode =
- .label = 启用老板键（F9)
-
-disable-fullscreen-notification =
- .label = 观看视频时禁用全屏通知
- 
-floorp-updater = { -brand-short-name } 更新设置
-enable-floorp-updater = 
- .label = 启动时检查 { -brand-short-name } 更新
-floorp-update-latest = 
- .label = 通知： { -brand-short-name } 已更新到最新
-
-## system theme color
-
-system-color-settings = 主题有浅色和深色两种模式，任君选择。
+system-color-settings = 一些主题具备深色和浅色模式，请选择您想要使用的模式。
 preferences-theme-appearance-header = 主题模式
-
-system-theme-dark =
- .label = 暗黑模式
-
+system-theme-dark = 
+    .label = 深色
 system-theme-light = 
- .label = 明亮模式
- 
-system-theme-auto =  
- .label = 默认模式
+    .label = 浅色
+system-theme-auto = 
+    .label = 跟随我的系统外观
 
-## user interface prefernces
+## User interface preferences
 
 ui-preference = 浏览器外观
-preferences-browser-appearance-description = 你可以从第三方编写的优秀 Midori 外观中进行选择。有些设计可能与您的配置文件不兼容。
-
-firefox-proton =
- .label = Firefox Proton 设计
-
-firefox-proton-fix =
- .label = Firefox Proton FIX 设计
-
+preferences-browser-appearance-description = 选择一个内置的第三方设计应用于 { -brand-short-name }。某些设计可能与您的配置不兼容。
+firefox-proton = 
+    .label = Firefox Proton UI
 firefox-photon-lepton = 
- .label = Firefox Photon・Lepton 设计
- 
-floorp-legacy =  
- .label = Midori 传统设计（未来的版本可能不支持）
+    .label = Firefox Photon・Lepton UI
+floorp-fluentUI = 
+    .label = Microsoft Fluent UI (已废弃)
+floorp-fluerialUI = 
+    .label = { -brand-short-name } Fluerial UI (New)
 
-floorp-fluentUI =
- .label = Microsoft Fluent UI 设计
- 
-floorp-fluerialUI =
- .label = Midori Fluerial UI
+## Download Manager
 
-floorp-gnomeUI =
- .label = GNOME 桌面设计（依赖于系统主题和 GTK）
-
-## download mgr
 download-notification-preferences = 下载通知
-start-always-notify =
- .label = 开始下载时通知
+start-always-notify = 
+    .label = 仅在开始下载时通知
 finish-always-notify = 
- .label = 完成下载时通知
-always-notify =
- .label = 开始下载和完成下载都通知
-do-not-notify =
- .label = 禁用通知
+    .label = 仅在下载完成时通知
+always-notify = 
+    .label = 开始下载和下载完成时通知
+do-not-notify = 
+    .label = 禁用下载通知
 
-floorp-translater = 翻译功能设置
-click-to-option =
-    .label = 打开设置...
-    .accesskey = O
+## Sidebar
 
-## sidebar
 profiles-button-label = 管理配置文件
 floorp-help-button-label = { -brand-short-name } 支持
+appmenuitem-reboot = 
+    .label = 重新启动
 
-appmenuitem-reboot =
- .label = 重启
- 
-## useagent
-
-UserAgent-preference = User Agent
-default-useragent-mode =
- .label = 使用 Firefox User Agent (默认)
-windows-chrome-useragent-mode =
- .label = 模拟 Chrome（Windows）
-macOS-chrome-useragent-mode =
- .label = 模拟 Chrome（macOS）
-linux-chrome-useragent-mode =
- .label = 模拟 Chrome（Linux）
-mobile-chrome-useragent-mode =
- .label = 模拟 移动端
-use-custom-useragent-mode =
- .label = 自定义 User Agent
- 
 ## DMR UI
-download-mgr-UI =
- .label = 使用简化的下载管理器
-downloading-red-color =
- .label = 在下载过程中红色高亮下载管理器图标
 
-sidebar-preferences = 侧边工具栏（类似 Opera，垂直工具栏）
-
-bsb-preferences = 侧边栏设置
+download-mgr-UI = 
+    .label = 启用 SimpleUI 下载管理器
+downloading-red-color = 
+    .label = 下载时使用红色下载图标
+sidebar-preferences = 侧边栏
+bsb-preferences = 浏览器管理器侧边栏设置
 view-sidebar2-right = 
- .label = 显示在浏览器窗口右侧
-enable-sidebar2 =
- .label = 启用侧边工具栏
+    .label = 在右侧显示浏览器管理器侧边栏
+enable-sidebar2 = 
+    .label = 启用浏览器管理器侧边栏
 visible-bms = 
- .label = 可见的侧边工具栏
- 
-custom-URL-option = 设置侧边工具栏快捷网址
+    .label = 显示浏览器管理器侧边栏
+hide-bms-to-unload-panel = 
+    .label = 隐藏面板时卸载面板
+enable-addons-in-sidebar2-with-experimental = 
+    .label = 在浏览器管理器侧边栏启用扩展内容脚本 (实验性功能)
+enable-addons-in-sidebar2 = 
+    .label = 在浏览器管理器侧边栏启用扩展内容脚本
+sidebar2-enable-addons-desc = 如果启用此设置，广告拦截扩展和其他扩展将在侧边栏中工作。但并非所有扩展都能正常工作。
+custom-URL-option = 设置 Web 面板网址
 set-custom-URL-button = 
-    .label = 设置快捷网址...
+    .label = 设置自定义 URL...
     .accesskey = S
-
 pane-BSB-title = { bsb-header }
-category-BSB =
+category-BSB = 
     .tooltiptext = { pane-BSB-title }
-
 category-downloads = 
     .tooltiptext = { files-and-applications-title }
-
-bsb-header = 侧边工具栏
-bsb-context = 选择容器身份
+bsb-header = 浏览器管理器侧边栏
+bsb-context = 使用以下容器
 bsb-userAgent-label = 
-  .label = 使用移动端 User Agent 
-bsb-width = 面板宽度 (如果设置为0, 则使用全局宽度)
-bsb-page = 需要打开的网页
-
-bsb-add = 添加面板到侧边工具栏
-
-bsb-setting = 面板设置
-
-bsb-add-title =
- .title = { bsb-add }
-
+    .label = 在此 Web 面板中使用移动端用户代理
+bsb-width = 宽度 (如果设置为 0，将使用全局值)
+bsb-page = 要打开的页面
+bsb-add = 在浏览器管理器的侧边栏上添加 Web 面板
+bsb-setting = Web 面板设置
+bsb-add-title = 
+    .title = { bsb-add }
 bsb-setting-title = 
- .title = { bsb-setting }
-
-bsb-browser-manager-sidebar =
-  .label = { sidebar2-browser-manager-sidebar }
-
-bsb-bookmark-sidebar =
-  .label = { sidebar2-bookmark-sidebar }
-
-bsb-history-sidebar =
-  .label = { sidebar2-history-sidebar }
-
-bsb-download-sidebar =
-  .label = { sidebar2-download-sidebar }
-
-bsb-notes-sidebar =
-  .label = { sidebar2-notes-sidebar }
-
+    .title = { bsb-setting }
+bsb-browser-manager-sidebar = 
+    .label = { sidebar2-browser-manager-sidebar }
+bsb-bookmark-sidebar = 
+    .label = { sidebar2-bookmark-sidebar }
+bsb-history-sidebar = 
+    .label = { sidebar2-history-sidebar }
+bsb-download-sidebar = 
+    .label = { sidebar2-download-sidebar }
+bsb-notes-sidebar = 
+    .label = { sidebar2-notes-sidebar }
 bsb-website = 
-  .label = 网站
-
-sidebar2-pref-delete =
- .label = 删除
- 
-sidebar2-pref-setting =
- .label = 设置
-
-sidebar2-global-width = 侧边工具栏全局面板宽度
-
-use-icon-provider-option = 侧边栏工具图标提供商
-
-use-icon-provider-option-google =
- .label = Google
-
-use-icon-provider-option-duckduckgo =
- .label = DuckDuckGo
-
-use-icon-provider-option-yandex =
- .label = Yandex (中国大陆可用)
-
-use-icon-provider-option-hatena =
- .label = Hatena (中国大陆可用)
- 
-memory-and-performance = 内存性能设置
-
+    .label = 网址
+sidebar2-pref-delete = 
+    .label = 删除
+sidebar2-pref-setting = 
+    .label = 设置
+sidebar2-global-width = 全局 Web 面板宽度
+use-icon-provider-option = 使用图标提供商
+use-icon-provider-option-google = 
+    .label = Google
+use-icon-provider-option-duckduckgo = 
+    .label = DuckDuckGo
+use-icon-provider-option-yandex = 
+    .label = Yandex (中国大陆可用)
+use-icon-provider-option-hatena = 
+    .label = Hatena (中国大陆可用)
+memory-and-performance = 内存和性能
 min-memory = 
-    .label = 最小内存使用 (低性能)
-
+    .label = 最小内存使用量 (低性能)
 balance-memory = 
-    .label = 平衡性能和内存使用
-
+    .label = 平衡内存使用率和性能
 max-memory = 
-    .label = 最佳速度和性能 (高内存使用) 
-
-delete-border-and-roundup-option =
-  .label = 隐藏界面边框（除网页区域），网页区域圆角
+    .label = 最佳速度和性能 (高内存使用率)
+delete-border-and-roundup-option = 
+    .label = 将页面边角修圆
 
 ## DualTheme
-dualtheme-enable =
- .label = 启用双重主题
 
-newtab-background = { -brand-short-name } 主页背景设置
-
-newtab-background-random-image =
-    .label = 使用随机的 Unsplash 图片
-
-newtab-background-gradation =
-    .label = 渐变色
-
-newtab-background-not-background =
-    .label = 不显示背景
-    
-newtab-background-selected-image =
-    .label = 使用选定文件夹中的图片
-
-newtab-background-folder = 选定的文件夹
-
+dualtheme-enable = 
+    .label = 启用双重主题
+newtab-background = { -brand-short-name } 主页背景
+newtab-background-random-image = 
+    .label = 来自 Unsplash 的随机图片
+newtab-background-gradation = 
+    .label = 渐变
+newtab-background-not-background = 
+    .label = 禁用背景
+newtab-background-selected-image = 
+    .label = 自定义文件夹...
+newtab-background-selected-one-image = 
+    .label = 自定义图像...
+newtab-background-folder = 使用此文件夹中的图像：
+newtab-background-image = 使用此图片：
+newtab-choose-image = 选择图像...
 newtab-background-folder-reload = 
-  .label = 重新载入图片
-
+    .label = 重新加载图像
 newtab-background-folder-default = 
-  .label = 还原默认设置
-
+    .label = 恢复默认值
 newtab-background-folder-open = 
-  .label = 打开文件夹
-
-newtab-background-folder-choose = 选择图片文件夹
-
-newtab-background-extensions = 图片后缀 (使用","间隔)
-
+    .label = 打开文件夹
+newtab-background-folder-choose = 选择图像文件夹...
+newtab-background-image-choose = 选择图像...
+newtab-background-extensions = 使用以下文件扩展名的图像 (用 “,” 分隔)
 disable-blur-on-newtab = 
-  .label = 在 { -brand-short-name } 主页上禁用模糊效果
-  
-## lepton preferences
+    .label = 禁用 { -brand-short-name } 主页中的模糊效果
+disable-releasenote-on-newtab = 
+    .label = 禁用 { -brand-short-name } 主页中的发布说明和支持链接
+disable-imagecredit-on-newtab = 
+    .label = 在 { -brand-short-name } 主页中禁用图片来源 (Unsplash)
 
-about-lepton = 使用 Lepton 自定义 { -brand-short-name }，变更无需重启 { -brand-short-name }。
+## Lepton Preferences
 
-lepton-preference-button =
-    .label = Lepton UI 设置
+about-lepton = 使用 Lepton 自定义 { -brand-short-name }
+lepton-preference-button = 
+    .label = Lepton 设置...
     .accesskey = L
-
-lepton-header = Lepton UI 设置
-
-lepton-preference = Lepton UI 设置
+lepton-header = Lepton 设置
+lepton-preference = Lepton 设置
 photon-mode = 
-    .label = Photon UI 模式
-
+    .label = 使用 Photon 设计
 lepton-mode = 
-    .label = Lepton UI 模式
-
-protonfix-mode =
-    .label = Protonfix 模式
-    
-autohide-preference = 自动隐藏设置
-
-floorp-lepton-enable-tab-autohide =
+    .label = 使用 Lepton 设计
+protonfix-mode = 
+    .label = 使用经过优化的 Proton 设计
+autohide-preference = 自动隐藏浏览器元素
+floorp-lepton-enable-tab-autohide = 
     .label = 自动隐藏标签栏
-floorp-lepton-enable-navbar-autohide =
-    .label = 自动隐藏导航栏
-floorp-lepton-enable-sidebar-autohide =
+floorp-lepton-enable-navbar-autohide = 
+    .label = 自动隐藏工具栏
+floorp-lepton-enable-sidebar-autohide = 
     .label = 自动隐藏侧边栏
-floorp-lepton-enable-urlbar-autohide =
+floorp-lepton-enable-urlbar-autohide = 
     .label = 自动隐藏地址栏
-floorp-lepton-enable-back-button-autohide =
-    .label = 自动隐藏【后退】
-floorp-lepton-enable-forward-button-autohide =
-    .label = 自动隐藏【前进】
-floorp-lepton-enable-page-action-button-autohide =
-    .label = 自动隐藏地址栏内工具按钮
-floorp-lepton-enable-toolbar-overlap =
-    .label = 导航工具栏和地址栏显示同一行
-floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
-    .label =  (启用后可能会引起界面布局异常)
-
-hide-preference = 隐藏组件设置
-
-floorp-lepton-enable-tab_icon-hide =
-    .label = 隐藏标签图标
-floorp-lepton-enable-tabbar-hide =
+floorp-lepton-enable-back-button-autohide = 
+    .label = 自动隐藏 “后退” 按钮
+floorp-lepton-enable-forward-button-autohide = 
+    .label = 自动隐藏 “前进” 按钮
+floorp-lepton-enable-page-action-button-autohide = 
+    .label = 自动隐藏地址栏上的按钮
+floorp-lepton-enable-toolbar-overlap = 
+    .label = 在网站内容上显示工具栏
+floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide = 
+    .label = 显示 “从左到右” 内容时自动隐藏工具栏
+hide-preference = 管理浏览器元素
+floorp-lepton-enable-tab_icon-hide = 
+    .label = 隐藏标签页图标
+floorp-lepton-enable-tabbar-hide = 
     .label = 隐藏标签栏
-floorp-lepton-enable-navbar-hide =
-    .label = 隐藏导航栏
-floorp-lepton-enable-sidebar_header-hide =
+floorp-lepton-enable-navbar-hide = 
+    .label = 隐藏工具栏
+floorp-lepton-enable-sidebar_header-hide = 
     .label = 隐藏侧边栏标题
-floorp-lepton-enable-urlbar_iconbox-hide =
-    .label = 隐藏地址栏内工具按钮
-floorp-lepton-enable-bookmarkbar_icon-hide =
-    .label = 隐藏书签工具栏书签布标
-floorp-lepton-enable-bookmarkbar_label-hide =
-    .label = 隐藏书签工具栏书签文本
-floorp-lepton-enable-disabled_menu-hide =
-    .label = 隐藏被禁用的右键菜单项目
-
-floorp-lepton-disable-userChrome-icon =
-    .label = 禁用弹出菜单和面板图标
-floorp-lepton-disable-userChrome-menu-icon =
-.label = 启用 Lepton 的弹出菜单图标
-    
-positon-preferences = 位置设置
-
-floorp-lepton-enable-centered-tab =
-    .label = 标签栏标题居中
-floorp-lepton-enable-centered-urlbar =
-    .label = 地址栏文本居中
-floorp-lepton-enable-centered-bookmarkbar =
-    .label = 书签工具栏居中
-
-urlbar-preferences = 地址栏设置
-
-floorp-lepton-enable-urlbar-icon-move-to-left =
-    .label = 地址栏工具移动到左边
-floorp-lepton-enable-urlname-go_button_when_typing =
-    .label = 在地址栏栏中输入时，显示 【前往】按钮。
-floorp-lepton-enable-always-show-page_action =
-    .label = 总是显示地址栏工具按钮
-
-tabbar-preferences = 标签栏设置
-
-floorp-lepton-enable-tabbar-positon-as-titlebar =
-    .label = 标签栏作为标题栏显示
-floorp-lepton-enable-tabbar-as-urlbar =
-    .label = 标签栏移动到地址栏右侧
-
-lepton-sidebar-preferences = 侧边栏设置
-floorp-lepton-enable-overlap-sidebar =
-    .label = 侧边栏悬浮
-    
-floorp-home-mode-choice-default =
+floorp-lepton-enable-urlbar_iconbox-hide = 
+    .label = 隐藏地址栏图标
+floorp-lepton-enable-bookmarkbar_icon-hide = 
+    .label = 隐藏书签栏图标
+floorp-lepton-enable-bookmarkbar_label-hide = 
+    .label = 隐藏书签栏文本
+floorp-lepton-enable-disabled_menu-hide = 
+    .label = 隐藏禁用的上下文菜单项
+floorp-lepton-disable-userChrome-icon = 
+    .label = 禁用 Lepton 的上下文菜单和面板菜单图标
+floorp-lepton-disable-userChrome-menu-icon = 
+    .label = 启用 Lepton 的上下文菜单图标
+positon-preferences = 位置调整
+floorp-lepton-enable-centered-tab = 
+    .label = 标签栏标题居中显示
+floorp-lepton-enable-centered-urlbar = 
+    .label = 地址栏文本居中显示
+floorp-lepton-enable-centered-bookmarkbar = 
+    .label = 书签栏项目居中显示
+urlbar-preferences = 地址栏
+floorp-lepton-enable-urlbar-icon-move-to-left = 
+    .label = 将地址栏图标移动到左边
+floorp-lepton-enable-urlname-go_button_when_typing = 
+    .label = 键入时，显示 “转到” 按钮
+floorp-lepton-enable-always-show-page_action = 
+    .label = 始终在地址栏中显示页面操作
+tabbar-preferences = 标签栏
+floorp-lepton-enable-tabbar-positon-as-titlebar = 
+    .label = 在标题栏中显示标签栏
+floorp-lepton-enable-tabbar-as-urlbar = 
+    .label = 合并标签栏和工具栏
+lepton-sidebar-preferences = 侧边栏
+floorp-lepton-enable-overlap-sidebar = 
+    .label = 在网站内容上显示侧边栏
+floorp-home-mode-choice-default = 
     .label = { -brand-short-name } 主页 (默认)
 floorp-home-prefs-content-header = { -brand-short-name } 主页内容
-floorp-home-prefs-content-description = 选择你想在你的 { -brand-short-name } 主页上看到的内容。
+floorp-home-prefs-content-description = 选择您希望在 { -brand-short-name } 主页上看到的内容。
 
 ## Notes
-floorp-notes = { -brand-short-name } 备忘录
-restore-from-backup = 从备份中恢复备忘录
+
+floorp-notes = { -brand-short-name } 笔记
+restore-from-backup = 从备份还原笔记
 enable-notes-sync = 
- .label = 启用 { -brand-short-name } 备忘录同步
-about-notes-backup-tips  = Midori 备忘录使用 Firefox Sync 将您的备忘录与其他设备同步。如果您丢失了备忘录，您可以从备份中恢复。在您启动{ -brand-short-name } 时，会自动创建一个备份。
-notes-sync-description = 这可以解决由于同步过程中覆盖备忘录而导致内容丢失的问题。
-backuped-time = 备份时间
-notes-backup-option = 备份选项
-backup-option-button = 打开备份选项...
-
-restore-from-backup-prompt-title = Midori 备忘录还原服务
-restore-from-this-backup = 还原备份到 Midori 备忘录 ?
-
+    .label = 启用 { -brand-short-name } Notes Sync
+about-notes-backup-tips = { -brand-short-name } 笔记使用 Firefox Sync 同步您的笔记到其他设备。如果您丢失了笔记，您可以从备份中恢复。当您启动 { -brand-short-name } 时会创建一个备份。
+notes-sync-description = 这可以解决在同步期间由于覆盖笔记而导致内容丢失的问题。
+backuped-time = 备份于
+notes-backup-option = 备份设置
+backup-option-button = 备份设置...
+restore-from-backup-prompt-title = { -brand-short-name } 笔记还原服务
+restore-from-this-backup = 将笔记还原到备份时的状态吗？
 restore-button = 还原
 
 ## user.js
+
 header-userjs = user.js
-userjs-customize = 使用 user.js 文件自定义 { -brand-short-name }。
-about-userjs-customize = user.js 是一个配置文件，用于自定义 { -brand-short-name }。即将从互联网下载 user.js ，并覆盖原始的 user.js 文件。在使用它之前，请备份原始的 user.js 文件。配置将在重新启动 { -brand-short-name } 后生效。
-
+userjs-customize = 使用 user.js 自定义 { -brand-short-name }
+about-userjs-customize = user.js 是一个配置文件，允许您自定义 { -brand-short-name }。user.js 文件是从互联网下载的，它会覆盖您当前的 user.js 文件。在继续之前，请务必备份您当前的 user.js 文件。重新启动 { -brand-short-name } 后，user.js 的配置将会自动生效。
 userjs-label = user.js 列表
-userjs-prompt = Midori user.js
-apply-userjs-attention = 这将覆盖原始的 user.js 文件。
-apply-userjs-attention2 = 在使用之前，请备份原始的user.js文件。
-
-userjs-button = 打开 user.js 选项...
-userjs-select-option = 选择 user.js
-
+userjs-prompt = 应用这个 user.js？
+apply-userjs-attention = 应用新的 user.js 将覆盖您当前的 user.js 文件。
+apply-userjs-attention2 = 在继续之前，请备份您当前的 user.js 文件。
+userjs-button = user.js 设置...
+userjs-select-option = 管理目前在 { -brand-short-name } 中使用的 user.js，以提升性能和加强隐私保护。
 apply-userjs-button = 应用
+
 ## userjs Options
 
-default-userjs-label = Midori 默认值
-about-default-userjs = 已禁用 Telemetry。启用了各种自定义设置的{ -brand-short-name }，达到了良好的平衡。
-
+default-userjs-label = { -brand-short-name } 默认
+about-default-userjs = 遥测功能已禁用。平衡良好的 { -brand-short-name } ，可启用各种自定义功能。
 Securefox-label = Yokoffing Securefox
-about-Securefox = 默认启 用HTTPS。具有站点隔离的全面 Cookie 保护。增强的状态和网络分区。还有其他各种增强功能。
-
+about-Securefox = 默认启用 HTTPS。拥有站点隔离的全面 Cookie 保护。加强了状态和网络分隔。还有其他一些增强功能。
 default-label = Yokoffing Default
-about-default = 所有必要的功能，无破坏性。这就是您的 user.js。
-
+about-default = 包含所有基本功能，无任何故障。这是您的 user.js。
 Fastfox-label = Yokoffing Fastfox
-about-Fastfox = 极大地提升 Firefox 的浏览速度。让Chrome望尘莫及！
-
+about-Fastfox = 大幅提升 Firefox 浏览速度，与 Chrome 一较高下！
 Peskyfox-label = Yokoffing Peskyfox
-about-Peskyfox = 简化新标签页，移除 Pocket。恢复紧凑模式作为一个选项。停止网页通知、弹窗和其他烦扰。
-
-Smoothfox-label = Yokoffing Smoothfox
-about-Smoothfox = 在您喜爱的浏览器上获得类似Edge般的流畅滚动，或选择更符合您个人喜好的样式。
-
-## Workspaces
-floorp-workspaces-title = { -brand-short-name } 工作空间
-workspaces-backup-discription = 备份 & 还原工作空间
-
-workspaces-restore-service-title = Midori 工作空间备份服务
-workspaces-restore-warning = 警告！运行此操作将导致浏览器暂时冻结，并自动重新启动
-floorp-workspace-settings-button = 工作空间设置...
-
-change-to-close-workspace-popup-option = 
- .label = 在选择工作空间时关闭工作空间弹出菜单
-pinned-tabs-exclude-workspace-option = 
- .label = 工作空间中排除固定的标签页
-
-workspaces-reset-title = 重置工作空间
-workspaces-reset-label =
-    .label = 重置工作空间
-workspaces-reset-description = 如果还原备份不起作用，工作空间无法启动，请重置工作空间
-workspaces-reset-button = 重置工作空间
-
-workspaces-reset-service-title = Midori 工作空间
-workspaces-reset-warning = 警告！此操作将删除所有工作空间并重新启动浏览器
-
-manage-workspace-on-bms-option =
-    .label = 在浏览器管理侧边栏上管理工作空间
-
-show-workspace-name-option =
-    .label = 在标签栏的工作区按钮上显示工作区名称
-change-workspace-with-default-key-option =
-    .label = 使用↑和↓键与SHIFT切换工作区。
-
-workspaces-manage-title = 管理工作空间
-workspaces-manage-description = 管理您的工作空间。更改工作空间图标
-workspaces-manage-label =
-    .label = 管理工作空间
-
-workspaces-manage-button = 打开工作空间管理器...
-
-select-workspace = 选择工作空间
-workspace-select-icon = 选择工作空间图标
- .label = 选择工作空间图标
-
+about-Peskyfox = 优化新标签页。移除 Pocket。恢复紧凑模式为一个选项。停止网页通知、弹出窗口和其他干扰。
+Smoothfox-label = Yokoffsing smoothfox
+about-Smoothfox = 在您钟爱的浏览器上获得类似 Edge 的平滑滚动效果，或选择更符合您个人喜好的样式。
+select-workspace = 选择工作区
+workspace-select-icon = 选择工作区图标
+    .label = 选择工作空间图标
+workspace-select-container = 选择容器标签
+    .label = 选择容器标签
 workspace-customize = 
- .title = 自定义工作空间
-
-workspace-icon-briefcase =
- .label = 办公
-workspace-icon-cart =
- .label = 购物
-workspace-icon-circle =
- .label = 圆圈
-workspace-icon-dollar =
- .label = 银行
-workspace-icon-fence =
- .label = 栅栏
-workspace-icon-fingerprint =
- .label = 个人
-workspace-icon-gift =
- .label = 礼物
-workspace-icon-vacation =
- .label = 度假
-workspace-icon-food =
- .label = 食物
-workspace-icon-fruit =
- .label = 水果
-workspace-icon-pet =
- .label = 宠物
-workspace-icon-tree =
- .label = 树木
-workspace-icon-chill =
- .label = 私人
- 
-# CSK
-floorp-CSK-title = 自定义快捷键
-floorp-CSK-description = 自定义 { -brand-short-name } 的快捷键。Midori 提供了超过80个快捷键选项。重新启动 { -brand-short-name } 以应用这些设置。重复的设置将不起作用。
-disable-fx-actions =
-.label = 禁用 Firefox 的默认快捷键
-customize-Action =
-.label = 自定义操作
-remove-Action =
-.label = 删除操作
-CSK-reset-title = 重置自定义快捷键
-CSK-reset-description = 将 { -brand-short-name } 的快捷键重置为默认设置。
-CSK-reset-label = 重置自定义快捷键
-CSK-reset-button = 重置自定义快捷键
-CSK-manage-title = 管理自定义快捷键
-
-CSK-remove-shortcutkey = 删除快捷键
-CSK-remove-shortcutkey-description = 您确定要删除此快捷键吗？
-
-CSK-restore-default = 恢复默认设置
-CSK-restore-default-description = 将这些设置恢复为默认设置。您当前的设置将丢失。
-
-### Exsit shortcut key: "S", "shift"
-CSK-keyborad-shortcut-info = 已存在的快捷键：{ $key } 和{ $modifiers }。
-CSK-keyborad-shortcut-info-with-keycode = 已存在的快捷键：{ $key }。
-
+    .title = 自定义工作空间
+floorp-no-workspace-container = 
+    .label = 无身份
+workspace-icon-article = 
+    .label = 文章
+workspace-icon-book = 
+    .label = 书籍
+workspace-icon-briefcase = 
+    .label = 办公
+workspace-icon-cart = 
+    .label = 购物
+workspace-icon-chat = 
+    .label = 聊天
+workspace-icon-chill = 
+    .label = 隐私
+workspace-icon-circle = 
+    .label = 圆圈
+workspace-icon-compass = 
+    .label = 指南针
+workspace-icon-code = 
+    .label = 编程
+workspace-icon-dollar = 
+    .label = 银行
+workspace-icon-fence = 
+    .label = 栅栏
+workspace-icon-fingerprint = 
+    .label = 个人
+workspace-icon-food = 
+    .label = 食物
+workspace-icon-fruit = 
+    .label = 水果
+workspace-icon-game = 
+    .label = 游戏
+workspace-icon-gear = 
+    .label = 齿轮
+workspace-icon-gift = 
+    .label = 礼物
+workspace-icon-key = 
+    .label = 钥匙
+workspace-icon-lightning = 
+    .label = 闪电
+workspace-icon-network = 
+    .label = 网络
+workspace-icon-notes = 
+    .label = 便笺
+workspace-icon-paint = 
+    .label = 画图
+workspace-icon-photo = 
+    .label = 照片
+workspace-icon-pin = 
+    .label = 固定
+workspace-icon-pet = 
+    .label = 宠物
+workspace-icon-question = 
+    .label = 问题
+workspace-icon-smartphone = 
+    .label = 智能手机
+workspace-icon-star = 
+    .label = 星星
+workspace-icon-tree = 
+    .label = 树木
+workspace-icon-vacation = 
+    .label = 度假
+workspace-icon-love = 
+    .label = 爱
+workspace-icon-moon = 
+    .label = 月亮
+workspace-icon-music = 
+    .label = 音乐
+workspace-icon-user = 
+    .label = 用户
+# Custom Keyboard Shortcuts
+floorp-CSK-title = 自定义键盘快捷键
+floorp-CSK-description = 自定义 { -brand-short-name } 的键盘快捷键。{ -brand-short-name } 提供了 80 多个可自定义的键盘快捷键！重复的键盘快捷键将不起作用。重启 { -brand-short-name } 以应用这些设置。
+disable-fx-actions = 
+    .label = 禁用 Mozilla Firefox 的键盘快捷键
+customize-Action = 
+    .label = 添加快捷键
+remove-Action = 
+    .label = 删除快捷键
+CSK-reset-title = 重置自定义键盘快捷键
+CSK-reset-description = 将自定义键盘快捷方式重置为 { -brand-short-name } 的默认值。
+CSK-reset-label = 重置自定义键盘快捷键
+CSK-reset-button = 恢复默认值
+CSK-manage-title = 管理键盘快捷键
+CSK-remove-shortcutkey = 删除自定义键盘快捷键？
+CSK-remove-shortcutkey-description = 您确定要删除这个键盘快捷键吗？
+CSK-restore-default = 还原默认设置吗？
+CSK-restore-default-description = 是否还原 { -brand-short-name } 的默认键盘快捷键？您当前的快捷键将会丢失。
+CSK-reboot-browser-label = 重新启动 { -brand-short-name } 以应用这些设置
+CSK-reboot-browser-button = 重新启动 { -brand-short-name }
+# Exist shortcut key: "S", "shift"
+CSK-keyborad-shortcut-info = 当前键盘快捷键：{ $key } 和 { $modifiers }。
+CSK-keyborad-shortcut-info-with-keycode = 当前键盘快捷键：{ $key }。
+CSK-keyborad-shortcut-is-changed = (未应用)
 floorp-custom-actions-tab-action = 标签页操作
 floorp-custom-actions-page-action = 页面操作
 floorp-custom-actions-visible-action = 可见操作
@@ -600,513 +487,638 @@ floorp-custom-actions-search-action = 搜索操作
 floorp-custom-actions-tools-action = 工具操作
 floorp-custom-actions-bookmark-action = 书签操作
 floorp-custom-actions-open-page-action = 打开页面操作
-floorp-custom-actions-history-action = 历史记录操作
-floorp-custom-actions-pip-action = 图片中图片操作
+floorp-custom-actions-history-action = 历史操作
+floorp-custom-actions-pip-action = 图中图操作
 floorp-custom-actions-downloads-action = 下载操作
 floorp-custom-actions-sidebar-action = 侧边栏操作
 floorp-custom-actions-bms-action = 浏览器管理器侧边栏操作
-floorp-custom-actions-workspace-action = 工作空间操作
+floorp-custom-actions-split-view-action = 分割视图操作
+floorp-custom-actions-workspaces-action = 工作区操作
+floorp-custom-actions-custom-action = 自定义操作 (实验性)
 
-## Mouse Gesture
-mouse-gesture = 鼠标手势
-mouse-gesture-description = 要在 { -brand-short-name } 中使用鼠标手势，必须安装 Gesturefy 插件。
+## Mouse Gestures
+
+mouse-gesture = Mouse Gestures
+mouse-gesture-description = 要在 { -brand-short-name } 中使用鼠标手势，需要先安装 Gesturefy。
 Gesturefy = Gesturefy
-about-Gesturefy = Gesturefy 是一个扩展，可以在浏览器中添加鼠标手势功能。如果{ -brand-short-name } 检测到安装了此插件，将会向 Gesturefy 添加仅在 { -brand-short-name } 中可用的手势命令。此外，该插件还可以在新标签页中使用！
-
+about-Gesturefy = Gesturefy 是一款扩展，为您的浏览器添加鼠标手势功能。如果 { -brand-short-name } 检测到此扩展已安装，它将向 Gesturefy 添加一些仅在 { -brand-short-name } 中可用的手势命令。该扩展还可以创建新的标签页！
 # Translate
-TWS = 翻译网页
-about-TWS = 使用 Google 或 Yandex 实时翻译网页。您还可以选择性地翻译文本或整个页面。
+TWS = Translate Web Page
+about-TWS = 使用 Google 或 Yandex 来实时翻译您的网页。您还可以选择翻译特定的文本或整个页面。
 
 # Privacy Hub
-## BlockMoreTracker
+
+
+## BlockMoreTrackers
+
 privacy-hub-header = 隐私中心
-block-more-tracker = 阻止更多广告和追踪器。
-block-tracker = 这个部分包含一组旨在阻止广告和追踪器的扩展
-view-at-AMO = 在 addons.mozilla.org 中查看此扩展
+block-more-tracker = 阻止更多的广告和追踪器
+block-tracker = 本节包含一系列旨在阻止广告和追踪器的扩展
+view-at-AMO = 在 addons.mozilla.org 上查看此插件
 uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin 可以阻止广告、广泛的追踪器和其他危险网站。
-Facebook-Container = Facebook Container
-about-Facebook-Container = Facebook Container 扩展可帮助您控制并将您的网络活动与 Facebook 隔离，防止 Facebook 在网络上追踪您。
+about-uboori = uBlock Origin可以屏蔽广告、广泛的追踪器，以及其他危险的网站。
+Facebook-Container = Facebook 容器
+about-Facebook-Container = 阻止 Facebook 在网络上跟踪您。Facebook 容器扩展帮助您掌控并将您的网络活动与 Facebook 隔离开来。
 
-## Fingerprint
-fingerprint-header = 抵抗浏览器指纹追踪和 IP 地址泄漏
-block-fingerprint = 浏览器指纹追踪是一种依赖于您的浏览器和操作系统的唯一特征的跟踪机制。本节包含进一步增强此保护的设置，超出默认的阻止功能。
-enable-firefox-fingerprint-protections = 启用强大的浏览器指纹追踪保护
-about-firefox-fingerprint-protection = 通过 Firefox 启用保护可能包括强制启用轻模式、禁用某些 API 等。这可能会导致某些网站出现问题。
-fingerprint-Protection =
- .label =  反浏览器指纹追踪
-html5-canvas-prompt-settings =
- .label =  自动批准 HTML5 图像数据的访问确认提示。
-canvas-prompt = Automatically reject the canvas-reading prompt
-disable-webgl = 自动拒绝读取 Canvas 画布的提示
- .label =  禁用 WebGL
-about-webgl = WebGL 是一个用于渲染图形的 JavaScript API，可以用于识别 GPU。
-Canvas-Blocker = Canvas Blocker
-about-CB = 这个扩展可以伪造指纹识别技术使用的数据
-WebRTC-connection = WebRTC 是一种提供实时通话的标准。如果您禁用此设置，将无法使用 Discord 等功能。
+## Fingerprinting
+
+fingerprint-header = 阻止指纹识别和 IP 地址泄漏
+block-fingerprint = 指纹识别是一种依赖于您的浏览器和操作系统独特特征的跟踪机制。本节包含一些设置，可用于在默认屏蔽之外进一步增强此保护。
+enable-firefox-fingerprint-protections = 开启强大的指纹识别保护
+about-firefox-fingerprint-protection = Firefox 提供的保护包括强制使用浅色模式、禁用某些 API 等。这可能导致某些网站无法正常工作。
+fingerprint-Protection = 
+    .label = 防指纹识别保护
+html5-canvas-prompt-settings = 
+    .label = 自动关闭 HTML5 图像数据的访问确认提示
+canvas-prompt = 除非手动允许，否则防止网站使用 Canvas 读取提示。
+disable-webgl = 
+    .label = 禁用 WebGL
+about-webgl = WebGL 是一个用于渲染图形的 JavaScript API，可用于识别 GPU。
+Canvas-Blocker = Canvas 拦截器
+about-CB = 这个插件伪装了用于指纹识别技术的数据。
+WebRTC-connection = WebRTC 是一项提供实时通话功能的标准。如果您禁用此功能，将无法使用 Discord 等应用。
 WebRTC = 
- .label = 启用 WebRTC 连接。
- 
-################################################################### browser・Sidebar ###############################################################
+    .label = 启用 WebRTC 连接
+################################################################### browser ###############################################################
 
-rest-mode = 休息一下
-rest-mode-description = 浏览器崩溃了，点击确定或者按下回车键继续
-
-Sidebar2 =
-  .label = 侧边工具栏
-  .tooltiptext = 显示/隐藏侧边工具栏
-
-sidebar2-mute-and-unmute =
-  .label = 静音/恢复
-
-sidebar2-unload-panel =
-  .label = 关闭面板
-
-sidebar2-change-ua-panel =
-  .label = 切换 User Agent 【桌面/移动端】
-  
-sidebar2-delete-panel =
-  .label = 从侧边栏中删除此面板
-
-sidebar-close-button =
-  .tooltiptext = 关闭侧栏
-    
-sidebar-back-button =
-  .tooltiptext = 后退
-
-sidebar-forward-button =
-  .tooltiptext = 前进
-
+rest-mode = 正在休息...
+rest-mode-description = { -brand-short-name } 目前已被暂停。请按下回车键或 “确定” 按钮以继续。
+Sidebar2 = 
+    .label = 浏览器管理器侧边栏
+    .tooltiptext = 更改侧边栏的可见性
+sidebar2-mute-and-unmute = 
+    .label = 静音/取消静音此面板
+sidebar2-unload-panel = 
+    .label = 卸载此面板
+sidebar2-change-ua-panel = 
+    .label = 切换移动端用户代理
+sidebar2-delete-panel = 
+    .label = 删除此面板
+sidebar2-change-zoom-level = 
+    .label = 调整缩放
+sidebar2-zoom-in = 
+    .label = 放大
+sidebar2-zoom-out = 
+    .label = 缩小
+sidebar2-reset-zoom = 
+    .label = 重置缩放
+sidebar2-close-button = 
+    .tooltiptext = 关闭侧边栏
+sidebar-back-button = 
+    .tooltiptext = 后退
+sidebar-forward-button = 
+    .tooltiptext = 前进
 sidebar-reload-button = 
-  .tooltiptext = 刷新
-
-sidebar-go-index-button =
-  .tooltiptext = 回到主页
-  
-sidebar-muteAndUnmute-button =
-  .tooltiptext = 侧边栏静音/恢复
-  
-sidebar2-browser-manager-sidebar = 足迹
-
-show-browser-manager-sidebar =
-  .tooltiptext = 显示{ sidebar2-browser-manager-sidebar }侧边栏
-
+    .tooltiptext = 刷新
+sidebar-go-index-button = 
+    .tooltiptext = 返回首页
+sidebar-muteAndUnmute-button = 
+    .tooltiptext = 静音/取消静音侧边栏
+sidebar2-browser-manager-sidebar = 浏览器管理器
+show-browser-manager-sidebar = 
+    .tooltiptext = 显示 { sidebar2-browser-manager-sidebar } 侧边栏
 sidebar2-bookmark-sidebar = 书签
-
-show-bookmark-sidebar =
-  .tooltiptext = 显示{ sidebar2-bookmark-sidebar }侧边栏
-
-sidebar2-history-sidebar = 历史
-
-show-history-sidebar =
-  .tooltiptext = 显示{ sidebar2-history-sidebar }侧边栏
-
+show-bookmark-sidebar = 
+    .tooltiptext = 显示 { sidebar2-bookmark-sidebar } 侧边栏
+sidebar2-history-sidebar = 历史记录
+show-history-sidebar = 
+    .tooltiptext = 显示 { sidebar2-history-sidebar } 侧边栏
 sidebar2-download-sidebar = 下载
-
-show-download-sidebar =
-  .tooltiptext = 显示{ sidebar2-download-sidebar }侧边栏
-
-sidebar2-notes-sidebar = 笔记
-
-show-notes-sidebar =
-  .tooltiptext = 显示{ sidebar2-notes-sidebar }侧边栏
-
-sidebar-add-button =
-  .tooltiptext = { bsb-add }
-  
-sidebar-addons-button =
-  .tooltiptext = 打开扩展管理
-
-sidebar-passwords-button =
-  .tooltiptext = 打开密码管理
-
-sidebar-preferences-button =
-  .tooltiptext = 打开设置
-
-sidebar-keepWidth-button =
-  .tooltiptext = 保持面板宽度
-
-sidebar2-keep-width-for-global =
-  .label = 将当前面板大小设置为面板的全局宽度
-
+show-download-sidebar = 
+    .tooltiptext = 显示 { sidebar2-download-sidebar } 侧边栏
+sidebar2-notes-sidebar = 便笺
+show-notes-sidebar = 
+    .tooltiptext = 显示 { sidebar2-notes-sidebar } 侧边栏
+sidebar-add-button = 
+    .tooltiptext = { bsb-add }
+sidebar-addons-button = 
+    .tooltiptext = 插件和主题
+sidebar2-hide-sidebar-button = 
+    .tooltiptext = 隐藏浏览器管理器侧边栏
+sidebar-passwords-button = 
+    .tooltiptext = 密码
+sidebar-preferences-button = 
+    .tooltiptext = 设置
+sidebar-keepWidth-button = 
+    .tooltiptext = 保持此面板当前宽度
+sidebar2-keep-width-for-global = 
+    .label = 将这个宽度应用于所有没有自定义宽度的面板
 bsb-context-add = 
-  .label = 添加当前页面到侧边工具栏
-  
+    .label = 将页面添加到 Web 面板...
 bsb-context-link-add = 
-  .label = 添加当前链接到侧边工具栏
+    .label = 在 Web 面板中添加链接...
 #################################################################### menu panel ############################################################
 
 open-profile-dir = 
-    .label = 打开配置文件夹
-
+    .label = 打开配置文件目录
 ####################################################################### menu ###############################################################
 
-css-menu =
+css-menu = 
     .label = CSS
     .accesskey = C
-    
-css-menubar =
+css-menubar = 
     .label = CSS
     .accesskey = C
-    
-rebuild-css =
-    .label = 重新载入所有 CSS
+rebuild-css = 
+    .label = 重新生成浏览器的 CSS 文件
     .accesskey = R
-
-make-browsercss-file =
-    .label = 新建 CSS 样式
+make-browsercss-file = 
+    .label = 创建浏览器的 CSS 文件
     .accesskey = M
-    
-open-css-folder =
-    .label = 打开样式文件夹
+open-css-folder = 
+    .label = 打开 CSS 文件夹
     .accesskey = O
-    
-edit-userChromeCss-editor =
-    .label = 修改 userChrome.css
-    
-edit-userContentCss-editor =
-    .label = 修改 userContent.css
-    
-not-found-editor-path = 编辑器路径不存在
-set-pref-description =  设置您想要使用的编辑器的路径。
-rebuild-complete = Rebuild 完成
-please-enter-filename = 请输入一个名字
-
+edit-userChromeCss-editor = 
+    .label = 编辑 userChrome.css 文件
+edit-userContentCss-editor = 
+    .label = 编辑 userContent.css 文件
+not-found-editor-path = 找不到 CSS 文件编辑器
+set-pref-description = 请输入您想要使用的 CSS 文件编辑器的文件位置：
+rebuild-complete = 已完成重新生成。
+please-enter-filename = 请输入文件名。
 ################################################################### Undo-Closed-Tab ###############################################################
 
-undo-closed-tab = 撤销关闭标签页
-
+undo-closed-tab = 恢复关闭的标签页
 ################################################################### about:addons ###############################################################
 
-# DualTheme
-dual-theme-enable-addon-button = 激活（子主题）
-dual-theme-disable-addon-button =  禁用（子主题）
-dual-theme-enabled-heading = 已激活（子主题）
-
+# Dual Theme
+dual-theme-enable-addon-button = 作为子主题启用
+dual-theme-disable-addon-button = 禁用子主题
+dual-theme-enabled-heading = 已启用为子主题
 ##################################################################### toolbar ###############################################################
 
-status-bar =
+status-bar = 
     .label = 状态栏
-     .accesskey = S
-     
+    .accesskey = S
 ##################################################################### Gesturefy ###############################################################
 
-gf-floorp-open-tree-style-tab-name = [Midori] 打开垂直标签栏
-gf-floorp-open-tree-style-tab-description = 在侧边栏中打开垂直标签栏
-
-gf-floorp-open-bookmarks-sidebar-name = [Midori] 打开侧边栏书签面板
-gf-floorp-open-bookmarks-sidebar-description = 在侧边栏中打开书签面板
-
-gf-floorp-open-history-sidebar-name = [Midori] 打开侧边栏历史面板
-gf-floorp-open-history-sidebar-description = 在侧边栏中打开历史面板
-
-gf-floorp-open-synctabs-sidebar-name = [Midori] 打开侧边栏同步标签页
-gf-floorp-open-synctabs-sidebar-description = 在侧边栏打开同步标签页
-
-gf-floorp-close-sidebar-name = [Midori] 关闭侧边栏
+gf-floorp-open-tree-style-tab-name = [{ -brand-short-name }] 打开 Tree Style Tab 面板
+gf-floorp-open-tree-style-tab-description = 在侧边栏上打开 Tree Style Tab 面板
+gf-floorp-open-bookmarks-sidebar-name = [{ -brand-short-name }] 打开书签面板
+gf-floorp-open-bookmarks-sidebar-description = 在侧边栏上打开书签面板
+gf-floorp-open-history-sidebar-name = [{ -brand-short-name }] 打开历史记录面板
+gf-floorp-open-history-sidebar-description = 在侧边栏上打开历史记录面板
+gf-floorp-open-synctabs-sidebar-name = [{ -brand-short-name }] 打开已同步标签页面板
+gf-floorp-open-synctabs-sidebar-description = 在侧边栏上打开已同步标签页面板
+gf-floorp-close-sidebar-name = [{ -brand-short-name }] 关闭侧边栏
 gf-floorp-close-sidebar-description = 关闭侧边栏
-
-
-gf-floorp-open-browser-manager-sidebar-name = [Midori] 打开侧边工具栏
-gf-floorp-open-browser-manager-sidebar-description =  打开侧边工具栏（若功能已启用）
-
-gf-floorp-close-browser-manager-sidebar-name = [Midori] 关闭侧边工具栏
-gf-floorp-close-browser-manager-sidebar-description = 关闭侧边工具栏
-
-gf-floorp-toggle-browser-manager-sidebar-name = [Midori] 显示/隐藏侧边工具栏
-gf-floorp-toggle-browser-manager-sidebar-description = 显示/隐藏侧边工具栏
-
-gf-floorp-show-statusbar-name = [Midori] 显示状态栏
-gf-floorp-show-statusbar-description = 显示状态栏
-
-gf-floorp-hide-statusbar-name = [Midori] 隐藏状态栏
+gf-floorp-open-browser-manager-sidebar-name = [{ -brand-short-name }] 打开 BMS
+gf-floorp-open-browser-manager-sidebar-description = 如果浏览器管理器侧边栏的 Web 面板已加载，则打开浏览器管理器侧边栏。
+gf-floorp-close-browser-manager-sidebar-name = [{ -brand-short-name }] 关闭 BMS
+gf-floorp-close-browser-manager-sidebar-description = 关闭浏览器管理器侧边栏
+gf-floorp-show-browser-manager-sidebar-name = [{ -brand-short-name }] 切换 BMS
+gf-floorp-show-browser-manager-sidebar-description = 切换浏览器管理器侧边栏
+gf-floorp-hide-statusbar-name = [{ -brand-short-name }] 隐藏状态栏
 gf-floorp-hide-statusbar-description = 隐藏状态栏
+gf-floorp-show-statusbar-name = [{ -brand-short-name }] 切换状态栏显示
+gf-floorp-show-statusbar-description = 显示或隐藏状态栏
+gf-floorp-open-extension-sidebar-name = [{ -brand-short-name }] 打开所选的扩展侧边栏
+gf-floorp-open-extension-sidebar-description = 在侧边栏上打开选定的扩展
+gf-floorp-open-extension-sidebar-settings-addons-id = 侧边栏插件
+gf-floorp-open-extension-sidebar-settings-addons-id-description = 侧边栏打开插件的扩展
+gf-floorp-open-extension-sidebar-settings-list-default = 请选择插件
+gf-floorp-open-extension-sidebar-settings-list-unknwon = 未知插件
+##################################################################### { -brand-short-name } System Update Portable Version ###############################################################
 
-gf-floorp-toggle-statusbar-name = [Midori] 切换状态栏
-gf-floorp-toggle-statusbar-description = 切换状态栏显示状态
-
-gf-floorp-open-extension-sidebar-name = [Midori] 在侧边栏中打开选定的扩展
-gf-floorp-open-extension-sidebar-description = 在侧边栏中打开选定的扩展
-gf-floorp-open-extension-sidebar-settings-addons-id = 有侧边栏工具扩展
-gf-floorp-open-extension-sidebar-settings-addons-id-description = 有侧边栏工具扩展
-gf-floorp-open-extension-sidebar-settings-list-default = 请选择扩展
-gf-floorp-open-extension-sidebar-settings-list-unknwon = 位置扩展
-##################################################################### Floorp System Update Portable Version ###############################################################
-
-update-portable-notification-found-title = 发现新版本！
-update-portable-notification-found-message = 下载更新中...
-update-portable-notification-ready-title = 更新已下载！
-update-portable-notification-ready-message = 下次启动浏览器时，将自动更新。
+update-portable-notification-found-title = 有可用的更新！
+update-portable-notification-found-message = 正在下载更新...
+update-portable-notification-ready-title = 准备好更新了！
+update-portable-notification-ready-message = { -brand-short-name } 将在下次启动时进行更新。
 update-portable-notification-success-title = 更新成功！
-update-portable-notification-success-message = 更新成功！希望你喜欢新版本的Midori！
+update-portable-notification-success-message = 更新成功！希望您喜欢 { -brand-short-name } 的新版本！
 update-portable-notification-failed-title = 更新失败。
-update-portable-notification-failed-redirector-message = 更新失败。也许重启浏览器能解决这个问题，
-update-portable-notification-failed-prepare-message = 准备更新失败。
+update-portable-notification-failed-redirector-message = 更新失败。重新启动您的浏览器可能会解决这个问题。
+update-portable-notification-failed-prepare-message = 更新准备失败。
+##################################################################### { -brand-short-name } Portable Preferences ###############################################################
 
+floorp-portable-update-application-allow = { -brand-short-name } 便携版更新
+floorp-update-application-auto-enabled-option = 
+    .label = 自动检查 { -brand-short-name } 便携版是否有更新。 (推荐)
 ##################################################################### Open link in external ###############################################################
-openInExternal-title = 在其他浏览器中打开链接
-open-link-in-external-enabled-option =
- .label = 启用 "在其他浏览器中打开链接" 功能
-open-link-in-external-select-browser-option = 选择浏览器
-open-link-in-external-select-browser-option-default =
- .label = 默认浏览器
-open-link-in-external-tab-context-menu = 在其他浏览器中打开链接
-open-link-in-external-tab-dialog-title-error = 错误
-open-link-in-external-tab-dialog-message-default-browser-not-found = 默认浏览器不存在或未被配置。
-open-link-in-external-tab-dialog-message-selected-browser-not-found = 选中的浏览器不存在
-
-
-######################################################################### Midori Notes ###############################################################
+openInExternal-title = 在外部浏览器中打开
+open-link-in-external-enabled-option = 
+    .label = 启用 “在外部浏览器中打开” 功能
+open-link-in-external-select-browser-option = 选择要打开的浏览器
+open-link-in-external-select-browser-option-default = 
+    .label = 默认浏览器
+open-link-in-external-tab-context-menu = 在外部浏览器中打开
+open-link-in-external-tab-dialog-title-error = 发生错误：
+open-link-in-external-tab-dialog-message-default-browser-not-found = 未找到或未配置默认浏览器。
+open-link-in-external-tab-dialog-message-selected-browser-not-found = 所选浏览器不存在。
+######################################################################### { -brand-short-name } Notes ###############################################################
 
 new-memo = 新建
-memo-title-input-placeholder = 键入标题
-memo-input-placeholder = 键入内容
+memo-title-input-placeholder = 撰写一个标题
+memo-input-placeholder = 在此处写入或粘贴备忘录
 delete-memo = 删除
 save-memo = 保存
-memo-welcome-title = 欢迎!
-memo-first-tip = 欢迎使用 Midori 备忘录！以下是一些使用说明：
-memo-second-tip = Midori 备忘录是一个便签应用，可让您在多台设备上同步存储多个备忘录。要启用同步功能，您需要使用 Firefox 账户登录 Floorp。
-memo-third-tip = Midori 笔记将保存在您的 Midori 设置中。此外，Firefox Sync 会使用您的 Firefox 账户密码对同步的内容进行加密，因此除了您之外，没有其他人能够访问这些内容。
-memo-import-data-tip = Firefox Sync 不是备份服务。我们建议您定期创建备份。
-memo-new-title = 新建备忘录
-chage-view-mode = 切换 只读/编辑 模式
+memo-welcome-title = 欢迎！
+memo-first-tip = 欢迎使用 { -brand-short-name } 笔记！这里有一些使用指南！
+memo-second-tip = { -brand-short-name } 笔记是一款记事本应用，可以让您存储多个笔记并在不同设备之间进行同步。要启用同步功能，您需要使用您的 Firefox 账户登录 { -brand-short-name }。
+memo-third-tip = { -brand-short-name } 笔记将保存在您的 { -brand-short-name } 设置中，并通过 Firefox 同步在设备之间进行同步。Firefox 同步会用您的 Firefox 账户密码加密同步的内容，因此只有您自己知道其内容。
+memo-import-data-tip = Firefox 同步不是备份服务。我们建议您创建数据备份。
+memo-new-title = 新建笔记
+chage-view-mode = 切换查看/编辑模式
 readonly-mode = 离线 (只读)
-
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Astian 支持
-default-bookmark-notes = Midori 备忘录
-
+default-bookmark-ablaze-support = Ablaze 支持
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 
-  .label = 隐藏所有下载
-  .accesskey = D
-  .tooltiptext = 隐藏所有下载
-
-floorp-show-all-downloads =
-  .label = 显示所有下载
-  .accesskey = S
-  .tooltiptext = 显示所有下载
-
+    .label = 清除下载
+    .accesskey = D
+    .tooltiptext = 清除下载
+floorp-show-all-downloads = 
+    .label = 显示所有下载
+    .accesskey = S
+    .tooltiptext = 显示所有下载
 ######################################################################### workspace ###############################################################
 
-workspace-prompt-title = Midori 工作空间
-please-enter-workspace-name = 请输入新的工作空间名称。
-please-enter-workspace-name-2 = 请输入除了空格以外的非符号字符。
-workspace-error = 错误！
-workspace-error-discription = 工作空间名称无效或已存在。
+workspaces-create-new-workspace-button = 
+    .label = 创建新工作区
+    .tooltiptext = 创建新工作区
+workspaces-manage-workspaces-button = 
+    .label = 管理工作区...
+    .tooltiptext = 管理你的工作区
+reorder-this-workspace-to-up = 
+    .label = 上移此工作区
+    .accesskey = B
+reorder-this-workspace-to-down = 
+    .label = 下移该工作区
+    .accesskey = A
+rename-this-workspace = 
+    .label = 重命名工作区
+    .accesskey = R
+delete-this-workspace = 
+    .label = 删除工作区
+    .accesskey = D
+manage-this-workspaces = 
+    .label = 管理工作区...
+    .accesskey = M
+workspace-new-default-name = 新建工作区
+workspace-default-name = 默认
+move-tab-another-workspace = 
+    .label = 移动到另一个工作区
+rename-workspace-prompt-title = 重命名工作区
+rename-workspace-prompt-text = 输入工作区名称。可使用大多数字符和符号。
+workspaces-toolbar-button = 工作区
+    .label = 工作区
+    .tooltiptext = 选择一个工作区...
 
-workspace-button = 工作空间
-  .label = 工作空间
-  .tooltiptext = 工作空间
+## Preferences
 
-workspace-default = 默认
-workspace-add = 
- .label= 新增工作空间
-
-workspace-context-menu-selected-tab =
- .label = 无法移动选中的标签
-move-tab-another-workspace =
- .label = 移动到另一个工作空间
-workspace-rename = 
-  .label = 更改工作空间名称
-
-workspace-delete = 
-  .label = 删除工作空间
-  
+enable-workspaces = 
+    .label = 启用工作区
+    .tooltiptext = 启用工作区
+workspace-notice = 启用此设置后，工作区将无法工作，除非将工作区按钮放在工具栏上。如果想完全禁用工作区，请使用此设置。
+enable-workspaces-with-experimental = 
+    .label = 启用工作区 (实验性)
+    .tooltiptext = 启用工作区 (实验性)
+workspace-warning = 工作区不能与标签页分组插件同时使用。如果您想使用标签页分组插件，请禁用工作区并重启 { -brand-short-name }。
+category-workspaces = 
+    .label = 工作区
+    .tooltiptext = 工作区
+pane-workspaces-title = 工作区
+floorp-workspaces-title = { -brand-short-name } 工作区
+floorp-workspace-settings-button = 工作区设置...
+floorp-preferences-label = 常规
+floorp-extensions-label = 扩展程序
+floorp-private-label = 隐私
+change-to-close-workspace-popup-option = 
+    .label = 选择工作区时关闭工作区弹出窗口
+manage-workspace-on-bms-option = 
+    .label = 在浏览器管理器侧边栏管理工作区
+show-workspace-name-option = 
+    .label = 在标签栏工作空间按钮上显示工作空间名称
 ######################################################################### menubar item ###############################################################
 
-sharemode-menuitem =
-  .label = 共享模式
-  .accesskey = S
-
-
+sharemode-menuitem = 
+    .label = 共享模式
+    .accesskey = S
 ############################################################################## Welcome page ###############################################################
 
-welcome-login-to-firefox-account = 登录到 Firefox 账户
-welcome-to-floorp = 欢迎使用 { -brand-short-name } ！
-welcome-discribe-floorp = { -brand-short-name } 它是一款快速、安全的轻量级浏览器，致力于用户隐私和安全。
-welcome-start-setup = 准备好开始了吗？
-welcome-skip-to-start-browsing = 跳过，开始上网
-welcome-select-preferences-template = 请选择一个模板
+welcome-login-to-firefox-account = 登录您的 Firefox 账户
+welcome-to-floorp = 欢迎使用 { -brand-short-name }！
+welcome-describe-floorp = { -brand-short-name } 是一款基于 Firefox 的功能丰富、灵活的浏览器，支持多种环境。
+welcome-start-setup = 准备好探索了吗？
+welcome-skip-to-start-browsing = 跳转到开始浏览
+welcome-select-preferences-template = 选择浏览器布局
 welcome-minimum-template = 基本
-welcome-enable-basic-features = 启用基本功能和设置，提供简单的使用体验。
+welcome-enable-basic-features = 启用基本功能和设置，实现简单体验。
 welcome-medium-template = 默认
-welcome-enable-some-features = 启用额外的功能和设置，以获得更好的使用体验。
+welcome-enable-some-features = 启用额外的功能及设置，获得更佳体验。
 welcome-maximum-template = 高级
-welcome-enable-most-of-features = 启用高级功能和设置。建议有经验的用户使用。
-welcome-go-next-setup = 前往下一个设置
+welcome-enable-most-of-features = 启用高级的功能和设置，推荐有经验的用户选择。
+welcome-go-next-setup = 下一步
 welcome-select-browser-design = 选择一个浏览器设计
-welcome-discribe-browser-design = 您可以选择其中一个精美的第三方 { -brand-short-name } 设计。也可以在“偏好设置”中找到特定于操作系统的设计。
+welcome-describe-browser-design = 你可以选择其中一个精美的第三方 { -brand-short-name } 设计，还可以在设置中找到针对特定操作系统的设计。
 welcome-design-lepton-name = Lepton 原始设计
 welcome-design-photon-name = Lepton Photon 设计
 welcome-design-ProtonFix-name = Lepton ProtonFix 设计
-welcome-design-floorp-fluerial-name = Midori Fluerial 设计
+welcome-design-floorp-fluerial-name = { -brand-short-name } Fluerial 设计
 welcome-design-firefox-proton-name = Firefox Proton 设计
 welcome-import-data = 导入您的浏览器数据
-welcome-import-data-description = 快速设置！从旧浏览器中导入书签、密码和其他数据。Firefox 用户可以从 Firefox Sync 导入数据。
+welcome-import-data-description = 开始快速设置！从你的旧浏览器导入书签、密码、以及更多，Firefox 用户可从 Firefox 同步导入数据。
 welcome-import-data-button = 导入数据...
 welcome-import-data-skip = 跳过导入
 welcome-select-button = 选择
-welcome-finish-setup = 设置完成！
-welcome-finish-setup-description = 您已完成所有设置！其他设置，例如垂直标签和插件，可以在 about:preferences 页面找到。尽情享受 { -brand-short-name } 的使用体验吧！
-welcomet-finish-setup = 开始上网
-
+welcome-finish-setup = 设置已完成！
+welcome-finish-setup-description = 一切就绪！其他功能如垂直标签栏和工作区，可以在 { -brand-short-name } 的设置中找到。尽情享受 { -brand-short-name } 吧！
+welcomet-finish-setup = 开始浏览网页
 ############################################################# Custom Shortcutkey ###############################################################
 
-category-CSK =
-.label = 自定义快捷键
-.tooltiptext = 自定义快捷键
-category-CSK-title = 自定义快捷键
-shortcutkey-customize =
- .title = 自定义快捷键
-select-shortcutkeyAction = 选择快捷键操作
-shortcutkey-customize-key-list-placeholder = 输入键位列表
-shortcut-key-label = 快捷键
+category-CSK = 
+    .label = 键盘快捷键
+    .tooltiptext = 键盘快捷键
+category-CSK-title = 键盘快捷键
+shortcutkey-customize = 
+    .title = 键盘快捷键
+select-shortcutkeyAction = 选择一个要触发的动作
+shortcutkey-customize-key-list-placeholder = 您的键盘快捷键将显示在这里
+shortcut-key-label = 键盘快捷键
 start-input-button-listen = 开始监听
 end-input-button-listen = 停止监听
-shortcut-key-description = 点击“开始监听”，然后按下您想要用作快捷键的键。可以使用多个键。重复的其他操作键将不起作用。
-
-floorp-custom-actions-open-new-tab = 打开新标签页
-.label = 打开新标签页
-
+shortcut-key-description = 点击“开始监听”然后按下你想绑定的按键，也可设置组合键；若设置的键位已绑定到其他快捷键上，则无法使用。
+floorp-custom-actions-open-new-tab = 打开一个新标签页
+    .label = 打开一个新标签页
 floorp-custom-actions-close-tab = 关闭当前标签页
-.label = 关闭当前标签页
-floorp-custom-actions-open-new-window = 打开新窗口
-.label = 打开新窗口
-floorp-custom-actions-open-new-private-window = 打开新的隐私窗口
-.label = 打开新的隐私窗口
+    .label = 关闭当前标签页
+floorp-custom-actions-open-new-window = 打开一个新窗口
+    .label = 打开一个新窗口
+floorp-custom-actions-open-new-private-window = 打开一个新的隐私窗口
+    .label = 打开一个新的隐私窗口
 floorp-custom-actions-close-window = 关闭当前窗口
-.label = 关闭当前窗口
+    .label = 关闭当前窗口
 floorp-custom-actions-restore-last-session = 恢复上次会话
-.label = 恢复上次会话
-floorp-custom-actions-restore-last-window = 恢复上次窗口
-.label = 恢复上次窗口
+    .label = 恢复上次会话
+floorp-custom-actions-restore-last-window = 恢复上一个窗口
+    .label = 恢复上一个窗口
 floorp-custom-actions-show-next-tab = 显示下一个标签页
-.label = 显示下一个标签页
+    .label = 显示下一个标签页
 floorp-custom-actions-show-previous-tab = 显示上一个标签页
-.label = 显示上一个标签页
-floorp-custom-actions-show-all-tabs-panel = 显示所有标签页面板
-.label = 显示所有标签页面板
-floorp-custom-actions-send-with-mail = 通过邮件发送
-.label = 通过邮件发送
+    .label = 显示上一个标签页
+floorp-custom-actions-show-all-tabs-panel = 显示所有标签面板
+    .label = 显示标签列表
+floorp-custom-actions-send-with-mail = 用邮件发送
+    .label = 通过电子邮件发送
 floorp-custom-actions-save-page = 保存页面
-.label = 保存页面
+    .label = 保存页面
 floorp-custom-actions-print-page = 打印页面
-.label = 打印页面
+    .label = 打印页面
 floorp-custom-actions-mute-current-tab = 切换静音/取消静音当前标签页
-.label = 切换静音/取消静音当前标签页
-floorp-custom-actions-show-source-of-page = 显示页面源代码
-.label = 显示页面源代码
-floorp-custom-actions-show-page-info = 显示页面信息
-.label = 显示页面信息
-floorp-custom-actions-zoom-in = 放大
-.label = 放大
-floorp-custom-actions-zoom-out = 缩小
-.label = 缩小
-floorp-custom-actions-reset-zoom = 重置缩放
-.label = 重置缩放
-floorp-custom-actions-back = 后退
-.label = 后退
-floorp-custom-actions-forward = 前进
-.label = 前进
-floorp-custom-actions-reload = 重新加载
-.label = 重新加载
-floorp-custom-actions-stop = 停止
-.label = 停止
-floorp-custom-actions-force-reload = 强制重新加载
-.label = 强制重新加载
-floorp-custom-actions-search-in-this-page = 在此页面中搜索
-.label = 在此页面中搜索
-floorp-custom-actions-show-next-search-result = 显示下一个搜索结果
-.label = 下一个“在页面中查找”结果
-floorp-custom-actions-show-previous-search-result = 显示上一个搜索结果
-.label = 上一个“在页面中查找”结果
-floorp-custom-actions-search-the-web = 在网络上搜索
-.label = 在网络上搜索
-floorp-custom-actions-open-migration-wizard = 打开迁移向导
-.label = 打开迁移向导
-floorp-custom-actions-quit-from-application = 退出应用程序
-.label = 退出 { -brand-short-name }
-floorp-custom-actions-enter-into-customize-mode = 进入工具栏自定义模式
-.label = 打开自定义 { -brand-short-name }
-floorp-custom-actions-enter-into-offline-mode = 进入离线模式
-.label = 进入离线模式
-floorp-custom-actions-open-screen-capture = 打开屏幕截图工具
-.label = 截取屏幕截图
-floorp-custom-actions-show-pip = 显示画中画
-.label = 显示画中画
-floorp-custom-actions-bookmark-this-page = 添加书签至此页面
-.label = 添加书签至此页面
-floorp-custom-actions-open-bookmarks-sidebar = 打开书签侧边栏
-.label = 打开书签侧边栏
-floorp-custom-actions-open-bookmark-add-tool = 打开添加书签工具
-.label = 添加书签
-floorp-custom-actions-open-bookmark-add-toolbar = 打开书签添加工具栏
-.label = 添加到书签工具栏
-floorp-custom-actions-open-bookmarks-manager = 打开书签管理器
-.label = 打开书签管理器
+    .label = 切换静音/取消静音当前标签页
 floorp-custom-actions-toggle-bookmark-toolbar = 切换书签工具栏
-.label = 切换书签工具栏
-floorp-custom-actions-open-general-preferences = 打开常规偏好设置
-.label = 打开常规偏好设置
-floorp-custom-actions-open-privacy-preferences = 打开隐私偏好设置
-.label = 打开隐私偏好设置
-floorp-custom-actions-open-workspaces-preferences = 打开工作区偏好设置
-.label = 打开工作区偏好设置
-floorp-custom-actions-open-containers-preferences = 打开容器偏好设置
-.label = 打开容器偏好设置
-floorp-custom-actions-open-search-preferences = 打开搜索偏好设置
-.label = 打开搜索偏好设置
-floorp-custom-actions-open-sync-preferences = 打开同步偏好设置
-.label = 打开同步偏好设置
+    .label = 切换书签工具栏
+floorp-custom-actions-show-source-of-page = 显示页面来源
+    .label = 打开页面来源
+floorp-custom-actions-show-page-info = 显示页面信息
+    .label = 打开页面信息
+floorp-custom-actions-zoom-in = 放大
+    .label = 放大
+floorp-custom-actions-zoom-out = 缩小
+    .label = 缩小
+floorp-custom-actions-reset-zoom = 重置缩放
+    .label = 重置缩放
+floorp-custom-actions-back = 后退
+    .label = 后退
+floorp-custom-actions-forward = 前进
+    .label = 前进
+floorp-custom-actions-reload = 刷新
+    .label = 刷新
+floorp-custom-actions-stop = 停止
+    .label = 停止
+floorp-custom-actions-force-reload = 强制刷新
+    .label = 强制刷新
+floorp-custom-actions-search-in-this-page = 在此页面中进行搜索
+    .label = 在页面中查找
+floorp-custom-actions-show-next-search-result = 在此页面结果中显示下一个搜索词
+    .label = 下一个 “在页面中查找” 结果
+floorp-custom-actions-show-previous-search-result = 在此页面结果中显示上一个搜索词
+    .label = 上一个 “在页面中查找” 结果
+floorp-custom-actions-search-the-web = 从网上搜索
+    .label = 从网上搜索
+floorp-custom-actions-open-migration-wizard = 打开迁移向导
+    .label = 打开迁移向导
+floorp-custom-actions-quit-from-application = 退出应用程序
+    .label = 退出 { -brand-short-name }
+floorp-custom-actions-enter-into-customize-mode = 自定义工具栏
+    .label = 打开 { -brand-short-name } 的自定义选项
+floorp-custom-actions-enter-into-offline-mode = 进入离线模式
+    .label = 进入离线模式
+floorp-custom-actions-open-screen-capture = 打开屏幕截图工具
+    .label = 截图
+floorp-custom-actions-show-pip = 显示画中画
+    .label = 显示画中画
+floorp-custom-actions-bookmark-this-page = 收藏此页
+    .label = 收藏此页
+floorp-custom-actions-open-bookmarks-sidebar = 打开书签侧边栏
+    .label = 打开书签侧边栏
+floorp-custom-actions-open-bookmark-add-tool = 打开书签添加工具
+    .label = 添加书签
+floorp-custom-actions-open-bookmark-add-toolbar = 打开 “添加新书签” 弹出窗口
+    .label = 添加到书签工具栏
+floorp-custom-actions-open-bookmarks-manager = 打开书签管理器
+    .label = 打开书签管理器
+floorp-custom-actions-show-bookmark-toolbar = 切换书签工具栏
+    .label = 切换书签工具栏
+floorp-custom-actions-open-general-preferences = 打开通用首选项
+    .label = 打开通用首选项
+floorp-custom-actions-open-privacy-preferences = 打开隐私首选项
+    .label = 打开隐私首选项
+floorp-custom-actions-open-workspaces-preferences = 打开工作区首选项
+    .label = 打开工作区首选项
+floorp-custom-actions-open-containers-preferences = 打开容器首选项
+    .label = 打开容器首选项
+floorp-custom-actions-open-search-preferences = 打开搜索首选项
+    .label = 打开搜索首选项
+floorp-custom-actions-open-sync-preferences = 打开同步首选项
+    .label = 打开同步首选项
 floorp-custom-actions-open-task-manager = 打开任务管理器
-.label = 打开 { -brand-short-name } 的任务管理器
+    .label = 打开 { -brand-short-name } 的任务管理器
 floorp-custom-actions-open-home-page = 打开 { -brand-short-name } 的主页
-.label = 打开 { -brand-short-name } 的主页
-floorp-custom-actions-open-addons-manager = 打开附加组件管理器
-.label = 打开附加组件和主题
-floorp-custom-actions-forget-history = 忘记历史记录
-.label = 忘记历史记录
-floorp-custom-actions-quick-forget-history = 快速忘记历史记录
-.label = 快速忘记历史记录
+    .label = 打开 { -brand-short-name } 的主页
+floorp-custom-actions-open-addons-manager = 打开插件和主题
+    .label = 打开插件和主题
+floorp-custom-actions-forget-history = 清除历史记录
+    .label = 清除历史记录
+floorp-custom-actions-quick-forget-history = 快速清除历史记录
+    .label = 快速清除历史记录
 floorp-custom-actions-clear-recent-history = 清除最近历史记录
-.label = 清除最近历史记录
-floorp-custom-actions-restore-last-session = 恢复上次会话
-.label = 恢复上次会话
+    .label = 清除最近历史记录
 floorp-custom-actions-search-history = 搜索历史记录
-.label = 搜索历史记录
+    .label = 搜索历史记录
 floorp-custom-actions-manage-history = 管理历史记录
-.label = 管理历史记录
+    .label = 管理历史记录
 floorp-custom-actions-open-downloads = 打开下载
-.label = 打开下载
-floorp-custom-actions-show-bsm = 显示浏览器管理器侧边栏
-.label = 显示浏览器管理器侧边栏
+    .label = 打开下载
+floorp-custom-actions-show-bms = 切换浏览器管理器侧边栏
+    .label = 切换浏览器管理器侧边栏
+floorp-custom-actions-show-current-panel = 切换当前面板
+    .label = 切换当前面板
 floorp-custom-actions-show-bookmark-sidebar = 显示书签侧边栏
-.label = 显示书签侧边栏
+    .label = 显示书签侧边栏
 floorp-custom-actions-show-history-sidebar = 显示历史侧边栏
-.label = 显示历史侧边栏
-floorp-custom-actions-show-synced-tabs-sidebar = 显示同步的标签侧边栏
-.label = 显示同步的标签侧边栏
+    .label = 显示历史侧边栏
+floorp-custom-actions-show-synced-tabs-sidebar = 显示已同步标签页侧边栏
+    .label = 显示已同步标签页侧边栏
 floorp-custom-actions-reverse-sidebar = 反转侧边栏位置
-.label = 反转侧边栏位置
+    .label = 反转侧边栏位置
 floorp-custom-actions-hide-sidebar = 隐藏侧边栏
-.label = 隐藏侧边栏
+    .label = 隐藏侧边栏
+floorp-custom-actions-show-sidebar = 切换侧边栏
+    .label = 切换侧边栏
 floorp-custom-actions-toggle-sidebar = 切换侧边栏
-.label = 切换侧边栏
+    .label = 切换侧边栏
 floorp-custom-actions-open-previous-workspace = 打开上一个工作区
-.label = 打开上一个工作区
+    .label = 打开上一个工作区
 floorp-custom-actions-open-next-workspace = 打开下一个工作区
-.label = 打开下一个工作
-
-
+    .label = 打开下一个工作区
+floorp-custom-actions-show-panel-1 = 切换面板 1
+    .label = 切换面板 1
+floorp-custom-actions-show-panel-2 = 切换面板 2
+    .label = 切换面板 2
+floorp-custom-actions-show-panel-3 = 切换面板 3
+    .label = 切换面板 3
+floorp-custom-actions-show-panel-4 = 切换面板 4
+    .label = 切换面板 4
+floorp-custom-actions-show-panel-5 = 切换面板 5
+    .label = 切换面板 5
+floorp-custom-actions-show-panel-6 = 切换面板 6
+    .label = 切换面板 6
+floorp-custom-actions-show-panel-7 = 切换面板 7
+    .label = 切换面板 7
+floorp-custom-actions-show-panel-8 = 切换面板 8
+    .label = 切换面板 8
+floorp-custom-actions-show-panel-9 = 切换面板 9
+    .label = 切换面板 9
+floorp-custom-actions-show-panel-10 = 切换面板 10
+    .label = 切换面板 10
+floorp-custom-actions-open-split-view-on-left = 在分屏视图左侧打开当前标签页
+    .label = 在分屏视图左侧打开当前标签页
+floorp-custom-actions-open-split-view-on-right = 在分屏视图右侧打开当前标签页
+    .label = 在分屏视图右侧打开当前标签页
+floorp-custom-actions-close-split-view = 关闭分屏显示
+    .label = 关闭分屏显示
+floorp-custom-actions-custom-action-1 = 自定义动作 1
+    .label = 自定义动作 1
+floorp-custom-actions-custom-action-2 = 自定义动作 2
+    .label = 自定义动作 2
+floorp-custom-actions-custom-action-3 = 自定义动作 3
+    .label = 自定义动作 3
+floorp-custom-actions-custom-action-4 = 自定义动作 4
+    .label = 自定义动作 4
+floorp-custom-actions-custom-action-5 = 自定义动作 5
+    .label = 自定义动作 5
+floorp-custom-actions-rest-mode = 启用休息模式
+    .label = 启用休息模式
+floorp-custom-actions-hide-user-interface = 切换用户界面（仅显示网页区域）
+    .label = 切换用户界面（仅显示网页区域）
+floorp-custom-actions-toggle-navigation-panel = 切换导航栏
+    .label = 切换导航栏
 ##################################################################### Profile Switcher ###############################################################
 
 floorp-open-profile-with-new-instance = 启动
-.tooltiptext = 使用此配置文件启动 { -brand-short-name }
+    .tooltiptext = 使用此配置文件启动 { -brand-short-name }
 floorp-profiles-in-use = 此配置文件正在使用中。
 floorp-profiles-title = 配置文件
-floorp-profiles-create = 创建配置文件
 floorp-profile-manager = 配置文件管理器
-.label = 配置文件管理器
-.tooltiptext = 打开配置文件管理器
+floorp-profiles-create = 创建配置文件
+floorp-profile = 配置文件
+    .label = 配置文件管理器
+    .tooltiptext = 打开配置文件管理器
+fxa-not-signed-in = 未登录
+###################################################################### Private Container ##############################################################
+floorp-private-container-name = 私人
+floorp-toggle-private-container = 
+    .label = 在私人/无容器中重新打开
+    .accesskey = P
+open-in_private-container = 
+    .label = 用私人容器在新标签页中打开
+######################################################################## Split View ###############################################################
+
+floorp-split-view-open-menu = 
+    .label = Open in Split View
+floorp-split-view-open-menu-disabled = 
+    .label = Need Unspliting and Unselected tab
+split-view-remove-button = Remove Split View
+split-view-title = Split View Settings
+split-view-position = Position
+split-view-flex-type = Flex Type
+split-view-position-top = Top Side
+split-view-position-left = Default
+split-view-position-right = Reverse
+split-view-flex-column = Vertical
+split-view-flex-row = Horizontal
+######################################################################### Page Actions ###############################################################
+qrcode-generate-page-action-title = 使用您的手机扫描二维码
+qrcode-generate-page-action = 
+    .tooltiptext = 与您的手机分享此页面
+######################################################################### Customize Mode ###############################################################
+floorp-customize-mode-unified-extensions-button = 
+    .label = 统一扩展按钮
+######################################################################### Progressive Web Apps (SSB) ###############################################################
+
+ssb-page-action = 
+    .label = 安装应用
+    .tooltiptext = 将此站点安装为应用
+ssb-page-action-title = 安装应用
+ssb-app-open-button = 
+    .label = 在应用中打开
+ssb-app-install-button = 
+    .label = 安装
+ssb-app-cancel-button = 
+    .label = 取消
+floorp-open-manage-ssb-page = 
+    .label = 管理已安装的 Web 应用
+appmenuitem-webapps = 
+    .label = Web 应用
+appmenu-open-installed-apps-subheader = 打开已安装的 Web 应用
+appmenuitem-install-current-page = 
+    .label = 将此站点安装为应用
+appmenuitem-open-current-page = 
+    .label = 在已安装的应用上打开此站点
+appmenuitem-contextmenu-open-app = 
+    .label = 打开此应用
+appmenuitem-contextmenu-uninstall-app = 
+    .label = 卸载此应用
+
+## Preferences
+
+category-ssb = 
+    .label = Web 应用
+    .tooltiptext = Web 应用
+category-ssb-title = Web 应用
+floorp-ssb-title = Web 应用
+floorp-ssb-description = Web 应用可将网站作为应用安装，可在 { -brand-short-name } 的菜单栏及 Windows 的开始菜单启动应用。
+ssb-preferences = Web 应用设置
+floorp-enable-ssb = 
+    .label = 启用 Web 应用
+floorp-enable-ssb-with-experimental = 
+    .label = 启用 Web 应用 (实验性)
+floorp-enable-ssb-description = 此功能在 Mac 和 Linux 操作系统上属于实验性功能，推荐在 Windows 操作系统中启用。
+floorp-disable-toolbars = 
+    .label = 禁用 Web 应用窗口内的工具栏
+floorp-disable-toolbars-description = 此操作将隐藏在 Web 应用窗口上的所有插件和工具栏
+ssb-installed-list-title = 已安装的 Web 应用
+ssb-uninstall-title = 卸载 Web 应用
+ssb-uninstall-message = 确定要从 { -brand-short-name } 卸载此 Web 应用吗?
+ssb-uninstall-button = 
+    .label = 卸载
+ssb-uninstall-cancel = 取消
+######################################################################### Download Notification ###############################################################
+floorp-started-download = 下载已开始
+floorp-finished-download = 下载完成！
+######################################################################### Update notify ###############################################################
+
+floorp-notificationTitle-latest = { -brand-short-name } 已是最新版本！
+floorp-notificationContent-latest = { -brand-short-name } 已是最新版本。你正在使用最新的 { -brand-short-name }.
+floorp-notificationTitle = { -brand-short-name } 已有新版本！
+floorp-notificationContent = 点击下载最新版本。
+######################################################################### vertical tab bar ###############################################################
+
+close-tabs-to-the-start-on-vertical-tab-bar = 
+    .label = 关闭上方所有标签页
+    .accesskey = S
+close-tabs-to-the-end-on-vertical-tab-bar = 
+    .label = 关闭下方所有标签页
+    .accesskey = E

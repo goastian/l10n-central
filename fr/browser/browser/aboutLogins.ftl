@@ -4,14 +4,17 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Identifiants et mots de passe
-login-filter =
-    .placeholder = Rechercher des identifiants
-create-login-button = Créer un nouvel identifiant
 about-logins-login-filter =
     .placeholder = Rechercher des identifiants
     .key = F
 create-new-login-button =
     .title = Créer un nouvel identifiant
+about-logins-page-title-name = Mots de passe
+about-logins-login-filter2 =
+    .placeholder = Rechercher des mots de passe
+    .key = F
+create-login-button =
+    .title = Ajouter un mot de passe
 fxaccounts-sign-in-text = Accédez à vos mots de passe sur vos autres appareils
 fxaccounts-sign-in-sync-button = Se connecter pour synchroniser
 fxaccounts-avatar-button =
@@ -26,6 +29,8 @@ about-logins-menu-menuitem-import-from-another-browser = Importer depuis un autr
 about-logins-menu-menuitem-import-from-a-file = Importer depuis un fichier…
 about-logins-menu-menuitem-export-logins = Exporter les identifiants…
 about-logins-menu-menuitem-remove-all-logins = Supprimer tous les identifiants…
+about-logins-menu-menuitem-export-logins2 = Exporter les mots de passe…
+about-logins-menu-menuitem-remove-all-logins2 = Supprimer tous les mots de passe…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Options
@@ -52,6 +57,21 @@ login-list-filtered-count =
         [one] { $count } identifiant sur { $total }
        *[other] { $count } identifiants sur { $total }
     }
+# Variables
+#   $count (number) - Number of logins
+login-list-count2 =
+    { $count ->
+        [one] { $count } mot de passe
+       *[other] { $count } mots de passe
+    }
+# Variables
+#   $count (number) - Number of filtered logins
+#   $total (number) - Total number of logins
+login-list-filtered-count2 =
+    { $total ->
+        [one] { $count } sur { $total } mot de passe
+       *[other] { $count } sur { $total } mots de passe
+    }
 login-list-sort-label-text = Trier par :
 login-list-name-option = Nom (A-Z)
 login-list-name-reverse-option = Nom (Z-A)
@@ -61,11 +81,14 @@ about-logins-login-list-alerts-option = Alertes
 login-list-last-changed-option = Dernière modification
 login-list-last-used-option = Dernière utilisation
 login-list-intro-title = Aucun identifiant trouvé
+login-list-intro-title2 = Aucun mot de passe enregistré
 login-list-intro-description = Lorsque vous enregistrez un mot de passe dans { -brand-product-name }, il apparaît ici.
 about-logins-login-list-empty-search-title = Aucun identifiant trouvé
+about-logins-login-list-empty-search-title2 = Aucun mot de passe trouvé
 about-logins-login-list-empty-search-description = Aucun résultat ne correspond à votre recherche.
 login-list-item-title-new-login = Nouvel identifiant
 login-list-item-subtitle-new-login = Saisissez vos informations de connexion
+login-list-item-title-new-login2 = Ajouter un mot de passe
 login-list-item-subtitle-missing-username = (aucun nom d’utilisateur)
 about-logins-list-item-breach-icon =
     .title = Site victime d’une fuite de données
@@ -84,18 +107,29 @@ about-logins-login-intro-heading-logged-out2 = Vous cherchez vos identifiants en
 about-logins-login-intro-heading-logged-in = Aucun identifiant synchronisé trouvé.
 login-intro-description = Si vous avez enregistré vos identifiants dans { -brand-product-name } sur un autre appareil, voici comment y accéder ici :
 login-intro-instructions-fxa = Connectez-vous ou créez un { -fxaccount-brand-name } sur l’appareil où vos identifiants sont enregistrés.
+about-logins-login-intro-heading-message = Enregistrez vos mots de passe en lieu sûr
+login-intro-description2 = Tous les mots de passe que vous enregistrez dans { -brand-product-name } sont chiffrés. De plus, nous surveillons les fuites de données et vous alertons si elles vous concernent. <a data-l10n-name="breach-alert-link">En savoir plus</a>
+login-intro-instructions-fxa2 = Connectez-vous ou créez un compte sur l’appareil où vos identifiants sont enregistrés.
 login-intro-instructions-fxa-settings = Allez dans Paramètres > Synchronisation > Activer la synchronisation… et sélectionnez la case Identifiants et mots de passe.
 login-intro-instructions-fxa-passwords-help = Consultez <a data-l10n-name="passwords-help-link">l’assistance sur les mots de passe</a> pour davantage d’aide.
 about-logins-intro-browser-only-import = Si vos identifiants sont enregistrés dans un autre navigateur, vous pouvez <a data-l10n-name="import-link">les importer dans { -brand-product-name }</a>
 about-logins-intro-import2 = Si vos identifiants de connexion et mots de passe sont enregistrés en dehors de { -brand-product-name }, vous pouvez <a data-l10n-name="import-browser-link">les importer depuis un autre navigateur</a> ou <a data-l10n-name="import-file-link">depuis un fichier</a>
+about-logins-intro-import3 = Cliquez sur le bouton avec le signe plus ci-dessus pour ajouter un mot de passe maintenant. Vous pouvez également <a data-l10n-name="import-browser-link">importer les mots de passe depuis un autre navigateur</a> ou <a data-l10n-name="import-file-link">depuis un fichier</a>.
 
 ## Login
 
 login-item-new-login-title = Créer un nouvel identifiant
+# Header for adding a password
+about-logins-login-item-new-login-title = Ajouter un mot de passe
 login-item-edit-button = Modifier
 about-logins-login-item-remove-button = Supprimer
 login-item-origin-label = Adresse web
 login-item-tooltip-message = Assurez-vous que cela correspond à l’adresse exacte du site web où vous vous connectez.
+about-logins-origin-tooltip2 = Saisissez l’adresse complète et assurez-vous de sa correspondance exacte avec l’adresse depuis laquelle vous vous connectez.
+# Variables
+#   $webTitle (String) - Website title of the password being changed.
+about-logins-edit-password-tooltip = Assurez-vous de bien enregistrer votre mot de passe actuel pour ce site. Changer le mot de passe ici ne suffit pas à le changer pour { $webTitle }.
+about-logins-add-password-tooltip = Assurez-vous d’enregistrer votre mot de passe actuel pour ce site.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nom d’utilisateur
@@ -109,11 +143,9 @@ login-item-password-reveal-checkbox =
 login-item-copy-password-button-text = Copier
 login-item-copied-password-button-text = Copié !
 login-item-save-changes-button = Enregistrer les modifications
+about-logins-login-item-save-changes-button = Enregistrer
 login-item-save-new-button = Enregistrer
 login-item-cancel-button = Annuler
-login-item-time-changed = Dernière modification : { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
-login-item-time-created = Créé le : { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
-login-item-time-used = Dernière utilisation : { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## The date is displayed in a timeline showing the password evolution.
 ## A label is displayed under the date to describe the type of change.
@@ -139,6 +171,18 @@ about-logins-edit-login-os-auth-dialog-message-win = Pour modifier votre identif
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = modifier l’identifiant enregistré
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
+# This message can be seen when attempting to disable osauth in about:preferences.
+about-logins-os-auth-dialog-message =
+    { PLATFORM() ->
+        [macos] modifier les paramètres des mots de passe
+       *[other] { -brand-short-name } tente de modifier les paramètres des mots de passe. Connectez-vous à l’aide de votre appareil pour autoriser cette action.
+    }
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message2-win = Pour modifier votre mot de passe, utilisez vos informations de connexion à Windows. Cela contribue à protéger la sécurité de vos comptes.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message2-macosx = modifier le mot de passe enregistré
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Pour afficher votre mot de passe, entrez vos informations de connexion Windows. Cela permet de conserver la sécurité de vos comptes.
 # This message can be seen when attempting to reveal a password in about:logins
@@ -154,6 +198,11 @@ about-logins-export-password-os-auth-dialog-message-win = Pour exporter vos iden
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = exporter les identifiants et mots de passe enregistrés
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message2-win = Pour exporter vos mots de passe, utilisez vos informations de connexion à Windows. Cela contribue à protéger la sécurité de vos comptes.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message2-macosx = exporter les mots de passe enregistrés
 
 ## Primary Password notification
 
@@ -169,6 +218,10 @@ confirmation-dialog-dismiss-button =
     .title = Annuler
 about-logins-confirm-remove-dialog-title = Supprimer cet identifiant ?
 confirm-delete-dialog-message = Cette action est irréversible.
+# Title for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-title = Supprimer le mot de passe ?
+# Message for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-message = Cette action ne peut être annulée.
 about-logins-confirm-remove-dialog-confirm-button = Supprimer
 
 ## Variables
@@ -204,12 +257,50 @@ about-logins-confirm-remove-all-sync-dialog-message =
         [1] Cette action supprimera l’identifiant enregistré pour { -brand-short-name } de tous vos appareils synchronisés à votre { -fxaccount-brand-name }. Cela supprimera également les alertes de fuites de données qui apparaissent ici. Cette action est irréversible.
        *[other] Cette action supprimera tous les identifiants enregistrés pour { -brand-short-name } de tous vos appareils synchronisés à votre { -fxaccount-brand-name }. Cela supprimera également les alertes de fuites de données qui apparaissent ici. Cette action est irréversible.
     }
+# Checkbox for modal to confirm the removal of saved passwords
+about-logins-confirm-remove-all-dialog-checkbox-label2 =
+    { $count ->
+        [1] Oui, supprimer le mot de passe
+        [one] Oui, supprimer le mot de passe
+       *[other] Oui, supprimer les mots de passe
+    }
+# Title for modal to confirm the removal of all saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-title2 =
+    { $count ->
+        [one] Supprimer un mot de passe ?
+       *[other] Supprimer les { $count } mots de passe ?
+    }
+# Message for modal to confirm the removal of saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-message2 =
+    { $count ->
+        [1] Cette action supprime le mot de passe enregistré dans { -brand-short-name } et toutes les alertes de fuites de données. Elle ne peut être annulée.
+        [one] Cette action supprime le mot de passe enregistré dans { -brand-short-name } et toutes les alertes de fuites de données. Elle ne peut être annulée.
+       *[other] Cette action supprime les mots de passe enregistrés dans { -brand-short-name } et toutes les alertes de fuites de données. Elle ne peut être annulée.
+    }
+# Title for modal to confirm the removal of all saved passwords when user IS SYNCED
+about-logins-confirm-remove-all-sync-dialog-title2 =
+    { $count ->
+        [one] Supprimer le mot de passe de tous les appareils ?
+       *[other] Supprimer les { $count } mots de passe de tous les appareils ?
+    }
+# Message for modal to confirm the removal of saved passwords when user IS synced.
+about-logins-confirm-remove-all-sync-dialog-message3 =
+    { $count ->
+        [1] Cette action supprime le mot de passe enregistré dans { -brand-short-name } de tous vos appareils synchronisés. Elle supprime également les alertes de fuites de données qui apparaissent ici. Cette action est irréversible.
+        [one] Cette action supprime le mot de passe enregistré dans { -brand-short-name } de tous vos appareils synchronisés. Elle supprime également les alertes de fuites de données qui apparaissent ici. Cette action est irréversible.
+       *[other] Cette action supprime tous les mots de passe enregistrés dans { -brand-short-name } de tous vos appareils synchronisés. Elle supprime également les alertes de fuites de données qui apparaissent ici. Cette action est irréversible.
+    }
 
 ##
 
 about-logins-confirm-export-dialog-title = Exporter les identifiants et les mots de passe
 about-logins-confirm-export-dialog-message = Vos mots de passe seront enregistrés sous forme de texte lisible (par exemple, « m0t2passeFaible ») ; ainsi toute personne pouvant ouvrir le fichier exporté pourra les consulter.
 about-logins-confirm-export-dialog-confirm-button = Exporter…
+about-logins-confirm-export-dialog-title2 = Note au sujet de l’exportation des mots de passe
+about-logins-confirm-export-dialog-message2 =
+    Lors de l’exportation, vos mots de passe sont enregistrés en clair dans un fichier texte.
+    Lorsque vous avez fini d’utiliser ce fichier, nous vous recommandons de le supprimer afin que les autres personnes qui utilisent cet appareil ne puissent pas découvrir vos mots de passe.
+about-logins-confirm-export-dialog-confirm-button2 = Poursuivre l’exportation
 about-logins-alert-import-title = Importation terminée
 about-logins-alert-import-message = Voir la liste détaillée des importations
 confirm-discard-changes-dialog-title = Ignorer les modifications non enregistrées ?
@@ -224,7 +315,6 @@ about-logins-breach-alert-date = Cette fuite de données s’est produite le { D
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Accéder à { $hostname }
-about-logins-breach-alert-learn-more-link = En savoir plus
 
 ## Vulnerable Password notification
 
@@ -252,6 +342,11 @@ about-logins-export-file-picker-title = Exporter le fichier des identifiants
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = identifiants.csv
+# Title of the file picker dialog
+about-logins-export-file-picker-title2 = Exporter les mots de passe depuis { -brand-short-name }
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename2 = motsdepasse.csv
 about-logins-export-file-picker-export-button = Exporter
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -265,6 +360,8 @@ about-logins-export-file-picker-csv-filter-title =
 
 # Title of the file picker dialog
 about-logins-import-file-picker-title = Importer un fichier d’identifiants
+# Title of the file picker dialog
+about-logins-import-file-picker-title2 = Importer des mots de passe dans { -brand-short-name }
 about-logins-import-file-picker-import-button = Importer
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -299,6 +396,21 @@ about-logins-import-dialog-items-no-change =
         [1] <span>Identifiants en double trouvés :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importé)</span>
        *[other] <span>Identifiants en double trouvés :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importés)</span>
     }
+about-logins-import-dialog-items-added2 =
+    { $count ->
+        [one] <span>Nouveau mot de passe ajouté :</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Nouveaux mots de passe ajoutés :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified2 =
+    { $count ->
+        [one] <span>Entrée existante mise à jour :</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Entrées existantes mises à jour :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change2 =
+    { $count ->
+        [one] <span>Doublon trouvé :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importé)</span>
+       *[other] <span>Doublons trouvés :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importés)</span>
+    }
 about-logins-import-dialog-items-error =
     { $count ->
         [1] <span>Erreurs :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importée)</span>
@@ -320,6 +432,7 @@ about-logins-import-dialog-error-try-import-again = Réessayer d’importer…
 about-logins-import-dialog-error-cancel = Annuler
 about-logins-import-report-title = Résumé de l’importation
 about-logins-import-report-description = Identifiants et mots de passe importés dans { -brand-short-name }.
+about-logins-import-report-description2 = Mots de passe importés dans { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -327,6 +440,9 @@ about-logins-import-report-row-index = Ligne { $number }
 about-logins-import-report-row-description-no-change = Doublon : correspondance exacte avec un identifiant existant
 about-logins-import-report-row-description-modified = Identifiant existant mis à jour
 about-logins-import-report-row-description-added = Nouvel identifiant ajouté
+about-logins-import-report-row-description-no-change2 = Doublon : correspondance exacte avec une entrée existante
+about-logins-import-report-row-description-modified2 = Entrée existante mise à jour
+about-logins-import-report-row-description-added2 = Nouveau mot de passe ajouté
 about-logins-import-report-row-description-error = Erreur : champ manquant
 
 ##
@@ -354,6 +470,21 @@ about-logins-import-report-no-change =
     { $count ->
         [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">identifiant en double</div> <div data-l10n-name="not-imported">(non importé)</div>
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">identifiants en double</div> <div data-l10n-name="not-imported">(non importés)</div>
+    }
+about-logins-import-report-added2 =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">nouveau mot de passe ajouté</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">nouveaux mots de passe ajoutés</div>
+    }
+about-logins-import-report-modified2 =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">entrée existante mise à jour</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">entrées existantes mises à jour</div>
+    }
+about-logins-import-report-no-change2 =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">doublon</div> <div data-l10n-name="not-imported">(non importé)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">doublons</div> <div data-l10n-name="not-imported">(non importés)</div>
     }
 about-logins-import-report-error =
     { $count ->

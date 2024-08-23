@@ -97,7 +97,7 @@ security-view-privacy =
 security-view-privacy-history-value = Έχω επισκεφθεί τον ιστότοπο στο παρελθόν;
 security-view-privacy-sitedata-value = Αποθηκεύει ο ιστότοπος πληροφορίες στον υπολογιστή μου;
 security-view-privacy-clearsitedata =
-    .label = Απαλοιφή cookies και δεδομένων ιστοτόπου
+    .label = Απαλοιφή cookie και δεδομένων ιστοτόπου
     .accesskey = Α
 security-view-privacy-passwords-value = Έχω αποθηκεύσει κωδικούς πρόσβασης για τον ιστότοπο;
 security-view-privacy-viewpasswords =
@@ -114,9 +114,9 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
-security-site-data-cookies = Ναι, cookies και { $value } { $unit } δεδομένων ιστοτόπου
+security-site-data-cookies = Ναι, cookie και { $value } { $unit } δεδομένων ιστοτόπου
 security-site-data-only = Ναι, { $value } { $unit } δεδομένων ιστοτόπου
-security-site-data-cookies-only = Ναι, cookies
+security-site-data-cookies-only = Ναι, cookie
 security-site-data-no = Όχι
 
 ##
@@ -220,17 +220,17 @@ media-dimensions =
 # Variables:
 #   $size (number) - The size of the media file in kilobytes
 media-file-size = { $size } KB
+
+## Variables:
+##   $website (string) — The url of the website pageInfo is getting info for
+
 # This string is used to display the website name next to the
 # "Block Images" checkbox in the media tab
-# Variables:
-#   $website (string) - The website name
 media-block-image =
     .label = Φραγή εικόνων από { $website }
     .accesskey = α
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box
-# Variables:
-#   $website (string) — The url of the website pageInfo is getting info for
 page-info-page =
     .title = Πληροφορίες σελίδας — { $website }
 page-info-frame =

@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Wyjątki
-    .style = width: 35em
 permissions-window2 =
     .title = Wyjątki
     .style = min-width: 35em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Podaj prawidłową nazwę hosta
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Wzmocniona ochrona przed śledzeniem — wyjątki
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Ochrona została wyłączona dla tych witryn.
 permissions-exceptions-etp-window2 =
     .title = Wzmocniona ochrona przed śledzeniem — wyjątki
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Określ, na których witrynach wyłącz
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Ciasteczka i dane witryn — wyjątki
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Ciasteczka i dane witryn — wyjątki
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Określ zasady akceptacji ciasteczek i dan
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Tryb używania wyłącznie protokołu HTTPS — wyjątki
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Tryb używania wyłącznie protokołu HTTPS — wyjątki
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Określ, na których witrynach nie korzystać z trybu używania wyłącznie protokołu HTTPS. { -brand-short-name } nie będzie próbował przełączyć na zabezpieczone połączenie HTTPS na tych witrynach. Wyjątki nie są uwzględniane w oknach prywatnych.
+permissions-exceptions-https-only-desc2 = Określ, na których witrynach nie korzystać z trybu używania wyłącznie protokołu HTTPS. { -brand-short-name } nie będzie próbował przełączyć na zabezpieczone połączenie HTTPS na tych witrynach.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Wyskakujące okna — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Wyskakujące okna — uprawnione witryny
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Określ, które witryny mogą otwierać wysk
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Zachowywanie danych logowania — wyjątki
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Zachowywanie danych logowania — wyjątki
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Dane logowania dla następujących witryn nie będą zachowywane.
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Zachowywanie hasła — wyjątki
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } nie będzie zachowywać haseł do wymienionych tutaj witryn.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Instalacja dodatków — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Instalacja dodatków — uprawnione witryny
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Określ, które witryny mogą instalować d
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Automatyczne odtwarzanie — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Automatyczne odtwarzanie — uprawnione witryny
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Zarządzaj witrynami, które nie korzystają z�
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Wyświetlanie powiadomień — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Wyświetlanie powiadomień — uprawnione witryny
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Uniemożliwi to witrynom spoza list
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Informowanie o położeniu — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Informowanie o położeniu — uprawnione witryny
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Uniemożliwi to witrynom spoza listy po
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Rzeczywistość wirtualna — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Rzeczywistość wirtualna — uprawnione witryny
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Uniemożliwi to witrynom spoza listy powyżej
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Udostępnianie kamery — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Udostępnianie kamery — uprawnione witryny
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Uniemożliwi to witrynom spoza listy powy
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Udostępnianie mikrofonu — uprawnione witryny
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Udostępnianie mikrofonu — uprawnione witryny
     .style = { permissions-window2.style }

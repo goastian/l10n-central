@@ -2,29 +2,19 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
 # refactoring them in some way, the script will need updating.
 
-# Variables:
-# $hostname (String) - Hostname of the website with SSL error.
-# $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = Ein feil oppstod under tilkopling til { $hostname }. { $errorMessage }
-
-# Variables:
-# $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
-cert-error-code-prefix = Feilkode: { $error }
-
 psmerr-ssl-disabled = Kan ikkje kopla til trygt, fordi SSL-protokollen er slått av.
 psmerr-ssl2-disabled = Kan ikkje kople til trygt, fordi nettstaden brukar ein eldre, utrygg versjon av SSL-protokollen.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Du har motteke eit ugyldig sertifikat. Kontakt den ansvarlige for tenaren, eller e-postmottakaren, og gje dei følgande informasjon:
     
     Sertifikatet inneheld det same serienummeret som eit anna sertifikat som er utgjeve av denne sertifikatutgjevaren. Skaff eit nytt sertifikat med unikt serienummer.
-
 ssl-error-export-only-server = Klarte ikkje å kommunisere trygt. Motparten støttar ikkje sterk kryptering.
 ssl-error-us-only-server = Klarte ikkje å kommunisere trygt. Motparten krev ei sterk kryptering som ikkje er støtta.
 ssl-error-no-cypher-overlap = Kan ikkje kommunisere trygt med motparten: Har ingen felles krypteringsalgoritme.
@@ -159,8 +149,8 @@ ssl-error-weak-server-cert-key = Tenar-sertifikatet inneheld ein offentlig nøkk
 ssl-error-rx-short-dtls-read = Ikkje nok plass i buffer for DTLS-oppføring.
 ssl-error-no-supported-signature-algorithm = Ingen støtta TLS signaturalgoritmar vart konfigurerte.
 ssl-error-unsupported-signature-algorithm = Motparten brukte ein ustøtta kombinasjon av signatur og hash-algoritmar.
-ssl-error-missing-extended-master-secret = Motparten freista å fortsetje utan ei gyldig extended_master_secret-utviding.
-ssl-error-unexpected-extended-master-secret = Motparten freista å fortsetje med ei uventa extended_master_secret-utviding.
+ssl-error-missing-extended-master-secret = Motparten freista å halde fram utan ei gyldig extended_master_secret-utviding.
+ssl-error-unexpected-extended-master-secret = Motparten freista å halde fram med ei uventa extended_master_secret-utviding.
 sec-error-io = Ein I/O-feil oppstod under sikkerheitsautorisasjon.
 sec-error-library-failure = feil i tryggingsbibliotek.
 sec-error-bad-data = tryggingsbibliotek: tok imot ugyldige data.
@@ -211,14 +201,6 @@ sec-error-pkcs7-keyalg-mismatch = Klarte ikkje å dekryptere: Nøkkelen sin kryp
 sec-error-pkcs7-bad-signature = Signaturverifikasjon feila: ingen signerar funne, for mange signerarar funne, eller ugyldige/øydelagde data.
 sec-error-unsupported-keyalg = Ikkje støtta eller ugyldig nøkkelalgoritme.
 sec-error-decryption-disallowed = Klarte ikkje å dekryptere: Er kryptert med ein algoritme eller nøkkelstorleik som ikkje er tillaten.
-xp-sec-fortezza-bad-card = Fortezza-kort har ikkje vorte skikkeleg initialisert.  Fjern det, og returner det til utskrivaren.
-xp-sec-fortezza-no-card = Ingen Fortezza-kort vart funne
-xp-sec-fortezza-none-selected = Ingen Fortezza-kort er valt
-xp-sec-fortezza-more-info = Vel ein personlegdom å henta meir informasjon om
-xp-sec-fortezza-person-not-found = Personlegdom ikkje funne.
-xp-sec-fortezza-no-more-info = Har ikkje meir informasjon om den personlegdomen
-xp-sec-fortezza-bad-pin = Ugyldig Pin
-xp-sec-fortezza-person-error = Klarte ikkje å initialsere Fortezza-personlegdommar.
 sec-error-no-krl = Ingen KRL-ar vart funne for sertifikatet åt denne nettstaden.
 sec-error-krl-expired = KRL-en for sertifikatet åt denne nettstaden er gått ut på dato.
 sec-error-krl-bad-signature = KRL-en for sertifikatet åt denne nettstaden har ein ugyldig signatur.
@@ -233,9 +215,6 @@ sec-error-cert-nickname-collision = Eit sertifikat med same kallenamn finst alt.
 sec-error-key-nickname-collision = Ein nøkkel med same kallenamn finst alt.
 sec-error-safe-not-created = ein feil oppstod under opprettinga av trygt objekt
 sec-error-baggage-not-created = ein feil oppstod under opprettinga av bagasjeobjekt
-xp-java-remove-principal-error = Klarte ikkje å fjerne kontohavar
-xp-java-delete-privilege-error = Klarte ikkje å slette privilegiet
-xp-java-cert-not-exists-error = Denne principalen har ikkje eit sertifikat
 sec-error-bad-export-algorithm = Påkravd algoritme er ikkje tillaten.
 sec-error-exporting-certificates = Feil ved eksport av sertifikat.
 sec-error-importing-certificates = Feil ved import av sertifikat.
@@ -352,3 +331,14 @@ mozilla-pkix-error-invalid-integer-encoding = Tenaren spesifiserte eit sertifika
 mozilla-pkix-error-empty-issuer-name = Serveren presenterte eit sertifikat med eit tomt unikt utskrivarnamn.
 mozilla-pkix-error-additional-policy-constraint-failed = Ei ytterlegare policy-avgrensing mislykkast ved validering av dette sertifikatet.
 mozilla-pkix-error-self-signed-cert = Sertifikatet er ikkje tiltrudd fordi det er sjølvsignert.
+xp-java-remove-principal-error = Klarte ikkje å fjerne kontohavar
+xp-java-delete-privilege-error = Klarte ikkje å slette privilegiet
+xp-java-cert-not-exists-error = Denne principalen har ikkje eit sertifikat
+xp-sec-fortezza-bad-card = Fortezza-kort har ikkje vorte skikkeleg initialisert.  Fjern det, og returner det til utskrivaren.
+xp-sec-fortezza-no-card = Ingen Fortezza-kort vart funne
+xp-sec-fortezza-none-selected = Ingen Fortezza-kort er valt
+xp-sec-fortezza-more-info = Vel ein personlegdom å henta meir informasjon om
+xp-sec-fortezza-person-not-found = Personlegdom ikkje funne.
+xp-sec-fortezza-no-more-info = Har ikkje meir informasjon om den personlegdomen
+xp-sec-fortezza-bad-pin = Ugyldig Pin
+xp-sec-fortezza-person-error = Klarte ikkje å initialsere Fortezza-personlegdommar.

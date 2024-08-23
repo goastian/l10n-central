@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = 顯示更多分頁
     .tooltiptext = 顯示來自此裝置的更多分頁
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = 閒置分頁
+    .tooltiptext = 顯示此裝置上的閒置分頁
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = 無已開啟的分頁
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = 立刻同步
 appmenuitem-fxa-sign-in = 登入 { -brand-product-name }
 appmenuitem-fxa-manage-account = 管理帳號
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = 帳號
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = 效能檢測器
     .tooltiptext = 檢測器正在紀錄效能檢測檔
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 揭露更多資訊
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = 推薦於對大部分網頁應用程式除錯時使用，額外負荷較低。
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = 於 { -brand-shorter-name } 診斷耗
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = 電源
+profiler-popup-presets-debug-description = { -brand-shorter-name } 的預設除錯選項。額外負荷較高，請只在需要了解瀏覽器行為時使用，勿用於需要較高效能的情境。
+profiler-popup-presets-debug-label =
+    .label = 除錯
 profiler-popup-presets-custom-label =
     .label = 自訂
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = 管理歷史
-appmenu-reopen-all-tabs = 回復所有分頁
-appmenu-reopen-all-windows = 回復所有視窗
 appmenu-restore-session =
     .label = 回復先前的瀏覽狀態
 appmenu-clear-history =
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = 瀏覽器工具
 appmenu-developer-tools-extensions =
     .label = 開發者專用的擴充套件
+appmenuitem-report-broken-site =
+    .label = 回報網站問題
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = 登入您的帳號
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = 獲得資料外洩警報
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = 隱藏您的實際信箱與電話號碼
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = 保護您的線上行為隱私

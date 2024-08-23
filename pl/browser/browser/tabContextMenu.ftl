@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Dodaj zakładki do zaznaczonych kart…
     .accesskey = D
-bookmark-tab =
-    .label = Dodaj zakładkę do karty
-    .accesskey = D
 tab-context-bookmark-tab =
     .label = Dodaj zakładkę do karty…
     .accesskey = D
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Zamknij wiele kart
     .accesskey = w
+tab-context-close-duplicate-tabs =
+    .label = Zamknij podwójne karty
+    .accesskey = d
 tab-context-share-url =
     .label = Udostępnij
     .accesskey = U
@@ -105,7 +105,6 @@ tab-context-move-tabs =
            *[other] Przenieś karty
         }
     .accesskey = r
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = 탭 북마크…
     .accesskey = k
-bookmark-tab =
-    .label = 탭 북마크
-    .accesskey = B
 tab-context-bookmark-tab =
     .label = 탭 북마크…
     .accesskey = B
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = 여러 탭 닫기
     .accesskey = M
+tab-context-close-duplicate-tabs =
+    .label = 중복 탭 닫기
+    .accesskey = u
 tab-context-share-url =
     .label = 공유
     .accesskey = h
@@ -103,7 +103,6 @@ tab-context-move-tabs =
            *[other] 탭 이동
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label = 탭 { $tabCount }개를 기기로 보내기
     .accesskey = n

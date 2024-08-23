@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = 연결 설정
-    .style =
-        { PLATFORM() ->
-            [macos] width: 44em
-           *[other] width: 49em
-        }
 connection-window2 =
     .title = 연결 설정
     .style =
@@ -27,6 +20,9 @@ connection-proxy-option-no =
 connection-proxy-option-system =
     .label = 시스템 프록시 설정 사용
     .accesskey = u
+connection-proxy-option-wpad =
+    .label = 시스템 웹 프록시 자동 검색 설정 사용
+    .accesskey = g
 connection-proxy-option-auto =
     .label = 프록시 설정 자동 감지
     .accesskey = w
@@ -73,14 +69,12 @@ connection-proxy-autologin-checkbox =
     .label = 비밀번호가 저장되어 있으면 인증시 묻지 않기
     .accesskey = i
     .tooltiptext = 저장한 자격 증명이 있으면 조용히 인증합니다. 인증이 되지 않으면 물어볼 것입니다.
+connection-proxy-socks4-remote-dns =
+    .label = SOCKS v4를 사용할 때 DNS 프록시
+    .accesskey = 4
 connection-proxy-socks-remote-dns =
     .label = SOCKS v5를 사용할 때 DNS 프록시
     .accesskey = d
-connection-dns-over-https =
-    .label = DNS over HTTPS (HTTPS를 통한 DNS) 사용
-    .accesskey = b
-connection-dns-over-https-url-resolver = 공급자 사용
-    .accesskey = P
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

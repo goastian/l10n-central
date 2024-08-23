@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新分頁
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = 新增搜尋引擎
 newtab-topsites-add-shortcut-header = 新增捷徑
 newtab-topsites-edit-topsites-header = 編輯熱門網站
 newtab-topsites-edit-shortcut-header = 編輯捷徑
+newtab-topsites-add-shortcut-label = 新增捷徑
 newtab-topsites-title-label = 標題
 newtab-topsites-title-input =
     .placeholder = 輸入標題
@@ -194,6 +195,7 @@ newtab-section-header-recent-activity = 近期動態
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider } 推薦
+newtab-section-header-stories = 發人深省的文章
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -202,6 +204,8 @@ newtab-empty-section-highlights = 開始上網，我們就會把您在網路上�
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = 所有文章都讀完啦！晚點再來，{ $provider } 將提供更多推薦故事。等不及了？選擇熱門主題，看看 Web 上各式精采資訊。
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = 所有文章都讀完啦！晚點再來看看更多推薦故事。等不及了？選擇熱門主題，看看 Web 上各式精采資訊。
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -223,21 +227,21 @@ newtab-pocket-cta-button = 取得 { -pocket-brand-name }
 newtab-pocket-cta-text = 將您喜愛的故事儲存到 { -pocket-brand-name }，閱讀一篇篇好文章。
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } 是 { -brand-product-name } 產品家族的一部份
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = 儲存至 { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = 已儲存至 { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = 載入更多文章
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = 都讀完了！
-newtab-pocket-last-card-desc = 晚點再回來看看有沒有新文章。
-newtab-pocket-last-card-image =
-    .alt = 都讀完了！
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = 儲存
 newtab-pocket-saved = 已儲存
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = 更多這樣的內容
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = 我沒興趣
+newtab-toast-thumbs-up-or-down = 感謝您。您的意見可幫助我們改善顯示的內容。
+newtab-toast-dismiss-button =
+    .title = 知道了！
+    .aria-label = 知道了！
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -254,18 +258,130 @@ newtab-error-fallback-refresh-link = 請重新整理頁面再試一次。
 
 newtab-custom-shortcuts-title = 捷徑
 newtab-custom-shortcuts-subtitle = 您儲存或造訪過的網站
+newtab-custom-shortcuts-toggle =
+    .label = 捷徑
+    .description = 您儲存或造訪過的網站
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
     { $num ->
+        [one] { $num } 行
        *[other] { $num } 行
     }
 newtab-custom-sponsored-sites = 贊助捷徑
 newtab-custom-pocket-title = 由 { -pocket-brand-name } 推薦
 newtab-custom-pocket-subtitle = 由 { -brand-product-name } 的姊妹作 { -pocket-brand-name } 精心策展的內容
+newtab-custom-stories-toggle =
+    .label = 推薦的文章
+    .description = 由 { -brand-product-name } 產品家族精選的內容文章
 newtab-custom-pocket-sponsored = 贊助內容
 newtab-custom-pocket-show-recent-saves = 顯示近期儲存項目
 newtab-custom-recent-title = 近期動態
 newtab-custom-recent-subtitle = 近期造訪過的網站與內容精選
+newtab-custom-recent-toggle =
+    .label = 近期動態
+    .description = 近期造訪過的網站與內容精選
+newtab-custom-weather-toggle =
+    .label = 天氣
+    .description = 快速了解本日天氣
 newtab-custom-close-button = 關閉
 newtab-custom-settings = 管理更多設定
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = 背景圖
+newtab-wallpaper-reset = 還原為預設值
+newtab-wallpaper-light-red-panda = 小貓熊
+newtab-wallpaper-light-mountain = 白色山脈
+newtab-wallpaper-light-sky = 紫色與粉紅色的天空
+newtab-wallpaper-light-color = 藍色、粉紅與黃色圖型
+newtab-wallpaper-light-landscape = 藍霧山景
+newtab-wallpaper-light-beach = 棕櫚樹海灘
+newtab-wallpaper-dark-aurora = 極光
+newtab-wallpaper-dark-color = 紅色與藍色圖型
+newtab-wallpaper-dark-panda = 隱藏在森林中的小貓熊
+newtab-wallpaper-dark-sky = 城市的夜空景觀
+newtab-wallpaper-dark-mountain = 山景
+newtab-wallpaper-dark-city = 紫色城市風景
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = 純色
+newtab-wallpaper-blue = 藍色
+newtab-wallpaper-light-blue = 淺藍色
+newtab-wallpaper-light-purple = 淺紫色
+newtab-wallpaper-light-green = 淺綠色
+newtab-wallpaper-green = 綠色
+newtab-wallpaper-beige = 米色
+newtab-wallpaper-yellow = 黃色
+newtab-wallpaper-orange = 橘色
+newtab-wallpaper-pink = 粉紅色
+newtab-wallpaper-light-pink = 淺粉紅色
+newtab-wallpaper-red = 紅色
+newtab-wallpaper-dark-blue = 深藍色
+newtab-wallpaper-dark-purple = 深紫色
+newtab-wallpaper-dark-green = 深綠色
+newtab-wallpaper-brown = 棕色
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = 抽象派
+newtab-wallpaper-abstract-green = 綠色造型
+newtab-wallpaper-abstract-blue = 藍色造型
+newtab-wallpaper-abstract-purple = 紫色造型
+newtab-wallpaper-abstract-orange = 橘色造型
+newtab-wallpaper-gradient-orange = 橘色粉紅色漸層
+newtab-wallpaper-abstract-blue-purple = 藍色紫色造型
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = 相片
+newtab-wallpaper-beach-at-sunrise = 海邊日出
+newtab-wallpaper-beach-at-sunset = 海邊日落
+newtab-wallpaper-storm-sky = 暴風雨的天空
+newtab-wallpaper-sky-with-pink-clouds = 有粉紅色雲朵的天空
+newtab-wallpaper-red-panda-yawns-in-a-tree = 在樹上打呵欠的小貓熊
+newtab-wallpaper-white-mountains = 白色山脈
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = 相片由 <a data-l10n-name="name-link">{ $author_string }</a> 於 <a data-l10n-name="webpage-link">{ $webpage_string }</a> 提供
+newtab-wallpaper-feature-highlight-header = 試用新色彩
+newtab-wallpaper-feature-highlight-content = 讓您的「新分頁」耳目一新！
+newtab-wallpaper-feature-highlight-button = 知道了！
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = 隱藏
+    .aria-label = 關閉彈出視窗
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = 到 { $provider } 檢視天氣預報
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ 贊助資訊
+newtab-weather-menu-change-location = 更改位置
+newtab-weather-change-location-search-input = 搜尋位置
+newtab-weather-menu-weather-display = 顯示天氣
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = 簡潔
+newtab-weather-menu-change-weather-display-simple = 切換為簡潔畫面
+newtab-weather-menu-weather-display-option-detailed = 詳細
+newtab-weather-menu-change-weather-display-detailed = 切換為詳細畫面
+newtab-weather-menu-temperature-units = 溫度單位
+newtab-weather-menu-temperature-option-fahrenheit = 華氏
+newtab-weather-menu-temperature-option-celsius = 攝氏
+newtab-weather-menu-change-temperature-units-fahrenheit = 切換為華氏溫度
+newtab-weather-menu-change-temperature-units-celsius = 切換為攝氏溫度
+newtab-weather-menu-hide-weather = 隱藏新分頁的天氣資訊
+newtab-weather-menu-learn-more = 更多資訊
+# This message is shown if user is working offline
+newtab-weather-error-not-available = 目前暫時無法提供天氣資訊。

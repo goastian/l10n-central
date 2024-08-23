@@ -2,9 +2,18 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Midori Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Μετάφραση σελίδας
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
+# not be translated, as it is a reflection of the un-localized BETA icon that is in the
+# panel.
+urlbar-translations-button2 =
+    .tooltiptext = Μετάφραση σελίδας - Beta
+# Note that here "Beta" should not be translated, as it is a reflection of the
+# un-localized BETA icon that is in the panel.
+urlbar-translations-button-intro =
+    .tooltiptext = Δοκιμάστε ιδιωτικές μεταφράσεις στο { -brand-shorter-name } - Beta
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Page translated from: { $fromLanguage }. Current target language: { $toLanguage }`
@@ -24,11 +33,13 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } (BETA)
 
-## Options in the Midori Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Διαχείριση γλωσσών
 translations-panel-settings-about = Σχετικά με τις μεταφράσεις στο { -brand-shorter-name }
+translations-panel-settings-about2 =
+    .label = Σχετικά με τις μεταφράσεις στο { -brand-shorter-name }
 # Text displayed for the option to always translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
@@ -36,16 +47,18 @@ translations-panel-settings-always-translate-language =
     .label = Να μεταφράζονται πάντα τα { $language }
 translations-panel-settings-always-translate-unknown-language =
     .label = Να μεταφράζεται πάντα αυτή η γλώσσα
+translations-panel-settings-always-offer-translation =
+    .label = Να γίνεται πάντα πρόταση για μετάφραση
 # Text displayed for the option to never translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
 translations-panel-settings-never-translate-language =
-    .label = Να μην μεταφράζονται ποτέ τα { $language }
+    .label = Να μη μεταφράζονται ποτέ τα { $language }
 translations-panel-settings-never-translate-unknown-language =
-    .label = Να μην μεταφράζεται ποτέ αυτή η γλώσσα
+    .label = Να μη μεταφράζεται ποτέ αυτή η γλώσσα
 # Text displayed for the option to never translate this website
 translations-panel-settings-never-translate-site =
-    .label = Να μην μεταφράζεται ποτέ αυτός ο ιστότοπος
+    .label = Να μη μεταφράζεται ποτέ αυτός ο ιστότοπος
 
 ## The translation panel appears from the url bar, and this view is the default
 ## translation view.
@@ -57,6 +70,9 @@ translations-panel-translate-button-loading =
     .label = Παρακαλώ περιμένετε…
 translations-panel-translate-cancel =
     .label = Ακύρωση
+translations-panel-learn-more-link = Μάθετε περισσότερα
+translations-panel-intro-header = Δοκιμάστε ιδιωτικές μεταφράσεις στο { -brand-shorter-name }
+translations-panel-intro-description = Για το απόρρητό σας, οι μεταφράσεις δεν φεύγουν ποτέ από τη συσκευή σας. Σύντομα έρχονται νέες γλώσσες και βελτιώσεις!
 translations-panel-error-translating = Προέκυψε πρόβλημα με τη μετάφραση. Παρακαλώ δοκιμάστε ξανά.
 translations-panel-error-load-languages = Δεν ήταν δυνατή η φόρτωση των γλωσσών
 translations-panel-error-load-languages-hint = Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.
@@ -100,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Εμφάνιση πρωτότυπου
 
-## Midori Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Μεταφράσεις
 translations-manage-settings-button =
@@ -110,14 +126,29 @@ translations-manage-description = Λήψη γλωσσών για μετάφρα�
 translations-manage-all-language = Όλες οι γλώσσες
 translations-manage-download-button = Λήψη
 translations-manage-delete-button = Διαγραφή
+translations-manage-intro = Ορίστε τις προτιμήσεις γλώσσας και μετάφρασης ιστοτόπων και διαχειριστείτε τις γλώσσες που έχουν εγκατασταθεί για μετάφραση εκτός σύνδεσης.
+translations-manage-install-description = Εγκατάσταση γλωσσών για μετάφραση εκτός σύνδεσης
+translations-manage-language-install-button =
+    .label = Εγκατάσταση
+translations-manage-language-install-all-button =
+    .label = Εγκατάσταση όλων
+    .accesskey = Ε
+translations-manage-intro-2 = Ορίστε τις προτιμήσεις γλώσσας και μετάφρασης ιστοτόπων και διαχειριστείτε τις γλώσσες που θα ληφθούν για μετάφραση εκτός σύνδεσης.
+translations-manage-download-description = Λήψη γλωσσών για μετάφραση εκτός σύνδεσης
 translations-manage-language-download-button =
     .label = Λήψη
+translations-manage-language-download-all-button =
+    .label = Λήψη όλων
     .accesskey = Λ
-translations-manage-language-delete-button =
-    .label = Διαγραφή
-    .accesskey = γ
+translations-manage-language-remove-button =
+    .label = Αφαίρεση
+translations-manage-language-remove-all-button =
+    .label = Αφαίρεση όλων
+    .accesskey = φ
+translations-manage-error-install = Προέκυψε πρόβλημα κατά την εγκατάσταση των αρχείων γλώσσας. Παρακαλώ δοκιμάστε ξανά.
 translations-manage-error-download = Προέκυψε πρόβλημα κατά τη λήψη του αρχείου γλώσσας. Παρακαλώ δοκιμάστε ξανά.
 translations-manage-error-delete = Προέκυψε σφάλμα κατά τη διαγραφή των αρχείων γλώσσας. Παρακαλώ δοκιμάστε ξανά.
+translations-manage-error-remove = Προέκυψε σφάλμα κατά τη αφαίρεση των αρχείων γλώσσας. Παρακαλώ δοκιμάστε ξανά.
 translations-manage-error-list = Αποτυχία λήψης της λίστας με τις διαθέσιμες γλώσσες για μετάφραση. Ανανεώστε τη σελίδα για να δοκιμάσετε ξανά.
 translations-settings-title =
     .title = Ρυθμίσεις μεταφράσεων
@@ -146,3 +177,77 @@ translations-settings-remove-all-sites-button =
 translations-settings-close-dialog =
     .buttonlabelaccept = Κλείσιμο
     .buttonaccesskeyaccept = Κ
+# Text displayed in the right-click context menu for translating
+# selected text to a yet-to-be-determined language.
+main-context-menu-translate-selection =
+    .label = Μετάφραση επιλογής…
+    .accesskey = τ
+# Text displayed in the right-click context menu for translating
+# selected text to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-selection-to-language =
+    .label = Μετάφραση επιλογής στα { $language }
+    .accesskey = τ
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a yet-to-be-determined language.
+main-context-menu-translate-link-text =
+    .label = Μετάφραση κειμένου συνδέσμου…
+    .accesskey = τ
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-link-text-to-language =
+    .label = Μετάφραση κειμένου συνδέσμου στα { $language }
+    .accesskey = τ
+# Text displayed in the select translations panel header.
+select-translations-panel-header = Μετάφραση
+# Text displayed above the from-language dropdown menu.
+select-translations-panel-from-label = Από
+# Text displayed above the to-language dropdown menu.
+select-translations-panel-to-label = Σε
+# Text displayed above the try-another-source-language dropdown menu.
+select-translations-panel-try-another-language-label = Δοκιμάστε μια άλλη αρχική γλώσσα
+select-translations-panel-cancel-button =
+    .label = Ακύρωση
+# Text displayed on the copy button before it is clicked.
+select-translations-panel-copy-button =
+    .label = Αντιγραφή
+# Text displayed on the copy button after it is clicked.
+select-translations-panel-copy-button-copied =
+    .label = Αντιγράφηκε
+select-translations-panel-done-button =
+    .label = Τέλος
+select-translations-panel-translate-full-page-button =
+    .label = Μετάφραση πλήρους σελίδας
+select-translations-panel-translate-button =
+    .label = Μετάφραση
+select-translations-panel-try-again-button =
+    .label = Δοκιμή ξανά
+# Text displayed as a placeholder when the panel is idle.
+select-translations-panel-idle-placeholder-text = Το μεταφρασμένο κείμενο θα εμφανίζεται εδώ.
+# Text displayed as a placeholder when the panel is actively translating.
+select-translations-panel-translating-placeholder-text = Μετάφραση…
+select-translations-panel-init-failure-message =
+    .message = Αδυναμία φόρτωσης γλωσσών. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά.
+# Text displayed when the translation fails to complete.
+select-translations-panel-translation-failure-message =
+    .message = Προέκυψε πρόβλημα με τη μετάφραση. Παρακαλώ δοκιμάστε ξανά.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support the language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known =
+    .message = Δυστυχώς, δεν υποστηρίζουμε ακόμα τα { $language }.
+select-translations-panel-unsupported-language-message-unknown =
+    .message = Δυστυχώς, δεν υποστηρίζουμε ακόμα αυτήν τη γλώσσα.
+# Text displayed on the menuitem that opens the Translation Settings page.
+select-translations-panel-open-translations-settings-menuitem =
+    .label = Ρυθμίσεις μεταφράσεων
+# An announcement made to assistive technology when the translation is complete
+select-translations-panel-translation-complete-announcement = Η μετάφραση ολοκληρώθηκε

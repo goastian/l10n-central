@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Använd förenklad markering med prefers-reduced-motion
 options-inspector-simplified-highlighters-tooltip =
     .title = Möjliggör förenklade markering när prefers-reduced-motion är aktiverat. Ritar linjer istället för fyllda rektanglar runt markerade element för att undvika blinkande effekter.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Focusera nästa inmatning på <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = När denna är aktiverad, kommer ett egenskapsnamn eller värde att flytta fokus till nästa inmatning genom att trycka på Retur-tangenten när du redigerar en selektor.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Färgnamn
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Webbkonsol
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Aktivera delad konsol
+options-webconsole-split-console-tooltip =
+    .title = Öppna delad konsol med Escape-tangenten
 
 ## Style Editor section
 

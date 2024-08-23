@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = Lần truy cập này không
 ##
 
 xpinstall-disabled-locked = Quản trị hệ thống của bạn đã vô hiệu hóa cài đặt phần mềm.
+xpinstall-disabled-by-policy = Việc cài đặt phần mềm đã bị vô hiệu hoá bởi tổ chức của bạn.
 xpinstall-disabled = Hiện tại việc cài đặt phần mềm đã bị vô hiệu hóa. Hãy nhấn Bật rồi thử lại.
 xpinstall-disabled-button =
     .label = Kích hoạt
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) bị chặn bởi quản trị viên hệ thống của bạn.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = Quản trị viên hệ thống của bạn đã ngăn trang web này yêu cầu bạn cài đặt phần mềm trên máy tính của bạn.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) bị chặn bởi tổ chức của bạn.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Tổ chức của bạn đã ngăn không cho trang web này yêu cầu bạn cài đặt phần mềm trên máy tính của bạn.
 addon-install-full-screen-blocked = Cài đặt tiện ích không được phép trong khi ở hoặc trước khi vào chế độ toàn màn hình.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -112,3 +120,5 @@ addon-local-install-error-not-signed = Không thể cài đặt tiện ích này
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } không thể cài đặt được vì nó không tương thích với { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = { $addonName } không thể cài đặt được vì nó có khả năng gây ra các vấn đề về bảo mật và tính ổn định.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Bạn không thể cài đặt { $addonName } với tư cách là người dùng cuối, nó chỉ có thể được cài đặt bởi tổ chức sử dụng chính sách doanh nghiệp.

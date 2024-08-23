@@ -14,13 +14,6 @@ onboarding-welcome-header = Καλώς ήλθατε στο { -brand-short-name }
 onboarding-start-browsing-button-label = Έναρξη περιήγησης
 onboarding-not-now-button-label = Όχι τώρα
 mr1-onboarding-get-started-primary-button-label = Έναρξη
-mr1-onboarding-welcome-header = Καλώς ορίσατε στο { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Ορισμός { -brand-short-name } ως κύριου φυλλομετρητή
-    .title = Ορίζει το { -brand-short-name } ως το προεπιλεγμένο πρόγραμμα περιήγησης και το καρφιτσώνει στη γραμμή εργασιών
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Ορισμός { -brand-short-name } ως προεπιλεγμένου φυλλομετρητή
-mr1-onboarding-set-default-secondary-button-label = Όχι τώρα
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,27 +34,6 @@ mr1-return-to-amo-add-extension-label = Προσθήκη του { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Έναρξη: οθόνη { $current } από { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text =
-    Η φωτιά ξεκινά
-    εδώ
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Σχεδιάστρια επίπλων, υποστηρίκτρια του Firefox
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -72,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Πρόοδος: βήμα { $current } από { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Απενεργοποίηση εφέ κίνησης
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] Διατηρήστε το { -brand-short-name } στο Dock σας για εύκολη πρόσβαση
-       *[other] Καρφιτσώστε το { -brand-short-name } στη γραμμή εργασιών σας για εύκολη πρόσβαση
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Διατήρηση στο Dock
-       *[other] Καρφίτσωμα στη γραμμή εργασιών
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Σύνδεση
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = Ορισμός { -brand-short-name } ως προεπιλογής
-mr1-onboarding-default-subtitle = Βάλτε την ταχύτητα, την ασφάλεια και το απόρρητο στον αυτόματο πιλότο.
-mr1-onboarding-default-primary-button-label = Ορισμός προεπιλεγμένου φυλλομετρητή
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Μεταφέρετε όλα τα δεδομένα σας
-mr1-onboarding-import-subtitle = Εισάγετε κωδικούς πρόσβασης <br/>σελιδοδείκτες και πολλά άλλα.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Εισαγωγή από { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Εισαγωγή από προηγούμενο πρόγραμμα περιήγησης
-mr1-onboarding-import-secondary-button-label = Όχι τώρα
-mr2-onboarding-colorway-header = Ζωή με χρώμα
-mr2-onboarding-colorway-subtitle = Νέοι, δυναμικοί χρωματικοί συνδυασμοί. Διαθέσιμοι για περιορισμένο χρονικό διάστημα.
-mr2-onboarding-colorway-primary-button-label = Αποθήκευση χρωματικού συνδυασμού
-mr2-onboarding-colorway-secondary-button-label = Όχι τώρα
-mr2-onboarding-colorway-label-soft = Απαλό
-mr2-onboarding-colorway-label-balanced = Ισορροπημένο
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Έντονο
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Αυτόματο
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Προεπιλογή
 mr1-onboarding-theme-header = Κάντε το δικό σας
 mr1-onboarding-theme-subtitle = Εξατομικεύστε το { -brand-short-name } με ένα θέμα.
-mr1-onboarding-theme-primary-button-label = Αποθήκευση θέματος
 mr1-onboarding-theme-secondary-button-label = Όχι τώρα
+newtab-wallpaper-onboarding-title = Δοκιμάστε μια πινελιά χρώματος
+newtab-wallpaper-onboarding-subtitle = Επιλέξτε μια ταπετσαρία για να δώσετε μια νέα εμφάνιση στη νέα σας καρτέλα.
+newtab-wallpaper-onboarding-primary-button-label = Ορισμός ταπετσαρίας
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Θέμα συστήματος
 mr1-onboarding-theme-label-light = Ανοιχτόχρωμο
@@ -183,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Χρήση ενός δυναμικού, πολύχρωμου θέματος για τα κουμπιά,
         τα μενού και τα παράθυρα.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Χρήση αυτού του χρωματικού συνδυασμού.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Χρήση αυτού του χρωματικού συνδυασμού.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Εξερευνήστε τους χρωματικούς συνδυασμούς «{ $colorwayName }».
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Εξερευνήστε τους χρωματικούς συνδυασμούς «{ $colorwayName }».
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Εξερευνήστε τα προεπιλεγμένα θέματα.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Εξερευνήστε τα προεπιλεγμένα θέματα.
 
@@ -211,14 +117,6 @@ mr2-onboarding-default-theme-label = Εξερευνήστε τα προεπιλ�
 mr2-onboarding-thank-you-header = Ευχαριστούμε που μας επιλέξατε
 mr2-onboarding-thank-you-text = Το { -brand-short-name } είναι ένα ανεξάρτητο πρόγραμμα περιήγησης που υποστηρίζεται από έναν μη κερδοσκοπικό οργανισμό. Μαζί, κάνουμε το διαδίκτυο πιο ασφαλές, υγιές και ιδιωτικό.
 mr2-onboarding-start-browsing-button-label = Έναρξη περιήγησης
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -380,7 +278,7 @@ mr2022-onboarding-no-mobile-download-cta-text = Σαρώστε τον κωδικ
 ## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Η ελευθερία της ιδιωτικής περιήγησης, με ένα κλικ
-mr2022-upgrade-onboarding-pin-private-window-subtitle = Χωρίς αποθήκευση cookies ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μην σας παρακολουθεί κανείς.
+mr2022-upgrade-onboarding-pin-private-window-subtitle = Χωρίς αποθήκευση cookie ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μη σας παρακολουθεί κανείς.
 mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
     { PLATFORM() ->
         [macos] Διατήρηση της ιδιωτικής περιήγησης του { -brand-short-name } στο Dock
@@ -434,4 +332,36 @@ onboarding-device-migration-image-alt =
     .aria-label = Μια αλεπού χαιρετά στην οθόνη ενός φορητού υπολογιστή. Έχει συνδεθεί ένα ποντίκι στον φορητό υπολογιστή.
 onboarding-device-migration-title = Καλώς ορίσατε και πάλι!
 onboarding-device-migration-subtitle = Συνδεθείτε στον { -fxaccount-brand-name(case: "acc", capitalization: "lower") } σας για να έχετε μαζί σας τους σελιδοδείκτες, τους κωδικούς πρόσβασης και το ιστορικό σας στη νέα σας συσκευή.
+onboarding-device-migration-subtitle2 = Συνδεθείτε στον λογαριασμό σας για να μεταφέρετε τους σελιδοδείκτες, τους κωδικούς πρόσβασης και το ιστορικό σας στη νέα σας συσκευή.
 onboarding-device-migration-primary-button-label = Σύνδεση
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Μας αρέσει να σας προστατεύουμε
+onboarding-easy-setup-security-and-privacy-subtitle = Το πρόγραμμα περιήγησής μας, με την υποστήριξη ενός μη κερδοσκοπικού οργανισμού, βοηθάει στο να σταματήσουν εταιρείες να σας ακολουθούν κρυφά στο διαδίκτυο.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Διατηρήστε την κρυπτογράφηση κατά την εναλλαγή των συσκευών
+onboarding-mobile-download-security-and-privacy-subtitle = Όταν κάνετε συγχρονισμό, το { -brand-short-name } κρυπτογραφεί τους κωδικούς πρόσβασης, τους σελιδοδείκτες σας και πολλά άλλα. Επιπλέον, μπορείτε να μεταφέρετε καρτέλες από τις άλλες συσκευές σας.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = Το { -brand-short-name } στο πλευρό σας
+onboarding-gratitude-security-and-privacy-subtitle = Σας ευχαριστούμε που χρησιμοποιείτε το { -brand-short-name }, που υποστηρίζεται από το Mozilla Foundation. Με την υποστήριξή σας, εργαζόμαστε για να κάνουμε το διαδίκτυο ασφαλέστερο και πιο προσβάσιμο για όλους.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Πόσο καιρό χρησιμοποιείτε το { -brand-short-name };
+onboarding-new-user-familiarity-based-survey-title = Πόσο εξοικειωμένοι είστε με το { -brand-short-name };
+onboarding-new-user-survey-subtitle = Τα σχόλιά σας κάνουν το { -brand-short-name } ακόμα καλύτερο.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Επόμενο
+onboarding-new-user-survey-legal-link-label = Επιλέγοντας «{ onboarding-new-user-survey-next-button-label }», συμφωνείτε με τη <a data-l10n-name="privacy_notice">Σημείωση απορρήτου</a> του { -brand-product-name }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Είμαι αρχάριος
+onboarding-new-user-survey-time-based-option-2 = Λιγότερο από ένα μήνα
+onboarding-new-user-survey-time-based-option-3 = Περισσότερο από ένα μήνα, τακτικά
+onboarding-new-user-survey-time-based-option-4 = Περισσότερο από ένα μήνα, περιστασιακά
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Είμαι αρχάριος
+onboarding-new-user-survey-familiarity-based-option-2 = Το έχω χρησιμοποιήσει λίγο
+onboarding-new-user-survey-familiarity-based-option-3 = Είμαι πολύ εξοικειωμένος με αυτό
+onboarding-new-user-survey-familiarity-based-option-4 = Το χρησιμοποιούσα στο παρελθόν, αλλά έχει περάσει καιρός

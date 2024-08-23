@@ -20,7 +20,6 @@ styleeditor-save-button = 저장
     .accesskey = S
 styleeditor-options-button =
     .tooltiptext = 스타일 편집기 옵션
-styleeditor-media-rules = @media 규칙
 styleeditor-at-rules = At-규칙
 styleeditor-editor-textbox =
     .data-placeholder = 여기에 CSS 를 입력하세요.
@@ -45,3 +44,9 @@ styleeditor-stylesheet-all-filtered = 일치하는 스타일 시트를 찾지 �
 # Variables:
 #   $ruleCount (Integer) - The number of rules in the stylesheet.
 styleeditor-stylesheet-rule-count = 규칙 { $ruleCount }개
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = 예쁜 출력 스타일 시트
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = CSS 파일만 예쁘게 출력할 수 있음

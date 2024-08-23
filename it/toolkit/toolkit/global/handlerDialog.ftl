@@ -46,6 +46,12 @@ permission-dialog-description-file-app =
 permission-dialog-description-extension-app =
   Consentire all’estensione { $extension } di aprire un link di tipo { $scheme } con { $appName }?
 
+permission-dialog-description-system-app =
+  Aprire il link di tipo { $scheme } con { $appName }?
+
+permission-dialog-description-system-noapp =
+  Aprire il link di tipo { $scheme }?
+
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
@@ -117,3 +123,4 @@ choose-other-app-window-title = Altra applicazione…
 
 # Displayed under the name of a protocol handler in the Launch Application dialog.
 choose-dialog-privatebrowsing-disabled = Disattiva in finestre anonime
+

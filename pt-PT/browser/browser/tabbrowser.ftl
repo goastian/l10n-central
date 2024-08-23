@@ -111,6 +111,11 @@ tabbrowser-confirm-caretbrowsing-title = Navegação por cursor
 tabbrowser-confirm-caretbrowsing-message = A tecla F7 ativa ou desativa a navegação por cursor. Esta característica coloca um cursor móvel nas páginas da Internet, permitindo-lhe selecionar texto com o teclado. Quer ativar a navegação por cursor?
 tabbrowser-confirm-caretbrowsing-checkbox = Não voltar a mostrar esta janela.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Atenção
+tabbrowser-confirm-close-duplicate-tabs-text = Iremos manter aberto o último separador ativo
+
 ##
 
 # Variables:
@@ -144,3 +149,12 @@ tabbrowser-tab-audio-playing-description = A reproduzir áudio
 #   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
 tabbrowser-ctrl-tab-list-all-tabs =
     .label = Mostrar os { $tabCount } separadores
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = Silenciar separador
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = Ativar separador
+tabbrowser-manager-close-tab =
+    .tooltiptext = Fechar separador

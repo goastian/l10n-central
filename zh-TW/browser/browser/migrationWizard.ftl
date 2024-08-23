@@ -34,14 +34,33 @@ migration-wizard-migrator-display-name-chromium-360se = 360 安全瀏覽器
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge 傳統版
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = CSV 檔案中的密碼
-migration-wizard-migrator-display-name-file-bookmarks = HTML 檔裡的書籤
+migration-wizard-migrator-display-name-file-bookmarks = HTML 檔案裡的書籤
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = 閱讀列表（來自 Safari）
+migration-imported-edge-reading-list = 閱讀清單（來自 Edge）
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } 沒有權限存取此裝置上其他瀏覽器的設定檔。
+migration-no-permissions-instructions = 若要持續匯入其他瀏覽器中的資料，請授權 { -brand-short-name } 存取該瀏覽器的設定檔資料夾。
+migration-no-permissions-instructions-step1 = 選擇「繼續」
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = 在檔案瀏覽器中瀏覽到 <code>{ $permissionsPath }</code>，然後點擊「選擇」
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,14 +76,20 @@ migration-bookmarks-option-label = 書籤
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = 我的最愛
 migration-logins-and-passwords-option-label = 儲存的登入資訊與密碼
+migration-passwords-option-label = 已存密碼
 migration-history-option-label = 瀏覽紀錄
+migration-extensions-option-label = 擴充套件
 migration-form-autofill-option-label = 表單自動填寫資料
 migration-payment-methods-option-label = 付款方式
+migration-cookies-option-label = Cookie
+migration-session-option-label = 視窗與分頁
+migration-otherdata-option-label = 其他資料
 migration-passwords-from-file-progress-header = 匯入密碼檔
 migration-passwords-from-file-success-header = 已成功匯入密碼
 migration-passwords-from-file = 正在檢查檔案中的密碼
 migration-passwords-new = 新密碼
 migration-passwords-updated = 已有的密碼
+migration-passwords-from-file-no-valid-data = 此密碼檔不含任何有效密碼資料，請選擇其他檔案。
 migration-passwords-from-file-picker-title = 匯入密碼檔
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -96,6 +121,7 @@ migration-bookmarks-from-file-picker-title = 匯入書籤檔案
 migration-bookmarks-from-file-progress-header = 匯入書籤
 migration-bookmarks-from-file = 書籤
 migration-bookmarks-from-file-success-header = 已成功匯入書籤
+migration-bookmarks-from-file-no-valid-data = 此書籤檔不含任何書籤資料，請選擇其他檔案。
 # A description for the .html file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-html-filter-title =
@@ -133,13 +159,21 @@ migration-list-bookmark-label = 書籤
 migration-list-favorites-label = 我的最愛
 migration-list-password-label = 密碼
 migration-list-history-label = 瀏覽紀錄
+migration-list-extensions-label = 擴充套件
 migration-list-autofill-label = 自動填寫資料
 migration-list-payment-methods-label = 付款方式
 
 ##
 
 migration-wizard-progress-header = 正在匯入資料
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = 已成功匯入資料
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = 資料匯入完成
 migration-wizard-progress-icon-in-progress =
     .aria-label = 匯入中…
 migration-wizard-progress-icon-completed =
@@ -166,6 +200,32 @@ migration-wizard-progress-success-bookmarks = { $quantity } 筆書籤
 # Variables:
 #  $quantity (Number): the number of successfully imported bookmarks
 migration-wizard-progress-success-favorites = { $quantity } 筆最愛
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions = { $quantity } 套擴充套件
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = 共 { $quantity } 套擴充套件，僅找到 { $matched } 套
+migration-wizard-progress-extensions-support-link = 了解 { -brand-product-name } 如何比對擴充套件
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = 沒有符合的擴充套件資訊
+migration-wizard-progress-extensions-addons-link = { -brand-short-name } 的瀏覽器擴充套件
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #

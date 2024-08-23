@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = おすすめの拡張機能
@@ -54,6 +55,7 @@ cfr-doorhanger-extension-total-users = { $total } ユーザー
 
 cfr-doorhanger-bookmark-fxa-header = どこからでもブックマークを同期します。
 cfr-doorhanger-bookmark-fxa-body = 見つかっちゃった。ブックマークをこの端末だけに残しておかないで同期して。{ -fxaccount-brand-name } を始めましょう。
+cfr-doorhanger-bookmark-fxa-body-2 = 見つかっちゃった。ブックマークをこの端末だけに残しておかないで同期して。アカウントを使い始めましょう。
 cfr-doorhanger-bookmark-fxa-link-text = ブックマークを今すぐ同期...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 閉じるボタン
@@ -122,7 +124,7 @@ spotlight-public-wifi-vpn-link = 後で
 ## Emotive Continuous Onboarding
 
 spotlight-better-internet-header = より良いインターネットはあなたとともに始まります
-spotlight-better-internet-body = { -brand-short-name} を使うことで、すべての人にとってオープンでアクセシブルな、すべての人にとってのより良いインターネットに一票を投じることになります。
+spotlight-better-internet-body = { -brand-short-name } を使うことで、すべての人にとってオープンでアクセシブルな、すべての人にとってのより良いインターネットに一票を投じることになります。
 spotlight-peace-mind-header = 私たちがあなたを保護します
 spotlight-peace-mind-body = { -brand-short-name } は毎月、ユーザーあたり平均 3,000 以上のトラッカーをブロックしています。特にトラッカーのようなプライバシーを脅かすものは、あなたと良いインターネットの間にあるべきではないからです。
 spotlight-pin-primary-button =
@@ -183,7 +185,7 @@ colorways-cfr-primarybutton = Colorway を選択
 colorways-cfr-body = カルチャーを変えてきた人々の声から生まれた { -brand-short-name } だけの色の表象でブラウザーを染めましょう。
 colorways-cfr-header-28days = 揺るぎない声 Colorway は 1 月 16 日まで
 colorways-cfr-header-14days = 揺るぎない声 Colorway は残り 2 週間
-colorways-cfr-header-7days =  揺るぎない声 Colorway は今週まで
+colorways-cfr-header-7days = 揺るぎない声 Colorway は今週まで
 colorways-cfr-header-today = 揺るぎない声 Colorway は今日まで
 
 ## Cookie Banner Handling CFR
@@ -194,6 +196,9 @@ cfr-cbh-confirm-button = Cookie バナーを拒否
     .accesskey = R
 cfr-cbh-dismiss-button = 後で
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } が Cookie バナーを拒否します
+cookie-banner-blocker-onboarding-body = このサイトに集中でき、Cookie による追跡も減少します。
+cookie-banner-blocker-onboarding-learn-more = 詳細情報
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -217,13 +222,54 @@ set-default-pdf-handler-primary = 了解
 fxa-sync-cfr-header = 未来の新しい端末？
 fxa-sync-cfr-body = 新しい { -brand-product-name } ブラウザーを開けば、最新のブックマークやパスワード、タブがいつでもあなたの側にあります。
 fxa-sync-cfr-primary = 詳細情報
-  .accesskey = L
+    .accesskey = L
 fxa-sync-cfr-secondary = 後で通知
-  .accesskey = R
+    .accesskey = R
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = 古い端末をご使用ですか？
-device-migration-fxa-spotlight-body = データをバックアップ保存して、ブックマークやパスワードなどの重要な情報を失わないようにしましょう。特に新しい端末に切り替えたときは。
-device-migration-fxa-spotlight-primary-button = データをバックアップする方法
-device-migration-fxa-spotlight-link = 後で通知
+device-migration-fxa-spotlight-heavy-user-header = データのバックアップを忘れないでください
+device-migration-fxa-spotlight-heavy-user-body = 重要な情報 (ブックマークやパスワードなど) はご使用のすべての端末で更新して保護しましょう。
+device-migration-fxa-spotlight-heavy-user-primary-button = 開始
+device-migration-fxa-spotlight-older-device-header = { -brand-product-name } が安心をお届けします
+device-migration-fxa-spotlight-older-device-body = アカウントがあれば、接続したどの端末でも重要な情報を更新して保護します。
+device-migration-fxa-spotlight-older-device-primary-button = アカウントを作成
+device-migration-fxa-spotlight-getting-new-device-header-2 = 新しい端末に換えようとしていますか？
+device-migration-fxa-spotlight-getting-new-device-body-2 = いくつかの簡単なステップに従って、ブックマークや履歴、パスワードを新しい端末ですぐに使えるようにしましょう。
+device-migration-fxa-spotlight-getting-new-device-primary-button = データをバックアップする手順
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>{ -brand-short-name } をデフォルト PDF リーダーに設定しませんか？</strong> コンピューターに保存された PDF ファイルの表示と編集に { -brand-short-name } をお使いください。
+pdf-default-notification-set-default-button =
+    .label = デフォルトに設定
+pdf-default-notification-decline-button =
+    .label = 後で
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>コンピューターの再起動時に毎回 { -brand-short-name } を開きますか？</strong> 端末の再起動時に自動的に { -brand-short-name } を開く設定が追加されました。
+launch-on-login-learnmore = 詳細情報
+launch-on-login-infobar-confirm-button = はい、{ -brand-short-name } を開きます
+    .accesskey = Y
+launch-on-login-infobar-reject-button = 後で
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>コンピューターの再起動時に毎回 { -brand-short-name } を開きますか？</strong> 起動時の設定を管理するには、設定で “起動” を検索してください。
+launch-on-login-infobar-final-reject-button = いいえ、結構です
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = 迷惑なトラッカーを尻尾で振り払います
+tail-fox-spotlight-subtitle = 迷惑な広告トラッカーに別れを告げて、安全で高速なインターネットを体験しましょう。
+tail-fox-spotlight-primary-button = { -brand-short-name } でリンクを開く
+tail-fox-spotlight-secondary-button = 後で

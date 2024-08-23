@@ -9,22 +9,50 @@ autofill-manage-addresses-title = 保存された住所
 autofill-manage-addresses-list-header = 住所
 autofill-manage-credit-cards-title = 保存されたクレジットカード情報
 autofill-manage-credit-cards-list-header = クレジットカード情報
+autofill-manage-payment-methods-title = 保存された支払い方法
+autofill-manage-cards-list-header = カード
 autofill-manage-dialog =
     .style = min-width: 560px
 autofill-manage-remove-button = 削除
 autofill-manage-add-button = 追加...
 autofill-manage-edit-button = 編集...
 
-##
+## The address capture doorhanger
 
+address-capture-save-doorhanger-header = 住所を保存しますか？
+address-capture-save-doorhanger-description = 情報を { -brand-short-name } に保存しておくと、フォームにすばやく入力できます。
+address-capture-update-doorhanger-header = 住所を更新しますか？
+address-capture-edit-doorhanger-header = 住所の編集
+address-capture-save-button =
+    .label = 保存
+    .accessKey = S
+address-capture-not-now-button =
+    .label = 後で
+    .accessKey = N
+address-capture-cancel-button =
+    .label = キャンセル
+    .accessKey = C
+address-capture-update-button =
+    .label = 更新
+    .accessKey = U
+address-capture-manage-address-button =
+    .label = アドレス設定
+address-capture-learn-more-button =
+    .label = 詳細情報
+address-capture-open-menu-button =
+    .aria-label = メニューを開きます
+address-capture-edit-address-button =
+    .aria-label = 住所を編集します
 # The dialog title for creating addresses in browser preferences.
-autofill-add-new-address-title = 新しい住所の追加
+autofill-add-address-title = 住所の追加
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = 住所の編集
+autofill-address-name = 氏名
 autofill-address-given-name = 名
 autofill-address-additional-name = ミドルネーム
 autofill-address-family-name = 氏
 autofill-address-organization = 組織名
+autofill-address-street-address = 番地・通り名
 autofill-address-street = 番地・通り名
 
 ## address-level-3 (Sublocality) names
@@ -78,16 +106,21 @@ autofill-address-eircode = Eircode
 
 ##
 
+##
+
+# The dialog title for creating addresses in browser preferences.
+autofill-add-new-address-title = 新しい住所の追加
 autofill-address-country = 国または地域
+autofill-address-country-only = 国
 autofill-address-tel = 電話番号
 autofill-address-email = メールアドレス
 autofill-cancel-button = キャンセル
 autofill-save-button = 保存
 autofill-country-warning-message = 現在、フォーム自動入力機能は特定の国の住所のみ利用可能です。
 # The dialog title for creating credit cards in browser preferences.
-autofill-add-new-card-title = 新しいクレジットカード情報を追加
+autofill-add-new-card-title = 新しいクレジットカード情報の追加
 # The dialog title for editing credit cards in browser preferences.
-autofill-edit-card-title = クレジットカード情報を編集
+autofill-edit-card-title = クレジットカード情報の編集
 # In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
@@ -96,6 +129,11 @@ autofill-edit-card-password-prompt =
         [windows] { -brand-short-name } がクレジットカード情報を表示しようとしています。以下の Windows アカウントへのアクセスを確認してください。
        *[other] { -brand-short-name } がクレジットカード情報を表示しようとしています。
     }
+autofill-message-tooltip = 自動入力についてのメッセージを表示します
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-card-title = カード情報の追加
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title2 = カード情報の編集
 autofill-card-number = カード番号
 autofill-card-invalid-number = 正しいカード番号を入力してください
 autofill-card-name-on-card = お名前

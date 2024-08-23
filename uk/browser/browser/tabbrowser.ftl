@@ -4,18 +4,15 @@
 
 tabbrowser-empty-tab-title = Нова вкладка
 tabbrowser-empty-private-tab-title = Приватна вкладка
-
 tabbrowser-menuitem-close-tab =
     .label = Закрити вкладку
 tabbrowser-menuitem-close =
     .label = Закрити
-
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
-tabbrowser-container-tab-title = { $title } - { $containerName }
-
+tabbrowser-container-tab-title = { $title } – { $containerName }
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -130,13 +127,17 @@ tabbrowser-confirm-caretbrowsing-title = Перегляд з курсором
 tabbrowser-confirm-caretbrowsing-message = Натискання F7 вмикає та вимикає Перегляд з курсором. Це дає можливість помістити рухомий курсор на вебсторінку, дозволяючи вам вибирати блоки тексту клавіатурою. Хочете увімкнути Перегляд з курсором?
 tabbrowser-confirm-caretbrowsing-checkbox = Більше не показувати це вікно.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Увага
+tabbrowser-confirm-close-duplicate-tabs-text = Ми залишимо відкритою останню активну вкладку
+
 ##
 
 # Variables:
 #   $domain (String): URL of the page that is trying to steal focus.
 tabbrowser-allow-dialogs-to-get-focus =
     .label = Дозволити таким сповіщенням від { $domain } перемикати вас на їхню вкладку
-
 tabbrowser-customizemode-tab-title = Пристосування { -brand-short-name }
 
 ## Context menu buttons, of which only one will be visible at a time
@@ -155,7 +156,6 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = Увімкнути звук вкладок
     .accesskey = в
-
 # This string is used as an additional tooltip and accessibility description for tabs playing audio
 tabbrowser-tab-audio-playing-description = Відтворення аудіо
 

@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Více informací o rozšířené ochraně proti sledování
 protections-panel-etp-on-header = Rozšířená ochrana proti sledování je zapnuta
 protections-panel-etp-off-header = Rozšířená ochrana proti sledování je vypnuta
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Rozšířená ochrana proti sledování
+    .description = Zapnutá pro tuto stránku
+    .aria-label = Rozšířená ochrana proti sledování: zapnutá na stránce { $host }
+protections-panel-etp-toggle-off =
+    .label = Rozšířená ochrana proti sledování
+    .description = Vypnutá pro tuto stránku
+    .aria-label = Rozšířená ochrana proti sledování: vypnutá na stránce { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Stránka nefunguje?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Proč?
 protections-panel-not-blocking-why-etp-on-tooltip = Blokování těchto prvků může ovlivnit fungování webové stránky. Bez sledovacích prvků nemusí některá tlačítka nebo formuláře správně fungovat.
 protections-panel-not-blocking-why-etp-off-tooltip = Všechny sledovací prvky na této stránce byly načteny, protože ochrana proti sledování je vypnutá.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Blokování těchto prvků může ovlivnit fungování webové stránky. Bez sledovacích prvků nemusí některá tlačítka nebo formuláře správně fungovat.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Všechny sledovací prvky na této stránce byly načteny, protože ochrana proti sledování je vypnutá.
 
 ##
 
@@ -127,6 +145,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Omezení cookie lišt
+protections-panel-cookie-banner-blocker-header = Blokování lišt cookie
 protections-panel-cookie-banner-handling-enabled = Zapnuto pro tento web
 protections-panel-cookie-banner-handling-disabled = Vypnuto pro tento web
 protections-panel-cookie-banner-handling-undetected = Server není aktuálně podporován
@@ -136,8 +155,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Chcete vypnout omezení cookie lišt pro { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Chcete zapnout omezení cookie lišt pro tento web?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Blokování lišt cookie
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Vypnout blokování lišť cookie pro { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Zapnout blokování lišť cookie pro { $host }?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } smaže cookies tohoto webu a stránku znovu načte. Vymazání všech cookies může způsobit vaše odhlášení nebo třeba vyprázdnění nákupního koše.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } se pokusí automaticky odmítnout všechny žádosti o povolení cookies na podporovaných serverech.
 protections-panel-cookie-banner-view-cancel = Zrušit
 protections-panel-cookie-banner-view-turn-off = Vypnout
 protections-panel-cookie-banner-view-turn-on = Zapnout
+protections-panel-cookie-banner-blocker-view-turn-on-description = Po zapnutí se { -brand-short-name } pokusí automaticky odmítat lišty cookie na této stránce.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Zrušit
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Vypnout
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Zapnout
+protections-panel-report-broken-site =
+    .label = Nahlásit nefunkční stránku
+    .title = Nahlášení nefunkční stránky
+
+## Protections panel info message
+
+cfr-protections-panel-header = Nenechte se při prohlížení sledovat
+cfr-protections-panel-body = { -brand-short-name } vás chrání před nejběžnějšími sledovacími prvky, které sbírají informace o tom, co děláte na internetu.
+cfr-protections-panel-link-text = Zjistit více

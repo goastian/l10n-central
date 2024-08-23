@@ -20,7 +20,6 @@ styleeditor-save-button = Opslaan
     .accesskey = s
 styleeditor-options-button =
     .tooltiptext = Stijleditoropties
-styleeditor-media-rules = @media-regels
 styleeditor-at-rules = At-regels
 styleeditor-editor-textbox =
     .data-placeholder = Voer hier CSS in.
@@ -49,3 +48,9 @@ styleeditor-stylesheet-rule-count =
         [one] { $ruleCount } regel.
        *[other] { $ruleCount } regels.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Stylesheet Pretty Print
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Kan alleen CSS-bestanden mooi afdrukken

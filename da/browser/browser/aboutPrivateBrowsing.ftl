@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Ingen gemte cookies eller historik, dir
 about-private-browsing-cookie-banners-promo-header = Slut med cookie-bannere!
 about-private-browsing-cookie-banners-promo-button = Færre cookie-bannere
 about-private-browsing-cookie-banners-promo-message = Lad { -brand-short-name } automatisk svare på pop op-beskeder om cookies for dig, så du kan bruge nettet uden forstyrrelser. { -brand-short-name } vil afvise alle forespørgsler, når det er muligt.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } tager sig af cookie-bannere for dig
+about-private-browsing-cookie-banners-promo-body = Vi afviser nu automatisk mange cookie-bannere, så du bliver sporet mindre og kan bruge nettet uden forstyrrelser.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Efterlad ingen spor på denne enhed
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } sletter dine cookies, din historik og webstedsdata, når du lukker alle dine private vinduer.
+about-private-browsing-felt-privacy-v1-info-link = Hvem kan muligvis se min aktivitet?

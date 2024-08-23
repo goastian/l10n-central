@@ -23,6 +23,10 @@ inactive-css-not-grid-or-flex-container = <strong>{ $property }</strong> non ha 
 
 inactive-css-not-grid-or-flex-container-or-multicol-container = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è un contenitore flex, un contenitore griglia o un contenitore multicolonna.
 
+inactive-css-not-multicol-container = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è un contenitore multicolonna.
+
+inactive-css-column-span = <strong>{ $property }</strong> non ha alcun effetto di spanning su questo elemento in quanto non si trova in un contenitore multicolonna.
+
 inactive-css-not-grid-or-flex-item = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è un elemento flex o griglia.
 
 inactive-css-not-grid-item = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è un elemento griglia.
@@ -35,13 +39,28 @@ inactive-css-not-flex-container = <strong>{ $property }</strong> non ha effetto 
 
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è “inline” o “table-cell”.
 
+inactive-css-first-line-pseudo-element-not-supported = <strong>{ $property }</strong> non è supportato in pseudo-elementi “::first-line”.
+
+inactive-css-first-letter-pseudo-element-not-supported = <strong>{ $property }</strong> non è supportato in pseudo-elementi “::first-letter”.
+
+inactive-css-placeholder-pseudo-element-not-supported = <strong>{ $property }</strong> non è supportato in pseudo-elementi “::placeholder”.
+
 inactive-css-property-because-of-display = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto il valore di “display” è <strong>{ $display }</strong>.
 
 inactive-css-not-display-block-on-floated = Il valore di <strong>display</strong> è stato modificato in <strong>block</strong> in quanto l’elemento è <strong>floated</strong>.
+inactive-css-not-display-block-on-floated-2 = Il valore di <strong>display</strong> è stato modificato in <strong>{ $display }</strong> in quanto l’elemento è <strong>floated</strong>.
+
+inactive-css-only-non-grid-or-flex-item = <strong>{ $property }</strong> non ha effetto in quanto non può essere applicato ad elementi grid o flex.
+
+inactive-css-not-block = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto può essere applicato solo ad elementi block-level.
+
+inactive-css-not-floated = <strong>{ $property }</strong> non ha effetto in quanto non può essere applicato ad elementi floated.
 
 inactive-css-property-is-impossible-to-override-in-visited = Non è possibile ignorare <strong>{ $property }</strong> per la restrizione causata da <strong>:visited</strong>.
 
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è un elemento posizionato.
+
+inactive-css-only-replaced-elements = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto può essere applicato solo a un elemento sostituito.
 
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto <strong>overflow:hidden</strong> non è impostato.
 
@@ -51,11 +70,33 @@ inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $pro
 
 inactive-css-not-table = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è una tabella.
 
+inactive-css-collapsed-table-borders = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto è una tabella con bordi collassati.
+
+inactive-css-not-table-cell = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è una cella di una tabella.
+
 inactive-scroll-padding-when-not-scroll-container = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non prevede scorrimento (”scroll”).
 
 inactive-css-border-image = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non può essere applicato a elementi interni di una tabella il cui genitore ha la proprietà <strong>border-collapse</strong> impostata a <strong>collapse</strong>.
 
+inactive-css-resize = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto può essere applicato solo a elementi con un valore di overflow diverso da “visible” e ad alcuni elementi sostituiti (ad es. textarea).
+
 inactive-css-ruby-element = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto è un elemento per la trascrizione fonetica (ruby). La sua dimensione è determinata dalla dimensione del carattere.
+
+inactive-css-highlight-pseudo-elements-not-supported = <strong>{ $property }</strong> non è supportato in pseudo-elementi della categoria “highlight”.
+
+inactive-css-cue-pseudo-element-not-supported = <strong>{ $property }</strong> non è supportato in pseudo-elementi “::cue”.
+
+# Variables:
+#   $lineCount (integer) - The number of lines the element has.
+inactive-css-text-wrap-balance-lines-exceeded =
+    { $lineCount ->
+         [one] <strong>{ $property }</strong> non ha effetto su questo elemento in quanto si estende su più di { $lineCount } riga.
+        *[other] <strong>{ $property }</strong> non ha effetto su questo elemento in quanto si estende su più di { $lineCount } righe.
+     }
+
+inactive-css-text-wrap-balance-fragmented = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto è frammentato (il contenuto è distribuito su più colonne o pagine).
+
+inactive-css-no-width-height = <strong>{ $property }</strong> non ha effetto su questo elemento in quanto non è possibile impostarne larghezza o altezza.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -63,7 +104,13 @@ inactive-css-ruby-element = <strong>{ $property }</strong> non ha effetto su que
 
 inactive-css-not-grid-or-flex-container-fix = Provare ad aggiungere <strong>display:grid</strong> o <strong>display:flex</strong>. { learn-more }
 
+inactive-css-not-grid-or-flex-or-block-container-fix = Provare ad aggiungere <strong>display:grid</strong>, <strong>display:flex</strong> o <strong>display:block</strong>. { learn-more }
+
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Provare ad aggiungere <strong>display:grid</strong>, <strong>display:flex</strong> o <strong>columns:2</strong>. { learn-more }
+
+inactive-css-not-multicol-container-fix = Provare ad aggiungere <strong>column-count</strong> o <strong>column-width</strong>. { learn-more }
+
+inactive-css-column-span-fix = Provare ad aggiungere <strong>column-count</strong> o <strong>column-width</strong> a uno degli elementi predecessore. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-3 = Provare ad aggiungere <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> o <strong>display:inline-flex</strong> al genitore dell’elemento. { learn-more }
 
@@ -83,7 +130,15 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Provare a
 
 inactive-css-not-display-block-on-floated-fix = Provare a rimuovere <strong>float</strong> o aggiungere <strong>display:block</strong>. { learn-more }
 
+inactive-css-only-non-grid-or-flex-item-fix = Provare a impostare <strong>display</strong> per il contenitore dell’elemento a un valore diverso da <strong>flex</strong>, <strong>grid</strong>, <strong>inline-flex</strong>, o <strong>inline-grid</strong>, oppure rimuovere <strong>float</strong>. { learn-more }
+
+inactive-css-not-block-fix = Provare ad aggiungere proprietà come <strong>display:block</strong> o <strong>float:left</strong>. { learn-more }
+
+inactive-css-not-floated-fix = Provare ad aggiungere la proprietà <strong>float</strong> con un valore diverso da <strong>none</strong>. { learn-more }
+
 inactive-css-position-property-on-unpositioned-box-fix = Provare a impostare per la proprietà <strong>position</strong> un valore diverso da <strong>static</strong>. { learn-more }
+
+inactive-css-only-replaced-elements-fix = Assicurarsi di aver aggiunto la proprietà a un elemento sostituito. { learn-more }
 
 inactive-text-overflow-when-no-overflow-fix = Provare ad aggiungere <strong>overflow:hidden</strong>. { learn-more }
 
@@ -93,11 +148,21 @@ inactive-css-not-for-internal-table-elements-except-table-cells-fix = Provare a 
 
 inactive-css-not-table-fix = Provare ad aggiungere <strong>display:table</strong> o <strong>display:inline-table</strong>. { learn-more }
 
+inactive-css-collapsed-table-borders-fix = Provare ad aggiungere <strong>border-collapse:separate</strong>. { learn-more }
+
+inactive-css-not-table-cell-fix = Provare ad aggiungere <strong>display:table-cell</strong>. { learn-more }
+
 inactive-scroll-padding-when-not-scroll-container-fix = Provare ad aggiungere <strong>overflow:auto</strong>, <strong>overflow:scroll</strong> o <strong>overflow:hidden</strong>. { learn-more }
 
 inactive-css-border-image-fix = Rimuovere la proprietà <strong>border-collapse</strong> o impostarla a un valore diverso da <strong>collapse</strong> nell’elemento genitore. { learn-more }
 
+inactive-css-resize-fix = Provare a impostare <strong>overflow</strong> a un valore diverso da <strong>visible</strong> o applicare la proprietà a un elemento sostituito che la supporti. { learn-more }
+
 inactive-css-ruby-element-fix = Provare a modificare <strong>font-size</strong> per la trascrizione fonetica. { learn-more }
+
+inactive-css-text-wrap-balance-lines-exceeded-fix = Provare a ridurre il numero di righe. { learn-more }
+
+inactive-css-text-wrap-balance-fragmented-fix = Evitare di distribuire il contenuto dell’elemento, ad esempio rimuovendo le colonne o utilizzando <strong>page-break-inside:avoid</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why
@@ -121,3 +186,5 @@ css-compatibility-experimental-message = <strong>{ $property }</strong> è una p
 css-compatibility-experimental-supported-message = <strong>{ $property }</strong> è una proprietà sperimentale.
 
 css-compatibility-learn-more-message = <span data-l10n-name="link">Ulteriori informazioni</span> su <strong>{ $rootProperty }</strong>
+
+css-selector-warning-unconstrained-has = Questo selettore utilizza <strong>:has()</strong> senza vincoli e potrebbe risultare lento

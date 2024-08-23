@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Hesla ze souboru CSV
 migration-wizard-migrator-display-name-file-bookmarks = Záložky ze souboru HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,31 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Seznam ke čtení (ze Safari)
+migration-imported-edge-reading-list = Seznam ke čtení (z Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } nemá přístup k profilům jiných prohlížečů nainstalovaných na tomto zařízení
+migration-no-permissions-instructions =
+    { -brand-short-name.gender ->
+        [masculine] Pokud chcete pokračovat v importování údajů z jiného prohlížeče, udělte { -brand-short-name(case: "dat") } přístup ke složce jeho profilu.
+        [feminine] Pokud chcete pokračovat v importování údajů z jiného prohlížeče, udělte { -brand-short-name(case: "dat") } přístup ke složce jejího profilu.
+        [neuter] Pokud chcete pokračovat v importování údajů z jiného prohlížeče, udělte { -brand-short-name(case: "dat") } přístup ke složce jeho profilu.
+       *[other] Pokud chcete pokračovat v importování údajů z jiného prohlížeče, udělte aplikace { -brand-short-name } přístup ke složce jejího profilu.
+    }
+migration-no-permissions-instructions-step1 = Vyberte „Pokračovat“
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = V nástroji pro výběr souborů přejděte na <code>{ $permissionsPath }</code> a vyberte možnost “Vybrat”
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +82,7 @@ migration-bookmarks-option-label = Záložky
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Oblíbené
 migration-logins-and-passwords-option-label = Uložená přihlašovací jména a hesla
+migration-passwords-option-label = Uložená hesla
 migration-history-option-label = Historie prohlížení
 migration-extensions-option-label = Rozšíření
 migration-form-autofill-option-label = Data pro automatické vyplňování formulářů
@@ -69,7 +95,7 @@ migration-passwords-from-file-success-header = Import hesel byl úspěšně doko
 migration-passwords-from-file = Vyhledávají se hesla v souboru
 migration-passwords-new = Nová hesla
 migration-passwords-updated = Existující hesla
-migration-passwords-from-file-no-valid-data = Soubor neobsahuje žádná platná data s přihlašovacími údaji. Vyberte jiný soubor.
+migration-passwords-from-file-no-valid-data = Soubor neobsahuje žádná platná data s hesly. Vyberte jiný soubor.
 migration-passwords-from-file-picker-title = Import souboru s hesly
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -144,10 +170,10 @@ migration-done-button-label = Hotovo
 migration-continue-button-label = Pokračovat
 migration-wizard-import-browser-no-browsers =
     { -brand-short-name.gender ->
-        [masculine] { -brand-short-name } nenašel žádné programy, které obsahují záložky, historii nebo přihlašovací údaje.
-        [feminine] { -brand-short-name } nenašla žádné programy, které obsahují záložky, historii nebo přihlašovací údaje.
-        [neuter] { -brand-short-name } nenašlo žádné programy, které obsahují záložky, historii nebo přihlašovací údaje.
-       *[other] Aplikace { -brand-short-name } nenašla žádné programy, které obsahují záložky, historii nebo přihlašovací údaje.
+        [masculine] { -brand-short-name } nenašel žádné programy, které obsahují záložky, historii nebo hesla.
+        [feminine] { -brand-short-name } nenašla žádné programy, které obsahují záložky, historii nebo hesla.
+        [neuter] { -brand-short-name } nenašlo žádné programy, které obsahují záložky, historii nebo hesla.
+       *[other] Aplikace { -brand-short-name } nenašla žádné programy, které obsahují záložky, historii nebo hesla.
     }
 migration-wizard-import-browser-no-resources = Nastala chyba. { -brand-short-name } nemůže najít žádná data k importu z tohoto profilu prohlížeče.
 
@@ -161,7 +187,7 @@ migration-list-bookmark-label = záložky
 # “favorites” refers to bookmarks in Edge and Internet Explorer. Use the same terminology
 # if the browser is available in your language.
 migration-list-favorites-label = oblíbené
-migration-list-password-label = přihlašovací údaje
+migration-list-password-label = hesla
 migration-list-history-label = historie
 migration-list-extensions-label = rozšíření
 migration-list-autofill-label = data pro automatické vyplňování
@@ -170,7 +196,14 @@ migration-list-payment-methods-label = způsoby platby
 ##
 
 migration-wizard-progress-header = Import dat
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Import dat byl úspěšně dokončen
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Import dat byl dokončen
 migration-wizard-progress-icon-in-progress =
     .aria-label = Probíhá import…
 migration-wizard-progress-icon-completed =
@@ -236,7 +269,11 @@ migration-wizard-progress-extensions-support-link = Zjistěte, jak { -brand-prod
 # Shown in the migration wizard if there are no matched extensions
 # on import from supported browsers.
 migration-wizard-progress-no-matched-extensions = Žádná rozpoznaná rozšíření
-migration-wizard-progress-extensions-addons-link = Prohledávat rozšíření pro { -brand-short-name }
+migration-wizard-progress-extensions-addons-link =
+    { -brand-short-name.case-status ->
+        [with-cases] Prohledávat rozšíření pro { -brand-short-name(case: "acc") }
+       *[no-cases] Prohledávat rozšíření pro aplikaci { -brand-short-name }
+    }
 
 ##
 

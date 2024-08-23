@@ -45,6 +45,9 @@ account-send-tab-to-device-verify = Fiók ellenőrzése…
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = Fiók
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Ez a számítógép már kapcsolódik ehhez: { $deviceName }.
@@ -92,4 +95,16 @@ account-multiple-tabs-arriving-from-unknown-device =
     { $tabCount ->
         [one] { $tabCount } lap érkezett
        *[other] { $tabCount } lap érkezett
+    }
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = Nemrég bezárt lapok megtekintése
+account-tabs-closed-remotely =
+    { $closedCount ->
+        [one] { $closedCount } { -brand-short-name } lap bezárva
+       *[other] { $closedCount } { -brand-short-name } lap bezárva
     }

@@ -28,14 +28,14 @@ about-private-browsing-hide-activity-1 = { -mozilla-vpn-brand-name } 可隐藏�
 about-private-browsing-prominent-cta = { -mozilla-vpn-brand-name } 可提供隐私保护
 about-private-browsing-focus-promo-cta = 下载 { -focus-brand-name }
 about-private-browsing-focus-promo-header = { -focus-brand-name }：随手可得的隐私浏览
-about-private-browsing-focus-promo-text = 我们隐私浏览专用 App，可自动清除您每次上网的浏览记录和 Cookie。
+about-private-browsing-focus-promo-text = 我们隐私浏览专用 App，可自动清除您每次上网的历史记录和 Cookie。
 
 ## The following strings will be used for experiments in Fx99 and Fx100
 
 about-private-browsing-focus-promo-header-b = 手机上亦可私密浏览
 about-private-browsing-focus-promo-text-b = 在 { -focus-brand-name } 上隐私搜索不愿被主浏览器记录的内容。
 about-private-browsing-focus-promo-header-c = 移动端更强大的隐私保护
-about-private-browsing-focus-promo-text-c = { -focus-brand-name } 不仅会自动清除浏览记录，且能够拦截广告和跟踪器。
+about-private-browsing-focus-promo-text-c = { -focus-brand-name } 不仅会自动清除历史记录，且能够拦截广告和跟踪器。
 # This string is the title for the banner for search engine selection
 # in a private window.
 # Variables:
@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = 不保存任何 Cookie 和历史记录�
 about-private-browsing-cookie-banners-promo-header = 消失吧，Cookie 横幅！
 about-private-browsing-cookie-banners-promo-button = 减少 Cookie 横幅
 about-private-browsing-cookie-banners-promo-message = 让 { -brand-short-name } 自动帮您回应 Cookie 弹窗，实现无干扰浏览体验。{ -brand-short-name } 将尽可能拒绝所有请求。
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } 为您处理 Cookie 横幅
+about-private-browsing-cookie-banners-promo-body = 我们现在可自动拒绝许多 Cookie 横幅，助您少受跟踪，专注浏览。
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = 不在设备上留痕迹
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } 会在您关闭所有隐私窗口后删除 Cookie、历史记录、网站数据。
+about-private-browsing-felt-privacy-v1-info-link = 谁有可能看到我的活动？

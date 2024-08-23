@@ -123,7 +123,6 @@ about-processes-frame-name-many = Ramki podrzędne ({ $number }): { $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Nieznany aktor
-about-processes-utility-actor-audio-decoder = Dekoder dźwięku
 about-processes-utility-actor-audio-decoder-generic = Standardowy dekoder dźwięku
 about-processes-utility-actor-audio-decoder-applemedia = Dekoder dźwięku Apple Media
 about-processes-utility-actor-audio-decoder-wmf = Dekoder dźwięku Windows Media Framework
@@ -131,6 +130,7 @@ about-processes-utility-actor-mf-media-engine = Moduł CDM mechanizmu Windows Me
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = Oracle języka JavaScript
 about-processes-utility-actor-windows-utils = Narzędzia systemu Windows
+about-processes-utility-actor-windows-file-dialog = Okno otwierania pliku w systemie Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:

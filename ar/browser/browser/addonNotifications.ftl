@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-xpinstall-prompt = منع { -brand-short-name } هذا الموقع من سؤالك تنصيب برمجيّات على حاسوبك.
+xpinstall-prompt = منع { -brand-short-name } هذا الموقع من سؤالك بتثبيت برمجيّات على حاسوبك.
 
 ## Variables:
 ##   $host (String): The hostname of the site the add-on is being installed from.
@@ -20,6 +20,11 @@ xpinstall-prompt-dont-allow =
 xpinstall-prompt-never-allow =
     .label = لا تسمح أبدًا
     .accesskey = م
+# Long text in this context make the dropdown menu extend awkwardly to the left,
+# avoid a localization that's significantly longer than the English version.
+xpinstall-prompt-never-allow-and-report =
+    .label = أبلغ عن موقع مشبوه
+    .accesskey = إ
 # Accessibility Note:
 # Be sure you do not choose an accesskey that is used elsewhere in the active context (e.g. main menu bar, submenu of the warning popup button)
 # See https://website-archive.mozilla.org/www.mozilla.org/access/access/keyboard/ for details
@@ -29,11 +34,14 @@ xpinstall-prompt-install =
 
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
+site-permission-install-first-prompt-midi-header = يطلب هذا الموقع الوصول إلى أجهزة MIDI لديك (الآلة الموسيقية الواجهة الرقمية). يمكن تفعيل وصول الجهاز بتثبيت الإضافات.
+site-permission-install-first-prompt-midi-message = لا يضمن هذا الوصول أن يكون آمنًا. تابع فقط إذا كنت تثق بهذا الموقع.
 
 ##
 
-xpinstall-disabled-locked = منع مدير النظام تنصيب البرمجيات.
-xpinstall-disabled = تنصيب البرمجيات معطل حاليًا. انقر فعّل و حاول مجددًا.
+xpinstall-disabled-locked = منع مدير النظام تثبيت البرمجيّات.
+xpinstall-disabled-by-policy = منعت مؤسستك تثبيت البرمجيّات.
+xpinstall-disabled = تثبيت البرمجيّات معطل حاليًا. انقر فعّل و حاول مجددًا.
 xpinstall-disabled-button =
     .label = فعّل
     .accesskey = ع
@@ -42,6 +50,15 @@ xpinstall-disabled-button =
 #   $addonName (String): the name of the add-on.
 #   $addonId (String): the ID of add-on.
 addon-install-blocked-by-policy = حجب مدير النظام { $addonName } (معرّفها { $addonId }).
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-domain-blocked-by-policy = منع مدير النظام هذا الموقع من سؤالك بتثبيت برمجيّات على حاسوبك.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = حجبت مؤسستك { $addonName } (معرّفها { $addonId }).
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = منعت مؤسستك هذا الموقع من سؤالك بتثبيت برمجيّات على حاسوبك.
 addon-install-full-screen-blocked = يُمنع تثبيت الإضافات في وضع ملء الشاشة، أو قبل الدخول إليه.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -49,6 +66,10 @@ webext-perms-sideload-menu-item = أُضيف { $addonName } إلى { -brand-shor
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = يحتاج { $addonName } صلاحيات جديدة
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = الانتهاء من تثبيت الامتدادات المستوردة إلى { -brand-short-name }
 
 ## Add-on removal warning
 
@@ -67,8 +88,8 @@ addon-downloading-and-verifying =
         [one] ينزّل و يتحقق من إضافة واحدة…
         [two] ينزّل و يتحقق من إضافتين…
         [few] ينزّل و يتحقق من { $addonCount } إضافات…
-        [many] نزّل و يتحقق من { $addonCount } إضافة…
-       *[other] نزّل و يتحقق من { $addonCount } إضافة…
+        [many] ينزّل و يتحقق من { $addonCount } إضافة…
+       *[other] ينزّل و يتحقق من { $addonCount } إضافة…
     }
 addon-download-verifying = يتحقق
 addon-install-cancel-button =
@@ -112,16 +133,17 @@ addon-confirm-install-some-unsigned-message =
 ##   $addonName (String): the add-on name.
 
 addon-install-error-network-failure = تعذر تنزيل الإضافة بسبب فشل في الاتصال مع.
-addon-install-error-incorrect-hash = تعذر تنصيب هذه الإضافة لأنها لم تطابق الإضافة المتوقعة { -brand-short-name }.
-addon-install-error-corrupt-file = تعذر تنصيب الإضافة المنزلة من هذا الموقع لأنها تبدو تالفة.
-addon-install-error-file-access = تعذر تنصيب الإضافة { $addonName } لأن { -brand-short-name } عجز عن تعديل الملف المطلوب.
-addon-install-error-not-signed = منع { -brand-short-name } هذا الموقع من تنصيب إضافة لم يتحقق منها.
-addon-local-install-error-network-failure = تعذر تنصيب هذه الإضافة بسبب عطل في نظام الملفات.
-addon-local-install-error-incorrect-hash = تعذر تنصيب هذه الإضافة لأنها لم تتوافق مع توقعات { -brand-short-name }.
-addon-local-install-error-corrupt-file = تعذر تنصيب هذه الإضافة لأنها تبدو تالفة.
-addon-local-install-error-file-access = تعذر تنصيب الإضافة { $addonName } لأن { -brand-short-name } عجز عن تعديل الملف المطلوب.
-addon-local-install-error-not-signed = تعذر تنصيب هذه الإضافة إذ لم يُتحقق منها.
+addon-install-error-incorrect-hash = تعذر تثبيت هذه الإضافة لأنها لم تطابق الإضافة المتوقعة { -brand-short-name }.
+addon-install-error-corrupt-file = تعذر تثبيت الإضافة المنزلة من هذا الموقع لأنها تبدو تالفة.
+addon-install-error-file-access = تعذر تثبيت الإضافة { $addonName } لأن { -brand-short-name } عجز عن تعديل الملف المطلوب.
+addon-install-error-not-signed = منع { -brand-short-name } هذا الموقع من تثبيت إضافة لم يتحقق منها.
+addon-install-error-invalid-domain = تعذر تثبيت إضافة { $addonName } من هذا المكان.
+addon-local-install-error-network-failure = تعذر تثبيت هذه الإضافة بسبب عطل في نظام الملفات.
+addon-local-install-error-incorrect-hash = تعذر تثبيت هذه الإضافة لأنها لم تتوافق مع توقعات { -brand-short-name }.
+addon-local-install-error-corrupt-file = تعذر تثبيت هذه الإضافة لأنها تبدو تالفة.
+addon-local-install-error-file-access = تعذر تثبيت الإضافة { $addonName } لأن { -brand-short-name } عجز عن تعديل الملف المطلوب.
+addon-local-install-error-not-signed = تعذر تثبيت هذه الإضافة إذ لم يُتحقق منها.
 # Variables:
 #   $appVersion (String): the application version.
-addon-install-error-incompatible = تعذر تنصيب الإضافة { $addonName } لأنها غير متوافقة مع { -brand-short-name }‏ { $appVersion }.
-addon-install-error-blocklisted = تعذر تنصيب الإضافة { $addonName } بسبب احتمال كبير في تسببها لمشاكل في الأمن أو الثبات.
+addon-install-error-incompatible = تعذر تثبيت الإضافة { $addonName } لأنها غير متوافقة مع { -brand-short-name }‏ { $appVersion }.
+addon-install-error-blocklisted = تعذر تثبيت الإضافة { $addonName } بسبب احتمال كبير في تسببها لمشاكل في الأمن أو الثبات.

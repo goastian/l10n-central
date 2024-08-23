@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Εξαιρέσεις
-    .style = width: 47em
 permissions-window2 =
     .title = Εξαιρέσεις
     .style = min-width: 47em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Παρακαλώ εισαγάγετε ένα έ�
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Εξαιρέσεις για την Ενισχυμένη προστασία από καταγραφή
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Έχετε απενεργοποιήσει την προστασία σε αυτούς τους ιστοτόπους.
 permissions-exceptions-etp-window2 =
     .title = Εξαιρέσεις για την Ενισχυμένη προστασία από καταγραφή
     .style = { permissions-window2.style }
@@ -87,29 +80,21 @@ permissions-exceptions-manage-etp-desc = Μπορείτε να καθορίσε�
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Εξαιρέσεις - Cookies και δεδομένα ιστοτόπων
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
-    .title = Εξαιρέσεις - Cookies και δεδομένα ιστοτόπων
+    .title = Εξαιρέσεις - Cookie και δεδομένα ιστοτόπων
     .style = { permissions-window2.style }
-permissions-exceptions-cookie-desc = Μπορείτε να καθορίσετε σε ποιους ιστοτόπους επιτρέπεται πάντα ή δεν επιτρέπεται ποτέ η χρήση των cookies και των δεδομένων ιστοτόπων. Πληκτρολογήστε την ακριβή διεύθυνση του ιστοτόπου που θέλετε να διαχειριστείτε και έπειτα, επιλέξτε «Φραγή», «Αποδοχή για τη συνεδρία» ή «Αποδοχή».
+permissions-exceptions-cookie-desc = Μπορείτε να καθορίσετε σε ποιους ιστοτόπους επιτρέπεται πάντα ή δεν επιτρέπεται ποτέ η χρήση των cookie και των δεδομένων ιστοτόπων. Πληκτρολογήστε την ακριβή διεύθυνση του ιστοτόπου που θέλετε να διαχειριστείτε και έπειτα, επιλέξτε «Φραγή», «Αποδοχή για τη συνεδρία» ή «Αποδοχή».
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Εξαιρέσεις - Λειτουργία «Μόνο HTTPS»
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Εξαιρέσεις - Λειτουργία «Μόνο HTTPS»
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Μπορείτε να απενεργοποιήσετε τη λειτουργία «Μόνο HTTPS» για συγκεκριμένες ιστοτόπους. Το { -brand-short-name } δεν θα επιχειρήσει να κάνει αναβάθμιση σε ασφαλή σύνδεση HTTPS στους ιστοτόπους αυτούς. Οι εξαιρέσεις δεν ισχύουν για ιδιωτικά παράθυρα.
+permissions-exceptions-https-only-desc2 = Μπορείτε να απενεργοποιήσετε τη λειτουργία «Μόνο HTTPS» για συγκεκριμένους ιστοτόπους. Το { -brand-short-name } δεν θα επιχειρήσει να κάνει αναβάθμιση σε ασφαλή σύνδεση HTTPS σε αυτούς τους ιστοτόπους.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Επιτρεπόμενοι ιστότοποι - Αναδυόμενα παράθυρα
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Επιτρεπόμενοι ιστότοποι - Αναδυόμενα παράθυρα
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Μπορείτε να καθορίσετε �
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Εξαιρέσεις - Αποθηκευμένες συνδέσεις
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Εξαιρέσεις - Αποθηκευμένες συνδέσεις
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Οι συνδέσεις για τους εξής ιστοτόπους δεν θα αποθηκεύονται
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Εξαιρέσεις - Αποθηκευμένοι κωδικοί πρόσβασης
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = Το { -brand-short-name } δεν θα αποθηκεύει τους κωδικούς πρόσβασης για τους ιστοτόπους που αναφέρονται εδώ.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Επιτρεπόμενοι ιστότοποι - Εγκατάσταση προσθέτων
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Επιτρεπόμενοι ιστότοποι - Εγκατάσταση προσθέτων
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Μπορείτε να καθορίσετε 
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Ρυθμίσεις - Αυτόματη αναπαραγωγή
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Ρυθμίσεις - Αυτόματη αναπαραγωγή
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Εδώ μπορείτε να διαχειρισ
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Ρυθμίσεις - Δικαιώματα ειδοποιήσεων
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Ρυθμίσεις - Δικαιώματα ειδοποιήσεων
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Αυτό θα εμποδίσει τ
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Ρυθμίσεις - Δικαιώματα τοποθεσίας
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Ρυθμίσεις - Δικαιώματα τοποθεσίας
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Αυτό θα εμποδίσει τα �
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Ρυθμίσεις - Δικαιώματα εικονικής πραγματικότητας
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Ρυθμίσεις - Δικαιώματα εικονικής πραγματικότητας
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Αυτό θα εμποδίσει τα αιτ�
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Ρυθμίσεις - Δικαιώματα κάμερας
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Ρυθμίσεις - Δικαιώματα κάμερας
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Αυτό θα εμποδίσει τα α�
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Ρυθμίσεις - Δικαιώματα μικροφώνου
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Ρυθμίσεις - Δικαιώματα μικροφώνου
     .style = { permissions-window2.style }
@@ -219,7 +187,7 @@ permissions-site-speaker-window =
     .style = { permissions-window2.style }
 permissions-site-speaker-desc = Οι ακόλουθοι ιστότοποι έχουν ζητήσει την επιλογή μιας συσκευής εξόδου ήχου. Μπορείτε να καθορίσετε σε ποιους ιστοτόπους επιτρέπεται η επιλογή συσκευής εξόδου ήχου.
 permissions-exceptions-doh-window =
-    .title = Εξαιρέσεις ιστοτόπων για DNS over HTTPS
+    .title = Εξαιρέσεις ιστοτόπων για DNS μέσω HTTPS
     .style = { permissions-window2.style }
 permissions-exceptions-manage-doh-desc = Το { -brand-short-name } δεν θα χρησιμοποιεί ασφαλές DNS σε αυτούς τους ιστοτόπους και τους υποτομείς τους.
 permissions-doh-entry-field = Εισαγάγετε όνομα τομέα ιστοτόπου

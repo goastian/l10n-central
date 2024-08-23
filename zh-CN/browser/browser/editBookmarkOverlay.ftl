@@ -23,6 +23,9 @@ bookmark-overlay-folders-expander2 =
     .tooltiptext = 显示所有书签文件夹
 bookmark-overlay-folders-expander-hide =
     .tooltiptext = 隐藏
+# bookmark-overlay-folders-tree is used to provide an accessible name to the tree view of the Bookmarks directory, when it is expanded
+bookmark-overlay-folders-tree =
+    .aria-label = 文件夹
 bookmark-overlay-new-folder-button =
     .label = 新建文件夹
     .accesskey = o

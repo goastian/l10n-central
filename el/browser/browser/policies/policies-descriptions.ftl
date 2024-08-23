@@ -12,10 +12,13 @@
 
 policy-3rdparty = Ορισμός πολιτικών που μπορούν να προσπελάσουν τα WebExtensions μέσω του chrome.storage.managed.
 policy-AllowedDomainsForApps = Καθορισμός τομέων στους οποίους επιτρέπεται πρόσβαση στο Google Workspace.
+policy-AllowFileSelectionDialogs = Να επιτρέπονται τα παράθυρα διαλόγου για επιλογή αρχείων.
 policy-AppAutoUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων εφαρμογής.
 policy-AppUpdatePin = Αποτροπή ενημέρωσης του { -brand-short-name } πέρα από την καθορισμένη έκδοση.
 policy-AppUpdateURL = Ορισμός προσαρμοσμένου URL ενημέρωσης εφαρμογής.
 policy-Authentication = Ρύθμιση ενσωματωμένης ταυτοποίησης για ιστοτόπους που την υποστηρίζουν.
+policy-AutofillAddressEnabled = Ενεργοποίηση αυτόματης συμπλήρωσης διευθύνσεων.
+policy-AutofillCreditCardEnabled = Ενεργοποίηση αυτόματης συμπλήρωσης για μεθόδους πληρωμής.
 policy-AutoLaunchProtocolsFromOrigins = Καθορισμός μιας λίστας με εξωτερικά πρωτόκολλα που μπορούν να χρησιμοποιηθούν από καταχωρημένες προελεύσεις χωρίς να ζητηθεί άδεια από τον χρήστη.
 policy-BackgroundAppUpdate2 = Ενεργοποίηση ή απενεργοποίηση υπηρεσίας ενημερώσεων παρασκηνίου.
 policy-BlockAboutAddons = Αποκλεισμός πρόσβασης στη Διαχείριση προσθέτων (about:addons).
@@ -25,25 +28,29 @@ policy-BlockAboutSupport = Αποκλεισμός πρόσβασης στη σε
 policy-Bookmarks = Δημιουργία σελιδοδεικτών στη γραμμή σελιδοδεικτών, στο μενού σελιδοδεικτών ή σε ένα συγκεκριμένο φάκελο μέσα τους.
 policy-CaptivePortal = Ενεργοποίηση ή απενεργοποίηση υποστήριξης πυλών υποδοχής.
 policy-CertificatesDescription = Προσθήκη πιστοποιητικών ή χρήση ενσωματωμένων πιστοποιητικών.
-policy-Cookies = Αποδοχή ή άρνηση αιτημάτων αποθήκευσης cookies.
+policy-ContentAnalysis = Ενεργοποίηση ή απενεργοποίηση σύνδεσης παρόχου αποτροπής απώλειας δεδομένων.
+policy-Cookies = Αποδοχή ή άρνηση αιτημάτων αποθήκευσης cookie.
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Ορισμός πολιτικών που σχετίζονται με τις θεματικές ενότητες.
+policy-DisableAccounts = Απενεργοποίηση υπηρεσιών που βασίζονται σε λογαριασμό, συμπεριλαμβανομένου του συγχρονισμού.
 policy-DisabledCiphers = Απενεργοποίηση κρυπτογράφησης.
 policy-DefaultDownloadDirectory = Ορισμός προεπιλεγμένου καταλόγου λήψης.
 policy-DisableAppUpdate = Αποτροπή ενημέρωσης προγράμματος περιήγησης.
 policy-DisableBuiltinPDFViewer = Απενεργοποίηση PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Αποτροπή οποιασδήποτε ενέργειας από την προεπιλεγμένη λειτουργία προγράμματος περιήγησης. Ισχύει μόνο για Windows· οι άλλες πλατφόρμες δεν έχουν τέτοια υπηρεσία.
 policy-DisableDeveloperTools = Αποκλεισμός πρόσβασης στα εργαλεία ανάπτυξης.
+policy-DisableEncryptedClientHello = Απενεργοποίηση χρήσης λειτουργίας TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Απενεργοποίηση εντολών για αποστολή σχολίων από το μενού «Βοήθεια» («Υποβολή σχολίων» και «Αναφορά παραπλανητικού ιστοτόπου»).
 policy-DisableFirefoxAccounts = Απενεργοποίηση υπηρεσιών { -fxaccount-brand-name(case: "gen", capitalization: "lower") }, καθώς και του συγχρονισμού.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Απενεργοποίηση λειτουργίας Midori Screenshots.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Απενεργοποίηση υπηρεσιών που βασίζονται σε λογαριασμό, συμπεριλαμβανομένου του συγχρονισμού.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Απενεργοποίηση λειτουργίας Firefox Screenshots.
 policy-DisableFirefoxStudies = Αποτροπή εκτέλεσης μελετών του { -brand-short-name }.
 policy-DisableForgetButton = Αποτροπή πρόσβασης στο κουμπί "Διαγραφή".
-policy-DisableFormHistory = Να μην γίνεται διατήρηση ιστορικού αναζήτησης και φορμών.
+policy-DisableFormHistory = Να μη γίνεται διατήρηση ιστορικού αναζήτησης και φορμών.
 policy-DisablePrimaryPasswordCreation = Αν είναι αληθές, δεν είναι δυνατή η δημιουργία κύριου κωδικού πρόσβασης.
 policy-DisablePasswordReveal = Να μην επιτρέπεται η αποκάλυψη κωδικών πρόσβασης σε αποθηκευμένες συνδέσεις.
-policy-DisablePocket = Απενεργοποίηση λειτουργίας για αποθήκευση ιστοσελίδων στο Pocket.
 policy-DisablePocket2 = Απενεργοποίηση λειτουργίας για αποθήκευση ιστοσελίδων στο { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Απενεργοποίηση ιδιωτικής περιήγησης.
 policy-DisableProfileImport = Απενεργοποίηση της εντολής μενού για εισαγωγή δεδομένων από άλλο πρόγραμμα περιήγησης.
@@ -56,7 +63,7 @@ policy-DisableTelemetry = Απενεργοποίηση τηλεμετρίας.
 policy-DisableThirdPartyModuleBlocking = Αποτροπή του χρήστη από το να αποκλείει μονάδες τρίτων που εισάγονται στη διεργασία του { -brand-short-name }.
 policy-DisplayBookmarksToolbar = Προβολή της γραμμής σελιδοδεικτών από προεπιλογή.
 policy-DisplayMenuBar = Προβολή γραμμής μενού από προεπιλογή.
-policy-DNSOverHTTPS = Ρύθμιση παραμέτρων DNS over HTTPS.
+policy-DNSOverHTTPS = Ρύθμιση παραμέτρων DNS μέσω HTTPS.
 policy-DontCheckDefaultBrowser = Απενεργοποίηση ελέγχου για το προεπιλεγμένο πρόγραμμα περιήγησης κατά την εκκίνηση.
 policy-DownloadDirectory = Ορισμός και κλείδωμα καταλόγου λήψης.
 # “lock” means that the user won’t be able to change this setting
@@ -70,21 +77,22 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Απενεργο�
 policy-Extensions = Εγκατάσταση, αφαίρεση ή κλείδωμα επεκτάσεων. Η επιλογή εγκατάστασης παίρνει ως παραμέτρους τα URL ή τις διαδρομές. Οι επιλογές αφαίρεσης και κλειδώματος παίρνουν τα ID επεκτάσεων.
 policy-ExtensionSettings = Διαχείριση όλων των πτυχών της εγκατάστασης επεκτάσεων.
 policy-ExtensionUpdate = Ενεργοποίηση ή απενεργοποίηση αυτόματων ενημερώσεων επεκτάσεων.
-policy-FirefoxHome = Ρύθμιση παραμέτρων της Αρχικής Firefox.
 policy-FirefoxHome2 = Διαμόρφωση του { -firefox-home-brand-name }.
-policy-FlashPlugin = Αποδοχή ή απόρριψη χρήσης του αρθρώματος Flash.
+policy-FirefoxSuggest = Ρύθμιση της λειτουργίας «{ -firefox-suggest-brand-name }».
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Αναγκαστική πλοήγηση στον ιστότοπο ενδοδικτύου, αντί για αναζήτηση κατά την πληκτρολόγηση μίας λέξης στη γραμμή διευθύνσεων.
 policy-Handlers = Ρύθμιση παραμέτρων χειριστών προεπιλεγμένης εφαρμογής.
 policy-HardwareAcceleration = Αν είναι ψευδές, απενεργοποίηση επιτάχυνσης υλικού.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Ορισμός και προαιρετικό κλείδωμα της αρχικής σελίδας.
+policy-HttpAllowlist = Προελεύσεις που δεν θα αναβαθμίζονται σε HTTPS.
+policy-HttpsOnlyMode = Να επιτρέπεται η ενεργοποίηση της λειτουργίας «Μόνο HTTPS».
 policy-InstallAddonsPermission = Αποδοχή εγκατάστασης προσθέτων από ορισμένους ιστοτόπους.
 policy-LegacyProfiles = Απενεργοποίηση της λειτουργίας που απαιτεί ξεχωριστό προφίλ για κάθε εγκατάσταση.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
 policy-LegacySameSiteCookieBehaviorEnabled = Ενεργοποίηση προεπιλεγμένης ρύθμισης συμπεριφοράς του παλαιού SameSite cookie.
-policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Επαναφορά στην παλαιά συμπεριφορά SameSite για cookies σε καθορισμένους ιστοτόπους.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Επαναφορά στην παλαιά συμπεριφορά SameSite για cookie σε καθορισμένους ιστοτόπους.
 
 ##
 
@@ -92,6 +100,7 @@ policy-LocalFileLinks = Να επιτρέπεται σε συγκεκριμέν�
 policy-ManagedBookmarks = Ρυθμίζει μια λίστα σελιδοδεικτών που διαχειρίζεται ένας διαχειριστής και δεν μπορεί να τροποποιηθεί από το χρήστη.
 policy-ManualAppUpdateOnly = Αποδοχή μόνο χειροκίνητων ενημερώσεων χωρίς ειδοποίηση των χρηστών σχετικά με τις ενημερώσεις.
 policy-PrimaryPassword = Απαίτηση ή αποτροπή χρήσης κύριου κωδικού πρόσβασης.
+policy-PrintingEnabled = Ενεργοποίηση ή απενεργοποίηση εκτύπωσης.
 policy-NetworkPrediction = Ενεργοποίηση ή απενεργοποίηση πρόβλεψης δικτύου (προφόρτωση DNS).
 policy-NewTabPage = Ενεργοποίηση ή απενεργοποίηση της σελίδας νέας καρτέλας.
 policy-NoDefaultBookmarks = Απενεργοποίηση δημιουργίας των προεπιλεγμένων σελιδοδεικτών που έρχονται με το { -brand-short-name }, καθώς και των "έξυπνων" σελιδοδεικτών (Συχνές επισκέψεις, Πρόσφατες ετικέτες). Σημείωση: η πολιτική υλοποιείται μόνο αν χρησιμοποιηθεί πριν την πρώτη εκτέλεση του προφίλ.
@@ -101,6 +110,9 @@ policy-OverrideFirstRunPage = Παράκαμψη της σελίδας πρώτ�
 policy-OverridePostUpdatePage = Παράκαμψη της σελίδας «Τι νέο υπάρχει» μετά την ενημέρωση. Αφήστε αυτήν την πολιτική κενή αν θέλετε να απενεργοποιήσετε τη σελίδα μετά την ενημέρωση.
 policy-PasswordManagerEnabled = Ενεργοποίηση αποθήκευσης κωδικών πρόσβασης στη διαχείριση κωδικών πρόσβασης.
 policy-PasswordManagerExceptions = Αποτροπή αποθήκευσης κωδικών πρόσβασης στο { -brand-short-name } για ορισμένους ιστοτόπους.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Ενεργοποίηση μετακβαντικής συμφωνίας κλειδιού για το TLS.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Απενεργοποίηση ή ρύθμιση του PDF.js, του ενσωματωμένου προγράμματος προβολής PDF στο { -brand-short-name }.
 policy-Permissions2 = Ρύθμιση δικαιωμάτων για κάμερα, μικρόφωνο, τοποθεσία, ειδοποιήσεις και αυτόματη αναπαραγωγή.
@@ -114,8 +126,6 @@ policy-SanitizeOnShutdown2 = Εκκαθάριση δεδομένων πλοήγ�
 policy-SearchBar = Ορισμός της προεπιλεγμένης τοποθεσίας της γραμμής αναζήτησης. Ο χρήστης θα μπορεί να την προσαρμόσει.
 policy-SearchEngines = Διαμόρφωση ρυθμίσεων μηχανής αναζήτησης. Αυτή η πολιτική είναι διαθέσιμη μόνο στην έκδοση εκτεταμένης υποστήριξης (ESR).
 policy-SearchSuggestEnabled = Ενεργοποίηση ή απενεργοποίηση προτάσεων αναζήτησης.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Εγκατάσταση μονάδων PKCS #11.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Προσθήκη ή διαγραφή μονάδων PKCS #11.
 policy-ShowHomeButton = Εμφάνιση του κουμπιού αρχικής σελίδας στη γραμμή εργαλείων.
@@ -123,6 +133,7 @@ policy-SSLVersionMax = Ορισμός μέγιστης έκδοσης SSL.
 policy-SSLVersionMin = Ορισμός ελάχιστης έκδοσης SSL.
 policy-StartDownloadsInTempDirectory = Εξαναγκαστική έναρξη λήψεων σε μια τοπική, προσωρινή τοποθεσία και όχι στον προεπιλεγμένο κατάλογο λήψεων.
 policy-SupportMenu = Προσθήκη προσαρμοσμένου στοιχείου μενού υποστήριξης στο μενού βοήθειας.
+policy-TranslateEnabled = Ενεργοποίηση ή απενεργοποίηση μετάφρασης ιστοσελίδων.
 policy-UserMessaging = Απόκρυψη ορισμένων μηνυμάτων από τον χρήστη.
 policy-UseSystemPrintDialog = Εκτύπωση μέσω του διαλόγου εκτύπωσης συστήματος.
 # “format” refers to the format used for the value of this policy.

@@ -56,8 +56,8 @@ tabbrowser-confirm-close-tabs-checkbox = 여러 탭을 닫기 전에 확인
 tabbrowser-confirm-close-windows-title = 창 { $windowCount }개를 닫으시겠습니까?
 tabbrowser-confirm-close-windows-button =
     { PLATFORM() ->
-        [windows] 닫고 종료
-       *[other] 닫고 종료
+        [windows] 닫기 및 종료
+       *[other] 닫기 및 종료
     }
 
 ## Confirmation dialog when quitting using the keyboard shortcut (Ctrl/Cmd+Q)
@@ -87,12 +87,22 @@ tabbrowser-confirm-caretbrowsing-title = 커서 브라우징
 tabbrowser-confirm-caretbrowsing-message = F7 키를 누르면 커서 브라우징을 켜거나 끕니다. 이 기능은 웹 페이지에 이동 가능한 커서를 배치하여 키보드로 텍스트를 선택할 수 있습니다. 커서 브라우징을 켜시겠습니까?
 tabbrowser-confirm-caretbrowsing-checkbox = 이 대화 상자를 다시 표시하지 않음.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = 주의하세요
+tabbrowser-confirm-close-duplicate-tabs-text = 최근 활성 탭을 계속 열어 둡니다.
+tabbrowser-confirm-close-all-duplicate-tabs-title = 중복 탭을 닫으시겠습니까?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    이 창에서 중복 탭을 닫습니다. 
+    마지막 활성 탭은 계속 열려 있습니다.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = 탭 닫기
+
 ##
 
 # Variables:
 #   $domain (String): URL of the page that is trying to steal focus.
 tabbrowser-allow-dialogs-to-get-focus =
-    .label = { $domain }의 이와 같은 알림이 해당 사이트의 탭으로 전환하도록 허용
+    .label = { $domain }의 이런 알림이 해당 사이트의 탭으로 전환하도록 허용
 tabbrowser-customizemode-tab-title = { -brand-short-name } 사용자 지정
 
 ## Context menu buttons, of which only one will be visible at a time

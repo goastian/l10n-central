@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Page title
-about-processes-title = ตัวจัดการโปรเซส
+about-processes-title = ตัวจัดการโพรเซส
 # The Actions column
 about-processes-column-action =
     .title = การกระทำ
@@ -11,7 +11,7 @@ about-processes-column-action =
 ## Tooltips
 
 about-processes-shutdown-process =
-    .title = เลิกโหลดแท็บและหยุดการทำงานของโปรเซส
+    .title = เลิกโหลดแท็บและหยุดการทำงานของโพรเซส
 about-processes-shutdown-tab =
     .title = ปิดแท็บ
 # Profiler icons
@@ -21,7 +21,7 @@ about-processes-shutdown-tab =
 about-processes-profile-process =
     .title =
         { $duration ->
-           *[other] สร้างโปรไฟล์เธรดทั้งหมดของโปรเซสนี้เป็นเวลา { $duration } วินาที
+           *[other] ทำโปรไฟล์ให้กับเธรดทั้งหมดของโพรเซสนี้เป็นเวลา { $duration } วินาที
         }
 
 ## Column headers
@@ -63,9 +63,9 @@ about-processes-unknown-process = อื่น ๆ : { $type } ({ $pid })
 
 about-processes-web-isolated-process = { $origin } ({ $pid })
 about-processes-web-serviceworker = { $origin } ({ $pid }, serviceworker)
-about-processes-with-coop-coep-process = { $origin } ({ $pid }, ถูกแยก cross-origin)
+about-processes-with-coop-coep-process = { $origin } ({ $pid }, ถูกคัดแยกข้ามที่มา)
 about-processes-web-isolated-process-private = { $origin } — ส่วนตัว ({ $pid })
-about-processes-with-coop-coep-process-private = { $origin } — ส่วนตัว ({ $pid }, ถูกแยก cross-origin)
+about-processes-with-coop-coep-process-private = { $origin } — ส่วนตัว ({ $pid }, ถูกคัดแยกข้ามที่มา)
 
 ## Details within processes
 
@@ -117,7 +117,6 @@ about-processes-frame-name-many = เฟรมย่อย ({ $number }): { $sho
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = ตัวดำเนินการที่ไม่รู้จัก
-about-processes-utility-actor-audio-decoder = ตัวถอดรหัสเสียง
 about-processes-utility-actor-audio-decoder-generic = ตัวถอดรหัสเสียงทั่วไป
 about-processes-utility-actor-audio-decoder-applemedia = ตัวถอดรหัสเสียง Apple Media
 about-processes-utility-actor-audio-decoder-wmf = ตัวถอดรหัสเสียง Windows Media Framework
@@ -125,6 +124,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows Utils
+about-processes-utility-actor-windows-file-dialog = กล่องโต้ตอบไฟล์ของ Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:

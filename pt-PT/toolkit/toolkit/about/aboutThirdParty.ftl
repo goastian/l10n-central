@@ -29,10 +29,6 @@ third-party-tag-background = Segundo plano
     .title =
         Este tipo de módulo não bloqueou a aplicação porque foi carregado 
         em segundo plano.
-third-party-unsigned-icon =
-    .title = Este módulo não está assinado
-third-party-warning-icon =
-    .title = O { -brand-short-name } falhou durante a execução de código deste módulo
 third-party-icon-unsigned =
     .title = Este módulo não está assinado
     .alt = Este módulo não está assinado
@@ -43,6 +39,9 @@ third-party-status-loaded = Carregado
 third-party-status-blocked = Bloqueado
 third-party-status-redirected = Redirecionado
 third-party-button-copy-to-clipboard = Copiar dados em bruto para a área de transferência
+third-party-loading-data =
+    .alt = A carregar a informação do sistema...
+    .title = A carregar a informação do sistema...
 third-party-button-reload = Recarregar com informações do sistema
     .title = Recarregar com informações do sistema
 third-party-button-open =
@@ -60,14 +59,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         Atualmente marcado como bloqueado, embora a lista de bloqueio esteja desativada para esta execução
         do { -brand-short-name }. Clique para desbloquear.
+third-party-button-to-block-module = Bloquear este módulo
+    .title = Bloquear este módulo
+    .aria-label = Bloquear este módulo
+third-party-button-to-unblock-module = Desbloquear este módulo
+    .title = Atualmente bloqueado. Clique para o desbloquear
+    .aria-label = Atualmente bloqueado. Clique para o desbloquear
+third-party-button-to-unblock-module-disabled = Desbloquear este módulo (lista de bloqueio atualmente desativada)
+    .title =
+        Atualmente marcado como bloqueado, embora a lista de bloqueio esteja desativada nesta execução 
+        do { -brand-short-name }. Clique para o desbloquear.
+    .aria-label =
+        Atualmente marcado como bloqueado, embora a lista de bloqueio esteja desativada nesta execução 
+        do { -brand-short-name }. Clique para o desbloquear.
 third-party-button-expand =
     .title = Mostrar informações detalhadas
 third-party-button-collapse =
     .title = Recolher informações detalhadas
-third-party-requires-restart = O { -brand-short-name } deve reiniciado para alterar os módulos de terceiros que estão bloqueados.
 third-party-blocking-requires-restart = Para bloquear um módulo de terceiros, o { -brand-short-name } deve ser reiniciado.
 third-party-should-restart-title = Reiniciar o { -brand-short-name }
-third-party-should-restart-ok = Reiniciar o { -brand-short-name } agora
 third-party-restart-now = Reiniciar agora
 third-party-restart-later = Reiniciar mais tarde
 third-party-blocked-by-builtin =

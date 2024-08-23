@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Исключения
-    .style = width: 55em
 permissions-window2 =
     .title = Исключения
     .style = min-width: 55em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Введите корректное сетево
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Исключения для улучшенной защиты от отслеживания
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Вы отключили защиту на следующих веб-сайтах.
 permissions-exceptions-etp-window2 =
     .title = Исключения для улучшенной защиты от отслеживания
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Вы можете указать, на 
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Исключения — Куки и данные сайтов
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Исключения — Куки и данные сайтов
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Вы можете указать, каки�
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Исключения — Режим «Только HTTPS»
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Исключения — Режим «Только HTTPS»
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Вы можете отключить Режим «Только HTTPS» для определённых веб-сайтов. { -brand-short-name } не будет пытаться переключать соединение на защищённый HTTPS для этих сайтов. Исключения не распространяются на приватные окна.
+permissions-exceptions-https-only-desc2 = Вы можете отключить режим «Только HTTPS» для определённых веб-сайтов. { -brand-short-name } не будет пытаться переключать соединение на защищённый HTTPS для этих сайтов.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Разрешённые веб-сайты — Всплывающие окна
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Разрешённые веб-сайты — Всплывающие окна
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Вы можете указать, каким
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Исключения — Сохранённые логины
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Исключения — Сохранённые логины
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Логины для следующих веб-сайтов не будут сохранены
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Исключения – сохраненные пароли
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } не сохраняет пароли для перечисленных здесь сайтов.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Разрешённые веб-сайты — Установка дополнений
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Разрешённые веб-сайты — Установка дополнений
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Вы можете указать, каки�
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Параметры — Автовоспроизведение
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Настройки — Автовоспроизведение
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Вы можете указать, какие с
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Настройки — Разрешения на отправку уведомлений
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Настройки — Разрешения на отправку уведомлений
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Это не позволит веб
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Настройки — Разрешения на доступ к местоположению
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Настройки — Разрешения на доступ к местоположению
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Это не позволит веб-с�
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Настройки - Разрешения виртуальной реальности
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Настройки - Разрешения виртуальной реальности
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Это не позволит сайтам, к
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Настройки — Разрешения на доступ к камере
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Настройки — Разрешения на доступ к камере
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Это не позволит веб-са�
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Настройки — Разрешения на доступ к микрофону
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Настройки — Разрешения на доступ к микрофону
     .style = { permissions-window2.style }

@@ -12,7 +12,7 @@ appmenuitem-banner-update-available =
 appmenuitem-banner-update-manual =
     .label = มีการอัปเดต — ดาวน์โหลดทันที
 appmenuitem-banner-update-unsupported =
-    .label = ไม่สามารถอัปเดต — เข้ากันกับระบบไม่ได้
+    .label = ไม่สามารถอัปเดต — ใช้ร่วมกับระบบไม่ได้
 appmenuitem-banner-update-restart =
     .label = มีการอัปเดต — เริ่มใหม่ทันที
 appmenuitem-new-tab =
@@ -28,7 +28,7 @@ appmenuitem-downloads =
 appmenuitem-passwords =
     .label = รหัสผ่าน
 appmenuitem-addons-and-themes =
-    .label = ส่วนเสริมและชุดรูปแบบ
+    .label = ส่วนเสริมและชุดตกแต่ง
 appmenuitem-print =
     .label = พิมพ์…
 appmenuitem-find-in-page =
@@ -77,23 +77,28 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = แสดงแท็บเพิ่มเติม
     .tooltiptext = แสดงแท็บเพิ่มเติมจากอุปกรณ์นี้
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = แท็บที่ไม่ได้ใช้งาน
+    .tooltiptext = ดูแท็บที่ไม่ได้ใช้งานในอุปกรณ์นี้
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = ไม่มีแท็บที่เปิดอยู่
 # This is shown when Sync is configured but syncing tabs is disabled.
-appmenu-remote-tabs-tabsnotsyncing = เปิดการซิงค์แท็บเพื่อดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ
+appmenu-remote-tabs-tabsnotsyncing = เปิดการซิงค์แท็บเพื่อดูรายการแท็บจากอุปกรณ์อื่นๆ ของคุณ
 appmenu-remote-tabs-opensettings =
     .label = การตั้งค่า
 # This is shown when Sync is configured but this appears to be the only device attached to
 # the account. We also show links to download Firefox for android/ios.
-appmenu-remote-tabs-noclients = ต้องการเห็นแท็บของคุณจากอุปกรณ์อื่น ๆ ที่นี่?
+appmenu-remote-tabs-noclients = ต้องการเห็นแท็บของคุณจากอุปกรณ์อื่นๆ ที่นี่ไหม?
 appmenu-remote-tabs-connectdevice =
     .label = เชื่อมต่ออุปกรณ์อื่น
-appmenu-remote-tabs-welcome = ดูรายการแท็บจากอุปกรณ์อื่น ๆ ของคุณ
+appmenu-remote-tabs-welcome = ดูรายการแท็บจากอุปกรณ์อื่นๆ ของคุณ
 appmenu-remote-tabs-unverified = บัญชีของคุณจำเป็นต้องได้รับการยืนยัน
 appmenuitem-fxa-toolbar-sync-now2 = ซิงค์ตอนนี้
 appmenuitem-fxa-sign-in = ลงชื่อเข้า { -brand-product-name }
 appmenuitem-fxa-manage-account = จัดการบัญชี
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = บัญชี
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = ตัวสร้างโปรไฟล์
     .tooltiptext = ตัวสร้างโปรไฟล์กำลังจับโปรไฟล์
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = แสดงข้อมูลเพิ่มเติม
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = ค่าที่ตั้งล่วงหน้าที่แนะนำสำหรับการดีบั๊กเว็บแอปส่วนใหญ่ โดยมีโอเวอร์เฮดต่ำ
@@ -200,8 +203,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = จัดการประวัติ
-appmenu-reopen-all-tabs = เปิดแท็บทั้งหมดใหม่
-appmenu-reopen-all-windows = เปิดหน้าต่างทั้งหมดใหม่
 appmenu-restore-session =
     .label = เรียกคืนวาระก่อนหน้า
 appmenu-clear-history =
@@ -263,3 +264,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = เครื่องมือสำหรับเบราว์เซอร์
 appmenu-developer-tools-extensions =
     .label = ส่วนขยายสำหรับนักพัฒนา
+appmenuitem-report-broken-site =
+    .label = รายงานไซต์ที่ใช้งานไม่ได้
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = ลงชื่อเข้าบัญชีของคุณ
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = รับการแจ้งเตือนเมื่อเกิดการรั่วไหลของข้อมูล
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = ปิดบังอีเมลและหมายเลขโทรศัพท์จริงของคุณ
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = ปกป้องกิจกรรมออนไลน์ของคุณ

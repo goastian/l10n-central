@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = Akses ini tidak dijamin aman
 ##
 
 xpinstall-disabled-locked = Pilihan pemasangan perangkat lunak telah dinonaktifkan administrator sistem Anda.
+xpinstall-disabled-by-policy = Pilihan pemasangan perangkat lunak telah dimatikan organisasi Anda.
 xpinstall-disabled = Pemasangan perangkat lunak sedang dinonaktifkan. Klik Aktifkan dan coba lagi.
 xpinstall-disabled-button =
     .label = Aktifkan
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) diblokir oleh administrator sistem Anda.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = Administrator sistem Anda mencegah situs ini meminta Anda untuk memasang perangkat lunak di komputer Anda.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) diblokir oleh organisasi Anda.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Organisasi Anda telah mencegah situs ini untuk memasang perangkat lunak di komputer Anda.
 addon-install-full-screen-blocked = Instalasi pengaya tidak diizinkan saat sebelum memasuki atau berada dalam mode layar penuh.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -58,6 +66,10 @@ webext-perms-sideload-menu-item = { $addonName } ditambahkan pada { -brand-short
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } memerlukan izin baru
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = Selesaikan pemasangan ekstensi yang diimpor ke { -brand-short-name }
 
 ## Add-on removal warning
 
@@ -112,3 +124,5 @@ addon-local-install-error-not-signed = Pengaya ini tidak dapat dipasang karena b
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } tidak dapat dipasang karena tidak kompatibel dengan { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = { $addonName } tidak dapat dipasang karena berisiko tinggi untuk menyebabkan masalah stabilitas dan keamanan.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Anda tak bisa memasang { $addonName } sebagai pengguna akhir, hanya bisa dipasang oleh sebuah organisasi menggunakan kebijakan perusahaan.

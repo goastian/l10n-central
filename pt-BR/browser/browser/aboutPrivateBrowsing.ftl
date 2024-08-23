@@ -34,7 +34,7 @@ about-private-browsing-focus-promo-text = Nosso aplicativo móvel de navegação
 
 about-private-browsing-focus-promo-header-b = Leve a navegação privativa para seu celular
 about-private-browsing-focus-promo-text-b = Use o { -focus-brand-name } naquelas pesquisas privativas que você não quer que seu navegador principal para celular veja.
-about-private-browsing-focus-promo-header-c = Privacidade de superior em dispositivos móveis
+about-private-browsing-focus-promo-header-c = Privacidade superior em dispositivos móveis
 about-private-browsing-focus-promo-text-c = O { -focus-brand-name } sempre limpa o histórico, além de bloquear anúncios e rastreadores.
 # This string is the title for the banner for search engine selection
 # in a private window.
@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Não salva cookies nem histórico, dire
 about-private-browsing-cookie-banners-promo-header = Chega de avisos de cookies!
 about-private-browsing-cookie-banners-promo-button = Redução de avisos de cookies
 about-private-browsing-cookie-banners-promo-message = Deixe o { -brand-short-name } responder automaticamente a avisos de cookies para que você possa voltar a navegar sem distrações. O { -brand-short-name } rejeita todas as solicitações, se possível.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = O { -brand-short-name } se encarrega de avisos de cookies para você
+about-private-browsing-cookie-banners-promo-body = Agora recusamos automaticamente muitos avisos de cookies, para você ser menos rastreado e voltar a navegar sem distrações.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Não deixe rastros neste dispositivo
+about-private-browsing-felt-privacy-v1-info-body = O { -brand-short-name } exclui seus cookies, histórico e dados de sites quando você fecha todas as janelas privativas.
+about-private-browsing-felt-privacy-v1-info-link = Quem pode ver minha atividade?

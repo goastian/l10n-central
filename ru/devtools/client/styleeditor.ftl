@@ -20,7 +20,6 @@ styleeditor-save-button = Сохранить
     .accesskey = х
 styleeditor-options-button =
     .tooltiptext = Настройки Редактора Стилей
-styleeditor-media-rules = Правила @media
 styleeditor-at-rules = At-правила
 styleeditor-editor-textbox =
     .data-placeholder = Набирайте CSS здесь.
@@ -29,7 +28,7 @@ styleeditor-no-stylesheet-tip = Возможно вы хотите <a data-l10n-
 styleeditor-open-link-new-tab =
     .label = Открыть ссылку в новой вкладке
 styleeditor-copy-url =
-    .label = Скопировать URL
+    .label = Копировать URL
 styleeditor-find =
     .label = Найти
     .accesskey = а
@@ -50,3 +49,9 @@ styleeditor-stylesheet-rule-count =
         [few] { $ruleCount } правила
        *[many] { $ruleCount } правил
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Красивая таблица стилей для печати
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Можно красиво печатать только CSS-файлы

@@ -49,8 +49,8 @@ detail-contributions-button = Contribute
 detail-update-type =
     .value = 自動更新
 detail-update-default =
-    .label = 既定
-    .tooltiptext = 既定の場合のみ更新を自動的にインストールします
+    .label = デフォルト
+    .tooltiptext = デフォルトの場合のみ更新を自動的にインストールします
 detail-update-automatic =
     .label = オン
     .tooltiptext = 更新を自動的にインストールします
@@ -156,12 +156,19 @@ addon-sitepermission-host = { $host } サイトの権限
 
 extensions-warning-safe-mode = セーフモードによりすべてのアドオンが無効化されています。
 extensions-warning-check-compatibility = アドオンの互換性確認は無効化されています。互換性のないアドオンがインストールされています。
+extensions-warning-safe-mode2 =
+    .message = セーフモードによりすべてのアドオンが無効化されています。
+extensions-warning-check-compatibility2 =
+    .message = アドオンの互換性確認は無効化されています。互換性のないアドオンがインストールされています。
 extensions-warning-check-compatibility-button = 有効化
     .title = アドオンの互換性の確認を有効化します
 extensions-warning-update-security = 更新のセキュリティ確認が無効化されています。更新により危険にさらされる可能性があります。
+extensions-warning-update-security2 =
+    .message = 更新のセキュリティ確認が無効化されています。更新により危険にさらされる可能性があります。
 extensions-warning-update-security-button = 有効化
     .title = アドオンの更新のセキュリティ確認を有効化します
-extensions-warning-imported-addons = { -brand-short-name } に読み込まれた拡張機能のインストールを完了してください。
+extensions-warning-imported-addons2 =
+    .message = { -brand-short-name } に読み込まれた拡張機能のインストールを完了してください。
 extensions-warning-imported-addons-button = 拡張機能をインストール
 
 ## Strings connected to add-on updates
@@ -170,6 +177,10 @@ addon-updates-check-for-updates = 今すぐ更新を確認
     .accesskey = C
 addon-updates-view-updates = 最近更新したアドオンを表示
     .accesskey = V
+
+# This menu item is a checkbox that toggles the default global behavior for
+# add-on update checking.
+
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 # (^m^) en-US: Update Add-ons Automatically
@@ -215,6 +226,9 @@ shortcuts-no-commands = 次の拡張機能にはショートカットがあり�
 # (^m^) shortcuts-input.placeholder は 15 文字まで
 shortcuts-input =
     .placeholder = ショートカットキーを入力
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = ショートカットを削除します
 shortcuts-browserAction2 = ツールバーボタンを有効化
 shortcuts-pageAction = ページ操作を有効化
 shortcuts-sidebarAction = サイドバーの表示を切り替え
@@ -229,6 +243,11 @@ shortcuts-duplicate = ショートカットが重複しています
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = { $shortcut } が他の場所でも使用されています。ショートカットキーが重複していると予期しない動作の原因となることがあります。
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = { $shortcut } が他の場所でも使用されています。ショートカットキーが重複していると予期しない動作の原因となることがあります。
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -256,6 +275,11 @@ discopane-intro =
 discopane-notice-recommendations =
     これらのおすすめの一部はパーソナライズされています。
     この情報は、インストールされている他の拡張機能やプロファイル設定、使用統計データに基づきます。
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message =
+        これらのおすすめの一部はパーソナライズされています。
+        この情報は、インストールされている他の拡張機能やプロファイル設定、使用統計データに基づきます。
 discopane-notice-learn-more = 詳細情報
 privacy-policy = プライバシーポリシー
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -319,6 +343,9 @@ addon-detail-homepage-label = ホームページ
 addon-detail-rating-label = 評価
 # Message for add-ons with a staged pending update.
 install-postponed-message = この拡張機能は { -brand-short-name } の再起動時に更新されます。
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message = この拡張機能は { -brand-short-name } の再起動時に更新されます。
 install-postponed-button = 今すぐ更新
 # The average rating that the add-on has received.
 # Variables:
@@ -339,6 +366,10 @@ addon-detail-reviews-link = { $numberOfReviews } 件のレビュー
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> は削除されます。
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = { $addon } は削除されます。
 pending-uninstall-undo-button = 取り消す
 addon-detail-updates-label = このアドオンの自動更新
 addon-detail-updates-radio-default = デフォルト
@@ -386,7 +417,7 @@ addon-badge-recommended2 =
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Mozilla により作成された公式の拡張機能です。安全性とパフォーマンスの基準に適合します
+    .title = Ablaze により作成された公式の拡張機能です。安全性とパフォーマンスの基準に適合します
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = この拡張機能はセキュリティとパフォーマンスの基準に適合するようレビューされています。
@@ -435,13 +466,36 @@ addon-page-options-button =
 # Variables:
 #   $version (string) - Application version.
 details-notification-incompatible = { $name } は { -brand-short-name } { $version } と互換性がありません。
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message = { $name } は { -brand-short-name } { $version } と互換性がありません。
 details-notification-incompatible-link = 詳細情報
 details-notification-unsigned-and-disabled = { $name } は { -brand-short-name } での使用が検証できないため無効化されています。
+details-notification-unsigned-and-disabled2 =
+    .message = { $name } は { -brand-short-name } での使用が検証できないため無効化されています。
 details-notification-unsigned-and-disabled-link = 詳細情報
 details-notification-unsigned = { $name } は { -brand-short-name } での使用が検証できません。配布元を確認して慎重に使用してください。
+details-notification-unsigned2 =
+    .message = { $name } は { -brand-short-name } での使用が検証できません。配布元を確認して慎重に使用してください。
 details-notification-unsigned-link = 詳細情報
 details-notification-blocked = { $name } はセキュリティまたは安定性に問題があるため無効化されています。
+details-notification-blocked2 =
+    .message = { $name } はセキュリティまたは安定性に問題があるため無効化されています。
 details-notification-blocked-link = 詳細情報
 details-notification-softblocked = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
+details-notification-softblocked2 =
+    .message = { $name } はセキュリティまたは安定性の問題を引き起こすことが知られています。
 details-notification-softblocked-link = 詳細情報
 details-notification-gmp-pending = { $name } はすぐにインストールされます。
+details-notification-gmp-pending2 =
+    .message = { $name } はすぐにインストールされます。
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = ライセンス情報
+plugins-gmp-privacy-info = プライバシー情報
+plugins-openh264-name = OpenH264 Video Codec (Cisco Systems, Inc. 提供)
+plugins-openh264-description = このプラグインは、WebRTC 仕様に従うため Mozilla により自動的にインストールされ、H.264 動画コーデックを必要とする端末で WebRTC 通話を有効にします。このコーデックのソースコードと実装についての詳細は、https://www.openh264.org/ を参照してください。
+plugins-widevine-name = Widevine Content Decryption Module (Google Inc. 提供)
+plugins-widevine-description = このプラグインは、Encrypted Media Extensions の仕様に従って暗号化されたメディアの再生を有効にします。暗号化されたメディアは、一般的に有料メディアコンテンツのコピーを防止するためにサイトにより使用されます。Encrypted Media Extensions についての詳細は、https://www.w3.org/TR/encrypted-media/ を参照してください。

@@ -12,10 +12,13 @@
 
 policy-3rdparty = 設定 WebExtension 可透過 chrome.storage.managed 存取的政策。
 policy-AllowedDomainsForApps = 指定允許存取 Google Workspace 的網域。
+policy-AllowFileSelectionDialogs = 允許顯示檔案選擇對話框。
 policy-AppAutoUpdate = 開啟或關閉應用程式自動更新。
 policy-AppUpdatePin = 防止 { -brand-short-name } 更新超過特定版本。
 policy-AppUpdateURL = 自訂應用程式更新網址。
 policy-Authentication = 為支援的網站設定整合身分驗證方式。
+policy-AutofillAddressEnabled = 開啟地址自動填寫功能。
+policy-AutofillCreditCardEnabled = 開啟付款方式自動填寫功能。
 policy-AutoLaunchProtocolsFromOrigins = 列舉一組外部通訊協定的清單與來源網址，可不提示使用者就自動啟動外部通訊協定。
 policy-BackgroundAppUpdate2 = 啟用或停用背景更新程式。
 policy-BlockAboutAddons = 防止開啟附加元件管理員（about:addons）。
@@ -25,30 +28,34 @@ policy-BlockAboutSupport = 防止開啟 about:support 頁面。
 policy-Bookmarks = 在書籤工具列、選單或當中的資料夾建立書籤。
 policy-CaptivePortal = 開啟或關閉支援 Captive portal。
 policy-CertificatesDescription = 新增憑證，或使用內建憑證。
+policy-ContentAnalysis = 啟用或停用與資料外洩防護軟體之間的連線。
 policy-Cookies = 允許或拒絕網站設定 Cookie。
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = 設定容器分頁相關政策。
+policy-DisableAccounts = 停用需要帳號才可使用的服務，包含 Sync。
 policy-DisabledCiphers = 停用加密演算法。
 policy-DefaultDownloadDirectory = 設定預設下載資料夾。
 policy-DisableAppUpdate = 防止瀏覽器更新。
 policy-DisableBuiltinPDFViewer = 停用 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-DisableDefaultBrowserAgent = 不讓預設瀏覽器代理工具作任何事。僅對 Windows 有效，其他平台沒有代理工具可用。
 policy-DisableDeveloperTools = 防止使用開發者工具。
+policy-DisableEncryptedClientHello = 停用 TLS 的 Encrypted Client Hello（ECH）功能。
 policy-DisableFeedbackCommands = 停用於「說明」選單中傳送意見回饋的相關指令（「送出意見回饋」與「回報詐騙網站」）。
 policy-DisableFirefoxAccounts = 停用 { -fxaccount-brand-name }相關服務，包含 Sync。
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = 停用 Midori Screenshots 功能。
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = 停用需要帳號才可使用的服務，包含 Sync。
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = 停用 Firefox Screenshots 功能。
 policy-DisableFirefoxStudies = 防止 { -brand-short-name } 進行使用者研究。
 policy-DisableForgetButton = 防止使用「忘記」功能。
 policy-DisableFormHistory = 不要記住搜尋與表單填寫紀錄。
 policy-DisablePrimaryPasswordCreation = 若為 true，將無法建立主控密碼。
 policy-DisablePasswordReveal = 不允許於儲存的登入資訊畫面中顯示密碼。
-policy-DisablePocket = 停用儲存網頁到 Pocket 的功能。
 policy-DisablePocket2 = 停用儲存網頁到 { -pocket-brand-name } 的功能。
 policy-DisablePrivateBrowsing = 停用隱私瀏覽功能。
 policy-DisableProfileImport = 停用自其他瀏覽器匯入資料的選單功能。
 policy-DisableProfileRefresh = 停用 about:support 頁面中的「重新整理 { -brand-short-name }」按鈕。
-policy-DisableSafeMode = 停用以安全模式重新啟動的功能。註: 啟動時按住 Shift 鍵進入安全模式的功能，僅能於 Windows 使用群組原則停用。
+policy-DisableSafeMode = 停用以安全模式重新啟動的功能。註：啟動時按住 Shift 鍵進入安全模式的功能，僅能於 Windows 使用群組原則停用。
 policy-DisableSecurityBypass = 防止使用者忽略某些安全性警告。
 policy-DisableSetAsDesktopBackground = 停用將圖片「設為桌布」的選單功能。
 policy-DisableSystemAddonUpdate = 防止瀏覽器安裝或更新系統附加元件。
@@ -70,14 +77,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = 針對特定網�
 policy-Extensions = 安裝、移除或鎖定擴充套件。安裝選項可加入網址或路徑作為參數。移除和鎖定選項則需要擴充套件 ID 作為參數。
 policy-ExtensionSettings = 管理擴充套件的各種安裝設定。
 policy-ExtensionUpdate = 開啟或關閉擴充套件自動更新。
-policy-FirefoxHome = 設定 Midori Home。
 policy-FirefoxHome2 = 設定 { -firefox-home-brand-name }。
-policy-FlashPlugin = 允許或拒絕使用 Flash 擴充套件。
+policy-FirefoxSuggest = 設定 { -firefox-suggest-brand-name }。
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = 在網址列輸入單一文字時，強制導航到企業內部網站，而非進行線上搜尋。
 policy-Handlers = 設定預設應用程式處理方式。
 policy-HardwareAcceleration = 若為 false，就會關閉硬體加速。
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 設定或鎖定首頁。
+policy-HttpAllowlist = 不升級為 HTTPS 連線的來源。
+policy-HttpsOnlyMode = 允許開啟僅 HTTPS 模式。
 policy-InstallAddonsPermission = 允許某些網站安裝附加元件。
 policy-LegacyProfiles = 停用「於每一套安裝使用不同設定檔」的功能。
 
@@ -92,15 +100,19 @@ policy-LocalFileLinks = 允許特定網站鏈結到本機檔案。
 policy-ManagedBookmarks = 設定由管理員控管的書籤清單，使用者無法更改。
 policy-ManualAppUpdateOnly = 只允許手動更新，也不通知使用者已有更新推出。
 policy-PrimaryPassword = 要求使用或不允許使用主控密碼。
+policy-PrintingEnabled = 啟用或停用列印功能。
 policy-NetworkPrediction = 開啟或關閉網路預測（DNS 預讀）功能。
 policy-NewTabPage = 啟用或停用「新分頁」頁面。
-policy-NoDefaultBookmarks = 停止建立 { -brand-short-name } 內建的預設書籤及智慧書籤（最常造訪、最近新增的標籤）。註: 此原則僅在設定檔首次啟動前設定才有效。
+policy-NoDefaultBookmarks = 停止建立 { -brand-short-name } 內建的預設書籤及智慧書籤（最常造訪、最近新增的標籤）。註：此原則僅在設定檔首次啟動前設定才有效。
 policy-OfferToSaveLogins = 強制允許 { -brand-short-name } 提供記住登入資訊與密碼的設定。true 與 false 設定都接受。
 policy-OfferToSaveLoginsDefault = 允許 { -brand-short-name } 提供記住儲存登入帳號與密碼的功能。true 與 false 值都接受。
 policy-OverrideFirstRunPage = 覆蓋「首次執行」頁面。若您想停用首次執行頁面，請將原則設為空白。
 policy-OverridePostUpdatePage = 覆蓋更新後會開啟的「有什麼新鮮事」頁面。若您想停用此頁面，請將原則設為空白。
 policy-PasswordManagerEnabled = 允許使用密碼管理員來儲存密碼。
 policy-PasswordManagerExceptions = 防止 { -brand-short-name } 儲存特定網站的密碼。
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = 開啟 TLS 的後量子金鑰協定。
 # PDF.js and PDF should not be translated
 policy-PDFjs = 停用或設定 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-Permissions2 = 設定攝影機、麥克風、地理位置、通知、自動播放等權限。
@@ -114,8 +126,6 @@ policy-SanitizeOnShutdown2 = 關閉瀏覽器時，清除上網資料。
 policy-SearchBar = 設定搜尋列的預設位置，使用者仍然可以自訂。
 policy-SearchEngines = 調整搜尋引擎設定。此原則僅對 Extended Support Release（ESR）版本有效。
 policy-SearchSuggestEnabled = 啟用或停用搜尋建議。
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = 安裝 PKCS #11 模組。
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = 新增或刪除 PKCS #11 模組。
 policy-ShowHomeButton = 於工具列顯示首頁按鈕。
@@ -123,6 +133,7 @@ policy-SSLVersionMax = 設定最大 SSL 版本。
 policy-SSLVersionMin = 設定最小 SSL 版本。
 policy-StartDownloadsInTempDirectory = 強制在本機的暫存位置，而非預設下載目錄開始下載。
 policy-SupportMenu = 於說明選單內新增自訂的技術支援項目。
+policy-TranslateEnabled = 啟用或停用網頁翻譯功能。
 policy-UserMessaging = 不要對使用者顯示某些訊息。
 policy-UseSystemPrintDialog = 使用系統列印對話框列印。
 # “format” refers to the format used for the value of this policy.

@@ -14,13 +14,6 @@ onboarding-welcome-header = { -brand-short-name }에 오신 것을 환영합니�
 onboarding-start-browsing-button-label = 탐색 시작
 onboarding-not-now-button-label = 나중에
 mr1-onboarding-get-started-primary-button-label = 시작하기
-mr1-onboarding-welcome-header = { -brand-short-name }에 오신 것을 환영합니다
-mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name }를 기본 브라우저로 설정
-    .title = { -brand-short-name }를 기본 브라우저로 설정하고 작업 표시줄에 고정
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name }를 기본 브라우저로 설정
-mr1-onboarding-set-default-secondary-button-label = 나중에
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,25 +34,6 @@ mr1-return-to-amo-add-extension-label = { $addon-name } 추가
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = 시작하기:  { $current } / { $total } 화면
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = 시작
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — 가구 디자이너, Firefox 팬
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -70,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = 진행률: { $current } / { $total } 단계
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = 애니메이션 끄기
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] 쉽게 접근할 수 있도록 { -brand-short-name }를 Dock에 넣으세요
-       *[other] 쉽게 접근할 수 있도록 { -brand-short-name }를 작업 표시줄에 고정하세요
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Dock에 넣기
-       *[other] 작업 표시줄에 고정
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = 로그인
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = { -brand-short-name }를 기본 브라우저로 설정하세요
-mr1-onboarding-default-subtitle = 탐색할 때 속도, 안전 및 개인 정보 보호 기능이 제공됩니다.
-mr1-onboarding-default-primary-button-label = 기본 브라우저로 설정
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = 모든 것을 가지고 오세요
-mr1-onboarding-import-subtitle = 비밀번호, 북마크 등을 <br/>가져옵니다.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = { $previous }에서 가져오기
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = 이전 브라우저에서 가져오기
-mr1-onboarding-import-secondary-button-label = 나중에
-mr2-onboarding-colorway-header = 색상 라이프
-mr2-onboarding-colorway-subtitle = 생동감 넘치는 새로운 컬러웨이입니다. 제한된 시간 동안 사용할 수 있습니다.
-mr2-onboarding-colorway-primary-button-label = 컬러웨이 저장
-mr2-onboarding-colorway-secondary-button-label = 나중에
-mr2-onboarding-colorway-label-soft = 연하게
-mr2-onboarding-colorway-label-balanced = 중간
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = 진하게
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = 자동
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = 기본
 mr1-onboarding-theme-header = 나만의 것으로 만드세요
 mr1-onboarding-theme-subtitle = 테마로 { -brand-short-name }를 개인화하세요.
-mr1-onboarding-theme-primary-button-label = 테마 저장
 mr1-onboarding-theme-secondary-button-label = 나중에
+newtab-wallpaper-onboarding-title = 배경 화면 사용해보기
+newtab-wallpaper-onboarding-subtitle = 새 탭에 새로운 모습을 더할 배경 화면을 선택하세요.
+newtab-wallpaper-onboarding-primary-button-label = 배경 화면 설정
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = 시스템 테마
 mr1-onboarding-theme-label-light = 밝게
@@ -181,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         버튼, 메뉴 및 창에 
         역동적이고 다양한 색상의 테마를 사용합니다.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = 이 컬러웨이를 사용합니다.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = 이 컬러웨이를 사용합니다.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = { $colorwayName } 컬러웨이를 탐색합니다.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = { $colorwayName } 컬러웨이를 탐색합니다.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = 기본 테마를 탐색합니다.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = 기본 테마를 탐색합니다.
 
@@ -209,14 +117,6 @@ mr2-onboarding-default-theme-label = 기본 테마를 탐색합니다.
 mr2-onboarding-thank-you-header = 저희를 선택해 주셔서 감사합니다.
 mr2-onboarding-thank-you-text = { -brand-short-name }는 비영리 단체가 지원하는 독립 브라우저입니다. 우리는 함께 웹을 안전하고, 건강하고, 더 사생활 보호를 하도록 만들고 있습니다.
 mr2-onboarding-start-browsing-button-label = 탐색 시작
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -396,7 +296,7 @@ mr2022-onboarding-privacy-segmentation-button-secondary-label = 자세한 정보
 ## MR2022 Multistage Gratitude screen strings
 
 mr2022-onboarding-gratitude-title = 저희가 더 나은 웹을 만드는 것을 돕고 계십니다
-mr2022-onboarding-gratitude-subtitle = Mozilla 재단이 지원하는 { -brand-short-name }를 사용해 주셔서 감사합니다. 여러분의 지원으로 우리는 인터넷을 보다 개방적이고 접근 가능하며 모두에게 더 좋게 만들기 위해 노력하고 있습니다.
+mr2022-onboarding-gratitude-subtitle = Ablaze 재단이 지원하는 { -brand-short-name }를 사용해 주셔서 감사합니다. 여러분의 지원으로 우리는 인터넷을 보다 개방적이고 접근 가능하며 모두에게 더 좋게 만들기 위해 노력하고 있습니다.
 mr2022-onboarding-gratitude-primary-button-label = 새 기능 보기
 mr2022-onboarding-gratitude-secondary-button-label = 탐색 시작
 
@@ -432,4 +332,36 @@ onboarding-device-migration-image-alt =
     .aria-label = 노트북 컴퓨터 화면에서 여우가 손을 흔드는 모습. 노트북에는 마우스가 연결되어 있습니다.
 onboarding-device-migration-title = 환영합니다
 onboarding-device-migration-subtitle = { -fxaccount-brand-name(capitalization: "sentence") }에 로그인하여 새 기기에 북마크, 비밀번호 및 기록을 가져오세요.
+onboarding-device-migration-subtitle2 = 새 기기에서 북마크, 비밀번호, 기록을 가져오려면 계정에 로그인하세요.
 onboarding-device-migration-primary-button-label = 로그인
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = 사용자의 안전을 지키기 위해 최선을 다합니다.
+onboarding-easy-setup-security-and-privacy-subtitle = 이 비영리 지원 브라우저는 회사가 웹에서 사용자를 몰래 추적하는 것을 차단하는 데 도움이 됩니다.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = 기기 간 이동 시 암호화 상태를 유지하세요
+onboarding-mobile-download-security-and-privacy-subtitle = 동기화되면 { -brand-short-name }가 비밀번호, 북마크 등을 암호화합니다.  다른 기기에서 탭을 가져올 수도 있습니다.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name }가 여러분을 도와드립니다.
+onboarding-gratitude-security-and-privacy-subtitle = Ablaze 재단이 지원하는 { -brand-short-name }를 사용해 주셔서 감사합니다. 여러분의 지원으로 우리는 인터넷을 더 안전하고 더 쉽게 이용할 수 있도록 노력하고 있습니다.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = { -brand-short-name }를 얼마나 오랫동안 사용하셨습니까?
+onboarding-new-user-familiarity-based-survey-title = { -brand-short-name }에 대해 얼마나 잘 알고 계십니까?
+onboarding-new-user-survey-subtitle = 사용자의 의견은 { -brand-short-name }를 더욱 개선하는 데 도움이 됩니다.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = 다음
+onboarding-new-user-survey-legal-link-label = “{ onboarding-new-user-survey-next-button-label }”을 선택하면, { -brand-product-name }의 <a data-l10n-name="privacy_notice">개인정보처리방침</a>에 동의하게 됩니다.
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = 완전 새내기
+onboarding-new-user-survey-time-based-option-2 = 1개월 미만
+onboarding-new-user-survey-time-based-option-3 = 1개월 이상 정기적으로
+onboarding-new-user-survey-time-based-option-4 = 1개월 이상 가끔
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = 완전 새내기
+onboarding-new-user-survey-familiarity-based-option-2 = 사용해 본 적이 있음
+onboarding-new-user-survey-familiarity-based-option-3 = 매우 익숙함
+onboarding-new-user-survey-familiarity-based-option-4 = 예전에 사용했지만 시간이 좀 지남

@@ -5,39 +5,6 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
-#
-# default - "Mozilla Firefox"
-# private - "Mozilla Firefox (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (Duyệt web riêng tư)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Duyệt web riêng tư)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox — (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
-#
-# Also note the other subtle difference here: we use a `-` to separate the
-# brand name from `(Private Browsing)`, which does not happen on other OSes.
-#
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window-mac =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Duyệt web riêng tư)
-    .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Duyệt web riêng tư)
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -114,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = Mở bảng điều khiển thực tế ảo
 urlbar-storage-access-anchor =
     .tooltiptext = Mở bảng điều khiển quyền hoạt động duyệt web
-urlbar-translate-notification-anchor =
-    .tooltiptext = Dịch trang này
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Quản lý chia sẻ cửa sổ hay màn hình của bạn với trang
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Mở bảng thông báo lưu trữ ngoại tuyến
 urlbar-password-notification-anchor =
     .tooltiptext = Mở bảng thông báo lưu mật khẩu
-urlbar-translated-notification-anchor =
-    .tooltiptext = Quản lý việc dịch trang
 urlbar-plugins-notification-anchor =
     .tooltiptext = Quản lý sử dụng phần bổ trợ
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -218,10 +181,6 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
-    .label = Quản lý tiện ích mở rộng…
-page-action-remove-extension =
-    .label = Xóa tiện ích mở rộng
 page-action-manage-extension2 =
     .label = Quản lý tiện ích mở rộng…
     .accesskey = E
@@ -320,6 +279,9 @@ quickactions-cmd-plugins = phần bổ trợ
 # Opens the print dialog
 quickactions-print2 = Trang in
 quickactions-cmd-print = in
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = Lưu trang dưới dạng PDF
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Mở cửa sổ riêng tư
 quickactions-cmd-private = duyệt web riêng tư, duyet web rieng tu
@@ -385,6 +347,7 @@ identity-connection-secure = Kết nối an toàn
 identity-connection-failure = Kết nối thất bại
 identity-connection-internal = Đây là một trang an toàn của { -brand-short-name }
 identity-connection-file = Trang này đã được lưu ở máy tính của bạn.
+identity-connection-associated = Trang này được tải từ một trang khác.
 identity-extension-page = Trang này được tải từ một tiện ích mở rộng.
 identity-active-blocked = { -brand-short-name } đã chặn những phần không an toàn của trang này.
 identity-custom-root = Kết nối được xác minh bởi nhà phát hành chứng chỉ không được Mozilla công nhận.
@@ -394,6 +357,7 @@ identity-weak-encryption = Trang này sử dụng mã hóa yếu.
 identity-insecure-login-forms = Đăng nhập vào trang này bạn có thể bị xâm nhập.
 identity-https-only-connection-upgraded = (đã nâng cấp lên HTTPS)
 identity-https-only-label = Chế độ chỉ HTTPS
+identity-https-only-label2 = Tự động nâng cấp trang web này lên kết nối an toàn
 identity-https-only-dropdown-on =
     .label = Bật
 identity-https-only-dropdown-off =
@@ -402,6 +366,8 @@ identity-https-only-dropdown-off-temporarily =
     .label = Tắt tạm thời
 identity-https-only-info-turn-on2 = Bật Chế độ chỉ HTTPS cho trang web này nếu bạn muốn { -brand-short-name } nâng cấp kết nối khi có thể.
 identity-https-only-info-turn-off2 = Nếu trang có vẻ bị hỏng, bạn có thể tắt Chế độ chỉ HTTPS để trang web này tải lại sử dụng HTTP không an toàn.
+identity-https-only-info-turn-on3 = Bật nâng cấp HTTPS cho trang web này nếu bạn muốn { -brand-short-name } nâng cấp kết nối khi có thể.
+identity-https-only-info-turn-off3 = Nếu trang có vẻ bị hỏng, bạn có thể muốn tắt nâng cấp HTTPS cho trang web này để tải lại bằng HTTP không an toàn.
 identity-https-only-info-no-upgrade = Không thể nâng cấp kết nối từ HTTP.
 identity-permissions-storage-access-header = Cookie trên nhiều trang web
 identity-permissions-storage-access-hint = Khi bạn mở trang web này, các trang web này có thể sử dụng cookie trên nhiều trang web và lấy thông tin của bạn trên trang web này.
@@ -412,8 +378,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Bạn không được kết nối an toàn với trang web này.
 identity-connection-verified = Bạn đang kết nối an toàn tới trang này.
 identity-ev-owner-label = Chứng nhận được cấp cho:
-identity-description-custom-root = Mozilla không công nhận nhà phát hành chứng nhận này. Nó có thể đã được thêm từ hệ điều hành của bạn hoặc bởi quản trị viên. <label data-l10n-name="link">Tìm hiểu thêm</label>
-identity-description-custom-root2 = Mozilla không công nhận nhà phát hành chứng nhận này. Nó có thể đã được thêm từ hệ điều hành của bạn hoặc bởi quản trị viên.
+identity-description-custom-root2 = Ablaze không công nhận nhà phát hành chứng nhận này. Nó có thể đã được thêm từ hệ điều hành của bạn hoặc bởi quản trị viên.
 identity-remove-cert-exception =
     .label = Loại bỏ ngoại lệ
     .accesskey = R
@@ -421,17 +386,12 @@ identity-description-insecure = Kết nối của bạn đến trang này không
 identity-description-insecure-login-forms = Thông tin đăng nhập mà bạn nhập vào trên trang này không an toàn và có thể bị xâm nhập.
 identity-description-weak-cipher-intro = Kết nối đến trang này sử dụng mã hóa yếu và không bảo mật.
 identity-description-weak-cipher-risk = Người khác có thể thấy thông tin của bạn hoặc thay đổi hành vi của trang.
-identity-description-active-blocked = { -brand-short-name } đã chặn những phần không an toàn của trang này. <label data-l10n-name="link">Tìm hiểu thêm</label>
 identity-description-active-blocked2 = { -brand-short-name } đã chặn những phần không an toàn của trang này.
 identity-description-passive-loaded = Kết nối không được bảo mật và thông tin bạn chia sẻ với trang này có thể bị thấy bởi người khác.
-identity-description-passive-loaded-insecure = Trang web này chứa nội dung không an toàn (ví dụ: ảnh). <label data-l10n-name="link">Tìm hiểu thêm</label>
-identity-description-passive-loaded-mixed = Dù { -brand-short-name } đã chặn một số nội dung, vẫn có những nội dung trên trang không an toàn (ví dụ: ảnh). <label data-l10n-name="link">Tìm hiểu thêm</label>
 identity-description-passive-loaded-insecure2 = Trang web này chứa nội dung không an toàn (ví dụ: ảnh).
 identity-description-passive-loaded-mixed2 = Dù { -brand-short-name } đã chặn một số nội dung, vẫn có những nội dung trên trang không an toàn (ví dụ: ảnh).
 identity-description-active-loaded = Trang web này chứa nội dung không an toàn (ví dụ: các đoạn mã) và kết nối tới nội dung này không bảo mật.
 identity-description-active-loaded-insecure = Thông tin bạn chia sẻ với trang này có thể bị thấy bởi người khác (ví dụ: mật khẩu, tin nhắn, thẻ tín dụng, vâng vâng).
-identity-learn-more =
-    .value = Tìm hiểu thêm
 identity-disable-mixed-content-blocking =
     .label = Tạm thời tắt bảo vệ
     .accesskey = D
@@ -508,13 +468,6 @@ popup-select-window-or-screen =
     .label = Cửa sổ hoặc màn hình:
     .accesskey = W
 popup-all-windows-shared = Tất cả các cửa sổ trên màn hình sẽ được chia sẻ.
-popup-screen-sharing-block =
-    .label = Chặn
-    .accesskey = B
-popup-screen-sharing-always-block =
-    .label = Luôn chặn
-    .accesskey = w
-popup-mute-notifications-checkbox = Ẩn thông báo trang web khi chia sẻ
 
 ## WebRTC window or screen share tab switch warning
 
@@ -527,11 +480,13 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = Để sử dụng phím tắt F12, trước tiên hãy mở DevTools thông qua menu Nhà phát triển Web.
 enable-devtools-popup-description2 = Để sử dụng phím tắt F12, trước tiên hãy mở Công cụ phát triển web qua menu Công cụ trình duyệt.
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = Đóng
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -608,6 +563,13 @@ urlbar-result-action-search-w-engine = Tìm với { $engine }
 urlbar-result-action-sponsored = Được tài trợ
 urlbar-result-action-switch-tab = Chuyển sang thẻ
 urlbar-result-action-visit = Truy cập
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = Chuyển sang thẻ · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = Truy cập từ bộ nhớ tạm
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -636,6 +598,12 @@ urlbar-result-action-copy-to-clipboard = Sao chép
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = Tìm với { $engine }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -647,7 +615,7 @@ urlbar-result-action-search-actions = Tìm kiếm hành động
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -660,6 +628,26 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = Hành động nhanh
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = Tìm kiếm gần đây
+# The header shown above trending results.
+# Variables:
+#  $engine (String): the name of the search engine providing the trending suggestions
+urlbar-group-trending =
+    .label = Đang thịnh hành trên { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show =
+    .label = Không hiển thị các tìm kiếm thịnh hành
+    .accesskey = K
+urlbar-result-menu-trending-why =
+    .label = Tại sao tôi thấy cái này?
+    .accesskey = T
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-trending-dismissal-acknowledgment = Cảm ơn phản hồi của bạn. Bạn sẽ không thấy các tìm kiếm thịnh hành nữa.
 
 ## Reader View toolbar buttons
 
@@ -699,19 +687,6 @@ fullscreen-exit-mac-button = Thoát toàn màn hình (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.
 pointerlock-warning-no-domain = Trang này có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>Một phần của trang này đã bị vớ.</strong> Để { -brand-product-name } biết về lỗi này và sửa nó nhanh hơn, vui lòng báo cáo nó.
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = Một phần của trang này đã bị lỗi. Để cho { -brand-product-name } biết về vấn đề này và khắc phục sự cố nhanh hơn, vui lòng gửi báo cáo.
-crashed-subframe-learnmore-link =
-    .value = Tìm hiểu thêm
-crashed-subframe-submit =
-    .label = Gửi báo cáo
-    .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
@@ -764,8 +739,6 @@ bookmarks-search =
     .label = Tìm kiếm dấu trang
 bookmarks-tools =
     .label = Công cụ đánh dấu trang
-bookmarks-bookmark-edit-panel =
-    .label = Chỉnh sửa dấu trang này
 bookmarks-subview-edit-bookmark =
     .label = Chỉnh sửa dấu trang này…
 # The aria-label is a spoken label that should not include the word "toolbar" or
@@ -781,9 +754,6 @@ bookmarks-toolbar-placeholder =
     .title = Các mục của thanh dấu trang
 bookmarks-toolbar-placeholder-button =
     .label = Các mục của thanh dấu trang
-# "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = Đánh dấu thẻ hiện tại
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-subview-bookmark-tab =
     .label = Đánh dấu thẻ hiện tại…
@@ -809,11 +779,6 @@ repair-text-encoding-button =
 
 ## Customize Toolbar Buttons
 
-# Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = Tiện ích mở rộng và chủ đề
-    .tooltiptext = Quản lý các tiện ích mở rộng và chủ đề của bạn ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -863,13 +828,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 panel-save-update-username = Tên đăng nhập
 panel-save-update-password = Mật khẩu
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = Xóa { $name }?
-addon-removal-abuse-report-checkbox = Báo cáo tiện ích mở rộng này cho { -vendor-short-name }
 
 ##
 
@@ -924,7 +882,7 @@ navbar-accessible =
 navbar-downloads =
     .label = Tải xuống
 navbar-overflow =
-    .tooltiptext = Thêm công cụ...
+    .tooltiptext = Công cụ khác...
 # Variables:
 #   $shortcut (String): keyboard shortcut to print the page
 navbar-print =
@@ -938,8 +896,6 @@ navbar-library =
     .tooltiptext = Xem lịch sử, dấu trang đã lưu và nhiều hơn nữa
 navbar-search =
     .title = Tìm kiếm
-navbar-accessibility-indicator =
-    .tooltiptext = Chức năng về khả năng truy cập đã được bật
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -957,6 +913,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Đã mở các thẻ trước đó?</strong> Bạn có thể khôi phục phiên trước đó của mình từ menu ứng dụng { -brand-short-name } <img data-l10n-name="icon"/>, trong mục Lịch sử.
 restore-session-startup-suggestion-button = Hướng dẫn cho tôi
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = Tổ chức của bạn đã chặn quyền truy cập vào các tập tin cục bộ trên máy tính này
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } tự động gửi dữ liệu về { -vendor-short-name } để chúng tôi có thể cải thiện trải nghiệm của bạn.
@@ -965,6 +925,15 @@ data-reporting-notification-button =
     .accesskey = C
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Duyệt web riêng tư
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = Ngăn ngừa mất dữ liệu (DLP) bởi { $agentName }. Nhấp vào đây để biết thêm thông tin.
+content-analysis-panel-title = Bảo vệ dữ liệu
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = Tổ chức của bạn sử dụng { $agentName } để bảo vệ chống mất dữ liệu. <a data-l10n-name="info">Tìm hiểu thêm</a>
 
 ## Unified extensions (toolbar) button
 
@@ -990,6 +959,24 @@ unified-extensions-button-quarantined =
         Tiện ích mở rộng
         Vài tiện ích mở rộng không được phép
 
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = Kết thúc phiên riêng tư
+    .tooltiptext = Kết thúc phiên riêng tư
+reset-pbm-panel-heading = Kết thúc phiên riêng tư của bạn?
+reset-pbm-panel-description = Đóng tất cả các thẻ riêng tư và xóa lịch sử, cookie cũng như tất cả dữ liệu trang web khác.
+reset-pbm-panel-always-ask-checkbox =
+    .label = Luôn hỏi tôi
+    .accesskey = A
+reset-pbm-panel-cancel-button =
+    .label = Hủy bỏ
+    .accesskey = C
+reset-pbm-panel-confirm-button =
+    .label = Xoá dữ liệu phiên
+    .accesskey = D
+reset-pbm-panel-complete = Đã xóa dữ liệu phiên riêng tư
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } đã ngăn trang web này tự động tải lại.
@@ -999,15 +986,6 @@ refresh-blocked-allow =
     .accesskey = A
 
 ## Firefox Relay integration
-
-firefox-relay-offer-why-relay = { -relay-brand-name } che dấu địa chỉ email thật của bạn để giúp bảo vệ bạn khỏi rò rỉ dữ liệu và thư rác.
-firefox-relay-offer-how-we-integrate = Bằng cách tiếp tục, bạn sẽ có thể tạo mặt nạ email { -relay-brand-short-name } mới trực tiếp từ trình quản lý mật khẩu { -brand-shorter-name } của mình.
-# Variables:
-#  $sitename (String): name of the site where user enters their Relay mask
-#  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-does = Chúng tôi sẽ chuyển tiếp tất cả email từ <strong>{ $sitename }</strong> đến <strong>{ $useremail }</strong>.
-
-## Popup Notification
 
 firefox-relay-offer-why-to-use-relay = Mặt nạ an toàn, dễ sử dụng của chúng tôi bảo vệ danh tính của bạn và ngăn chặn thư rác bằng cách ẩn địa chỉ email của bạn.
 # Variables:
@@ -1020,6 +998,10 @@ firefox-relay-offer-legal-notice = Bằng cách nhấp vào “Sử dụng mặt
 popup-notification-addon-install-unsigned =
     .value = (Chưa xác thực)
 popup-notification-xpinstall-prompt-learn-more = Tìm hiểu thêm về cách cài đặt tiện ích một cách an toàn
+# Note: Access key is set to P to match "Private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox =
+    .label = Chạy trong cửa sổ riêng tư
+    .accesskey = P
 
 ## Pop-up warning
 

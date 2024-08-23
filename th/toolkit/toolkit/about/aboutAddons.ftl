@@ -6,13 +6,11 @@ addons-page-title = ตัวจัดการส่วนเสริม
 search-header =
     .placeholder = ค้นหา addons.mozilla.org
     .searchbuttonlabel = ค้นหา
-search-header-shortcut =
-    .key = f
 
 ## Variables
 ##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
 
-list-empty-get-extensions-message = รับส่วนขยายและชุดรูปแบบใน <a data-l10n-name="get-extensions">{ $domain }</a>
+list-empty-get-extensions-message = รับส่วนขยายและชุดตกแต่งใน <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-dictionaries-message = รับพจนานุกรมบน <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-language-packs-message = รับชุดภาษาบน <a data-l10n-name="get-extensions">{ $domain }</a>
 
@@ -128,9 +126,9 @@ addon-category-discover-title =
 addon-category-extension = ส่วนขยาย
 addon-category-extension-title =
     .title = ส่วนขยาย
-addon-category-theme = ชุดรูปแบบ
+addon-category-theme = ชุดตกแต่ง
 addon-category-theme-title =
-    .title = ชุดรูปแบบ
+    .title = ชุดตกแต่ง
 addon-category-plugin = ปลั๊กอิน
 addon-category-plugin-title =
     .title = ปลั๊กอิน
@@ -146,23 +144,32 @@ addon-category-available-updates-title =
 addon-category-recent-updates = การอัปเดตล่าสุด
 addon-category-recent-updates-title =
     .title = การอัปเดตล่าสุด
-addon-category-sitepermission = สิทธิอนุญาตไซต์
+addon-category-sitepermission = การกำหนดสิทธิ์ไซต์
 addon-category-sitepermission-title =
-    .title = สิทธิอนุญาตไซต์
+    .title = การกำหนดสิทธิ์ไซต์
 # String displayed in about:addons in the Site Permissions section
 # Variables:
 #  $host (string) - DNS host name for which the webextension enables permissions
-addon-sitepermission-host = สิทธิอนุญาตไซต์สำหรับ { $host }
+addon-sitepermission-host = การกำหนดสิทธิ์ไซต์สำหรับ { $host }
 
 ## These are global warnings
 
 extensions-warning-safe-mode = ส่วนเสริมทั้งหมดถูกปิดใช้งานโดยโหมดปลอดภัย
-extensions-warning-check-compatibility = การตรวจสอบความเข้ากันได้ของส่วนเสริมถูกปิดใช้งาน คุณอาจมีส่วนเสริมที่เข้ากันไม่ได้
+extensions-warning-check-compatibility = การตรวจสอบความเข้ากันได้ของส่วนเสริมถูกปิดใช้งาน คุณอาจมีส่วนเสริมที่ใช้ร่วมกันไม่ได้
+extensions-warning-safe-mode2 =
+    .message = ส่วนเสริมทั้งหมดถูกปิดใช้งานโดยโหมดปลอดภัย
+extensions-warning-check-compatibility2 =
+    .message = การตรวจสอบความเข้ากันได้ของส่วนเสริมถูกปิดใช้งาน คุณอาจมีส่วนเสริมที่ใช้ร่วมกันไม่ได้
 extensions-warning-check-compatibility-button = เปิดใช้งาน
     .title = เปิดใช้งานการตรวจสอบความเข้ากันได้ของส่วนเสริม
 extensions-warning-update-security = การตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริมถูกปิดใช้งาน คุณอาจถูกบุกรุกโดยการอัปเดต
+extensions-warning-update-security2 =
+    .message = การตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริมถูกปิดใช้งาน คุณอาจถูกบุกรุกโดยการอัปเดต
 extensions-warning-update-security-button = เปิดใช้งาน
     .title = เปิดใช้งานการตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริม
+extensions-warning-imported-addons2 =
+    .message = โปรดติดตั้งส่วนขยายที่นำเข้าไปยัง { -brand-short-name } ให้เสร็จสิ้น
+extensions-warning-imported-addons-button = ติดตั้งส่วนขยาย
 
 ## Strings connected to add-on updates
 
@@ -213,6 +220,9 @@ shortcuts-no-addons = คุณไม่ได้เปิดใช้งาน�
 shortcuts-no-commands = ส่วนขยายดังต่อไปนี้ไม่มีทางลัด:
 shortcuts-input =
     .placeholder = พิมพ์ทางลัด
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = เอาทางลัดออก
 shortcuts-browserAction2 = เปิดใช้งานปุ่มแถบเครื่องมือ
 shortcuts-pageAction = เปิดใช้งานการกระทำหน้า
 shortcuts-sidebarAction = เปิด/ปิดแถบข้าง
@@ -227,6 +237,11 @@ shortcuts-duplicate = ทางลัดซ้ำกัน
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = { $shortcut } กำลังถูกใช้เป็นทางลัดในกรณีมากกว่าหนึ่งกรณี ทางลัดที่ซ้ำกันอาจทำให้เกิดลักษณะการทำงานที่ไม่คาดคิด
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = { $shortcut } กำลังถูกใช้เป็นทางลัดในกรณีมากกว่าหนึ่งกรณี ทางลัดที่ซ้ำกันอาจทำให้เกิดลักษณะการทำงานที่ไม่คาดคิด
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -246,15 +261,20 @@ header-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    ส่วนขยายและธีมเป็นเหมือนแอปสำหรับเบราว์เซอร์ของคุณ ซึ่งให้คุณป้องกัน
-    รหัสผ่าน, ดาวน์โหลดวิดีโอ, ค้นหาดีล, ปิดกั้นโฆษณาที่น่ารำคาญ, เปลี่ยนรูปลักษณ์ของ
-    เบราว์เซอร์ของคุณ, และอื่น ๆ อีกมากมาย โปรแกรมซอฟต์แวร์ขนาดเล็กเหล่านั้นมักถูก
+    ส่วนขยายและชุดตกแต่งเป็นเหมือนแอปสำหรับเบราว์เซอร์ของคุณ ซึ่งให้คุณป้องกัน
+    รหัสผ่าน ดาวน์โหลดวิดีโอ ค้นหาดีล ปิดกั้นโฆษณาที่น่ารำคาญ เปลี่ยนรูปลักษณ์ของ
+    เบราว์เซอร์ของคุณ และอื่น ๆ อีกมากมาย โปรแกรมซอฟต์แวร์ขนาดเล็กเหล่านั้นมักถูก
     พัฒนาโดยบุคคลที่สาม นี่คือตัวเลือกที่ { -brand-product-name } <a data-l10n-name="learn-more-trigger">แนะนำ</a>เพื่อ
-    ความปลอดภัย, ประสิทธิภาพ, และการทำงานที่ดีกว่า
+    ความปลอดภัย ประสิทธิภาพ และการทำงานที่ดีกว่า
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
-    บางคำแนะนำเหล่านี้ถูกปรับเปลี่ยนตามแบบส่วนบุคคล ซึ่งขึ้นอยู่กับส่วนขยายอื่นที่คุณติดตั้ง,
-    ค่ากำหนดโปรไฟล์, และสถิติการใช้งาน
+    บางคำแนะนำเหล่านี้ถูกปรับเปลี่ยนตามแบบส่วนบุคคล ซึ่งขึ้นอยู่กับส่วนขยายอื่นที่คุณติดตั้ง
+    ค่าปรับแต่งโปรไฟล์ และสถิติการใช้งาน
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message =
+        บางคำแนะนำเหล่านี้ถูกปรับเปลี่ยนตามแบบส่วนบุคคล ซึ่งขึ้นอยู่กับส่วนขยายอื่นที่คุณติดตั้ง
+        ค่าปรับแต่งโปรไฟล์ และสถิติการใช้งาน
 discopane-notice-learn-more = เรียนรู้เพิ่มเติม
 privacy-policy = นโยบายความเป็นส่วนตัว
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -266,12 +286,12 @@ created-by-author = โดย <a data-l10n-name="author">{ $author }</a>
 #   $dailyUsers (number) - The number of daily users.
 user-count = ผู้ใช้: { $dailyUsers }
 install-extension-button = เพิ่มลงใน { -brand-product-name }
-install-theme-button = ติดตั้งชุดรูปแบบ
+install-theme-button = ติดตั้งชุดตกแต่ง
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = จัดการ
 find-more-addons = ค้นหาส่วนเสริมเพิ่มเติม
-find-more-themes = ค้นหาชุดรูปแบบเพิ่มเติม
+find-more-themes = ค้นหาชุดตกแต่งเพิ่มเติม
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -296,21 +316,11 @@ preferences-addon-button =
     }
 details-addon-button = รายละเอียด
 release-notes-addon-button = บันทึกประจำรุ่น
-permissions-addon-button = การอนุญาต
+permissions-addon-button = การกำหนดสิทธิ์
 extension-enabled-heading = ถูกเปิดใช้งาน
 extension-disabled-heading = ถูกปิดใช้งาน
 theme-enabled-heading = เปิดใช้งาน
-theme-disabled-heading = ปิดใช้งาน
-theme-disabled-heading2 = ชุดรูปแบบที่บันทึกไว้
-theme-monochromatic-heading = ชุดรูปแบบสี
-theme-monochromatic-subheading = ชุดรูปแบบใหม่ที่สดใสจาก { -brand-product-name } มีให้ใช้ในช่วงเวลาจำกัด
-# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
-theme-colorways-button = ลอง Colorways
-# Refers to the button label for the colorways card when a user has a colorway theme enabled.
-theme-colorways-button-colorway-enabled = เปลี่ยนชุดรูปแบบสี
-# Variables:
-#   $expiryDate (string) - Date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
-colorway-collection-expiry-label = หมดอายุ { DATETIME($expiryDate, month: "long", day: "numeric") }
+theme-disabled-heading2 = ชุดตกแต่งที่บันทึกไว้
 plugin-enabled-heading = ถูกเปิดใช้งาน
 plugin-disabled-heading = ถูกปิดใช้งาน
 dictionary-enabled-heading = ถูกเปิดใช้งาน
@@ -328,6 +338,9 @@ addon-detail-homepage-label = หน้าแรก
 addon-detail-rating-label = การจัดอันดับ
 # Message for add-ons with a staged pending update.
 install-postponed-message = ส่วนขยายนี้จะถูกอัปเดตเมื่อ { -brand-short-name } เริ่มการทำงานใหม่
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message = ส่วนขยายนี้จะถูกอัปเดตเมื่อ { -brand-short-name } เริ่มการทำงานใหม่
 install-postponed-button = อัปเดตตอนนี้
 # The average rating that the add-on has received.
 # Variables:
@@ -351,6 +364,10 @@ addon-detail-reviews-link =
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = เอา <span data-l10n-name="addon-name">{ $addon }</span> ออกแล้ว
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = เอา { $addon } ออกแล้ว
 pending-uninstall-undo-button = เลิกทำ
 addon-detail-updates-label = อนุญาตให้อัปเดตโดยอัตโนมัติ
 addon-detail-updates-radio-default = ค่าเริ่มต้น
@@ -358,6 +375,10 @@ addon-detail-updates-radio-on = เปิด
 addon-detail-updates-radio-off = ปิด
 addon-detail-update-check-label = ตรวจสอบการอัปเดต
 install-update-button = อัปเดต
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -366,6 +387,24 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = เมื่อได้รับอนุญาต ส่วนขยายจะสามารถเข้าถึงกิจกรรมออนไลน์ของคุณได้ในขณะที่เรียกดูแบบส่วนตัว <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
 addon-detail-private-browsing-allow = อนุญาต
 addon-detail-private-browsing-disallow = ไม่อนุญาต
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
+
+## "sites with restrictions" (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = เรียกใช้งานบนไซต์ที่มีข้อจำกัด
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = เมื่ออนุญาตแล้ว ส่วนขยายจะสามารถเข้าถึงไซต์ที่ { -vendor-short-name } จำกัดไว้ได้ ให้อนุญาตก็ต่อเมื่อคุณไว้ใจส่วนขยายนี้เท่านั้น
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = อนุญาต
+addon-detail-quarantined-domains-disallow = ไม่อนุญาต
+# aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
+addon-detail-group-label-quarantined-domains =
+    .aria-label = { addon-detail-quarantined-domains-label }
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -388,28 +427,28 @@ available-updates-heading = การอัปเดตที่มี
 recent-updates-heading = การอัปเดตล่าสุด
 release-notes-loading = กำลังโหลด…
 release-notes-error = ขออภัย แต่เกิดข้อผิดพลาดในการโหลดบันทึกประจำรุ่น
-addon-permissions-empty = ส่วนขยายนี้ไม่ต้องการการอนุญาตใด ๆ
-addon-permissions-required = สิทธิอนุญาตที่ต้องการสำหรับฟังก์ชันการทำงานหลัก:
-addon-permissions-optional = สิทธิอนุญาตที่เลือกได้สำหรับฟังก์ชันการทำงานที่เพิ่ม:
-addon-permissions-learnmore = เรียนรู้เพิ่มเติมเกี่ยวกับสิทธิอนุญาต
+addon-permissions-empty = ส่วนขยายนี้ไม่จำเป็นต้องขอสิทธิ์ใด
+addon-permissions-required = สิทธิ์ที่ต้องการสำหรับฟังก์ชันการทำงานหลัก:
+addon-permissions-optional = สิทธิ์เผื่อเลือกสำหรับฟังก์ชันการทำงานเพิ่มเติม:
+addon-permissions-learnmore = เรียนรู้เพิ่มเติมเกี่ยวกับการกำหนดสิทธิ์
 recommended-extensions-heading = ส่วนขยายที่แนะนำ
-recommended-themes-heading = ชุดรูปแบบที่แนะนำ
+recommended-themes-heading = ชุดตกแต่งที่แนะนำ
 # Variables:
 #   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = มอบความสามารถต่อไปนี้ให้ <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = รู้สึกสร้างสรรค์ใช่ไหม? <a data-l10n-name="link">สร้างธีมในรูปแบบของคุณเองด้วย Firefox Color</a>
+recommended-theme-1 = รู้สึกสร้างสรรค์ใช่ไหม? <a data-l10n-name="link">สร้างชุดตกแต่งในแบบของคุณเองด้วย Firefox Color</a>
 
 ## Page headings
 
 extension-heading = จัดการส่วนขยายของคุณ
-theme-heading = จัดการชุดรูปแบบของคุณ
+theme-heading = จัดการชุดตกแต่งของคุณ
 plugin-heading = จัดการปลั๊กอินของคุณ
 dictionary-heading = จัดการพจนานุกรมของคุณ
 locale-heading = จัดการภาษาของคุณ
 updates-heading = จัดการการอัปเดตของคุณ
-sitepermission-heading = จัดการสิทธิอนุญาตไซต์ของคุณ
+sitepermission-heading = จัดการการกำหนดสิทธิ์ไซต์ของคุณ
 discover-heading = ปรับแต่ง { -brand-short-name } ของคุณ
 shortcuts-heading = จัดการทางลัดส่วนขยาย
 default-heading-search-label = ค้นหาส่วนเสริมเพิ่มเติม
@@ -420,23 +459,41 @@ addon-page-options-button =
 
 ## Detail notifications
 ## Variables:
-##   $name (String): name of the add-on.
-
-
-## Detail notifications
-## Variables:
 ##   $name (string) - Name of the add-on.
 
 # Variables:
 #   $version (string) - Application version.
-details-notification-incompatible = { $name } เข้ากันไม่ได้กับ { -brand-short-name } { $version }
+details-notification-incompatible = { $name } ใช้ร่วมกับ { -brand-short-name } { $version } ไม่ได้
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message = { $name } ใช้ร่วมกับ { -brand-short-name } { $version } ไม่ได้
 details-notification-incompatible-link = ข้อมูลเพิ่มเติม
 details-notification-unsigned-and-disabled = { $name } ไม่สามารถยืนยันสำหรับใช้ใน { -brand-short-name } และถูกปิดใช้งาน
+details-notification-unsigned-and-disabled2 =
+    .message = { $name } ไม่สามารถยืนยันสำหรับใช้ใน { -brand-short-name } และถูกปิดใช้งาน
 details-notification-unsigned-and-disabled-link = ข้อมูลเพิ่มเติม
 details-notification-unsigned = { $name } ไม่สามารถยืนยันสำหรับใช้ใน { -brand-short-name } ดำเนินการต่อด้วยความระมัดระวัง
+details-notification-unsigned2 =
+    .message = { $name } ไม่สามารถยืนยันสำหรับใช้ใน { -brand-short-name } ดำเนินการต่อด้วยความระมัดระวัง
 details-notification-unsigned-link = ข้อมูลเพิ่มเติม
 details-notification-blocked = { $name } ถูกปิดใช้งานเนื่องจากปัญหาด้านความปลอดภัยหรือเสถียรภาพ
+details-notification-blocked2 =
+    .message = { $name } ถูกปิดใช้งานเนื่องจากปัญหาด้านความปลอดภัยหรือเสถียรภาพ
 details-notification-blocked-link = ข้อมูลเพิ่มเติม
 details-notification-softblocked = { $name } เป็นที่ทราบว่าก่อให้เกิดปัญหาด้านความปลอดภัยหรือเสถียรภาพ
+details-notification-softblocked2 =
+    .message = { $name } เป็นที่ทราบว่าก่อให้เกิดปัญหาด้านความปลอดภัยหรือเสถียรภาพ
 details-notification-softblocked-link = ข้อมูลเพิ่มเติม
 details-notification-gmp-pending = { $name } จะถูกติดตั้งในไม่ช้า
+details-notification-gmp-pending2 =
+    .message = { $name } จะถูกติดตั้งในไม่ช้า
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = ข้อมูลสัญญาอนุญาต
+plugins-gmp-privacy-info = ข้อมูลความเป็นส่วนตัว
+plugins-openh264-name = ตัวแปลงสัญญาณวิดีโอ OpenH264 ให้บริการโดย Cisco Systems, Inc.
+plugins-openh264-description = ปลั๊กอินนี้ติดตั้งโดยอัตโนมัติโดย Mozilla เพื่อให้สอดคล้องกับข้อกำหนด WebRTC และเปิดใช้งานการเรียก WebRTC ด้วยอุปกรณ์ที่ต้องใช้ตัวแปลงสัญญาณวิดีโอ H.264 เยี่ยมชม https://www.openh264.org/ เพื่อดูรหัสต้นฉบับของตัวแปลงสัญญาณและเรียนรู้เพิ่มเติมเกี่ยวกับการใช้งาน
+plugins-widevine-name = โมดูลถอดรหัสเนื้อหา Widevine ให้บริการโดย Google Inc.
+plugins-widevine-description = ปลั๊กอินนี้ช่วยให้สามารถเล่นสื่อที่เข้ารหัสตามข้อกำหนดของ Encrypted Media Extensions ได้ โดยทั่วไปแล้วสื่อที่เข้ารหัสจะถูกใช้โดยไซต์เพื่อป้องกันการคัดลอกเนื้อหาสื่อพรีเมียม เยี่ยมชม https://www.w3.org/TR/encrypted-media/ สำหรับข้อมูลเพิ่มเติมเกี่ยวกับ Encrypted Media Extensions

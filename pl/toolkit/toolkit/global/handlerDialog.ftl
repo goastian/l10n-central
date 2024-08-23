@@ -5,21 +5,6 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-
-
-## Permission Dialog
-## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
-
-
-## Permission Dialog
-## Variables:
 ##  $host (string) - The hostname that is initiating the request
 ##  $scheme (string) - The type of link that's being opened.
 ##  $appName (string) - Name of the application that will be opened.
@@ -33,11 +18,8 @@ permission-dialog-description-app = Czy zezwolić tej witrynie na otwarcie odno�
 permission-dialog-description-host-app = Czy zezwolić witrynie { $host } na otwarcie odnośnika typu { $scheme } za pomocą aplikacji { $appName }?
 permission-dialog-description-file-app = Czy zezwolić temu plikowi na otwarcie odnośnika typu { $scheme } za pomocą aplikacji { $appName }?
 permission-dialog-description-extension-app = Czy zezwolić rozszerzeniu { $extension } na otwarcie odnośnika typu { $scheme } za pomocą aplikacji { $appName }?
-
-## Please keep the emphasis around the hostname and scheme (ie the
-## `<strong>` HTML tags). Please also keep the hostname as close to the start
-## of the sentence as your language's grammar allows.
-
+permission-dialog-description-system-app = Czy otworzyć odnośnik typu { $scheme } za pomocą aplikacji { $appName }?
+permission-dialog-description-system-noapp = Czy otworzyć odnośnik typu { $scheme }?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -60,11 +42,6 @@ permission-dialog-btn-choose-app =
     .accessKey = W
 permission-dialog-unset-description = Musisz wybrać aplikację.
 permission-dialog-set-change-app-link = Wybierz inną aplikację.
-
-## Chooser dialog
-## Variables:
-##  $scheme - the type of link that's being opened.
-
 
 ## Chooser dialog
 ## Variables:

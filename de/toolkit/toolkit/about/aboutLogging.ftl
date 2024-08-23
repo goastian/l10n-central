@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Stack-Traces für Log-Meldungen ak
 
 about-logging-preset-networking-label = Netzwerkverbindungen
 about-logging-preset-networking-description = Zu protokollierende Module zur Diagnose von Netzwerkproblemen
+about-logging-preset-networking-cookie-label = Cookies
+about-logging-preset-networking-cookie-description = Zu protokollierende Module zur Diagnose von Cookieproblemen
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Zu protokollierende Module zur Diagnose von WebSocket-Problemen
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Zu protokollierende Module zur Diagnose von HTTP/3- und QUIC-Problemen
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3-Upload-Geschwindigkeit
+about-logging-preset-networking-http3-upload-speed-description = Zu protokollierende Module zur Diagnose von Problemen mit HTTP/3-Upload-Geschwindigkeit
 about-logging-preset-media-playback-label = Medienwiedergabe
 about-logging-preset-media-playback-description = Zu protokollierende Module zur Diagnose von Problemen bei der Medienwiedergabe (nicht Probleme bei Videokonferenzen)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Zu protokollierende Module zur Diagnose von WebRTC-Problemen
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Zu protokollierende Module zur Diagnose von WebGPU-Problemen
+about-logging-preset-gfx-label = Grafik
+about-logging-preset-gfx-description = Zu protokollierende Module zur Diagnose von Grafikproblemen
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Zu protokollierende Module zur Diagnose von spezifischen Problemen mit Microsoft Windows
 about-logging-preset-custom-label = Benutzerdefiniert
 about-logging-preset-custom-description = Zu protokollierende Module manuell ausgewählt
 # Error handling

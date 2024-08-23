@@ -12,21 +12,39 @@ about-webrtc-document-title = WebRTC belső adatok
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = az about:webrtc mentése másként
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Lezárt PeerConnection kapcsolatok megjelenítése
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Lezárt PeerConnection kapcsolatok elrejtése
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = AEC naplózás
 about-webrtc-aec-logging-off-state-label = AEC naplózás indítása
 about-webrtc-aec-logging-on-state-label = AEC naplózás leállítása
 about-webrtc-aec-logging-on-state-msg = Az AEC naplózás aktív (beszéljen a hívóval pár percig, majd állítsa le a felvételt)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Automatikus frissítés
+about-webrtc-aec-logging-toggled-on-state-msg = Az AEC naplózás aktív (beszéljen a hívóval pár percig, majd állítsa le a felvételt)
+about-webrtc-aec-logging-unavailable-sandbox = A MOZ_DISABLE_CONTENT_SANDBOX=1 környezeti változó szükséges az AEC naplók exportálásához. Csak akkor állítsa be ezt a változót, ha ismeri a lehetséges kockázatokat.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = A rögzített naplófájlok megtalálhatók itt: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Automatikus frissítés
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = Automatikus frissítés alapértelmezés szerint
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Frissítés
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
 about-webrtc-peerconnection-id-label = PeerConnection ID:
+# The number of DataChannels that a PeerConnection has opened
+about-webrtc-data-channels-opened-label = Nyitott adatcsatornák:
+# The number of once open DataChannels that a PeerConnection has closed
+about-webrtc-data-channels-closed-label = Lezárt adatcsatornák:
 
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
@@ -80,7 +98,11 @@ about-webrtc-save-page-label = Oldal mentése
 about-webrtc-debug-mode-msg-label = Hibakeresési mód
 about-webrtc-debug-mode-off-state-label = Hibakeresési mód indítása
 about-webrtc-debug-mode-on-state-label = Hibakeresési mód leállítása
+about-webrtc-enable-logging-label = WebRTC napló-előbeállítás engedélyezése
 about-webrtc-stats-heading = Munkamenet-statisztika
+about-webrtc-peerconnections-section-heading = RTCPeerConnection statisztikák
+about-webrtc-peerconnections-section-show-msg = RTCPeerConnection statisztikák megjelenítése
+about-webrtc-peerconnections-section-hide-msg = RTCPeerConnection statisztikák elrejtése
 about-webrtc-stats-clear = Előzmények törlése
 about-webrtc-log-heading = Kapcsolatnapló
 about-webrtc-log-clear = Napló törlése
@@ -88,6 +110,12 @@ about-webrtc-log-show-msg = napló megjelenítése
     .title = kattintson a szakasz kibontásához
 about-webrtc-log-hide-msg = napló elrejtése
     .title = kattintson a szakasz összecsukásához
+about-webrtc-log-section-show-msg = Napló megjelenítése
+    .title = Kattintson a szakasz kibontásához
+about-webrtc-log-section-hide-msg = Napló elrejtése
+    .title = Kattintson a szakasz összecsukásához
+about-webrtc-copy-report-button = Jelentés másolása
+about-webrtc-copy-report-history-button = Jelentéselőzmények másolása
 
 ## These are used to display a header for a PeerConnection.
 ## Variables:
@@ -98,6 +126,14 @@ about-webrtc-log-hide-msg = napló elrejtése
 
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (bezárva) { $now }
+
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Küldés / fogadás: { $codecs }
+about-webrtc-short-send-direction = Küldés: { $codecs }
+about-webrtc-short-receive-direction = Fogadás: { $codecs }
 
 ##
 
@@ -110,11 +146,19 @@ about-webrtc-raw-cand-show-msg = nyers jelöltek megjelenítése
     .title = kattintson a szakasz kibontásához
 about-webrtc-raw-cand-hide-msg = nyers jelöltek elrejtése
     .title = kattintson a szakasz összecsukásához
+about-webrtc-raw-cand-section-show-msg = Nyers jelöltek megjelenítése
+    .title = Kattintson a szakasz kibontásához
+about-webrtc-raw-cand-section-hide-msg = Nyers jelöltek elrejtése
+    .title = Kattintson a szakasz összecsukásához
 about-webrtc-priority = Prioritás
 about-webrtc-fold-show-msg = részletek megjelenítése
     .title = kattintson a szakasz kibontásához
 about-webrtc-fold-hide-msg = részletek elrejtése
     .title = kattintson a szakasz összecsukásához
+about-webrtc-fold-default-show-msg = Részletek megjelenítése
+    .title = Kattintson a szakasz kibontásához
+about-webrtc-fold-default-hide-msg = Részletek elrejtése
+    .title = Kattintson a szakasz összecsukásához
 about-webrtc-dropped-frames-label = Eldobott képkockák:
 about-webrtc-discarded-packets-label = Eldobott csomagok:
 about-webrtc-decoder-label = Dekódoló
@@ -153,6 +197,17 @@ about-webrtc-configuration-element-provided = Biztosított
 about-webrtc-configuration-element-not-provided = Nem biztosított
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Felhasználó által megadott WebRTC-beállítások
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Felhasználó által módosított WebRTC konfiguráció
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Felhasználó által módosított konfiguráció megjelenítése
+about-webrtc-user-modified-configuration-hide-msg = Felhasználó által módosított konfiguráció elrejtése
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Becsült sávszélesség
 # The ID of the MediaStreamTrack
@@ -183,9 +238,11 @@ about-webrtc-save-page-msg = oldal mentve ide: { $path }
 about-webrtc-debug-mode-off-state-msg = nyomkövetési napló helye: { $path }
 about-webrtc-debug-mode-on-state-msg = hibakeresési mód aktív, nyomkövetési napló helye: { $path }
 about-webrtc-aec-logging-off-state-msg = a rögzített naplófájlok megtalálhatók itt: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Oldal mentve ide: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.
@@ -257,6 +314,14 @@ about-webrtc-sdp-set-timestamp = Időbélyeg: { NUMBER($timestamp, useGrouping: 
 
 about-webrtc-show-msg-sdp = SDP megjelenítése
 about-webrtc-hide-msg-sdp = SDP elrejtése
+
+## These are displayed on the button that shows or hides the Media Context information disclosure.
+## The Media Context is the set of preferences and detected capabilities that informs
+## the negotiated CODEC settings.
+
+about-webrtc-media-context-show-msg = Médiakörnyezet megjelenítése
+about-webrtc-media-context-hide-msg = Médiakörnyezet elrejtése
+about-webrtc-media-context-heading = Médiakörnyezet
 
 ##
 

@@ -5,17 +5,10 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-
-
-## Permission Dialog
-## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
+##  $appName (string) - Name of the application that will be opened.
+##  $extension (string) - Name of extension that initiated the request
 
 permission-dialog-description = Permitir que este site possa abrir a ligação { $scheme }?
 permission-dialog-description-file = Permitir que este ficheiro possa abrir a ligação { $scheme }?
@@ -25,10 +18,15 @@ permission-dialog-description-app = Permitir que este site possa abrir a ligaç�
 permission-dialog-description-host-app = Permitir que { $host } possa abrir a ligação { $scheme } com { $appName }?
 permission-dialog-description-file-app = Permitir que este ficheiro possa abrir a ligação { $scheme } com { $appName }?
 permission-dialog-description-extension-app = Permitir que a extensão { $extension } abra a ligação { $scheme } com { $appName }?
+permission-dialog-description-system-app = Abrir a ligação { $scheme } com { $appName }?
+permission-dialog-description-system-noapp = Abrir a ligação { $scheme }?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
+## Variables:
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
 
 permission-dialog-remember = Permitir sempre que <strong>{ $host }</strong> possa abrir ligações <strong>{ $scheme }</strong>.
 permission-dialog-remember-file = Permitir sempre que este ficheiro possa abrir ligações <strong>{ $scheme }</strong>.
@@ -47,7 +45,7 @@ permission-dialog-set-change-app-link = Escolha uma aplicação diferente.
 
 ## Chooser dialog
 ## Variables:
-##  $scheme - the type of link that's being opened.
+##  $scheme (string) - The type of link that's being opened.
 
 chooser-window =
     .title = Escolher aplicação

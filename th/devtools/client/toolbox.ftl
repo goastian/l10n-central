@@ -27,21 +27,18 @@ toolbox-meatball-menu-noautohide-label = ปิดใช้งานการซ
 toolbox-meatball-menu-pseudo-locale-accented = เปิดใช้งานรูปแบบภาษา “accented”
 toolbox-meatball-menu-pseudo-locale-bidi = เปิดใช้งานรูปแบบภาษา “bidi”
 
-##
-
-
 ## These labels are shown in the top-toolbar in the Browser Toolbox and Browser Console
 
 toolbox-mode-browser-toolbox-label = โหมดกล่องเครื่องมือเบราว์เซอร์
 toolbox-mode-browser-console-label = โหมดคอนโซลเบราว์เซอร์
-toolbox-mode-everything-label = มัลติโปรเซส
+toolbox-mode-everything-label = มัลติโพรเซส
 toolbox-mode-everything-sub-label = (ช้ากว่า)
 toolbox-mode-everything-container =
-    .title = ดีบั๊กทุกอย่างในโปรเซสทั้งหมด
-toolbox-mode-parent-process-label = โปรเซสแม่เท่านั้น
+    .title = ดีบั๊กทุกอย่างในโพรเซสทั้งหมด
+toolbox-mode-parent-process-label = โพรเซสแม่เท่านั้น
 toolbox-mode-parent-process-sub-label = (เร็ว)
 toolbox-mode-parent-process-container =
-    .title = โฟกัสเฉพาะทรัพยากรจากโปรเซสหลักเท่านั้น
+    .title = โฟกัสเฉพาะทรัพยากรจากโพรเซสแม่เท่านั้น
 toolbox-always-on-top-enabled2 = ปิดใช้งานอยู่ด้านบนเสมอ
     .title = การดำเนินการนี้จะเริ่มการทำงานของเครื่องมือนักพัฒนาใหม่
 toolbox-always-on-top-disabled2 = เปิดใช้งานอยู่ด้านบนเสมอ

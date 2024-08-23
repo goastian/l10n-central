@@ -14,16 +14,10 @@ firefox-relay-get-reusable-masks-failed = Το { -relay-brand-name } δεν μπ
 ##
 
 firefox-relay-must-login-to-fxa = Πρέπει να συνδεθείτε στον { -fxaccount-brand-name(case: "acc", capitalization: "lower") } σας για να χρησιμοποιήσετε το { -relay-brand-name }.
+firefox-relay-must-login-to-account = Συνδεθείτε στον λογαριασμό σας για να χρησιμοποιήσετε τις μάσκες email του { -relay-brand-name }.
 firefox-relay-get-unlimited-masks =
     .label = Διαχείριση μασκών
     .accesskey = Δ
-firefox-relay-opt-in-title = Προστασία διεύθυνσης email
-firefox-relay-opt-in-subtitle = Προσθήκη του { -relay-brand-name }
-firefox-relay-generate-mask-title = Προστασία διεύθυνσης email
-firefox-relay-generate-mask-subtitle = Δημιουργία μάσκας { -relay-brand-short-name }
-firefox-relay-opt-in-confirmation-enable =
-    .label = Συνέχεια
-    .accesskey = Σ
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Προστασία διεύθυνσης email:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which

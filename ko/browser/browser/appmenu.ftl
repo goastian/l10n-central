@@ -8,13 +8,13 @@
 appmenuitem-banner-update-downloading =
     .label = { -brand-shorter-name } 업데이트 다운로드 중
 appmenuitem-banner-update-available =
-    .label = 업데이트 사용 가능 — 지금 다운로드
+    .label = 업데이트 있음 — 지금 다운로드
 appmenuitem-banner-update-manual =
-    .label = 업데이트 사용 가능 — 지금 다운로드
+    .label = 업데이트 있음 — 지금 다운로드
 appmenuitem-banner-update-unsupported =
     .label = 업데이트할 수 없음 — 시스템이 호환되지 않음
 appmenuitem-banner-update-restart =
-    .label = 업데이트 사용 가능 — 지금 다시 시작
+    .label = 업데이트 있음 — 지금 다시 시작
 appmenuitem-new-tab =
     .label = 새 탭
 appmenuitem-new-window =
@@ -75,8 +75,12 @@ appmenu-remote-tabs-turn-on-sync =
     .label = Sync 켜기…
 # This is shown after the tabs list if we can display more tabs by clicking on the button
 appmenu-remote-tabs-showmore =
-    .label = 더 많은 탭 표시
+    .label = 탭 더 보기
     .tooltiptext = 이 기기의 탭 더 보기
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = 비활성 탭
+    .tooltiptext = 이 기기의 비활성 탭 보기
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = 열린 탭이 없음
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = 지금 동기화
 appmenuitem-fxa-sign-in = { -brand-product-name }에 로그인
 appmenuitem-fxa-manage-account = 계정 관리
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = 계정
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = 프로파일러
     .tooltiptext = 프로파일러가 프로파일을 캡처합니다
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 더 많은 정보 보기
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = 오버헤드가 낮은 대부분의 웹 앱 디버깅에 권장되는 프리셋입니다.
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = 오버헤드가 낮은 { -brand-short
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = 전력
+profiler-popup-presets-debug-description = { -brand-shorter-name }에서 디버깅을 위한 프리셋입니다. 오버헤드가 높으므로 성능 작업에 사용하지 말고 브라우저 동작을 이해하는 데 중점을 두는 데 사용하세요.
+profiler-popup-presets-debug-label =
+    .label = 디버그
 profiler-popup-presets-custom-label =
     .label = 사용자 지정
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = 기록 관리
-appmenu-reopen-all-tabs = 모든 탭 다시 열기
-appmenu-reopen-all-windows = 모든 창 다시 열기
 appmenu-restore-session =
     .label = 이전 세션 복원
 appmenu-clear-history =
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = 브라우저 도구
 appmenu-developer-tools-extensions =
     .label = 개발자용 확장 기능
+appmenuitem-report-broken-site =
+    .label = 깨진 사이트 신고
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = 계정에 로그인
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = 데이터 유출 알림 받기
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = 실제 이메일과 전화를 가리세요
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = 온라인 활동을 보호하세요

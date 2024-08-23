@@ -23,6 +23,12 @@ protections-panel-etp-more-info =
     .aria-label = Daugiau informacijos apie išplėstą apsaugą nuo stebėjimo
 protections-panel-etp-on-header = Išplėsta apsauga nuo stebėjimo šioje svetainėje įjungta
 protections-panel-etp-off-header = Išplėsta apsauga nuo stebėjimo šioje svetainėje išjungta
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Neveikia svetainė?
 # The heading/title of the sub-panel view
@@ -35,6 +41,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Kodėl?
 protections-panel-not-blocking-why-etp-on-tooltip = Šių dalykų blokavimas gali sutrikdyti elementų, esančių svetainėse, veikimą. Be stebėjimo elementų, gali neveikti kai kurie mygtukai, formos, prisijungimo laukai.
 protections-panel-not-blocking-why-etp-off-tooltip = Buvo įkelti visi šioje svetainėje esantys stebėjimo elementai, nes apsaugos yra išjungtos.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Šių dalykų blokavimas gali sutrikdyti elementų, esančių svetainėse, veikimą. Be stebėjimo elementų, gali neveikti kai kurie mygtukai, formos, prisijungimo laukai.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Buvo įkelti visi šioje svetainėje esantys stebėjimo elementai, nes apsaugos yra išjungtos.
 
 ##
 
@@ -104,3 +114,9 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 
 # Cookie Banner Handling
 
+
+## Protections panel info message
+
+cfr-protections-panel-header = Nebūkite stebimi naršant
+cfr-protections-panel-body = Jūsų duomenys skirti tik jums. „{ -brand-short-name }“ saugo jus nuo daugelio dažniausių stebėjimo elementų, stebinčių jūsų veiklą internete.
+cfr-protections-panel-link-text = Sužinoti daugiau

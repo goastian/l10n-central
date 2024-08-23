@@ -32,7 +32,7 @@ general-size =
 general-referrer =
     .value = URL อ้างอิง:
 general-modified =
-    .value = เปลี่ยนแปลงเมื่อ:
+    .value = ปรับเปลี่ยนเมื่อ:
 general-encoding =
     .value = รหัสอักขระ:
 general-meta-name =
@@ -70,10 +70,10 @@ media-save-image-as =
     .label = บันทึกเป็น…
     .accesskey = บ
 perm-tab =
-    .label = สิทธิอนุญาต
+    .label = การกำหนดสิทธิ์
     .accesskey = ส
 permissions-for =
-    .value = สิทธิอนุญาตสำหรับ:
+    .value = การกำหนดสิทธิ์สำหรับ:
 security-tab =
     .label = ความปลอดภัย
     .accesskey = ค
@@ -216,18 +216,18 @@ media-dimensions =
 # Variables:
 #   $size (number) - The size of the media file in kilobytes
 media-file-size = { $size } KB
+
+## Variables:
+##   $website (string) — The url of the website pageInfo is getting info for
+
 # This string is used to display the website name next to the
 # "Block Images" checkbox in the media tab
-# Variables:
-#   $website (string) - The website name
 media-block-image =
     .label = ปิดกั้นภาพจาก { $website }
     .accesskey = ป
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box
-# Variables:
-#   $website (string) — The url of the website pageInfo is getting info for
 page-info-page =
-    .title = ข้อมูลหน้า - { $website }
+    .title = ข้อมูลหน้า — { $website }
 page-info-frame =
-    .title = ข้อมูลกรอบ - { $website }
+    .title = ข้อมูลเฟรม — { $website }

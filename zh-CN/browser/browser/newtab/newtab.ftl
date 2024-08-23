@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = 新标签页
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = 添加搜索引擎
 newtab-topsites-add-shortcut-header = 新建快捷方式
 newtab-topsites-edit-topsites-header = 编辑常用网站
 newtab-topsites-edit-shortcut-header = 编辑快捷方式
+newtab-topsites-add-shortcut-label = 添加快捷方式
 newtab-topsites-title-label = 标题
 newtab-topsites-title-input =
     .placeholder = 输入标题
@@ -68,11 +69,11 @@ newtab-topsites-add-button = 添加
 
 newtab-confirm-delete-history-p1 = 确定删除此页面在您的历史记录中的所有记录？
 # "This action" refers to deleting a page from history.
-newtab-confirm-delete-history-p2 = 此操作不能撤销。
+newtab-confirm-delete-history-p2 = 此操作无法撤销。
 
 ## Top Sites - Sponsored label
 
-newtab-topsite-sponsored = 赞助项目
+newtab-topsite-sponsored = 赞助推广
 
 ## Context Menu - Action Tooltips.
 
@@ -107,7 +108,7 @@ newtab-menu-delete-history = 从历史记录中删除
 newtab-menu-save-to-pocket = 保存到 { -pocket-brand-name }
 newtab-menu-delete-pocket = 从 { -pocket-brand-name } 删除
 newtab-menu-archive-pocket = 在 { -pocket-brand-name } 中存档
-newtab-menu-show-privacy-info = 我们的赞助商﹠您的隐私
+newtab-menu-show-privacy-info = 我们的赞助商＆您的隐私
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -194,6 +195,7 @@ newtab-section-header-recent-activity = 近期动态
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider } 推荐
+newtab-section-header-stories = 精选文章
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -202,6 +204,8 @@ newtab-empty-section-highlights = 开始网上冲浪之旅吧，之后这里会�
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = 所有文章都读完啦！晚点再来，{ $provider } 将推荐更多精彩文章。等不及了？选择热门主题，找到更多网上的好文章。
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = 所有文章都读完了。待会再来看是否有新文章。等不及？那么请选择热门主题，从网上找到更多好文章。
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -223,21 +227,20 @@ newtab-pocket-cta-button = 获取 { -pocket-brand-name }
 newtab-pocket-cta-text = 将您喜爱的故事保存到 { -pocket-brand-name }，用精彩的读物为思想注入活力。
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } 是 { -brand-product-name } 系列产品的一部分
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = 保存到 { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = 已保存到 { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = 加载更多文章
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = 都读完了！
-newtab-pocket-last-card-desc = 待会再来看是否有新文章。
-newtab-pocket-last-card-image =
-    .alt = 都读完了
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = 保存
 newtab-pocket-saved = 已保存
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = 相似推荐
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = 不感兴趣
+newtab-toast-dismiss-button =
+    .title = 知道了
+    .aria-label = 知道了
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -254,6 +257,9 @@ newtab-error-fallback-refresh-link = 刷新页面以重试。
 
 newtab-custom-shortcuts-title = 快捷方式
 newtab-custom-shortcuts-subtitle = 您保存或访问过的网站
+newtab-custom-shortcuts-toggle =
+    .label = 快捷方式
+    .description = 您保存或访问过的网站
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -263,9 +269,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = 赞助商网站
 newtab-custom-pocket-title = 由 { -pocket-brand-name } 推荐
 newtab-custom-pocket-subtitle = 由 { -brand-product-name } 旗下 { -pocket-brand-name } 策划的特别内容
+newtab-custom-stories-toggle =
+    .label = 推荐文章
+    .description = 由 { -brand-product-name } 推荐的精选内容
 newtab-custom-pocket-sponsored = 赞助内容
 newtab-custom-pocket-show-recent-saves = 显示近期保存内容
 newtab-custom-recent-title = 近期动态
 newtab-custom-recent-subtitle = 近期访问的网站与内容精选
+newtab-custom-recent-toggle =
+    .label = 近期动态
+    .description = 近期访问的网站与内容精选
+newtab-custom-weather-toggle =
+    .label = 天气
+    .description = 速览今日天气预报
 newtab-custom-close-button = 关闭
 newtab-custom-settings = 管理更多设置
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = 壁纸
+newtab-wallpaper-reset = 重置为默认设置
+newtab-wallpaper-light-red-panda = 小熊猫
+newtab-wallpaper-light-mountain = 白山山脉
+newtab-wallpaper-light-sky = 漂浮着粉紫色云的天空
+newtab-wallpaper-light-color = 蓝色、粉色和黄色的形状
+newtab-wallpaper-light-landscape = 淡蓝薄雾笼罩下的山地景观
+newtab-wallpaper-light-beach = 生长着棕榈树的海滩
+newtab-wallpaper-dark-aurora = 极光
+newtab-wallpaper-dark-color = 红色和蓝色的形状
+newtab-wallpaper-dark-panda = 躲在森林里的小熊猫
+newtab-wallpaper-dark-sky = 夜空下的城市景观
+newtab-wallpaper-dark-mountain = 山地景观
+newtab-wallpaper-dark-city = 紫色城市景观
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = 纯色
+newtab-wallpaper-blue = 蓝色
+newtab-wallpaper-light-blue = 淡蓝色
+newtab-wallpaper-light-purple = 淡紫色
+newtab-wallpaper-light-green = 淡绿色
+newtab-wallpaper-green = 绿色
+newtab-wallpaper-beige = 米色
+newtab-wallpaper-yellow = 黄色
+newtab-wallpaper-orange = 橙色
+newtab-wallpaper-pink = 粉色
+newtab-wallpaper-light-pink = 淡粉色
+newtab-wallpaper-red = 红色
+newtab-wallpaper-dark-blue = 深蓝色
+newtab-wallpaper-dark-purple = 深紫色
+newtab-wallpaper-dark-green = 深绿色
+newtab-wallpaper-brown = 棕色
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = 抽象
+newtab-wallpaper-abstract-green = 绿色形状
+newtab-wallpaper-abstract-blue = 蓝色形状
+newtab-wallpaper-abstract-purple = 紫色形状
+newtab-wallpaper-abstract-orange = 橙色形状
+newtab-wallpaper-gradient-orange = 橙粉渐变
+newtab-wallpaper-abstract-blue-purple = 蓝紫渐变
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = 摄影
+newtab-wallpaper-beach-at-sunrise = 海滩日出
+newtab-wallpaper-beach-at-sunset = 海滩日落
+newtab-wallpaper-storm-sky = 电闪雷鸣
+newtab-wallpaper-sky-with-pink-clouds = 飘着粉色云朵的天空
+newtab-wallpaper-red-panda-yawns-in-a-tree = 在树上打哈欠的小熊猫
+newtab-wallpaper-white-mountains = 皑白山脉
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = 照片由 <a data-l10n-name="name-link">{ $author_string }</a> 在 <a data-l10n-name="webpage-link">{ $webpage_string }</a> 上发布
+newtab-wallpaper-feature-highlight-header = 试用新色彩
+newtab-wallpaper-feature-highlight-content = 选张壁纸，给新标签页加点新鲜感。
+newtab-wallpaper-feature-highlight-button = 知道了
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = 知道了
+    .aria-label = 关闭弹窗
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = 在“{ $provider }”上查看天气预报
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ 赞助
+newtab-weather-menu-change-location = 更改位置
+newtab-weather-change-location-search-input = 搜索位置
+newtab-weather-menu-weather-display = 天气信息显示方式
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = 简明
+newtab-weather-menu-change-weather-display-simple = 切换到简明视图
+newtab-weather-menu-weather-display-option-detailed = 详细
+newtab-weather-menu-change-weather-display-detailed = 切换到详细视图
+newtab-weather-menu-temperature-units = 温度单位
+newtab-weather-menu-temperature-option-fahrenheit = 华氏度
+newtab-weather-menu-temperature-option-celsius = 摄氏度
+newtab-weather-menu-change-temperature-units-fahrenheit = 切换为华氏度
+newtab-weather-menu-change-temperature-units-celsius = 切换为摄氏度
+newtab-weather-menu-hide-weather = 隐藏新标签页上的天气信息
+newtab-weather-menu-learn-more = 详细了解
+# This message is shown if user is working offline
+newtab-weather-error-not-available = 目前无法获取天气数据。

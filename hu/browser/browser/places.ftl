@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Webhely elfelejtése
     .accesskey = W
+places-forget-domain-data =
+    .label = Webhely elfelejtése…
+    .accesskey = f
 places-sortby-name =
     .label = Rendezés név szerint
     .accesskey = n
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Mappa szerkesztése…
     .accesskey = e
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -134,14 +139,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Webhely elfelejtése
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Ez a művelet eltávolítja a(z) { $hostOrBaseDomain } domainhez kapcsolódó összes adatot, beleértve az előzményeket, a jelszavakat, a sütiket, a gyorsítótárat és a tartalmi beállításokat. Biztos, hogy folytatja?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Ez a művelet eltávolítja a(z) { $hostOrBaseDomain } domainhez kapcsolódó összes adatot, beleértve az előzményeket, a sütiket, a gyorsítótárat és a tartalmi beállításokat. A kapcsolódó könyvjelzők és jelszavak nem lesznek eltávolítva. Biztos, hogy folytatja?
 places-forget-about-this-site-forget = Elfelejtés
-places-library =
-    .title = Könyvtár
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Könyvtár
 places-organize-button =

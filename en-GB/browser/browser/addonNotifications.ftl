@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = This access is not guarantee
 ##
 
 xpinstall-disabled-locked = Software installation has been disabled by your system administrator.
+xpinstall-disabled-by-policy = Software installation has been disabled by your organisation.
 xpinstall-disabled = Software installation is currently disabled. Click Enable and try again.
 xpinstall-disabled-button =
     .label = Enable
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) is blocked by your system administrator.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = Your system administrator prevented this site from asking you to install software on your computer.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) is blocked by your organisation.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Your organisation prevented this site from asking you to install software on your computer.
 addon-install-full-screen-blocked = Add-on installation is not allowed while in or before entering fullscreen mode.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -124,3 +132,5 @@ addon-local-install-error-not-signed = This add-on could not be installed becaus
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } could not be installed because it is not compatible with { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = { $addonName } could not be installed because it has a high risk of causing stability or security problems.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = You cannot install { $addonName } as an end user, it can only be installed by an organisation using enterprise policies.

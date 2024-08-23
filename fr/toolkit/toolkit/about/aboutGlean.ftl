@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = À propos de Glean
-about-glean-description = Le <a data-l10n-name="glean-sdk-doc-link">SDK Glean</a> est une bibliothèque de collecte de données utilisée dans les produits Mozilla. Cette page est destinée aux développeurs et aux testeurs qui ont besoin de <a data-l10n-name="fog-debug-doc-link">configurer l’état de débogage et de journalisation dans le SDK Glean</a>.
-about-glean-warning = Une mauvaise utilisation de cette interface peut faire planter { -brand-short-name }.
-tag-pings-label = Marquer tous les pings envoyés avec cette étiquette
-log-pings-label = Enregistrer la charge brute du ping avant l’envoi ?
-send-pings-label = Envoyer le ping nommé
-controls-button-label = Envoyer les paramètres
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -53,6 +43,8 @@ about-glean-manual-testing = Les instructions complètes sont détaillées dans 
 about-glean-no-ping-label = (n’envoyer aucun ping)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = Dans le champ précédent, assurez-vous qu’il y ait une balise de débogage mémorisable afin que vous puissiez reconnaître vos pings plus tard.
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = Définir une balise de débogage facile à retenir <span>(composée uniquement d’au plus 20 caractères alphanumériques et du signe -)</span> afin de pouvoir reconnaître vos pings par la suite.
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -72,6 +64,15 @@ about-glean-li-for-visit-gdpv =
 about-glean-adhoc-explanation =
     Pour plus de tests ponctuels, vous pouvez également déterminer la valeur actuelle d’un élément d’instrumentation particulier en ouvrant une console d’outils de développement ici sur <code>about:glean</code> et en utilisant l’API <code>testGetValue()</code>, par exemple
     <code>Glean.metricCategory.metricName.testGetValue()</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 =
+    Pour plus de tests ponctuels, vous pouvez également déterminer la valeur actuelle d’un élément d’instrumentation particulier en ouvrant une console d’outils de développement ici sur <code>about:glean</code> et en utilisant l’API <code>testGetValue()</code>, par exemple
+    <code>Glean.metricCategory.metricName.testGetValue()</code> pour une métrique nommée <code>metric.category.metric_name</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    Veuillez noter que vous utilisez l’API Glean JS en utilisant la console des outils de développement.
+    Cela implique que la catégorie et le nom des métriques sont au format
+    <code>camelCase</code> contrairement à l’usage des API Rust et C++.
 controls-button-label-verbose = Appliquer les paramètres et envoyer le ping
 about-glean-about-data-header = À propos des données
 about-glean-about-data-explanation = Pour visualiser la liste des données collectées, veuillez consulter le <a data-l10n-name="glean-dictionary-link">dictionnaire de { -glean-brand-name }</a>

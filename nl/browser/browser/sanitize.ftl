@@ -2,22 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-sanitize-prefs =
-    .title = Instellingen voor het wissen van geschiedenis
-    .style = width: 34em
 sanitize-prefs2 =
     .title = Instellingen voor het wissen van geschiedenis
     .style = min-width: 34em
 sanitize-prefs-style =
     .style = width: 17em
-dialog-title =
-    .title = Recente geschiedenis wissen
-    .style = width: 34em
-# When "Time range to clear" is set to "Everything", this message is used for the
-# title instead of dialog-title.
-dialog-title-everything =
-    .title = Alle geschiedenis wissen
-    .style = width: 34em
+sanitize-dialog-title2 =
+    .title = Navigatiegegevens en cookies wissen
+    .style = min-width: 34em
 sanitize-dialog-title =
     .title = Recente geschiedenis wissen
     .style = min-width: 34em
@@ -27,6 +19,7 @@ sanitize-dialog-title-everything =
     .title = Alle geschiedenis wissen
     .style = min-width: 34em
 clear-data-settings-label = Als { -brand-short-name } wordt afgesloten, automatisch het volgende wissen
+sanitize-on-shutdown-description = Automatisch alle aangevinkte items wissen wanneer { -brand-short-name } wordt gesloten.
 
 ## clear-time-duration-prefix is followed by a dropdown list, with
 ## values localized using clear-time-duration-value-* messages.
@@ -39,6 +32,9 @@ clear-data-settings-label = Als { -brand-short-name } wordt afgesloten, automati
 clear-time-duration-prefix =
     .value = Te wissen tijdsperiode:{ " " }
     .accesskey = T
+clear-time-duration-prefix2 =
+    .value = Wanneer:
+    .accesskey = W
 clear-time-duration-value-last-hour =
     .label = Laatste uur
 clear-time-duration-value-last-2-hours =
@@ -59,18 +55,46 @@ history-section-label = Geschiedenis
 item-history-and-downloads =
     .label = Navigatie- & downloadgeschiedenis
     .accesskey = N
+item-history-form-data-downloads =
+    .label = Geschiedenis
+    .accesskey = G
+item-history-form-data-downloads-description = Wist website- en downloadgeschiedenis, opgeslagen formuliergegevens en zoekopdrachten.
 item-cookies =
     .label = Cookies
     .accesskey = C
+# Variables:
+#   $amount (Number) - Amount of site data currently stored on disk
+#   $unit (String) - Abbreviation of the unit that $amount is in, e.g. "MB"
+item-cookies-site-data-with-size =
+    .label = Cookies en websitegegevens ({ $amount } { $unit })
+    .accesskey = e
+item-cookies-site-data =
+    .label = Cookies en websitegegevens
+    .accesskey = e
+item-cookies-site-data-description = Kan u afmelden bij websites of winkelwagens legen
 item-active-logins =
     .label = Actieve aanmeldingen
     .accesskey = A
 item-cache =
     .label = Buffer
     .accesskey = B
+# Variables:
+#   $amount (Number) - Amount of cached data
+#   $unit (String) - Abbreviation of the unit that $amount is in, e.g. "MB"
+item-cached-content-with-size =
+    .label = Tijdelijk gebufferde bestanden en pagina’s ({ $amount } { $unit })
+    .accesskey = f
+item-cached-content =
+    .label = Tijdelijk gebufferde bestanden en pagina’s
+    .accesskey = t
+item-cached-content-description = Wist items die websites helpen sneller te laden
 item-form-search-history =
     .label = Formulier- & zoekgeschiedenis
     .accesskey = F
+item-site-prefs =
+    .label = Website-instellingen
+    .accesskey = i
+item-site-prefs-description = Zet uw toestemmingen en websitevoorkeuren terug naar de oorspronkelijke instellingen
 data-section-label = Gegevens
 item-site-settings =
     .label = Website-instellingen
@@ -83,6 +107,10 @@ window-close =
     .key = w
 sanitize-button-ok =
     .label = Nu wissen
+sanitize-button-ok2 =
+    .label = Wissen
+sanitize-button-ok-on-shutdown =
+    .label = Wijzigingen opslaan
 # The label for the default button between the user clicking it and the window
 # closing.  Indicates the items are being cleared.
 sanitize-button-clearing =

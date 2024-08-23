@@ -2,12 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-videocontrols-scrubber =
-    .aria-label = Posição
 # This label is used by screenreaders and other assistive technology to indicate
 # to users how much of the video has been loaded from the network. It will be
 # followed by the percentage of the video that has loaded (e.g. "Loading: 13%").
-videocontrols-buffer-bar-label = Carregado:
+videocontrols-buffer-bar-label = A carregar:
 videocontrols-volume-control =
     .aria-label = Volume
 videocontrols-closed-caption-button =
@@ -26,6 +24,8 @@ videocontrols-exitfullscreen-button =
     .aria-label = Sair de ecrã completo
 videocontrols-casting-button-label =
     .aria-label = Lançar para o ecrã
+# .offlabel is processed by the video control custom element to be used
+# as a text-track label
 videocontrols-closed-caption-off =
     .offlabel = Desligado
 # This string is used as part of the Picture-in-Picture video toggle button when
@@ -33,14 +33,10 @@ videocontrols-closed-caption-off =
 videocontrols-picture-in-picture-label = Vídeo em janela flutuante
 # This string is used as the label for a variation of the Picture-in-Picture video
 # toggle button when the mouse is hovering over the video.
-videocontrols-picture-in-picture-toggle-label = Ver o vídeo numa janela flutuante
+videocontrols-picture-in-picture-toggle-label2 = Fazer este vídeo saltar
 # This string is used as part of a variation of the Picture-in-Picture video toggle
 # button. When using this variation, this string appears below the toggle when the
 # mouse hovers the toggle.
-videocontrols-picture-in-picture-explainer = Reproduzir vídeo em primeiro plano enquanto faz outras coisas no { -brand-short-name }
-# This string is used as the label for a variation of the Picture-in-Picture video
-# toggle button when the mouse is hovering over the video.
-videocontrols-picture-in-picture-toggle-label2 = Fazer este vídeo saltar
 videocontrols-picture-in-picture-explainer3 = Com mais ecrãs, é mais divertido. Reproduza este vídeo enquanto faz outras coisas.
 videocontrols-error-aborted = O carregamento do vídeo parou.
 videocontrols-error-network = Reprodução de vídeo abortada devido a um erro de rede.

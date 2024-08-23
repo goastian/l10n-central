@@ -5,13 +5,13 @@
 rights-title = 여러분의 권리 알아보기
 rights-intro = { -brand-full-name }는 무료 오픈 소스 소프트웨어이며, 전세계 수천명의 커뮤니티 개발자에 의해 만들어지고 있습니다. 아래에 몇 가지 유의 사항을 알려 드립니다:
 rights-intro-point-1 = { -brand-short-name }는 다음 라이선스 조건하에서 사용 가능합니다 - <a data-l10n-name="mozilla-public-license-link">Mozilla Public License</a>본 라이선스는 { -brand-short-name }를 다른 사람에게 사용, 복사, 배포할 수 있습니다. 또한, { -brand-short-name }의 소스 코드를 원하는 요구에 맞추어 고칠 수 있습니다. Mozilla Public License는 또한 고친 버전을 재배포할 수도 있습니다.
-rights-intro-point-2 = Mozilla는 Mozilla와 Firefox 상표 및 로고에 대한 사용 권한은 허가하지 않습니다. 자세한 사항은 상표권 부분을 참고하세요.<a data-l10n-name="mozilla-trademarks-link">자세히</a>.
+rights-intro-point-2 = Ablaze는 Mozilla와 Firefox 상표 및 로고에 대한 사용 권한은 허가하지 않습니다. 자세한 사항은 상표권 부분을 참고하세요.<a data-l10n-name="mozilla-trademarks-link">자세히</a>.
 rights-intro-point-3 = { -brand-short-name }의 충돌 보고서 같은 기능은 { -vendor-short-name }에 사용자 의견을 제공하는 옵션이 있습니다. 의견 보내기를 선택하면, 사용자는 { -vendor-short-name }가 이 의견을 사용하여 제품을 개선하고, 의견을 웹 사이트에 게시하고 배포할 수 있도록 권한을 부여하게 됩니다.
 rights-intro-point-4 = 저희가 { -vendor-short-name }부터 { -brand-short-name }에 제출된 사용자의 개인 정보 및 의견을 사용하는 방법은 <a data-l10n-name="mozilla-privacy-policy-link">{ -brand-short-name }개인정보처리방침</a>을 참고하세요.
 rights-intro-point-4-unbranded = 모든 적용 가능한 개인정보처리방침은 아래에 기술되어 있습니다.
 rights-intro-point-5 = { -brand-short-name }는 몇 가지 웹 사이트 서비스를 제공합니다. 하지만 이 서비스는 정확성 및 무결성을 보장하지 않습니다. 더 자세한 것은 서비스 약관을 참고하세요.<a data-l10n-name="mozilla-service-terms-link">서비스 약관</a>.
 rights-intro-point-5-unbranded = 이 제품이 웹 서비스를 지원하지 않으면 당 서비스의 서비스 조건은 링크에서 찾을 수 있습니다.<a data-l10n-name="mozilla-website-services-link">자세히</a> 보기
-rights-intro-point-6 = 특정 형식의 동영상 재생을 위해 { -brand-short-name }는 특정 제 삼자 콘텐츠 해석 모듈을 다운받습니다.
+rights-intro-point-6 = 특정 유형의 동영상 콘텐츠를 재생하기 위해 { -brand-short-name }는 제3자로부터 특정 콘텐츠 복호화 모듈을 다운로드합니다.
 rights-webservices-header = { -brand-full-name } 웹 기반 정보 서비스
 rights-webservices = { -brand-full-name }는 이용자 조건에 따라 { -brand-short-name }에서 웹 기반 서비스(이하 "서비스")를 제공합니다. 제공 서비스를 이용하기 원하지 않으시면 기능을 중단할 수 있습니다. 다음 특정 서비스 중단 방법을 참고하세요.:<a data-l10n-name="mozilla-disable-service-link">자세히 보기</a> (기타 기능이나 서비스는 애플리케이션 설정에서 해제할 수 있습니다.)
 rights-safebrowsing = <strong>SafeBrowsing: </strong>안전한 탐색 기능을 사용하지 않는 것은 안전하지 않은 사이트로 이동할 수 있기 때문에 권장되지 않습니다. 기능을 완전히 비활성화하려면 다음 단계를 수행하세요:

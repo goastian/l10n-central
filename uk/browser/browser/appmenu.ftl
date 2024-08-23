@@ -8,13 +8,13 @@
 appmenuitem-banner-update-downloading =
     .label = Завантажується оновлення { -brand-shorter-name }
 appmenuitem-banner-update-available =
-    .label = Доступне оновлення — завантажити
+    .label = Доступне оновлення – завантажити
 appmenuitem-banner-update-manual =
-    .label = Доступне оновлення — завантажити
+    .label = Доступне оновлення – завантажити
 appmenuitem-banner-update-unsupported =
-    .label = Не вдається оновити — несумісна система
+    .label = Не вдається оновити – несумісна система
 appmenuitem-banner-update-restart =
-    .label = Доступне оновлення — перезапустити
+    .label = Доступне оновлення – перезапустити
 appmenuitem-new-tab =
     .label = Нова вкладка
 appmenuitem-new-window =
@@ -77,6 +77,21 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Показати більше вкладок
     .tooltiptext = Показати більше вкладок з цього пристрою
+# This is shown when there are inactive tabs which are not being shown.
+# Variables
+# $count (Number) - The number of inactive tabs which are not being shown (at least 1)
+appmenu-remote-tabs-showinactive =
+    .label =
+        { $count ->
+            [one] Показати { $count } неактивну вкладку
+            [few] Показати { $count } неактивні вкладки
+           *[many] Показати { $count } неактивних вкладок
+        }
+    .tooltiptext = Показати неактивні вкладки на цьому пристрої
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Неактивні вкладки
+    .tooltiptext = Переглянути неактивні вкладки на цьому пристрої
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Немає відкритих вкладок
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -168,6 +183,11 @@ profiler-popup-capture-shortcut =
 # devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
 profiler-popup-presets-web-developer-description = Рекомендовані попередні налаштування для налагодження більшості вебзастосунків. З низьким споживанням ресурсів.
 profiler-popup-presets-web-developer-label =
     .label = Веброзробник
@@ -205,7 +225,7 @@ appmenu-recently-closed-windows =
     .label = Недавно закриті вікна
 # This allows to search through the browser's history.
 appmenu-search-history =
-    .label = Історія пошуку
+    .label = Шукати в історії
 
 ## Help panel
 
@@ -255,3 +275,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Інструменти браузера
 appmenu-developer-tools-extensions =
     .label = Розширення для розробників
+appmenuitem-report-broken-site =
+    .label = Повідомити про пошкоджений сайт
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Увійдіть до свого облікового запису
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Отримуйте сповіщення про витоки даних
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Маскуйте свою справжню електронну адресу та телефон
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Захистіть свою онлайн-діяльність

@@ -56,14 +56,14 @@ neterror-dns-not-found-hint-firewall = Ελέγξετε εάν το { -brand-sho
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = Το { -brand-short-name } δεν μπορεί να προστατεύσει το αίτημά σας για τη διεύθυνση αυτού του ιστότοπου μέσω του αξιόπιστου προγράμματος ανάλυσης DNS. Αυτό συμβαίνει επειδή:
-neterror-dns-not-found-trr-third-party-warning = Μπορείτε να συνεχίσετε με ένα πρόγραμμα ανάλυσης DNS που δεν είναι ασφαλές. Ωστόσο, κάποιος τρίτος ενδέχεται να μπορεί να δει ποιους ιστότοπους επισκέπτεστε.
+neterror-dns-not-found-trr-only-reason2 = Το { -brand-short-name } δεν μπορεί να προστατεύσει το αίτημά σας για τη διεύθυνση αυτού του ιστοτόπου μέσω του ασφαλούς παρόχου DNS. Αυτό συμβαίνει επειδή:
 neterror-dns-not-found-trr-third-party-warning2 = Μπορείτε να συνεχίσετε με το προεπιλεγμένο σας πρόγραμμα ανάλυσης DNS. Ωστόσο, κάποιος τρίτος ενδέχεται να μπορεί να δει ποιους ιστοτόπους επισκέπτεστε.
 neterror-dns-not-found-trr-only-could-not-connect = Το { -brand-short-name } δεν μπόρεσε να συνδεθεί στο { $trrDomain }.
 neterror-dns-not-found-trr-only-timeout = Η σύνδεση με το { $trrDomain } διήρκεσε περισσότερο από το αναμενόμενο.
 neterror-dns-not-found-trr-offline = Δεν έχετε συνδεθεί στο διαδίκτυο.
-neterror-dns-not-found-trr-unknown-host = Δεν βρέθηκε διεύθυνση για αυτόν τον ιστότοπο από το { $trrDomain }.
 neterror-dns-not-found-trr-unknown-host2 = Αυτός ο ιστότοπος δεν βρέθηκε από το { $trrDomain }.
 neterror-dns-not-found-trr-server-problem = Προέκυψε πρόβλημα με το { $trrDomain }.
+neterror-dns-not-found-bad-trr-url = Μη έγκυρο URL.
 neterror-dns-not-found-trr-unknown-problem = Απροσδόκητο πρόβλημα.
 
 ## Native fallback specific messages
@@ -71,7 +71,8 @@ neterror-dns-not-found-trr-unknown-problem = Απροσδόκητο πρόβλη
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = Το { -brand-short-name } δεν μπορεί να προστατεύσει το αίτημά σας για τη διεύθυνση αυτού του ιστότοπου μέσω του αξιόπιστου προγράμματος ανάλυσης DNS. Αυτό συμβαίνει επειδή:
-neterror-dns-not-found-native-fallback-heuristic = Το DNS over HTTPS έχει απενεργοποιηθεί στο δίκτυό σας.
+neterror-dns-not-found-native-fallback-reason2 = Το { -brand-short-name } δεν μπορεί να προστατεύσει το αίτημά σας για τη διεύθυνση αυτού του ιστοτόπου μέσω του ασφαλούς παρόχου DNS. Αυτό συμβαίνει επειδή:
+neterror-dns-not-found-native-fallback-heuristic = Το DNS μέσω HTTPS έχει απενεργοποιηθεί στο δίκτυό σας.
 neterror-dns-not-found-native-fallback-not-confirmed2 = Το { -brand-short-name } δεν μπόρεσε να συνδεθεί στο { $trrDomain }.
 
 ##
@@ -80,7 +81,7 @@ neterror-file-not-found-filename = Ελέγξτε το όνομα του αρχ�
 neterror-file-not-found-moved = Ελέγξτε αν το αρχείο έχει μετακινηθεί, μετονομαστεί ή διαγραφτεί.
 neterror-access-denied = Ενδέχεται να έχει διαγραφεί, μετακινηθεί, ή να μην επιτρέπεται η πρόσβαση λόγω των δικαιωμάτων του αρχείου.
 neterror-unknown-protocol = Ίσως χρειαστεί να εγκαταστήσετε κάποιο άλλο λογισμικό για να ανοίξετε αυτήν τη διεύθυνση.
-neterror-redirect-loop = Αυτό το πρόβλημα μπορεί να οφείλεται στην απενεργοποίηση ή την άρνηση αποδοχής των cookies.
+neterror-redirect-loop = Αυτό το πρόβλημα μπορεί να οφείλεται στην απενεργοποίηση ή την άρνηση αποδοχής των cookie.
 neterror-unknown-socket-type-psm-installed = Βεβαιωθείτε ότι το σύστημά σας διαθέτει τη διαχείριση προσωπικής ασφάλειας.
 neterror-unknown-socket-type-server-config = Αυτό μπορεί να οφείλεται σε κάποια μη τυπική ρύθμιση του διακομιστή.
 neterror-not-cached-intro = Το ζητούμενο έγγραφο δεν είναι διαθέσιμο στην κρυφή μνήμη του { -brand-short-name }.
@@ -145,4 +146,4 @@ certerror-mitm-what-can-you-do-about-it-attack = Αν δεν γνωρίζετε 
 certerror-mitm-what-can-you-do-about-it-attack-sts = Αν δεν γνωρίζετε το <b>{ $mitm }</b>, τότε ίσως πρόκειται για επίθεση και δεν μπορείτε να κάνετε τίποτα για να προσπελάσετε τον ιστότοπο.
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
-certerror-what-should-i-do-bad-sts-cert-explanation = Το <b>{ $hostname }</b> έχει μια πολιτική ασφαλείας, που ονομάζεται HTTP Strict Transport Security (HSTS) και σημαίνει ότι το { -brand-short-name } μπορεί να συνδεθεί μόνο με ασφαλή τρόπο. Δεν μπορείτε να προσθέσετε μια εξαίρεση για να επισκεφθείτε αυτό τον ιστότοπο.
+certerror-what-should-i-do-bad-sts-cert-explanation = Το <b>{ $hostname }</b> έχει μια πολιτική ασφαλείας, που ονομάζεται HTTP Strict Transport Security (HSTS) και σημαίνει ότι το { -brand-short-name } μπορεί να συνδεθεί μόνο με ασφαλή τρόπο. Δεν μπορείτε να προσθέσετε εξαίρεση για να επισκεφτείτε αυτόν τον ιστότοπο.

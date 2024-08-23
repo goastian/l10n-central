@@ -2,9 +2,18 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Midori Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Traduire cette page
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
+# not be translated, as it is a reflection of the un-localized BETA icon that is in the
+# panel.
+urlbar-translations-button2 =
+    .tooltiptext = Traduire cette page - Bêta
+# Note that here "Beta" should not be translated, as it is a reflection of the
+# un-localized BETA icon that is in the panel.
+urlbar-translations-button-intro =
+    .tooltiptext = Essayez le système de traduction respectueux de la vie privée dans { -brand-shorter-name } - Bêta
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Page translated from: { $fromLanguage }. Current target language: { $toLanguage }`
@@ -24,11 +33,13 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BÊTA
 
-## Options in the Midori Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Gérer les langues
 translations-panel-settings-about = À propos des traductions dans { -brand-shorter-name }
+translations-panel-settings-about2 =
+    .label = À propos des traductions dans { -brand-shorter-name }
 # Text displayed for the option to always translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
@@ -36,6 +47,8 @@ translations-panel-settings-always-translate-language =
     .label = Toujours traduire les pages en { $language }
 translations-panel-settings-always-translate-unknown-language =
     .label = Toujours traduire cette langue
+translations-panel-settings-always-offer-translation =
+    .label = Toujours proposer de traduire
 # Text displayed for the option to never translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
@@ -57,6 +70,9 @@ translations-panel-translate-button-loading =
     .label = Veuillez patienter…
 translations-panel-translate-cancel =
     .label = Annuler
+translations-panel-learn-more-link = En savoir plus
+translations-panel-intro-header = Essayez le système de traduction respectueux de la vie privée dans { -brand-shorter-name }
+translations-panel-intro-description = Afin de respecter votre vie privée, les traductions ne quittent jamais votre appareil. De nouvelles langues et des améliorations seront bientôt disponibles !
 translations-panel-error-translating = Un problème s’est produit lors de la traduction. Veuillez réessayer.
 translations-panel-error-load-languages = Impossible de charger les langues
 translations-panel-error-load-languages-hint = Vérifiez votre connexion Internet puis réessayez.
@@ -100,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Afficher la page d’origine
 
-## Midori Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Traductions
 translations-manage-settings-button =
@@ -110,14 +126,29 @@ translations-manage-description = Télécharger des langues pour traduction hors
 translations-manage-all-language = Toutes les langues
 translations-manage-download-button = Télécharger
 translations-manage-delete-button = Supprimer
+translations-manage-intro = Définissez vos préférences de langue et de traduction des sites, et gérez l’installation des langues pour la traduction hors connexion.
+translations-manage-install-description = Installer des langues pour traduction hors connexion
+translations-manage-language-install-button =
+    .label = Installer
+translations-manage-language-install-all-button =
+    .label = Tout installer
+    .accesskey = T
+translations-manage-intro-2 = Définissez vos préférences de langue et de traduction des sites, et gérez le téléchargement des langues pour la traduction hors connexion.
+translations-manage-download-description = Télécharger des langues pour traduction hors connexion
 translations-manage-language-download-button =
     .label = Télécharger
+translations-manage-language-download-all-button =
+    .label = Tout télécharger
     .accesskey = T
-translations-manage-language-delete-button =
+translations-manage-language-remove-button =
     .label = Supprimer
-    .accesskey = S
+translations-manage-language-remove-all-button =
+    .label = Tout supprimer
+    .accesskey = s
+translations-manage-error-install = Un problème est survenu lors de l’installation des fichiers de langue. Veuillez réessayer.
 translations-manage-error-download = Un problème est survenu lors du téléchargement des fichiers de langue. Veuillez réessayer.
 translations-manage-error-delete = Une erreur s’est produite lors de la suppression des fichiers de langue. Veuillez réessayer.
+translations-manage-error-remove = Une erreur s’est produite lors de la suppression des fichiers de langue. Veuillez réessayer.
 translations-manage-error-list = Impossible d’obtenir la liste des langues disponibles pour la traduction. Actualisez la page pour réessayer.
 translations-settings-title =
     .title = Paramètres de traduction
@@ -146,3 +177,77 @@ translations-settings-remove-all-sites-button =
 translations-settings-close-dialog =
     .buttonlabelaccept = Fermer
     .buttonaccesskeyaccept = F
+# Text displayed in the right-click context menu for translating
+# selected text to a yet-to-be-determined language.
+main-context-menu-translate-selection =
+    .label = Traduire la sélection…
+    .accesskey = r
+# Text displayed in the right-click context menu for translating
+# selected text to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-selection-to-language =
+    .label = Traduire la sélection en { $language }
+    .accesskey = r
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a yet-to-be-determined language.
+main-context-menu-translate-link-text =
+    .label = Traduire le texte du lien…
+    .accesskey = r
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-link-text-to-language =
+    .label = Traduire le texte du lien en { $language }
+    .accesskey = r
+# Text displayed in the select translations panel header.
+select-translations-panel-header = Traduction
+# Text displayed above the from-language dropdown menu.
+select-translations-panel-from-label = Langue source :
+# Text displayed above the to-language dropdown menu.
+select-translations-panel-to-label = Langue cible :
+# Text displayed above the try-another-source-language dropdown menu.
+select-translations-panel-try-another-language-label = Essayer une autre langue source
+select-translations-panel-cancel-button =
+    .label = Annuler
+# Text displayed on the copy button before it is clicked.
+select-translations-panel-copy-button =
+    .label = Copier
+# Text displayed on the copy button after it is clicked.
+select-translations-panel-copy-button-copied =
+    .label = Copié
+select-translations-panel-done-button =
+    .label = Terminé
+select-translations-panel-translate-full-page-button =
+    .label = Traduire la page complète
+select-translations-panel-translate-button =
+    .label = Traduire
+select-translations-panel-try-again-button =
+    .label = Réessayer
+# Text displayed as a placeholder when the panel is idle.
+select-translations-panel-idle-placeholder-text = Le texte traduit apparaîtra ici.
+# Text displayed as a placeholder when the panel is actively translating.
+select-translations-panel-translating-placeholder-text = Traduction…
+select-translations-panel-init-failure-message =
+    .message = Impossible de charger les langues. Veuillez vérifier votre connexion Internet puis réessayer.
+# Text displayed when the translation fails to complete.
+select-translations-panel-translation-failure-message =
+    .message = Un problème s’est produit lors de la traduction. Veuillez réessayer.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support the language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known =
+    .message = Désolé, nous ne prenons pas encore en charge cette langue : { $language }
+select-translations-panel-unsupported-language-message-unknown =
+    .message = Désolé, nous ne prenons pas encore en charge cette langue.
+# Text displayed on the menuitem that opens the Translation Settings page.
+select-translations-panel-open-translations-settings-menuitem =
+    .label = Paramètres de traduction
+# An announcement made to assistive technology when the translation is complete
+select-translations-panel-translation-complete-announcement = Traduction terminée

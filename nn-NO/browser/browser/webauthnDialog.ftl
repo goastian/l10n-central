@@ -4,13 +4,6 @@
 
 # Variables:
 #  $retriesLeft (Number): number of tries left
-webauthn-pin-invalid-prompt =
-    { $retriesLeft ->
-        [0] Feil PIN-kode! Skriv inn korrekt PIN-kode for denne eininga.
-       *[other] Feil PIN-kode! Skriv inn korrekt PIN-kode for denne eininga. Du har { $retriesLeft } forsøk att.
-    }
-# Variables:
-#  $retriesLeft (Number): number of tries left
 webauthn-pin-invalid-long-prompt =
     { $retriesLeft ->
         [one] Feil PIN-kode. Du har { $retriesLeft } forsøk att før du permanent mistar tilgangen til legitimasjonen på denne eininga.
@@ -18,3 +11,17 @@ webauthn-pin-invalid-long-prompt =
     }
 webauthn-pin-invalid-short-prompt = Feil PIN-kode. Prøv på nytt.
 webauthn-pin-required-prompt = Skriv inn PIN-kode for denne eininga.
+webauthn-select-sign-result-unknown-account = Ukjend konto
+webauthn-a-passkey-label = Bruk ein passnøkkel
+webauthn-another-passkey-label = Bruk ein annan passnøkkel
+# Variables:
+#   $domain (String): the domain of the site.
+webauthn-specific-passkey-label = Passnøkkel for { $domain }
+# Variables:
+#  $retriesLeft (Number): number of tries left
+webauthn-uv-invalid-long-prompt =
+    { $retriesLeft ->
+        [one] Mislykka brukarstadfesting. Du har { $retriesLeft } forsøk att. Prøv på nytt.
+       *[other] Mislykka brukarstadfestingar. Du har { $retriesLeft } forsøk att. Prøv på nytt.
+    }
+webauthn-uv-invalid-short-prompt = Mislykka brukarstadfesting. Prøv på nytt.

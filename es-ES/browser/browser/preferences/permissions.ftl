@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Administrador de imágenes
-    .style = width: 49em
 permissions-window2 =
     .title = Administrador de imágenes
     .style = min-width: 49em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Introduzca un nombre de servidor válido
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Excepciones para la protección mejorada contra el rastreo
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Ha desactivado las protecciones en estos sitios web.
 permissions-exceptions-etp-window2 =
     .title = Excepciones para la protección mejorada contra el rastreo
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Puede especificar qué sitios web tiene
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Excepciones: Cookies y datos del sitio
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Excepciones: Cookies y datos del sitio
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Puede especificar qué sitios web pueden o 
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Excepciones - Modo solo HTTPS
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Excepciones - Modo solo HTTPS
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Puede desactivar el modo solo HTTPS para sitios web específicos. { -brand-short-name } no intentará cambiar la conexión a HTTPS seguro para esos sitios. Las excepciones no se aplican a las ventanas privadas.
+permissions-exceptions-https-only-desc2 = Puede desactivar el modo solo HTTPS para sitios web específicos. { -brand-short-name } no intentará actualizar la conexión a HTTPS seguro para esos sitios.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Sitios web permitidos - Ventanas emergentes
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Sitios web permitidos - Ventanas emergentes
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Se puede especificar qué sitios web pueden 
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Excepciones - Logins guardados
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Excepciones - Logins guardados
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Los inicios de sesión de los siguientes sitios web no se guardarán
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Excepciones - Contraseñas guardadas
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } no guardará las contraseñas de los sitios listados aquí.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Sitios web permitidos - Instalación de complementos
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Sitios web permitidos - Instalación de complementos
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Puede especificar desde qué sitios web est
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Ajustes - Reproducción automática
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Ajustes - Reproducción automática
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Aquí puedes gestionar los sitios que no cumple
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Config. - Permisos de notificaciones
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Config. - Permisos de notificaciones
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Esto evitará que cualquier sitio w
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Config. - Permisos de ubicación
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Config. - Permisos de ubicación
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Esto evitará que cualquier sitio web n
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Ajustes - Permisos de realidad virtual
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Ajustes - Permisos de realidad virtual
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Esto evitará que los sitios web no incluidos
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Config. - Permisos de la cámara
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Config. - Permisos de la cámara
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Esto evitará que cualquier sitio web no 
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Config. - Permisos del micrófono
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Config. - Permisos del micrófono
     .style = { permissions-window2.style }

@@ -2,18 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-fxa-pair-device-dialog =
-    .title = صِلْ جهازا آخر
-    .style = width: 26em; min-height: 35em;
-
-fxa-qrcode-heading-step1 = 1. ثبّت <a data-l10n-name="connect-another-device">Firefox على جهازك المحمول</a>، إن لم يكن مثبّتًا.
-
-fxa-qrcode-heading-step2 = 2. افتح Firefox على أيّ جهاز محمول.
-
-fxa-qrcode-heading-step3 = 3. افتح <b>القائمة</b> )<img data-l10n-name="ios-menu-icon"/> أو <img data-l10n-name="android-menu-icon"/>)، ثم انقر <img data-l10n-name="settings-icon"/> <b>الإعدادات</b> واختر <b>فعّل المزامنة</b>
-
-fxa-qrcode-heading-step4 = 4. امسح هذا الرمز ضوئيًا:
-
+fxa-qrcode-pair-title = زامن { -brand-product-name } على هاتفك أو جهازك اللوحي
+fxa-qrcode-pair-step1 = 1. افتح { -brand-product-name } على جهازك المحمول.
+fxa-qrcode-pair-step2-signin = 2. انتقل إلى القائمة (<img data-l10n-name="ios-menu-icon"/> في iOS أو <img data-l10n-name="android-menu-icon"/> على أندرويد) و انقر <strong>زامن و احفظ البيانات</strong>
+fxa-qrcode-pair-step3 = 3. انقر <strong> جاهز للمسح </strong> ثم ضع هاتفك فوق هذا الرمز
 fxa-qrcode-error-title = لم ينجح الاقتران.
-
 fxa-qrcode-error-body = أعِد المحاولة

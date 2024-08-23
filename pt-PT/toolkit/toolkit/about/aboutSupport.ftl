@@ -18,6 +18,10 @@ support-addons-type = Tipo
 support-addons-enabled = Ativado
 support-addons-version = Versão
 support-addons-id = ID
+legacy-user-stylesheets-title = Folhas de estilo de utilizador legadas
+legacy-user-stylesheets-enabled = Ativo
+legacy-user-stylesheets-stylesheet-types = Folhas de estilo
+legacy-user-stylesheets-no-stylesheets-found = Nenhuma folha de estilo encontrada
 security-software-title = Software de segurança
 security-software-type = Tipo
 security-software-name = Nome
@@ -77,6 +81,7 @@ app-basics-key-mozilla = Chave do serviço de localização da Mozilla
 app-basics-safe-mode = Modo de segurança
 app-basics-memory-size = Tamanho da Memória (RAM)
 app-basics-disk-available = Espaço em disco disponível
+app-basics-pointing-devices = Dispositivos Apontadores
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -148,7 +153,7 @@ troubleshoot-mode-title = Diagnosticar problemas
 restart-in-troubleshoot-mode-label = Modo de diagnóstico…
 clear-startup-cache-title = Tente limpar a cache de arranque
 clear-startup-cache-label = Limpar cache de arranque ...
-startup-cache-dialog-title2 = Reiniciar o { -brand-short-name } para limpar a cache de arranque?
+startup-cache-dialog-title2 = Reiniciar o { -brand-short-name } para limpar a cache de inicialização?
 startup-cache-dialog-body2 = Isto não irá mudar as suas configurações nem irá remover as extensões.
 restart-button-label = Reiniciar
 
@@ -174,6 +179,33 @@ media-capabilities-title = Recursos de media
 media-codec-support-info = Informações de suporte do codec
 # List all the entries of the database.
 media-capabilities-enumerate = Enumeração de base de dados
+
+## Codec support table
+
+media-codec-support-sw-decoding = Descodificação por Software
+media-codec-support-hw-decoding = Descodificação por Hardware
+media-codec-support-codec-name = Nome do Codec
+media-codec-support-supported = Suportado
+media-codec-support-unsupported = Não suportado
+media-codec-support-error = Informações de suporte de codec indisponíveis. Tente novamente após reproduzir um ficheiro de multimédia.
+media-codec-support-lack-of-extension = Instalar extensão
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informação dos módulos de desencriptação de conteúdo
+media-key-system-name = Nome do sistema de chaves
+media-video-robustness = Robustez do vídeo
+media-audio-robustness = Robustez do áudio
+media-cdm-capabilities = Capacidades
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Início limpo
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Compatível com HDCP 2.2
 
 ##
 
@@ -253,6 +285,7 @@ try-newer-driver = Bloqueado para a sua versão do controlador gráfico. Tente a
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Parâmetros ClearType
 compositing = Composição
+support-font-determination = Informação de depuração de visibilidade de tipo de letra
 hardware-h264 = Descodificação H264 por hardware
 main-thread-no-omtc = thread principal, sem OMTC
 yes = Sim
@@ -382,6 +415,20 @@ support-printing-modified-settings = Configurações de impressão modificadas
 support-printing-prefs-name = Nome
 support-printing-prefs-value = Valor
 
+## Remote Settings sections
+
+support-remote-settings-title = Definições remotas
+support-remote-settings-status = Estado
+support-remote-settings-status-ok = Ok
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Não está a funcionar
+support-remote-settings-last-check = Última verificação
+support-remote-settings-local-timestamp = Marca temporal local
+support-remote-settings-sync-history = Histórico
+support-remote-settings-sync-history-status = Estado
+support-remote-settings-sync-history-datetime = Data
+support-remote-settings-sync-history-infos = Informações
+
 ## Normandy sections
 
 support-remote-experiments-title = Experiências remotas
@@ -391,3 +438,22 @@ support-remote-experiments-see-about-studies = Consulte <a data-l10n-name="suppo
 support-remote-features-title = Funcionalidades remotas
 support-remote-features-name = Nome
 support-remote-features-status = Estado
+
+## Pointing devices
+
+pointing-device-mouse = Rato
+pointing-device-touchscreen = Ecrã tátil
+pointing-device-pen-digitizer = Caneta Digitalizadora
+pointing-device-none = Sem dispositivos apontadores
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Análise de conteúdo (DLP)
+content-analysis-active = Ativa
+content-analysis-connected-to-agent = Ligado ao agente
+content-analysis-agent-path = Caminho do agente
+content-analysis-agent-failed-signature-verification = A verificação da assinatura do agente falhou
+content-analysis-request-count = Contador de pedidos

@@ -14,16 +14,10 @@ firefox-relay-get-reusable-masks-failed = { -relay-brand-name } no ha podido enc
 ##
 
 firefox-relay-must-login-to-fxa = Debe iniciar sesión en { -fxaccount-brand-name } para usar { -relay-brand-name }.
+firefox-relay-must-login-to-account = Inicie sesión en su cuenta para utilizar sus máscaras de correo electrónico de { -relay-brand-name }.
 firefox-relay-get-unlimited-masks =
     .label = Administrar máscaras
     .accesskey = m
-firefox-relay-opt-in-title = Proteja su dirección de correo electrónico
-firefox-relay-opt-in-subtitle = Añadir { -relay-brand-name }
-firefox-relay-generate-mask-title = Proteja su dirección de correo electrónico
-firefox-relay-generate-mask-subtitle = Genera una máscara de { -relay-brand-short-name }
-firefox-relay-opt-in-confirmation-enable =
-    .label = Continuar
-    .accesskey = C
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Proteja su dirección de correo electrónico:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which

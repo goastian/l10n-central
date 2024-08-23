@@ -40,7 +40,8 @@ site-permission-install-first-prompt-midi-message = このアクセスは安全�
 ##
 
 xpinstall-disabled-locked = ソフトウェアのインストールはシステム管理者により無効化されています。
-xpinstall-disabled = ソフトウェアのインストールは現在無効になっています。[有効にする] をクリックしてからもう一度やり直してください。
+xpinstall-disabled-by-policy = ソフトウェアのインストールは所属組織により無効化されています。
+xpinstall-disabled = ソフトウェアのインストールは現在無効になっています。[有効にする] をクリックしてから再度試してください。
 xpinstall-disabled-button =
     .label = 有効にする
     .accesskey = n
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) はシステム管理者によりブロックされています。
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = このサイトによるソフトウェアのインストールの確認は、システム管理者によりブロックされています。
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) は所属組織によりブロックされています。
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = このサイトによるソフトウェアのインストールの確認は、所属組織によりブロックされています。
 addon-install-full-screen-blocked = 全画面表示モード中または全画面表示モードに入る前は、アドオンのインストールが許可されていません。
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -58,6 +66,10 @@ webext-perms-sideload-menu-item = { $addonName } が { -brand-short-name } に�
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } が新たな権限を必要としています
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = { -brand-short-name } にインポートされた拡張機能のインストールを完了しています
 
 ## Add-on removal warning
 
@@ -108,3 +120,5 @@ addon-local-install-error-not-signed = このアドオンは検証されてい�
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { -brand-short-name } { $appVersion } と互換性がないため、{ $addonName } をインストールできませんでした。
 addon-install-error-blocklisted = 安定性を大きく損なうかセキュリティに問題があるため、{ $addonName } をインストールできませんでした。
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = { $addonName } アドオンをエンドユーザー権限でインストールすることはできません。これはエンタープライズポリシーを使用する組織によりインストール可能です。

@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = 连接设置
-    .style =
-        { PLATFORM() ->
-            [macos] width: 44em
-           *[other] width: 49em
-        }
 connection-window2 =
     .title = 连接设置
     .style =
@@ -27,6 +20,9 @@ connection-proxy-option-no =
 connection-proxy-option-system =
     .label = 使用系统代理设置
     .accesskey = U
+connection-proxy-option-wpad =
+    .label = 使用系统的网络代理自动发现设置
+    .accesskey = g
 connection-proxy-option-auto =
     .label = 自动检测此网络的代理设置
     .accesskey = w
@@ -73,18 +69,16 @@ connection-proxy-autologin-checkbox =
     .label = 如果密码已保存，不提示身份验证
     .accesskey = i
     .tooltiptext = 此选项将允许在您已保存凭据的情况下自动向代理进行身份验证，如果验证失败再提示您输入信息。
+connection-proxy-socks4-remote-dns =
+    .label = 使用 SOCKS v4 时代理 DNS 查询
+    .accesskey = 4
 connection-proxy-socks-remote-dns =
     .label = 使用 SOCKS v5 时代理 DNS 查询
     .accesskey = D
-connection-dns-over-https =
-    .label = 启用基于 HTTPS 的 DNS
-    .accesskey = H
-connection-dns-over-https-url-resolver = 选用提供方
-    .accesskey = P
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
-    .label = { $name }（默认值）
+    .label = { $name }（默认）
     .tooltiptext = 使用默认 URL 完成基于 HTTPS 的 DNS 解析
 connection-dns-over-https-url-custom =
     .label = 自定义

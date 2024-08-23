@@ -32,6 +32,8 @@ search-input-box2 =
     .style = width: 15.4em
     .placeholder = Знайти в налаштуваннях
 managed-notice = Вашим браузером керує ваша організація.
+managed-notice-info-icon =
+    .alt = Інформація
 category-list =
     .aria-label = Категорії
 pane-general-title = Загальні
@@ -55,6 +57,9 @@ category-experimental =
 pane-experimental-subtitle = Продовжуйте обережно
 pane-experimental-search-results-header = Експерименти { -brand-short-name }: Продовжуйте з обережністю
 pane-experimental-description2 = Зміна розширених налаштувань може вплинути на швидкодію і безпеку { -brand-short-name }.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
 pane-experimental-reset =
     .label = Відновити типові
     .accesskey = В
@@ -206,6 +211,9 @@ containers-remove-alert-msg =
     }
 containers-remove-ok-button = Вилучити цей контейнер
 containers-remove-cancel-button = Не вилучати цей контейнер
+settings-tabs-show-image-in-preview =
+    .label = Показувати зображення сторінки під час наведення курсора на вкладку
+    .accessKey = з
 
 ## General Section - Language & Appearance
 
@@ -230,6 +238,10 @@ preferences-web-appearance-choice-input-dark =
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = Вибрані кольори мають перевагу над зовнішнім виглядом вебсайту. <a data-l10n-name="colors-link">Керувати кольорами</a>
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning2 =
+    .message = Вибрані кольори мають перевагу над зовнішнім виглядом вебсайту.
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Керуйте темами { -brand-short-name } у розділі <a data-l10n-name="themes-link">Розширення й теми</a>
@@ -257,6 +269,8 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = Збільшувати лише текст
     .accesskey = к
+preferences-text-zoom-override-warning =
+    .message = Попередження: якщо ви вибрали “Збільшувати лише текст”, а типовий масштаб не встановлено на 100%, це може призвести до пошкодження деяких сайтів або вмісту.
 language-header = Мова
 choose-language-description = Оберіть бажану мову для показу вебсторінок
 choose-button =
@@ -469,6 +483,9 @@ browsing-use-smooth-scrolling =
 browsing-gtk-use-non-overlay-scrollbars =
     .label = Завжди показувати смуги прокручування
     .accesskey = о
+browsing-always-underline-links =
+    .label = Завжди підкреслювати посилання
+    .accesskey = ж
 browsing-use-onscreen-keyboard =
     .label = Показувати сенсорну клавіатуру за потреби
     .accesskey = с
@@ -559,6 +576,9 @@ home-prefs-shortcuts-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Рекомендації від { $provider }
 home-prefs-recommended-by-description-new = Добірні матеріали від { $provider }, що входить до родини { -brand-product-name }
+home-prefs-recommended-by-header-generic =
+    .label = Рекомендовані матеріали
+home-prefs-recommended-by-description-generic = Виняткові матеріали, відібрані командою { -brand-product-name }
 
 ##
 
@@ -585,6 +605,10 @@ home-prefs-recent-activity-description = Добірка недавніх сай�
 home-prefs-snippets-header =
     .label = Фрагменти
 home-prefs-snippets-description-new = Поради та новини від { -vendor-short-name } та { -brand-product-name }
+home-prefs-weather-header =
+    .label = Погода
+home-prefs-weather-description = Точний прогноз погоди на сьогодні
+home-prefs-weather-learn-more-link = Докладніше
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -602,17 +626,20 @@ search-bar-hidden =
     .label = Використовувати панель адреси для пошуку та навігації
 search-bar-shown =
     .label = Додати панель пошуку на панель інструментів
-search-engine-default-header = Типовий засіб пошуку
-search-engine-default-desc-2 = Це ваш типовий засіб пошуку в панелі адреси та пошуку. Ви можете будь-коли змінити його.
-search-engine-default-private-desc-2 = Оберіть інший типовий засіб пошуку лише для приватних вікон
+search-engine-default-header = Типова пошукова система
+search-engine-default-desc-2 = Це ваша типова пошукова система в панелі адреси та пошуку. Ви можете будь-коли її змінити.
+search-engine-default-private-desc-2 = Оберіть іншу типову пошукову систему лише для приватних вікон
 search-separate-default-engine =
-    .label = Використовувати цей засіб пошуку в приватному режимі
-    .accesskey = з
+    .label = Використовувати цю пошукову систему в приватному режимі
+    .accesskey = п
 search-suggestions-header = Пошукові пропозиції
 search-suggestions-desc = Оберіть спосіб показу пошукових пропозицій.
 search-suggestions-option =
     .label = Показувати пошукові пропозиції
     .accesskey = і
+search-show-suggestions-option =
+    .label = Показувати пошукові пропозиції
+    .accesskey = ш
 search-show-suggestions-url-bar-option =
     .label = Показувати пошукові пропозиції в результатах панелі адреси
     .accesskey = ш
@@ -620,7 +647,7 @@ search-show-suggestions-url-bar-option =
 # the URL will be replaced by the search terms in the address bar
 # when using the current default search engine.
 search-show-search-term-option =
-    .label = Показувати пошуковий запит замість URL-адреси на сторінці результатів типового засобу пошуку
+    .label = Показувати пошуковий запит замість URL-адреси на сторінці результатів типової пошукової системи
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -633,13 +660,13 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic2 = Змінити налаштування для інших пропозицій панелі адреси
 search-suggestions-cant-show = Пошукові пропозиції не будуть показуватись в панелі адреси, тому що ви налаштували { -brand-short-name } ніколи не запам'ятовувати історію.
 search-one-click-header2 = Пошукові скорочення
-search-one-click-desc = Оберіть альтернативні пошукові засоби, що з'являються під рядками адреси і пошуку, коли ви починаєте вводити запит.
+search-one-click-desc = Оберіть альтернативні пошукові системи, що з'являються під рядками адреси і пошуку, коли ви починаєте вводити запит.
 search-choose-engine-column =
-    .label = Засіб пошуку
+    .label = Пошукова система
 search-choose-keyword-column =
     .label = Скорочення
 search-restore-default =
-    .label = Відновити типові засоби пошуку
+    .label = Відновити типові пошукові системи
     .accesskey = с
 search-remove-engine =
     .label = Прибрати
@@ -647,7 +674,7 @@ search-remove-engine =
 search-add-engine =
     .label = Додати
     .accesskey = т
-search-find-more-link = Знайти інші засоби пошуку
+search-find-more-link = Знайти інші пошукові системи
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Це скорочення вже використовується
@@ -694,6 +721,13 @@ sync-mobile-promo = Завантажте Firefox для <img data-l10n-name="and
 
 sync-profile-picture =
     .tooltiptext = Змінити зображення профілю
+sync-profile-picture-with-alt =
+    .tooltiptext = Змінити зображення профілю
+    .alt = Змінити зображення профілю
+sync-profile-picture-account-problem =
+    .alt = Зображення профілю облікового запису
+fxa-login-rejected-warning =
+    .alt = Попередження
 sync-sign-out =
     .label = Вийти…
     .accesskey = В
@@ -710,6 +744,9 @@ sync-signedin-login-failure = Увійдіть для повторного з'є
 
 sync-resend-verification =
     .label = Повторно надіслати підтвердження
+    .accesskey = т
+sync-verify-account =
+    .label = Підтвердити обліковий запис
     .accesskey = т
 sync-remove-account =
     .label = Вилучити обліковий запис
@@ -743,8 +780,10 @@ sync-currently-syncing-bookmarks = Закладки
 sync-currently-syncing-history = Історія
 sync-currently-syncing-tabs = Відкриті вкладки
 sync-currently-syncing-logins-passwords = Паролі
+sync-currently-syncing-passwords = Паролі
 sync-currently-syncing-addresses = Адреси
 sync-currently-syncing-creditcards = Кредитні картки
+sync-currently-syncing-payment-methods = Способи оплати
 sync-currently-syncing-addons = Додатки
 sync-currently-syncing-settings = Налаштування
 sync-change-options =
@@ -775,6 +814,10 @@ sync-engine-logins-passwords =
     .label = Паролі
     .tooltiptext = Збережені імена користувача і паролі
     .accesskey = П
+sync-engine-passwords =
+    .label = Паролі
+    .tooltiptext = Збережені паролі
+    .accesskey = П
 sync-engine-addresses =
     .label = Адреси
     .tooltiptext = Поштові адреси, які ви зберегли (тільки комп'ютер)
@@ -783,6 +826,10 @@ sync-engine-creditcards =
     .label = Кредитні картки
     .tooltiptext = Імена, номери й терміни дії (тільки комп'ютер)
     .accesskey = К
+sync-engine-payment-methods2 =
+    .label = Способи оплати
+    .tooltiptext = Імена, номери карток і терміни дії
+    .accesskey = л
 sync-engine-addons =
     .label = Додатки
     .tooltiptext = Розширення і теми Firefox для комп'ютера
@@ -829,18 +876,35 @@ pane-privacy-logins-and-passwords-header = Входи і паролі
 forms-ask-to-save-logins =
     .label = Запит збереження паролів для вебсайтів
     .accesskey = п
+
+## Privacy Section - Passwords
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = Паролі
+    .searchkeywords = логіни
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-passwords =
+    .label = Запитувати про збереження паролів
+    .accesskey = и
 forms-exceptions =
     .label = Винятки…
     .accesskey = и
 forms-generate-passwords =
     .label = Пропонувати й генерувати надійні паролі
     .accesskey = г
+forms-suggest-passwords =
+    .label = Пропонувати надійні паролі
+    .accesskey = П
 forms-breach-alerts =
     .label = Показувати сповіщення про паролі для зламаних вебсайтів
     .accesskey = з
 forms-breach-alerts-learn-more-link = Докладніше
 preferences-relay-integration-checkbox =
     .label = Пропонувати маски електронної пошти { -relay-brand-name }, щоб захистити електронну адресу
+preferences-relay-integration-checkbox2 =
+    .label = Пропонувати маски електронної пошти { -relay-brand-name } для захисту вашої адреси.
+    .accesskey = м
 relay-integration-learn-more-link = Докладніше
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -849,9 +913,19 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Збережені паролі…
     .accesskey = л
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-usernames-and-passwords =
+    .label = Автоматично заповнювати імена користувачів і паролі
+    .accesskey = з
+forms-saved-passwords =
+    .label = Збережені паролі
+    .accesskey = ж
 forms-primary-pw-use =
     .label = Використовувати головний пароль
     .accesskey = г
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = Вимагати входу на пристрої для заповнення та керування паролями
 forms-primary-pw-learn-more-link = Докладніше
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -872,6 +946,7 @@ forms-windows-sso =
     .label = Дозволити єдиний вхід Windows для облікових записів Microsoft, роботи та школи
 forms-windows-sso-learn-more-link = Докладніше
 forms-windows-sso-desc = Керування обліковими записами в налаштуваннях пристрою
+windows-passkey-settings-label = Керувати ключами доступу в налаштуваннях системи
 
 ## OS Authentication dialog
 
@@ -883,6 +958,30 @@ primary-password-os-auth-dialog-message-win = Щоб створити голов
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = створити головний пароль
 master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] змінити налаштування способів оплати
+       *[other] { -brand-short-name } намагається змінити налаштування способів оплати. Щоб дозволити це, увійдіть на своєму пристрої.
+    }
+autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = Автозаповнення
+autofill-addresses-checkbox = Зберігати й заповнювати адреси
+    .accesskey = ю
+autofill-saved-addresses-button = Збережені адреси
+    .accesskey = с
+autofill-payment-methods-checkbox-message = Зберігати й заповнювати способи оплати
+    .accesskey = в
+autofill-payment-methods-checkbox-submessage = Застосовується до кредитних та платіжних карток
+    .accesskey = к
+autofill-saved-payment-methods-button = Збережені способи оплати
+    .accesskey = т
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = Вимагати входу на пристрої для заповнення та керування способами оплати
+    .accesskey = х
 
 ## Privacy Section - History
 
@@ -927,22 +1026,23 @@ history-clear-button =
 
 ## Privacy Section - Site Data
 
-sitedata-header = Куки і дані сайтів
+sitedata-header = Файли cookie та дані сайтів
 sitedata-total-size-calculating = Обчислення розміру даних сайтів і кешу…
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Ваші збережені куки, дані сайтів і кеш використовують { $value } { $unit } дискового простору.
+sitedata-total-size = Ваші збережені файли cookie, дані сайтів і кеш використовують { $value } { $unit } дискового простору.
 sitedata-learn-more = Докладніше
 sitedata-delete-on-close =
-    .label = Видаляти куки і дані сайтів при закритті { -brand-short-name }
+    .label = Видаляти файли cookie та дані сайтів під час закриття { -brand-short-name }
     .accesskey = я
-sitedata-delete-on-close-private-browsing = В режимі постійного приватного перегляду, куки і дані сайтів завжди очищатимуться при закритті { -brand-short-name }.
+sitedata-delete-on-close-private-browsing = В режимі постійного приватного перегляду, файли cookie та дані сайтів завжди очищатимуться під час закриття { -brand-short-name }.
+sitedata-delete-on-close-private-browsing2 = На основі ваших налаштувань історії { -brand-short-name } видаляє файли cookie та дані сайтів вашого сеансу після закриття браузера.
 sitedata-allow-cookies-option =
-    .label = Приймати куки і дані сайтів
+    .label = Приймати файли cookie та дані сайтів
     .accesskey = П
 sitedata-disallow-cookies-option =
-    .label = Блокувати куки і дані сайтів
+    .label = Блокувати файли cookie та дані сайтів
     .accesskey = Б
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
@@ -951,15 +1051,15 @@ sitedata-block-desc = Тип блокування
 sitedata-option-block-cross-site-trackers =
     .label = Стеження між сайтами
 sitedata-option-block-cross-site-tracking-cookies =
-    .label = Куки стеження між сайтами
+    .label = Файли cookie для стеження між сайтами
 sitedata-option-block-cross-site-cookies =
-    .label = Куки стеження між сайтами та ізолювання кук сторонніх сайтів
+    .label = Файли cookie для стеження між сайтами та ізолювання інших міжсайтових файлів cookie
 sitedata-option-block-unvisited =
-    .label = Куки з невідвіданих вебсайтів
+    .label = Файли cookie з невідвіданих вебсайтів
 sitedata-option-block-all-cross-site-cookies =
-    .label = Усі міжсайтові куки (може пошкодити вебсайти)
+    .label = Усі міжсайтові файли cookie (може порушити роботу вебсайтів)
 sitedata-option-block-all =
-    .label = Усі куки (порушить роботу вебсайтів)
+    .label = Усі файли cookie (порушить роботу вебсайтів)
 sitedata-clear =
     .label = Стерти дані…
     .accesskey = С
@@ -972,18 +1072,18 @@ sitedata-cookies-exceptions =
 
 ## Privacy Section - Cookie Banner Handling
 
-cookie-banner-handling-header = Зменшення кількості банерів кук
-cookie-banner-handling-description = { -brand-short-name } автоматично намагається відхилити запити на збереження кук у банерах кук на підтримуваних сайтах.
+cookie-banner-handling-header = Зменшення кількості банерів про файли cookie
+cookie-banner-handling-description = { -brand-short-name } автоматично намагається відхиляти банери із запитами про збереження файлів cookie на підтримуваних сайтах.
 
 ## Privacy Section - Cookie Banner Blocking
 
-cookie-banner-blocker-header = Блокувальник банерів кук
-cookie-banner-blocker-description = Коли сайт запитує, чи можна використовувати куки в режимі приватного перегляду, { -brand-short-name } автоматично їх відхиляє. Ця функція доступна лише на підтримуваних сайтах.
+cookie-banner-blocker-header = Блокувальник банерів про файли cookie
+cookie-banner-blocker-description = Коли сайт запитує, чи можна використовувати файли cookie в режимі приватного перегляду, { -brand-short-name } автоматично їх відхиляє. Ця функція доступна лише на підтримуваних сайтах.
 cookie-banner-learn-more = Докладніше
 forms-handle-cookie-banners =
-    .label = Зменшити кількість банерів кук
+    .label = Зменшити кількість банерів про файли cookie
 cookie-banner-blocker-checkbox-label =
-    .label = Автоматично відхиляти банери кук
+    .label = Автоматично відхиляти банери про файли cookie
 
 ## Privacy Section - Address Bar
 
@@ -1009,15 +1109,15 @@ addressbar-locbar-topsites-option =
     .label = Популярні сайти
     .accesskey = с
 addressbar-locbar-engines-option =
-    .label = Засоби пошуку
+    .label = Пошукові системи
     .accesskey = ш
 addressbar-locbar-quickactions-option =
     .label = Швидкі дії
     .accesskey = Ш
-addressbar-locbar-recentsearches-option =
-    .label = Недавні пошуки
-    .accesskey = Н
-addressbar-suggestions-settings = Змінити налаштування пропозицій засобів пошуку
+addressbar-suggestions-settings = Змінити налаштування пропозицій пошукових систем
+addressbar-locbar-showrecentsearches-option =
+    .label = Показати останні пошуки
+    .accesskey = о
 addressbar-quickactions-learn-more = Докладніше
 
 ## Privacy Section - Content Blocking
@@ -1025,7 +1125,7 @@ addressbar-quickactions-learn-more = Докладніше
 content-blocking-enhanced-tracking-protection = Розширений захист від стеження
 content-blocking-section-top-level-description = Елементи стеження переслідують вас в мережі з метою збору інформації про ваші звички та інтереси. { -brand-short-name } блокує багато такого стеження, а також інші підозрілі скрипти.
 content-blocking-learn-more = Докладніше
-content-blocking-fpi-incompatibility-warning = Ви використовуєте First Party Isolation (FPI), що замінює деякі налаштування кук користувача { -brand-short-name }.
+content-blocking-fpi-incompatibility-warning = Ви використовуєте First Party Isolation (FPI), що замінює деякі налаштування файлів cookie { -brand-short-name }.
 # There is no need to translate "Resist Fingerprinting (RFP)". This is a
 # feature that can only be enabled via about:config, and it's not exposed to
 # standard users (e.g. via Settings).
@@ -1052,15 +1152,15 @@ content-blocking-etp-strict-desc = Надійніший захист, але м�
 content-blocking-etp-custom-desc = Оберіть тип стеження і скриптів для блокування.
 content-blocking-etp-blocking-desc = { -brand-short-name } блокує таке:
 content-blocking-private-windows = Стеження в приватних вікнах
-content-blocking-cross-site-cookies-in-all-windows2 = Куки сторонніх сайтів у всіх вікнах
-content-blocking-cross-site-tracking-cookies = Куки стеження між сайтами
-content-blocking-all-cross-site-cookies-private-windows = Куки сторонніх сайтів у приватних вікнах
-content-blocking-cross-site-tracking-cookies-plus-isolate = Куки стеження між сайтами та ізолювання решти куків
+content-blocking-cross-site-cookies-in-all-windows2 = Міжсайтові файли cookie у всіх вікнах
+content-blocking-cross-site-tracking-cookies = Файли cookie для стеження між сайтами
+content-blocking-all-cross-site-cookies-private-windows = Міжсайтові файли cookie в приватних вікнах
+content-blocking-cross-site-tracking-cookies-plus-isolate = Файли cookie для стеження між сайтами та ізоляція інших файлів cookie
 content-blocking-social-media-trackers = Стеження соціальних мереж
-content-blocking-all-cookies = Усі куки
-content-blocking-unvisited-cookies = Куки з невідвіданих сайтів
+content-blocking-all-cookies = Усі файли cookie
+content-blocking-unvisited-cookies = Файли cookie з невідвіданих сайтів
 content-blocking-all-windows-tracking-content = Стеження у всіх вікнах
-content-blocking-all-cross-site-cookies = Усі міжсайтові куки
+content-blocking-all-cross-site-cookies = Усі міжсайтові файли cookie
 content-blocking-cryptominers = Криптомайнери
 content-blocking-fingerprinters = Зчитування цифрового відбитка
 # The known fingerprinters are those that are known for collecting browser fingerprints from user devices. And
@@ -1071,9 +1171,9 @@ content-blocking-known-and-suspected-fingerprinters = Відомі й підоз
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 
 # "Contains" here means "isolates", "limits".
-content-blocking-etp-standard-tcp-rollout-description = Повний захист кук ізолює файли кук для відвідуваного сайту, тому елементи стеження не можуть використовувати їх для переслідування вас між сайтами.
+content-blocking-etp-standard-tcp-rollout-description = Функція Total Cookie Protection ізолює файли cookie для відвідуваного сайту, тому елементи стеження не можуть використовувати їх для переслідування вас між сайтами.
 content-blocking-etp-standard-tcp-rollout-learn-more = Докладніше
-content-blocking-etp-standard-tcp-title = Включає нашу найпотужнішу функцію приватності – повний захист кук
+content-blocking-etp-standard-tcp-title = Включає Total Cookie Protection – нашу найпотужнішу функцію приватності
 content-blocking-warning-title = Увага!
 content-blocking-and-isolating-etp-warning-description-2 = Цей параметр може спричиняти неправильну роботу деяких вебсайтів. Якщо сайт здається пошкодженим, ви можете вимкнути захист від стеження для такого сайту, щоб завантажити весь вміст.
 content-blocking-warning-learn-how = Навчитися
@@ -1092,8 +1192,8 @@ content-blocking-option-private =
     .accesskey = п
 content-blocking-tracking-protection-change-block-list = Змінити список блокування
 content-blocking-cookies-label =
-    .label = Куки
-    .accesskey = К
+    .label = Файли cookie
+    .accesskey = й
 content-blocking-expand-section =
     .tooltiptext = Докладніше
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
@@ -1182,7 +1282,7 @@ collection-header = Збір та використання даних { -brand-s
 collection-header2 = Збір та використання даних { -brand-short-name }
     .searchkeywords = телеметрія
 collection-description = Ми прагнемо надати вам вибір і збирати лише дані, необхідні для роботи і вдосконалення { -brand-short-name }. Ми завжди запитуємо дозвіл перед отриманням особистої інформації.
-collection-privacy-notice = Повідомлення про приватність
+collection-privacy-notice = Положення про приватність
 collection-health-report-telemetry-disabled = Ви більше не дозволяєте { -vendor-short-name } збирати технічні дані й інформацію про взаємодію. Всі минулі дані будуть видалені протягом 30 днів.
 collection-health-report-telemetry-disabled-link = Докладніше
 collection-health-report =
@@ -1200,12 +1300,17 @@ addon-recommendations-link = Докладніше
 collection-health-report-disabled = Відправлення даних вимкнено для цієї конфігурації збірки
 collection-backlogged-crash-reports-with-link = Дозволити { -brand-short-name } надсилати звіти про збої від вашого імені <a data-l10n-name="crash-reports-link">Докладніше</a>
     .accesskey = м
+collection-backlogged-crash-reports = Дозволити { -brand-short-name } надсилати звіти про збої від вашого імені
+    .accesskey = м
 privacy-segmentation-section-header = Нові функції, які покращують ваш перегляд
 privacy-segmentation-section-description = Коли ми пропонуємо функції, які використовують ваші дані для кращої персоналізації браузера:
 privacy-segmentation-radio-off =
     .label = Використовувати рекомендації { -brand-product-name }
 privacy-segmentation-radio-on =
     .label = Показати подробиці
+
+## Privacy Section - Website Advertising Preferences
+
 
 ## Privacy Section - Security
 ##
@@ -1243,7 +1348,7 @@ certs-thirdparty-toggle =
 space-alert-over-5gb-settings-button =
     .label = Відкрити налаштування
     .accesskey = В
-space-alert-over-5gb-message2 = <strong>Для { -brand-short-name } закінчується місце на диску.</strong> Вміст вебсайтів може показуватись неналежним чином. Ви можете стерти збережені дані в меню Налаштування > Приватність і безпека > Куки і дані сайтів.
+space-alert-over-5gb-message2 = <strong>Для { -brand-short-name } закінчується місце на диску.</strong> Вміст вебсайтів може показуватись неналежним чином. Ви можете стерти збережені дані в меню Налаштування > Приватність і безпека > Файли cookie та дані сайтів.
 space-alert-under-5gb-message2 = <strong>Для { -brand-short-name } закінчується місце на диску.</strong> Вміст вебсайтів може показуватись неправильно. Натисніть “Докладніше”, щоб оптимізувати використання диска для кращої роботи.
 
 ## Privacy Section - HTTPS-Only
@@ -1262,6 +1367,7 @@ httpsonly-radio-disabled =
 
 preferences-doh-header = DNS через HTTPS
 preferences-doh-description = Система доменних імен (DNS) через HTTPS надсилає ваш запит на доменне ім'я через зашифроване з'єднання, створюючи захищену DNS і ускладнюючи іншим користувачам можливість переглянути, до якого вебсайту ви збираєтеся отримати доступ.
+preferences-doh-description2 = Завдяки системі DNS через HTTPS ваші запити на доменне ім'я шифруються, ускладнюючи стороннім особам можливість перегляду, до якого вебсайту ви збираєтеся отримати доступ.
 # Variables:
 #   $status (string) - The status of the DoH connection
 preferences-doh-status = Стан: { $status }
@@ -1278,6 +1384,7 @@ preferences-doh-status-disabled = Вимкнено
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
 preferences-doh-status-not-active = Неактивна ({ $reason })
 preferences-doh-group-message = Увімкнути захищену DNS використовуючи:
+preferences-doh-group-message2 = Увімкнути DNS через HTTPS:
 preferences-doh-expand-section =
     .tooltiptext = Докладніше
 preferences-doh-setting-default =

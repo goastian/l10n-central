@@ -5,14 +5,6 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
-
-
-## Permission Dialog
-## Variables:
 ##  $host (string) - The hostname that is initiating the request
 ##  $scheme (string) - The type of link that's being opened.
 ##  $appName (string) - Name of the application that will be opened.
@@ -26,11 +18,8 @@ permission-dialog-description-app = อนุญาตให้ไซต์น�
 permission-dialog-description-host-app = อนุญาตให้ { $host } เปิดลิงก์ { $scheme } ด้วย { $appName } หรือไม่
 permission-dialog-description-file-app = อนุญาตให้ไฟล์นี้เปิดลิงก์ { $scheme } ด้วย { $appName } หรือไม่
 permission-dialog-description-extension-app = อนุญาตให้ส่วนขยาย { $extension } เปิดลิงก์ { $scheme } ด้วย { $appName } หรือไม่
-
-## Please keep the emphasis around the hostname and scheme (ie the
-## `<strong>` HTML tags). Please also keep the hostname as close to the start
-## of the sentence as your language's grammar allows.
-
+permission-dialog-description-system-app = ต้องการเปิดลิงก์ { $scheme } ด้วย { $appName } หรือไม่?
+permission-dialog-description-system-noapp = ต้องการเปิดลิงก์ { $scheme } หรือไม่?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -56,11 +45,6 @@ permission-dialog-set-change-app-link = เลือกแอปพลิเค�
 
 ## Chooser dialog
 ## Variables:
-##  $scheme - the type of link that's being opened.
-
-
-## Chooser dialog
-## Variables:
 ##  $scheme (string) - The type of link that's being opened.
 
 chooser-window =
@@ -75,7 +59,7 @@ chooser-dialog-remember = ใช้แอปพลิเคชันนี้เ
 chooser-dialog-remember-extra =
     { PLATFORM() ->
         [windows] คุณสามารถเปลี่ยนการตั้งค่านี้ได้ในตัวเลือกของ { -brand-short-name }
-       *[other] คุณสามารถเปลี่ยนการตั้งค่านี้ได้ในค่ากำหนดของ { -brand-short-name }
+       *[other] คุณสามารถเปลี่ยนการตั้งค่านี้ได้ในการกำหนดลักษณะของ { -brand-short-name }
     }
 choose-other-app-description = เลือกแอปพลิเคชันอื่น
 choose-app-btn =

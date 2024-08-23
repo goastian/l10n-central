@@ -35,11 +35,12 @@ xpinstall-prompt-install =
 # These messages are shown when a website invokes navigator.requestMIDIAccess.
 
 site-permission-install-first-prompt-midi-header = ไซต์นี้กำลังขอเข้าถึงอุปกรณ์ MIDI (Musical Instrument Digital Interface) ของคุณ ซึ่งสามารถเปิดการเข้าถึงอุปกรณ์ได้ด้วยการติดตั้งส่วนเสริม
-site-permission-install-first-prompt-midi-message = ไม่รับประกันว่าการเข้าถึงนี้จะปลอดภัย ให้ดำเนินการต่อหากคุณไว้ใจไซต์นี้เท่านั้น
+site-permission-install-first-prompt-midi-message = ไม่รับประกันว่าการเข้าถึงนี้จะปลอดภัย ให้ดำเนินการต่อถ้าคุณไว้ใจไซต์นี้เท่านั้น
 
 ##
 
 xpinstall-disabled-locked = การติดตั้งซอฟต์แวร์ถูกปิดใช้งานโดยผู้ดูแลระบบของคุณ
+xpinstall-disabled-by-policy = การติดตั้งซอฟต์แวร์ถูกปิดใช้งานโดยองค์กรของคุณ
 xpinstall-disabled = การติดตั้งซอฟต์แวร์ถูกปิดใช้งานอยู่ในขณะนี้ คลิก เปิดใช้งาน แล้วลองอีกครั้ง
 xpinstall-disabled-button =
     .label = เปิดใช้งาน
@@ -51,13 +52,24 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) ถูกปิดกั้นโดยผู้ดูแลระบบของคุณ
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = ผู้ดูแลระบบของคุณได้ป้องกันไม่ให้ไซต์นี้ขอคุณเพื่อติดตั้งซอฟต์แวร์ลงในคอมพิวเตอร์ของคุณ
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) ถูกปิดกั้นโดยองค์กรของคุณ
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = องค์กรได้ป้องกันไม่ให้ไซต์นี้ขอคุณเพื่อติดตั้งซอฟต์แวร์ลงในคอมพิวเตอร์ของคุณ
 addon-install-full-screen-blocked = ไม่อนุญาตให้ติดตั้งส่วนเสริมขณะอยู่ในหรือก่อนเข้าสู่โหมดเต็มหน้าจอ
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
 webext-perms-sideload-menu-item = เพิ่ม { $addonName } ลงใน { -brand-short-name } แล้ว
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
-webext-perms-update-menu-item = { $addonName } ต้องการสิทธิอนุญาตใหม่
+webext-perms-update-menu-item = { $addonName } จำเป็นต้องขอสิทธิ์ใหม่
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = เสร็จสิ้นการติดตั้งส่วนขยายที่นำเข้าไปยัง { -brand-short-name }
 
 ## Add-on removal warning
 
@@ -96,15 +108,15 @@ addon-confirm-install-some-unsigned-message = ข้อควรระวัง:
 addon-install-error-network-failure = ไม่สามารถดาวน์โหลดส่วนเสริมเนื่องจากการเชื่อมต่อล้มเหลว
 addon-install-error-incorrect-hash = ไม่สามารถติดตั้งส่วนเสริมเนื่องจากไม่ตรงกับส่วนเสริมที่ { -brand-short-name } ต้องการ
 addon-install-error-corrupt-file = ไม่สามารถติดตั้งส่วนเสริมที่ดาวน์โหลดจากไซต์นี้เนื่องจากส่วนเสริมดูเหมือนจะเสียหาย
-addon-install-error-file-access = ไม่สามารถติดตั้ง { $addonName } เนื่องจาก { -brand-short-name } ไม่สามารถแก้ไขไฟล์ที่จำเป็น
+addon-install-error-file-access = ไม่สามารถติดตั้ง { $addonName } เนื่องจาก { -brand-short-name } ไม่สามารถปรับเปลี่ยนไฟล์ที่จำเป็นได้
 addon-install-error-not-signed = { -brand-short-name } ได้ป้องกันไม่ให้ไซต์นี้ติดตั้งส่วนเสริมที่ไม่ได้รับการยืนยัน
 addon-install-error-invalid-domain = ไม่สามารถติดตั้งส่วนเสริม { $addonName } จากตำแหน่งที่ตั้งนี้ได้
 addon-local-install-error-network-failure = ไม่สามารถติดตั้งส่วนเสริมนี้เนื่องจากข้อผิดพลาดระบบไฟล์
 addon-local-install-error-incorrect-hash = ไม่สามารถติดตั้งส่วนเสริมนี้เนื่องจากไม่ตรงกับส่วนเสริมที่ { -brand-short-name } ต้องการ
 addon-local-install-error-corrupt-file = ไม่สามารถติดตั้งส่วนเสริมนี้เนื่องจากส่วนเสริมดูเหมือนจะเสียหาย
-addon-local-install-error-file-access = ไม่สามารถติดตั้ง { $addonName } เนื่องจาก { -brand-short-name } ไม่สามารถแก้ไขไฟล์ที่จำเป็น
+addon-local-install-error-file-access = ไม่สามารถติดตั้ง { $addonName } เนื่องจาก { -brand-short-name } ไม่สามารถปรับเปลี่ยนไฟล์ที่จำเป็นได้
 addon-local-install-error-not-signed = ไม่สามารถติดตั้งส่วนเสริมนี้เนื่องจากส่วนเสริมไม่ได้รับการยืนยัน
 # Variables:
 #   $appVersion (String): the application version.
-addon-install-error-incompatible = ไม่สามารถติดตั้ง { $addonName } เนื่องจากเข้ากันไม่ได้กับ { -brand-short-name } { $appVersion }
+addon-install-error-incompatible = ไม่สามารถติดตั้ง { $addonName } เนื่องจากใช้ร่วมกับ { -brand-short-name } { $appVersion } ไม่ได้
 addon-install-error-blocklisted = ไม่สามารถติดตั้ง { $addonName } เนื่องจากมีความเสี่ยงสูงที่จะก่อให้เกิดปัญหาด้านเสถียรภาพหรือความปลอดภัย

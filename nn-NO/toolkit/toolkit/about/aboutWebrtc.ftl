@@ -12,21 +12,37 @@ about-webrtc-document-title = WebRTC-internt
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = lagra about:webrtc som
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Vis attlatne PeerConnections
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Gøym attlatne PeerConnections
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = AEC-logging
 about-webrtc-aec-logging-off-state-label = Start AEC-logging
 about-webrtc-aec-logging-on-state-label = Stopp AEC-logging
 about-webrtc-aec-logging-on-state-msg = AEC-loggning påslått (prat med den som ringjer i nokre minutt og stopp så opptak)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Automatisk oppdatering
+about-webrtc-aec-logging-toggled-on-state-msg = AEC-loggning påslått (prat med den som ringjer i nokre minutt og stopp så opptak)
+about-webrtc-aec-logging-unavailable-sandbox = Miljøvariabelen MOZ_DISABLE_CONTENT_SANDBOX=1 er påkravd for å eksportere AEC-loggar. Still berre inn denne variabelen dersom du forstår dei moglege risikoane.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Opptekne loggfiler finn ein i: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Automatisk oppdatering
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Oppdater
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
 about-webrtc-peerconnection-id-label = PeerConnection-ID:
+# The number of DataChannels that a PeerConnection has opened
+about-webrtc-data-channels-opened-label = Opna datakanalar:
+# The number of once open DataChannels that a PeerConnection has closed
+about-webrtc-data-channels-closed-label = Attlatne datakanalar:
 
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
@@ -81,6 +97,10 @@ about-webrtc-debug-mode-msg-label = Feilsøkingsmodus
 about-webrtc-debug-mode-off-state-label = Start feilsøkingsmodus
 about-webrtc-debug-mode-on-state-label = Stopp feilsøkingsmodus
 about-webrtc-stats-heading = Statistikk for økta
+about-webrtc-enable-logging-label = Aktiver WebRTC-loggførehandsinnstilling
+about-webrtc-peerconnections-section-heading = RTCPeerConnection-statistikk
+about-webrtc-peerconnections-section-show-msg = Vis RTCPeerConnection-statistikk
+about-webrtc-peerconnections-section-hide-msg = Skjul RTCPeerConnection-statistikk
 about-webrtc-stats-clear = Slett historikk
 about-webrtc-log-heading = Tilkoplingslogg
 about-webrtc-log-clear = Slett logg
@@ -88,7 +108,12 @@ about-webrtc-log-show-msg = vis logg
     .title = trykk for å utvida denne delen
 about-webrtc-log-hide-msg = gøym logg
     .title = trykk for å falda saman denne delen
+about-webrtc-log-section-show-msg = Vis logg
+    .title = Trykk for å utvida denne delen
+about-webrtc-log-section-hide-msg = Gøym logg
+    .title = Trykk for å falda saman denne delen
 about-webrtc-copy-report-button = Kopier rapport
+about-webrtc-copy-report-history-button = Kopier rapporthistorikk
 
 ## These are used to display a header for a PeerConnection.
 ## Variables:
@@ -99,6 +124,14 @@ about-webrtc-copy-report-button = Kopier rapport
 
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (attlaten) { $now }
+
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Send/Ta imot: { $codecs }
+about-webrtc-short-send-direction = Send: { $codecs }
+about-webrtc-short-receive-direction = Ta imot: { $codecs }
 
 ##
 
@@ -111,11 +144,19 @@ about-webrtc-raw-cand-show-msg = vis raw-kandidatar
     .title = trykk for å utvida denne delen
 about-webrtc-raw-cand-hide-msg = Gøym raw-kandidatar
     .title = trykk for å falda saman denne delen
+about-webrtc-raw-cand-section-show-msg = Vis raw-kandidatar
+    .title = Trykk for å utvida denne delen
+about-webrtc-raw-cand-section-hide-msg = Gøym raw-kandidatar
+    .title = Trykk for å falda saman denne delen
 about-webrtc-priority = Prioritet
 about-webrtc-fold-show-msg = vis detaljar
     .title = trykk for å utvida denne delen
 about-webrtc-fold-hide-msg = gøym detaljar
     .title = trykk for å falda saman denne delen
+about-webrtc-fold-default-show-msg = Vis detaljar
+    .title = Trykk for å utvida denne delen
+about-webrtc-fold-default-hide-msg = Gøym detaljar
+    .title = Trykk for å falda saman denne delen
 about-webrtc-dropped-frames-label = Mista rammer:
 about-webrtc-discarded-packets-label = Avviste pakkar:
 about-webrtc-decoder-label = Avkodar
@@ -154,6 +195,17 @@ about-webrtc-configuration-element-provided = Oppgitt
 about-webrtc-configuration-element-not-provided = Ikkje oppgitt
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Eigendefinerte WebRTC-innstillingar
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Brukarmodifisert WebRTC-konfigurasjon
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Vis brukarmodifisert konfigurasjon
+about-webrtc-user-modified-configuration-hide-msg = Skjul brukarmodifisert konfigurasjon
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Estimert bandbreidde
 # The ID of the MediaStreamTrack
@@ -184,9 +236,11 @@ about-webrtc-save-page-msg = side lagra til: { $path }
 about-webrtc-debug-mode-off-state-msg = sporingslogg finn ein på: { $path }
 about-webrtc-debug-mode-on-state-msg = feilsøkingsmodus påslått, trace log at: { $path }
 about-webrtc-aec-logging-off-state-msg = opptekne loggfiler finn ein i: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Side lagra til: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.
@@ -258,6 +312,14 @@ about-webrtc-sdp-set-timestamp = Tidsstempel { NUMBER($timestamp, useGrouping: "
 
 about-webrtc-show-msg-sdp = Vis SDP
 about-webrtc-hide-msg-sdp = Skjul SDP
+
+## These are displayed on the button that shows or hides the Media Context information disclosure.
+## The Media Context is the set of preferences and detected capabilities that informs
+## the negotiated CODEC settings.
+
+about-webrtc-media-context-show-msg = Vis media-kontekst
+about-webrtc-media-context-hide-msg = Gøym medie-kontekst
+about-webrtc-media-context-heading = Medie-kontekst
 
 ##
 

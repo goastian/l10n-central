@@ -14,13 +14,6 @@ onboarding-welcome-header = Chào mừng đến với { -brand-short-name }
 onboarding-start-browsing-button-label = Bắt đầu duyệt web
 onboarding-not-now-button-label = Không phải bây giờ
 mr1-onboarding-get-started-primary-button-label = Bắt đầu
-mr1-onboarding-welcome-header = Chào mừng đến với { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Đặt { -brand-short-name } làm trình duyệt mặc định của tôi
-    .title = Đặt { -brand-short-name } làm trình duyệt mặc định và ghim vào thanh tác vụ
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Đặt { -brand-short-name } làm trình duyệt mặc định của tôi
-mr1-onboarding-set-default-secondary-button-label = Không phải bây giờ
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,25 +34,6 @@ mr1-return-to-amo-add-extension-label = Thêm { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Bắt đầu: { $current } của { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = Nó bắt đầu từ đây
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Nhà thiết kế nội thất, người hâm mộ Firefox
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -70,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Tiến trình: bước { $current }/{ $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Tắt hoạt ảnh
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] Giữ { -brand-short-name } trong Dock của bạn để dễ dàng truy cập
-       *[other] Ghim { -brand-short-name } vào thanh tác vụ của bạn để dễ dàng truy cập
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Thêm vào thanh Dock
-       *[other] Ghim vào thanh tác vụ
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Đăng nhập
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = Đặt { -brand-short-name } làm trình duyệt mặc định của bạn
-mr1-onboarding-default-subtitle = Đặt tốc độ, an toàn và quyền riêng tư vào chế độ tự động.
-mr1-onboarding-default-primary-button-label = Đặt làm trình duyệt mặc định
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Mang theo tất cả bên bạn
-mr1-onboarding-import-subtitle = Nhập mật khẩu của bạn, <br/>dấu trang và hơn thế nữa.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Nhập từ { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Nhập từ trình duyệt trước
-mr1-onboarding-import-secondary-button-label = Không phải bây giờ
-mr2-onboarding-colorway-header = Cuộc sống đầy màu sắc
-mr2-onboarding-colorway-subtitle = Các phối màu mới sống động. Có sẵn trong một thời gian giới hạn.
-mr2-onboarding-colorway-primary-button-label = Lưu phối màu
-mr2-onboarding-colorway-secondary-button-label = Không phải bây giờ
-mr2-onboarding-colorway-label-soft = Mềm
-mr2-onboarding-colorway-label-balanced = Cân bằng
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Đậm
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Tự động
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Mặc định
 mr1-onboarding-theme-header = Biến nó thành của riêng bạn
 mr1-onboarding-theme-subtitle = Cá nhân hóa { -brand-short-name } với một chủ đề.
-mr1-onboarding-theme-primary-button-label = Lưu chủ đề
 mr1-onboarding-theme-secondary-button-label = Không phải bây giờ
+newtab-wallpaper-onboarding-title = Thử một chút màu sắc
+newtab-wallpaper-onboarding-subtitle = Chọn hình nền để mang lại diện mạo mới cho thẻ mới của bạn.
+newtab-wallpaper-onboarding-primary-button-label = Đặt hình nền
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Chủ đề hệ thống
 mr1-onboarding-theme-label-light = Sáng
@@ -181,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Sử dụng giao diện động, đầy màu sắc
         cho các nút, menu và cửa sổ
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Sử dụng phối màu này.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Sử dụng phối màu này.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Khám phá các phối màu { $colorwayName }.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Khám phá các phối màu { $colorwayName }.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Khám phá các chủ đề mặc định.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Khám phá các chủ đề mặc định.
 
@@ -209,14 +117,6 @@ mr2-onboarding-default-theme-label = Khám phá các chủ đề mặc định.
 mr2-onboarding-thank-you-header = Cảm ơn bạn đã chọn chúng tôi
 mr2-onboarding-thank-you-text = { -brand-short-name } là một trình duyệt độc lập được hỗ trợ bởi một tổ chức phi lợi nhuận. Cùng nhau, chúng ta đang làm cho web an toàn hơn, lành mạnh hơn và riêng tư hơn.
 mr2-onboarding-start-browsing-button-label = Bắt đầu duyệt web
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -432,4 +332,36 @@ onboarding-device-migration-image-alt =
     .aria-label = Một con cáo trên màn hình máy tính xách tay đang vẫy tay. Máy tính xách tay có một thiết bị chuột cắm vào nó.
 onboarding-device-migration-title = Chào mừng trở lại!
 onboarding-device-migration-subtitle = Đăng nhập vào { -fxaccount-brand-name(capitalization: "sentence") } của bạn để mang theo dấu trang, mật khẩu và lịch sử của bạn trên thiết bị mới.
+onboarding-device-migration-subtitle2 = Đăng nhập vào tài khoản của bạn để mang theo dấu trang, mật khẩu và lịch sử trên thiết bị mới của bạn.
 onboarding-device-migration-primary-button-label = Đăng nhập
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Chúng tôi thích việc giữ an toàn cho bạn
+onboarding-easy-setup-security-and-privacy-subtitle = Trình duyệt được hỗ trợ phi lợi nhuận của chúng tôi giúp ngăn các công ty bí mật theo dõi bạn trên web.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Luôn được mã hóa khi bạn chuyển đổi giữa các thiết bị
+onboarding-mobile-download-security-and-privacy-subtitle = Khi bạn đồng bộ hóa, { -brand-short-name } sẽ mã hóa mật khẩu, dấu trang, v.v. Ngoài ra, bạn có thể lấy các thẻ từ các thiết bị khác của mình.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } luôn ủng hộ bạn
+onboarding-gratitude-security-and-privacy-subtitle = Cảm ơn bạn đã sử dụng { -brand-short-name }, được hỗ trợ bởi Mozilla Foundation. Với sự hỗ trợ của bạn, chúng tôi đang nỗ lực làm cho Internet an toàn hơn và dễ truy cập hơn cho mọi người.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Bạn đã sử dụng { -brand-short-name } được bao lâu rồi?
+onboarding-new-user-familiarity-based-survey-title = Bạn quen thuộc với { -brand-short-name } đến mức nào?
+onboarding-new-user-survey-subtitle = Phản hồi của bạn giúp { -brand-short-name } trở nên tốt hơn nữa.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Tiếp theo
+onboarding-new-user-survey-legal-link-label = Bằng cách chọn “{ onboarding-new-user-survey-next-button-label },” bạn đã đồng ý với <a data-l10n-name="privacy_notice">thông báo về quyền riêng tư</a> của { -brand-product-name }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Tôi là người mới
+onboarding-new-user-survey-time-based-option-2 = Ít hơn 1 tháng
+onboarding-new-user-survey-time-based-option-3 = Hơn 1 tháng, thường xuyên
+onboarding-new-user-survey-time-based-option-4 = Hơn 1 tháng, thỉnh thoảng
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Tôi là người mới
+onboarding-new-user-survey-familiarity-based-option-2 = Tôi đã sử dụng nó nhiều lúc
+onboarding-new-user-survey-familiarity-based-option-3 = Tôi rất quen thuộc với nó
+onboarding-new-user-survey-familiarity-based-option-4 = Tôi có dùng nó trước đây, nhưng đã rất lâu rồi

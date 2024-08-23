@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = 帳號
+    .tooltiptext = 帳號
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = 將本頁加入書籤
-    .accesskey = m
-    .tooltiptext = 將本頁加入書籤
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = 將頁面加入書籤
-    .accesskey = m
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = 編輯書籤
-    .accesskey = m
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = 將本頁加入書籤
-    .accesskey = m
-    .tooltiptext = 將本頁加入書籤 ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = 編輯此書籤
-    .accesskey = m
-    .tooltiptext = 編輯此書籤
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = 編輯此書籤
-    .accesskey = m
-    .tooltiptext = 編輯此書籤 ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = 將頁面加入書籤…
     .accesskey = m
@@ -126,7 +100,7 @@ main-context-menu-bookmark-page =
 # Cannot be shown at the same time as main-context-menu-edit-bookmark-mac,
 # so should probably have the same access key if possible.
 main-context-menu-bookmark-page-mac =
-    .label = 將頁面加入書籤
+    .label = 將頁面加入書籤…
     .accesskey = m
 # This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-bookmark-page-mac,
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = 用新隱私視窗開啟鏈結
     .accesskey = P
-main-context-menu-bookmark-link =
-    .label = 將鏈結加入書籤
-    .accesskey = B
 main-context-menu-bookmark-link-2 =
     .label = 將鏈結加入書籤…
     .accesskey = B
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = 複製鏈結
     .accesskey = L
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = 複製不含追蹤碼的鏈結
+    .accesskey = y
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = 郵寄音訊…
     .accesskey = a
-main-context-menu-plugin-play =
-    .label = 啟用此外掛程式
-    .accesskey = c
-main-context-menu-plugin-hide =
-    .label = 隱藏此外掛程式
-    .accesskey = H
 main-context-menu-save-to-pocket =
     .label = 將頁面儲存至 { -pocket-brand-name }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = 使用已存的登入資訊
     .accesskey = o
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = 使用已存的密碼
     .accesskey = o
@@ -341,6 +312,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = S
 main-context-menu-manage-logins2 =
     .label = 管理登入資訊
+    .accesskey = M
+main-context-menu-manage-passwords =
+    .label = 管理密碼
     .accesskey = M
 main-context-menu-keyword =
     .label = 設為用關鍵字搜尋…
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = 重新載入頁框
     .accesskey = R
-main-context-menu-frame-bookmark =
-    .label = 將此頁框加入書籤
-    .accesskey = m
 main-context-menu-frame-add-bookmark =
     .label = 將頁框加入書籤…
     .accesskey = m
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = 檢視頁框資訊
     .accesskey = I
-main-context-menu-print-selection =
-    .label = 僅列印選取區域
-    .accesskey = r
 main-context-menu-print-selection-2 =
     .label = 列印選取區域…
     .accesskey = r

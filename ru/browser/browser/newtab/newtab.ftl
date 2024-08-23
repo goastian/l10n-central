@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Новая вкладка
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Добавить поисковую �
 newtab-topsites-add-shortcut-header = Новый ярлык
 newtab-topsites-edit-topsites-header = Изменить сайт из топа
 newtab-topsites-edit-shortcut-header = Изменить ярлык
+newtab-topsites-add-shortcut-label = Добавить ярлык
 newtab-topsites-title-label = Заголовок
 newtab-topsites-title-input =
     .placeholder = Введите название
@@ -131,7 +132,7 @@ newtab-menu-bookmark = Добавить в закладки
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
-newtab-menu-copy-download-link = Скопировать ссылку на загрузку
+newtab-menu-copy-download-link = Копировать ссылку на загрузку
 newtab-menu-go-to-download-page = Перейти на страницу загрузки
 newtab-menu-remove-download = Удалить из истории
 
@@ -198,6 +199,7 @@ newtab-section-header-recent-activity = Последние действия
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Рекомендовано { $provider }
+newtab-section-header-stories = Истории, наводящие на размышления
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -206,6 +208,8 @@ newtab-empty-section-highlights = Начните веб-сёрфинг, и мы 
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Вы всё прочитали. Зайдите попозже, чтобы увидеть больше лучших статей от { $provider }. Не можете ждать? Выберите популярную тему, чтобы найти больше интересных статей со всего Интернета.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Вы всё прочитали. Зайдите попозже, чтобы увидеть больше статей. Не можете подождать? Выберите популярную тему, чтобы найти больше интересных статей со всего Интернета.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -227,21 +231,21 @@ newtab-pocket-cta-button = Загрузить { -pocket-brand-name }
 newtab-pocket-cta-text = Сохраняйте интересные статьи в { -pocket-brand-name } и подпитывайте свой ум увлекательным чтением.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } является частью семейства { -brand-product-name }
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Сохранить в { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Сохранено в { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Загрузить больше историй
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Вы всё прочитали!
-newtab-pocket-last-card-desc = Зайдите попозже, чтобы увидеть больше.
-newtab-pocket-last-card-image =
-    .alt = Вы всё прочитали
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Сохранить
 newtab-pocket-saved = Сохранено
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Больше похожих
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Не для меня
+newtab-toast-thumbs-up-or-down = Спасибо. Ваш отзыв поможет нам улучшить вашу ленту.
+newtab-toast-dismiss-button =
+    .title = Убрать
+    .aria-label = Убрать
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -258,6 +262,9 @@ newtab-error-fallback-refresh-link = Обновить страницу, чтоб
 
 newtab-custom-shortcuts-title = Ярлыки
 newtab-custom-shortcuts-subtitle = Сохранённые или посещаемые сайты
+newtab-custom-shortcuts-toggle =
+    .label = Ярлыки
+    .description = Сохранённые или посещаемые сайты
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -269,9 +276,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Спонсируемые ярлыки
 newtab-custom-pocket-title = Рекомендуемые { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Особый контент, курируемый { -pocket-brand-name }, частью семейства { -brand-product-name }
+newtab-custom-stories-toggle =
+    .label = Рекомендуемые истории
+    .description = Исключительный контент, курируемый семейством { -brand-product-name }
 newtab-custom-pocket-sponsored = Статьи спонсоров
 newtab-custom-pocket-show-recent-saves = Отображать последние сохранения
 newtab-custom-recent-title = Последние действия
 newtab-custom-recent-subtitle = Подборка недавних сайтов и контента
+newtab-custom-recent-toggle =
+    .label = Последние действия
+    .description = Подборка недавних сайтов и контента
+newtab-custom-weather-toggle =
+    .label = Погода
+    .description = Краткий прогноз на сегодня
 newtab-custom-close-button = Закрыть
 newtab-custom-settings = Управление дополнительными настройками
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Обои
+newtab-wallpaper-reset = Восстановить по умолчанию
+newtab-wallpaper-light-red-panda = Красная панда
+newtab-wallpaper-light-mountain = Белая гора
+newtab-wallpaper-light-sky = Небо с фиолетовыми и розовыми облаками
+newtab-wallpaper-light-color = Синие, розовые и жёлтые формы
+newtab-wallpaper-light-landscape = Горный пейзаж из синего дыма
+newtab-wallpaper-light-beach = Пляж с пальмами
+newtab-wallpaper-dark-aurora = Северное сияние
+newtab-wallpaper-dark-color = Красные и синие формы
+newtab-wallpaper-dark-panda = Красная панда, прячущаяся в лесу
+newtab-wallpaper-dark-sky = Городской пейзаж с ночным небом
+newtab-wallpaper-dark-mountain = Горный пейзаж
+newtab-wallpaper-dark-city = Фиолетовый городской пейзаж
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Сплошные цвета
+newtab-wallpaper-blue = Синий
+newtab-wallpaper-light-blue = Голубой
+newtab-wallpaper-light-purple = Светло-фиолетовый
+newtab-wallpaper-light-green = Светло-зеленый
+newtab-wallpaper-green = Зелёный
+newtab-wallpaper-beige = Бежевый
+newtab-wallpaper-yellow = Жёлтый
+newtab-wallpaper-orange = Оранжевый
+newtab-wallpaper-pink = Розовый
+newtab-wallpaper-light-pink = Светло-розовый
+newtab-wallpaper-red = Красный
+newtab-wallpaper-dark-blue = Темно-синий
+newtab-wallpaper-dark-purple = Темно-фиолетовый
+newtab-wallpaper-dark-green = Темно-зеленый
+newtab-wallpaper-brown = Коричневый
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Абстракция
+newtab-wallpaper-abstract-green = Зеленые формы
+newtab-wallpaper-abstract-blue = Синие формы
+newtab-wallpaper-abstract-purple = Фиолетовые формы
+newtab-wallpaper-abstract-orange = Оранжевые формы
+newtab-wallpaper-gradient-orange = Градиент оранжевого и розового
+newtab-wallpaper-abstract-blue-purple = Синие и фиолетовые формы
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Фотографии
+newtab-wallpaper-beach-at-sunrise = Пляж на восходе
+newtab-wallpaper-beach-at-sunset = Пляж на закате
+newtab-wallpaper-storm-sky = Грозовое небо
+newtab-wallpaper-sky-with-pink-clouds = Небо с розовыми облаками
+newtab-wallpaper-red-panda-yawns-in-a-tree = Красная панда зевает на дереве
+newtab-wallpaper-white-mountains = Белые горы
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Фото <a data-l10n-name="name-link">{ $author_string }</a> на <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Попробуйте всплеск цвета
+newtab-wallpaper-feature-highlight-content = Обновите вид Новой вкладки с помощью обоев.
+newtab-wallpaper-feature-highlight-button = Понятно
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Убрать
+    .aria-label = Закрыть окно
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Посмотреть прогноз в { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ На правах рекламы
+newtab-weather-menu-change-location = Изменить местоположение
+newtab-weather-change-location-search-input = Поиск местоположения
+newtab-weather-menu-weather-display = Отображение погоды
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Простой
+newtab-weather-menu-change-weather-display-simple = Переключиться в простой вид
+newtab-weather-menu-weather-display-option-detailed = Подробный
+newtab-weather-menu-change-weather-display-detailed = Переключиться в подробный вид
+newtab-weather-menu-temperature-units = Единицы измерения температуры
+newtab-weather-menu-temperature-option-fahrenheit = Фаренгейт
+newtab-weather-menu-temperature-option-celsius = Цельсий
+newtab-weather-menu-change-temperature-units-fahrenheit = Переключиться на градусы Фаренгейта
+newtab-weather-menu-change-temperature-units-celsius = Переключиться на градусы Цельсия
+newtab-weather-menu-hide-weather = Скрыть погоду на новой вкладке
+newtab-weather-menu-learn-more = Подробнее
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Данные о погоде сейчас недоступны.

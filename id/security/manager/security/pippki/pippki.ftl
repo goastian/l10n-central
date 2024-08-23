@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = Saat ini Anda berada pada mode FIPS. FIPS 
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = Setel Ulang Sandi Utama
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = Setel Ulang Sandi Utama
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = Sandi Utama telah disetel ulang.
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = Mengunduh Sertifikat
-    .style = width: 46em
 download-cert-window2 =
     .title = Mengunduh Sertifikat
     .style = min-width: 46em
@@ -56,11 +50,38 @@ download-cert-view-text = Periksa sertifikat CA
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = Permintaan Identifikasi Pengguna
 client-auth-site-description = Situs telah meminta identifikasi Anda dengan sertifikat:
 client-auth-choose-cert = Pilih sertifikat untuk mewakili proses identifikasi:
 client-auth-cert-details = Detail sertifikat yang dipilih:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = Diterbitkan untuk: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = Nomor serial: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = Valid dari { $notBefore } hingga { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = Penggunaan Kunci: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = Alamat surel: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = Diterbitkan oleh: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = Disimpan di: { $storedOn }
+client-auth-cert-remember-box =
+    .label = Ingat pilihan ini
 
 ## Set password (p12) dialog
 
@@ -72,13 +93,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Sandi cadangan sertifikat (ulangi):
 set-password-reminder = Penting: Jika Anda lupa sandi cadangan sertifikat, Anda tidak akan dapat mengembalikan cadangan ini nantinya. Mohon disimpan di lokasi yang aman.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = Autentikasi Token Terproteksi
-protected-auth-msg = Silakan token berikut diautentikasi. Metode autentikasi bergantung pada tipe token Anda.
-protected-auth-token = Token:
 
 ## Protected authentication alert
 

@@ -14,13 +14,6 @@ onboarding-welcome-header = Üdvözli a { -brand-short-name }
 onboarding-start-browsing-button-label = Böngészés megkezdése
 onboarding-not-now-button-label = Most nem
 mr1-onboarding-get-started-primary-button-label = Kezdő lépések
-mr1-onboarding-welcome-header = Üdvözli a { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = A { -brand-short-name } elsődleges böngészővé tétele
-    .title = Beállítja elsődleges böngészőként a { -brand-short-name(case: "accusative") }, és kitűzi a tálcára
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = A { -brand-short-name } alapértelmezett böngészővé tétele
-mr1-onboarding-set-default-secondary-button-label = Most nem
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,25 +34,6 @@ mr1-return-to-amo-add-extension-label = { $addon-name } hozzáadása
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Első lépések: { $current }. képernyő / { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = A tűz itt kezdődik
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio – Bútortevező, Firefox rajongó
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -70,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Haladás: { $current }. / { $total } lépés
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Animációk kikapcsolása
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] A könnyű hozzáférés érdekében tartsa a { -brand-short-name(case: "accusative") } a Dokkon
-       *[other] A könnyű hozzáférés érdekében rögzítse a { -brand-short-name(case: "accusative") } a tálcára
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Dokkban tartás
-       *[other] Rögzítés a tálcára
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Bejelentkezés
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = A { -brand-short-name } alapértelmezetté tétele
-mr1-onboarding-default-subtitle = Tegye robotpilótára a sebességet, a biztonságot és az adatvédelmet
-mr1-onboarding-default-primary-button-label = Alapértelmezett böngészővé tétel
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Hozzon mindent magával
-mr1-onboarding-import-subtitle = Importálja jelszavait, <br/>könyvjelzőit és még sok mást.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importálás innen: { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importálás az előző böngészőből
-mr1-onboarding-import-secondary-button-label = Most nem
-mr2-onboarding-colorway-header = Az élet színesben
-mr2-onboarding-colorway-subtitle = Élénk új színvilágok. Korlátozott ideig elérhető.
-mr2-onboarding-colorway-primary-button-label = Színvilág mentése
-mr2-onboarding-colorway-secondary-button-label = Most nem
-mr2-onboarding-colorway-label-soft = Puha
-mr2-onboarding-colorway-label-balanced = Kiegyensúlyozott
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Élénk
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Automatikus
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Alapértelmezett
 mr1-onboarding-theme-header = Tegye a sajátjává
 mr1-onboarding-theme-subtitle = A { -brand-short-name } személyre szabása egy témával.
-mr1-onboarding-theme-primary-button-label = Téma mentése
 mr1-onboarding-theme-secondary-button-label = Most nem
+newtab-wallpaper-onboarding-title = Próbáljon ki egy kis színt
+newtab-wallpaper-onboarding-subtitle = Válasszon háttérképet, hogy az Új lap friss külsőt kapjon.
+newtab-wallpaper-onboarding-primary-button-label = Háttérkép beállítása
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Rendszertéma
 mr1-onboarding-theme-label-light = Világos
@@ -181,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Dinamikus, színes téma használata a
         gombokhoz, menükhöz és ablakokhoz.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Ezen színvilág használata.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Ezen színvilág használata.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Fedezze fel a(z) { $colorwayName } színvilágokat.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Fedezze fel a(z) { $colorwayName } színvilágokat.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Fedezze fel az alapértelmezett témákat.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Fedezze fel az alapértelmezett témákat.
 
@@ -209,14 +117,6 @@ mr2-onboarding-default-theme-label = Fedezze fel az alapértelmezett témákat.
 mr2-onboarding-thank-you-header = Köszönjük, hogy minket választott
 mr2-onboarding-thank-you-text = A { -brand-short-name } egy független böngésző, melyet egy nonprofit szervezet támogat. Együtt biztonságosabbá, egészségesebbé és privátabbá tesszük a világhálót.
 mr2-onboarding-start-browsing-button-label = Böngészés megkezdése
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -432,4 +332,36 @@ onboarding-device-migration-image-alt =
     .aria-label = Egy róka integetett egy laptop képernyőjén. A laptophoz egér van csatlakoztatva.
 onboarding-device-migration-title = Üdvözöljük újra!
 onboarding-device-migration-subtitle = Jelentkezzen be a { -fxaccount-brand-name }jába, hogy könyvjelzőit, jelszavait és előzményeit magával vigye az új eszközén.
+onboarding-device-migration-subtitle2 = Jelentkezzen be a fiókjába, hogy áthozza a könyvjelzőit, jelszavait és előzményeit az új eszközére.
 onboarding-device-migration-primary-button-label = Bejelentkezés
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Szeretjük biztonságban tartani Önt
+onboarding-easy-setup-security-and-privacy-subtitle = A nonprofit szervezet által támogatott böngészőnk segít megakadályozni, hogy a cégek titokban kövessék Önt a weben.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Maradjon titkosítva, amikor az eszközök között vált
+onboarding-mobile-download-security-and-privacy-subtitle = Ha befejeződik a szinkronizálás, akkor a { -brand-short-name } titkosítja jelszavait, könyvjelzőit és egyebeit. Továbbá átvehet lapokat a többi eszközéről.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = Számíthat a { -brand-short-name }ra
+onboarding-gratitude-security-and-privacy-subtitle = Köszönjük, hogy a { -brand-short-name(case: "accusative") } használja, amelyet a Mozilla Alapítvány támogat. Az Ön támogatásával azon dolgozunk, hogy az internetet mindenki számára biztonságosabbá, és mindenki számára hozzáférhetőbbé tegyük.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Mióta használja a { -brand-short-name(case: "accusative") }?
+onboarding-new-user-familiarity-based-survey-title = Mennyire ismeri jól a { -brand-short-name(case: "accusative") }?
+onboarding-new-user-survey-subtitle = Visszajelzése segít, hogy a { -brand-short-name } még jobb legyen.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Tovább
+onboarding-new-user-survey-legal-link-label = A „{ onboarding-new-user-survey-next-button-label }” kiválasztásával elfogadja a { -brand-product-name } <a data-l10n-name="privacy_notice">Adatvédelmi nyilatkozatát</a >
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Teljesen új vagyok
+onboarding-new-user-survey-time-based-option-2 = Kevesebb mint 1 hónapja
+onboarding-new-user-survey-time-based-option-3 = Több mint 1 hónapja, rendszeresen
+onboarding-new-user-survey-time-based-option-4 = Több mint 1 hónapja, alkalmanként
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Teljesen új vagyok
+onboarding-new-user-survey-familiarity-based-option-2 = Használtam valamennyit
+onboarding-new-user-survey-familiarity-based-option-3 = Jól ismerem
+onboarding-new-user-survey-familiarity-based-option-4 = Régebben használtam, de ennek már egy ideje

@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Добавить вкладки в закладки…
     .accesskey = а
-bookmark-tab =
-    .label = Добавить вкладку в закладки
-    .accesskey = а
 tab-context-bookmark-tab =
     .label = Добавить вкладку в закладки…
     .accesskey = в
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Закрыть несколько вкладок
     .accesskey = ы
+tab-context-close-duplicate-tabs =
+    .label = Закрыть дублирующиеся вкладки
+    .accesskey = г
 tab-context-share-url =
     .label = Поделиться
     .accesskey = д
@@ -109,7 +109,6 @@ tab-context-move-tabs =
            *[many] { $tabCount } вкладок
         }
     .accesskey = м
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

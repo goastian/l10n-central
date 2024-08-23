@@ -5,15 +5,24 @@
 toolbar-button-firefox-view =
     .label = { -firefoxview-brand-name }
     .tooltiptext = { -firefoxview-brand-name }
+toolbar-button-firefox-view-2 =
+    .label = { -firefoxview-brand-name }
+    .tooltiptext = 最近ブラウジングしたページをすべてのウインドウと他の端末から表示します
 menu-tools-firefox-view =
     .label = { -firefoxview-brand-name }
     .accesskey = F
 firefoxview-page-title = { -firefoxview-brand-name }
+firefoxview-page-heading =
+    .heading = { -firefoxview-brand-name }
+firefoxview-page-label =
+    .label = { -firefoxview-brand-name }
 firefoxview-close-button =
     .title = 閉じる
     .aria-label = 閉じる
+firefoxview-empty-state-icon =
+    .alt = 注意:
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
-firefoxview-just-now-timestamp = たった今
+firefoxview-just-now-timestamp = 直前
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
 firefoxview-tabpickup-header = 他端末のタブ
 firefoxview-tabpickup-description = 他の端末からページを開きます。
@@ -40,13 +49,16 @@ firefoxview-tabpickup-synctabs-primarybutton = 開いているタブを同期
 firefoxview-syncedtabs-synctabs-header = 同期設定を更新する
 firefoxview-syncedtabs-synctabs-description = 他の端末からタブを表示するには、開いているタブを同期する必要があります。
 firefoxview-syncedtabs-synctabs-checkbox = 開いているタブの同期を許可する
+firefoxview-syncedtabs-loading-header = 同期処理中
+firefoxview-syncedtabs-loading-description = 同期が完了すると他の端末で開いているタブが表示されます。後で確認してください。
 firefoxview-tabpickup-fxa-admin-disabled-header = あなたの所属組織が同期を無効化しています
-firefoxview-tabpickup-fxa-admin-disabled-description = { -brand-short-name } が端末間のタブ共有を利用できません。あなたの所属組織の管理者が同期を無効にしています。
+firefoxview-tabpickup-fxa-admin-disabled-description = { -brand-short-name } が端末間のタブ共有を利用できません。システム管理者が同期を無効にしています。
+firefoxview-tabpickup-fxa-disabled-by-policy-description = { -brand-short-name } が端末間のタブ共有を利用できません。所属組織が同期を無効にしています。
 firefoxview-tabpickup-network-offline-header = インターネット接続を確認してください
 firefoxview-tabpickup-network-offline-description = ファイアウォールまたはプロキシーを利用している場合は、{ -brand-short-name } にウェブへのアクセスが許可されているか確認してください。
 firefoxview-tabpickup-network-offline-primarybutton = 再試行
 firefoxview-tabpickup-sync-error-header = 同期に問題が発生しています
-firefoxview-tabpickup-generic-sync-error-description = { -brand-short-name } はただいま同期サービスに接続できません。数分後にやり直してください。
+firefoxview-tabpickup-generic-sync-error-description = { -brand-short-name } はただいま同期サービスに接続できません。数分後に再度試してください。
 firefoxview-tabpickup-sync-error-primarybutton = 再試行
 firefoxview-tabpickup-sync-disconnected-header = 同期をオンにして続行
 firefoxview-tabpickup-sync-disconnected-description = タブを取り出すには、{ -brand-short-name } での同期を許可する必要があります。
@@ -58,6 +70,7 @@ firefoxview-tabpickup-password-locked-primarybutton = マスターパスワー�
 firefoxview-syncedtab-password-locked-link = <a data-l10n-name="syncedtab-password-locked-link">詳細情報</a>
 firefoxview-tabpickup-signed-out-header = ログインして再接続
 firefoxview-tabpickup-signed-out-description = 再接続してタブを取り出すには、{ -fxaccount-brand-name } にログインしてください。
+firefoxview-tabpickup-signed-out-description2 = 再接続してタブを取り出すには、アカウントにログインしてください。
 firefoxview-tabpickup-signed-out-primarybutton = ログイン
 firefoxview-tabpickup-syncing = タブを同期しています。しばらくお待ちください。
 firefoxview-mobile-promo-header = スマートフォンやタブレットからタブを取り出す
@@ -130,17 +143,56 @@ firefoxview-view-all-link = すべて表示
 # Variables:
 #   $winID (Number) - The index of the owner window for this set of tabs
 firefoxview-opentabs-window-header =
-    .title = ウィンドウ ID { $winID }
+    .title = ウインドウ ID { $winID }
 # Variables:
 #   $winID (Number) - The index of the owner window (which is currently focused) for this set of tabs
 firefoxview-opentabs-current-window-header =
-    .title = ウィンドウ ID { $winID } (現在)
+    .title = ウインドウ ID { $winID } (現在)
 firefoxview-opentabs-focus-tab =
-    .title = このタブに切り替える
+    .title = このタブを表示します
 firefoxview-show-more = 表示を増やす
 firefoxview-show-less = 表示を減らす
+firefoxview-show-all = すべて表示
+firefoxview-search-text-box-clear-button =
+    .title = 消去
+# Placeholder for the input field to search in recent browsing ("search" is a verb).
+firefoxview-search-text-box-recentbrowsing =
+    .placeholder = 検索
+# Placeholder for the input field to search in history ("search" is a verb).
+firefoxview-search-text-box-history =
+    .placeholder = 履歴を検索
+# Placeholder for the input field to search in recently closed tabs ("search" is a verb).
+firefoxview-search-text-box-recentlyclosed =
+    .placeholder = 最近閉じたタブを検索
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-syncedtabs =
+    .placeholder = 同期したタブを検索
+# Placeholder for the input field to search in open tabs ("search" is a verb).
+firefoxview-search-text-box-opentabs =
+    .placeholder = 開いているタブを検索
+# "Search" is a noun (as in "Results of the search for")
+# Variables:
+#   $query (String) - The search query used for searching through browser history.
+firefoxview-search-results-header = “{ $query }” の検索結果
+# Variables:
+#   $count (Number) - The number of visits matching the search query.
+firefoxview-search-results-count =
+    { $count ->
+        [one] { $count } サイト
+       *[other] { $count } サイト
+    }
+# Message displayed when a search is performed and no matching results were found.
+# Variables:
+#   $query (String) - The search query.
+firefoxview-search-results-empty = “{ $query }” の検索結果はありません
 firefoxview-sort-history-by-date-label = 日付で並べ替え
 firefoxview-sort-history-by-site-label = サイト名で並べ替え
+firefoxview-sort-open-tabs-by-recency-label = 最近表示した順で並べ替え
+firefoxview-sort-open-tabs-by-order-label = タブの並び順で並べ替え
+# Variables:
+#   $url (string) - URL that will be opened in the new tab
+firefoxview-opentabs-tab-row =
+    .title = { $url } に切り替えます
 
 ## Variables:
 ##   $date (string) - Date to be formatted based on locale
@@ -157,7 +209,7 @@ firefoxview-history-site-localhost = (ローカルファイル)
 ##
 
 firefoxview-show-all-history = すべての履歴を表示
-firefoxview-view-more-browsing-history = ブラウジング履歴の続きを表示
+firefoxview-view-more-browsing-history = 閲覧履歴の続きを表示
 
 ## Message displayed in Firefox View when the user has no history data
 
@@ -175,7 +227,7 @@ firefoxview-choose-browser-button = ブラウザーを選ぶ
 
 firefoxview-dont-remember-history-empty-header = データがありません
 firefoxview-dont-remember-history-empty-description = 私たちの活動の中心はユーザーのプライバシーを保護することです。あなたはいつでも { -brand-short-name } に記憶させる履歴をコントロールできます。
-firefoxview-dont-remember-history-empty-description-two = 現在の設定に基づいて { -brand-short-name } はブラウジング履歴を記憶しません。記憶させるには、<a data-l10n-name="history-settings-url-two">履歴の設定を変更してください</a>。
+firefoxview-dont-remember-history-empty-description-two = 現在の設定に基づいて { -brand-short-name } は閲覧履歴を記憶しません。記憶させるには、<a data-l10n-name="history-settings-url-two">履歴の設定を変更してください</a>。
 
 ##
 
@@ -187,16 +239,37 @@ firefoxview-import-history-close-button =
 ## Text displayed in a dismissable banner to import bookmarks/history from another browser
 
 firefoxview-import-history-header = 別のブラウザーから履歴を読み込む
-firefoxview-import-history-description = { -brand-short-name } を日常的に使うには、まずブラウジング履歴やブックマークなどのデータを読み込みましょう。
+firefoxview-import-history-description = { -brand-short-name } を日常的に使うには、まず閲覧履歴やブックマークなどのデータを読み込みましょう。
 
 ## Message displayed in Firefox View when the user has no recently closed tabs data
 
 firefoxview-recentlyclosed-empty-header = もうすぐタブを閉じますか？
 firefoxview-recentlyclosed-empty-description = ここで最近閉じたタブを見つけましょう。すぐに開き直すことができます。
-firefoxview-recentlyclosed-empty-description-two = だいぶ前に閉じたタブを見つけるには、<a data-l10n-name="history-url">ブラウジング履歴</a> を表示してください。
-
-##
+firefoxview-recentlyclosed-empty-description-two = だいぶ前に閉じたタブを見つけるには、<a data-l10n-name="history-url">閲覧履歴</a> を表示してください。
 
 ## This message is displayed below the name of another connected device when it doesn't have any open tabs.
 
 firefoxview-syncedtabs-device-notabs = この端末で開いているタブはありません
+firefoxview-syncedtabs-connect-another-device = 別の端末に接続します
+firefoxview-pinned-tabs =
+    .title = ピン留めしたタブ
+firefoxview-tabs =
+    .title = タブ
+
+## These tooltips will be displayed when hovering over a pinned tab on the Open Tabs page
+## Variables:
+##  $tabTitle (string) - Title of pinned tab that will be opened when selected
+
+firefoxview-opentabs-pinned-tab =
+    .title = { $tabTitle } を表示します
+# This tooltip will be shown for a pinned tab whose URL is currently bookmarked.
+firefoxview-opentabs-bookmarked-pinned-tab =
+    .title = ブックマークされた { $tabTitle } を表示します
+
+## These tooltips will be displayed when hovering over an unpinned Open Tab
+## Variables:
+##   $url (string) - URL of tab that will be opened when selected
+
+# This tooltip will be shown for an unpinned tab whose URL is currently bookmarked.
+firefoxview-opentabs-bookmarked-tab =
+    .title = (ブックマーク済み) { $url }

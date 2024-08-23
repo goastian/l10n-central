@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = Kapcsolat beállításai
-    .style =
-        { PLATFORM() ->
-            [macos] width: 44em
-           *[other] width: 49em
-        }
 connection-window2 =
     .title = Kapcsolat beállításai
     .style =
@@ -27,6 +20,9 @@ connection-proxy-option-no =
 connection-proxy-option-system =
     .label = Rendszerbeállítások használata
     .accesskey = R
+connection-proxy-option-wpad =
+    .label = A rendszer webes proxykra vonatkozó automatikus felfedezési beállításának használata
+    .accesskey = p
 connection-proxy-option-auto =
     .label = Proxybeállítások automatikus felismerése a hálózatban
     .accesskey = b
@@ -73,14 +69,12 @@ connection-proxy-autologin-checkbox =
     .label = Ne kérjen hitelesítést, ha a jelszó el van mentve
     .accesskey = h
     .tooltiptext = Ez a beállítás csendben hitelesíti proxyk felé, ha mentette hozzájuk a hitelesítési adatokat. Ha a hitelesítés sikertelen, akkor felszólítást kap.
+connection-proxy-socks4-remote-dns =
+    .label = DNS proxyzása SOCKS v4 használatakor
+    .accesskey = 4
 connection-proxy-socks-remote-dns =
     .label = DNS proxyzása SOCKS v5 használatakor
     .accesskey = d
-connection-dns-over-https =
-    .label = HTTPS-en keresztüli DNS engedélyezése
-    .accesskey = H
-connection-dns-over-https-url-resolver = Szolgáltató használata
-    .accesskey = o
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

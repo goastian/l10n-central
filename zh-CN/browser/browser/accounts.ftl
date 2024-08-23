@@ -37,14 +37,17 @@ account-send-tab-to-device-connectdevice = 连接其他设备…
 ## Displayed in the Send Tabs context menu when right clicking a tab, a page or a link
 ## and the Sync account is unverified. Redirects to the Sync preferences page.
 
-account-send-tab-to-device-verify-status = 账号未验证
-account-send-tab-to-device-verify = 验证您的账号…
+account-send-tab-to-device-verify-status = 账户未验证
+account-send-tab-to-device-verify = 验证您的账户…
 
 ## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = 账户
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = 此计算机已与 { $deviceName } 连接。
@@ -81,3 +84,11 @@ account-multiple-tabs-arriving-from-single-device = 收到从 { $deviceName } �
 account-multiple-tabs-arriving-from-multiple-devices = 收到从其他设备发来的 { $tabCount } 个标签页
 # This version is used when we don't know any device names.
 account-multiple-tabs-arriving-from-unknown-device = 收到 { $tabCount } 个标签页
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = 查看最近关闭的标签页
+account-tabs-closed-remotely = 已关闭 { $closedCount } 个 { -brand-short-name } 标签页

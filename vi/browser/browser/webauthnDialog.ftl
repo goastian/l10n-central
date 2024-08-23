@@ -4,16 +4,15 @@
 
 # Variables:
 #  $retriesLeft (Number): number of tries left
-webauthn-pin-invalid-prompt =
-    { $retriesLeft ->
-        [0] Pin sai! Vui lòng nhập mã PIN chính xác cho thiết bị của bạn.
-       *[other] Pin sai! Vui lòng nhập mã PIN chính xác cho thiết bị của bạn. Bạn còn { $retriesLeft } lần thử.
-    }
-# Variables:
-#  $retriesLeft (Number): number of tries left
 webauthn-pin-invalid-long-prompt = Mã PIN không chính xác. Bạn còn { $retriesLeft } lần thử trước khi vĩnh viễn mất quyền truy cập vào thông tin đăng nhập trên thiết bị này.
 webauthn-pin-invalid-short-prompt = PIN không đúng. Thử lại.
 webauthn-pin-required-prompt = Vui lòng nhập mã PIN cho thiết bị của bạn.
+webauthn-select-sign-result-unknown-account = Tài khoản không xác định
+webauthn-a-passkey-label = Sử dụng một passkey
+webauthn-another-passkey-label = Sử dụng passkey khác
+# Variables:
+#   $domain (String): the domain of the site.
+webauthn-specific-passkey-label = Passkey cho { $domain }
 # Variables:
 #  $retriesLeft (Number): number of tries left
 webauthn-uv-invalid-long-prompt = Xác minh người dùng không thành công. Bạn còn { $retriesLeft } lần thử. Hãy thử lại.

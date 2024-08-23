@@ -2,17 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = Glean について
-about-glean-description = <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a> は Mozilla 製品で利用されているデータ収集ライブラリーです。このページは、<a data-l10n-name="fog-debug-doc-link">Glean SDK でデバッグとログ状態の設定変更</a> を必要とする開発者およびテスター向けです。
-about-glean-warning = このインターフェースの使用を誤ると { -brand-short-name } がクラッシュする可能性があります。
-
-tag-pings-label = 送信したすべての Ping にこのタグを付ける
-log-pings-label = 送信前に Ping ペイロードを記録しますか？
-send-pings-label = 名前付き Ping を送信
-controls-button-label = 設定を送信
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -24,7 +13,7 @@ about-glean-page-title2 = { -glean-brand-name } について
 about-glean-header = { -glean-brand-name } について
 about-glean-interface-description =
     <a data-l10n-name="glean-sdk-doc-link">{ glean-sdk-brand-name }</a> は { -vendor-short-name } プロジェクトで利用されているデータ収集ライブラリーです。
-    このインターフェースは開発者とテスターにより手動の <a data-l10n-name="fog-link">テスト計測器</a> で使用されることを想定しています。
+    このインターフェイスは開発者とテスターにより手動の <a data-l10n-name="fog-link">テスト計測器</a> で使用されることを想定しています。
 about-glean-upload-enabled = データのアップロードが有効です。
 about-glean-upload-disabled = データのアップロードが無効です。
 about-glean-upload-enabled-local = データのアップロードはローカルサーバーへの送信のみ有効です。
@@ -60,6 +49,8 @@ about-glean-manual-testing =
 about-glean-no-ping-label = (Ping を送信しない)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = 左のフィールドに覚えやすいデバッグタグを設定して、後であなたの Ping が区別できるようにしてください。
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements =  覚えやすいデバッグタグ <span>(20 文字以下の英数字とハイフンのみ)</span> を設定して、後であなたの Ping が区別できるようにしてください。
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -81,6 +72,12 @@ about-glean-li-for-visit-gdpv =
     ボタンを押してから Ping が到着するまで数秒もかかりませんが、時々、数分かかることもあります。
 # Do not translate strings between <code> </code> tags.
 about-glean-adhoc-explanation = さらに <i>アドホック</i> なテストを行うために、この <code>about:glean</code> ページで開発ツールのコンソールを開き、<code>Glean.metricCategory.metricName.testGetValue()</code> などの <code>testGetValue()</code> API を使用して、計測器の特定のピースの現在値を特定することもできます。
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 = さらに <i>アドホック</i> なテストを行うために、この <code>about:glean</code> ページで開発ツールのコンソールを開き、<code>metric.category.metric_name</code> の <code>Glean.metricCategory.metricName.testGetValue()</code> など、計測器の <code>testGetValue()</code> API を使用して、計測器の特定のピースの現在値を特定することもできます。
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    開発ツールのコンソールを使用して Glean JS API を操作しているので注意してください。
+    これは、メトリクスのカテゴリー名とメトリクス名が Rust や C++ API と異なる <code>camelCase</code> で初期化されることを意味します。
 controls-button-label-verbose = 設定を適用して Ping を送信
 
 about-glean-about-data-header = データについて

@@ -30,7 +30,7 @@ appmenuitem-history =
 appmenuitem-downloads =
     .label = Stahování
 appmenuitem-passwords =
-    .label = Přihlašovací údaje
+    .label = Hesla
 appmenuitem-addons-and-themes =
     .label = Doplňky a vzhledy
 appmenuitem-print =
@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Zobrazit další panely
     .tooltiptext = Zobrazí panely z tohoto zařízení
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Neaktivní panely
+    .tooltiptext = Zobrazí neaktivní panely na tomto zařízení
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Žádné otevřené panely
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -98,6 +102,7 @@ appmenuitem-fxa-sign-in =
     }
 appmenuitem-fxa-manage-account = Správa účtu
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Účet
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -132,8 +137,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profiler
     .tooltiptext = Právě probíhá profilování
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Zobrazit podrobnosti
@@ -170,12 +173,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Doporučené nastavení s minimální režií pro ladění většiny webových aplikací.
@@ -217,6 +220,13 @@ profiler-popup-presets-power-description =
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Napájení a spotřeba
+profiler-popup-presets-debug-description =
+    { -brand-shorter-name.case-status ->
+        [with-cases] Přednastaveno pro ladění ve { -brand-shorter-name(case: "gen") }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+       *[no-cases] Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
+    }
+profiler-popup-presets-debug-label =
+    .label = Ladění
 profiler-popup-presets-custom-label =
     .label = Vlastní
 
@@ -224,8 +234,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Správa historie
-appmenu-reopen-all-tabs = Znovu otevřít všechny panely
-appmenu-reopen-all-windows = Znovu otevřít všechna okna
 appmenu-restore-session =
     .label = Obnovit předchozí relaci
 appmenu-clear-history =
@@ -266,7 +274,7 @@ appmenu-help-share-ideas =
     .label = Sdílet nápad nebo zpětnou vazbu…
     .accesskey = S
 appmenu-help-switch-device =
-    .label = Přenos na nové zařízení
+    .label = Přechod na nové zařízení
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -295,3 +303,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Nástroje prohlížeče
 appmenu-developer-tools-extensions =
     .label = Rozšíření pro vývojáře
+appmenuitem-report-broken-site =
+    .label = Nahlásit nefunkční stránku
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Přihlaste se ke svému účtu
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Získejte upozornění na úniky údajů
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Zamaskujte svůj skutečný e-mail a telefon
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Chraňte svou online aktivitu

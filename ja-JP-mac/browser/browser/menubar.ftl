@@ -6,8 +6,7 @@
 # NOTE: For English locales, strings in this file should be in APA-style Title Case.
 # See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
 #
-# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
-
+# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
 
 ## Application Menu (macOS only)
 
@@ -139,6 +138,8 @@ menu-view-history-button =
     .label = 履歴
 menu-view-synced-tabs-sidebar =
     .label = 同期タブ
+menu-view-megalist-sidebar =
+    .label = パスワード
 menu-view-full-zoom =
     .label = ズーム
     .accesskey = Z
@@ -341,3 +342,5 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 詐欺サイトの誤報告を指摘...
     .accesskey = d
+menu-report-broken-site =
+    .label = 動作しないサイトを報告

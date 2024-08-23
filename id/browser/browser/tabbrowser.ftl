@@ -87,6 +87,10 @@ tabbrowser-confirm-caretbrowsing-title = Jelajah Caret
 tabbrowser-confirm-caretbrowsing-message = Tekan F7 untuk mengaktifkan/menonaktifkan Penjelajahan Caret. Fitur ini menempatkan kursor dalam laman web sehingga Anda bisa memilih teks dengan papan ketik. Ingin mengaktifkan Penjelajahan Caret?
 tabbrowser-confirm-caretbrowsing-checkbox = Jangan tampilkan kotak dialog ini lagi.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Perhatian
+
 ##
 
 # Variables:
@@ -111,6 +115,8 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = Bunyikan Tab
     .accesskey = S
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = Memutar audio
 
 ## Ctrl-Tab dialog
 
@@ -118,3 +124,12 @@ tabbrowser-context-unmute-selected-tabs =
 #   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
 tabbrowser-ctrl-tab-list-all-tabs =
     .label = Tampilkan Daftar Semua { $tabCount } Tab
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = Senyapkan tab
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = Bunyikan tab
+tabbrowser-manager-close-tab =
+    .tooltiptext = Tutup tab

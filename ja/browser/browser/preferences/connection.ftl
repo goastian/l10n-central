@@ -2,15 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = インターネット接続
-    .style =
-        { PLATFORM() ->
-            [macos] width: 46em
-           *[other] width: 54em
-        }
 connection-window2 =
-    .title = インターネット接続
+    .title = インターネット接続設定
     .style =
         { PLATFORM() ->
             [macos] min-width: 46em
@@ -27,6 +20,9 @@ connection-proxy-option-no =
 connection-proxy-option-system =
     .label = システムのプロキシー設定を利用する
     .accesskey = U
+connection-proxy-option-wpad =
+    .label = システムのウェブプロキシー自動検出設定を利用する
+    .accesskey = g
 connection-proxy-option-auto =
     .label = このネットワークのプロキシー設定を自動検出する
     .accesskey = w
@@ -73,14 +69,12 @@ connection-proxy-autologin-checkbox =
     .label = パスワードを保存してある場合は認証を確認しない
     .accesskey = i
     .tooltiptext = このオプションは、プロキシーへのパスワードが保存してある場合、確認することなく認証を行います。認証に失敗した場合は確認を行います。
+connection-proxy-socks4-remote-dns =
+    .label = SOCKS v4 を使用するときは DNS もプロキシーを使用する
+    .accesskey = 4
 connection-proxy-socks-remote-dns =
     .label = SOCKS v5 を使用するときは DNS もプロキシーを使用する
     .accesskey = D
-connection-dns-over-https =
-    .label = DNS over HTTPS を有効にする
-    .accesskey = b
-connection-dns-over-https-url-resolver = 使用するプロバイダー
-    .accesskey = P
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

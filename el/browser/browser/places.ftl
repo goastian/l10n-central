@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Διαγραφή δεδομένων ιστοτόπου
     .accesskey = Δ
+places-forget-domain-data =
+    .label = Διαγραφή δεδομένων ιστοτόπου…
+    .accesskey = Δ
 places-sortby-name =
     .label = Ταξινόμηση κατά όνομα
     .accesskey = ι
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Επεξεργασία φακέλου…
     .accesskey = ί
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -132,14 +137,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Εξάλειψη αυτού του ιστοτόπου
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Αυτή η ενέργεια θα αφαιρέσει όλα τα δεδομένα που σχετίζονται με το { $hostOrBaseDomain }, όπως το ιστορικό, τους κωδικούς πρόσβασης, τα cookies, την κρυφή μνήμη και τις προτιμήσεις περιεχομένου. Θέλετε σίγουρα να συνεχίσετε;
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-msg = Αυτή η ενέργεια θα αφαιρέσει τα δεδομένα που σχετίζονται με το { $hostOrBaseDomain }, όπως το ιστορικό, τα cookies, την κρυφή μνήμη και τις προτιμήσεις περιεχομένου. Δεν θα διαγραφούν οι σχετικοί σελιδοδείκτες και κωδικοί πρόσβασης. Θέλετε σίγουρα να συνεχίσετε;
+places-forget-about-this-site-confirmation-msg = Αυτή η ενέργεια θα αφαιρέσει τα δεδομένα που σχετίζονται με το { $hostOrBaseDomain }, όπως το ιστορικό, τα cookie, την προσωρινή μνήμη και τις προτιμήσεις περιεχομένου. Δεν θα διαγραφούν οι σχετικοί σελιδοδείκτες και κωδικοί πρόσβασης. Θέλετε σίγουρα να συνεχίσετε;
 places-forget-about-this-site-forget = Εξάλειψη
-places-library =
-    .title = Βιβλιοθήκη
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Βιβλιοθήκη
 places-organize-button =
@@ -199,7 +198,7 @@ places-export-bookmarks-to-html =
     .label = Εξαγωγή σελιδοδεικτών σε HTML…
     .accesskey = ξ
 places-import-other-browser =
-    .label = Εισαγωγή δεδομένων από άλλο φυλλομετρητή…
+    .label = Εισαγωγή δεδομένων από άλλο πρόγραμμα περιήγησης…
     .accesskey = λ
 places-view-sort-col-name =
     .label = Όνομα

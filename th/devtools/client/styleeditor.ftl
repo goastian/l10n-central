@@ -19,8 +19,7 @@ styleeditor-save-button = บันทึก
     .tooltiptext = บันทึกแผ่นลักษณะนี้เป็นไฟล์
     .accesskey = บ
 styleeditor-options-button =
-    .tooltiptext = ตัวเลือกตัวแก้ไขลักษณะ
-styleeditor-media-rules = กฎ @media
+    .tooltiptext = ตัวเลือกของตัวแก้ไขสไตล์
 styleeditor-at-rules = At-rules
 styleeditor-editor-textbox =
     .data-placeholder = พิมพ์ CSS ที่นี่
@@ -45,3 +44,9 @@ styleeditor-stylesheet-all-filtered = ไม่พบสไตล์ชีตท
 # Variables:
 #   $ruleCount (Integer) - The number of rules in the stylesheet.
 styleeditor-stylesheet-rule-count = { $ruleCount } กฎ
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = แสดงสไตล์ชีตแบบสวยงาม
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = สามารถแสดงแบบสวยงามได้เฉพาะไฟล์ CSS เท่านั้น

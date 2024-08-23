@@ -12,11 +12,15 @@ menu-tools-firefox-view =
     .label = { -firefoxview-brand-name }
     .accesskey = F
 firefoxview-page-title = { -firefoxview-brand-name }
+firefoxview-page-heading =
+    .heading = { -firefoxview-brand-name }
 firefoxview-page-label =
     .label = { -firefoxview-brand-name }
 firefoxview-close-button =
     .title = Закрити
     .aria-label = Закрити
+firefoxview-empty-state-icon =
+    .alt = Увага!
 # Used instead of the localized relative time when a timestamp is within a minute or so of now
 firefoxview-just-now-timestamp = Щойно
 # This is a headline for an area in the product where users can resume and re-open tabs they have previously viewed on other devices.
@@ -49,6 +53,7 @@ firefoxview-syncedtabs-loading-header = Виконується синхроні�
 firefoxview-syncedtabs-loading-description = По її завершенню ви побачите всі вкладки, відкриті на інших пристроях. Перевірте це незабаром.
 firefoxview-tabpickup-fxa-admin-disabled-header = Ваша організація вимкнула синхронізацію
 firefoxview-tabpickup-fxa-admin-disabled-description = { -brand-short-name } не може синхронізувати вкладки між пристроями, тому що ваш адміністратор вимкнув синхронізацію.
+firefoxview-tabpickup-fxa-disabled-by-policy-description = { -brand-short-name } не може синхронізувати вкладки між пристроями, оскільки ваша організація вимкнула синхронізацію.
 firefoxview-tabpickup-network-offline-header = Перевірте своє з'єднання з інтернетом
 firefoxview-tabpickup-network-offline-description = Якщо ви користуєтеся мережевим екраном чи проксі, переконайтеся, що { -brand-short-name } має дозвіл на доступ до інтернету.
 firefoxview-tabpickup-network-offline-primarybutton = Спробувати знову
@@ -147,8 +152,44 @@ firefoxview-opentabs-focus-tab =
     .title = Перемкнутись на цю вкладку
 firefoxview-show-more = Показати ще
 firefoxview-show-less = Показати менше
+firefoxview-show-all = Показати все
+firefoxview-search-text-box-clear-button =
+    .title = Очистити
+# Placeholder for the input field to search in recent browsing ("search" is a verb).
+firefoxview-search-text-box-recentbrowsing =
+    .placeholder = Пошук
+# Placeholder for the input field to search in history ("search" is a verb).
+firefoxview-search-text-box-history =
+    .placeholder = Шукати в історії
+# Placeholder for the input field to search in recently closed tabs ("search" is a verb).
+firefoxview-search-text-box-recentlyclosed =
+    .placeholder = Пошук нещодавно закритих вкладок
+# Placeholder for the input field to search in tabs from other devices ("search" is a verb).
+firefoxview-search-text-box-syncedtabs =
+    .placeholder = Шукати синхронізовані вкладки
+# Placeholder for the input field to search in open tabs ("search" is a verb).
+firefoxview-search-text-box-opentabs =
+    .placeholder = Шукати відкриті вкладки
+# "Search" is a noun (as in "Results of the search for")
+# Variables:
+#   $query (String) - The search query used for searching through browser history.
+firefoxview-search-results-header = Результати пошуку для “{ $query }”
+# Variables:
+#   $count (Number) - The number of visits matching the search query.
+firefoxview-search-results-count =
+    { $count ->
+        [one] { $count } сайт
+        [few] { $count } сайти
+       *[many] { $count } сайтів
+    }
+# Message displayed when a search is performed and no matching results were found.
+# Variables:
+#   $query (String) - The search query.
+firefoxview-search-results-empty = Немає результатів для “{ $query }”
 firefoxview-sort-history-by-date-label = Сортувати за датою
 firefoxview-sort-history-by-site-label = Сортувати за сайтом
+firefoxview-sort-open-tabs-by-recency-label = Сортувати за останньою активністю
+firefoxview-sort-open-tabs-by-order-label = Сортувати за порядком вкладок
 # Variables:
 #   $url (string) - URL that will be opened in the new tab
 firefoxview-opentabs-tab-row =
@@ -175,7 +216,7 @@ firefoxview-view-more-browsing-history = Переглянути більше і�
 
 firefoxview-history-empty-header = Поверніться до відвіданих місць
 firefoxview-history-empty-description = Під час перегляду тут з'являтимуться відвідані вами сторінки.
-firefoxview-history-empty-description-two = Захист вашої приватності — основа нашої діяльності. Ось чому ви можете контролювати дії, які запам'ятовує { -brand-short-name }, у своїх <a data-l10n-name="history-settings-url">налаштуваннях історії</a>.
+firefoxview-history-empty-description-two = Захист вашої приватності – основа нашої діяльності. Ось чому ви можете контролювати дії, які запам'ятовує { -brand-short-name }, у своїх <a data-l10n-name="history-settings-url">налаштуваннях історії</a>.
 
 ##
 
@@ -186,7 +227,7 @@ firefoxview-choose-browser-button = Вибрати браузер
 ## Message displayed in Firefox View when the user has chosen to never remember History
 
 firefoxview-dont-remember-history-empty-header = Немає елементів для показу
-firefoxview-dont-remember-history-empty-description = Захист вашої приватності — основа нашої діяльності. Ось чому ви можете контролювати діяльність, яку запам'ятовує { -brand-short-name }.
+firefoxview-dont-remember-history-empty-description = Захист вашої приватності – основа нашої діяльності. Ось чому ви можете контролювати діяльність, яку запам'ятовує { -brand-short-name }.
 firefoxview-dont-remember-history-empty-description-two = На основі поточних налаштувань, { -brand-short-name } не зберігає ваші дії під час перегляду. <a data-l10n-name="history-settings-url-two">Змініть налаштування</a>, щоб історія зберігалась.
 
 ##
@@ -207,10 +248,29 @@ firefoxview-recentlyclosed-empty-header = Завчасно закрили вкл
 firefoxview-recentlyclosed-empty-description = Тут ви знайдете нещодавно закриті вкладки, які можна за потреби знову швидко відкрити.
 firefoxview-recentlyclosed-empty-description-two = Щоб знайти давніші вкладки, перегляньте свою <a data-l10n-name="history-url">історію перегляду</a>.
 
-##
-
-
 ## This message is displayed below the name of another connected device when it doesn't have any open tabs.
 
 firefoxview-syncedtabs-device-notabs = На цьому пристрої немає відкритих вкладок
 firefoxview-syncedtabs-connect-another-device = Під'єднати інший пристрій
+firefoxview-pinned-tabs =
+    .title = Прикріплення вкладок
+firefoxview-tabs =
+    .title = Вкладки
+
+## These tooltips will be displayed when hovering over a pinned tab on the Open Tabs page
+## Variables:
+##  $tabTitle (string) - Title of pinned tab that will be opened when selected
+
+firefoxview-opentabs-pinned-tab =
+    .title = Перейти до { $tabTitle }
+# This tooltip will be shown for a pinned tab whose URL is currently bookmarked.
+firefoxview-opentabs-bookmarked-pinned-tab =
+    .title = Перейти до (у закладках) { $tabTitle }
+
+## These tooltips will be displayed when hovering over an unpinned Open Tab
+## Variables:
+##   $url (string) - URL of tab that will be opened when selected
+
+# This tooltip will be shown for an unpinned tab whose URL is currently bookmarked.
+firefoxview-opentabs-bookmarked-tab =
+    .title = (У закладках) { $url }

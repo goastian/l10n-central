@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 synced-tabs-sidebar-title = Συγχρονισμένες καρτέλες
-synced-tabs-sidebar-noclients-subtitle = Θέλετε να δείτε τις καρτέλες σας από άλλες συσκευές εδώ;
+synced-tabs-sidebar-noclients-subtitle = Θέλετε να δείτε εδώ τις καρτέλες σας από άλλες συσκευές;
 synced-tabs-sidebar-intro = Δείτε μια λίστα με καρτέλες από τις άλλες σας συσκευές.
 synced-tabs-sidebar-unverified = Ο λογαριασμός σας πρέπει να επαληθευτεί.
 synced-tabs-sidebar-notabs = Καμία ανοικτή καρτέλα
@@ -22,18 +22,6 @@ synced-tabs-sidebar-search =
 synced-tabs-context-open =
     .label = Άνοιγμα
     .accesskey = Ο
-synced-tabs-context-open-in-new-tab =
-    .label = Άνοιγμα σε νέα καρτέλα
-    .accesskey = κ
-synced-tabs-context-open-in-new-window =
-    .label = Άνοιγμα σε νέο παράθυρο
-    .accesskey = ν
-synced-tabs-context-open-in-new-private-window =
-    .label = Άνοιγμα σε νέο ιδιωτικό παράθυρο
-    .accesskey = Π
-synced-tabs-context-bookmark-single-tab =
-    .label = Προσθήκη καρτέλας στους σελιδοδείκτες…
-    .accesskey = Π
 synced-tabs-context-open-in-tab =
     .label = Άνοιγμα σε νέα καρτέλα
     .accesskey = σ

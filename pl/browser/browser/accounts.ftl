@@ -45,6 +45,9 @@ account-send-tab-to-device-verify = Zweryfikuj konto…
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = Konto
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Ten komputer jest teraz połączony z urządzeniem { $deviceName }.
@@ -95,4 +98,17 @@ account-multiple-tabs-arriving-from-unknown-device =
         [one] { $tabCount } przychodząca karta
         [few] { $tabCount } przychodzące karty
        *[many] { $tabCount } przychodzących kart
+    }
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = Wyświetl ostatnio zamknięte karty
+account-tabs-closed-remotely =
+    { $closedCount ->
+        [one] Zamknięto { $closedCount } kartę { -brand-short-name(case: "gen") }
+        [few] Zamknięto { $closedCount } karty { -brand-short-name(case: "gen") }
+       *[many] Zamknięto { $closedCount } kart { -brand-short-name(case: "gen") }
     }

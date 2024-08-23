@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = Não há garantia deste aces
 ##
 
 xpinstall-disabled-locked = A instalação de software foi desativada pelo administrador do sistema.
+xpinstall-disabled-by-policy = A instalação de programas foi desativada pela sua organização.
 xpinstall-disabled = A instalação de software está desativada. Clique em Ativar e tente novamente.
 xpinstall-disabled-button =
     .label = Ativar
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) foi bloqueado pelo administrador do seu sistema.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = O administrador do seu sistema impediu que este site pedisse autorização para instalar programas neste computador.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) foi bloqueado pela sua organização.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Sua organização impediu que este site instale um programa neste computador.
 addon-install-full-screen-blocked = A instalação de extensões não é permitida no modo de tela inteira ou logo antes de mudar para tela inteira.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -124,3 +132,5 @@ addon-local-install-error-not-signed = Esta extensão não pôde ser instalada p
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } não pôde ser instalado porque não é compatível com o { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = { $addonName } não pôde ser instalado porque tem um elevado risco de causar problemas de estabilidade ou segurança.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Você não pode instalar { $addonName } como usuário final, ele só pode ser instalado por uma organização usando diretivas corporativas.

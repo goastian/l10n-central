@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = เปิด { $targetURI } ในแท็บใหม่
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = ปิด { $tabTitle }
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = ปิด { $tabTitle }
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = บันทึกไปยัง { -pocket-brand-
     .accesskey = บ
 fxviewtabrow-copy-link = คัดลอกลิงก์
     .accesskey = ง
+fxviewtabrow-close-tab = ปิดแท็บ
+    .accesskey = C
+fxviewtabrow-move-tab = ย้ายแท็บ
+    .accesskey = v
+fxviewtabrow-move-tab-start = ย้ายไปยังจุดเริ่มต้น
+    .accesskey = S
+fxviewtabrow-move-tab-end = ย้ายไปยังจุดสิ้นสุด
+    .accesskey = E
+fxviewtabrow-move-tab-window = ย้ายไปยังหน้าต่างใหม่
+    .accesskey = W
+fxviewtabrow-send-tab = ส่งแท็บไปยังอุปกรณ์
+    .accesskey = n
+fxviewtabrow-pin-tab = ปักหมุดแท็บ
+    .accesskey = ป
+fxviewtabrow-unpin-tab = ถอนหมุดแท็บ
+    .accesskey = ถ
+fxviewtabrow-mute-tab = ปิดเสียงแท็บ
+    .accesskey = ด
+fxviewtabrow-unmute-tab = เปิดเสียงแท็บ
+    .accesskey = เ
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = ตัวเลือกสำหรับ { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = ปิดเสียง { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = เปิดเสียง { $tabTitle }
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = ปิดเสียงแท็บ
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = เปิดเสียงแท็บ

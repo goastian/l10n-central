@@ -11,7 +11,7 @@ cfr-doorhanger-feature-heading = 추천 기능
 ##
 
 cfr-doorhanger-extension-sumo-link =
-    .tooltiptext = 왜 이게 나왔나요
+    .tooltiptext = 왜 이게 표시되나요
 cfr-doorhanger-extension-cancel-button = 나중에
     .accesskey = N
 cfr-doorhanger-extension-ok-button = 지금 추가
@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = { $name } 제작
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = 추천
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = 추천
     .tooltiptext = 확장 기능 추천
     .a11y-announcement = 확장 기능 추천 사용 가능
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = 추천
     .tooltiptext = 기능 추천
     .a11y-announcement = 기능 추천 사용 가능
@@ -59,6 +61,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = 어디서나 북마크 동기화
 cfr-doorhanger-bookmark-fxa-body = 멋진 발견! 이제 다른 휴대 기기에서도 이 북마크를 사용해 보세요. { -fxaccount-brand-name }로 시작해 보세요.
+cfr-doorhanger-bookmark-fxa-body-2 = 멋진 발견! 이제 다른 휴대 기기에서도 이 북마크를 사용해 보세요. 계정을 시작해 보세요.
 cfr-doorhanger-bookmark-fxa-link-text = 북마크 지금 동기화…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 닫기 버튼
@@ -103,28 +106,12 @@ cfr-doorhanger-doh-primary-button-2 = 확인
 cfr-doorhanger-doh-secondary-button = 사용 안 함
     .accesskey = D
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = 개인 정보는 중요합니다. { -brand-short-name }는 이제 웹 사이트를 서로 격리하거나 샌드 박스를 만들어 해커가 비밀번호, 신용 카드 번호 및 기타 중요한 정보를 훔치기 어렵게 만듭니다.
-cfr-doorhanger-fission-header = 사이트 격리
-cfr-doorhanger-fission-primary-button = 확인
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = 더 알아보기
-    .accesskey = L
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = 이 사이트의 동영상은 이 버전의 { -brand-short-name }에서 제대로 재생되지 않을 수 있습니다. 전체 동영상 지원을 받으려면, 지금 { -brand-short-name }를 업데이트하세요.
 cfr-doorhanger-video-support-header = 동영상을 재생하려면 { -brand-short-name } 업데이트
 cfr-doorhanger-video-support-primary-button = 지금 업데이트
     .accesskey = U
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = 더 알아보기
-    .title = 기능에 대해 더 알아보려면 확장하세요
-spotlight-learn-more-expanded = 더 알아보기
-    .title = 닫기
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -139,20 +126,6 @@ spotlight-public-wifi-vpn-primary-button = { -mozilla-vpn-brand-name }으로 사
     .accesskey = S
 spotlight-public-wifi-vpn-link = 나중에
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    가장 강력한 개인 정보 보호 기능을
-    최초로 시험해 보세요
-spotlight-total-cookie-protection-body = 전체 쿠키 보호는 추적기가 쿠키를 사용하여 웹에서 사용자를 스토킹하는 것을 방지합니다.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name }는 쿠키 주위에 울타리를 치고 사용자가 있는 사이트로 제한하므로 추적기가 사용자를 팔로우하는 데 쿠키를 사용할 수 없습니다. 먼저 이용해 보시면 이 기능을 최적화하는데 도움이 되므로 저희가 모든 사용자를 위한 더 나은 웹을 계속 구축할 수 있습니다.
-spotlight-total-cookie-protection-primary-button = 전체 쿠키 보호 켜기
-spotlight-total-cookie-protection-secondary-button = 나중에
 
 ## Emotive Continuous Onboarding
 
@@ -229,6 +202,9 @@ cfr-cbh-confirm-button = 쿠키 배너 거부
     .accesskey = R
 cfr-cbh-dismiss-button = 나중에
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name }가 쿠키 배너를 거부했습니다.
+cookie-banner-blocker-onboarding-body = 방해 요소가 줄어들고, 이 사이트에서 사용자를 추적하는 쿠키가 줄어듭니다.
+cookie-banner-blocker-onboarding-learn-more = 더 알아보기
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -258,7 +234,48 @@ fxa-sync-cfr-secondary = 나중에 알림
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = 오래된 기기를 사용하시나요?
-device-migration-fxa-spotlight-body = 특히 새 기기로 전환하는 경우 북마크 및 비밀번호와 같은 중요한 정보를 잃지 않도록 데이터를 백업하세요.
-device-migration-fxa-spotlight-primary-button = 내 데이터를 백업하는 방법
-device-migration-fxa-spotlight-link = 나중에 알림
+device-migration-fxa-spotlight-heavy-user-header = 데이터를 백업하는 것을 잊지 마세요
+device-migration-fxa-spotlight-heavy-user-body = 북마크, 비밀번호 등 중요한 정보가 모든 기기에서 업데이트되고 보호되는지 확인하세요.
+device-migration-fxa-spotlight-heavy-user-primary-button = 시작하기
+device-migration-fxa-spotlight-older-device-header = 안심하세요, { -brand-product-name } 제공
+device-migration-fxa-spotlight-older-device-body = 계정은 연결된 모든 기기에서 중요한 정보를 업데이트하고 보호합니다.
+device-migration-fxa-spotlight-older-device-primary-button = 계정 만들기
+device-migration-fxa-spotlight-getting-new-device-header-2 = 미래의 새 기기?
+device-migration-fxa-spotlight-getting-new-device-body-2 = 새 기기를 시작할 때 몇 가지 간단한 단계를 따르면 북마크, 기록, 비밀번호를 가져올 수 있습니다.
+device-migration-fxa-spotlight-getting-new-device-primary-button = 내 데이터를 백업하는 방법
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>{ -brand-short-name }를 기본 PDF 리더로 설정하시겠습니까?</strong> { -brand-short-name }를 사용하여 컴퓨터에 저장된 PDF를 읽고 편집하세요.
+pdf-default-notification-set-default-button =
+    .label = 기본으로 설정
+pdf-default-notification-decline-button =
+    .label = 나중에
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>컴퓨터를 다시 시작할 때마다 { -brand-short-name }를 여시겠습니까?</strong> 이제 기기를 다시 시작할 때 자동으로 열리도록 { -brand-short-name }를 설정할 수 있습니다.
+launch-on-login-learnmore = 더 알아보기
+launch-on-login-infobar-confirm-button = 예, { -brand-short-name }를 엽니다
+    .accesskey = Y
+launch-on-login-infobar-reject-button = 나중에
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>컴퓨터를 다시 시작할 때마다 { -brand-short-name }를 여시겠습니까?</strong> 시작 설정을 관리하려면, 설정에서 "시작"을 검색하세요.
+launch-on-login-infobar-final-reject-button = 아니요
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = 성가신 추적기로부터 벗어나세요
+tail-fox-spotlight-subtitle = 귀찮은 광고 추적기와 작별하고 더 안전하고 빠른 인터넷 경험을 누리세요.
+tail-fox-spotlight-primary-button = { -brand-short-name }로 내 링크 열기
+tail-fox-spotlight-secondary-button = 나중에

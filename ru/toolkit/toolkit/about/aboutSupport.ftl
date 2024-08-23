@@ -15,6 +15,10 @@ support-addons-type = Тип
 support-addons-enabled = Включено
 support-addons-version = Версия
 support-addons-id = ID
+legacy-user-stylesheets-title = Устаревшие пользовательские таблицы стилей
+legacy-user-stylesheets-enabled = Активны
+legacy-user-stylesheets-stylesheet-types = Таблицы стилей
+legacy-user-stylesheets-no-stylesheets-found = Таблицы стилей не найдены
 security-software-title = Программы обеспечения безопасности
 security-software-type = Тип
 security-software-name = Наименование
@@ -74,6 +78,7 @@ app-basics-key-mozilla = Ключ Службы определения место
 app-basics-safe-mode = Безопасный Режим
 app-basics-memory-size = Объём памяти (ОЗУ)
 app-basics-disk-available = Доступное место на накопителе
+app-basics-pointing-devices = Манипуляторы
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -130,8 +135,8 @@ a11y-force-disabled = Отключение поддержки доступнос
 a11y-handler-used = Используемый обработчик Доступности
 a11y-instantiator = Исполняемый файл поддержки доступности
 library-version-title = Версии библиотек
-copy-text-to-clipboard-label = Скопировать текст в буфер обмена
-copy-raw-data-to-clipboard-label = Скопировать необработанные данные в буфер обмена
+copy-text-to-clipboard-label = Копировать текст в буфер обмена
+copy-raw-data-to-clipboard-label = Копировать необработанные данные в буфер обмена
 sandbox-title = Песочница
 sandbox-sys-call-log-title = Отклонённые cистемные вызовы
 sandbox-sys-call-index = #
@@ -179,6 +184,25 @@ media-codec-support-hw-decoding = Аппаратное декодировани�
 media-codec-support-codec-name = Название кодека
 media-codec-support-supported = Поддерживается
 media-codec-support-unsupported = Не поддерживается
+media-codec-support-error = Информация о поддержке кодека недоступна. Попробуйте снова после проигрывания медиафайла.
+media-codec-support-lack-of-extension = Установка расширений
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Информация о модулях расшифровки содержимого
+media-key-system-name = Имя ключевой системы
+media-video-robustness = Надёжность видео
+media-audio-robustness = Надёжность аудио
+media-cdm-capabilities = Возможности
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Незашифрованное начало
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Совместим с HDCP 2.2
 
 ##
 
@@ -263,6 +287,7 @@ try-newer-driver = Заблокировано для вашей версии д�
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Параметры ClearType
 compositing = Композитинг
+support-font-determination = Информация отладки видимости шрифта
 hardware-h264 = Аппаратное декодирование H264
 main-thread-no-omtc = главный поток, без OMTC
 yes = Да
@@ -324,6 +349,9 @@ has-seccomp-bpf = Seccomp-BPF (Фильтрация системных вызо�
 has-seccomp-tsync = Синхронизация потока Seccomp
 has-user-namespaces = Пользовательские пространства имён
 has-privileged-user-namespaces = Пользовательские пространства имён для привилегированных процессов
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Эта функция не разрешена в вашей системе. Это может ограничить функции безопасности { -brand-short-name }.
 can-sandbox-content = Песочница для процесса контента
 can-sandbox-media = Песочница для медиаплагина
 content-sandbox-level = Степень изоляции процесса контента
@@ -392,6 +420,20 @@ support-printing-modified-settings = Изменённые настройки п�
 support-printing-prefs-name = Имя
 support-printing-prefs-value = Значение
 
+## Remote Settings sections
+
+support-remote-settings-title = Удалённые настройки
+support-remote-settings-status = Состояние
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Не работает
+support-remote-settings-last-check = Последняя проверка
+support-remote-settings-local-timestamp = Локальная метка времени
+support-remote-settings-sync-history = История
+support-remote-settings-sync-history-status = Состояние
+support-remote-settings-sync-history-datetime = Дата
+support-remote-settings-sync-history-infos = Информация
+
 ## Normandy sections
 
 support-remote-experiments-title = Дистанционные эксперименты
@@ -401,3 +443,22 @@ support-remote-experiments-see-about-studies = Ознакомьтесь со с�
 support-remote-features-title = Дистанционно распространяемые функции
 support-remote-features-name = Имя
 support-remote-features-status = Статус
+
+## Pointing devices
+
+pointing-device-mouse = Мышь
+pointing-device-touchscreen = Сенсорный экран
+pointing-device-pen-digitizer = Графический планшет
+pointing-device-none = Манипуляторы отсутствуют
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Анализ содержимого (DLP)
+content-analysis-active = Активно
+content-analysis-connected-to-agent = Подключено к агенту
+content-analysis-agent-path = Путь к агенту
+content-analysis-agent-failed-signature-verification = Агент не смог проверить подпись
+content-analysis-request-count = Число запросов

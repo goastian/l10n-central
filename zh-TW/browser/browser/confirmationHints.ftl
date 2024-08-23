@@ -7,12 +7,21 @@
 
 confirmation-hint-breakage-report-sent = 已回報，感謝您！
 confirmation-hint-login-removed = 已刪除登入資訊！
+confirmation-hint-password-removed = 已刪除密碼！
 confirmation-hint-page-bookmarked = 已加入書籤
 confirmation-hint-password-saved = 已儲存密碼！
+confirmation-hint-password-created = 已儲存密碼
+confirmation-hint-password-updated = 已更新密碼
+confirmation-hint-address-created = 已儲存地址
+confirmation-hint-address-updated = 已更新地址
+confirmation-hint-credit-card-created = 已儲存卡片資訊
+confirmation-hint-credit-card-updated = 已更新卡片資訊
 confirmation-hint-pin-tab = 已釘選！
 confirmation-hint-pin-tab-description = 在分頁上按右鍵以解除釘選
 confirmation-hint-send-to-device = 已送出！
-confirmation-hint-firefox-relay-mask-generated = 已產生新的 { -relay-brand-short-name } 轉寄信箱！
 confirmation-hint-firefox-relay-mask-created = 已產生新的轉寄信箱！
 confirmation-hint-firefox-relay-mask-reused = 重複使用現有的轉寄信箱！
 confirmation-hint-screenshot-copied = 已複製擷圖！
+# Variables:
+#   $tabCount (Number): The number of duplicate tabs closed, at least 1.
+confirmation-hint-duplicate-tabs-closed = 已關閉 { $tabCount } 個分頁

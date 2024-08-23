@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Λογαριασμός
+    .tooltiptext = Λογαριασμός
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Δημιουργία σελιδοδείκτη
-    .accesskey = δ
-    .tooltiptext = Δημιουργία σελιδοδείκτη για αυτήν τη σελίδα
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Προσθήκη σελιδοδείκτη
-    .accesskey = λ
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Επεξεργασία σελιδοδείκτη
-    .accesskey = ξ
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Δημιουργία σελιδοδείκτη
-    .accesskey = δ
-    .tooltiptext = Δημιουργία σελιδοδείκτη για αυτήν τη σελίδα ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Επεξεργασία σελιδοδείκτη
-    .accesskey = δ
-    .tooltiptext = Επεξεργασία σελιδοδείκτη
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Επεξεργασία σελιδοδείκτη
-    .accesskey = δ
-    .tooltiptext = Επεξεργασία σελιδοδείκτη ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Προσθήκη σελιδοδείκτη…
     .accesskey = δ
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Άνοιγμα συνδέσμου σε νέο ιδιωτικό παράθυρο
     .accesskey = δ
-main-context-menu-bookmark-link =
-    .label = Προσθήκη σελιδοδείκτη συνδέσμου
-    .accesskey = κ
 main-context-menu-bookmark-link-2 =
     .label = Προσθήκη σελιδοδείκτη συνδέσμου…
     .accesskey = η
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Αντιγραφή συνδέσμου
     .accesskey = σ
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Αντιγραφή συνδέσμου χωρίς καταγραφή ιστοτόπου
+    .accesskey = γ
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Αποστολή ήχου με email…
     .accesskey = σ
-main-context-menu-plugin-play =
-    .label = Ενεργοποίηση αρθρώματος
-    .accesskey = γ
-main-context-menu-plugin-hide =
-    .label = Απόκρυψη αρθρώματος
-    .accesskey = π
 main-context-menu-save-to-pocket =
     .label = Αποθήκευση σελίδας στο { -pocket-brand-name }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Χρήση αποθηκευμένης σύνδεσης
     .accesskey = υ
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Χρήση αποθηκευμένου κωδικού πρόσβασης
     .accesskey = υ
@@ -341,6 +312,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = σ
 main-context-menu-manage-logins2 =
     .label = Διαχείριση συνδέσεων
+    .accesskey = Δ
+main-context-menu-manage-passwords =
+    .label = Διαχείριση κωδικών πρόσβασης
     .accesskey = Δ
 main-context-menu-keyword =
     .label = Προσθήκη λέξης-κλειδιού για αυτήν την αναζήτηση…
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Ανανέωση πλαισίου
     .accesskey = ν
-main-context-menu-frame-bookmark =
-    .label = Προσθήκη στους σελιδοδείκτες
-    .accesskey = λ
 main-context-menu-frame-add-bookmark =
     .label = Πλαίσιο σελιδοδείκτη…
     .accesskey = λ
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Προβολή πληροφοριών πλαισίου
     .accesskey = β
-main-context-menu-print-selection =
-    .label = Εκτύπωση επιλογής
-    .accesskey = τ
 main-context-menu-print-selection-2 =
     .label = Εκτύπωση επιλογής…
     .accesskey = ω

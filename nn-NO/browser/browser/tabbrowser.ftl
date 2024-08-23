@@ -100,7 +100,7 @@ tabbrowser-confirm-open-multiple-tabs-title = Stadfest opning
 #   $tabCount (Number): The number of tabs that will be opened.
 tabbrowser-confirm-open-multiple-tabs-message =
     { $tabCount ->
-       *[other] Du er på veg til å opne { $tabCount } faner. Dette kan gjere { -brand-short-name } treg når sidene vert lasta. Er du sikker på at du vil fortsetje?
+       *[other] Du er på veg til å opne { $tabCount } faner. Dette kan gjere { -brand-short-name } treg når sidene vert lasta. Er du sikker på at du vil halde fram?
     }
 tabbrowser-confirm-open-multiple-tabs-button = Opne faner
 tabbrowser-confirm-open-multiple-tabs-checkbox = Åtvar meg når opning av fleire faner kan gjere { -brand-short-name } treg
@@ -110,6 +110,12 @@ tabbrowser-confirm-open-multiple-tabs-checkbox = Åtvar meg når opning av fleir
 tabbrowser-confirm-caretbrowsing-title = Nettlesing med tekstveljar
 tabbrowser-confirm-caretbrowsing-message = Nettlesing med tekstveljar kan slåast på eller av med F7. Denne funksjonen gjer at du kan merke tekst med tastaturet ved hjelp av ein flyttbar markør. Vil du slå på nettlesing med tekstveljar?
 tabbrowser-confirm-caretbrowsing-checkbox = Ikkje vis denne dialogen igjen.
+
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Varsel
+tabbrowser-confirm-close-duplicate-tabs-text = Vi held den siste aktive fana open
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Lat att faner
 
 ##
 
@@ -148,8 +154,8 @@ tabbrowser-ctrl-tab-list-all-tabs =
 ## Tab manager menu buttons
 
 tabbrowser-manager-mute-tab =
-    .tooltiptext = Skru av fanelyd
+    .tooltiptext = Lyd av i fane
 tabbrowser-manager-unmute-tab =
-    .tooltiptext = Skru på fanelyd
+    .tooltiptext = Lyd på i fane
 tabbrowser-manager-close-tab =
     .tooltiptext = Lat att fane

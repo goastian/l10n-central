@@ -22,6 +22,20 @@ protections-panel-etp-more-info =
     .aria-label = Ulteriori informazioni sulla protezione antitracciamento avanzata
 protections-panel-etp-on-header = La protezione antitracciamento avanzata è ATTIVA per questo sito.
 protections-panel-etp-off-header = La protezione antitracciamento avanzata è DISATTIVATA per questo sito
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Protezione antitracciamento avanzata
+    .description = Attiva per questo sito
+    .aria-label = Protezione antitracciamento avanzata: attiva per { $host }
+protections-panel-etp-toggle-off =
+    .label = Protezione antitracciamento avanzata
+    .description = Disattivata per questo sito
+    .aria-label = Protezione antitracciamento avanzata: disattivata per { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Il sito non funziona?
 # The heading/title of the sub-panel view
@@ -34,6 +48,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Perché?
 protections-panel-not-blocking-why-etp-on-tooltip = Il blocco di questi elementi potrebbe causare il parziale malfunzionamento di alcuni siti web. Senza elementi traccianti, alcuni pulsanti, moduli e campi di accesso non funzionano correttamente.
 protections-panel-not-blocking-why-etp-off-tooltip = Tutti gli elementi traccianti in questo sito sono stati caricati in quanto le protezioni sono disattivate.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Il blocco di questi elementi potrebbe causare il parziale malfunzionamento di alcuni siti web. Senza elementi traccianti, alcuni pulsanti, moduli e campi di accesso non funzionano correttamente.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Tutti gli elementi traccianti in questo sito sono stati caricati in quanto le protezioni sono disattivate.
 
 ##
 
@@ -89,7 +107,6 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Segnala problemi con il sito
 protections-panel-content-blocking-breakage-report-view-description = Il blocco di determinati elementi traccianti può creare problemi in alcuni siti web. Segnalando questi problemi contribuisci a migliorare { -brand-short-name } per tutti gli utenti. Questa segnalazione verrà inviata a Mozilla e include l’indirizzo del sito e informazioni sulle impostazioni del browser. <label data-l10n-name="learn-more">Ulteriori informazioni</label>
-protections-panel-content-blocking-breakage-report-view-description2 = Il blocco di determinati elementi traccianti può creare problemi in alcuni siti web. Segnalando questi problemi contribuisci a migliorare { -brand-short-name } per tutti gli utenti. Questa segnalazione verrà inviata a { -vendor-short-name } e include l’indirizzo del sito e informazioni sulle impostazioni del browser.
 protections-panel-content-blocking-breakage-report-view-collection-url = Indirizzo
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = Indirizzo
@@ -104,8 +121,9 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Riduzione banner per i cookie
-protections-panel-cookie-banner-handling-enabled = Attiva per questo sito
-protections-panel-cookie-banner-handling-disabled = Disattivata per questo sito
+protections-panel-cookie-banner-blocker-header = Blocco banner per i cookie
+protections-panel-cookie-banner-handling-enabled = Attivo per questo sito
+protections-panel-cookie-banner-handling-disabled = Disattivato per questo sito
 protections-panel-cookie-banner-handling-undetected = Sito attualmente non supportato
 protections-panel-cookie-banner-view-title =
     .title = Riduzione banner per i cookie
@@ -113,8 +131,28 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Disattivare Riduzione banner per i cookie per { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Attivare Riduzione banner per i cookie per questo sito?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Blocco banner per i cookie
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Disattivare Blocco banner per i cookie per { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Attivare Blocco banner per i cookie per questo sito?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } eliminerà i cookie per questo sito e aggiornerà la pagina. L’eliminazione dei cookie potrebbe disconnetterti dal sito o svuotare eventuali carrelli in sospeso.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } cerca di rifiutare automaticamente tutte le richieste per i cookie nei siti supportati.
 protections-panel-cookie-banner-view-cancel = Annulla
 protections-panel-cookie-banner-view-turn-off = Disattiva
 protections-panel-cookie-banner-view-turn-on = Attiva
+protections-panel-cookie-banner-blocker-view-turn-on-description = Attivalo e { -brand-short-name } cercherà di rifiutare automaticamente i banner per i cookie su questo sito.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Annulla
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Disattiva
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Attiva
+protections-panel-report-broken-site =
+    .label = Segnala problemi con il sito
+    .title = Segnala problemi con il sito
+
+## Protections panel info message
+
+cfr-protections-panel-header = Naviga senza lasciarti seguire
+cfr-protections-panel-body = Mantieni i tuoi dati al riparo da occhi indiscreti. { -brand-short-name } ti protegge dagli elementi traccianti più comuni che cercano di seguire le tue attività online.
+cfr-protections-panel-link-text = Ulteriori informazioni

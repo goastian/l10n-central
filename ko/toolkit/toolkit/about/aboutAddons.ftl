@@ -6,8 +6,6 @@ addons-page-title = 부가 기능 관리자
 search-header =
     .placeholder = addons.mozilla.org 검색
     .searchbuttonlabel = 검색
-search-header-shortcut =
-    .key = f
 
 ## Variables
 ##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
@@ -42,8 +40,8 @@ detail-version =
     .label = 버전
 detail-last-updated =
     .label = 마지막 업데이트
-addon-detail-description-expand = 자세히 보기
-addon-detail-description-collapse = 간단히 보기
+addon-detail-description-expand = 더 보기
+addon-detail-description-collapse = 덜 보기
 detail-contributions-description = 이 부가 기능의 개발자가 여러분이 작은 기여로 지속적인 개발을 지원해 줄 것을 요청합니다.
 detail-contributions-button = 기여하기
     .title = 이 부가 기능의 개발에 기여하기
@@ -139,9 +137,9 @@ addon-category-dictionary-title =
 addon-category-locale = 언어팩
 addon-category-locale-title =
     .title = 언어팩
-addon-category-available-updates = 업데이트 가능
+addon-category-available-updates = 업데이트 있음
 addon-category-available-updates-title =
-    .title = 업데이트 가능
+    .title = 업데이트 있음
 addon-category-recent-updates = 최근 업데이트
 addon-category-recent-updates-title =
     .title = 최근 업데이트
@@ -157,11 +155,20 @@ addon-sitepermission-host = { $host }에 대한 사이트 권한
 
 extensions-warning-safe-mode = 안전 모드에서는 모든 부가 기능을 사용할 수 없습니다.
 extensions-warning-check-compatibility = 부가 기능 호환성 확인 기능을 사용 안 합니다. 호환되지 않는 부가 기능이 있을 수 있습니다.
+extensions-warning-safe-mode2 =
+    .message = 안전 모드에서는 모든 부가 기능을 사용할 수 없습니다.
+extensions-warning-check-compatibility2 =
+    .message = 부가 기능 호환성 확인 기능을 사용 안 합니다. 호환되지 않는 부가 기능이 있을 수 있습니다.
 extensions-warning-check-compatibility-button = 사용
     .title = 부가 기능 호환성 확인 기능 사용
 extensions-warning-update-security = 부가 기능 업데이트 보안 확인 기능을 사용 안 합니다. 업데이트로 인해 문제가 발생 할 수 있습니다.
+extensions-warning-update-security2 =
+    .message = 부가 기능 업데이트 보안 확인 기능을 사용 안 합니다. 업데이트로 인해 문제가 발생 할 수 있습니다.
 extensions-warning-update-security-button = 사용
     .title = 부가 기능 업데이트 보안 확인 기능 사용
+extensions-warning-imported-addons2 =
+    .message = { -brand-short-name }로 가져온 확장  기능의 설치를 완료하세요.
+extensions-warning-imported-addons-button = 확장 기능 설치
 
 ## Strings connected to add-on updates
 
@@ -192,7 +199,7 @@ addon-updates-reset-updates-to-manual = 모든 부가 기능을 수동 업데이
 addon-updates-updating = 업데이트 확인 중…
 addon-updates-installed = 업데이트 완료
 addon-updates-none-found = 업데이트 없음
-addon-updates-manual-updates-found = 업데이트 가능 항목 보기
+addon-updates-manual-updates-found = 업데이트 있는 항목 보기
 
 ## Add-on install/debug strings for page options menu
 
@@ -212,6 +219,9 @@ shortcuts-no-addons = 사용하는 확장 기능이 없습니다.
 shortcuts-no-commands = 다음 확장 기능에는 단축키가 없습니다:
 shortcuts-input =
     .placeholder = 단축키 입력
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = 바로가기 제거
 shortcuts-browserAction2 = 도구 모음 버튼 활성화
 shortcuts-pageAction = 페이지 작업 활성화
 shortcuts-sidebarAction = 사이드바 표시/숨기기
@@ -226,6 +236,11 @@ shortcuts-duplicate = 중복 단축키
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = { $shortcut } 단축키가 여러 곳에 사용되고 있습니다. 단축키가 중복되면 예상치 못한 동작이 발생할 수 있습니다.
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = { $shortcut } 단축키가 여러 곳에 사용되고 있습니다. 단축키가 중복되면 예상치 못한 동작이 발생할 수 있습니다.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -236,7 +251,7 @@ shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] { $numberToShow }개 더 보기
     }
-shortcuts-card-collapse-button = 간단히 보기
+shortcuts-card-collapse-button = 덜 보기
 header-back-button =
     .title = 뒤로 가기
 
@@ -247,6 +262,9 @@ header-back-button =
 discopane-intro = 확장 기능 및 테마는 브라우저용 앱과 비슷하며, 비밀번호 보호, 동영상 다운로드, 거래 찾기, 성가신 광고 차단, 브라우저 외양 변경 등을 할 수 있도록 합니다. 이 작은 소프트웨어 프로그램은 보통 제3자에 의해 개발됩니다. 다음은 탁월한 보안, 성능 및 기능을 위해 { -brand-product-name }가 <a data-l10n-name="learn-more-trigger">추천</a>하는 목록입니다.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장 기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장 기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
 discopane-notice-learn-more = 더 알아보기
 privacy-policy = 개인정보처리방침
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -262,8 +280,8 @@ install-theme-button = 테마 설치
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = 관리
-find-more-addons = 더 많은 부가 기능 찾기
-find-more-themes = 더 많은 테마 찾기
+find-more-addons = 부가 기능 더 찾기
+find-more-themes = 테마 더 찾기
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -292,9 +310,6 @@ permissions-addon-button = 권한
 extension-enabled-heading = 사용함
 extension-disabled-heading = 사용 안 함
 theme-enabled-heading = 사용함
-theme-disabled-heading = 사용 안 함
-theme-monochromatic-heading = 컬러웨이
-theme-monochromatic-subheading = { -brand-product-name }의 생동감 넘치는 새로운 컬러웨이입니다. 제한된 시간 동안 사용할 수 있습니다.
 theme-disabled-heading2 = 저장된 테마
 plugin-enabled-heading = 사용함
 plugin-disabled-heading = 사용 안 함
@@ -313,6 +328,9 @@ addon-detail-homepage-label = 홈페이지
 addon-detail-rating-label = 평가
 # Message for add-ons with a staged pending update.
 install-postponed-message = 이 확장 기능은 { -brand-short-name }가 다시 시작될 때 업데이트됩니다.
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message = 이 확장 기능은 { -brand-short-name }가 다시 시작될 때 업데이트됩니다.
 install-postponed-button = 지금 업데이트
 # The average rating that the add-on has received.
 # Variables:
@@ -336,6 +354,10 @@ addon-detail-reviews-link =
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> 부가 기능이 제거되었습니다.
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = { $addon } 부가 기능이 제거되었습니다.
 pending-uninstall-undo-button = 실행 취소
 addon-detail-updates-label = 자동 업데이트 허용
 addon-detail-updates-radio-default = 기본값
@@ -343,6 +365,10 @@ addon-detail-updates-radio-on = 켜기
 addon-detail-updates-radio-off = 끄기
 addon-detail-update-check-label = 업데이트 확인
 install-update-button = 업데이트
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -351,6 +377,24 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = 허용되면 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 addon-detail-private-browsing-allow = 허용
 addon-detail-private-browsing-disallow = 허용 안 함
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
+
+## "sites with restrictions" (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = 제한이 있는 사이트에서 실행
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = 허용되면 확장 기능은 { -vendor-short-name }에 의해 제한된 사이트에 액세스할 수 있습니다. 이 확장 기능을 신뢰하는 경우에만 허용하세요.
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = 허용
+addon-detail-quarantined-domains-disallow = 허용 안 함
+# aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
+addon-detail-group-label-quarantined-domains =
+    .aria-label = { addon-detail-quarantined-domains-label }
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -361,7 +405,7 @@ addon-badge-recommended2 =
 # We hard code "Mozilla" in the string below because the extensions are built
 # by Mozilla and we don't want forks to display "by Fork".
 addon-badge-line3 =
-    .title = Mozilla에서 만든 공식 확장 기능. 보안 및 성능 표준 충족
+    .title = Ablaze에서 만든 공식 확장 기능. 보안 및 성능 표준 충족
     .aria-label = { addon-badge-line3.title }
 addon-badge-verified2 =
     .title = 이 확장 기능은 보안 및 성능 표준을 충족하는 것으로 검토되었습니다
@@ -369,7 +413,7 @@ addon-badge-verified2 =
 
 ##
 
-available-updates-heading = 업데이트 가능
+available-updates-heading = 업데이트 있음
 recent-updates-heading = 최근 업데이트
 release-notes-loading = 로드 중…
 release-notes-error = 죄송합니다. 출시 정보를 로드하는 중에 오류가 발생했습니다.
@@ -397,16 +441,11 @@ updates-heading = 업데이트 관리
 sitepermission-heading = 사이트 권한 관리
 discover-heading = { -brand-short-name } 개인화
 shortcuts-heading = 확장 기능 단축키 관리
-default-heading-search-label = 더 많은 부가 기능 찾기
+default-heading-search-label = 부가 기능 더 찾기
 addons-heading-search-input =
     .placeholder = addons.mozilla.org 검색
 addon-page-options-button =
     .title = 부가 기능 도구
-
-## Detail notifications
-## Variables:
-##   $name (String): name of the add-on.
-
 
 ## Detail notifications
 ## Variables:
@@ -415,13 +454,36 @@ addon-page-options-button =
 # Variables:
 #   $version (string) - Application version.
 details-notification-incompatible = { $name }는 { -brand-short-name } { $version }와 호환되지 않습니다.
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message = { $name }는 { -brand-short-name } { $version }와 호환되지 않습니다.
 details-notification-incompatible-link = 추가 정보
 details-notification-unsigned-and-disabled = { $name } 부가 기능이 { -brand-short-name }에서 확인되지 않았기 때문에 비활성화되었습니다.
+details-notification-unsigned-and-disabled2 =
+    .message = { $name } 부가 기능이 { -brand-short-name }에서 확인되지 않았기 때문에 비활성화되었습니다.
 details-notification-unsigned-and-disabled-link = 추가 정보
 details-notification-unsigned = { $name } 부가 기능이 { -brand-short-name }에서 사용할 수 있는지 확인할 수 없습니다. 주의해서 진행하세요.
+details-notification-unsigned2 =
+    .message = { $name } 부가 기능이 { -brand-short-name }에서 사용할 수 있는지 확인할 수 없습니다. 주의해서 진행하세요.
 details-notification-unsigned-link = 추가 정보
 details-notification-blocked = { $name }는 보안이나 안정성 문제로 인해 사용 중지됩니다.
+details-notification-blocked2 =
+    .message = { $name }는 보안이나 안정성 문제로 인해 사용 중지됩니다.
 details-notification-blocked-link = 추가 정보
 details-notification-softblocked = { $name }는 보안이나 안정성 문제를 일으킬 수 있습니다.
+details-notification-softblocked2 =
+    .message = { $name }는 보안이나 안정성 문제를 일으킬 수 있습니다.
 details-notification-softblocked-link = 추가 정보
 details-notification-gmp-pending = { $name } 부가 기능이 곧 설치됩니다.
+details-notification-gmp-pending2 =
+    .message = { $name } 부가 기능이 곧 설치됩니다.
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = 라이선스 정보
+plugins-gmp-privacy-info = 개인정보 보호정보
+plugins-openh264-name = Cisco Systems, Inc.가 제공하는 OpenH264 동영상 코덱
+plugins-openh264-description = 이 플러그인은 WebRTC 표준을 따르고 H.264 동영상 코덱을 필요로 하는 기기로 부터의 WebRTC 통신을 활성화하기 위해서 Mozilla에 의해서 설치되었습니다. 코덱 소스 코드와 구현에 대한 내용을 확인하기 위해서는 http://www.openh264.org/ 를 방문하세요.
+plugins-widevine-name = Google Inc.에서 제공하는 Widevine 콘텐츠 복호화 모듈
+plugins-widevine-description = 이 플러그인은 암호화된 미디어 확장 명세를 준수하는 암호화된 미디어를 실행할 수 있게 합니다. 암호화된 미디어는 보통 사이트에서 프리미엄 미디어 콘텐츠가 복제되는 것을 보호하기 위해 사용됩니다. 암호화된 미디어 확장에 대한 자세한 내용은 https://www.w3.org/TR/encrypted-media/ 페이지를 참조하세요.

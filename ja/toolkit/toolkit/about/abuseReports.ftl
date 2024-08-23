@@ -16,13 +16,13 @@ abuse-report-subtitle = どのような問題ですか？
 #   $author-name (string) - Name of the add-on author
 abuse-report-addon-authored-by = 作者: <a data-l10n-name="author-name">{ $author-name }</a>
 abuse-report-learnmore =
-    どれを選択すべきか分からない時は、
+    どれを選択すべきか分からないときは、
     <a data-l10n-name="learnmore-link">拡張機能やテーマの報告について学んでください。</a>
 abuse-report-submit-description = 問題の詳細を記入してください (任意)
 abuse-report-textarea =
     .placeholder = 詳細を報告していただければ、問題を解決しやすくなります。あなたの体験した問題について記入してください。健全なウェブを保つためのご協力に感謝します。
 abuse-report-submit-note =
-    注意: 個人情報 (氏名、メールアドレス、電話番号、所在地など) を記入してはいけません。
+    注意: 個人情報 (氏名、メールアドレス、電話番号、所在地など) を記入しないでください。
     { -vendor-short-name } は、これらの報告を永久に保管します。
 
 ## Panel buttons.

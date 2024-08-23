@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Unntak
-    .style = width: 36em
 permissions-window2 =
     .title = Unntak
     .style = min-width: 36em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Skriv inn eit gyldig tenarnamn
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Unntak for utvida sporingsvern
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Du har slått av vern på desse nettsidene.
 permissions-exceptions-etp-window2 =
     .title = Unntak for utvida sporingsvern
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Du kan oppgje kva for nettstadar som ha
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Unntak - Infokapslar og nettstaddata
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Unntak - Infokapslar og nettstaddata
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Du kan spesifisere kva for nettstadar som a
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Unntak - Berre HTTPS-modus
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Unntak - Berre HTTPS-modus
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Du kan slå av berre-HTTPS-modus for bestemte nettstadar. { -brand-short-name } prøver ikkje å oppgradere tilkoplinga for å sikre HTTPS for desse nettstadane. Unntak gjeld ikkje private vindauge.
+permissions-exceptions-https-only-desc2 = Du kan slå av kun-HTTPS-modus for bestemte nettstadar. { -brand-short-name } prøver ikkje å oppgradere tilkoplinga til sikker HTTPS for desse nettstadane.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Tillatne nettsider - Sprettoppvindauge
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Tillatne nettsider - Sprettoppvindauge
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Du kan velje kva for nettstadar som har løy
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Unntak - Lagra innloggingar
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Unntak - Lagra innloggingar
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Innloggingar frå følgjande nettsteder vil ikkje bli lagra
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Unntak - lagra passord
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } lagrar ikkje passord for nettstadar som er oppførte her.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Tillatne nettsider - Inatallering av tillegg
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Tillatne nettsider - Inatallering av tillegg
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Du kan velje kva for nettstadar som har lø
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Innstillingar - Automatisk avspeling
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Innstillingar - Automatisk avspeling
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Du kan handsame nettstadar som ikkje følgjer s
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Innstillingar - Varslingsløyve
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Innstillingar - Varslingsløyve
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Dette hindrar nettstadar som ikkje 
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Innstillingar - Plasseringsløyve
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Innstillingar - Plasseringsløyve
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Dette hindrar nettstadar som ikkje er f
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Innstillingar - Løyve for virtuell røyndom
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Innstillingar - Løyve for virtuell røyndom
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Dette findrar nettstadar som ikkje er oppfør
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Innstillingar - Kameraløyve
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Innstillingar - Kameraløyve
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Dette hindrar nettstadar som ikkje er fø
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Innstillingar - Mikrofonløyve
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Innstillingar - Mikrofonløyve
     .style = { permissions-window2.style }

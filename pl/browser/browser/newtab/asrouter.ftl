@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = Autor: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Polecenie
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Polecenie
     .tooltiptext = Polecenie rozszerzenia
     .a11y-announcement = Dostępne polecenie rozszerzenia
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Polecenie
     .tooltiptext = Polecenie funkcji
     .a11y-announcement = Dostępne polecenie funkcji
@@ -65,6 +67,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Synchronizuj zakładki na każdym urządzeniu.
 cfr-doorhanger-bookmark-fxa-body = Wspaniałe odkrycie! Fajnie byłoby mieć tę zakładkę także na telefonie, prawda? Zacznij korzystać z { -fxaccount-brand-name(case: "gen", capitalization: "lower") }.
+cfr-doorhanger-bookmark-fxa-body-2 = Wspaniałe odkrycie! Fajnie byłoby mieć tę zakładkę także na telefonie, prawda? Zacznij korzystać z konta.
 cfr-doorhanger-bookmark-fxa-link-text = Synchronizuj zakładki…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Przycisk zamknięcia
@@ -111,28 +114,12 @@ cfr-doorhanger-doh-primary-button-2 = OK
 cfr-doorhanger-doh-secondary-button = Wyłącz
     .accesskey = W
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Twoja prywatność jest ważna. { -brand-short-name } izoluje teraz witryny od siebie, co utrudnia hakerom kradzież haseł, numerów kart płatniczych i innych prywatnych informacji.
-cfr-doorhanger-fission-header = Izolacja witryn
-cfr-doorhanger-fission-primary-button = OK
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = Więcej informacji
-    .accesskey = W
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Filmy na tej witrynie mogą nie być poprawnie odtwarzane w tej wersji { -brand-short-name(case: "gen") }. Zaktualizuj go, aby móc oglądać filmy.
 cfr-doorhanger-video-support-header = Zaktualizuj { -brand-short-name(case: "acc") }, aby odtwarzać filmy
 cfr-doorhanger-video-support-primary-button = Aktualizuj teraz
     .accesskey = k
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = Więcej informacji
-    .title = Rozwiń, aby dowiedzieć się więcej o tej funkcji
-spotlight-learn-more-expanded = Więcej informacji
-    .title = Zamknij
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -147,20 +134,6 @@ spotlight-public-wifi-vpn-primary-button = Zachowaj prywatność dzięki { -mozi
     .accesskey = V
 spotlight-public-wifi-vpn-link = Nie teraz
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Przetestuj naszą najpotężniejszą
-    funkcję ochrony prywatności w historii
-spotlight-total-cookie-protection-body = Całkowita ochrona ciasteczek uniemożliwia elementom śledzącym używanie ciasteczek do śledzenia Cię w Internecie.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } buduje płot wokół ciasteczek, ograniczając je do odwiedzanej witryny, aby elementy śledzące nie mogły ich używać do śledzenia Cię. Włączając tę funkcję przed innymi pomożesz ją zoptymalizować, abyśmy mogli kontynuować tworzenie lepszego Internetu dla wszystkich.
-spotlight-total-cookie-protection-primary-button = Włącz całkowitą ochronę ciasteczek
-spotlight-total-cookie-protection-secondary-button = Nie teraz
 
 ## Emotive Continuous Onboarding
 
@@ -237,6 +210,9 @@ cfr-cbh-confirm-button = Odrzucaj prośby o akceptację ciasteczek
     .accesskey = O
 cfr-cbh-dismiss-button = Nie teraz
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } właśnie odrzucił prośbę o akceptację ciasteczek za Ciebie
+cookie-banner-blocker-onboarding-body = Mniej odwracania uwagi, mniej ciasteczek śledzących Cię na tej witrynie.
+cookie-banner-blocker-onboarding-learn-more = Więcej informacji
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -266,7 +242,48 @@ fxa-sync-cfr-secondary = Przypomnij później
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = Używasz starszego urządzenia?
-device-migration-fxa-spotlight-body = Utwórz kopię zapasową swoich danych, aby mieć pewność, że nie utracisz ważnych informacji, takich jak zakładki czy hasła — zwłaszcza jeśli zmienisz urządzenie na nowe.
-device-migration-fxa-spotlight-primary-button = Jak utworzyć kopię zapasową
-device-migration-fxa-spotlight-link = Przypomnij później
+device-migration-fxa-spotlight-heavy-user-header = Nie zapomnij zrobić kopii zapasowej swoich danych
+device-migration-fxa-spotlight-heavy-user-body = Upewnij się, że ważne informacje — takie jak zakładki i hasła — są aktualne i chronione na wszystkich Twoich urządzeniach.
+device-migration-fxa-spotlight-heavy-user-primary-button = Zacznij teraz
+device-migration-fxa-spotlight-older-device-header = Zero obaw dzięki { -brand-product-name(case: "dat") }
+device-migration-fxa-spotlight-older-device-body = Konto zapewnia, że Twoje ważne informacje są aktualne i chronione na każdym połączonym urządzeniu.
+device-migration-fxa-spotlight-older-device-primary-button = Utwórz konto
+device-migration-fxa-spotlight-getting-new-device-header-2 = Będziesz mieć nowe urządzenie?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Wykonaj kilka prostych kroków, aby mieć przy sobie zakładki, historię i hasła, gdy zaczniesz korzystać z nowego urządzenia.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Jak utworzyć kopię zapasową
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>Czy ustawić { -brand-short-name(case: "acc") } jako domyślny czytnik plików PDF?</strong> Korzystaj z { -brand-short-name(case: "gen") } do czytania i edytowania dokumentów PDF zapisanych na komputerze.
+pdf-default-notification-set-default-button =
+    .label = Ustaw jako domyślny
+pdf-default-notification-decline-button =
+    .label = Nie teraz
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>Czy otwierać { -brand-short-name(case: "acc") } przy każdym uruchomieniu komputera?</strong> Teraz możesz ustawić automatyczne otwieranie { -brand-short-name(case: "gen") } po włączeniu urządzenia.
+launch-on-login-learnmore = Więcej informacji
+launch-on-login-infobar-confirm-button = Tak, otwieraj { -brand-short-name(case: "acc") }
+    .accesskey = T
+launch-on-login-infobar-reject-button = Nie teraz
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>Czy otwierać { -brand-short-name(case: "acc") } przy każdym uruchomieniu komputera?</strong> Znajdź „uruchamianie” w ustawieniach, aby zarządzać swoimi preferencjami uruchamiania.
+launch-on-login-infobar-final-reject-button = Nie, dziękuję
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Niech nie siedzą Ci na ogonie
+tail-fox-spotlight-subtitle = Pożegnaj irytujące reklamy z elementami śledzącymi i ciesz się bezpieczniejszym, szybszym Internetem.
+tail-fox-spotlight-primary-button = Otwieraj odnośniki w { -brand-short-name(case: "loc") }
+tail-fox-spotlight-secondary-button = Nie teraz

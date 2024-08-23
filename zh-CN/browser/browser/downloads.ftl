@@ -92,7 +92,7 @@ downloads-cmd-retry =
 downloads-cmd-retry-panel =
     .aria-label = 重试
 downloads-cmd-go-to-download-page =
-    .label = 转至下载页面
+    .label = 前往下载页面
     .accesskey = G
 downloads-cmd-copy-download-link =
     .label = 复制下载链接
@@ -149,11 +149,6 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = 将在 { $hours } 小时 { $minutes } 分钟后打开
-downloading-file-opens-in-minutes = 将在 { $minutes } 分钟后打开…
-downloading-file-opens-in-minutes-and-seconds = 将在 { $minutes } 分钟 { $seconds } 秒后打开…
-downloading-file-opens-in-seconds = 将在 { $seconds } 秒后打开…
-downloading-file-opens-in-some-time = 将在下载完成后打开…
 downloading-file-opens-in-hours-and-minutes-2 =
     .value = 将在 { $hours } 小时 { $minutes } 分钟后打开
 downloading-file-opens-in-minutes-2 =
@@ -183,7 +178,7 @@ downloads-cancel-download =
 downloads-history =
     .label = 显示全部下载
     .accesskey = S
-# This string is shown at the top of the Download Details Panel, to indicate
+# This string is shown at the top of the download details sub-panel to indicate
 # that we are showing the details of a single download.
 downloads-details =
     .title = 下载详情
@@ -227,7 +222,7 @@ downloads-more-downloading =
 downloads-error-alert-title = 下载错误
 # Variables:
 #   $extension (String): the name of the blocking extension.
-downloads-error-blocked-by = 下载项已被 { $extension } 拦截，无法保存。
+downloads-error-blocked-by = 下载项已被“{ $extension }”拦截，无法保存。
 # Used when the name of the blocking extension is unavailable.
 downloads-error-extension = 下载项已被某扩展拦截，无法保存。
 # Line breaks in this message are meaningful, and should be maintained.

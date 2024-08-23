@@ -18,6 +18,10 @@ support-addons-type = 類型
 support-addons-enabled = 已啟用
 support-addons-version = 版本
 support-addons-id = ID
+legacy-user-stylesheets-title = 傳統使用者樣式表
+legacy-user-stylesheets-enabled = 啟用
+legacy-user-stylesheets-stylesheet-types = 樣式表
+legacy-user-stylesheets-no-stylesheets-found = 找不到樣式表
 security-software-title = 安全軟體
 security-software-type = 類型
 security-software-name = 名稱
@@ -73,10 +77,11 @@ app-basics-remote-processes-count = 遠端處理程序
 app-basics-enterprise-policies = 企業政策
 app-basics-location-service-key-google = Google Location Service 金鑰
 app-basics-safebrowsing-key-google = Google Safebrowsing 金鑰
-app-basics-key-mozilla = Mozilla Location Service 金鑰
+app-basics-key-mozilla = Ablaze Location Service 金鑰
 app-basics-safe-mode = 安全模式
 app-basics-memory-size = 記憶體大小（RAM）
 app-basics-disk-available = 磁碟可用空間大小
+app-basics-pointing-devices = 指向裝置
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -182,6 +187,25 @@ media-codec-support-hw-decoding = 硬體解碼
 media-codec-support-codec-name = 解碼器名稱
 media-codec-support-supported = 支援
 media-codec-support-unsupported = 不支援
+media-codec-support-error = 無法取得 Codec 支援資訊，請在播放媒體檔案後再試一次。
+media-codec-support-lack-of-extension = 安裝擴充套件
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = 內容解密模組資訊
+media-key-system-name = 金鑰系統名稱
+media-video-robustness = 視訊穩健性
+media-audio-robustness = 音訊穩健性
+media-cdm-capabilities = 系統能力
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = 不加密片頭（Clear Lead）
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2 相容
 
 ##
 
@@ -241,6 +265,7 @@ try-newer-driver = 因為您的顯示卡驅動程式版本過舊，已封鎖此�
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType 參數
 compositing = 合成
+support-font-determination = 字型可見度除錯資訊
 hardware-h264 = H264 硬體解碼
 main-thread-no-omtc = 主執行緒，無 OMTC
 yes = 是
@@ -302,6 +327,9 @@ has-seccomp-bpf = Seccomp-BPF（過濾系統呼叫）
 has-seccomp-tsync = Seccomp 執行緒同步
 has-user-namespaces = 使用者命名空間
 has-privileged-user-namespaces = 取得權限程序的使用者命名空間
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — 您的系統不允許使用此功能，此功能可能會影響 { -brand-short-name } 的安全性功能。
 can-sandbox-content = 內容程序沙盒
 can-sandbox-media = 媒體外掛程式沙盒
 content-sandbox-level = 內容程序沙盒等級
@@ -370,6 +398,20 @@ support-printing-modified-settings = 更改過的列印設定
 support-printing-prefs-name = 名稱
 support-printing-prefs-value = 值
 
+## Remote Settings sections
+
+support-remote-settings-title = 遠端設定
+support-remote-settings-status = 狀態
+support-remote-settings-status-ok = 確定
+# Status when synchronization is not working.
+support-remote-settings-status-broken = 未使用中
+support-remote-settings-last-check = 上次檢查
+support-remote-settings-local-timestamp = 本地時間戳記
+support-remote-settings-sync-history = 紀錄
+support-remote-settings-sync-history-status = 狀態
+support-remote-settings-sync-history-datetime = 日期
+support-remote-settings-sync-history-infos = 資訊
+
 ## Normandy sections
 
 support-remote-experiments-title = 遠端實驗
@@ -379,3 +421,22 @@ support-remote-experiments-see-about-studies = 若需更多資訊，請參考 <a
 support-remote-features-title = 遠端功能
 support-remote-features-name = 名稱
 support-remote-features-status = 狀態
+
+## Pointing devices
+
+pointing-device-mouse = 滑鼠
+pointing-device-touchscreen = 觸控螢幕
+pointing-device-pen-digitizer = 繪圖板
+pointing-device-none = 無指向裝置
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = 內容分析（DLP）
+content-analysis-active = 使用中
+content-analysis-connected-to-agent = 已連線到代理程式
+content-analysis-agent-path = 代理程式路徑
+content-analysis-agent-failed-signature-verification = 代理程式簽章驗證失敗
+content-analysis-request-count = 請求數量

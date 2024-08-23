@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = 이 사이트 기록 삭제
     .accesskey = F
+places-forget-domain-data =
+    .label = 이 사이트 기록 삭제…
+    .accesskey = F
 places-sortby-name =
     .label = 이름순 정렬
     .accesskey = r
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = 폴더 편집…
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -132,14 +137,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = 이 사이트 기록 삭제
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = 이 작업은 기록, 비밀번호, 쿠키, 캐시 및 콘텐츠 기본 설정을 포함하여 { $hostOrBaseDomain } 사이트와 관련된 모든 데이터를 삭제합니다. 계속하시겠습니까?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = 이 작업은 기록, 쿠키, 캐시 및 콘텐츠 기본 설정을 포함하여 { $hostOrBaseDomain } 사이트와 관련된 데이터를 삭제합니다. 관련된 북마크와 비밀번호는 삭제되지 않습니다. 계속하시겠습니까?
 places-forget-about-this-site-forget = 지우기
-places-library =
-    .title = 라이브러리
-    .style = width:700px; height:500px;
 places-library3 =
     .title = 라이브러리
 places-organize-button =

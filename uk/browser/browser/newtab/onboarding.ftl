@@ -53,6 +53,9 @@ mr1-onboarding-import-primary-button-label-attribution = Імпортувати 
 mr1-onboarding-theme-header = Зробіть його своїм
 mr1-onboarding-theme-subtitle = Персоналізуйте { -brand-short-name } за допомогою теми.
 mr1-onboarding-theme-secondary-button-label = Не зараз
+newtab-wallpaper-onboarding-title = Спробуйте сплеск кольорів
+newtab-wallpaper-onboarding-subtitle = Оберіть шпалери, щоб освіжити вигляд нової вкладки.
+newtab-wallpaper-onboarding-primary-button-label = Налаштувати шпалери
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Системна тема
 mr1-onboarding-theme-label-light = Світла
@@ -112,7 +115,7 @@ mr2-onboarding-default-theme-label = Переглянути типові тем�
 ## Strings for Thank You page
 
 mr2-onboarding-thank-you-header = Дякуємо, що обрали нас
-mr2-onboarding-thank-you-text = { -brand-short-name } — незалежний браузер, підтримуваний некомерційною організацією. Разом ми робимо інтернет безпечнішим, здоровішим та приватнішим.
+mr2-onboarding-thank-you-text = { -brand-short-name } – незалежний браузер, підтримуваний некомерційною організацією. Разом ми робимо інтернет безпечнішим, здоровішим та приватнішим.
 mr2-onboarding-start-browsing-button-label = Почати перегляд
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
@@ -183,7 +186,7 @@ mr2022-onboarding-welcome-pin-subtitle = Відкривайте { -brand-short-n
 # Primary button string used on welcome page for when Firefox is not pinned.
 mr2022-onboarding-pin-primary-button-label =
     { PLATFORM() ->
-        [macos] Закріпити { -brand-short-name } у док
+        [macos] Закріпити { -brand-short-name } у Dock
        *[other] Закріпити { -brand-short-name } на панелі завдань
     }
 # Subtitle will be used when user already has Firefox pinned, but
@@ -276,10 +279,10 @@ mr2022-onboarding-no-mobile-download-cta-text = Скануйте QR-код, що
 ## Pin private window screen shown only for users who don't have Firefox private pinned
 
 mr2022-upgrade-onboarding-pin-private-window-header = Отримайте свободу приватного перегляду одним натиском
-mr2022-upgrade-onboarding-pin-private-window-subtitle = Жодних збережених кук чи історії на комп'ютері. Переглядайте без думки, що за вами хтось спостерігає.
+mr2022-upgrade-onboarding-pin-private-window-subtitle = Жодних збережених файлів cookie чи історії на комп'ютері. Переглядайте без думки, що за вами хтось спостерігає.
 mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
     { PLATFORM() ->
-        [macos] Закріпити приватне вікно { -brand-short-name } у док
+        [macos] Закріпити приватне вікно { -brand-short-name } у Dock
        *[other] Закріпити приватне вікно { -brand-short-name } на панелі завдань
     }
 
@@ -332,3 +335,34 @@ onboarding-device-migration-title = З поверненням!
 onboarding-device-migration-subtitle = Увійдіть у свій { -fxaccount-brand-name(capitalization: "sentence") }, щоб перенести свої закладки, паролі та історію на новий пристрій.
 onboarding-device-migration-subtitle2 = Увійдіть в обліковий запис, щоб перенести свої закладки, паролі та історію на новий пристрій.
 onboarding-device-migration-primary-button-label = Увійти
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Ми дбаємо про вашу безпеку
+onboarding-easy-setup-security-and-privacy-subtitle = Наш некомерційний браузер допомагає блокувати таємне стеження компаній за вами в інтернеті.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Ваші дані надійно шифруються на різних пристроях
+onboarding-mobile-download-security-and-privacy-subtitle = Під час синхронізації { -brand-short-name } шифрує ваші паролі, закладки та інші дані. Крім того, ви отримуєте доступ до вкладок зі своїх інших пристроїв.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } працює для вас
+onboarding-gratitude-security-and-privacy-subtitle = Дякуємо вам за користування { -brand-short-name } від Mozilla Foundation. Завдяки вашій підтримці ми докладаємо зусиль для розвитку безпечнішого інтернету, доступного для всіх.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Як довго ви користуєтеся { -brand-short-name }?
+onboarding-new-user-familiarity-based-survey-title = Як добре ви знайомі з { -brand-short-name }?
+onboarding-new-user-survey-subtitle = Ваш відгук допомагає зробити { -brand-short-name } ще кращим.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Далі
+onboarding-new-user-survey-legal-link-label = Вибираючи “{ onboarding-new-user-survey-next-button-label }”, ви погоджуєтеся з <a data-l10n-name="privacy_notice">Положенням про приватність</a> { -brand-product-name }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Новий користувач
+onboarding-new-user-survey-time-based-option-2 = Менш як 1 місяць
+onboarding-new-user-survey-time-based-option-3 = Понад 1 місяць, користуюся постійно
+onboarding-new-user-survey-time-based-option-4 = Понад 1 місяць, користуюся час від часу
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Новий користувач
+onboarding-new-user-survey-familiarity-based-option-2 = Користуюся певний час
+onboarding-new-user-survey-familiarity-based-option-3 = Досвідчений користувач
+onboarding-new-user-survey-familiarity-based-option-4 = Користувався в минулому

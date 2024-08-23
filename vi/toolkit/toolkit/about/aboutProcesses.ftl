@@ -81,7 +81,7 @@ about-processes-with-coop-coep-process-private = { $origin } — Riêng tư ({ $
 #                   Can be an empty string if the process is idle.
 about-processes-active-threads =
     { $active ->
-       *[other] { $active } luồng hoạt động trong số { $number }: { $list }
+       *[other] { $active } luồng hoạt động trong tổng số { $number }: { $list }
     }
 # Single-line summary of threads (idle process)
 # Variables:
@@ -117,7 +117,6 @@ about-processes-frame-name-many = Khung phụ ({ $number }): { $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Tác nhân không xác định
-about-processes-utility-actor-audio-decoder = Bộ giải mã âm thanh
 about-processes-utility-actor-audio-decoder-generic = Bộ giải mã âm thanh chung
 about-processes-utility-actor-audio-decoder-applemedia = Bộ giải mã âm thanh Apple Media
 about-processes-utility-actor-audio-decoder-wmf = Bộ giải mã âm thanh Windows Media Framework
@@ -125,6 +124,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Tiện ích Windows
+about-processes-utility-actor-windows-file-dialog = Hộp thoại tập tin Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:

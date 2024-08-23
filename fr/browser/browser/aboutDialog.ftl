@@ -12,8 +12,6 @@ update-updateButton =
     .label = Redémarrer pour mettre à jour { -brand-shorter-name }
     .accesskey = R
 update-checkingForUpdates = Recherche de mises à jour…
-update-downloading = <img data-l10n-name="icon"/>Téléchargement de la mise à jour — <label data-l10n-name="download-status"/>
-update-downloading-message = Téléchargement de la mise à jour — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = Application de la mise à jour…
 update-failed = La mise à jour a échoué. <label data-l10n-name="failed-link">Télécharger la dernière version</label>
 update-failed-main = La mise à jour a échoué. <a data-l10n-name="failed-link-main">Télécharger la dernière version</a>
 update-adminDisabled = Les mises à jour sont désactivées par votre administrateur système
+update-policy-disabled = Mises à jour désactivées par votre organisation
 update-noUpdatesFound = { -brand-short-name } est à jour
 aboutdialog-update-checking-failed = Échec de la vérification des mises à jour.
 update-otherInstanceHandlingUpdates = { -brand-short-name } est mis à jour par une autre instance
-update-manual = Mises à jour disponibles à <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = Mises à jour disponibles sur <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,8 +37,6 @@ aboutdialog-update-manual-with-link = Mises à jour disponibles à <label data-l
 settings-update-manual-with-link = Mises à jour disponibles sur <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = La dernière version n’est pas disponible pour votre système. <label data-l10n-name="unsupported-link">En savoir plus</label>
 update-restarting = Redémarrage…
-channel-description = Vous utilisez actuellement le canal de mise à jour <label data-l10n-name="current-channel"></label>.
-update-internal-error = Une erreur interne empêche la vérification des mises à jour. Elles sont disponibles sur <label data-l10n-name="manual-link"/>
 update-internal-error2 = Une erreur interne empêche la vérification des mises à jour. Elles sont disponibles sur <label data-l10n-name="manual-link">{ $displayUrl }</label>
 
 ##

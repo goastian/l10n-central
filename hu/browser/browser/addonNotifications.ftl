@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = Ez a hozzáférés nem garan
 ##
 
 xpinstall-disabled-locked = A szoftvertelepítést a rendszergazda megtiltotta.
+xpinstall-disabled-by-policy = A szoftvertelepítést a szervezete letiltotta.
 xpinstall-disabled = A szoftvertelepítés jelenleg tiltva van. Kattintson az Engedélyezés gombra, és próbálja újra.
 xpinstall-disabled-button =
     .label = Engedélyezés
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = A(z) { $addonName } ({ $addonId }) telepítését a rendszergazda blokkolta.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = A rendszergazda megakadályozta, hogy a webhely engedélyt kérjen szoftver telepítéséhez.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = A(z) { $addonName } ({ $addonId }) telepítését a szervezete blokkolta.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = A szervezete megakadályozta, hogy ez a webhely engedélyt kérjen arra, hogy szoftvert telepítsen a számítógépére.
 addon-install-full-screen-blocked = A kiegészítőtelepítés nem engedélyezett, ha teljes képernyős módban van, vagy abba lép.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -58,6 +66,10 @@ webext-perms-sideload-menu-item = { $addonName } hozzáadva ide: { -brand-short-
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = A(z) { $addonName } új engedélyeket igényel
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = A { -brand-short-name }ba importált kiegészítők telepítésének véglegesítése.
 
 ## Add-on removal warning
 
@@ -120,3 +132,5 @@ addon-local-install-error-not-signed = Ez a kiegészítő nem telepíthető, mer
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = A(z) { $addonName } nem volt telepíthető, mert nem kompatibilis a { -brand-short-name } { $appVersion } verzióval.
 addon-install-error-blocklisted = A(z) { $addonName } nem volt telepíthető, mert stabilitási és biztonsági szempontból magas kockázatú.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Végfelhasználóként nem telepítheti a(z) { $addonName } kiegészítőt, csak a szervezete telepítheti vállalati házirendek használatával.

@@ -9,9 +9,6 @@ accessibility-learn-more = Tìm hiểu thêm
 accessibility-text-label-header = Nhãn và tên văn bản
 accessibility-keyboard-header = Bàn phím
 
-## Text entries that are used as text alternative for icons that depict accessibility isses.
-
-
 ## These strings are used in the overlay displayed when running an audit in the accessibility panel
 
 accessibility-progress-initializing = Đang khởi tạo…
@@ -20,8 +17,8 @@ accessibility-progress-initializing = Đang khởi tạo…
 # Variables:
 #   $nodeCount (Integer) - The number of nodes for which the audit was run so far.
 accessibility-progress-progressbar = Đang kiểm tra { $nodeCount } node
-accessibility-progress-finishing = Kết thúc lên...
-    .aria-valuetext = Kết thúc lên...
+accessibility-progress-finishing = Đang hoàn thành...
+    .aria-valuetext = Đang hoàn thành...
 
 ## Text entries that are used as text alternative for icons that depict accessibility issues.
 
@@ -43,8 +40,8 @@ accessibility-text-label-issue-embed = Nội dung nhúng phải được dán nh
 accessibility-text-label-issue-figure = Số liệu với chú thích tùy chọn nên được dán nhãn. <a>Tìm hiểu thêm</a>
 accessibility-text-label-issue-fieldset = Các phần tử <code>fieldset</code> phải được dán nhãn. <a>Tìm hiểu thêm</a>
 accessibility-text-label-issue-fieldset-legend2 = Sử dụng một phần tử <code>legend</code> để gắn nhãn <span>fieldset</span>. <a>Tìm hiểu thêm</a>
-accessibility-text-label-issue-form = Các yếu tố hình thức phải được dán nhãn. <a>Tìm hiểu thêm</a>
-accessibility-text-label-issue-form-visible = Các yếu tố hình thức nên có một nhãn văn bản có thể nhìn thấy. <a>Tìm hiểu thêm</a>
+accessibility-text-label-issue-form = Các phần tử biểu mẫu phải được dán nhãn. <a>Tìm hiểu thêm</a>
+accessibility-text-label-issue-form-visible = Các phần tử biểu mẫu nên có một nhãn văn bản có thể nhìn thấy. <a>Tìm hiểu thêm</a>
 accessibility-text-label-issue-frame = Các phần tử <code>frame</code> phải được dán nhãn. <a>Tìm hiểu thêm</a>
 accessibility-text-label-issue-glyph = Sử dụng thuộc tính <code>alt</code> để gắn nhãn các phần tử <span>mglyph</span>. <a>Tìm hiểu thêm</a>
 accessibility-text-label-issue-heading = Headings phải được dán nhãn. <a>Tìm hiểu thêm</a>
@@ -63,3 +60,5 @@ accessibility-keyboard-issue-semantics = Các phần tử có thuộc tính focu
 accessibility-keyboard-issue-tabindex = Tránh sử dụng thuộc tính <code>tabindex</code> lớn hơn 0. <a>Tìm hiểu thêm</a>
 accessibility-keyboard-issue-action = Các yếu tố tương tác phải có thể được kích hoạt bằng bàn phím. <a>Tìm hiểu thêm</a>
 accessibility-keyboard-issue-focusable = Các phần tử tương tác phải có thuộc tính focus. <a>Tìm hiểu thêm</a>
+accessibility-keyboard-issue-focus-visible = Các phần tử có thuộc tính focus có thể thiếu kiểu có thuộc tính focus. <a>Tìm hiểu thêm</a>
+accessibility-keyboard-issue-mouse-only = Các phần tử có thể nhấn phải có thuộc tính focus và nên có tính tương tác. <a>Tìm hiểu thêm</a>

@@ -3,7 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 page-title = Sorun giderme bilgileri
-page-subtitle = Bu sayfa, bir sorunu gidermeye çalışırken işinize yarabilecek teknik bilgiler içerir. { -brand-short-name } hakkında genel sorularla ilgili yanıt arıyorsanız <a data-l10n-name="support-link">destek sitemizi</a> ziyaret edin.
+page-subtitle =
+    Bu sayfa, bir sorunu gidermeye çalışırken işinize yarayabilecek teknik bilgiler içerir.
+    { -brand-short-name } hakkında genel sorularla ilgili yanıt arıyorsanız
+    <a data-l10n-name="support-link">destek sitemizi</a> ziyaret edin.
 crashes-title = Çökme Raporları
 crashes-id = Rapor numarası
 crashes-send-date = Gönderilme tarihi
@@ -15,6 +18,7 @@ support-addons-type = Tür
 support-addons-enabled = Etkin
 support-addons-version = Sürüm
 support-addons-id = Kimlik
+legacy-user-stylesheets-title = Eski kullanıcı stil sayfaları
 legacy-user-stylesheets-enabled = Etkin
 legacy-user-stylesheets-stylesheet-types = Stil sayfaları
 legacy-user-stylesheets-no-stylesheets-found = Stil sayfası bulunamadı
@@ -63,7 +67,7 @@ app-basics-os-theme = İşletim sistemi teması
 app-basics-rosetta = Rosetta Translated
 app-basics-memory-use = Bellek kullanımı
 app-basics-performance = Performans
-app-basics-service-workers = Kayıtlı Service Worker'lar
+app-basics-service-workers = Kayıtlı Service Worker’lar
 app-basics-third-party = Üçüncü taraf modülleri
 app-basics-profiles = Profiller
 app-basics-launcher-process-status = Başlatıcı işlemi
@@ -73,10 +77,11 @@ app-basics-remote-processes-count = Uzak işlemler
 app-basics-enterprise-policies = Kurumsal ilkeler
 app-basics-location-service-key-google = Google Konum Hizmeti anahtarı
 app-basics-safebrowsing-key-google = Google Safebrowsing anahtarı
-app-basics-key-mozilla = Mozilla Konum Hizmeti anahtarı
+app-basics-key-mozilla = Ablaze Konum Hizmeti anahtarı
 app-basics-safe-mode = Güvenli kip
 app-basics-memory-size = Bellek boyutu (RAM)
 app-basics-disk-available = Kullanılabilir disk alanı
+app-basics-pointing-devices = İşaretleme aygıtları
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -135,7 +140,7 @@ a11y-instantiator = Erişilebilirlik temsilcisi
 library-version-title = Kitaplık sürümleri
 copy-text-to-clipboard-label = Metni panoya kopyala
 copy-raw-data-to-clipboard-label = Ham metni panoya kopyala
-sandbox-title = Kum havuzu
+sandbox-title = Sandbox
 sandbox-sys-call-log-title = Reddedilen sistem çağrıları
 sandbox-sys-call-index = #
 sandbox-sys-call-age = saniye önce
@@ -156,7 +161,7 @@ restart-button-label = Yeniden başlat
 
 audio-backend = Ses arka ucu
 max-audio-channels = En fazla kanal
-sample-rate = Tercih edilen örnek oranı
+sample-rate = Tercih edilen örnekleme hızı
 roundtrip-latency = Gidiş dönüş gecikmesi (standart sapma)
 media-title = Ortam
 media-output-devices-title = Çıktı cihazları
@@ -168,7 +173,7 @@ media-device-state = Durumu
 media-device-preferred = Tercih edilen
 media-device-format = Biçim
 media-device-channels = Kanallar
-media-device-rate = Oran
+media-device-rate = Hız
 media-device-latency = Gecikme
 media-capabilities-title = Çoku ortam yetenekleri
 media-codec-support-info = Codec destek bilgileri
@@ -183,6 +188,24 @@ media-codec-support-codec-name = Codec adı
 media-codec-support-supported = Destekleniyor
 media-codec-support-unsupported = Desteklenmiyor
 media-codec-support-error = Codec destek bilgisi mevcut değil. Bir medya dosyasını oynattıktan sonra tekrar deneyin.
+media-codec-support-lack-of-extension = Uzantı yükle
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = İçerik çözme modülleri bilgileri
+media-key-system-name = Anahtar sistemi adı
+media-video-robustness = Video sağlamlığı
+media-audio-robustness = Ses sağlamlığı
+media-cdm-capabilities = Yetenekler
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Clear Lead
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2 uyumlu
 
 ##
 
@@ -262,6 +285,7 @@ try-newer-driver = Grafik kartı sürücüsü sürümünüz için engellenmişti
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType parametreleri
 compositing = Çizici
+support-font-determination = Yazı tipi görünürlüğü hata ayıklama bilgileri
 hardware-h264 = Donanımsal H264 çözme
 main-thread-no-omtc = ana işlem parçacığı, OMTC yok
 yes = Evet
@@ -278,7 +302,7 @@ missing = Eksik
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = Tanım
-gpu-vendor-id = Satıcı numarası
+gpu-vendor-id = Sağlayıcı numarası
 gpu-device-id = Aygıt numarası
 gpu-subsys-id = Subsys numarası
 gpu-drivers = Sürücüler
@@ -288,12 +312,12 @@ gpu-driver-version = Sürücü sürümü
 gpu-driver-date = Sürücü tarihi
 gpu-active = Etkin
 webgl1-wsiinfo = WebGL 1 sürücü WSI bilgileri
-webgl1-renderer = WebGL 1 sürücü renderer'ı
+webgl1-renderer = WebGL 1 sürücü renderer’ı
 webgl1-version = WebGL 1 sürücü sürümü
 webgl1-driver-extensions = WebGL 1 sürücü uzantıları
 webgl1-extensions = WebGL 1 uzantıları
 webgl2-wsiinfo = WebGL 2 sürücü WSI bilgileri
-webgl2-renderer = WebGL2 çizici
+webgl2-renderer = WebGL 2 sürücü renderer’ı
 webgl2-version = WebGL 2 sürücü sürümü
 webgl2-driver-extensions = WebGL 2 sürücü uzantıları
 webgl2-extensions = WebGL 2 uzantıları
@@ -305,7 +329,7 @@ support-blocklisted-bug = Bilinen sorunlar nedeniyle engellendi: <a data-l10n-na
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Engellendi. Hata kodu { $failureCode }
-d3d11layers-crash-guard = D3D11 Compositor
+d3d11layers-crash-guard = D3D11 compositor
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX video çözücüsü
 reset-on-next-restart = Sonraki yeniden başlatmada sıfırla
@@ -323,12 +347,15 @@ has-seccomp-bpf = Seccomp-BPF (sistem çağrısı filtreleme)
 has-seccomp-tsync = Seccomp işlem senkronizasyonu
 has-user-namespaces = Kullanıcı isim uzayları
 has-privileged-user-namespaces = Ayrıcalıklı işlemler için kullanıcı isim uzayları
-can-sandbox-content = İçerik işlemi kum havuzu
-can-sandbox-media = Medya yan uygulaması kum havuzu
-content-sandbox-level = İçerik işlemi kum havuzu düzeyi
-effective-content-sandbox-level = Etkin içerik işlemi kum havuzu düzeyi
-content-win32k-lockdown-state = İçerik İşlemi için Win32k Kilitleme Durumu
-support-sandbox-gpu-level = GPU işlemi kum havuzu düzeyi
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Sisteminiz bu özelliğe izin vermiyor. Bu durum { -brand-short-name } tarayıcısının güvenlik özelliklerini kısıtlayabilir.
+can-sandbox-content = İçerik işlemi sandbox’ı
+can-sandbox-media = Ortam yan uygulaması sandbox’ı
+content-sandbox-level = İçerik işlemi sandbox düzeyi
+effective-content-sandbox-level = Etkin içerik işlemi sandbox düzeyi
+content-win32k-lockdown-state = İçerik işlemi için Win32k kilitleme durumu
+support-sandbox-gpu-level = GPU işlemi sandbox düzeyi
 sandbox-proc-type-content = içerik
 sandbox-proc-type-file = dosya içeriği
 sandbox-proc-type-media-plugin = ortam yan uygulaması
@@ -391,6 +418,20 @@ support-printing-modified-settings = Değiştirilmiş yazdırma ayarları
 support-printing-prefs-name = Ad
 support-printing-prefs-value = Değer
 
+## Remote Settings sections
+
+support-remote-settings-title = Uzak ayarlar
+support-remote-settings-status = Durum
+support-remote-settings-status-ok = Tamam
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Çalışmıyor
+support-remote-settings-last-check = Son kontrol
+support-remote-settings-local-timestamp = Yerel zaman damgası
+support-remote-settings-sync-history = Geçmiş
+support-remote-settings-sync-history-status = Durum
+support-remote-settings-sync-history-datetime = Tarih
+support-remote-settings-sync-history-infos = Bilgiler
+
 ## Normandy sections
 
 support-remote-experiments-title = Uzak deneyler
@@ -405,3 +446,17 @@ support-remote-features-status = Durum
 
 pointing-device-mouse = Fare
 pointing-device-touchscreen = Dokunmatik ekran
+pointing-device-pen-digitizer = Kalem sayısallaştırıcı
+pointing-device-none = İşaretleme aygıtı yok
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = İçerik analizi (DLP)
+content-analysis-active = Etkin
+content-analysis-connected-to-agent = İstemciye bağlanıldı
+content-analysis-agent-path = İstemci yolu
+content-analysis-agent-failed-signature-verification = İstemci imza doğrulaması başarısız oldu
+content-analysis-request-count = İstek sayısı

@@ -87,6 +87,16 @@ tabbrowser-confirm-caretbrowsing-title = Duyệt với con trỏ
 tabbrowser-confirm-caretbrowsing-message = Nhấn F7 để bật hoặc tắt chế độ duyệt với con trỏ. Chức năng này đặt một con trỏ có thể di chuyển được trên trang web, cho phép bạn chọn văn bản bằng bàn phím. Bạn có muốn bật chế độ này không?
 tabbrowser-confirm-caretbrowsing-checkbox = Không hiện lại hộp thoại này.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Hãy cân nhắc
+tabbrowser-confirm-close-duplicate-tabs-text = Chúng tôi sẽ giữ thẻ hoạt động lần cuối
+tabbrowser-confirm-close-all-duplicate-tabs-title = Đóng các thẻ trùng?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    Chúng tôi sẽ đóng các thẻ trùng lặp trong cửa sổ này.Thẻ hoạt động
+    gần nhất sẽ vẫn mở.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Đóng thẻ
+
 ##
 
 # Variables:

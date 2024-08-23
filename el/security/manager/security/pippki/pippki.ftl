@@ -13,9 +13,9 @@ change-device-password-window =
 change-password-token = Συσκευή ασφάλειας: { $tokenName }
 change-password-old = Τρέχων κωδικός πρόσβασης:
 change-password-new = Νέος κωδικός πρόσβασης:
-change-password-reenter = Εισάγετε τον κωδικό ξανά
+change-password-reenter = Νέος κωδικός πρόσβασης (ξανά):
 pippki-failed-pw-change = Αδυναμία αλλαγής κωδικού πρόσβασης.
-pippki-incorrect-pw = Δεν εισήγατε το σωστό κωδικό πρόσβασης. Παρακαλούμε δοκιμάστε ξανά.
+pippki-incorrect-pw = Δεν εισήγατε τον σωστό κωδικό πρόσβασης. Δοκιμάστε ξανά.
 pippki-pw-change-ok = Επιτυχής αλλαγή κωδικού πρόσβασης.
 pippki-pw-empty-warning = Δεν θα προστατεύονται οι αποθηκευμένοι κωδικοί πρόσβασης και τα ιδιωτικά κλειδιά σας.
 pippki-pw-erased-ok = Ο κωδικός πρόσβασής σας έχει διαγραφεί. { pippki-pw-empty-warning }
@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = Βρίσκεστε σε λειτουργί
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = Επαναφορά κύριου κωδικού πρόσβασης
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = Επαναφορά κύριου κωδικού πρόσβασης
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = Έγινε επαναφορά το�
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = Λήψη πιστοποιητικού
-    .style = width: 46em
 download-cert-window2 =
     .title = Λήψη πιστοποιητικού
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = Εξέταση CA πιστοποιητικού
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = Ειδοποίηση Αναγνώρισης Χρήστη
 client-auth-site-description = Ο ιστότοπος ζήτησε να ταυτοποιήσετε τον εαυτό σας με ένα πιστοποιητικό:
 client-auth-choose-cert = Επιλέξτε ένα πιστοποιητικό για να το παρουσιάσετε ως ταυτότητα:
+client-auth-send-no-certificate =
+    .label = Χωρίς αποστολή πιστοποιητικού
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = Το «{ $hostname }» ζήτησε να ταυτοποιηθείτε με ένα πιστοποιητικό:
 client-auth-cert-details = Λεπτομέρειες επιλεγμένου πιστοποιητικού:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = Έκδοση για: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = Σειριακός αριθμός: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = Έγκυρο από { $notBefore } έως { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = Χρήσεις κλειδιού: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = Διευθύνσεις email: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = Εκδόθηκε από: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = Αποθηκευμένο σε: { $storedOn }
+client-auth-cert-remember-box =
+    .label = Απομνημόνευση απόφασης
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Κωδικός αντιγράφου ασφάλειας πιστοποιητικού (ξανά):
 set-password-reminder = Προειδοποίηση: Αν ξεχάσετε τον κωδικό ασφάλειας, δεν θα μπορείτε να ανακτήσετε αυτό το αντίγραφο αργότερα. Φυλάξτε το σε ασφαλή τοποθεσία.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = Προστατευμένη πιστοποίηση με διακριτικό
-protected-auth-msg = Παρακαλώ πιστοποιήστε το διακριτικό. Η μέθοδος πιστοποίησης εξαρτάται από το είδος του διακριτικού.
-protected-auth-token = Διακριτικό:
 
 ## Protected authentication alert
 

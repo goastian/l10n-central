@@ -2,29 +2,19 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
 # refactoring them in some way, the script will need updating.
 
-# Variables:
-# $hostname (String) - Hostname of the website with SSL error.
-# $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = Beim Verbinden mit { $hostname } trat ein Fehler auf. { $errorMessage }
-
-# Variables:
-# $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
-cert-error-code-prefix = Fehlercode: { $error }
-
 psmerr-ssl-disabled = Eine sichere Verbindung konnte nicht aufgebaut werden, weil das SSL-Protokoll deaktiviert wurde.
 psmerr-ssl2-disabled = Eine sichere Verbindung konnte nicht aufgebaut werden, weil die Website eine ältere, unsichere Version des SSL-Protokolls verwendet.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Sie haben ein ungültiges Zertifikat erhalten. Bitte kontaktieren Sie den Server-Administrator oder E-Mail-Korrespondenten und geben Sie diesen die folgenden Informationen:
     
     Ihr Zertifikat enthält die gleiche Seriennummer wie ein anderes Zertifikat dieser Zertifizierungsstelle. Bitte erwerben Sie ein neues Zertifikat mit einer eindeutigen Seriennummer.
-
 ssl-error-export-only-server = Sichere Kommunikation ist nicht möglich.  Die Gegenstelle unterstützt keine hochgradige Verschlüsselung.
 ssl-error-us-only-server = Sichere Kommunikation ist nicht möglich.  Die Gegenstelle benötigt eine hochgradige Verschlüsselung, die nicht unterstützt wird.
 ssl-error-no-cypher-overlap = Sichere Kommunikation mit der Gegenstelle ist nicht möglich: Keine gemeinsamen Verschlüsselungsalgorithmen.
@@ -191,7 +181,7 @@ sec-error-no-key = Der private Schlüssel für dieses Zertifikat kann in der Sch
 sec-error-cert-valid = Dieses Zertifikat ist gültig.
 sec-error-cert-not-valid = Dieses Zertifikat ist nicht gültig.
 sec-error-cert-no-response = Cert-Biblithek: Keine Antwort
-sec-error-expired-issuer-certificate = Das Zertifikat des Zertifikataussteller ist abgelaufen. Überprüfen Sie Datum und Zeit Ihres Systems.
+sec-error-expired-issuer-certificate = Das Zertifikat des Zertifikatausstellers ist abgelaufen. Überprüfen Sie Datum und Zeit Ihres Systems.
 sec-error-crl-expired = Die CRL (Zertifikatsperrliste) für den Zertifikataussteller ist abgelaufen. Aktualisieren Sie diese oder überprüfen Sie Datum und Zeit Ihres Systems.
 sec-error-crl-bad-signature = Die CRL (Zertifikatsperrliste) für den Zertifikataussteller hat eine ungültige Signatur.
 sec-error-crl-invalid = Neue CRL (Zertifikatsperrliste) hat ein ungültiges Format.
@@ -211,14 +201,6 @@ sec-error-pkcs7-keyalg-mismatch = Entschlüsseln ist nicht möglich: Der Schlüs
 sec-error-pkcs7-bad-signature = Die Signatur-Verifizierung ist fehlgeschlagen: Kein Unterzeichner gefunden, zu viele Unterzeichner gefunden, unpassende oder beschädigte Daten.
 sec-error-unsupported-keyalg = Nicht unterstützter oder unbekannter Schlüsselalgorithmus.
 sec-error-decryption-disallowed = Entschlüsseln ist nicht möglich: Verschlüsselung mit einem unerlaubten Algorithmus oder Schlüsselgröße.
-xp-sec-fortezza-bad-card = Die Fortezza-Karte wurde nicht korrekt initialisiert. Bitte entfernen Sie diese und bringen Sie sie zu Ihrem Aussteller zurück.
-xp-sec-fortezza-no-card = Keine Fortezza-Karten gefunden
-xp-sec-fortezza-none-selected = Keine Fortezza-Karte gewählt
-xp-sec-fortezza-more-info = Bitte geben Sie eine Persönlichkeit an, um weitere Informationen über sie zu bekommen
-xp-sec-fortezza-person-not-found = Persönlichkeit wurde nicht gefunden
-xp-sec-fortezza-no-more-info = Keine weiteren Informationen über diese Persönlichkeit
-xp-sec-fortezza-bad-pin = Ungültige PIN
-xp-sec-fortezza-person-error = Fortezza-Persönlichkeiten konnten nicht initialisiert werden.
 sec-error-no-krl = Es wurde keine KRL für das Zertifikat dieser Seite gefunden.
 sec-error-krl-expired = Die KRL für das Zertifikat dieser Seite ist abgelaufen.
 sec-error-krl-bad-signature = Die KRL für das Zertifikat dieser Seite hat eine ungültige Signatur.
@@ -233,9 +215,6 @@ sec-error-cert-nickname-collision = Ein Zertifikat mit der gleichen Kurzbezeichn
 sec-error-key-nickname-collision = Ein Schlüssel mit der gleichen Kurzbezeichnung existiert bereits.
 sec-error-safe-not-created = Fehler beim Erstellen eines sicheren Objekts
 sec-error-baggage-not-created = Fehler beim Erstellen eines "Gepäcksobjektes"
-xp-java-remove-principal-error = Principal konnte nicht entfernt werden
-xp-java-delete-privilege-error = Privileg konnte nicht gelöscht werden
-xp-java-cert-not-exists-error = Dieser Principal hat kein Zertifikat
 sec-error-bad-export-algorithm = Der benötigte Algorithmus ist nicht erlaubt.
 sec-error-exporting-certificates = Fehler beim Versuch, Zertifikate zu exportieren.
 sec-error-importing-certificates = Fehler beim Versuch, Zertifikate zu importieren.
@@ -352,3 +331,14 @@ mozilla-pkix-error-invalid-integer-encoding = Der Server hat ein Zertifikat mit 
 mozilla-pkix-error-empty-issuer-name = Der Server hat ein Zertifikat vorgezeigt, dessen eindeutiger Ausstellername leer ist.
 mozilla-pkix-error-additional-policy-constraint-failed = Eine zusätzliche Regelbeschränkung ist beim Validieren dieses Zertifikats fehlgeschlagen.
 mozilla-pkix-error-self-signed-cert = Dem Zertifikat wird nicht vertraut, weil es vom Aussteller selbst signiert wurde.
+xp-java-remove-principal-error = Principal konnte nicht entfernt werden
+xp-java-delete-privilege-error = Privileg konnte nicht gelöscht werden
+xp-java-cert-not-exists-error = Dieser Principal hat kein Zertifikat
+xp-sec-fortezza-bad-card = Die Fortezza-Karte wurde nicht korrekt initialisiert. Bitte entfernen Sie diese und bringen Sie sie zu Ihrem Aussteller zurück.
+xp-sec-fortezza-no-card = Keine Fortezza-Karten gefunden
+xp-sec-fortezza-none-selected = Keine Fortezza-Karte gewählt
+xp-sec-fortezza-more-info = Bitte geben Sie eine Persönlichkeit an, um weitere Informationen über sie zu bekommen
+xp-sec-fortezza-person-not-found = Persönlichkeit wurde nicht gefunden
+xp-sec-fortezza-no-more-info = Keine weiteren Informationen über diese Persönlichkeit
+xp-sec-fortezza-bad-pin = Ungültige PIN
+xp-sec-fortezza-person-error = Fortezza-Persönlichkeiten konnten nicht initialisiert werden.

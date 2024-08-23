@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Usar destaques mais simples com prefers-reduced-motion
 options-inspector-simplified-highlighters-tooltip =
     .title = Ativa destaques simplificados quando prefers-reduced-motion está ativado. Desenha linhas em vez de retângulos preenchidos em torno de elementos realçados para evitar efeitos piscantes.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Foco no próximo campo ao teclar <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Quando ativado, teclando Enter ao editar um seletor, o nome ou valor de uma propriedade move o foco para o próximo campo.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Nomes de cor
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Console web
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Ativar console dividido
+options-webconsole-split-console-tooltip =
+    .title = Abrir console dividido com a tecla Esc
 
 ## Style Editor section
 
@@ -126,7 +140,7 @@ options-enable-service-workers-http-label = Ativar Service Workers sobre HTTP (q
 options-enable-service-workers-http-tooltip =
     .title = Permitir service workers sobre HTTP em todas as abas que estejam com as ferramentas abertas.
 # The label for the checkbox that toggles source maps in all tools.
-options-source-maps-label = Ativar mapas de fontes
+options-source-maps-label = Ativar mapas de código-fonte
 options-source-maps-tooltip =
     .title = Mapear fontes nas ferramentas.
 # The message shown for settings that trigger page reload

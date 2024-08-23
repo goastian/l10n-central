@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Показать больше вкладок
     .tooltiptext = Показать больше вкладок с этого устройства
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Неактивные вкладки
+    .tooltiptext = Просмотр неактивных вкладок на этом устройстве
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Нет открытых вкладок
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Синхронизировать
 appmenuitem-fxa-sign-in = Войти в { -brand-product-name }
 appmenuitem-fxa-manage-account = Управление аккаунтом
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Аккаунт
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Профайлер
     .tooltiptext = Профайлер захватывает профиль
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Показать дополнительную информацию
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Рекомендуемые настройки для отладки большинства веб-приложений с низкими накладными расходами.
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = Настройки для выявл�
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Электропитание
+profiler-popup-presets-debug-description = Предустановка для отладки в { -brand-shorter-name }. Большие накладные расходы, не используйте для работы с производительностью, а используйте для понимания поведения браузера.
+profiler-popup-presets-debug-label =
+    .label = Отладка
 profiler-popup-presets-custom-label =
     .label = Персональный
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Управление журналом
-appmenu-reopen-all-tabs = Снова открыть все вкладки
-appmenu-reopen-all-windows = Снова открыть все окна
 appmenu-restore-session =
     .label = Восстановить предыдущую сессию
 appmenu-clear-history =
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Инструменты браузера
 appmenu-developer-tools-extensions =
     .label = Расширения для разработчиков
+appmenuitem-report-broken-site =
+    .label = Сообщить о сломанном сайте
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Войдите в свой аккаунт
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Получайте уведомления об утечках данных
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Скройте свои настоящие электронную почту и телефон
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Защитите свою активность в Интернете

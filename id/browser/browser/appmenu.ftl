@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Tampilkan Tab Lainnya
     .tooltiptext = Tampilkan lebih banyak dari perangkat ini
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Tab nonaktif
+    .tooltiptext = Lihat tab nonaktif pada perangkat ini
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Tak ada tab terbuka
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Sinkronkan Sekarang
 appmenuitem-fxa-sign-in = Masuk ke { -brand-product-name }
 appmenuitem-fxa-manage-account = Kelola Akun
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Akun
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profiler
     .tooltiptext = Profiler sedang melakukan perekaman profil
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Tampilkan informasi lebih lanjut
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Prasetel yang direkomendasikan untuk sebagian besar debugging aplikasi web, dengan overhead yang rendah.
@@ -193,6 +196,8 @@ profiler-popup-presets-power-description = Prasetel untuk menyelidiki bug penggu
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Daya
+profiler-popup-presets-debug-label =
+    .label = Debug
 profiler-popup-presets-custom-label =
     .label = Khusus
 
@@ -200,8 +205,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Kelola Riwayat
-appmenu-reopen-all-tabs = Buka Ulang Semua Tab
-appmenu-reopen-all-windows = Buka Ulang Semua Jendela
 appmenu-restore-session =
     .label = Pulihkan Sesi Sebelumnya
 appmenu-clear-history =
@@ -263,3 +266,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Alat Peramban
 appmenu-developer-tools-extensions =
     .label = Ekstensi untuk Pengembang
+appmenuitem-report-broken-site =
+    .label = Laporkan situs yang rusak
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Masuk ke akun Anda
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Dapatkan peringatan kebocoran data
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Tutupi surel dan telepon asli Anda
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Lindungi aktivitas daring Anda

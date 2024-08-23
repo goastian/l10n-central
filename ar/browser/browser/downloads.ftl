@@ -44,11 +44,21 @@ downloads-cmd-show-menuitem-2 =
 downloads-cmd-use-system-default =
     .label = افتح في عارِض النظام
     .accesskey = ظ
+# This version is shown when the download's mime type has a valid file handler.
+downloads-cmd-use-system-default-named =
+    .label = فتح في { $handler }
+    .accesskey = ت
 # We can use the same accesskey as downloads-cmd-always-open-similar-files.
 # Both should not be visible in the downloads context menu at the same time.
 downloads-cmd-always-use-system-default =
     .label = افتح دائمًا في عارِض النظام
     .accesskey = ع
+# We can use the same accesskey as downloads-cmd-always-open-similar-files.
+# Both should not be visible in the downloads context menu at the same time.
+# This version is shown when the download's mime type has a valid file handler.
+downloads-cmd-always-use-system-default-named =
+    .label = افتح دائمًا في { $handler }
+    .accesskey = د
 
 ##
 
@@ -139,11 +149,6 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = سيُفتح في غضون { $hours }سا { $minutes }دق…
-downloading-file-opens-in-minutes = سيُفتح في غضون { $minutes } دق…
-downloading-file-opens-in-minutes-and-seconds = سيُفتح في غضون { $minutes } دق { $seconds } ثا…
-downloading-file-opens-in-seconds = سيُفتح في غضون { $seconds } ثا…
-downloading-file-opens-in-some-time = سيُفتح حين يكتمل…
 downloading-file-opens-in-hours-and-minutes-2 =
     .value = سيُفتح في غضون { $hours }سا { $minutes }دق…
 downloading-file-opens-in-minutes-2 =
@@ -173,7 +178,7 @@ downloads-cancel-download =
 downloads-history =
     .label = أظهر كل التنزيلات
     .accesskey = ك
-# This string is shown at the top of the Download Details Panel, to indicate
+# This string is shown at the top of the download details sub-panel to indicate
 # that we are showing the details of a single download.
 downloads-details =
     .title = تفاصيل التنزيل
@@ -224,6 +229,9 @@ downloads-more-downloading =
 ## Download errors
 
 downloads-error-alert-title = خطأ في التنزيل
+# Variables:
+#   $extension (String): the name of the blocking extension.
+downloads-error-blocked-by = تعذّر حفظ هذا التنزيل لأنه محظور من قبل { $extension }.
 # Used when the name of the blocking extension is unavailable.
 downloads-error-extension = تعذّر حفظ هذا التنزيل إذ حجبه أحد الامتدادات.
 # Line breaks in this message are meaningful, and should be maintained.

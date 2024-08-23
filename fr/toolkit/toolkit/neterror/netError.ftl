@@ -56,14 +56,14 @@ neterror-dns-not-found-hint-firewall = Vérifier que { -brand-short-name } a l�
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = { -brand-short-name } ne peut pas protéger votre requête pour cette adresse de site par notre serveur DNS de confiance. En voici la raison :
-neterror-dns-not-found-trr-third-party-warning = Vous pouvez continuer avec un serveur DNS non sécurisé. Cependant, un tiers pourrait être en mesure de connaître les sites web que vous consultez.
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } ne peut pas protéger votre requête pour cette adresse de site via notre fournisseur de serveur DNS sécurisé. En voici la raison :
 neterror-dns-not-found-trr-third-party-warning2 = Vous pouvez continuer avec votre serveur DNS par défaut. Cependant, un tiers pourrait être en mesure de connaître les sites web que vous consultez.
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name } n’a pas pu se connecter à { $trrDomain }.
 neterror-dns-not-found-trr-only-timeout = La connexion à { $trrDomain } a pris plus de temps que prévu.
 neterror-dns-not-found-trr-offline = Pas de connexion à Internet.
-neterror-dns-not-found-trr-unknown-host = Aucune adresse n’a été trouvée pour ce site web par { $trrDomain }.
 neterror-dns-not-found-trr-unknown-host2 = Ce site web n’a pas été trouvé par { $trrDomain }.
 neterror-dns-not-found-trr-server-problem = Un problème est survenu avec { $trrDomain }.
+neterror-dns-not-found-bad-trr-url = Adresse invalide.
 neterror-dns-not-found-trr-unknown-problem = Problème inattendu.
 
 ## Native fallback specific messages
@@ -71,6 +71,7 @@ neterror-dns-not-found-trr-unknown-problem = Problème inattendu.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } ne peut pas protéger votre requête pour cette adresse de site par notre serveur DNS de confiance. En voici la raison :
+neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } ne peut pas protéger votre requête pour cette adresse de site via notre fournisseur de serveur DNS sécurisé. En voici la raison :
 neterror-dns-not-found-native-fallback-heuristic = Le DNS via HTTPS a été désactivé sur votre réseau.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } n’a pas pu se connecter à { $trrDomain }.
 
@@ -121,7 +122,7 @@ neterror-inadequate-security-code = Code d’erreur : NS_ERROR_NET_INADEQUATE_S
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 # $now (Date) - The current datetime, to be formatted as a date
-neterror-clock-skew-error = Votre ordinateur pense qu’il est { DATETIME($now, dateStyle: "medium") }, ce qui empêche { -brand-short-name } de se connecter de façon sécurisée. Pour visiter <b>{ $hostname }</b>, mettez à jour l’horloge de votre ordinateur dans vos paramètres système afin qu’elle soit réglée sur la date, l’heure et le fuseau horaire qui conviennent, puis actualisez <b>{ $hostname }</b>.
+neterror-clock-skew-error = Votre ordinateur pense que nous sommes le { DATETIME($now, dateStyle: "medium") }, ce qui empêche { -brand-short-name } de se connecter de façon sécurisée. Pour visiter <b>{ $hostname }</b>, mettez à jour l’horloge de votre ordinateur dans vos paramètres système afin qu’elle soit réglée sur la date, l’heure et le fuseau horaire qui conviennent, puis actualisez <b>{ $hostname }</b>.
 neterror-network-protocol-error-intro = La page à laquelle vous essayez d’accéder ne peut pas être affichée, car une erreur du protocole réseau a été détectée.
 neterror-network-protocol-error-contact-website = Veuillez contacter les propriétaires du site web pour les informer de ce problème.
 certerror-expired-cert-second-para = Le certificat du site a probablement expiré, ce qui empêche { -brand-short-name } d’établir une connexion sécurisée. Si vous visitez ce site, des attaquants pourraient dérober des informations telles que vos mots de passe, vos adresses e-mail ou vos informations de carte bancaire.

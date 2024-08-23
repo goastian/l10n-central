@@ -12,21 +12,39 @@ about-webrtc-document-title = Szczegóły techniczne WebRTC
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = Zapisz stronę about:webrtc jako
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Pokaż zamknięte PeerConnection
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Ukryj zamknięte PeerConnection
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = Dziennik redukcji szumów otoczenia
 about-webrtc-aec-logging-off-state-label = Zapisuj informacje redukcji szumów otoczenia
 about-webrtc-aec-logging-on-state-label = Zatrzymaj zapisywanie informacji redukcji szumów otoczenia
 about-webrtc-aec-logging-on-state-msg = Zapisywanie informacji redukcji szumów otoczenia (rozmawiaj przez kilka minut, po czym zatrzymaj zapisywanie)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Automatyczne odświeżanie
+about-webrtc-aec-logging-toggled-on-state-msg = Zapisywanie informacji redukcji szumów otoczenia (rozmawiaj przez kilka minut, po czym zatrzymaj zapisywanie)
+about-webrtc-aec-logging-unavailable-sandbox = Eksport dzienników AEC wymaga zmiennej środowiskowej „MOZ_DISABLE_CONTENT_SANDBOX=1”. Ustaw tę zmienną wyłącznie wtedy, gdy rozumiesz możliwe ryzyko.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Pliki dziennika znajdują się w katalogu { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Automatyczne odświeżanie
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = Domyślne automatyczne odświeżanie
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Odśwież
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
 about-webrtc-peerconnection-id-label = Identyfikator PeerConnection:
+# The number of DataChannels that a PeerConnection has opened
+about-webrtc-data-channels-opened-label = Otwarte kanały danych:
+# The number of once open DataChannels that a PeerConnection has closed
+about-webrtc-data-channels-closed-label = Zamknięte kanały danych:
 
 ## "SDP" is an abbreviation for Session Description Protocol, an IETF standard.
 ## See http://wikipedia.org/wiki/Session_Description_Protocol
@@ -80,7 +98,11 @@ about-webrtc-save-page-label = Zapisz stronę
 about-webrtc-debug-mode-msg-label = Debugowanie
 about-webrtc-debug-mode-off-state-label = Rozpocznij debugowanie
 about-webrtc-debug-mode-on-state-label = Zatrzymaj debugowanie
+about-webrtc-enable-logging-label = Włącz ustawienie dziennika WebRTC
 about-webrtc-stats-heading = Statystyki sesji
+about-webrtc-peerconnections-section-heading = Statystyki RTCPeerConnection
+about-webrtc-peerconnections-section-show-msg = Pokaż statystyki RTCPeerConnection
+about-webrtc-peerconnections-section-hide-msg = Ukryj statystyki RTCPeerConnection
 about-webrtc-stats-clear = Wyczyść historię
 about-webrtc-log-heading = Dziennik połączenia
 about-webrtc-log-clear = Wyczyść dziennik
@@ -88,7 +110,12 @@ about-webrtc-log-show-msg = Dziennik
     .title = Kliknij, aby rozwinąć sekcję
 about-webrtc-log-hide-msg = Ukryj dziennik
     .title = Kliknij, aby zwinąć sekcję
+about-webrtc-log-section-show-msg = Dziennik
+    .title = Kliknij, aby rozwinąć sekcję
+about-webrtc-log-section-hide-msg = Ukryj dziennik
+    .title = Kliknij, aby zwinąć sekcję
 about-webrtc-copy-report-button = Skopiuj raport
+about-webrtc-copy-report-history-button = Skopiuj historię raportów
 
 ## These are used to display a header for a PeerConnection.
 ## Variables:
@@ -99,6 +126,14 @@ about-webrtc-copy-report-button = Skopiuj raport
 
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (Zakończone) { $now }
+
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Wysyłanie/odbieranie: { $codecs }
+about-webrtc-short-send-direction = Wysyłanie: { $codecs }
+about-webrtc-short-receive-direction = Odbieranie: { $codecs }
 
 ##
 
@@ -111,10 +146,18 @@ about-webrtc-raw-cand-show-msg = Pokaż nieprzetworzonych kandydatów
     .title = Kliknij, aby rozwinąć sekcję
 about-webrtc-raw-cand-hide-msg = Ukryj nieprzetworzonych kandydatów
     .title = Kliknij, aby zwinąć sekcję
+about-webrtc-raw-cand-section-show-msg = Pokaż nieprzetworzonych kandydatów
+    .title = Kliknij, aby rozwinąć sekcję
+about-webrtc-raw-cand-section-hide-msg = Ukryj nieprzetworzonych kandydatów
+    .title = Kliknij, aby zwinąć sekcję
 about-webrtc-priority = Priorytet
 about-webrtc-fold-show-msg = Szczegóły
     .title = Kliknij, aby rozwinąć sekcję
 about-webrtc-fold-hide-msg = Ukryj szczegóły
+    .title = Kliknij, aby zwinąć sekcję
+about-webrtc-fold-default-show-msg = Szczegóły
+    .title = Kliknij, aby rozwinąć sekcję
+about-webrtc-fold-default-hide-msg = Ukryj szczegóły
     .title = Kliknij, aby zwinąć sekcję
 about-webrtc-dropped-frames-label = Pominięte klatki:
 about-webrtc-discarded-packets-label = Odrzucone pakiety:
@@ -154,6 +197,17 @@ about-webrtc-configuration-element-provided = Podano
 about-webrtc-configuration-element-not-provided = Nie podano
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Preferencje WebRTC ustawione przez użytkownika
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Konfiguracja WebRTC zmodyfikowana przez użytkownika
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Pokaż konfigurację zmodyfikowaną przez użytkownika
+about-webrtc-user-modified-configuration-hide-msg = Ukryj konfigurację zmodyfikowaną przez użytkownika
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Szacowana przepustowość
 # The ID of the MediaStreamTrack
@@ -184,9 +238,11 @@ about-webrtc-save-page-msg = Strona zapisana jako { $path }
 about-webrtc-debug-mode-off-state-msg = Dziennik debugowania jest zapisywany w pliku { $path }
 about-webrtc-debug-mode-on-state-msg = Debugowanie aktywne, dziennik w { $path }
 about-webrtc-aec-logging-off-state-msg = Pliki dziennika znajdują się w katalogu { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Strona zapisana jako { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.
@@ -263,6 +319,14 @@ about-webrtc-sdp-set-timestamp = O { NUMBER($timestamp, useGrouping: "false") }
 
 about-webrtc-show-msg-sdp = Pokaż informacje SDP
 about-webrtc-hide-msg-sdp = Ukryj informacje SDP
+
+## These are displayed on the button that shows or hides the Media Context information disclosure.
+## The Media Context is the set of preferences and detected capabilities that informs
+## the negotiated CODEC settings.
+
+about-webrtc-media-context-show-msg = Pokaż kontekst mediów
+about-webrtc-media-context-hide-msg = Ukryj kontekst mediów
+about-webrtc-media-context-heading = Kontekst mediów
 
 ##
 

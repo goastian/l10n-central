@@ -56,14 +56,14 @@ neterror-dns-not-found-hint-firewall = 檢查 { -brand-short-name } 是否有權
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = { -brand-short-name } 無法透過信任的 DNS 解析器保護您對本網址的瀏覽請求。原因如下：
-neterror-dns-not-found-trr-third-party-warning = 您可以繼續使用不安全的 DNS 解析器，但第三方可能就會得知您造訪哪些網站。
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } 無法透過我們的安全 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
 neterror-dns-not-found-trr-third-party-warning2 = 您可以繼續使用預設 DNS 解析器，但第三方仍可能得知您造訪過哪些網站。
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name } 無法連線到 { $trrDomain }。
 neterror-dns-not-found-trr-only-timeout = 連線到 { $trrDomain } 的時間比預期得久。
 neterror-dns-not-found-trr-offline = 您未連線到網際網路。
-neterror-dns-not-found-trr-unknown-host = { $trrDomain } 找不到此網站的地址。
 neterror-dns-not-found-trr-unknown-host2 = { $trrDomain } 找不到此網站。
 neterror-dns-not-found-trr-server-problem = { $trrDomain } 發生問題。
+neterror-dns-not-found-bad-trr-url = 網址無效。
 neterror-dns-not-found-trr-unknown-problem = 發生未預期的問題。
 
 ## Native fallback specific messages
@@ -71,6 +71,7 @@ neterror-dns-not-found-trr-unknown-problem = 發生未預期的問題。
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } 無法透過信任的 DNS 解析器保護您對本網址的瀏覽請求。原因如下：
+neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } 無法透過我們的安全 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
 neterror-dns-not-found-native-fallback-heuristic = 您的網路已停用 DNS over HTTPS。
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } 無法連線到 { $trrDomain }。
 
@@ -110,7 +111,7 @@ certerror-expired-cert-intro = { -brand-short-name } 偵測到潛在的安全性
 # $mitm (String) - The name of the software intercepting communications between you and the website (or “man in the middle”)
 certerror-mitm = <b>{ $hostname }</b> 應該是一個安全的網站，但無法建立安全連線。這個問題是由 <b>{ $mitm }</b> 造成的，可能是來自您的電腦或您的所在網路中的軟體。
 neterror-corrupted-content-intro = 因為在資料傳輸過程當中偵測到錯誤，無法顯示您正要檢視的頁面。
-neterror-corrupted-content-contact-website = 請通知網站管理者以讓他們知道這個問題。
+neterror-corrupted-content-contact-website = 請向網站擁有者回報此問題。
 # Do not translate "SSL_ERROR_UNSUPPORTED_VERSION".
 neterror-sslv3-used = 進階資訊: SSL_ERROR_UNSUPPORTED_VERSION
 # Variables:
@@ -123,7 +124,7 @@ neterror-inadequate-security-code = 錯誤代碼: NS_ERROR_NET_INADEQUATE_SECURI
 # $now (Date) - The current datetime, to be formatted as a date
 neterror-clock-skew-error = 您的電腦認為目前時間為 { DATETIME($now, dateStyle: "medium") }，不讓 { -brand-short-name } 建立安全連線。若要造訪 <b>{ $hostname }</b>，請到系統設定中確認日期、時間、時區設定是否正確，然後重新載入 <b>{ $hostname }</b>。
 neterror-network-protocol-error-intro = 因為偵測到網路通訊協定中的問題，無法顯示您嘗試檢視的頁面。
-neterror-network-protocol-error-contact-website = 請聯絡網站管理員來解決這個問題。
+neterror-network-protocol-error-contact-website = 請向網站擁有者回報此問題。
 certerror-expired-cert-second-para = 可能是網站的憑證已經過期，讓 { -brand-short-name } 無法安全地連線。若您造訪此網站，攻擊者可能嘗試偷走您的密碼、電子郵件、信用卡資料等個人資訊。
 certerror-expired-cert-sts-second-para = 可能是網站的憑證已經過期，讓 { -brand-short-name } 無法安全地連線。
 certerror-what-can-you-do-about-it-title = 您可以做什麼？

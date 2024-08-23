@@ -76,7 +76,7 @@ lockwise-scanned-text-no-breached-logins =
        *[other] 您的 { $count } 个密码皆已安全保存。
     }
 lockwise-how-it-works-link = 工作原理
-monitor-title = 帮您关心数据泄露事故
+monitor-title = 帮您关心数据外泄事件
 monitor-link = 工作原理
 monitor-header-content-no-account = 到 { -monitor-brand-name } 检测您是否处于已知数据外泄事件之中，并在有新外泄事件时收到警报。
 monitor-header-content-signed-in = 若您的信息出现在已知的数据外泄事件中，{ -monitor-brand-name } 会警示您。

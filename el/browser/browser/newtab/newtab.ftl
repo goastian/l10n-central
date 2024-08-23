@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Νέα καρτέλα
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Προσθήκη μηχανής αν�
 newtab-topsites-add-shortcut-header = Νέα συντόμευση
 newtab-topsites-edit-topsites-header = Επεξεργασία κορυφαίου ιστοτόπου
 newtab-topsites-edit-shortcut-header = Επεξεργασία συντόμευσης
+newtab-topsites-add-shortcut-label = Προσθήκη συντόμευσης
 newtab-topsites-title-label = Τίτλος
 newtab-topsites-title-input =
     .placeholder = Εισαγωγή τίτλου
@@ -198,6 +199,7 @@ newtab-section-header-recent-activity = Πρόσφατη δραστηριότη�
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Προτάσεις του { $provider }
+newtab-section-header-stories = Άρθρα που σας βάζουν σε σκέψεις
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -206,6 +208,8 @@ newtab-empty-section-highlights = Ξεκινήστε την περιήγηση �
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Δεν υπάρχει κάτι νεότερο. Ελέγξτε αργότερα για περισσότερες ιστορίες από τον πάροχο { $provider }. Δεν μπορείτε να περιμένετε; Διαλέξτε κάποιο από τα δημοφιλή θέματα και ανακαλύψτε ενδιαφέρουσες ιστορίες από όλο τον Ιστό.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Δεν υπάρχει κάτι νεότερο. Ελέγξτε αργότερα για περισσότερα άρθρα. Δεν μπορείτε να περιμένετε; Επιλέξτε κάποιο δημοφιλές θέμα και βρείτε ακόμα περισσότερα ενδιαφέροντα άρθρα από όλο το διαδίκτυο.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -227,21 +231,21 @@ newtab-pocket-cta-button = Αποκτήστε το { -pocket-brand-name }
 newtab-pocket-cta-text = Αποθηκεύστε τις ιστορίες που αγαπάτε στο { -pocket-brand-name } και τροφοδοτήστε το μυαλό σας με εκπληκτικά κείμενα.
 newtab-pocket-pocket-firefox-family = Το { -pocket-brand-name } ανήκει στην οικογένεια του { -brand-product-name }
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Αποθήκευση στο { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Αποθηκεύτηκε στο { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Φόρτωση περισσότερων άρθρων
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Τελειώσατε!
-newtab-pocket-last-card-desc = Ελέγξτε ξανά αργότερα για περισσότερα.
-newtab-pocket-last-card-image =
-    .alt = Τελειώσατε!
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Αποθήκευση
 newtab-pocket-saved = Αποθηκεύτηκε
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Περισσότερα σαν κι αυτό
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Όχι για μένα
+newtab-toast-thumbs-up-or-down = Ευχαριστούμε. Τα σχόλιά σας θα μας βοηθήσουν να βελτιώσουμε τη ροή σας.
+newtab-toast-dismiss-button =
+    .title = Απόρριψη
+    .aria-label = Απόρριψη
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -258,6 +262,9 @@ newtab-error-fallback-refresh-link = Ανανεώστε τη σελίδα για
 
 newtab-custom-shortcuts-title = Συντομεύσεις
 newtab-custom-shortcuts-subtitle = Ιστότοποι από σελιδοδείκτες ή ιστορικό
+newtab-custom-shortcuts-toggle =
+    .label = Συντομεύσεις
+    .description = Ιστότοποι από σελιδοδείκτες ή ιστορικό
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -268,9 +275,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Χορηγούμενες συντομεύσεις
 newtab-custom-pocket-title = Προτείνεται από το { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Εξαιρετικό περιεχόμενο από το { -pocket-brand-name }, μέρος της οικογένειας του { -brand-product-name }
+newtab-custom-stories-toggle =
+    .label = Προτεινόμενα άρθρα
+    .description = Εξαιρετικό περιεχόμενο από την οικογένεια του { -brand-product-name }
 newtab-custom-pocket-sponsored = Χορηγούμενα άρθρα
 newtab-custom-pocket-show-recent-saves = Εμφάνιση πρόσφατων αποθηκεύσεων
 newtab-custom-recent-title = Πρόσφατη δραστηριότητα
 newtab-custom-recent-subtitle = Συλλογή πρόσφατων ιστοτόπων και περιεχομένου
+newtab-custom-recent-toggle =
+    .label = Πρόσφατη δραστηριότητα
+    .description = Συλλογή πρόσφατων ιστοτόπων και περιεχομένου
+newtab-custom-weather-toggle =
+    .label = Καιρός
+    .description = Σημερινή πρόγνωση με μια ματιά
 newtab-custom-close-button = Κλείσιμο
 newtab-custom-settings = Διαχείριση περισσότερων ρυθμίσεων
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Ταπετσαρίες
+newtab-wallpaper-reset = Επαναφορά στην προεπιλογή
+newtab-wallpaper-light-red-panda = Κόκκινο πάντα
+newtab-wallpaper-light-mountain = Λευκό βουνό
+newtab-wallpaper-light-sky = Ουρανός με μωβ και ροζ σύννεφα
+newtab-wallpaper-light-color = Μπλε, ροζ και κίτρινα σχήματα
+newtab-wallpaper-light-landscape = Μπλε ορεινό τοπίο ομίχλης
+newtab-wallpaper-light-beach = Παραλία με φοίνικα
+newtab-wallpaper-dark-aurora = Βόρειο σέλας
+newtab-wallpaper-dark-color = Κόκκινα και μπλε σχήματα
+newtab-wallpaper-dark-panda = Κόκκινο πάντα στο δάσος
+newtab-wallpaper-dark-sky = Αστικό τοπίο με νυχτερινό ουρανό
+newtab-wallpaper-dark-mountain = Ορεινό τοπίο
+newtab-wallpaper-dark-city = Μωβ αστικό τοπίο
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Συμπαγή χρώματα
+newtab-wallpaper-blue = Μπλε
+newtab-wallpaper-light-blue = Ανοιχτό μπλε
+newtab-wallpaper-light-purple = Ανοιχτό μωβ
+newtab-wallpaper-light-green = Ανοιχτό πράσινο
+newtab-wallpaper-green = Πράσινο
+newtab-wallpaper-beige = Μπεζ
+newtab-wallpaper-yellow = Κίτρινο
+newtab-wallpaper-orange = Πορτοκαλί
+newtab-wallpaper-pink = Ροζ
+newtab-wallpaper-light-pink = Ανοιχτό ροζ
+newtab-wallpaper-red = Κόκκινο
+newtab-wallpaper-dark-blue = Σκούρο μπλε
+newtab-wallpaper-dark-purple = Σκούρο μωβ
+newtab-wallpaper-dark-green = Σκούρο πράσινο
+newtab-wallpaper-brown = Καφέ
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Αφηρημένο
+newtab-wallpaper-abstract-green = Πράσινα σχήματα
+newtab-wallpaper-abstract-blue = Μπλε σχήματα
+newtab-wallpaper-abstract-purple = Μωβ σχήματα
+newtab-wallpaper-abstract-orange = Πορτοκαλί σχήματα
+newtab-wallpaper-gradient-orange = Διαβάθμιση πορτοκαλί και ροζ
+newtab-wallpaper-abstract-blue-purple = Μπλε και μωβ σχήματα
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Φωτογραφίες
+newtab-wallpaper-beach-at-sunrise = Παραλία στην ανατολή του ήλιου
+newtab-wallpaper-beach-at-sunset = Παραλία στη δύση του ήλιου
+newtab-wallpaper-storm-sky = Ουρανός με καταιγίδα
+newtab-wallpaper-sky-with-pink-clouds = Ουρανός με ροζ σύννεφα
+newtab-wallpaper-red-panda-yawns-in-a-tree = Κόκκινο πάντα που χασμουριέται σε ένα δέντρο
+newtab-wallpaper-white-mountains = Λευκά βουνά
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Φωτογραφία από <a data-l10n-name="name-link">{ $author_string }</a> στο <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Δοκιμάστε μια πινελιά χρώματος
+newtab-wallpaper-feature-highlight-content = Δώστε νέα εμφάνιση στη νέα σας καρτέλα με ταπετσαρίες.
+newtab-wallpaper-feature-highlight-button = Το κατάλαβα
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Απόρριψη
+    .aria-label = Κλείσιμο αναδυόμενου παραθύρου
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Προβολή πρόγνωσης στο { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Χορηγία
+newtab-weather-menu-change-location = Αλλαγή τοποθεσίας
+newtab-weather-change-location-search-input = Αναζήτηση τοποθεσίας
+newtab-weather-menu-weather-display = Προβολή καιρού
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Απλή
+newtab-weather-menu-change-weather-display-simple = Εναλλαγή σε απλή προβολή
+newtab-weather-menu-weather-display-option-detailed = Λεπτομερής
+newtab-weather-menu-change-weather-display-detailed = Εναλλαγή σε λεπτομερή προβολή
+newtab-weather-menu-temperature-units = Μονάδες θερμοκρασίας
+newtab-weather-menu-temperature-option-fahrenheit = Φαρενάιτ
+newtab-weather-menu-temperature-option-celsius = Κελσίου
+newtab-weather-menu-change-temperature-units-fahrenheit = Εναλλαγή σε Φαρενάιτ
+newtab-weather-menu-change-temperature-units-celsius = Εναλλαγή σε Κελσίου
+newtab-weather-menu-hide-weather = Απόκρυψη καιρού στη νέα καρτέλα
+newtab-weather-menu-learn-more = Μάθετε περισσότερα
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Τα δεδομένα καιρού δεν είναι διαθέσιμα αυτήν τη στιγμή.

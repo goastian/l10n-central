@@ -21,9 +21,11 @@ about-debugging-page-title-runtime-page = 调试 - 运行时 / { $selectedRuntim
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = 此 { -brand-shorter-name }
 # Sidebar heading for selecting the currently running instance of Firefox
+# .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
 # Sidebar heading for connecting to some remote source
+# .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-setup =
     .name = 设置
 # Text displayed in the about:debugging sidebar when USB devices discovery is enabled.
@@ -148,24 +150,31 @@ about-debugging-network-location-form-duplicate = 主机“{ $host-value }”已
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
 # Title of the temporary extensions category (only available for "This Firefox" runtime).
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-temporary-extensions =
     .name = 临时扩展
 # Title of the extensions category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-extensions =
     .name = 扩展
 # Title of the tabs category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-tabs =
     .name = 标签页
 # Title of the service workers category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-service-workers =
     .name = Service Worker
 # Title of the shared workers category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-shared-workers =
     .name = Shared Worker
 # Title of the other workers category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-other-workers =
     .name = 其他 Worker
 # Title of the processes category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-processes =
     .name = 进程
 # Label of the button opening the performance profiler panel in runtime pages for remote
@@ -182,7 +191,7 @@ about-debugging-runtime-service-workers-not-compatible = 您的浏览器配置�
 about-debugging-browser-version-too-old = 已连接的浏览器为旧版本（{ $runtimeVersion }）。支持的最低版本为（{ $minVersion }）。不支持的版本可能致使开发者工具运行失败。请更新连接的浏览器。<a>故障排查</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Firefox 无法调试 Android 版 Firefox（68）。我们建议您在手机上安装 Android 版 Firefox Nightly 进行测试。<a>更多信息</a>
+about-debugging-browser-version-too-old-fennec = Midori 无法调试 Android 版 Firefox（68）。我们建议您在手机上安装 Android 版 Firefox Nightly 进行测试。<a>更多信息</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
@@ -273,9 +282,11 @@ about-debugging-extension-backgroundscript-status-stopped = 已停止
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
+# .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-push2 = 推送
     .disabledTitle = Service Worker “推送”目前在多进程 { -brand-shorter-name } 下禁用
 # This string is displayed as a label of the button that starts a service worker.
+# .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-start2 = 启动
     .disabledTitle = Service Worker “启动”功能目前在多进程 { -brand-shorter-name } 下无法使用
 # This string is displayed as a label of the button that unregisters a service worker.
@@ -297,7 +308,7 @@ about-debugging-worker-status-stopped = 已停止
 about-debugging-worker-status-registering = 正在注册
 # Displayed for service workers in runtime pages, to label the scope of a worker
 about-debugging-worker-scope =
-    .label = 范围
+    .label = 作用域
 # Displayed for service workers in runtime pages, to label the push service endpoint (url)
 # of a worker
 about-debugging-worker-push-service =
@@ -308,12 +319,6 @@ about-debugging-worker-inspect-action-disabled =
 # Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
 about-debugging-zombie-tab-inspect-action-disabled =
     .title = 由于标签页未完全加载，无法检查
-# Displayed as name for the Main Process debug target in the Processes category. Only for
-# remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-main-process-name = 主进程
-# Displayed as description for the Main Process debug target in the Processes category.
-# Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-main-process-description2 = 目标浏览器的主进程
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-multiprocess-toolbox-name = 多进程工具箱

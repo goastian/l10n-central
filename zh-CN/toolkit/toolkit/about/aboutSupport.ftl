@@ -18,6 +18,10 @@ support-addons-type = 类型
 support-addons-enabled = 已启用
 support-addons-version = 版本
 support-addons-id = ID
+legacy-user-stylesheets-title = 旧版用户样式表单
+legacy-user-stylesheets-enabled = 启用
+legacy-user-stylesheets-stylesheet-types = 样式表
+legacy-user-stylesheets-no-stylesheets-found = 未找到样式表
 security-software-title = 安全软件
 security-software-type = 类型
 security-software-name = 名称
@@ -73,10 +77,11 @@ app-basics-remote-processes-count = 远程进程
 app-basics-enterprise-policies = 企业策略
 app-basics-location-service-key-google = Google 位置服务密钥
 app-basics-safebrowsing-key-google = Google 安全浏览密钥
-app-basics-key-mozilla = Mozilla 位置服务密钥
+app-basics-key-mozilla = Ablaze 位置服务密钥
 app-basics-safe-mode = 安全模式
 app-basics-memory-size = 内存大小（RAM）
 app-basics-disk-available = 磁盘可用空间
+app-basics-pointing-devices = 定点设备
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -182,6 +187,25 @@ media-codec-support-hw-decoding = 硬件解码
 media-codec-support-codec-name = 编解码器名称
 media-codec-support-supported = 已支持
 media-codec-support-unsupported = 不支持
+media-codec-support-error = 无法获取编解码器支持信息，请在播放媒体文件后重试。
+media-codec-support-lack-of-extension = 安装扩展
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = 内容解密模块信息
+media-key-system-name = 密钥系统名称
+media-video-robustness = 视频稳定性
+media-audio-robustness = 音频稳定性
+media-cdm-capabilities = 功能
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = 不加密的前导段
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = 兼容 HDCP 2.2
 
 ##
 
@@ -241,6 +265,7 @@ try-newer-driver = 因您的显卡驱动版本而无法启用。请尝试更新�
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType 参数
 compositing = 合成
+support-font-determination = 字体可见性调试信息
 hardware-h264 = H264 硬件解码
 main-thread-no-omtc = 主线程，无 OMTC
 yes = 是
@@ -370,6 +395,20 @@ support-printing-modified-settings = 修改过的打印设置
 support-printing-prefs-name = 名称
 support-printing-prefs-value = 值
 
+## Remote Settings sections
+
+support-remote-settings-title = 远程设置
+support-remote-settings-status = 状态
+support-remote-settings-status-ok = 确定
+# Status when synchronization is not working.
+support-remote-settings-status-broken = 未生效
+support-remote-settings-last-check = 上次检查
+support-remote-settings-local-timestamp = 本地时间戳
+support-remote-settings-sync-history = 历史
+support-remote-settings-sync-history-status = 状态
+support-remote-settings-sync-history-datetime = 日期
+support-remote-settings-sync-history-infos = 信息
+
 ## Normandy sections
 
 support-remote-experiments-title = 远程实验
@@ -379,3 +418,22 @@ support-remote-experiments-see-about-studies = 欲详细了解，请参见 <a da
 support-remote-features-title = 远程功能
 support-remote-features-name = 名称
 support-remote-features-status = 状态
+
+## Pointing devices
+
+pointing-device-mouse = 鼠标
+pointing-device-touchscreen = 触摸屏
+pointing-device-pen-digitizer = 数位板
+pointing-device-none = 无定点设备
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = 内容分析（DLP）
+content-analysis-active = 已启用
+content-analysis-connected-to-agent = 已与程序连接
+content-analysis-agent-path = 程序路径
+content-analysis-agent-failed-signature-verification = 程序签名验证失败
+content-analysis-request-count = 请求数量

@@ -23,6 +23,9 @@ bookmark-overlay-folders-expander2 =
     .tooltiptext = Εμφάνιση όλων των φακέλων σελιδοδεικτών
 bookmark-overlay-folders-expander-hide =
     .tooltiptext = Απόκρυψη
+# bookmark-overlay-folders-tree is used to provide an accessible name to the tree view of the Bookmarks directory, when it is expanded
+bookmark-overlay-folders-tree =
+    .aria-label = Φάκελοι
 bookmark-overlay-new-folder-button =
     .label = Νέος φάκελος
     .accesskey = ο
@@ -43,4 +46,4 @@ bookmark-overlay-keyword-2 =
     .value = Λέξη-κλειδί
     .accesskey = Λ
 bookmark-overlay-tags-caption-label = Χρησιμοποιήστε ετικέτες για να οργανώσετε και να αναζητήσετε σελιδοδείκτες από τη γραμμή διευθύνσεων
-bookmark-overlay-keyword-caption-label-2 = Χρήση λέξης-κλειδιού για άνοιγμα σελιδοδεικτών απευθείας από τη γραμμή διευθύνσεων
+bookmark-overlay-keyword-caption-label-2 = Χρησιμοποιήστε μια λέξη-κλειδί για να ανοίξετε σελιδοδείκτες απευθείας από τη γραμμή διευθύνσεων

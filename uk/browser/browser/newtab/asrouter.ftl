@@ -65,6 +65,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Синхронізуйте свої закладки всюди.
 cfr-doorhanger-bookmark-fxa-body = Гарна знахідка! Тепер синхронізуйте цю закладку зі своїми мобільними пристроями. Почніть роботу з { -fxaccount-brand-name(case: "abl") }.
+cfr-doorhanger-bookmark-fxa-body-2 = Чудова знахідка! Тепер синхронізуйте цю закладку зі своїми мобільними пристроями. Почніть роботу з обліковим записом.
 cfr-doorhanger-bookmark-fxa-link-text = Синхронізувати закладки зараз…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Кнопка закриття
@@ -201,12 +202,15 @@ colorways-cfr-header-today = Забарвлення незалежних гол�
 
 ## Cookie Banner Handling CFR
 
-cfr-cbh-header = Дозволити { -brand-short-name } відхиляти банери кук?
-cfr-cbh-body = { -brand-short-name } може автоматично відхиляти багато запитів банерів кук.
-cfr-cbh-confirm-button = Відхилити банери кук
+cfr-cbh-header = Дозволити { -brand-short-name } відхиляти банери про файли cookie?
+cfr-cbh-body = { -brand-short-name } може автоматично відхиляти багато банерів із запитами про файли cookie.
+cfr-cbh-confirm-button = Відхиляти банери про файли cookie
     .accesskey = В
 cfr-cbh-dismiss-button = Не зараз
     .accesskey = Н
+cookie-banner-blocker-onboarding-header = { -brand-short-name } щойно відхилив банер про файли cookie
+cookie-banner-blocker-onboarding-body = Менше відволікань і менше файлів cookie, які відстежують вас на цьому сайті.
+cookie-banner-blocker-onboarding-learn-more = Докладніше
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -236,10 +240,15 @@ fxa-sync-cfr-secondary = Нагадати пізніше
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = Користуєтеся старішим пристроєм?
-device-migration-fxa-spotlight-body = Зробіть резервну копію даних, щоб не втратити важливу інформацію, як-от закладки та паролі, особливо якщо переходите на новий пристрій.
-device-migration-fxa-spotlight-primary-button = Як створити резервну копію моїх даних
-device-migration-fxa-spotlight-link = Нагадати пізніше
+device-migration-fxa-spotlight-heavy-user-header = Обов'язково створіть резервну копію своїх даних
+device-migration-fxa-spotlight-heavy-user-body = Будьте певні, що важлива інформація, як-от закладки та паролі, оновлена та захищена на всіх ваших пристроях.
+device-migration-fxa-spotlight-heavy-user-primary-button = Початок роботи
+device-migration-fxa-spotlight-older-device-header = Будьте спокійними з { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = Завдяки обліковому запису ваша важлива інформація завжди оновлена та захищена на будь-якому пристрої.
+device-migration-fxa-spotlight-older-device-primary-button = Створити обліковий запис
+device-migration-fxa-spotlight-getting-new-device-header-2 = Новий пристрій у майбутньому?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Виконайте кілька простих кроків, щоб синхронізувати свої закладки, історію та паролі з іншими пристроями.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Як створити резервну копію моїх даних
 
 ## Set as Default PDF Reader Infobar
 
@@ -265,3 +274,14 @@ launch-on-login-infobar-reject-button = Не зараз
 launch-on-login-infobar-final-message = <strong>Відкривати { -brand-short-name } щоразу, коли ви перезапускаєте комп'ютер?</strong> Щоб керувати налаштуваннями запуску, введіть у пошуку налаштувань “запуск”.
 launch-on-login-infobar-final-reject-button = Ні, дякую
     .accesskey = Н
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Тримайте надокучливі елементи стеження подалі від себе
+tail-fox-spotlight-subtitle = Попрощайтеся з надокучливим стеженням реклами та приготуйтеся до безпечнішої та швидшої роботи в інтернеті.
+tail-fox-spotlight-primary-button = Відкривати посилання в { -brand-short-name }
+tail-fox-spotlight-secondary-button = Не зараз

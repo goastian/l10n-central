@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Activar análisis de la pila para 
 
 about-logging-preset-networking-label = Red
 about-logging-preset-networking-description = Módulos de registro para diagnosticar problemas de red
+about-logging-preset-networking-cookie-label = Cookies
+about-logging-preset-networking-cookie-description = Módulos de registro para diagnosticar problemas de cookies
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Módulos de registro para diagnosticar problemas de WebSocket
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Módulos de registro para diagnosticar problemas de HTTP/3 y QUIC
+about-logging-preset-networking-http3-upload-speed-label = Velocidad de subida de HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Módulos de registro para diagnosticar problemas de la velocidad de subida de HTTP/3
 about-logging-preset-media-playback-label = Reproducción multimedia
 about-logging-preset-media-playback-description = Módulos de registro para diagnosticar problemas de reproducción de medios (no problemas de videoconferencia)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Módulos de registro para diagnosticar problemas de WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Módulos de registro para diagnosticar problemas de WebGPU
+about-logging-preset-gfx-label = Gráficos
+about-logging-preset-gfx-description = Módulos de registro para diagnosticar problemas gráficos
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Módulos de registro para diagnosticar problemas específicos de Microsoft Windows
 about-logging-preset-custom-label = Personalizado
 about-logging-preset-custom-description = Módulos de registro seleccionados manualmente
 # Error handling

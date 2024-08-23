@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = 이 액세스는 안전하�
 ##
 
 xpinstall-disabled-locked = 시스템 관리자로 인해 소프트웨어 설치 기능을 사용할 수 없습니다.
+xpinstall-disabled-by-policy = 조직에서 소프트웨어 설치를 비활성화했습니다.
 xpinstall-disabled = 소프트웨어 설치 기능을 사용할 수 없습니다. 사용 허가를 선택한 후 다시 시도하세요.
 xpinstall-disabled-button =
     .label = 사용함
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName }({ $addonId }) 부가 기능이 시스템 관리자에 의해 차단되었습니다.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = 시스템 관리자가 이 사이트에서 컴퓨터에 소프트웨어를 설치하도록 요청하는 것을 차단했습니다.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName }({ $addonId }) 부가 기능이 조직에 의해 차단되었습니다.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = 조직이 이 사이트에서 컴퓨터에 소프트웨어를 설치하도록 요청하는 것을 차단했습니다.
 addon-install-full-screen-blocked = 전체 화면 모드에서 또는 전체 화면 모드로 전환 중에는 부가 기능을 설치할 수 없습니다.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -88,10 +96,10 @@ addon-install-accept-button =
 ##   $addonCount (Number): the number of add-ons being installed
 
 addon-confirm-install-message = 이 사이트에서 { -brand-short-name }에 부가 기능 { $addonCount }개를 설치하려고 합니다:
-addon-confirm-install-unsigned-message = 주의: 이 사이트에서 { -brand-short-name }에 검사를 받지 않은 부가 기능 { $addonCount }개를 설치하려고 합니다. 진행으로 인한 위험의 책임은 본인에게 있습니다.
+addon-confirm-install-unsigned-message = 주의: 이 사이트에서 { -brand-short-name }에 확인되지 않은 부가 기능 { $addonCount }개를 설치하려고 합니다. 진행으로 인한 위험의 책임은 본인에게 있습니다.
 # Variables:
 #   $addonCount (Number): the number of add-ons being installed (at least 2)
-addon-confirm-install-some-unsigned-message = 경고: 이 사이트에서 { -brand-short-name }에 부가 기능 { $addonCount }개를 설치하려고 합니다. 이 중 일부는 검사를 받지 않았습니다. 진행으로 인한 위험의 책임은 본인에게 있습니다.
+addon-confirm-install-some-unsigned-message = 경고: 이 사이트에서 { -brand-short-name }에 부가 기능 { $addonCount }개를 설치하려고 합니다. 이 중 일부는 확인되지 않았습니다. 진행으로 인한 위험의 책임은 본인에게 있습니다.
 
 ## Add-on install errors
 ## Variables:
@@ -99,16 +107,18 @@ addon-confirm-install-some-unsigned-message = 경고: 이 사이트에서 { -bra
 
 addon-install-error-network-failure = 연결 실패로 부가 기능을 내려받을 수 없습니다.
 addon-install-error-incorrect-hash = 이 부가 기능은 { -brand-short-name }가 찾고 있던 부가 기능과 달라 설치할 수 없습니다.
-addon-install-error-corrupt-file = 이 사이트에서 다운로드한 부가 기능은 손상된 것 같아서 설치할 수 없습니다.
+addon-install-error-corrupt-file = 이 사이트에서 다운로드한 부가 기능은 손상된 것 같으므로 설치할 수 없습니다.
 addon-install-error-file-access = { -brand-short-name }가 필요한 파일을 고칠 수 없어 { $addonName }를 설치할 수 없습니다.
-addon-install-error-not-signed = { -brand-short-name }가 이 사이트에서 검사받지 않은 부가 기능을 설치하지 못하게 막았습니다.
+addon-install-error-not-signed = { -brand-short-name }가 이 사이트에서 확인되지 않은 부가 기능을 설치하지 못하게 막았습니다.
 addon-install-error-invalid-domain = { $addonName } 부가기능은 이 위치에서 설치할 수 없습니다.
 addon-local-install-error-network-failure = 이 부가 기능은 파일 시스템에서 잘못되어 설치할 수 없습니다.
 addon-local-install-error-incorrect-hash = 이 부가 기능은 { -brand-short-name }가 찾고 있던 것과 다므르로 설치할 수 없습니다.
-addon-local-install-error-corrupt-file = 이 부가 기능은 손상된 것 같아서 설치할 수 없습니다.
+addon-local-install-error-corrupt-file = 이 부가 기능은 손상된 것 같으므로 설치할 수 없습니다.
 addon-local-install-error-file-access = { -brand-short-name }가 필요한 파일을 고칠 수 없어 { $addonName }를 설치할 수 없습니다.
-addon-local-install-error-not-signed = 이 부가 기능은 검사를 받지 않았으므로 설치할 수 없습니다.
+addon-local-install-error-not-signed = 이 부가 기능은 확인되지 않았으므로 설치할 수 없습니다.
 # Variables:
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName }는 { -brand-short-name } { $appVersion }에서 돌아가지 않으므로 설치할 수 없습니다.
 addon-install-error-blocklisted = { $addonName }는 불안정하게 만들고 보안 문제를 일으킬 것으로 보여 설치할 수 없습니다.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = 최종 사용자로 { $addonName } 부가 기능을 설치할 수 없으며, 엔터프라이즈 정책을 사용하는 조직에서만 설치할 수 있습니다.

@@ -13,16 +13,10 @@ firefox-relay-get-reusable-masks-failed = { -relay-brand-name } が再利用可�
 ##
 
 firefox-relay-must-login-to-fxa = { -relay-brand-name } を利用するには { -fxaccount-brand-name } にログインする必要があります。
+firefox-relay-must-login-to-account = { -relay-brand-name } メールマスクを使用するにはアカウントにログインしてください。
 firefox-relay-get-unlimited-masks =
     .label = マスクを管理
     .accesskey = M
-firefox-relay-opt-in-title = メールアドレスを保護しましょう
-firefox-relay-opt-in-subtitle = { -relay-brand-name } を追加
-firefox-relay-generate-mask-title = メールアドレスを保護
-firefox-relay-generate-mask-subtitle = { -relay-brand-short-name } マスクを生成
-firefox-relay-opt-in-confirmation-enable =
-    .label = 続行
-    .accesskey = C
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = メールアドレスを保護しましょう:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which

@@ -111,6 +111,11 @@ tabbrowser-confirm-caretbrowsing-title = Kurzoros böngészés
 tabbrowser-confirm-caretbrowsing-message = Az F7 gomb kapcsolja be, illetve ki a kurzoros böngészést. Ebben az üzemmódban egy mozgatható kurzor jelenik meg a weboldalakon, lehetővé téve a szöveg kijelölését a billentyűzettel. Szeretné bekapcsolni a kurzoros böngészést?
 tabbrowser-confirm-caretbrowsing-checkbox = Ne jelenjen meg többet ez a párbeszédpanel.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Figyelem!
+tabbrowser-confirm-close-duplicate-tabs-text = Az utolsó aktív lap nyitva marad
+
 ##
 
 # Variables:

@@ -6,8 +6,6 @@ addons-page-title = Správce doplňků
 search-header =
     .placeholder = Vyhledat na addons.mozilla.org
     .searchbuttonlabel = Hledat
-search-header-shortcut =
-    .key = f
 
 ## Variables
 ##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
@@ -171,11 +169,24 @@ addon-sitepermission-host = Oprávnění přístupu k webovým stránkám { $hos
 
 extensions-warning-safe-mode = V nouzovém režimu jsou všechny doplňky zakázány.
 extensions-warning-check-compatibility = Kontrola kompatibility doplňků je zakázána. Aplikace může obsahovat nekompatibilní doplňky.
+extensions-warning-safe-mode2 =
+    .message = V nouzovém režimu jsou všechny doplňky zakázány.
+extensions-warning-check-compatibility2 =
+    .message = Kontrola kompatibility doplňků je zakázána. Aplikace může obsahovat nekompatibilní doplňky.
 extensions-warning-check-compatibility-button = Povolit
     .title = Povolí kontrolu kompatibility doplňků
 extensions-warning-update-security = Kontrola bezpečné aktualizace doplňků je zakázána. Aplikace může být pomocí aktualizací napadena.
+extensions-warning-update-security2 =
+    .message = Kontrola bezpečné aktualizace doplňků je zakázána. Aplikace může být pomocí aktualizací napadena.
 extensions-warning-update-security-button = Povolit
     .title = Povolí kontrolu bezpečné aktualizace doplňků
+extensions-warning-imported-addons2 =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Dokončete instalaci rozšíření importovaných do { -brand-short-name(case: "gen") }.
+           *[no-cases] Dokončete instalaci rozšíření importovaných do aplikace { -brand-short-name }.
+        }
+extensions-warning-imported-addons-button = Nainstalovat rozšření
 
 ## Strings connected to add-on updates
 
@@ -226,6 +237,9 @@ shortcuts-no-addons = Nemáte povoleno žádné rozšíření.
 shortcuts-no-commands = Následující rozšíření nemají žádné klávesové zkratky:
 shortcuts-input =
     .placeholder = Zadejte klávesovou zkratku
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = Odebrat zkratku
 shortcuts-browserAction2 = Přidat tlačítko na lištu
 shortcuts-pageAction = Povolit akci stránky
 shortcuts-sidebarAction = Přepnout zobrazení postranního panelu
@@ -244,6 +258,11 @@ shortcuts-duplicate = Duplicitní zkratka
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = Zkratka { $shortcut } se používá na více místech. To může způsobit její neočekávané chování.
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = Zkratka { $shortcut } se používá na více místech. To může způsobit její neočekávané chování.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -283,6 +302,11 @@ discopane-intro =
 discopane-notice-recommendations =
     Některá z těchto doporučení se zobrazují na základě informací o ostatních
     vámi nainstalovaných rozšíření, nastavení profilu a statistik o používání.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message =
+        Některá z těchto doporučení se zobrazují na základě informací o ostatních
+        vámi nainstalovaných rozšíření, nastavení profilu a statistik o používání.
 discopane-notice-learn-more = Zjistit více
 privacy-policy = Zásady ochrany osobních údajů
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -332,21 +356,7 @@ permissions-addon-button = Oprávnění
 extension-enabled-heading = Povolená rozšíření
 extension-disabled-heading = Zakázaná rozšíření
 theme-enabled-heading = Aktivní vzhled
-theme-disabled-heading = Zakázané vzhledy
 theme-disabled-heading2 = Uložené vzhledy
-theme-monochromatic-heading = Palety barev
-theme-monochromatic-subheading =
-    { -brand-product-name.case-status ->
-        [with-cases] Nové palety barev pro { -brand-product-name(case: "acc") } dostupné po omezenou dobu.
-       *[no-cases] Nové palety barev pro aplikaci { -brand-product-name } dostupné po omezenou dobu.
-    }
-# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
-theme-colorways-button = Vyzkoušet palety barev
-# Refers to the button label for the colorways card when a user has a colorway theme enabled.
-theme-colorways-button-colorway-enabled = Změnit paletu barev
-# Variables:
-#   $expiryDate (string) - Date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
-colorway-collection-expiry-label = Skončí { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Povolené moduly
 plugin-disabled-heading = Zakázané moduly
 dictionary-enabled-heading = Povolené slovníky
@@ -368,6 +378,13 @@ install-postponed-message =
         [with-cases] Toto rozšíření bude aktualizováno během restartu { -brand-short-name(case: "gen") }.
        *[no-cases] Toto rozšíření bude aktualizováno během restartu aplikace { -brand-short-name }.
     }
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Toto rozšíření bude aktualizováno během restartu { -brand-short-name(case: "gen") }.
+           *[no-cases] Toto rozšíření bude aktualizováno během restartu aplikace { -brand-short-name }.
+        }
 install-postponed-button = Aktualizovat hned
 # The average rating that the add-on has received.
 # Variables:
@@ -393,6 +410,10 @@ addon-detail-reviews-link =
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = Doplněk <span data-l10n-name="addon-name">{ $addon }</span> byl odebrán.
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = Doplněk { $addon } byl odebrán.
 pending-uninstall-undo-button = Vrátit zpět
 addon-detail-updates-label = Automatické aktualizace
 addon-detail-updates-radio-default = Výchozí nastavení
@@ -400,6 +421,10 @@ addon-detail-updates-radio-on = Zapnuty
 addon-detail-updates-radio-off = Vypnuty
 addon-detail-update-check-label = Zkontrolovat aktualizace
 install-update-button = Aktualizovat
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -408,6 +433,28 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Povolená rozšíření mají přístup k vašim online aktivitám i v anonymních oknech. <a data-l10n-name="learn-more">Zjistit více</a>
 addon-detail-private-browsing-allow = Povolit
 addon-detail-private-browsing-disallow = Nepovolit
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
+
+## "sites with restrictions" (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = Spouštět na stránkách s omezeními
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help =
+    { -vendor-short-name.case-status ->
+        [with-cases] Pokud je to povoleno, bude mít rozšíření přístup k webům omezeným { -vendor-short-name(case: "ins") }. Povolte pouze v případě, že tomuto rozšíření důvěřujete.
+       *[no-cases] Pokud je to povoleno, bude mít rozšíření přístup k webům omezeným organizací { -vendor-short-name }. Povolte pouze v případě, že tomuto rozšíření důvěřujete.
+    }
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = Povolit
+addon-detail-quarantined-domains-disallow = Nepovolit
+# aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
+addon-detail-group-label-quarantined-domains =
+    .aria-label = { addon-detail-quarantined-domains-label }
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -466,11 +513,6 @@ addon-page-options-button =
 
 ## Detail notifications
 ## Variables:
-##   $name (String): name of the add-on.
-
-
-## Detail notifications
-## Variables:
 ##   $name (string) - Name of the add-on.
 
 # Variables:
@@ -480,21 +522,56 @@ details-notification-incompatible =
         [with-cases] Doplněk { $name } není s { -brand-short-name(case: "ins") } { $version } kompatibilní.
        *[no-cases] Doplněk { $name } není s aplikací { -brand-short-name } { $version } kompatibilní.
     }
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Doplněk { $name } není s { -brand-short-name(case: "ins") } { $version } kompatibilní.
+           *[no-cases] Doplněk { $name } není s aplikací { -brand-short-name } { $version } kompatibilní.
+        }
 details-notification-incompatible-link = Více informací
 details-notification-unsigned-and-disabled =
     { -brand-short-name.case-status ->
         [with-cases] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen a byl zakázán.
        *[no-cases] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen a byl zakázán.
     }
+details-notification-unsigned-and-disabled2 =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen a byl zakázán.
+           *[no-cases] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen a byl zakázán.
+        }
 details-notification-unsigned-and-disabled-link = Více informací
 details-notification-unsigned =
     { -brand-short-name.case-status ->
         [with-cases] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen. Používejte ho obezřetně.
        *[no-cases] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen. Používejte ho obezřetně.
     }
+details-notification-unsigned2 =
+    .message =
+        { -brand-short-name.case-status ->
+            [with-cases] Doplněk { $name } nemohl být pro použití ve { -brand-short-name(case: "loc") } ověřen. Používejte ho obezřetně.
+           *[no-cases] Doplněk { $name } nemohl být pro použití v aplikaci { -brand-short-name } ověřen. Používejte ho obezřetně.
+        }
 details-notification-unsigned-link = Více informací
 details-notification-blocked = Doplněk { $name } byl zakázán kvůli problémům se zabezpečením nebo stabilitou.
+details-notification-blocked2 =
+    .message = Doplněk { $name } byl zakázán kvůli problémům se zabezpečením nebo stabilitou.
 details-notification-blocked-link = Více informací
 details-notification-softblocked = Doplněk { $name } způsobuje bezpečnostní a výkonnostní problémy.
+details-notification-softblocked2 =
+    .message = Doplněk { $name } způsobuje bezpečnostní a výkonnostní problémy.
 details-notification-softblocked-link = Více informací
 details-notification-gmp-pending = { $name } bude brzy nainstalován.
+details-notification-gmp-pending2 =
+    .message = { $name } bude brzy nainstalován.
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = Informace o licenci
+plugins-gmp-privacy-info = Informace o ochraně soukromí
+plugins-openh264-name = Video kodek OpenH264 od společnosti Cisco Systems
+plugins-openh264-description = Tento zásuvný modul je automaticky instalován, aby tato aplikace vyhověla specifikaci WebRTC a umožnila WebRTC hovory se zařízeními, která vyžadují použití video kodeku H.264. Pro zobrazení zdrojového kódu a více informací o implementaci navštivte https://www.openh264.org/.
+plugins-widevine-name = Modul Widevine od společnosti Google pro dešifrování obsahu
+plugins-widevine-description = Tento zásuvný modul umožňuje přehrávání šifrovaných médií podle specifikace Encrypted Media Extensions. Šifrovaná média jsou typicky používána pro ochranu prémiového nebo placeného obsahu před kopírováním. Více informací o Encrypted Media Extensions najdete na adrese https://www.w3.org/TR/encrypted-media/.

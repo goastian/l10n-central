@@ -14,13 +14,6 @@ onboarding-welcome-header = 欢迎使用 { -brand-short-name }
 onboarding-start-browsing-button-label = 开始上网冲浪
 onboarding-not-now-button-label = 暂时不要
 mr1-onboarding-get-started-primary-button-label = 开始使用
-mr1-onboarding-welcome-header = 欢迎使用 { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = 将 { -brand-short-name } 设为我的主浏览器
-    .title = 将 { -brand-short-name } 设为默认浏览器，并固定到任务栏
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = 将 { -brand-short-name } 设为我的默认浏览器
-mr1-onboarding-set-default-secondary-button-label = 暂时不要
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,25 +34,6 @@ mr1-return-to-amo-add-extension-label = 添加 { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = 开始使用：第 { $current }屏，共 { $total } 屏
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = 星星之火 正将燎原
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = 索拉娅·奥索里奥（Soraya Osorio）— 家具设计师、Firefox 粉丝
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -67,67 +41,21 @@ mr1-onboarding-welcome-image-caption = 索拉娅·奥索里奥（Soraya Osorio�
 #   $total (Int) - Total number of pages
 
 onboarding-welcome-steps-indicator-label =
-    .aria-label = 进度：步骤 { $current } / { $total }
+    .aria-label = 进度：第 { $current } 步，共 { $total } 步
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = 关闭动画
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] 在您的程序坞中保留 { -brand-short-name }，方便访问
-       *[other] 将 { -brand-short-name } 固定到您的任务栏，方便访问
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] 在程序坞中保留
-       *[other] 固定到任务栏
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = 登录
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = 将 { -brand-short-name } 设为您的默认浏览器
-mr1-onboarding-default-subtitle = 自动获得快速、安全、私密的浏览体验。
-mr1-onboarding-default-primary-button-label = 设为默认浏览器
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = 快速迁移
-mr1-onboarding-import-subtitle = 导入您的密码、书签等数据。
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = 从 { $previous } 导入
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = 从先前所用浏览器导入
-mr1-onboarding-import-secondary-button-label = 暂时不要
-mr2-onboarding-colorway-header = 多彩生活
-mr2-onboarding-colorway-subtitle = 元气满满的新配色，限时提供。
-mr2-onboarding-colorway-primary-button-label = 保存配色
-mr2-onboarding-colorway-secondary-button-label = 暂时不要
-mr2-onboarding-colorway-label-soft = 柔和
-mr2-onboarding-colorway-label-balanced = 平衡
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = 浓烈
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = 自动
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = 默认
 mr1-onboarding-theme-header = 我有我的范儿
 mr1-onboarding-theme-subtitle = 换上主题，让 { -brand-short-name } 有您的个性。
-mr1-onboarding-theme-primary-button-label = 保存主题
 mr1-onboarding-theme-secondary-button-label = 暂时不要
+newtab-wallpaper-onboarding-title = 试用新色彩
+newtab-wallpaper-onboarding-subtitle = 选张壁纸，给新标签页加点新鲜感。
+newtab-wallpaper-onboarding-primary-button-label = 设置壁纸
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = 系统主题
 mr1-onboarding-theme-label-light = 明亮
@@ -165,26 +93,6 @@ mr1-onboarding-theme-tooltip-alpenglow =
 # Input description for Alpenglow theme
 mr1-onboarding-theme-description-alpenglow =
     .aria-description = 为按钮、菜单和窗口使用活力多彩配色主题。
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = 使用此配色。
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = 使用此配色。
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = 探索 { $colorwayName } 配色。
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = 探索 { $colorwayName } 配色。
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = 探索默认主题。
 # Selector description for default themes
 mr2-onboarding-default-theme-label = 探索默认主题。
 
@@ -200,23 +108,15 @@ mr2-onboarding-start-browsing-button-label = 开始上网冲浪
 ##
 ## Variables:
 ##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
 ##   $systemLanguage (String) - The name of the system language, e.g "Español (ES)"
 ##   $appLanguage (String) - The name of the language shipping in the browser build, e.g. "English (EN)"
 
 onboarding-live-language-header = 选择您的语言
 mr2022-onboarding-live-language-text = { -brand-short-name } 也懂您的语言
 mr2022-language-mismatch-subtitle = 幸得社区相助，{ -brand-short-name } 已被翻译成 90 余种语言。您的操作系统似乎正在使用“{ $systemLanguage }”，而 { -brand-short-name } 正在使用“{ $appLanguage }”。
-onboarding-live-language-button-label-downloading = 正在下载“{ $negotiatedLanguage }”语言包…
-onboarding-live-language-waiting-button = 正在获取可用语言列表…
-onboarding-live-language-installing = 正在安装“{ $negotiatedLanguage }”语言包…
+onboarding-live-language-button-label-downloading = 正在下载{ $negotiatedLanguage }语言包…
+onboarding-live-language-waiting-button = 正在获取可用语言…
+onboarding-live-language-installing = 正在安装{ $negotiatedLanguage }语言包…
 mr2022-onboarding-live-language-switch-to = 切换为“{ $negotiatedLanguage }”
 mr2022-onboarding-live-language-continue-in = 继续使用“{ $appLanguage }”
 onboarding-live-language-secondary-cancel-download = 取消
@@ -416,4 +316,36 @@ onboarding-device-migration-image-alt =
     .aria-label = 一台连接着鼠标的笔记本电脑，屏幕上有一只狐狸正在挥手。
 onboarding-device-migration-title = 欢迎回来！
 onboarding-device-migration-subtitle = 登录 { -fxaccount-brand-name(capitalization: "sentence") }，把书签、密码、历史记录同步到新设备上。
+onboarding-device-migration-subtitle2 = 登录账户即可将您的书签、密码、历史记录同步到新设备。
 onboarding-device-migration-primary-button-label = 登录
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = 我们乐于为您护航
+onboarding-easy-setup-security-and-privacy-subtitle = 这款由非营利组织支持的浏览器会自动阻止大公司在网上偷偷跟踪您。
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = 在设备间流转，数据照样密不透风
+onboarding-mobile-download-security-and-privacy-subtitle = { -brand-short-name } 可将密码、书签等数据加密同步，您还可在其他设备上接收标签页。
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } 为您护航
+onboarding-gratitude-security-and-privacy-subtitle = 感谢使用由 Mozilla 基金会支持的 { -brand-short-name }。您的支持激励着我们为更开放、更美好且人人可用的互联网继续奋斗。
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = 您使用 { -brand-short-name } 多长时间了？
+onboarding-new-user-familiarity-based-survey-title = 您在多大程度上熟悉 { -brand-short-name }？
+onboarding-new-user-survey-subtitle = 您的反馈有助于改善 { -brand-short-name }。
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = 下一步
+onboarding-new-user-survey-legal-link-label = 选择“{ onboarding-new-user-survey-next-button-label }”即代表您同意 { -brand-product-name } 的<a data-l10n-name="privacy_notice">隐私声明</a>
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = 我是新用户
+onboarding-new-user-survey-time-based-option-2 = 不到一个月
+onboarding-new-user-survey-time-based-option-3 = 超过一个月，经常使用
+onboarding-new-user-survey-time-based-option-4 = 超过一个月，偶尔使用
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = 我是新用户
+onboarding-new-user-survey-familiarity-based-option-2 = 我已有一些了解
+onboarding-new-user-survey-familiarity-based-option-3 = 我已非常熟悉
+onboarding-new-user-survey-familiarity-based-option-4 = 我已有一段时间没使用了

@@ -18,6 +18,10 @@ support-addons-type = Type
 support-addons-enabled = Aktiveret
 support-addons-version = Version
 support-addons-id = ID
+legacy-user-stylesheets-title = Gamle bruger-stylesheets
+legacy-user-stylesheets-enabled = Aktiv
+legacy-user-stylesheets-stylesheet-types = Stylesheets
+legacy-user-stylesheets-no-stylesheets-found = Ingen stylesheets fundet
 security-software-title = Sikkerheds-software
 security-software-type = Type
 security-software-name = Navn
@@ -70,13 +74,14 @@ app-basics-launcher-process-status = Launcher Process
 app-basics-multi-process-support = Multiproces-vinduer
 app-basics-fission-support = Fission-vinduer
 app-basics-remote-processes-count = Fjern-processer
-app-basics-enterprise-policies = Virksomheds-politikker
+app-basics-enterprise-policies = Virksomhedspolitikker
 app-basics-location-service-key-google = Google Location Service-nøgle
 app-basics-safebrowsing-key-google = Google Safebrowsing-nøgle
-app-basics-key-mozilla = Mozilla Location Service-nøgle
+app-basics-key-mozilla = Ablaze Location Service-nøgle
 app-basics-safe-mode = Fejlsikret tilstand
 app-basics-memory-size = Hukommelsesstørrelse (RAM)
 app-basics-disk-available = Ledig diskplads
+app-basics-pointing-devices = Pegeredskaber
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -182,6 +187,25 @@ media-codec-support-hw-decoding = Hardware-afkodning
 media-codec-support-codec-name = Codec-navn
 media-codec-support-supported = Understøttet
 media-codec-support-unsupported = Ikke understøttet
+media-codec-support-error = Information om understøttelse af codec er ikke tilgængelig. Afspil en mediefil og prøv igen.
+media-codec-support-lack-of-extension = Installer udvidelse
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informationer om moduler til indholdskryptering (Content Decryption Modules (CDM))
+media-key-system-name = Navn på nøglesystem
+media-video-robustness = Video-robusthed
+media-audio-robustness = Lyd-robusthed
+media-cdm-capabilities = Funktioner
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Ikke-krypteret start
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2-kompatibel
 
 ##
 
@@ -261,6 +285,7 @@ try-newer-driver = Ikke understøttet i denne grafik-driver-version. Prøv at op
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType parametre
 compositing = Komposition
+support-font-determination = Info til at fejlsøge synlighed af skrifttyper
 hardware-h264 = H264-afkodning i hardware
 main-thread-no-omtc = main thread, ingen OMTC
 yes = Ja
@@ -390,6 +415,20 @@ support-printing-modified-settings = Ændrede indstillinger for udskrivning
 support-printing-prefs-name = Navn
 support-printing-prefs-value = Værdi
 
+## Remote Settings sections
+
+support-remote-settings-title = Fjernindstillinger
+support-remote-settings-status = Status
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Virker ikke
+support-remote-settings-last-check = Seneste tjek
+support-remote-settings-local-timestamp = Lokalt tidsstempel
+support-remote-settings-sync-history = Historik
+support-remote-settings-sync-history-status = Status
+support-remote-settings-sync-history-datetime = Dato
+support-remote-settings-sync-history-infos = Oplysninger
+
 ## Normandy sections
 
 support-remote-experiments-title = Fjern-eksperimenter
@@ -399,3 +438,22 @@ support-remote-experiments-see-about-studies = Få mere information på siden <a
 support-remote-features-title = Fjern-funktioner
 support-remote-features-name = Navn
 support-remote-features-status = Status
+
+## Pointing devices
+
+pointing-device-mouse = Mus
+pointing-device-touchscreen = Touchscreen
+pointing-device-pen-digitizer = Digital pen
+pointing-device-none = Ingen pegeredskaber
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Indholdsanalyse (DLP)
+content-analysis-active = Aktiv
+content-analysis-connected-to-agent = Forbundet til agent
+content-analysis-agent-path = Sti til agent
+content-analysis-agent-failed-signature-verification = Agenten kunne ikke verificere signaturen
+content-analysis-request-count = Antal forespørgsler

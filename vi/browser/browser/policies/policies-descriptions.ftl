@@ -12,10 +12,13 @@
 
 policy-3rdparty = Đặt chính sách mà WebExtensions có thể truy cập thông qua chrome.storage.managed.
 policy-AllowedDomainsForApps = Xác định các miền được phép truy cập Google Workspace.
+policy-AllowFileSelectionDialogs = Cho phép hộp thoại chọn tập tin.
 policy-AppAutoUpdate = Bật hoặc tắt cập nhật chương trình tự động.
 policy-AppUpdatePin = Ngăn không cho cập nhật { -brand-short-name } ngoài phiên bản đã chỉ định.
 policy-AppUpdateURL = Thiết lập URL cập nhật của ứng dụng tùy chỉnh.
 policy-Authentication = Cấu hình các phương thức xác thực tích hợp sẵn cho các trang web có hỗ trợ.
+policy-AutofillAddressEnabled = Bật tính năng tự động điền địa chỉ.
+policy-AutofillCreditCardEnabled = Bật tính năng tự động điền phương thức thanh toán.
 policy-AutoLaunchProtocolsFromOrigins = Xác định danh sách các giao thức bên ngoài có thể được sử dụng từ các origin được liệt kê mà không cần nhắc người dùng.
 policy-BackgroundAppUpdate2 = Kích hoạt hoặc vô hiệu hóa trình cập nhật nền.
 policy-BlockAboutAddons = Chặn quyền truy cập vào trình quản lý tiện ích (about: addons).
@@ -28,22 +31,25 @@ policy-CertificatesDescription = Thêm chứng chỉ hoặc sử dụng chứng 
 policy-Cookies = Cho phép hoặc từ chối các trang web lưu cookie.
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Đặt các chính sách liên quan đến ngăn chứa.
+policy-DisableAccounts = Vô hiệu hóa các dịch vụ dựa trên tài khoản, bao gồm cả đồng bộ hóa.
 policy-DisabledCiphers = Vô hiệu hóa thuật toán mã hóa.
 policy-DefaultDownloadDirectory = Đặt thư mục tải xuống mặc định.
 policy-DisableAppUpdate = Chặn việc cập nhật trình duyệt.
 policy-DisableBuiltinPDFViewer = Vô hiệu hóa PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Ngăn chặn tác nhân người dùng trình duyệt mặc định làm bất cứ điều gì. Chỉ dành cho Windows, không có tác nhân người dùng nào khả dụng cho các nền tảng khác.
 policy-DisableDeveloperTools = Chặn truy cập đến công cụ nhà phát triển.
+policy-DisableEncryptedClientHello = Vô hiệu hóa việc sử dụng tính năng TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Tắt các lệnh để gửi phản hồi từ bảng chọn trợ giúp (gửi phản hồi và báo cáo trang web lừa đảo).
 policy-DisableFirefoxAccounts = Vô hiệu hóa { -fxaccount-brand-name } dựa trên các dịch vụ, bao gồm cả đồng bộ.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Vô hiệu hóa tính năng Midori Screenshots.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Vô hiệu hóa các dịch vụ dựa trên tài khoản, bao gồm cả đồng bộ hóa.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Vô hiệu hóa tính năng Firefox Screenshots.
 policy-DisableFirefoxStudies = Chặn { -brand-short-name } chạy các nghiên cứu.
 policy-DisableForgetButton = Chặn truy cập vào nút Quên.
 policy-DisableFormHistory = Không lưu lịch sử tìm kiếm và biểu mẫu.
 policy-DisablePrimaryPasswordCreation = Nếu đúng, không thể tạo mật khẩu chính.
 policy-DisablePasswordReveal = Không cho phép mật khẩu được tiết lộ trong thông tin đăng nhập đã lưu.
-policy-DisablePocket = Tắt tính năng lưu trang web vào Pocket.
 policy-DisablePocket2 = Tắt tính năng lưu trang web vào { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Vô hiệu hóa duyệt web riêng tư.
 policy-DisableProfileImport = Vô hiệu hóa lệnh nhập dữ liệu từ trình duyệt khác trên bảng chọn.
@@ -70,14 +76,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Tắt cảnh báo
 policy-Extensions = Cài đặt, gỡ cài đặt hoặc khóa tiện ích mở rộng. Tùy chọn Cài đặt lấy URL hoặc đường dẫn làm tham số. Các tùy chọn Gỡ cài đặt và Khóa lấy ID tiện ích mở rộng.
 policy-ExtensionSettings = Quản lý các cài đặt cài đặt khác nhau cho tiện ích mở rộng.
 policy-ExtensionUpdate = Bật hoặc tắt cập nhật tiện ích mở rộng tự động.
-policy-FirefoxHome = Cấu hình trang chủ Firefox.
 policy-FirefoxHome2 = Định cấu hình { -firefox-home-brand-name }.
-policy-FlashPlugin = Cho phép hoặc từ chối việc sử dụng phần bổ trợ Flash.
+policy-FirefoxSuggest = Định cấu hình { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Buộc điều hướng trực tiếp trang web nội bộ thay vì tìm kiếm khi nhập các mục từ đơn lẻ vào thanh địa chỉ.
 policy-Handlers = Cấu hình trình xử lý ứng dụng mặc định.
 policy-HardwareAcceleration = Nếu không đúng, hãy tắt chế độ tăng tốc phần cứng.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Đặt và tùy chọn khóa trang chủ.
+policy-HttpAllowlist = Origin sẽ không được nâng cấp lên HTTPS.
+policy-HttpsOnlyMode = Cho phép bật chế độ chỉ HTTPS.
 policy-InstallAddonsPermission = Cho phép một số trang web cài đặt tiện ích.
 policy-LegacyProfiles = Vô hiệu hóa tính năng thực thi một cấu hình riêng cho mỗi cài đặt
 
@@ -92,6 +99,7 @@ policy-LocalFileLinks = Cho phép các trang web cụ thể để liên kết đ
 policy-ManagedBookmarks = Định cấu hình danh sách các dấu trang do quản trị viên quản lý mà người dùng không thể thay đổi.
 policy-ManualAppUpdateOnly = Chỉ cho phép cập nhật thủ công và không thông báo cho người dùng về các bản cập nhật.
 policy-PrimaryPassword = Yêu cầu hoặc ngăn không sử dụng mật khẩu chính.
+policy-PrintingEnabled = Bật hoặc tắt tính năng in.
 policy-NetworkPrediction = Kích hoạt hoặc vô hiệu hóa dự đoán mạng (tìm nạp trước DNS).
 policy-NewTabPage = Kích hoạt hoặc vô hiệu hóa trang Thẻ mới.
 policy-NoDefaultBookmarks = Vô hiệu hóa việc tạo dấu trang mặc định đi kèm với { -brand-short-name } và dấu trang thông minh (được truy cập nhiều nhất, thẻ gần đây). Lưu ý: chính sách này chỉ có hiệu lực nếu được sử dụng trước lần chạy đầu tiên của hồ sơ.
@@ -114,8 +122,6 @@ policy-SanitizeOnShutdown2 = Xóa dữ liệu điều hướng khi tắt máy.
 policy-SearchBar = Đặt thanh tìm kiếm ở vị trí mặc định. Người dùng vẫn được phép tùy chỉnh nó.
 policy-SearchEngines = Cấu hình cài đặt công cụ tìm kiếm. Chính sách này chỉ có sẵn trên phiên bản phát hành hỗ trợ mở rộng (ESR).
 policy-SearchSuggestEnabled = Kích hoạt hoặc vô hiệu hóa các đề xuất tìm kiếm.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Cài đặt các mô-đun PKCS # 11.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Thêm hoặc xóa module PKCS #11.
 policy-ShowHomeButton = Hiển thị nút trang chủ trên thanh công cụ.
@@ -123,6 +129,7 @@ policy-SSLVersionMax = Chỉnh phiên bản SSL tối đa.
 policy-SSLVersionMin = Chỉnh phiên bản SSL tối thiểu.
 policy-StartDownloadsInTempDirectory = Buộc bắt đầu tải xuống ở một vị trí cục bộ, tạm thời thay vì thư mục tải xuống mặc định.
 policy-SupportMenu = Thêm một mục menu hỗ trợ tùy chỉnh vào menu trợ giúp.
+policy-TranslateEnabled = Bật hoặc tắt dịch trang web.
 policy-UserMessaging = Không hiển thị một số thông điệp nhất định cho người dùng.
 policy-UseSystemPrintDialog = In bằng hộp thoại in hệ thống.
 # “format” refers to the format used for the value of this policy.

@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -157,13 +151,26 @@ webrtc-allow-share-camera-and-audio-capture = Engedélyezi, hogy a(z) { $origin 
 webrtc-allow-share-screen-and-microphone = Engedélyezi, hogy a(z) { $origin } használja a mikrofonját, és lássa a képernyőjét?
 webrtc-allow-share-screen-and-audio-capture = Engedélyezi, hogy a(z) { $origin } hallja a lap hangját, és lássa a képernyőjét?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Engedélyezi, hogy ez a helyi fájl hallja a lap hangját?
+webrtc-allow-share-camera-with-file = Engedélyezi, hogy ez a helyi fájl használja a kameráját?
+webrtc-allow-share-microphone-with-file = Engedélyezi, hogy ez a helyi fájl használja a mikrofonját?
+webrtc-allow-share-screen-with-file = Engedélyezi, hogy ez a helyi fájl lássa a képernyőjét?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Engedélyezi, hogy ez a helyi fájl más hangszórókat használjon?
+webrtc-allow-share-camera-and-microphone-with-file = Engedélyezi, hogy ez a helyi fájl használja a kameráját és mikrofonját?
+webrtc-allow-share-camera-and-audio-capture-with-file = Engedélyezi, hogy ez a helyi fájl használja a kameráját, és hallja a lap hangját?
+webrtc-allow-share-screen-and-microphone-with-file = Engedélyezi, hogy ez a helyi fájl használja a mikrofonját, és lássa a képernyőjét?
+webrtc-allow-share-screen-and-audio-capture-with-file = Engedélyezi, hogy ez a helyi fájl hallja a lap hangját, és lássa a képernyőjét?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = Engedélyezi, hogy a { $origin } megengedje a(z) { $thirdParty } oldalnak, hogy hallgassa a lap hangját?
 webrtc-allow-share-camera-unsafe-delegation = Engedélyezi, hogy a { $origin } megengedje a(z) { $thirdParty } oldalnak, hogy hozzáférjen a kamerájához?
-webrtc-allow-share-microphone-unsafe-delegations = Engedélyezi, hogy a { $origin } megengedje a(z) { $thirdParty } oldalnak, hogy hozzáférjen a mikrofonjához?
 webrtc-allow-share-microphone-unsafe-delegation = Engedélyezi, hogy a { $origin } megengedje a(z) { $thirdParty } oldalnak, hogy hozzáférjen a mikrofonjához?
 webrtc-allow-share-screen-unsafe-delegation = Engedélyezi, hogy a { $origin } megengedje a(z) { $thirdParty } oldalnak, hogy lássa a képernyőjét?
 # "Speakers" is used in a general sense that might include headphones or
@@ -212,6 +219,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = A döntés megjegyzése
+webrtc-remember-allow-checkbox-camera = Megjegyzés az összes kameránál
+webrtc-remember-allow-checkbox-microphone = Megjegyzés az összes mikrofonnál
+webrtc-remember-allow-checkbox-camera-and-microphone = Megjegyzés az összes kameránál és mikrofonnál
 webrtc-mute-notifications-checkbox = Webhely értesítéseinek elnémítása megosztás közben
 webrtc-reason-for-no-permanent-allow-screen = A { -brand-short-name } nem teszi lehetővé a képernyőhöz történő állandó hozzáférést.
 webrtc-reason-for-no-permanent-allow-audio = A { -brand-short-name } nem teszi lehetővé a lap hangjához történő állandó hozzáférést, a megosztandó lap megkérdezése nélkül.

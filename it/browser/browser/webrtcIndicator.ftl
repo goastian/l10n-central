@@ -171,6 +171,20 @@ webrtc-allow-share-camera-and-audio-capture = Consentire a { $origin } di utiliz
 webrtc-allow-share-screen-and-microphone = Consentire a { $origin } di utilizzare il microfono e visualizzare lo schermo?
 webrtc-allow-share-screen-and-audio-capture = Consentire a { $origin } di ascoltare l’audio di questa scheda e visualizzare lo schermo?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Consentire a questo file locale di ascoltare l’audio di questa scheda?
+webrtc-allow-share-camera-with-file = Consentire a questo file locale di utilizzare la fotocamera?
+webrtc-allow-share-microphone-with-file = Consentire a questo file locale di utilizzare il microfono?
+webrtc-allow-share-screen-with-file = Consentire a questo file locale di visualizzare lo schermo?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Consentire a questo file locale di utilizzare altri altoparlanti?
+webrtc-allow-share-camera-and-microphone-with-file = Consentire a questo file locale di utilizzare la fotocamera e il microfono?
+webrtc-allow-share-camera-and-audio-capture-with-file = Consentire a questo file locale di utilizzare la fotocamera e ascoltare l’audio di questa scheda?
+webrtc-allow-share-screen-and-microphone-with-file = Consentire a questo file locale di utilizzare il microfono e visualizzare lo schermo?
+webrtc-allow-share-screen-and-audio-capture-with-file = Consentire a questo file locale di ascoltare l’audio di questa scheda e visualizzare lo schermo?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
@@ -226,6 +240,10 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Ricorda questa scelta
+webrtc-remember-allow-checkbox-camera = Ricorda per tutte le fotocamere
+webrtc-remember-allow-checkbox-microphone = Ricorda per tutti i microfoni
+webrtc-remember-allow-checkbox-camera-and-microphone = Ricorda per tutti i microfoni e le fotocamere
+
 webrtc-mute-notifications-checkbox = Disattiva notifiche dai siti web durante la condivisione
 
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } non è in grado di consentire accesso in modo permanente allo schermo.

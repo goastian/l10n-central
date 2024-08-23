@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -121,34 +115,47 @@ webrtc-indicator-menuitem-sharing-browser-with-n-tabs =
 ## Variables:
 ##   $origin (String): the website origin (e.g. www.mozilla.org).
 
-webrtc-allow-share-audio-capture = 要允许 { $origin } 听到此标签页的音频吗？
+webrtc-allow-share-audio-capture = 要允许 { $origin } 听取此标签页的音频吗？
 webrtc-allow-share-camera = 要允许 { $origin } 使用您的摄像头吗？
 webrtc-allow-share-microphone = 要允许 { $origin } 使用您的麦克风吗？
-webrtc-allow-share-screen = 要允许 { $origin } 看到您的屏幕吗？
+webrtc-allow-share-screen = 要允许 { $origin } 获取屏幕内容吗？
 # "Speakers" is used in a general sense that might include headphones or
 # another audio output connection.
 webrtc-allow-share-speaker = 要允许 { $origin } 使用其他音频输出设备吗？
 webrtc-allow-share-camera-and-microphone = 要允许 { $origin } 使用您的摄像头和麦克风吗？
-webrtc-allow-share-camera-and-audio-capture = 要允许 { $origin } 使用您的摄像头，并听到此标签页的音频吗？
-webrtc-allow-share-screen-and-microphone = 要允许 { $origin } 使用您的麦克风，并看到您的屏幕吗？
-webrtc-allow-share-screen-and-audio-capture = 要允许 { $origin } 听到此标签页的音频，并看到您的屏幕吗？
+webrtc-allow-share-camera-and-audio-capture = 要允许 { $origin } 使用您的摄像头，并听取此标签页的音频吗？
+webrtc-allow-share-screen-and-microphone = 要允许 { $origin } 使用您的麦克风，并获取屏幕内容吗？
+webrtc-allow-share-screen-and-audio-capture = 要允许 { $origin } 听取此标签页的音频，并获取屏幕内容吗？
+
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = 要允许此本地文件听取此标签页的音频吗？
+webrtc-allow-share-camera-with-file = 要允许此本地文件使用摄像头吗？
+webrtc-allow-share-microphone-with-file = 要允许此本地文件使用麦克风吗？
+webrtc-allow-share-screen-with-file = 要允许此本地文件获取屏幕内容吗？
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = 要允许此本地文件使用其他音频输出设备吗？
+webrtc-allow-share-camera-and-microphone-with-file = 要允许此本地文件使用摄像头和麦克风吗？
+webrtc-allow-share-camera-and-audio-capture-with-file = 要允许此本地文件使用摄像头并听取此标签页的音频吗？
+webrtc-allow-share-screen-and-microphone-with-file = 要允许此本地文件使用麦克风并获取屏幕内容吗？
+webrtc-allow-share-screen-and-audio-capture-with-file = 要允许此本地文件听取此标签页的音频并获取屏幕内容吗？
 
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
-webrtc-allow-share-audio-capture-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 听到此标签页的音频吗？
+webrtc-allow-share-audio-capture-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 听取此标签页的音频吗？
 webrtc-allow-share-camera-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的摄像头吗？
-webrtc-allow-share-microphone-unsafe-delegations = 要允许 { $origin } 授权 { $thirdParty } 使用您的麦克风吗？
 webrtc-allow-share-microphone-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的麦克风吗？
-webrtc-allow-share-screen-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 看到您的屏幕吗？
+webrtc-allow-share-screen-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 获取屏幕内容吗？
 # "Speakers" is used in a general sense that might include headphones or
 # another audio output connection.
 webrtc-allow-share-speaker-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的其他音频输出设备吗？
 webrtc-allow-share-camera-and-microphone-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的摄像头和麦克风吗？
-webrtc-allow-share-camera-and-audio-capture-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的摄像头，并听到此标签页的音频吗？
-webrtc-allow-share-screen-and-microphone-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的麦克风，并看到您的屏幕吗？
-webrtc-allow-share-screen-and-audio-capture-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用听到此标签页的音频，并看到您的屏幕吗？
+webrtc-allow-share-camera-and-audio-capture-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的摄像头，并听取此标签页的音频吗？
+webrtc-allow-share-screen-and-microphone-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 使用您的麦克风，并获取屏幕内容吗？
+webrtc-allow-share-screen-and-audio-capture-unsafe-delegation = 要允许 { $origin } 授权 { $thirdParty } 听取此标签页的音频，并获取屏幕内容吗？
 
 ##
 
@@ -184,6 +191,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = 记住此决定
+webrtc-remember-allow-checkbox-camera = 为所有摄像头记住此设置
+webrtc-remember-allow-checkbox-microphone = 为所有麦克风记住此设置
+webrtc-remember-allow-checkbox-camera-and-microphone = 为所有摄像头和麦克风记住此设置
 webrtc-mute-notifications-checkbox = 共享期间不显示网站通知
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } 不能长效允许访问您的屏幕。
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } 无法永久不让您先指定特定标签页，就允许存取任意标签页的音频内容。

@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Bladwijzer voor tabbladen maken…
     .accesskey = t
-bookmark-tab =
-    .label = Bladwijzer voor tabblad maken
-    .accesskey = t
 tab-context-bookmark-tab =
     .label = Bladwijzer voor tabblad maken…
     .accesskey = B
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Meerdere tabbladen sluiten
     .accesskey = M
+tab-context-close-duplicate-tabs =
+    .label = Dubbele tabbladen sluiten
+    .accesskey = u
 tab-context-share-url =
     .label = Delen
     .accesskey = e
@@ -106,7 +106,6 @@ tab-context-move-tabs =
            *[other] Tabbladen verplaatsen
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

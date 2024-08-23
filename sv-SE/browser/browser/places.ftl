@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Ta bort all historik för webbplatsen
     .accesskey = b
+places-forget-domain-data =
+    .label = Glöm den här webbplatsen…
+    .accesskey = G
 places-sortby-name =
     .label = Ordna efter namn
     .accesskey = d
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Redigera mapp...
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -134,14 +139,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Glöm bort den här webbplatsen
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Denna åtgärd kommer att ta bort all data som är relaterade till { $hostOrBaseDomain } inklusive historik, lösenord, kakor, cache och innehållspreferenser. Är du säker på att du vill fortsätta?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Den här åtgärden tar bort data relaterade till { $hostOrBaseDomain } inklusive historik, kakor, cache och innehållsinställningar. Relaterade bokmärken och lösenord kommer inte att tas bort. Är du säker på att du vill fortsätta?
 places-forget-about-this-site-forget = Glöm
-places-library =
-    .title = Bibliotek
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Bibliotek
 places-organize-button =

@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -157,13 +151,26 @@ webrtc-allow-share-camera-and-audio-capture = Tilate { $origin } å bruke kamera
 webrtc-allow-share-screen-and-microphone = Tillate { $origin } å bruke mikrofonen din og sjå skjermen din?
 webrtc-allow-share-screen-and-audio-capture = Tillate { $origin } å lytte på lyden i denne fana og sjå skjermen din?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Tillate denne lokale fila å høyre på lyden i denne fana?
+webrtc-allow-share-camera-with-file = Tillate denne lokale fila å bruke kameraet?
+webrtc-allow-share-microphone-with-file = Tillate denne lokale fila å bruke mikrofonen?
+webrtc-allow-share-screen-with-file = Tillate denne lokale fila å sjå skjermen din?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Tillate denne lokale fila å bruke andre høgtalarar?
+webrtc-allow-share-camera-and-microphone-with-file = Tillate denne lokale fila å bruke kameraet og mikrofonen?
+webrtc-allow-share-camera-and-audio-capture-with-file = Tillate denne lokale fila å bruke kameraet og høyre på lyd i denne fana?
+webrtc-allow-share-screen-and-microphone-with-file = Tillate denne lokale fila å bruke mikrofonen, og sjå skjermen din?
+webrtc-allow-share-screen-and-audio-capture-with-file = Tillate denne lokale fila å høyre på lyd i denne fana, og å sjå skjermen din?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = Tillate { $origin } å gi { $thirdParty } tilgang til å lytte til lyden i denne fana?
 webrtc-allow-share-camera-unsafe-delegation = Tillate { $origin } å gi { $thirdParty } tilgang til kameraet ditt?
-webrtc-allow-share-microphone-unsafe-delegations = Tillate { $origin } å gi { $thirdParty } tilgang til mikrofonen din?
 webrtc-allow-share-microphone-unsafe-delegation = Tillate { $origin } å gi { $thirdParty } tilgang til mikrofonen din?
 webrtc-allow-share-screen-unsafe-delegation = Tillate { $origin } å gi { $thirdParty } løyve til å sjå skjermen din?
 # "Speakers" is used in a general sense that might include headphones or
@@ -212,6 +219,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Hugs dette valet
+webrtc-remember-allow-checkbox-camera = Hugs for alle kamera
+webrtc-remember-allow-checkbox-microphone = Hugs for alle mikrofonar
+webrtc-remember-allow-checkbox-camera-and-microphone = Hugs for alle kamera og mikrofonar
 webrtc-mute-notifications-checkbox = Slå av nettstadvarsel mesn du deler
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } kan ikkje tillate permanent tilgang til skjermen din.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } kan ikkje tillate permanent tilgang til lyden på fana di utan å spørje kva for fane som skal delast.

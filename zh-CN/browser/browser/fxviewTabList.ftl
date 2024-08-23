@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = 新建标签页打开 { $targetURI }
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = 关闭“{ $tabTitle }”
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = 关闭 { $tabTitle }
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = 保存到 { -pocket-brand-name }
     .accesskey = o
 fxviewtabrow-copy-link = 复制链接
     .accesskey = L
+fxviewtabrow-close-tab = 关闭标签页
+    .accesskey = C
+fxviewtabrow-move-tab = 移动标签页
+    .accesskey = v
+fxviewtabrow-move-tab-start = 移动到开头
+    .accesskey = S
+fxviewtabrow-move-tab-end = 移动到末尾
+    .accesskey = E
+fxviewtabrow-move-tab-window = 移动到新窗口
+    .accesskey = W
+fxviewtabrow-send-tab = 发送标签页到设备
+    .accesskey = n
+fxviewtabrow-pin-tab = 固定标签页
+    .accesskey = P
+fxviewtabrow-unpin-tab = 取消固定标签页
+    .accesskey = P
+fxviewtabrow-mute-tab = 静音标签页
+    .accesskey = M
+fxviewtabrow-unmute-tab = 取消静音标签页
+    .accesskey = m
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = { $tabTitle } - 标签页选项
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = 静音“{ $tabTitle }”
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = 取消静音“{ $tabTitle }”
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = 静音标签页
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = 取消静音标签页

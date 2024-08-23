@@ -4,6 +4,7 @@
 
 about-networking-title = Informazioni sulla rete
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = Cancella cache HTTP
 about-networking-sockets = Socket
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = Cancella cache DNS
@@ -34,13 +35,6 @@ about-networking-messages-received = Messaggi ricevuti
 about-networking-bytes-sent = Byte inviati
 about-networking-bytes-received = Byte ricevuti
 about-networking-logging = Registrazione log
-about-networking-log-tutorial = Consultare la pagina <a data-l10n-name="logging">HTTP Logging</a> per istruzioni sull’utilizzo di questo strumento.
-about-networking-current-log-file = File di log corrente:
-about-networking-current-log-modules = Moduli di log correnti:
-about-networking-set-log-file = Imposta file di log
-about-networking-set-log-modules = Imposta moduli di log
-about-networking-start-logging = Avvia registrazione
-about-networking-stop-logging = Interrompi registrazione
 about-networking-dns-lookup = DNS lookup
 about-networking-dns-lookup-button = Risolvi
 about-networking-dns-domain = Dominio:
@@ -72,3 +66,4 @@ about-networking-networkid-is-up = Il collegamento è attivo
 about-networking-networkid-status-known = Lo stato del collegamento è noto
 
 ##
+

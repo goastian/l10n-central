@@ -12,6 +12,10 @@ origin-controls-no-access =
     .label = 擴充套件不可讀取或變更任何網站資料
 origin-controls-quarantined =
     .label = 不允許擴充套件讀取或變更任何網站資料
+origin-controls-quarantined-status =
+    .label = 不允許於受限制的網站運作的擴充套件
+origin-controls-quarantined-allow =
+    .label = 允許於受限制的網站運作
 origin-controls-options =
     .label = 擴充套件可讀取或變更下列網站資料：
 origin-controls-option-all-domains =
@@ -49,3 +53,10 @@ origin-controls-toolbar-button =
 origin-controls-toolbar-button-permission-needed =
     .label = { $extensionTitle }
     .tooltiptext = { $extensionTitle } 需要權限
+# Extension's toolbar button when quarantined.
+# Note that the new line is intentionally part of the tooltip.
+origin-controls-toolbar-button-quarantined =
+    .label = { $extensionTitle }
+    .tooltiptext =
+        { $extensionTitle }
+        { -vendor-short-name } 不允許於此網站運作

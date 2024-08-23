@@ -30,8 +30,8 @@ download-ui-confirm-offline-cancel-downloads =
 download-ui-dont-go-offline-button = 保持在线
 download-ui-confirm-leave-private-browsing-windows-cancel-downloads =
     { $downloadsCount ->
-        [1] 如果您现在关闭所有的隐私浏览窗口，1 项下载将被取消。您仍确定要离开隐私浏览模式吗？
-       *[other] 如果您现在关闭所有的隐私浏览窗口，{ $downloadsCount } 项下载将被取消。您仍确定要离开隐私浏览模式吗？
+        [1] 如果现在关闭所有隐私浏览窗口，1 项下载将被取消。您仍确定要离开隐私浏览模式吗？
+       *[other] 如果现在关闭所有隐私浏览窗口，{ $downloadsCount } 项下载将被取消。您仍确定要离开隐私浏览模式吗？
     }
 download-ui-dont-leave-private-browsing-button = 留在隐私浏览模式
 download-ui-cancel-downloads-ok =

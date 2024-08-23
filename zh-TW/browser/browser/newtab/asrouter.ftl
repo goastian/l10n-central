@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = 由 { $name } 開發
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = 推薦
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = 推薦
     .tooltiptext = 推薦擴充套件
     .a11y-announcement = 有推薦的擴充套件可以使用
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = 推薦
     .tooltiptext = 推薦功能
     .a11y-announcement = 有推薦的功能可以使用
@@ -59,6 +61,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = 將您的書籤同步帶著走。
 cfr-doorhanger-bookmark-fxa-body = 找到好網站了！接下來也把這筆書籤同步進手機吧。試試使用 { -fxaccount-brand-name }。
+cfr-doorhanger-bookmark-fxa-body-2 = 找到好網站了！接下來也把這筆書籤同步進手機吧。註冊帳號即可開始使用。
 cfr-doorhanger-bookmark-fxa-link-text = 立即同步書籤…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 關閉按鈕
@@ -103,28 +106,12 @@ cfr-doorhanger-doh-primary-button-2 = 好的
 cfr-doorhanger-doh-secondary-button = 停用
     .accesskey = D
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = 您的隱私權相當重要。{ -brand-short-name } 現在起會將您開啟的各個網站分別隔離於沙盒中，讓駭客更難偷到您的密碼、信用卡號、或其他敏感資訊。
-cfr-doorhanger-fission-header = 網站隔離
-cfr-doorhanger-fission-primary-button = 好，知道了
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = 了解更多
-    .accesskey = L
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = 此網站上的影片可能無法於這個版本的 { -brand-short-name } 正常播放。若需完整支援影片播放，請更新 { -brand-short-name }。
 cfr-doorhanger-video-support-header = 更新 { -brand-short-name } 來播放影片
 cfr-doorhanger-video-support-primary-button = 立即更新
     .accesskey = U
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = 了解更多
-    .title = 展開即可了解此功能的更多資訊
-spotlight-learn-more-expanded = 了解更多
-    .title = 關閉
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -139,18 +126,6 @@ spotlight-public-wifi-vpn-primary-button = 使用 { -mozilla-vpn-brand-name } �
     .accesskey = S
 spotlight-public-wifi-vpn-link = 現在不要
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header = 試用我們有史以來最強大的隱私保護功能
-spotlight-total-cookie-protection-body = 「全方位 Cookie 保護」功能可防止追蹤器透過 Cookie 在網路上追蹤您。
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } 會將 Cookie 包圍起來，讓它們僅能在您所在的網站使用，這樣追蹤器就無法用它們來追蹤您。透過搶先試用，您可以協助我們最佳化這個功能，持續為每個人打造更好的網路環境。
-spotlight-total-cookie-protection-primary-button = 開啟「全方位 Cookie 保護」功能
-spotlight-total-cookie-protection-secondary-button = 現在不要
 
 ## Emotive Continuous Onboarding
 
@@ -227,6 +202,9 @@ cfr-cbh-confirm-button = 拒絕 Cookie 橫幅
     .accesskey = R
 cfr-cbh-dismiss-button = 現在不要
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } 已為您封鎖 Cookie 橫幅
+cookie-banner-blocker-onboarding-body = 少一分會追蹤您的 Cookie，也讓您更不用分心。
+cookie-banner-blocker-onboarding-learn-more = 更多資訊
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -256,7 +234,48 @@ fxa-sync-cfr-secondary = 待會提醒我
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = 使用的是舊裝置？
-device-migration-fxa-spotlight-body = 備份您的資料，以確保不會遺失書籤、密碼等重要資訊。尤其是換新裝置轉移資料時更要小心。
-device-migration-fxa-spotlight-primary-button = 如何備份我的資料
-device-migration-fxa-spotlight-link = 待會提醒我
+device-migration-fxa-spotlight-heavy-user-header = 別忘記備份您的資料
+device-migration-fxa-spotlight-heavy-user-body = 確保您所有的裝置上，隨時都能有最新、同步的書籤、密碼等重要資訊。
+device-migration-fxa-spotlight-heavy-user-primary-button = 開始使用
+device-migration-fxa-spotlight-older-device-header = 移動資料免擔心，來自 { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = 註冊帳號後，可確保您任何連結起來的裝置上，都能有最新、同步的重要資訊。
+device-migration-fxa-spotlight-older-device-primary-button = 註冊帳號
+device-migration-fxa-spotlight-getting-new-device-header-2 = 打算要換新裝置？
+device-migration-fxa-spotlight-getting-new-device-body-2 = 只要有幾個簡單步驟，就可以將書籤、瀏覽紀錄、密碼帶到新裝置上面立即使用。
+device-migration-fxa-spotlight-getting-new-device-primary-button = 如何備份我的資料
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>要將 { -brand-short-name } 設為預設 PDF 閱讀器嗎？</strong>使用 { -brand-short-name } 來閱讀、編輯您電腦上的 PDF 檔案。
+pdf-default-notification-set-default-button =
+    .label = 設為預設軟體
+pdf-default-notification-decline-button =
+    .label = 現在不要
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>要在每次電腦開機時自動開啟 { -brand-short-name } 嗎？</strong>現在可以設定在開機時自動開啟 { -brand-short-name }。
+launch-on-login-learnmore = 更多資訊
+launch-on-login-infobar-confirm-button = 好，開啟 { -brand-short-name }
+    .accesskey = Y
+launch-on-login-infobar-reject-button = 現在不要
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>要在每次電腦開機時自動開啟 { -brand-short-name } 嗎？</strong>若要管理您的啟動設定，請在設定頁面中搜尋「啟動」。
+launch-on-login-infobar-final-reject-button = 不要，謝謝
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = 別讓討厭的追蹤器跟上來
+tail-fox-spotlight-subtitle = 跟令人討厭的廣告追蹤器說再見，並且有一套更快、更安全的上網體驗。
+tail-fox-spotlight-primary-button = 用 { -brand-short-name } 開啟我的鏈結
+tail-fox-spotlight-secondary-button = 現在不要

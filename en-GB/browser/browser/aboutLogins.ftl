@@ -4,14 +4,17 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Logins & Passwords
-login-filter =
-    .placeholder = Search Logins
-create-login-button = Create New Login
 about-logins-login-filter =
     .placeholder = Search Logins
     .key = F
 create-new-login-button =
     .title = Create new login
+about-logins-page-title-name = Passwords
+about-logins-login-filter2 =
+    .placeholder = Search Passwords
+    .key = F
+create-login-button =
+    .title = Add password
 fxaccounts-sign-in-text = Get your passwords on your other devices
 fxaccounts-sign-in-sync-button = Sign in to synchronise
 fxaccounts-avatar-button =
@@ -26,6 +29,8 @@ about-logins-menu-menuitem-import-from-another-browser = Import from Another Bro
 about-logins-menu-menuitem-import-from-a-file = Import from a File…
 about-logins-menu-menuitem-export-logins = Export Logins…
 about-logins-menu-menuitem-remove-all-logins = Remove All Logins…
+about-logins-menu-menuitem-export-logins2 = Export Passwords…
+about-logins-menu-menuitem-remove-all-logins2 = Remove All Passwords…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Options
@@ -52,6 +57,21 @@ login-list-filtered-count =
         [one] { $count } of { $total } login
        *[other] { $count } of { $total } logins
     }
+# Variables
+#   $count (number) - Number of logins
+login-list-count2 =
+    { $count ->
+        [one] { $count } password
+       *[other] { $count } passwords
+    }
+# Variables
+#   $count (number) - Number of filtered logins
+#   $total (number) - Total number of logins
+login-list-filtered-count2 =
+    { $total ->
+        [one] { $count } of { $total } password
+       *[other] { $count } of { $total } passwords
+    }
 login-list-sort-label-text = Sort by:
 login-list-name-option = Name (A-Z)
 login-list-name-reverse-option = Name (Z-A)
@@ -61,11 +81,14 @@ about-logins-login-list-alerts-option = Alerts
 login-list-last-changed-option = Last Modified
 login-list-last-used-option = Last Used
 login-list-intro-title = No logins found
+login-list-intro-title2 = No passwords saved
 login-list-intro-description = When you save a password in { -brand-product-name }, it will show up here.
 about-logins-login-list-empty-search-title = No logins found
+about-logins-login-list-empty-search-title2 = No passwords found
 about-logins-login-list-empty-search-description = There are no results matching your search.
 login-list-item-title-new-login = New Login
 login-list-item-subtitle-new-login = Enter your login credentials
+login-list-item-title-new-login2 = Add password
 login-list-item-subtitle-missing-username = (no username)
 about-logins-list-item-breach-icon =
     .title = Breached web site
@@ -84,18 +107,29 @@ about-logins-login-intro-heading-logged-out2 = Looking for your saved logins? Tu
 about-logins-login-intro-heading-logged-in = No synchronised logins found.
 login-intro-description = If you saved your logins to { -brand-product-name } on a different device, here’s how to get them here:
 login-intro-instructions-fxa = Create or sign in to your { -fxaccount-brand-name(capitalization: "sentence") } on the device where your logins are saved.
+about-logins-login-intro-heading-message = Save your passwords to a safe spot
+login-intro-description2 = All passwords you save to { -brand-product-name } are encrypted. Plus, we watch out for breaches and alert you if you’re affected. <a data-l10n-name="breach-alert-link">Learn more</a>
+login-intro-instructions-fxa2 = Create or sign in to your account on the device where your logins are saved.
 login-intro-instructions-fxa-settings = Go to Settings > Sync > Turn on synchronisation… Select the Logins and passwords checkbox.
 login-intro-instructions-fxa-passwords-help = Visit <a data-l10n-name="passwords-help-link">passwords support</a> for more help.
 about-logins-intro-browser-only-import = If your logins are saved in another browser, you can <a data-l10n-name="import-link">import them into { -brand-product-name }</a>
 about-logins-intro-import2 = If your logins are saved outside of { -brand-product-name }, you can <a data-l10n-name="import-browser-link">import them from another browser</a> or <a data-l10n-name="import-file-link">from a file</a>
+about-logins-intro-import3 = Select the plus sign button above to add a password now. You can also <a data-l10n-name="import-browser-link">import passwords from another browser</a> or <a data-l10n-name="import-file-link">from a file</a>.
 
 ## Login
 
 login-item-new-login-title = Create New Login
+# Header for adding a password
+about-logins-login-item-new-login-title = Add password
 login-item-edit-button = Edit
 about-logins-login-item-remove-button = Remove
 login-item-origin-label = Web site address
 login-item-tooltip-message = Make sure this matches the exact address of the web site where you log in.
+about-logins-origin-tooltip2 = Enter the full address and make sure it’s an exact match for where you sign in.
+# Variables
+#   $webTitle (String) - Website title of the password being changed.
+about-logins-edit-password-tooltip = Make sure you’re saving your current password for this site. Changing the password here does not change it with { $webTitle }.
+about-logins-add-password-tooltip = Make sure you’re saving your current password for this site.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Username
@@ -109,11 +143,9 @@ login-item-password-reveal-checkbox =
 login-item-copy-password-button-text = Copy
 login-item-copied-password-button-text = Copied!
 login-item-save-changes-button = Save Changes
+about-logins-login-item-save-changes-button = Save
 login-item-save-new-button = Save
 login-item-cancel-button = Cancel
-login-item-time-changed = Last modified: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
-login-item-time-created = Created: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
-login-item-time-used = Last used: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## The date is displayed in a timeline showing the password evolution.
 ## A label is displayed under the date to describe the type of change.
@@ -139,6 +171,18 @@ about-logins-edit-login-os-auth-dialog-message-win = To edit your login, enter y
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = edit the saved login
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
+# This message can be seen when attempting to disable osauth in about:preferences.
+about-logins-os-auth-dialog-message =
+    { PLATFORM() ->
+        [macos] change the settings for passwords
+       *[other] { -brand-short-name } is trying to change the settings for passwords. Use your device sign in to allow this.
+    }
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message2-win = To edit your password, enter your Windows login credentials. This helps protect the security of your accounts.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message2-macosx = edit the saved password
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = To view your password, enter your Windows login credentials. This helps protect the security of your accounts.
 # This message can be seen when attempting to reveal a password in about:logins
@@ -154,6 +198,11 @@ about-logins-export-password-os-auth-dialog-message-win = To export your logins,
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = export saved logins and passwords
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message2-win = To export your passwords, enter your Windows login credentials. This helps protect the security of your accounts.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message2-macosx = export saved passwords
 
 ## Primary Password notification
 
@@ -169,6 +218,10 @@ confirmation-dialog-dismiss-button =
     .title = Cancel
 about-logins-confirm-remove-dialog-title = Remove this login?
 confirm-delete-dialog-message = This action cannot be undone.
+# Title for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-title = Remove password?
+# Message for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-message = You cannot undo this action.
 about-logins-confirm-remove-dialog-confirm-button = Remove
 
 ## Variables
@@ -204,12 +257,47 @@ about-logins-confirm-remove-all-sync-dialog-message =
         [1] This will remove the login you’ve saved to { -brand-short-name } on all devices synced to your { -fxaccount-brand-name }. This will also remove breach alerts that appear here. You won’t be able to undo this action.
        *[other] This will remove all logins you’ve saved to { -brand-short-name } on all devices synced to your { -fxaccount-brand-name }. This will also remove breach alerts that appear here. You won’t be able to undo this action.
     }
+# Checkbox for modal to confirm the removal of saved passwords
+about-logins-confirm-remove-all-dialog-checkbox-label2 =
+    { $count ->
+        [1] Yes, remove password
+       *[other] Yes, remove passwords
+    }
+# Title for modal to confirm the removal of all saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-title2 =
+    { $count ->
+        [one] Remove { $count } password?
+       *[other] Remove all { $count } passwords?
+    }
+# Message for modal to confirm the removal of saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-message2 =
+    { $count ->
+        [1] This will remove the password saved to { -brand-short-name } and any breach alerts. You cannot undo this action.
+       *[other] This will remove the passwords saved to { -brand-short-name } and any breach alerts. You cannot undo this action.
+    }
+# Title for modal to confirm the removal of all saved passwords when user IS SYNCED
+about-logins-confirm-remove-all-sync-dialog-title2 =
+    { $count ->
+        [one] Remove { $count } password from all devices?
+       *[other] Remove all { $count } passwords from all devices?
+    }
+# Message for modal to confirm the removal of saved passwords when user IS synced.
+about-logins-confirm-remove-all-sync-dialog-message3 =
+    { $count ->
+        [1] This will remove the passwords saved to { -brand-short-name } on all your synchronised devices. This will also remove any breach alerts that appear here. You cannot undo this action.
+       *[other] This will remove all passwords saved to { -brand-short-name } on all your synced devices. This will also remove any breach alerts that appear here. You cannot undo this action.
+    }
 
 ##
 
 about-logins-confirm-export-dialog-title = Export logins and passwords
 about-logins-confirm-export-dialog-message = Your passwords will be saved as readable text (e.g., BadP@ssw0rd) so anyone who can open the exported file can view them.
 about-logins-confirm-export-dialog-confirm-button = Export…
+about-logins-confirm-export-dialog-title2 = A note about exporting passwords
+about-logins-confirm-export-dialog-message2 =
+    When you export, your passwords are saved to a file with readable text.
+    When you’re done using the file, we recommend deleting it so others who use this device can’t see your passwords.
+about-logins-confirm-export-dialog-confirm-button2 = Continue with export
 about-logins-alert-import-title = Import Complete
 about-logins-alert-import-message = View detailed Import Summary
 confirm-discard-changes-dialog-title = Discard unsaved changes?
@@ -224,7 +312,6 @@ about-logins-breach-alert-date = This breach occurred on { DATETIME($date, day: 
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Go to { $hostname }
-about-logins-breach-alert-learn-more-link = Learn more
 
 ## Vulnerable Password notification
 
@@ -252,6 +339,11 @@ about-logins-export-file-picker-title = Export Logins File
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = logins.csv
+# Title of the file picker dialog
+about-logins-export-file-picker-title2 = Export Passwords from { -brand-short-name }
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename2 = passwords.csv
 about-logins-export-file-picker-export-button = Export
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -265,6 +357,8 @@ about-logins-export-file-picker-csv-filter-title =
 
 # Title of the file picker dialog
 about-logins-import-file-picker-title = Import Logins File
+# Title of the file picker dialog
+about-logins-import-file-picker-title2 = Import Passwords to { -brand-short-name }
 about-logins-import-file-picker-import-button = Import
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -298,6 +392,18 @@ about-logins-import-dialog-items-no-change =
     { $count ->
        *[other] <span>Duplicate logins found:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
     }
+about-logins-import-dialog-items-added2 =
+    { $count ->
+       *[other] <span>New passwords added:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified2 =
+    { $count ->
+       *[other] <span>Existing entries updated:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change2 =
+    { $count ->
+       *[other] <span>Duplicate entries found:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
+    }
 about-logins-import-dialog-items-error =
     { $count ->
        *[other] <span>Errors:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
@@ -318,6 +424,7 @@ about-logins-import-dialog-error-try-import-again = Try Import Again…
 about-logins-import-dialog-error-cancel = Cancel
 about-logins-import-report-title = Import Summary
 about-logins-import-report-description = Logins and passwords imported to { -brand-short-name }.
+about-logins-import-report-description2 = Passwords imported to { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -325,6 +432,9 @@ about-logins-import-report-row-index = Row { $number }
 about-logins-import-report-row-description-no-change = Duplicate: Exact match of existing login
 about-logins-import-report-row-description-modified = Existing login updated
 about-logins-import-report-row-description-added = New login added
+about-logins-import-report-row-description-no-change2 = Duplicate: Exact match of existing entry
+about-logins-import-report-row-description-modified2 = Existing entry updated
+about-logins-import-report-row-description-added2 = New password added
 about-logins-import-report-row-description-error = Error: Missing field
 
 ##
@@ -349,6 +459,18 @@ about-logins-import-report-modified =
 about-logins-import-report-no-change =
     { $count ->
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Duplicate logins</div> <div data-l10n-name="not-imported">(not imported)</div>
+    }
+about-logins-import-report-added2 =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">New passwords added</div>
+    }
+about-logins-import-report-modified2 =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Existing entries updated</div>
+    }
+about-logins-import-report-no-change2 =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Duplicate entries</div> <div data-l10n-name="not-imported">(not imported)</div>
     }
 about-logins-import-report-error =
     { $count ->

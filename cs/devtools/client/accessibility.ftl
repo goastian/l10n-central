@@ -9,9 +9,6 @@ accessibility-learn-more = Zjistit více
 accessibility-text-label-header = Textové popisky a názvy
 accessibility-keyboard-header = Klávesnice
 
-## Text entries that are used as text alternative for icons that depict accessibility isses.
-
-
 ## These strings are used in the overlay displayed when running an audit in the accessibility panel
 
 accessibility-progress-initializing = Inicializace…
@@ -68,4 +65,5 @@ accessibility-keyboard-issue-semantics = Prvky dosažitelné pomocí klávesnice
 accessibility-keyboard-issue-tabindex = Vyhněte se používaní atributu <code>tabindex</code> s hodnotou větší než nula. <a>Zjistit více</a>
 accessibility-keyboard-issue-action = Interaktivní prvky musí být možno aktivovat klávesnicí. <a>Zjistit více</a>
 accessibility-keyboard-issue-focusable = Interaktivní prvky musí být přístupné klávesnicí. <a>Zjistit více</a>
+accessibility-keyboard-issue-focus-visible = Pro prvek dosažitelný klávesnicí není pravděpodobně nastaven styl pro případ jeho aktivace. <a>Zjistit více</a>
 accessibility-keyboard-issue-mouse-only = Prvky, na které lze kliknout, musí být dosažitelné pomocí klávesnice, a měly by mít interaktivní sémantiku. <a>Zjistit více</a>

@@ -53,7 +53,7 @@ import-from-chromium =
     .label = Chromium
     .accesskey = u
 import-from-firefox =
-    .label = Firefox
+    .label = Midori
     .accesskey = x
 import-from-360se =
     .label = 360 Secure Browser
@@ -66,8 +66,8 @@ import-source-page-title = Impor Pengaturan dan Data
 import-items-page-title = Pilih yang akan diimpor
 import-items-description = Pilih yang akan diimpor:
 import-permissions-page-title = Mohon beri izin kepada { -brand-short-name }
-# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
-import-permissions-description = macOS memerlukan izin Anda secara eksplisit agar { -brand-short-name } dapat mengakses markah Safari. Klik "Lanjutkan" dan pilih berkas “Bookmarks.plist” pada panel Buka Berkas yang muncul.
+# Do not translate "Safari" (the name of the browser on Apple devices)
+import-safari-permissions-string = macOS memerlukan Anda secara eksplisit mengizinkan { -brand-short-name } untuk mengakses data dari Safari. Klik “Lanjutkan”, pilih berkas “Safari“ dalam dialog Finder yang muncul dan kemudian klik “Buka”.
 import-migrating-page-title = Mengimpor…
 import-migrating-description = Berikut ini yang sedang diimpor…
 import-select-profile-page-title = Pilih Profil
@@ -145,3 +145,7 @@ browser-data-session-checkbox =
     .label = Jendela dan Tab
 browser-data-session-label =
     .value = Jendela dan Tab
+browser-data-payment-methods-checkbox =
+    .label = Metode pembayaran
+browser-data-payment-methods-label =
+    .value = Metode pembayaran

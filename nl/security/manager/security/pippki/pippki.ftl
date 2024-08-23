@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = U bent momenteel in FIPS-modus. FIPS verei
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = Hoofdwachtwoord opnieuw instellen
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = Hoofdwachtwoord opnieuw instellen
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = Uw hoofdwachtwoord is opnieuw inges
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = Certificaat downloaden
-    .style = width: 46em
 download-cert-window2 =
     .title = Certificaat downloaden
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = CA-certificaat bestuderen
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = Gebruikersidentificatieverzoek
 client-auth-site-description = Deze website vraagt u zich te identificeren met een beveiligingscertificaat:
 client-auth-choose-cert = Kies een certificaat om als identificatie aan te bieden:
+client-auth-send-no-certificate =
+    .label = Stuur geen certificaat
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = ‘{ $hostname }’ vraagt u zich te identificeren met een beveiligingscertificaat:
 client-auth-cert-details = Details van geselecteerde certificaat:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = Uitgegeven aan: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = Serienummer: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = Geldig van { $notBefore } tot en met { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = Sleutelgebruik: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = E-mailadressen: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = Uitgegeven door: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = Opgeslagen op: { $storedOn }
+client-auth-cert-remember-box =
+    .label = Deze beslissing onthouden
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Wachtwoord voor de reservekopie van het certificaat (nogmaals):
 set-password-reminder = Belangrijk: als u uw wachtwoord voor de reservekopie van het certificaat vergeet, kunt u deze reservekopie later niet herstellen. Berg het op een veilige plek op.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = Beschermde tokenauthenticatie
-protected-auth-msg = Authenticeer bij het token. Authenticatiemethode hangt af van het type van uw token.
-protected-auth-token = Token:
 
 ## Protected authentication alert
 

@@ -34,14 +34,33 @@ migration-wizard-migrator-display-name-chromium-360se = 360 安全浏览器
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = 旧版 Microsoft Edge
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = CSV 文件中的密码
-migration-wizard-migrator-display-name-file-bookmarks = HTML 文件中的书签
+migration-wizard-migrator-display-name-file-bookmarks = 从 HTML 文件导入书签
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer（IE 浏览器）
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari 浏览器
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer（IE 浏览器）
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = 阅读列表（来自 Safari 浏览器）
+migration-imported-edge-reading-list = 阅读列表（来自 Edge）
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } 无法访问此设备上安装的其他浏览器的配置文件。
+migration-no-permissions-instructions = 如需继续从其他浏览器导入数据，请允许 { -brand-short-name } 访问其配置文件夹。
+migration-no-permissions-instructions-step1 = 选择“继续”
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = 在文件选择器中找到 <code>{ $permissionsPath }</code> 并点击“选择”
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = 书签
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = 收藏夹
 migration-logins-and-passwords-option-label = 保存的登录名和密码
+migration-passwords-option-label = 保存的密码
 migration-history-option-label = 浏览历史
 migration-extensions-option-label = 扩展
 migration-form-autofill-option-label = 自动填写表单数据
@@ -69,6 +89,7 @@ migration-passwords-from-file-success-header = 已成功导入密码
 migration-passwords-from-file = 正在检查文件中的密码
 migration-passwords-new = 新密码
 migration-passwords-updated = 现有密码
+migration-passwords-from-file-no-valid-data = 此文件不含有效的密码数据，请选择其他文件。
 migration-passwords-from-file-picker-title = 导入密码文件
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -145,7 +166,14 @@ migration-list-payment-methods-label = 付款方式
 ##
 
 migration-wizard-progress-header = 正在导入数据
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = 数据导入成功
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = 数据导入完成
 migration-wizard-progress-icon-in-progress =
     .aria-label = 正在导入…
 migration-wizard-progress-icon-completed =
@@ -183,9 +211,18 @@ migration-wizard-progress-success-favorites = { $quantity } 个收藏
 # Variables:
 #   $quantity (Number): the number of successfully imported extensions
 migration-wizard-progress-success-extensions = { $quantity } 个扩展
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = 检测到 { $quantity } 个扩展，成功匹配 { $matched } 个
+migration-wizard-progress-extensions-support-link = 详细了解 { -brand-product-name } 匹配扩展的方式
 # Shown in the migration wizard if there are no matched extensions
 # on import from supported browsers.
 migration-wizard-progress-no-matched-extensions = 没有匹配的扩展
+migration-wizard-progress-extensions-addons-link = 浏览 { -brand-short-name } 的扩展
 
 ##
 
@@ -203,7 +240,7 @@ migration-wizard-progress-success-passwords = { $quantity } 个密码
 migration-wizard-progress-success-history =
     { $maxAgeInDays ->
         [one] 昨天以来
-       *[other] 过去 { $maxAgeInDays } 天以来
+       *[other] 过去 { $maxAgeInDays } 天
     }
 migration-wizard-progress-success-formdata = 表单历史记录
 # Shown in the migration wizard after importing payment methods from another

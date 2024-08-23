@@ -76,19 +76,19 @@ permissions-invalid-uri-label = Введіть правильне мережев
 permissions-exceptions-etp-window2 =
     .title = Винятки для розширеного захисту від стеження
     .style = { permissions-window2.style }
-permissions-exceptions-manage-etp-desc = Ви можете вказати, для яких вебсайтів вимкнути розширений захист від стеження. Введіть точну адресу сайту, для якого потрібно виконати зміни, а потім натисніть «Додати виняток».
+permissions-exceptions-manage-etp-desc = Ви можете вказати, для яких вебсайтів вимкнути розширений захист від стеження. Введіть точну адресу сайту, для якого потрібно виконати зміни, а потім натисніть "Додати виняток".
 
 ## Exceptions - Cookies
 
 permissions-exceptions-cookie-window2 =
-    .title = Винятки - Куки і дані сайтів
+    .title = Винятки – файли cookie та дані сайтів
     .style = { permissions-window2.style }
-permissions-exceptions-cookie-desc = Ви можете вказати, яким вебсайтам завжди дозволяти, а яким ніколи не дозволяти використовувати куки і дані сайтів.  Введіть точну адресу сайту, який ви хочете додати, після чого натисніть Блокувати, Дозволити на сеанс чи Дозволити.
+permissions-exceptions-cookie-desc = Ви можете вказати, яким вебсайтам завжди дозволяти, а яким ніколи не дозволяти використовувати файли cookie та дані сайтів.  Введіть точну адресу сайту, який ви хочете додати, потім натисніть Блокувати, Дозволити на сеанс чи Дозволити.
 
 ## Exceptions - HTTPS-Only Mode
 
 permissions-exceptions-https-only-window2 =
-    .title = Винятки — HTTPS-режим
+    .title = Винятки – HTTPS-режим
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Ви можете вимкнути HTTPS-режим для певних вебсайтів. { -brand-short-name } не намагатиметься оновити з'єднання, щоб захистити ці сайти за допомогою HTTPS. Винятки не стосуються приватних вікон.
 permissions-exceptions-https-only-desc2 = Ви можете вимкнути HTTPS-режим для певних вебсайтів. { -brand-short-name } не намагатиметься оновити з'єднання, щоб захистити ці сайти за допомогою HTTPS.
@@ -106,6 +106,13 @@ permissions-exceptions-saved-logins-window2 =
     .title = Винятки - Збережені паролі
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Паролі для таких вебсайтів не зберігатимуться
+
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Винятки – Збережені паролі
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } не зберігатиме паролі для зазначених тут сайтів.
 
 ## Exceptions - Add-ons
 

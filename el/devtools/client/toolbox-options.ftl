@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Χρήση απλούστερης επισήμανσης με το prefers-reduced-motion
 options-inspector-simplified-highlighters-tooltip =
     .title = Ενεργοποιεί τις απλοποιημένες επισημάνσεις όταν είναι ενεργοποιημένο το prefers-reduced-motion. Σχεδιάζει γραμμές αντί για γεμάτα ορθογώνια γύρω από τα επισημασμένα στοιχεία για να αποφευχθούν τα εφέ που αναβοσβήνουν.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Εστίαση στο επόμενο πεδίο εισόδου με το <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Όταν είναι ενεργή αυτή η επιλογή, θα μετακινείται η εστίαση στο επόμενο πεδίο εισόδου όταν πατάτε το πλήκτρο «Enter» κατά την επεξεργασία ενός στοιχείου επιλογής, ενός ονόματος ιδιότητας ή μιας τιμής.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Ονόματα χρωμάτων
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Κονσόλα ιστού
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Εμφάνιση διαχωρισμένης κονσόλας
+options-webconsole-split-console-tooltip =
+    .title = Άνοιγμα διαχωρισμένης κονσόλας με το πλήκτρο Esc
 
 ## Style Editor section
 

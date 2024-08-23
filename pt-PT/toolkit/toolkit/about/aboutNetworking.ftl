@@ -4,6 +4,7 @@
 
 about-networking-title = Acerca da rede
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = Limpar cache de DNS
 about-networking-sockets = Sockets
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = Limpar a cache de DNS
@@ -34,13 +35,6 @@ about-networking-messages-received = Mensagens recebidas
 about-networking-bytes-sent = Bytes enviados
 about-networking-bytes-received = Bytes recebidos
 about-networking-logging = Registos
-about-networking-log-tutorial = Consulte <a data-l10n-name="logging">HTTP Logging</a> para instruções sobre como utilizar esta ferramenta.
-about-networking-current-log-file = Ficheiro de registo atual:
-about-networking-current-log-modules = Módulos de registo atual:
-about-networking-set-log-file = Definir ficheiro de registo
-about-networking-set-log-modules = Definir módulos de registo
-about-networking-start-logging = Começar a registar
-about-networking-stop-logging = Parar de registar
 about-networking-dns-lookup = Pesquisa de DNS
 about-networking-dns-lookup-button = Resolver
 about-networking-dns-domain = Domínio:

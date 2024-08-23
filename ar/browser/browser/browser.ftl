@@ -5,44 +5,52 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
-browser-main-window =
+browser-main-window-window-titles =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (التصفح الخاص)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (التصفح الخاص)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+    .data-title-private = { -brand-full-name } التصفح الخاص
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } التصفح الخاص
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
 #
 # Variables:
 #  $content-title (String): the title of the web content.
-browser-main-window-mac =
+browser-main-window-mac-window-titles =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (التصفح الخاص)
+    .data-title-private = { -brand-full-name } — التصفح الخاص
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (التصفح الخاص)
+    .data-content-title-private = { $content-title } — التصفح الخاص
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
+private-browsing-shortcut-text-2 = { -brand-shortcut-name } التصفح الخفي
 
 ##
 
@@ -52,7 +60,7 @@ urlbar-identity-button =
 ## Tooltips for images appearing in the address bar
 
 urlbar-services-notification-anchor =
-    .tooltiptext = افتح لوحة رسائل التنصيب
+    .tooltiptext = افتح لوحة رسائل التثبيت
 urlbar-web-notification-anchor =
     .tooltiptext = غيّر ما إذا ما كنت تسمح باستلام تنبيهات من الموقع
 urlbar-midi-notification-anchor =
@@ -73,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = افتح لوحة تصاريح الواقع الافتراضي
 urlbar-storage-access-anchor =
     .tooltiptext = افتح لوحة تصاريح نشاط التصفّح
-urlbar-translate-notification-anchor =
-    .tooltiptext = ترجم هذه الصفحة
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = أدر مشاركة نوافذك أو شاشتك مع هذا الموقع
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = افتح لوحة رسائل مساحة التخزين دون اتصال
 urlbar-password-notification-anchor =
     .tooltiptext = افتح لوحة رسائل حفظ كلمة السر
-urlbar-translated-notification-anchor =
-    .tooltiptext = أدِر ترجمة الصفحة
 urlbar-plugins-notification-anchor =
     .tooltiptext = أدر الملحقات المستخدمة
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -96,15 +100,29 @@ urlbar-autoplay-notification-anchor =
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = حفظ البيانات في مساحة تخزين دائمة
 urlbar-addons-notification-anchor =
-    .tooltiptext = افتح لوحة رسائل تنصيب الإضافات
+    .tooltiptext = افتح لوحة رسائل تثبيت الإضافات
 urlbar-tip-help-icon =
     .title = احصل على مُساعدة
 urlbar-search-tips-confirm = حسنًا، فهمت
+urlbar-search-tips-confirm-short = فهمت
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
 urlbar-tip-icon-description =
     .alt = فائدة:
+urlbar-result-menu-button =
+    .title = افتح القائمة
+urlbar-result-menu-button-feedback = الانطباع
+    .title = فتح القائمة
+urlbar-result-menu-learn-more =
+    .label = اطّلع على المزيد
+    .accesskey = ز
+urlbar-result-menu-remove-from-history =
+    .label = احذف من التأريخ
+    .accesskey = خ
+urlbar-result-menu-tip-get-help =
+    .label = احصل على مساعدة
+    .accesskey = ص
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -113,6 +131,8 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = اكتب بحروف أقل، و جِد نتائج أكثر: ابحث مستخدمًا { $engineName } مباشرة من شريط العنوان.
 urlbar-search-tips-redirect-2 = ابدأ البحث من شريط العنوان لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
+# Make sure to match the name of the Search panel in settings.
+urlbar-search-tips-persist = البحث أصبح أبسط. جرب جعل بحثك أكثر تحديدا هنا في شريط العنوان. لعرض مسار الوب بدلا من ذلك، زر البحث، في الإعدادات.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
 urlbar-tabtosearch-onboard = اختر هذا الاختصار لتجد ما تريد بسرعة أكبر.
@@ -161,10 +181,12 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
+page-action-manage-extension2 =
     .label = أدِر الامتدادات…
-page-action-remove-extension =
+    .accesskey = د
+page-action-remove-extension2 =
     .label = أزِل الامتداد
+    .accesskey = ز
 
 ## Auto-hide Context Menu
 
@@ -233,8 +255,60 @@ search-one-offs-actions =
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = اعرض الإضافات
 quickactions-cmd-addons2 = الإضافات
+# Opens the bookmarks library window
+quickactions-bookmarks2 = أدِر العلامات
 quickactions-cmd-bookmarks = العلامات
+# Opens a SUMO article explaining how to clear history
+quickactions-clearhistory = امسح التأريخ
+quickactions-cmd-clearhistory = امسح التأريخ
+# Opens about:downloads page
+quickactions-downloads2 = اعرض التنزيلات
+quickactions-cmd-downloads = التنزيلات
+# Opens about:addons page in the extensions section
+quickactions-extensions = أدِر الامتدادات
 quickactions-cmd-extensions = الامتدادات
+# Opens the devtools web inspector
+quickactions-inspector2 = افتح أدوات المطورين
+quickactions-cmd-inspector = الفاحص، أدوات تطوير
+# Opens about:logins
+quickactions-logins2 = أدِر كلمات السر
+quickactions-cmd-logins = جلسات الولوج، كلمات السر
+# Opens about:addons page in the plugins section
+quickactions-plugins = أدِر الملحقات
+quickactions-cmd-plugins = المُلحقات
+# Opens the print dialog
+quickactions-print2 = اطبع الصفحة
+quickactions-cmd-print = اطبع
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = احفظ الصفحة بصيغة PDF
+quickactions-cmd-savepdf = pdf
+# Opens a new private browsing window
+quickactions-private2 = افتح نافذة خاصة
+quickactions-cmd-private = التصفّح الخاص
+# Opens a SUMO article explaining how to refresh
+quickactions-refresh = أعد تحميل { -brand-short-name }
+quickactions-cmd-refresh = حدّث
+# Restarts the browser
+quickactions-restart = أعِد تشغيل { -brand-short-name }
+quickactions-cmd-restart = أعِد التشغيل
+# Opens the screenshot tool
+quickactions-screenshot3 = خذ لقطة شاشة
+quickactions-cmd-screenshot = لقطة شاشة
+# Opens about:preferences
+quickactions-settings2 = أدِر الإعدادات
+quickactions-cmd-settings = الإعدادات، التفضيلات، الخيارات
+# Opens about:addons page in the themes section
+quickactions-themes = أدِر السمات
+quickactions-cmd-themes = السمات
+# Opens a SUMO article explaining how to update the browser
+quickactions-update = حدِّث { -brand-short-name }
+quickactions-cmd-update = حدّث
+# Opens the view-source UI with current pages source
+quickactions-viewsource2 = اعرض مصدر هذه الصفحة
+quickactions-cmd-viewsource = اعرض المصدر، مصدر
+# Tooltip text for the help button shown in the result.
+quickactions-learn-more =
+    .title = تعرف على المزيد حول الإجراءات السريعة
 
 ## Bookmark Panel
 
@@ -281,6 +355,7 @@ identity-connection-secure = الاتصال آمن
 identity-connection-failure = فشل الاتصال
 identity-connection-internal = هذه صفحة { -brand-short-name } آمنة.
 identity-connection-file = هذه الصفحة مخزنة على حاسوبك.
+identity-connection-associated = حمِّلت هذه الصفحة من صفحة أخرى.
 identity-extension-page = حمِّلت هذه الصفحة من امتداد.
 identity-active-blocked = حجب { -brand-short-name } الأجزاء غير الآمنة في هذه الصفحة.
 identity-custom-root = تثبّت من هذا الاتصال مُصْدِر شهادات لا تعرفه Mozilla.
@@ -290,6 +365,7 @@ identity-weak-encryption = تستخدم هذه الصفحة تعمية ضعيف�
 identity-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.
 identity-https-only-connection-upgraded = (ترقّى إلى HTTPS)
 identity-https-only-label = وضع HTTPS فقط
+identity-https-only-label2 = ترقية هذا الموقع تلقائيًا إلى اتصال آمن
 identity-https-only-dropdown-on =
     .label = مفعّل
 identity-https-only-dropdown-off =
@@ -298,6 +374,8 @@ identity-https-only-dropdown-off-temporarily =
     .label = معطّل مؤقتًا
 identity-https-only-info-turn-on2 = فعّل وضع HTTPS فقط إن أردت من { -brand-short-name } ترقية الاتصال متى أمكن.
 identity-https-only-info-turn-off2 = إن شككت أن في الصفحة عطب، فيمكنك تعطيل وضع HTTPS فقط لإعادة تحميل هذا الموقع باستعمال بروتوكول HTTP غير الآمن.
+identity-https-only-info-turn-on3 = فعل ترقية HTTPS لهذا الموقع إذا كنت تريد { -brand-short-name } ترقية الاتصال إن أمكن.
+identity-https-only-info-turn-off3 = إن شككت أن الصفحة مُعطلة، فقد تحتاج إلى إيقاف تشغيل ترقيات HTTPS لهذا الموقع لإعادة التحميل باستخدام HTTP الغير آمن.
 identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
 identity-permissions-storage-access-header = الكعكات بين المواقع
 identity-permissions-storage-access-hint = يمكن لهذه الأطراف استعمال الكعكات وبيانات المواقع المشتركة أثناء وجودك في هذا الموقع.
@@ -308,7 +386,6 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = لست متصلا مع هذا الموقع بأمان.
 identity-connection-verified = أنت متصل مع هذا الموقع بأمان.
 identity-ev-owner-label = أُصدرت الشّهادة إلى:
-identity-description-custom-root = لم تتعرّف Mozilla على مُصْدِر الشهادات هذا. لربّما أضافه نظام التشغيل أو أحد المدراء. <label data-l10n-name="link">اطّلع على المزيد</label>
 identity-description-custom-root2 = لم تتعرّف Mozilla على مُصْدِر الشهادات هذا. لربّما أضافه نظام التشغيل أو أحد المدراء.
 identity-remove-cert-exception =
     .label = أزِل الاستثناء
@@ -317,17 +394,12 @@ identity-description-insecure = اتصالك بهذا الموقع ليس خاص
 identity-description-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة ليست مُؤمّنة و قد تكون مخترقة.
 identity-description-weak-cipher-intro = اتصالك بهذا الموقع يستخدم تعمية ضعيفة وليس خاصًّا أيضًا.
 identity-description-weak-cipher-risk = يمكن للآخرين الاطلاع على معلوماتك أو تغيير سلوك الموقع.
-identity-description-active-blocked = حجب { -brand-short-name } الأجزاء غير الآمنة في هذه الصفحة. <label data-l10n-name="link">اطّلع على المزيد</label>
 identity-description-active-blocked2 = حجب { -brand-short-name } الأجزاء غير الآمنة في هذه الصفحة.
 identity-description-passive-loaded = اتصالك ليس خاصًا و يمكن للآخرين مطالعة المعلومات التي تشاركها مع الموقع.
-identity-description-passive-loaded-insecure = يحوي هذا الموقع محتوى غير آمن (مثل الصور). <label data-l10n-name="link">اطّلع على المزيد</label>
-identity-description-passive-loaded-mixed = مع أنّ { -brand-short-name } حجب بعض المحتويات، إلا أن هناك أخرى غير آمنة ما زالت في الصفحة (مثل الصور). <label data-l10n-name="link">اطّلع على المزيد</label>
 identity-description-passive-loaded-insecure2 = يحوي هذا الموقع محتوى غير آمن (مثل الصور).
 identity-description-passive-loaded-mixed2 = مع أنّ { -brand-short-name } حجب بعض المحتويات، إلا أن هناك أخرى غير آمنة ما زالت في الصفحة (مثل الصور).
 identity-description-active-loaded = يحوي هذا الموقع محتوى غير آمن (مثل السكربتات) و اتصالك به ليس خاصا.
 identity-description-active-loaded-insecure = يمكن للآخرين مطالعة المعلومات التي تشاركها مع الموقع (مثل كلمات السر، و الرسائل، و بطاقات الائتمان و غيرها).
-identity-learn-more =
-    .value = اطّلع على المزيد
 identity-disable-mixed-content-blocking =
     .label = عطّل الحماية في الوقت الحالي
     .accesskey = ع
@@ -419,13 +491,6 @@ popup-select-window-or-screen =
     .label = النافذة أو الشاشة:
     .accesskey = ن
 popup-all-windows-shared = ستُشارك كل النوافذ الظاهرة على شاشتك.
-popup-screen-sharing-block =
-    .label = احجبه
-    .accesskey = ح
-popup-screen-sharing-always-block =
-    .label = احجبه دائمًا
-    .accesskey = د
-popup-mute-notifications-checkbox = اكتم تنبيهات المواقع أثناء المشاركة
 
 ## WebRTC window or screen share tab switch warning
 
@@ -438,10 +503,13 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = افتح أولا أدوات المطورين من قائمة مطوّري الوِب لاستعمال الاختصار F12.
+enable-devtools-popup-description2 = لاستخدام اختصار F12، افتح أدوات التطوير (DevTools) أولاً عبر قائمة أدوات المتصفح.
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = أغلق
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -474,6 +542,10 @@ urlbar-placeholder-search-mode-other-history =
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = أدخِل نص البحث
     .aria-label = ابحث في الألسنة
+# This placeholder is used when searching quick actions.
+urlbar-placeholder-search-mode-other-actions =
+    .placeholder = أدخِل نص البحث
+    .aria-label = إجراءات البحث
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
@@ -514,6 +586,13 @@ urlbar-result-action-search-w-engine = ابحث مستخدمًا { $engine }
 urlbar-result-action-sponsored = نتيجة مموّلة
 urlbar-result-action-switch-tab = انتقل إلى اللسان
 urlbar-result-action-visit = زُر
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = انتقل للسان · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = زر من الحافظة
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -549,10 +628,11 @@ urlbar-result-action-calculator-result = = { $result }
 urlbar-result-action-search-bookmarks = ابحث في العلامات
 urlbar-result-action-search-history = ابحث في التأريخ
 urlbar-result-action-search-tabs = ابحث في الألسنة
+urlbar-result-action-search-actions = إجراءات البحث
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -562,6 +642,14 @@ urlbar-group-firefox-suggest =
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
     .label = اقتراحات { $engine }
+# A label shown above Quick Actions in the urlbar results.
+urlbar-group-quickactions =
+    .label = إجراءات سريعة
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = عمليات البحث الأخيرة
 
 ## Reader View toolbar buttons
 
@@ -576,6 +664,15 @@ reader-view-close-button =
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
+picture-in-picture-urlbar-button-open =
+    .tooltiptext = فتح فديو معترِض ({ $shortcut })
+picture-in-picture-urlbar-button-close =
+    .tooltiptext = أغلِق فديو معترِض ({ $shortcut })
+picture-in-picture-panel-header = فديو معترِض
+picture-in-picture-panel-headline = لا يوصي موقع الويب هذا باستخدام ميزة "فديو معترِض".
+picture-in-picture-panel-body = قد لا يُعرض مقاطع الفيديو بالشكل الذي أراده المطور أثناء تمكين ميزة الفديو المعترِض.
+picture-in-picture-enable-toggle =
+    .label = فعّل على أية حال
 
 ## Full Screen and Pointer Lock UI
 
@@ -592,19 +689,6 @@ fullscreen-exit-mac-button = غادر ملء الشاشة (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = يتحكم <span data-l10n-name="domain">{ $domain }</span> في مؤشرك. اضغط Esc لتستعيد التحكم.
 pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك. اضغط Esc لتستعيد التحكم.
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>انهار جزء من هذه الصفحة.</strong> لإبلاغ { -brand-product-name } بهذه المشكلة وإصلاحها أسرع، رجاء أرسل بلاغا.
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = انهار جزء من هذه الصفحة. لإبلاغ { -brand-product-name } بهذه المشكلة وإصلاحها أسرع، رجاء أرسل بلاغا.
-crashed-subframe-learnmore-link =
-    .value = اطّلع على المزيد
-crashed-subframe-submit =
-    .label = أرسِل تقريرًا
-    .accesskey = س
 
 ## Bookmarks panels, menus and toolbar
 
@@ -657,8 +741,8 @@ bookmarks-search =
     .label = ابحث في العلامات
 bookmarks-tools =
     .label = أدوات العلامات
-bookmarks-bookmark-edit-panel =
-    .label = حرّر هذه العلامة
+bookmarks-subview-edit-bookmark =
+    .label = حرّر هذه العلامة…
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -673,8 +757,8 @@ bookmarks-toolbar-placeholder =
 bookmarks-toolbar-placeholder-button =
     .label = عناصر شريط العلامات
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = علّم اللسان الحالي
+bookmarks-subview-bookmark-tab =
+    .label = علّم اللسان الحالي…
 
 ## Library Panel items
 
@@ -698,11 +782,6 @@ repair-text-encoding-button =
 ## Customize Toolbar Buttons
 
 # Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = الإضافات والسمات
-    .tooltiptext = أدِر الإضافات والسمات لديك ({ $shortcut })
-# Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
     .label = الإعدادات
@@ -717,6 +796,9 @@ toolbar-overflow-customize-button =
 toolbar-button-email-link =
     .label = أرسل الرابط بالبريد
     .tooltiptext = أرسل رابط لهذه الصفحة بالبريد
+toolbar-button-logins =
+    .label = كلمات السر
+    .tooltiptext = اعرض و أدِر كلماتي السرية المحفوظة
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -748,13 +830,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = ه
 
 panel-save-update-username = اسم المستخدم
 panel-save-update-password = كلمة السر
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = أتريد إزالة { $name }؟
-addon-removal-abuse-report-checkbox = أبلِغ { -vendor-short-name } عن هذا الامتداد
 
 ##
 
@@ -823,8 +898,6 @@ navbar-library =
     .tooltiptext = اعرض التأريخ، والعلامات المحفوظة وغيرها
 navbar-search =
     .title = ابحث
-navbar-accessibility-indicator =
-    .tooltiptext = مزايا الإتاحة مفعّلة
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -842,19 +915,60 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>أتريد فتح الألسنة الأخيرة؟</strong> يمكنك استعادة الجلسة السابقة من قائمة تطبيق { -brand-short-name } <img data-l10n-name="icon"/>، ضمن قائمة التأريخ.
 restore-session-startup-suggestion-button = ما الطريقة؟
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = حجبت مؤسستك الوصول إلى الملفات المحلية الموجودة على هذا الكمبيوتر
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = يُرسل { -brand-short-name } بعض البيانات تلقائيا إلى { -vendor-short-name } لمساعدتنا في تحسين متصفّحك.
 data-reporting-notification-button =
     .label = اختر ما الذي أشاركه
     .accesskey = خ
+# Label for the indicator shown in the private browsing window titlebar.
+private-browsing-indicator-label = التصفح الخاص
 
 ## Unified extensions (toolbar) button
 
+unified-extensions-button =
+    .label = الامتدادات
+    .tooltiptext = الامتدادات
 
 ## Unified extensions button when permission(s) are needed.
 ## Note that the new line is intentionally part of the tooltip.
 
+unified-extensions-button-permissions-needed =
+    .label = الامتدادات
+    .tooltiptext =
+        الامتدادات
+        الأذونات لازمة
+
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = الامتدادات
+    .tooltiptext =
+        الامتدادات
+        بعض الامتدادات غير مسموح بها
+
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = إنهِ الجلسة الخاصة
+    .tooltiptext = إنهِ الجلسة الخاصة
+reset-pbm-panel-heading = إنهِ جلستك الخاصة؟
+reset-pbm-panel-description = أغلق كل الألسنة الخاصة واحذف التأريخ والكعكات وكل بيانات المواقع الأخرى.
+reset-pbm-panel-always-ask-checkbox =
+    .label = اسألني دائمًا
+    .accesskey = م
+reset-pbm-panel-cancel-button =
+    .label = ألغِ
+    .accesskey = غ
+reset-pbm-panel-confirm-button =
+    .label = احذف بيانات الجلسة
+    .accesskey = ت
+reset-pbm-panel-complete = حُذفت بيانات الجلسة الخاصة
 
 ## Autorefresh blocker
 
@@ -866,9 +980,11 @@ refresh-blocked-allow =
 
 ## Firefox Relay integration
 
-
-## Popup Notification
-
+firefox-relay-offer-why-to-use-relay = تحمي أقنعتنا الآمنة وسهلة الاستخدام هويتك وتمنع السبام عن طريق إخفاء عنوان بريدك الإلكتروني.
+# Variables:
+#  $useremail (String): user email that will receive messages
+firefox-relay-offer-what-relay-provides = ستمرر كل رسائل البريد الإلكتروني المرسلة إلى أقنعة بريدك إلى <strong>{ $useremail }</strong> (ما لم تقرر حجبها).
+firefox-relay-offer-legal-notice = بالنقر على"أستخدم قناع البريد"، أنت توافق على شروط <label data-l10n-name="tos-url"> للخدمة </label> و <label data-l10n-name="privacy-url">تنويه الخصوصية </label>.
 
 ## Add-on Pop-up Notifications
 

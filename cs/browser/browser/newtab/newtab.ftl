@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nový panel
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Přidat vyhledávač
 newtab-topsites-add-shortcut-header = Nová zkratka
 newtab-topsites-edit-topsites-header = Upravit top stránku
 newtab-topsites-edit-shortcut-header = Upravit zkratku
+newtab-topsites-add-shortcut-label = Přidat zkratku
 newtab-topsites-title-label = Název stránky
 newtab-topsites-title-input =
     .placeholder = Zadejte název
@@ -200,6 +201,7 @@ newtab-section-header-recent-activity = Nedávná aktivita
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Doporučení ze služby { $provider }
+newtab-section-header-stories = Podnětné články
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -208,6 +210,8 @@ newtab-empty-section-highlights = Začněte prohlížet a my vám zde ukážeme 
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Už jste všechno přečetli. Další články ze služby { $provider } tu najdete zase později. Ale pokud se nemůžete dočkat, vyberte své oblíbené téma a podívejte se na další velké články z celého webu.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Už jste všechno přečetli. Další články zde najdete později. Nechcete čekat? Vyberte si oblíbené téma a najděte další skvělé články z celého webu.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -228,19 +232,6 @@ newtab-pocket-learn-more = Zjistit více
 newtab-pocket-cta-button = Získejte { -pocket-brand-name(case: "acc") }
 newtab-pocket-cta-text = Ukládejte si články do { -pocket-brand-name(case: "gen") } a užívejte si skvělé čtení.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } je součástí rodiny { -brand-product-name(case: "gen") }
-# A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Uložit do { -pocket-brand-name(case: "gen") }
-newtab-pocket-saved-to-pocket = Uloženo do { -pocket-brand-name(case: "gen") }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Načíst další články
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Už jste všechno přečetli.
-newtab-pocket-last-card-desc = Další články zde najdete později.
-newtab-pocket-last-card-image =
-    .alt = Už jste všechno přečetli
 # A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Uložit
 newtab-pocket-saved = Uloženo
@@ -264,6 +255,9 @@ newtab-error-fallback-refresh-link = Opětovným načtením stránky to zkuste z
 
 newtab-custom-shortcuts-title = Zkratky
 newtab-custom-shortcuts-subtitle = Uložené nebo navštěvované stránky
+newtab-custom-shortcuts-toggle =
+    .label = Zkratky
+    .description = Uložené nebo navštěvované stránky
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -275,9 +269,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Sponzorované zkratky
 newtab-custom-pocket-title = Doporučeno službou { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Výjimečný obsah vybraný službou { -pocket-brand-name }, která je součástí rodiny { -brand-product-name(case: "gen") }
+newtab-custom-stories-toggle =
+    .label = Doporučené články
+    .description = Výjimečný obsah spravovaný rodinou { -brand-product-name(case: "gen") }
 newtab-custom-pocket-sponsored = Sponzorované články
 newtab-custom-pocket-show-recent-saves = Zobrazit nedávno uložené
 newtab-custom-recent-title = Nedávná aktivita
 newtab-custom-recent-subtitle = Výběr z nedávných stránek a obsahu
+newtab-custom-recent-toggle =
+    .label = Nedávná aktivita
+    .description = Výběr z nedávných stránek a obsahu
+newtab-custom-weather-toggle =
+    .label = Počasí
+    .description = Dnešní předpověď ve zkratce
 newtab-custom-close-button = Zavřít
 newtab-custom-settings = Další nastavení
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Tapety
+newtab-wallpaper-reset = Obnovit výchozí nastavení
+newtab-wallpaper-light-red-panda = Panda červená
+newtab-wallpaper-light-mountain = Bílá hora
+newtab-wallpaper-light-sky = Obloha s fialovými a růžovými mraky
+newtab-wallpaper-light-color = Modré, růžové a žluté tvary
+newtab-wallpaper-light-landscape = Horská krajina s modrou mlhou
+newtab-wallpaper-light-beach = Pláž s palmou
+newtab-wallpaper-dark-aurora = Polární záře
+newtab-wallpaper-dark-color = Červené a modré tvary
+newtab-wallpaper-dark-panda = Panda červená ukrytá v lese
+newtab-wallpaper-dark-sky = Městská krajina s noční oblohou
+newtab-wallpaper-dark-mountain = Horská scenérie
+newtab-wallpaper-dark-city = Fialová krajina města
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Plné barvy
+newtab-wallpaper-blue = Modrá
+newtab-wallpaper-light-blue = Světle modrá
+newtab-wallpaper-light-purple = Světle fialová
+newtab-wallpaper-light-green = Světle zelená
+newtab-wallpaper-green = Zelená
+newtab-wallpaper-beige = Béžová
+newtab-wallpaper-yellow = Žlutá
+newtab-wallpaper-orange = Oranžová
+newtab-wallpaper-pink = Růžová
+newtab-wallpaper-light-pink = Světle růžová
+newtab-wallpaper-red = Červená
+newtab-wallpaper-dark-blue = Tmavě modrá
+newtab-wallpaper-dark-purple = Tmavě fialová
+newtab-wallpaper-dark-green = Tmavě zelená
+newtab-wallpaper-brown = Hnědá
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Abstraktní
+newtab-wallpaper-abstract-green = Zelené tvary
+newtab-wallpaper-abstract-blue = Modré tvary
+newtab-wallpaper-abstract-purple = Fialové tvary
+newtab-wallpaper-abstract-orange = Oranžové tvary
+newtab-wallpaper-gradient-orange = Přechod oranžové a růžové
+newtab-wallpaper-abstract-blue-purple = Modré a fialové tvary
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Fotografie
+newtab-wallpaper-beach-at-sunrise = Pláž při východu slunce
+newtab-wallpaper-beach-at-sunset = Pláž při západu slunce
+newtab-wallpaper-storm-sky = Bouřková obloha
+newtab-wallpaper-sky-with-pink-clouds = Obloha s růžovými obláčky
+newtab-wallpaper-red-panda-yawns-in-a-tree = Panda červená zívá na stromě
+newtab-wallpaper-white-mountains = Bílé hory
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Fotografie od autora <a data-l10n-name="name-link">{ $author_string }</a> na <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Zkuste barevný nádech
+newtab-wallpaper-feature-highlight-content = Dejte svému novému panelu svěží vzhled pomocí tapet.
+newtab-wallpaper-feature-highlight-button = Rozumím
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Zavřít
+    .aria-label = Zavře okno
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Podívejte se na předpověď od { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙Sponzorované
+newtab-weather-menu-change-location = Změnit místo
+newtab-weather-change-location-search-input = Hledat umístění
+newtab-weather-menu-weather-display = Zobrazení počasí
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Jednoduché
+newtab-weather-menu-change-weather-display-simple = Přepnout na jednoduché rozhraní
+newtab-weather-menu-weather-display-option-detailed = Podrobné
+newtab-weather-menu-change-weather-display-detailed = Přepnout na podrobné zobrazení
+newtab-weather-menu-temperature-units = Jednotky teploty
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenheit
+newtab-weather-menu-temperature-option-celsius = Celsius
+newtab-weather-menu-change-temperature-units-fahrenheit = Přepnout na stupně Fahrenheita
+newtab-weather-menu-change-temperature-units-celsius = Přepnout na stupně Celsia
+newtab-weather-menu-hide-weather = Skrýt počasí na novém panelu
+newtab-weather-menu-learn-more = Zjistit více
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Údaje o počasí nejsou momentálně dostupné.

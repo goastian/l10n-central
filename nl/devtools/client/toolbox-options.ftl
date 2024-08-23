@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Gebruik eenvoudigere accentueringen met prefers-reduced-motion
 options-inspector-simplified-highlighters-tooltip =
     .title = Schakelt eenvoudiger accentueringen in als prefers-reduced-motion is ingeschakeld. Trekt lijnen in plaats van opgevulde rechthoeken rond geaccentueerde elementen om knippereffecten te voorkomen.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Volgende invoer focussen op <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Indien ingeschakeld, zal op de Enter-toets drukken bij het bewerken van een selector, een eigenschapnaam of -waarde de focus naar de volgende invoer verplaatsen.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Kleurnamen
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Webconsole
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Gesplitste console inschakelen
+options-webconsole-split-console-tooltip =
+    .title = Gesplitste console openen met de Escape-toets
 
 ## Style Editor section
 

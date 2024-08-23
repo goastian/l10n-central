@@ -3,11 +3,18 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = أرسل للمواقع إشارة ”لا تتعقبني“ بأنك لا تريد أن يتعقبوك
+do-not-track-description2 =
+    .label = أرسل للمواقع طلب"لا تتعقبني"
+    .accesskey = س
 do-not-track-learn-more = اطّلع على المزيد
 do-not-track-option-default-content-blocking-known =
     .label = فقط حين يُضبط { -brand-short-name } على حجب المتعقّبات المعروفة
 do-not-track-option-always =
     .label = دائمًا
+global-privacy-control-description =
+    .label = أخبر مواقع الويب بعدم بيع بياناتي أو مشاركتها
+    .accesskey = ش
+non-technical-privacy-header = تفضيلات خصوصية الموقع
 settings-page-title = الإعدادات
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -44,6 +51,9 @@ category-experimental =
 pane-experimental-subtitle = واصِل وأنت حذر
 pane-experimental-search-results-header = تجارب { -brand-short-name }: واصِل وأنت حذر
 pane-experimental-description2 = يمكن أن يؤثّر التغيير على إعدادات الضبط المتقدمة أداء { -brand-short-name } وأمنه.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
 pane-experimental-reset =
     .label = استعد المبدئيات
     .accesskey = س
@@ -71,19 +81,23 @@ restart-later = أعِد التشغيل لاحقًا
 ## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
 ##
 ## Variables:
-##   $name (String): name of the extension
-
-
-## Extension Control Notifications
-##
-## These strings are used to inform the user
-## about changes made by extensions to browser settings.
-##
-## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
-##
-## Variables:
 ##   $name (string) - Name of the extension
 
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlling-password-saving = يتحكم <img data-l10n-name="icon"/><strong>{ $name }</strong> في هذا الإعداد.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlling-web-notifications = يتحكم <img data-l10n-name="icon"/><strong>{ $name }</strong> في هذا الإعداد.
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlling-privacy-containers = يتطلب <img data-l10n-name="icon"/><strong>{ $name }</strong> ألسنة الحاوية.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlling-websites-content-blocking-all-trackers = يتحكم <img data-l10n-name="icon"/><strong>{ $name }</strong> في هذا الإعداد.
+# This string is shown to notify the user that their proxy configuration preferences
+# are being controlled by an extension.
+extension-controlling-proxy-config = يتحكم <img data-l10n-name ="icon"/> <strong>{ $name }</strong> في كيفية اتصال { -brand-short-name } بالإنترنت.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -116,6 +130,11 @@ startup-restore-warn-on-quit =
     .label = نبّهني عند إنهاء المتصفح
 disable-extension =
     .label = عطّل الامتداد
+preferences-data-migration-header = استورد بيانات المتصفح
+preferences-data-migration-description = استورد العلامات وكلمات السر والتأريخ وبيانات الملء الآلي إلى { -brand-short-name }.
+preferences-data-migration-button =
+    .label = استورد البيانات
+    .accesskey = د
 tabs-group-header = الألسنة
 ctrl-tab-recently-used-order =
     .label = ‏Ctrl+Tab يتنقّل عبر الألسنة حسب ترتيب آخر استخدام
@@ -128,7 +147,7 @@ confirm-on-close-multiple-tabs =
     .accesskey = ك
 # This string is used for the confirm before quitting preference.
 # Variables:
-#   $quitKey (String) - the quit keyboard shortcut, and formatted
+#   $quitKey (string) - the quit keyboard shortcut, and formatted
 #                       in the same manner as it would appear,
 #                       for example, in the File menu.
 confirm-on-quit-with-key =
@@ -177,7 +196,7 @@ containers-disable-alert-ok-button =
 containers-disable-alert-cancel-button = أبقها مفعلّة
 containers-remove-alert-title = أتريد إزالة هذه الحاوية؟
 # Variables:
-#   $count (Number) - Number of tabs that will be closed.
+#   $count (number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
         [one] إذا أزلت هذه الحاوية الآن فسيغلق لسان حاو. أمتأكد أنك تريد إزالة هذه الحاوية؟
@@ -188,10 +207,46 @@ containers-remove-alert-msg =
     }
 containers-remove-ok-button = أزل الحاوية
 containers-remove-cancel-button = لا تزِل هذه الحاوية
+settings-tabs-show-image-in-preview =
+    .label = أظهِر معاينة الصورة عند التحويم فوق اللسان
+    .accessKey = ع
 
 ## General Section - Language & Appearance
 
 language-and-appearance-header = اللغة و المظهر
+preferences-web-appearance-header = مظهر الموقع
+preferences-web-appearance-description = تكيف بعض المواقع مخطط ألوانها بناء على تفضيلاتك. أختر مخطط الألوان الذي تريد إستخدامه لهذه المواقع.
+preferences-web-appearance-choice-auto = تلقائي
+preferences-web-appearance-choice-light = فاتح
+preferences-web-appearance-choice-dark = داكن
+preferences-web-appearance-choice-tooltip-auto =
+    .title = غيّر تلقائيًا خلفيات الموقع و المحتوى بناءً على إعدادات نظامك و سمة { -brand-short-name }.
+preferences-web-appearance-choice-tooltip-light =
+    .title = استخدم مظهرًا فاتحً لخلفيات موقع الويب ومحتواه.
+preferences-web-appearance-choice-tooltip-dark =
+    .title = استخدم مظهرًا داكنًا لخلفيات موقع الويب ومحتواه.
+preferences-web-appearance-choice-input-auto =
+    .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
+preferences-web-appearance-choice-input-light =
+    .aria-description = { preferences-web-appearance-choice-tooltip-light.title }
+preferences-web-appearance-choice-input-dark =
+    .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning = إن اختياراتك للألوان تهيمن على مظهر موقع الويب. <a data-l10n-name="colors-link">إدارة الألوان</a>
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning2 =
+    .message = إن اختياراتك للألوان تهيمن على مظهر موقع الويب.
+# This message contains one link. It can be moved within the sentence as needed
+# to adapt to your language, but should not be changed.
+preferences-web-appearance-footer = أدِر سمات { -brand-short-name } في الامتدادات والسمات <a data-l10n-name="themes-link"></a>
+preferences-colors-header = الألوان
+preferences-colors-description = تجاوز ألوان { -brand-short-name } الافتراضية للنص، و خلفيات الموقع، و الروابط.
+preferences-colors-manage-button =
+    .label = أدِر الألوان…
+    .accesskey = ر
+preferences-fonts-header = الخطوط
 default-font = الخط المبدئي
     .accesskey = ط
 default-font-size = الحجم
@@ -203,6 +258,8 @@ advanced-fonts =
 preferences-zoom-header = التقريب
 preferences-default-zoom = التقريب المبدئي
     .accesskey = ق
+# Variables:
+#   $percentage (number) - Zoom percentage value
 preferences-default-zoom-value =
     .label = { $percentage }٪
 preferences-zoom-text-only =
@@ -295,15 +352,15 @@ applications-manage-app =
 applications-always-ask =
     .label = اسأل دائمًا
 # Variables:
-#   $type-description (String) - Description of the type (e.g "Portable Document Format")
-#   $type (String) - the MIME type (e.g application/binary)
+#   $type-description (string) - Description of the type (e.g "Portable Document Format")
+#   $type (string) - The MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
-#   $extension (String) - file extension (e.g .TXT)
-#   $type (String) - the MIME type (e.g application/binary)
+#   $extension (string) - File extension (e.g .TXT)
+#   $type (string) - The MIME type (e.g application/binary)
 applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
-#   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
+#   $plugin-name (string) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = استخدم { $plugin-name } (في { -brand-short-name })
 applications-open-inapp =
@@ -332,6 +389,13 @@ applications-use-os-default-label =
 
 ##
 
+applications-handle-new-file-types-description = ما الذي يجب أن يفعله { -brand-short-name } مع الملفات الأخرى؟
+applications-save-for-new-types =
+    .label = احفظ الملفات
+    .accesskey = ح
+applications-ask-before-handling =
+    .label = اسأل إذا كنت تريد فتح الملفات أو حفظها
+    .accesskey = ك
 drm-content-header = محتوى إدارة الحقوق الرقمية (DRM)
 play-drm-content =
     .label = شغّل المحتوى الخاضع لإدارة الحقوق الرقمية
@@ -339,16 +403,18 @@ play-drm-content =
 play-drm-content-learn-more = اطّلع على المزيد
 update-application-title = تحديثات { -brand-short-name }
 update-application-description = أبقِ { -brand-short-name } محدّثا للحصول على أحسن أداء و ثبات و أمان.
+# Variables:
+# $version (string) - Firefox version
 update-application-version = الإصدارة { $version } <a data-l10n-name="learn-more">ما الجديد</a>
 update-history =
     .label = أظهر تأريخ التحديث…
     .accesskey = ظ
-update-application-allow-description = اسمح لِ‍ { -brand-short-name } أن
+update-application-allow-description = اسمح لِ‍{ -brand-short-name } أن
 update-application-auto =
     .label = ينزّل التحديثات تلقائيا (مستحسن)
     .accesskey = ن
 update-application-check-choose =
-    .label = يلتمس التحديثات، و لكن يترك لك خيار تنصيبها من عدمه
+    .label = يلتمس التحديثات، و لكن يترك لك خيار تثبيتها من عدمه
     .accesskey = ت
 update-application-manual =
     .label = لا يلتمس التحديثات أبدًا (غير مستحسن)
@@ -358,11 +424,14 @@ update-application-background-enabled =
     .accesskey = ح
 update-application-warning-cross-user-setting = سيُطبّق هذا الإعداد على كل حسابات وِندوز وملفات { -brand-short-name } الشخصية التي تستخدم هذه النسخة من { -brand-short-name }.
 update-application-use-service =
-    .label = استخدم خدمة تعمل في الخلفية لتنصيب التحديثات
+    .label = استخدم خدمة تعمل في الخلفية لِتثبيت التحديثات
     .accesskey = خ
+update-application-suppress-prompts =
+    .label = أظهر عدد أقل من مطالبات إشعارات التحديث
+    .accesskey = ن
 update-setting-write-failure-title2 = حدث عُطل أثناء تحديث الإعدادات
 # Variables:
-#   $path (String) - Path to the configuration file
+#   $path (string) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
@@ -392,7 +461,7 @@ performance-limit-content-process-option = حد سيرورة المحتوى
 performance-limit-content-process-enabled-desc = يمكن أن تساهم زيادة سيرورات المحتوى في تحسين الأداء عند استعمال عدة ألسنة، و لكن ذلك يستهلك ذاكرة أكثر.
 performance-limit-content-process-blocked-desc = لا يمكن تعديل عدد سيرورات المحتوى إلا في { -brand-short-name } متعدد السيرورات. <a data-l10n-name="learn-more">اطلع على كيفية التحقق من تفعيل تعدد السيرورات</a>
 # Variables:
-#   $num - default value of the `dom.ipc.processCount` pref.
+#   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = ‏{ $num } (المبدئي)
 
@@ -405,12 +474,18 @@ browsing-use-autoscroll =
 browsing-use-smooth-scrolling =
     .label = استخدم اللّف السلس
     .accesskey = خ
+browsing-gtk-use-non-overlay-scrollbars =
+    .label = أظهِر أشرطة التمرير دائمًا
+    .accesskey = ش
 browsing-use-onscreen-keyboard =
     .label = اعرض لوحة مفاتيح باللمس عند الضرورة
     .accesskey = م
 browsing-use-cursor-navigation =
     .label = استعمل دائمًا مفاتيح الأسهم للتنقل داخل الصفحات
     .accesskey = س
+browsing-use-full-keyboard-navigation =
+    .label = استخدم مفتاح اللسان لنقل التركيز بين متحكمات النماذج والروابط
+    .accesskey = ج
 browsing-search-on-start-typing =
     .label = ابحث عن النص مع بداية الكتابة
     .accesskey = ح
@@ -451,10 +526,8 @@ home-newtabs-mode-label = الألسنة الجديدة
 home-restore-defaults =
     .label = استعد المبدئيات
     .accesskey = س
-# "Firefox" should be treated as a brand and kept in English,
-# while "Home" and "(Default)" can be localized.
-home-mode-choice-default =
-    .label = صفحة بداية Firefox (المبدئية)
+home-mode-choice-default-fx =
+    .label = { -firefox-home-brand-name } (افتراضي)
 home-mode-choice-custom =
     .label = عناوين مخصصة…
 home-mode-choice-blank =
@@ -476,10 +549,10 @@ choose-bookmark =
     .label = استخدم علامة…
     .accesskey = ع
 
-## Home Section - Midori Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = محتوى Firefox الرئيسي
-home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية Firefox.
+home-prefs-content-header2 = محتوى { -firefox-home-brand-name }
+home-prefs-content-description2 = اختر المحتوى الذي تريد عرضه في شاشة { -firefox-home-brand-name }.
 home-prefs-search-header =
     .label = ابحث في الوِب
 home-prefs-shortcuts-header =
@@ -487,10 +560,6 @@ home-prefs-shortcuts-header =
 home-prefs-shortcuts-description = المواقع التي حفظتها أو زُرتها
 home-prefs-shortcuts-by-option-sponsored =
     .label = الاختصارات المموّلة
-
-## Variables:
-##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
-
 
 ## Variables:
 ##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
@@ -504,6 +573,8 @@ home-prefs-recommended-by-description-new = محتوى مميّز جمعه لك 
 home-prefs-recommended-by-learn-more = آلية العمل
 home-prefs-recommended-by-option-sponsored-stories =
     .label = الأخبار الممولة
+home-prefs-recommended-by-option-recent-saves =
+    .label = أظهِر عمليات الحفظ الأخيرة
 home-prefs-highlights-option-visited-pages =
     .label = الصفحات المزارة
 home-prefs-highlights-options-bookmarks =
@@ -522,6 +593,8 @@ home-prefs-recent-activity-description = مختارات من المواقع وا
 home-prefs-snippets-header =
     .label = المقتطفات
 home-prefs-snippets-description-new = فوائد وأخبار من { -vendor-short-name } و{ -brand-product-name }
+# Variables:
+#   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -551,9 +624,17 @@ search-suggestions-desc = اختر طريقة عرض اقتراحات محركا
 search-suggestions-option =
     .label = اعرض اقتراحات البحث
     .accesskey = ع
+search-show-suggestions-option =
+    .label = اعرض اقتراحات البحث
+    .accesskey = ت
 search-show-suggestions-url-bar-option =
     .label = أظهر اقتراحات البحث في نتائج شريط العناوين
     .accesskey = ت
+# With this option enabled, on the search results page
+# the URL will be replaced by the search terms in the address bar
+# when using the current default search engine.
+search-show-search-term-option =
+    .label = عرض كلمات البحث بدلا من المسار في صفحة نتائج محرك البحث المبدئي
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -585,7 +666,7 @@ search-find-more-link = اعثر على المزيد من محركات البح�
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = كرر الكلمة المفتاحية
 # Variables:
-#   $name (String) - Name of a search engine.
+#   $name (string) - Name of a search engine.
 search-keyword-warning-engine = لقد اخترت كلمة مفتاحية يستخدمها ”{ $name }“ حاليا. من فضلك اختر واحدة أخرى.
 search-keyword-warning-bookmark = لقد اخترت كلمة مفتاحية تستخدمها علامة حاليا. من فضلك اختر واحدة أخرى.
 
@@ -605,10 +686,6 @@ containers-settings-button =
 containers-remove-button =
     .label = أزِل
 
-## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
-## more discrete ("signed in" no longer means "and sync is connected").
-
-
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -627,13 +704,13 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = نزّل Firefox لنظامي <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">أندرويد</a> أو <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">آي أو إس</a> للمزامنة مع هاتفك المحمول.
 
-## Firefox Account - Signed in
-
-
 ## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = غيّر صورة الحساب
+sync-profile-picture-with-alt =
+    .tooltiptext = غيّر صورة الحساب
+    .alt = غيّر صورة الحساب
 sync-sign-out =
     .label = اخرج…
     .accesskey = خ
@@ -650,6 +727,9 @@ sync-signedin-login-failure = من فضلك لج لإعادة التوصيل { $
 
 sync-resend-verification =
     .label = أعِد إرسال التأكيد
+    .accesskey = س
+sync-verify-account =
+    .label = أكّد الحساب
     .accesskey = س
 sync-remove-account =
     .label = أزِل الحساب
@@ -678,13 +758,15 @@ prefs-syncing-button =
 
 ## The list of things currently syncing.
 
-sync-currently-syncing-heading = تُزامن الآن هذه المعلومات:
+sync-syncing-across-devices-heading = أنت تُزامن هذه العناصر عبر جميع أجهزتك المتصلة:
 sync-currently-syncing-bookmarks = العلامات
 sync-currently-syncing-history = التأريخ
 sync-currently-syncing-tabs = الألسنة المفتوحة
 sync-currently-syncing-logins-passwords = جلسات الولوج وكلمات السر
+sync-currently-syncing-passwords = كلمات السر
 sync-currently-syncing-addresses = العناوين
 sync-currently-syncing-creditcards = بطاقات الائتمان
+sync-currently-syncing-payment-methods = طرق الدفع
 sync-currently-syncing-addons = الإضافات
 sync-currently-syncing-settings = الإعدادات
 sync-change-options =
@@ -693,13 +775,6 @@ sync-change-options =
 
 ## The "Choose what to sync" dialog.
 
-sync-choose-what-to-sync-dialog =
-    .title = اختر ما تريد مزامنته
-    .style = width: 36em; min-height: 35em;
-    .buttonlabelaccept = احفظ التغييرات
-    .buttonaccesskeyaccept = ح
-    .buttonlabelextra2 = اقطع الاتصال…
-    .buttonaccesskeyextra2 = ق
 sync-choose-what-to-sync-dialog3 =
     .title = اختر ما تريد مزامنته
     .style = min-width: 36em;
@@ -707,6 +782,7 @@ sync-choose-what-to-sync-dialog3 =
     .buttonaccesskeyaccept = ح
     .buttonlabelextra2 = اقطع الاتصال…
     .buttonaccesskeyextra2 = ق
+sync-choose-dialog-subtitle = ستعكس التغييرات على قائمة العناصر المراد مزامنة عبر كل أجهزتك المتصلة.
 sync-engine-bookmarks =
     .label = علاماتي
     .accesskey = م
@@ -721,6 +797,10 @@ sync-engine-logins-passwords =
     .label = جلسات الولوج وكلمات السر
     .tooltiptext = أسماء المستخدمين وكلمات السر التي حفظتها
     .accesskey = س
+sync-engine-passwords =
+    .label = كلمات السر
+    .tooltiptext = كلمات السر التي حفظتها
+    .accesskey = ك
 sync-engine-addresses =
     .label = العناوين
     .tooltiptext = العناوين البريدية التي حفظتها (لسطح المكتب فقط)
@@ -775,6 +855,13 @@ pane-privacy-logins-and-passwords-header = جلسات الولوج وكلمات 
 forms-ask-to-save-logins =
     .label = اطلب مني حفظ كلمات سر و بيانات ولوج مواقع الوِب
     .accesskey = ط
+
+## Privacy Section - Passwords
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = كلمات السر
+    .searchkeywords = س
 forms-exceptions =
     .label = الاستثناءات…
     .accesskey = س
@@ -785,6 +872,9 @@ forms-breach-alerts =
     .label = اعرض تنبيهات بكلمات السر المتسرّبة من المواقع
     .accesskey = ت
 forms-breach-alerts-learn-more-link = اطّلع على المزيد
+preferences-relay-integration-checkbox =
+    .label = اقترح أقنعة بريد { -relay-brand-name } لحماية عنوان بريدك الإلكتروني
+relay-integration-learn-more-link = اطّلع على المزيد
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = املأ جلسات الولوج وكلمات السر تلقائيا
@@ -826,6 +916,14 @@ primary-password-os-auth-dialog-message-win = أدخِل معلومات ولوج
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = أنشِئ كلمة سر رئيسية
 master-password-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = الملء التلقائي
+autofill-addresses-checkbox = حفظ وملء العناوين
+    .accesskey = ع
+autofill-saved-addresses-button = العناوين المحفوظة
+    .accesskey = ظ
 
 ## Privacy Section - History
 
@@ -873,8 +971,8 @@ history-clear-button =
 sitedata-header = الكعكات و بيانات المواقع
 sitedata-total-size-calculating = يحسب حجم بيانات الموقع و الخبيئة…
 # Variables:
-#   $value (Number) - Value of the unit (for example: 4.6, 500)
-#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+#   $value (number) - Value of the unit (for example: 4.6, 500)
+#   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = تستخدم الكعكات، و بيانات الموقع، و الخبيئة المحفوظة حاليًا { $value }‏ { $unit } من مساحة القرص.
 sitedata-learn-more = اطّلع على المزيد
 sitedata-delete-on-close =
@@ -895,10 +993,12 @@ sitedata-option-block-cross-site-trackers =
     .label = المتعقّبات بين المواقع
 sitedata-option-block-cross-site-tracking-cookies =
     .label = الكعكات التي تتعقّبك بين المواقع
+sitedata-option-block-cross-site-cookies =
+    .label = متعقّبات الكعكات التي تعبر المواقع، واعزل الكعكات الأخرى بين المواقع
 sitedata-option-block-unvisited =
     .label = الكعكات من المواقع غير المُزارة
-sitedata-option-block-all-third-party =
-    .label = كل كعكات الأطراف الثالثة (يمكن أن تعطب المواقع هكذا)
+sitedata-option-block-all-cross-site-cookies =
+    .label = كل الكعكات بين المواقع (قد تتسبب بتعطُل المواقع)
 sitedata-option-block-all =
     .label = كل الكعكات (يمكن أن تعطب المواقع هكذا)
 sitedata-clear =
@@ -914,6 +1014,10 @@ sitedata-cookies-exceptions =
 ## Privacy Section - Cookie Banner Handling
 
 
+## Privacy Section - Cookie Banner Blocking
+
+cookie-banner-learn-more = اطّلع على المزيد
+
 ## Privacy Section - Address Bar
 
 addressbar-header = شريط العناوين
@@ -924,6 +1028,9 @@ addressbar-locbar-history-option =
 addressbar-locbar-bookmarks-option =
     .label = العلامات
     .accesskey = ع
+addressbar-locbar-clipboard-option =
+    .label = الحافظة
+    .accesskey = ظ
 addressbar-locbar-openpage-option =
     .label = الألسنة المفتوحة
     .accesskey = ف
@@ -937,13 +1044,18 @@ addressbar-locbar-topsites-option =
 addressbar-locbar-engines-option =
     .label = محركات البحث
     .accesskey = ح
+addressbar-locbar-quickactions-option =
+    .label = إجراءات سريعة
+    .accesskey = س
 addressbar-suggestions-settings = غيّر تفضيلات اقتراحات محرّك البحث
+addressbar-quickactions-learn-more = اطّلع على المزيد
 
 ## Privacy Section - Content Blocking
 
 content-blocking-enhanced-tracking-protection = الحماية الموسّعة من التعقب
 content-blocking-section-top-level-description = تحاول المتعقّبات معرفة ما تفعل على الشبكة دومًا وجمع المعلومات التي تخصّ عاداتك في التصفّح كما واهتماماتك. يحجب { -brand-short-name } أكثر هذه المتعقّبات وغيرها من سكربتات ضارة.
 content-blocking-learn-more = اطّلع على المزيد
+content-blocking-fpi-incompatibility-warning = أنت تستخدم عزل الطرف الأول (FPI)، والذي يتخطى بعض إعدادات كعكات { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -966,7 +1078,6 @@ content-blocking-etp-strict-desc = حماية أقوى وأعتى، لكنها �
 content-blocking-etp-custom-desc = اختر المتعقّبات والسكربتات التي تريد حجبها.
 content-blocking-etp-blocking-desc = يحجب { -brand-short-name } الآتي:
 content-blocking-private-windows = المحتوى الذي يتعقّبك في النوافذ الخاصة
-content-blocking-cross-site-cookies-in-all-windows = الكعكات بين المواقع في كل النوافذ (بما فيها تلك التي تتعقّبك)
 content-blocking-cross-site-tracking-cookies = كعكات تتعقّبك بين المواقع
 content-blocking-all-cross-site-cookies-private-windows = الكعكات بين المواقع في النوافذ الخاصة
 content-blocking-cross-site-tracking-cookies-plus-isolate = المتعقّبات التي تعبر المواقع، واعزل بقية الكعكات
@@ -974,7 +1085,6 @@ content-blocking-social-media-trackers = متعقبات مواقع التواص�
 content-blocking-all-cookies = كل الكعكات
 content-blocking-unvisited-cookies = الكعكات من المواقع غير المُزارة
 content-blocking-all-windows-tracking-content = المحتوى الذي يتعقّبك في كل النوافذ
-content-blocking-all-third-party-cookies = كل الكعكات من الأطراف الثالثة
 content-blocking-cryptominers = المُعدّنات المعمّاة
 content-blocking-fingerprinters = مسجّلات البصمات
 
@@ -1012,6 +1122,18 @@ content-blocking-cryptominers-label =
 content-blocking-fingerprinters-label =
     .label = مسجّلات البصمات
     .accesskey = ص
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+#
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices.
+content-blocking-known-fingerprinters-label =
+    .label = المسجّلات المعروفة
+    .accesskey = ف
+# The suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-suspected-fingerprinters-label =
+    .label = المسجّلات المشتبه بها
+    .accesskey = س
 
 ## Privacy Section - Tracking
 
@@ -1038,6 +1160,9 @@ permissions-microphone = الميكروفون
 permissions-microphone-settings =
     .label = الإعدادات…
     .accesskey = ع
+permissions-speaker-settings =
+    .label = الإعدادات…
+    .accesskey = د
 permissions-notification = التنبيهات
 permissions-notification-settings =
     .label = الإعدادات…
@@ -1053,8 +1178,14 @@ permissions-autoplay-settings =
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button =
+    .label = الاستثناءات…
+    .accesskey = ت
+    .searchkeywords = popups
 permissions-addon-install-warning =
-    .label = حذّرني عندما يحاول موقع وِب تنصيب إضافات
+    .label = حذّرني عندما يحاول موقع وِب تثبيت إضافات
     .accesskey = ح
 permissions-addon-exceptions =
     .label = الاستثناءات…
@@ -1063,6 +1194,8 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = جمع { -brand-short-name } للبيانات و استخدامها
+collection-header2 = جمع { -brand-short-name } للبيانات و إستخدامها
+    .searchkeywords = telemetry
 collection-description = نبذل جهدنا لإعطائك الخيار و جمع ما نحتاجه فقط لتحسين { -brand-short-name }. نطلب الإذن دائمًا قبل استقبال أي معلومات شخصية.
 collection-privacy-notice = تنويه الخصوصية
 collection-health-report-telemetry-disabled = لم تعد تسمح بأن يلتقط { -vendor-short-name } البيانات التقنية والتفاعلية. ستُحذف البيانات القديمة كلها خلال 30 يومًا.
@@ -1080,6 +1213,14 @@ addon-recommendations-link = اطّلع على المزيد
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = الإبلاغ عن البيانات معطّل في إعدادات البناء
+privacy-segmentation-section-header = خصائص جديدة تعزز تصفحك
+privacy-segmentation-radio-off =
+    .label = استخدم توصيات { -brand-product-name }
+privacy-segmentation-radio-on =
+    .label = أظهِر المعلومات المفصلة
+
+## Privacy Section - Website Advertising Preferences
+
 
 ## Privacy Section - Security
 ##
@@ -1111,6 +1252,9 @@ certs-view =
 certs-devices =
     .label = أجهزة الأمن…
     .accesskey = ج
+certs-thirdparty-toggle =
+    .label = اسمح بأن يثق { -brand-short-name } تلقائيا بشهادات جذر من أطراف خارجية تقوم بتثبيتها
+    .accesskey = ه
 space-alert-over-5gb-settings-button =
     .label = افتح الإعدادات
     .accesskey = ف
@@ -1131,6 +1275,50 @@ httpsonly-radio-disabled =
 
 ## DoH Section
 
+preferences-doh-header = DNS عبر HTTPS
+preferences-doh-description = يرسل نظام اسم المجال (DNS) عبر HTTPS طلبك للحصول على اسم المجال من خلال اتصال مُعمّى، مما يؤدي إلى إنشاء DNS آمن ويجعل من الصعب على الآخرين معرفة موقع الوب الذي أنت على وشك الوصول إليه.
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-resolver = المزود: { $name }
+# This is displayed instead of $name in preferences-doh-resolver
+# when the DoH URL is not a valid URL
+preferences-doh-bad-url = مسار غير صحيح
+preferences-doh-group-message = تفعيل DNS آمن باستخدام:
+preferences-doh-group-message2 = فعّل DNS عبر HTTPS باستخدام:
+preferences-doh-expand-section =
+    .tooltiptext = مزيد من المعلومات
+preferences-doh-setting-default =
+    .label = الحماية المبدئية
+    .accesskey = ي
+preferences-doh-default-desc = يقرر { -brand-short-name } متى يستخدم DNS آمن لحماية خصوصيتك.
+preferences-doh-default-detailed-desc-1 = أستخدم DNS آمن في المناطق التي تكون فيها متاحة
+preferences-doh-default-detailed-desc-2 = أستخدم محلل DNS المبدئي إذا كان هناك مشكلة مع مزود DNS الآمن
+preferences-doh-default-detailed-desc-3 = استخدم مزودًا محليًا، إن أمكن
+preferences-doh-default-detailed-desc-5 = عطله عندما تخبر الشبكة { -brand-short-name } بأنه لا يجب أن تستخدم DNS آمن
+preferences-doh-setting-enabled =
+    .label = حماية متزايدة
+    .accesskey = ة
+preferences-doh-enabled-desc = يمكنك التحكم في الوقت الذي تستخدم فيه DNS آمن و إختيار مزودك.
+preferences-doh-enabled-detailed-desc-2 = أستخدم فقط محلل DNS المبدئي إذا كانت هناك مشكلة مع DNS آمن
+preferences-doh-setting-strict =
+    .label = أقصى حماية
+    .accesskey = ح
+preferences-doh-strict-desc = سيستخدم { -brand-short-name } دائما DNS آمن. سترى تحذير خطر أمني قبل أن نستخدم نظام DNS الخاص بك.
+preferences-doh-strict-detailed-desc-1 = استخدم فقط المزود الذي تحدده
+preferences-doh-strict-detailed-desc-2 = حذر دائما إذا كان DNS الآمن غير متاح
+preferences-doh-strict-detailed-desc-3 = إذا لم يكن DNS الآمن متاحًا، فلن تتحمل المواقع أو تعمل كما ينبغي
+preferences-doh-setting-off =
+    .label = معطّل
+    .accesskey = ط
+preferences-doh-off-desc = استخدم محلل DNS الافتراضي الخاص بك
+preferences-doh-checkbox-warn =
+    .label = حذر إذا كان هناك طرف ثالث يمنع DNS الآمن
+    .accesskey = ح
+preferences-doh-select-resolver = اختر المزود:
+preferences-doh-exceptions-description = لن يستخدم { -brand-short-name } DNS الآمن على هذه المواقع
+preferences-doh-manage-exceptions =
+    .label = أدِر الاستثناءات…
+    .accesskey = ل
 
 ## The following strings are used in the Download section of settings
 

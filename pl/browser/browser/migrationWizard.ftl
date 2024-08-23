@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge w starszej wersji
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Hasła z pliku CSV
 migration-wizard-migrator-display-name-file-bookmarks = Zakładki z pliku HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Lista Czytelnia (z Safari)
+migration-imported-edge-reading-list = Do przeczytania (z Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } nie ma dostępu do profili innych przeglądarek zainstalowanych na tym urządzeniu.
+migration-no-permissions-instructions = Aby kontynuować importowanie danych z innej przeglądarki, udziel { -brand-short-name(case: "dat") } dostępu do jego folderu profilu.
+migration-no-permissions-instructions-step1 = Kliknij „Kontynuuj”
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = W oknie wyboru pliku przejdź do <code>{ $permissionsPath }</code> i kliknij „Wybierz”
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,7 +76,9 @@ migration-bookmarks-option-label = Zakładki
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Ulubione
 migration-logins-and-passwords-option-label = Zachowane dane logowania i hasła
+migration-passwords-option-label = Zachowane hasła
 migration-history-option-label = Historia przeglądania
+migration-extensions-option-label = Rozszerzenia
 migration-form-autofill-option-label = Dane automatycznego wypełniania formularzy
 migration-payment-methods-option-label = Metody płatności
 migration-cookies-option-label = Ciasteczka
@@ -68,6 +89,7 @@ migration-passwords-from-file-success-header = Pomyślnie zaimportowano hasła
 migration-passwords-from-file = Wyszukiwanie haseł w pliku
 migration-passwords-new = Nowe hasła
 migration-passwords-updated = Istniejące hasła
+migration-passwords-from-file-no-valid-data = Plik nie zawiera żadnych prawidłowych danych o hasłach. Wybierz inny.
 migration-passwords-from-file-picker-title = Importowanie pliku z hasłami
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -152,13 +174,21 @@ migration-list-bookmark-label = zakładki
 migration-list-favorites-label = ulubione
 migration-list-password-label = hasła
 migration-list-history-label = historia
+migration-list-extensions-label = rozszerzenia
 migration-list-autofill-label = dane automatycznego wypełniania formularzy
 migration-list-payment-methods-label = metody płatności
 
 ##
 
 migration-wizard-progress-header = Importowanie danych
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Pomyślnie zaimportowano dane
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Ukończono importowanie danych
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importowanie…
 migration-wizard-progress-icon-completed =
@@ -195,6 +225,37 @@ migration-wizard-progress-success-favorites =
         [few] { $quantity } ulubione
        *[many] { $quantity } ulubionych
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } rozszerzenie
+        [few] { $quantity } rozszerzenia
+       *[many] { $quantity } rozszerzeń
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } z { $quantity } rozszerzeń
+migration-wizard-progress-extensions-support-link = Więcej informacji o tym, jak { -brand-product-name } dopasowuje rozszerzenia
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Brak pasujących rozszerzeń
+migration-wizard-progress-extensions-addons-link = Przeglądaj rozszerzenia dla { -brand-short-name(case: "gen") }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #

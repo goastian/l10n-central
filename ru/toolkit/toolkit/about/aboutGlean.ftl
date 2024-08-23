@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = О Glean
-about-glean-description = <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a> — библиотека для сбора данных, используемая в продуктах Mozilla. Эта страница предназначена для тестировщиков и разработчиков, которым необходимо <a data-l10n-name="fog-debug-doc-link">настроить состояние отладки и ведения логов в Glean SDK</a>.
-about-glean-warning = Некорректное использование этого интерфейса может привести к падению { -brand-short-name }.
-tag-pings-label = Отмечать все отправленные пинги следующей меткой
-log-pings-label = Включать в логи тело пинга перед отправкой?
-send-pings-label = Отправить указанный пинг
-controls-button-label = Применить настройки
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -63,6 +53,8 @@ about-glean-manual-testing =
 about-glean-no-ping-label = (не отправлять никаких пингов)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = В предыдущем поле убедитесь, что установлен запоминающийся тег отладки, чтобы вы смогли позже распознать свои пинги.
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = Установите запоминающийся тег отладки <span>(не более 20 символов, только буквенно-цифровые и -)</span>, чтобы вы могли распознавать свои пинги позже.
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -93,6 +85,19 @@ about-glean-adhoc-explanation =
     открыв консоль devtools здесь, на <code>about:glean</code>
     и используя API <code>testGetValue()</code>, например,
     <code>Glean.metricCategory.metricName.testGetValue()</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 =
+    Чтобы узнать больше о <i>специальном</i> тестировании,
+    вы также можете определить текущее значение конкретного инструмента,
+    открыв консоль devtools здесь, в <code>about:glean</code>,
+    и используя API <code>testGetValue()</code>, например,
+    <code>Glean.metricCategory.metricName.testGetValue()</code>
+    для метрики с именем <code>metric.category.metric_name</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    Обратите внимание, что вы используете Glean JS API с помощью консоли devtools.
+    Это означает, что категория метрики и имя метрики отформатированы в
+    <code>camelCase</code>, а не в API Rust и C++.
 controls-button-label-verbose = Применить настройки и отправить пинг
 about-glean-about-data-header = О данных
 about-glean-about-data-explanation =

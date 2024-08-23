@@ -12,8 +12,8 @@
 
 webext-perms-header = { $extension } 확장 기능을 추가하시겠습니까?
 webext-perms-header-with-perms = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 다음의 권한을 갖습니다:
-webext-perms-header-unsigned = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 검증되지 않았습니다. 악성 확장 기능은 개인 정보를 훔치거나 컴퓨터를 손상시킬 수 있습니다. 출처를 신뢰하는 경우에만 추가하세요.
-webext-perms-header-unsigned-with-perms = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 검증되지 않았습니다. 악성 확장 기능은 개인 정보를 훔치거나 컴퓨터를 손상시킬 수 있습니다. 출처를 신뢰하는 경우에만 추가하세요. 이 확장 기능은 다음의 권한을 갖습니다:
+webext-perms-header-unsigned = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 확인되지 않았습니다. 악성 확장 기능은 개인 정보를 훔치거나 컴퓨터를 손상시킬 수 있습니다. 출처를 신뢰하는 경우에만 추가하세요.
+webext-perms-header-unsigned-with-perms = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 확인되지 않았습니다. 악성 확장 기능은 개인 정보를 훔치거나 컴퓨터를 손상시킬 수 있습니다. 출처를 신뢰하는 경우에만 추가하세요. 이 확장 기능은 다음의 권한을 갖습니다:
 webext-perms-sideload-header = { $extension } 부가 기능이 추가됨
 webext-perms-optional-perms-header = { $extension } 확장 기능이 추가 권한을 요청합니다.
 
@@ -89,7 +89,7 @@ webext-site-perms-description-gated-perms-midi =
 ##   $hostname (String): will be replaced by the DNS host name for which a webextension enables permissions.
 
 webext-site-perms-header-with-perms = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 { $hostname }에 다음 권한을 부여합니다:
-webext-site-perms-header-unsigned-with-perms = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 검증되지 않았습니다. 악성 확장 기능은 개인 정보를 훔치거나 컴퓨터를 손상시킬 수 있습니다. 이 확장 기능은 { $hostname }에 다음 권한을 부여합니다:
+webext-site-perms-header-unsigned-with-perms = { $extension } 확장 기능을 추가하시겠습니까? 이 확장 기능은 확인되지 않았습니다. 악성 확장 기능은 개인 정보를 훔치거나 컴퓨터를 손상시킬 수 있습니다. 이 확장 기능은 { $hostname }에 다음 권한을 부여합니다:
 
 ## These should remain in sync with permissions.NAME.label in sitePermissions.properties
 

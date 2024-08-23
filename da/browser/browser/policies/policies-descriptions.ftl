@@ -12,10 +12,13 @@
 
 policy-3rdparty = Indstil politikker, som WebExtensions kan tilgå via chrome.storage.managed.
 policy-AllowedDomainsForApps = Angiv domæner, der har tilladelse til at tilgå Google Workspace.
+policy-AllowFileSelectionDialogs = Tillad dialogbokse om valg af filer.
 policy-AppAutoUpdate = Slå automatisk opdatering af programmet til eller fra.
 policy-AppUpdatePin = Tillad ikke, at { -brand-short-name } opdateres til en nyere version end den angivne.
 policy-AppUpdateURL = Indstil tilpasset URL for app-opdateringer
 policy-Authentication = Indstil integreret godkendelse for websteder, der understøtter det
+policy-AutofillAddressEnabled = Aktiver autofyldning for adresser.
+policy-AutofillCreditCardEnabled = Aktiver autofyldning for betalingsmetoder.
 policy-AutoLaunchProtocolsFromOrigins = Angiv en liste med eksterne protokoller, der kan anvendes fra specificerede kilder uden at spørge brugeren.
 policy-BackgroundAppUpdate2 = Slå opdatering i baggrund til og fra.
 policy-BlockAboutAddons = Bloker adgang til fanebladet Tilføjelser (about:addons).
@@ -23,27 +26,31 @@ policy-BlockAboutConfig = Bloker adgang til about:config.
 policy-BlockAboutProfiles = Bloker adgang til about:profiles.
 policy-BlockAboutSupport = Bloker adgang til about:support.
 policy-Bookmarks = Opret bogmærker i Bogmærkelinjen, i menuen Bogmærker eller en nærmere angivet mappe i dem.
-policy-CaptivePortal = Slå understøttelse af captive portal til eller fra.
+policy-CaptivePortal = Slå understøttelse af tvungen portal til eller fra.
 policy-CertificatesDescription = Tilføj certifikater eller brug indbyggede certifikater.
+policy-ContentAnalysis = Aktiver eller deaktiver forbindelse til agent til forhindring af data-tab.
 policy-Cookies = Tillad eller nægt websteder at sætte cookies.
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Angiv politikker relateret til kontekster.
+policy-DisableAccounts = Deaktiver kontobaserede tjenester, inklusive synkronisering.
 policy-DisabledCiphers = Deaktiver ciphers.
 policy-DefaultDownloadDirectory = Indstil standard-mappe for hentede filer.
 policy-DisableAppUpdate = Deaktiver opdatering af browseren.
 policy-DisableBuiltinPDFViewer = Deaktiver PDF.js, den indbyggede PDF-viser i { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Tillad ikke at standard browser-agenten foretager handlinger. Fungerer kun på Windows; andre platforme har ikke agenten.
 policy-DisableDeveloperTools = Bloker adgang til Udviklerværktøj.
+policy-DisableEncryptedClientHello = Deaktiver TLS-funktionen Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Deaktiver kommandoer til at indsende feedback fra menuen Hjælp (Indsend feedback og Anmeld vildledende websted).
 policy-DisableFirefoxAccounts = Deaktiver tjenester baseret på { -fxaccount-brand-name }, inklusive Sync.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Deaktiver funktionen Midori Screenshots
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Deaktiver kontobaserede tjenester, inklusive synkronisering.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Deaktiver funktionen Firefox Screenshots
 policy-DisableFirefoxStudies = Deaktiver afvikling af { -brand-short-name }-undersøgelser.
 policy-DisableForgetButton = Bloker adgang til knappen Glem.
 policy-DisableFormHistory = Husk ikke formular- og søgehistorik.
 policy-DisablePrimaryPasswordCreation = En hovedadgangskode kan ikke oprettes, hvis værdien er sat til true.
 policy-DisablePasswordReveal = Tillad ikke adgangskoder at blive vist i gemte logins.
-policy-DisablePocket = Deaktiver funktionen at gemme websider til Pocket.
 policy-DisablePocket2 = Deaktiver funktionen at gemme websider til { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Deaktiver privat browsing.
 policy-DisableProfileImport = Deaktiver menu-kommandoen til at importere data fra en anden browser.
@@ -70,14 +77,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Deaktiver advarsl
 policy-Extensions = Installer, afinstaller eller lås udvidelser. Valgmuligheden Installer tager URL’er eller stier som parametre. Valgmulighederne Afinstaller og Låst tager udvidelelses-ID som parameter.
 policy-ExtensionSettings = Håndter alle aspekter af udvidelses-installering.
 policy-ExtensionUpdate = Slå automatisk opdatering af udvidelser til eller fra.
-policy-FirefoxHome = Indstil Firefox' startside.
 policy-FirefoxHome2 = Konfigurer { -firefox-home-brand-name }.
-policy-FlashPlugin = Tillad eller afvis brug af Flash-plugin.
+policy-FirefoxSuggest = Konfigurer { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Gennemtving direkte intranet-navigation fremfor søgning, når der indtastes enkelte ord i adresselinjen.
 policy-Handlers = Indstil håndtering af standard-applikationer.
 policy-HardwareAcceleration = False slår hardware-acceleration fra.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Indstil og lås eventuelt startsiden.
+policy-HttpAllowlist = Kilder, som ikke vil blive opgraderet til HTTPS.
+policy-HttpsOnlyMode = Tillad at tilstanden Kun-HTTPS aktiveres.
 policy-InstallAddonsPermission = Tillad bestemte websteder at installere tilføjelser.
 policy-LegacyProfiles = Deaktiver funktionen, der gennemtvinger at hver installation har en separat profil.
 
@@ -92,6 +100,7 @@ policy-LocalFileLinks = Tillad specifikke websteder at linke til lokale filer.
 policy-ManagedBookmarks = Indstiller en liste med bogmærker, der håndteres af en administrator, og som ikke kan ændres af brugeren.
 policy-ManualAppUpdateOnly = Tillad kun manuelle opdateringer, og giv ikke brugeren besked om opdateringer.
 policy-PrimaryPassword = Kræv eller forhindr brugen af en hovedadgangskode.
+policy-PrintingEnabled = Aktiver eller deaktiver udskrivning.
 policy-NetworkPrediction = Slå network prediction (DNS prefetching) til eller fra.
 policy-NewTabPage = Slå siden Nyt faneblad til eller fra.
 policy-NoDefaultBookmarks = Deaktiver oprettelse af standard-bogmærker, der følger med { -brand-short-name }, samt de smarte bogmærker (Mest besøgte, Seneste mærkater). NB: Denne politik virker kun, hvis den aktiveres før profilen anvendes første gang.
@@ -101,6 +110,9 @@ policy-OverrideFirstRunPage = Erstat siden, der vises ved første opstart. Lad p
 policy-OverridePostUpdatePage = Erstat siden Nyheder, der vises efter opdatering. Lad politikken være tom, hvis siden efter opdatering skal deaktiveres.
 policy-PasswordManagerEnabled = Tillad at brugeren kan gemme adgangskoder i Adgangskode-håndteringen.
 policy-PasswordManagerExceptions = Tillad ikke { -brand-short-name } at gemme adgangskoder for bestemte websteder.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Aktiver nøgleaftaler for TLS, som er sikret mod angreb fra kvante-computere.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Deaktiver eller konfigurer PDF.js, den indbyggede PDF-læser i { -brand-short-name }.
 policy-Permissions2 = Indstil tilladelser for kamera, mikrofon, position, beskeder og automatisk afspilning.
@@ -114,8 +126,6 @@ policy-SanitizeOnShutdown2 = Ryd browsing-data ved lukning.
 policy-SearchBar = Indstil standard-placering af søgefeltet. Brugeren kan stadig tilpasse feltet.
 policy-SearchEngines = Opsæt indstillinger for søgetjenester. Denne politik er kun tilgængelig for Extended Support Release (ESR).
 policy-SearchSuggestEnabled = Slå søgeforslag til eller fra.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Installer PKCS #11 moduler.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Tilføj eller slet PKCS #11-moduler
 policy-ShowHomeButton = Vis hjem-knappen på værktøjslinjen.
@@ -123,6 +133,7 @@ policy-SSLVersionMax = Angiv den højeste SSL-version.
 policy-SSLVersionMin = Angiv den laveste SSL-version.
 policy-StartDownloadsInTempDirectory = Tving filhentninger til at starte i en lokal, midlertidig placering i stedet for standard-mappen for filhentninger.
 policy-SupportMenu = Føj et tilpasset menupunkt til menuen Hjælp.
+policy-TranslateEnabled = Aktiver eller deaktiver oversættelser af websider.
 policy-UserMessaging = Vis ikke bestemte beskeder til brugeren.
 policy-UseSystemPrintDialog = Udskriv ved at bruge systemets udskriftsdialog.
 # “format” refers to the format used for the value of this policy.

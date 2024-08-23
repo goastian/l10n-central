@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = Öppna { $targetURI } i en ny flik
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = Stäng { $tabTitle }
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = Ignorera { $tabTitle }
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = Spara till { -pocket-brand-name }
     .accesskey = r
 fxviewtabrow-copy-link = Kopiera länk
     .accesskey = K
+fxviewtabrow-close-tab = Stäng flik
+    .accesskey = S
+fxviewtabrow-move-tab = Flytta flik
+    .accesskey = F
+fxviewtabrow-move-tab-start = Flytta till början
+    .accesskey = b
+fxviewtabrow-move-tab-end = Flytta till slutet
+    .accesskey = s
+fxviewtabrow-move-tab-window = Flytta till nytt fönster
+    .accesskey = n
+fxviewtabrow-send-tab = Skicka flik till enhet
+    .accesskey = f
+fxviewtabrow-pin-tab = Fäst flik
+    .accesskey = F
+fxviewtabrow-unpin-tab = Lösgör flik
+    .accesskey = L
+fxviewtabrow-mute-tab = Ljud av för flik
+    .accesskey = L
+fxviewtabrow-unmute-tab = Ljud på för flik
+    .accesskey = d
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Alternativ för { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = Ljud av { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = Ljud på { $tabTitle }
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Ljud av för flik
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Ljud på för flik

@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Több lap megjelenítése
     .tooltiptext = Több lap megjelenítése erről az eszközről
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Inaktív lapok
+    .tooltiptext = Az eszköz inaktív lapjainak megtekintése
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Nincsenek nyitott lapok
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Szinkronizálás most
 appmenuitem-fxa-sign-in = Jelentkezzen be a { -brand-product-name }ba
 appmenuitem-fxa-manage-account = Fiók kezelése
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Fiók
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profilkészítő
     .tooltiptext = A profilkészítő profilt fogad
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = További információk felfedése
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Ajánlott előbeállítás a legtöbb webalkalmazás hibakereséséhez, alacsony pluszköltséggel.
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = Előbeállítás a { -brand-shorter-n
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Energiagazdálkodás
+profiler-popup-presets-debug-description = Előbeállítás a { -brand-shorter-name }ban való hibakereséshez. Magas többletterhelés, ne teljesítménykritikus munkához használja, hanem a böngésző viselkedésének megértéséhez.
+profiler-popup-presets-debug-label =
+    .label = Hibakeresés
 profiler-popup-presets-custom-label =
     .label = Egyéni
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Előzmények kezelése
-appmenu-reopen-all-tabs = Összes lap újranyitása
-appmenu-reopen-all-windows = Összes ablak újranyitása
 appmenu-restore-session =
     .label = Előző munkamenet helyreállítása
 appmenu-clear-history =
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Böngészőeszközök
 appmenu-developer-tools-extensions =
     .label = Kiegészítők fejlesztőknek
+appmenuitem-report-broken-site =
+    .label = Hibás webhely bejelentése
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Jelentkezzen be a fiókjába
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Kapjon figyelmeztetést az adatvédelmi incidensekről
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Maszkolja a valódi e-mail-címét és telefonszámát
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Védje meg az online tevékenységét

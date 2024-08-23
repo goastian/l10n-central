@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Обліковий запис
+    .tooltiptext = Обліковий запис
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -291,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Використати збережене ім'я входу
     .accesskey = б
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Використати збережений пароль
     .accesskey = б
@@ -306,6 +313,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins2 =
     .label = Керувати паролями
     .accesskey = К
+main-context-menu-manage-passwords =
+    .label = Керувати паролями
+    .accesskey = м
 main-context-menu-keyword =
     .label = Створити скорочення для цього пошуку…
     .accesskey = д

@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = Dieser Zugrif ist nicht gara
 ##
 
 xpinstall-disabled-locked = Die Software-Installation wurde von Ihrem Administrator deaktiviert.
+xpinstall-disabled-by-policy = Die Software-Installation wurde von Ihrer Organisation deaktiviert.
 xpinstall-disabled = Die Software-Installation ist momentan deaktiviert. Klicken Sie auf  "Aktivieren" und versuchen Sie es dann erneut.
 xpinstall-disabled-button =
     .label = Aktivieren
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = { $addonName } ({ $addonId }) wurde durch den Systemadministrator blockiert.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = Ihr Systemadministrator hat diese Website daran gehindert, Sie zu fragen, ob Software auf Ihrem Computer installiert werden soll.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = { $addonName } ({ $addonId }) wurde von Ihrer Organisation blockiert.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Ihre Organisation hat diese Website daran gehindert, Sie zu fragen, ob Software auf Ihrem Computer installiert werden soll.
 addon-install-full-screen-blocked = Das Installieren von Add-ons ist nicht erlaubt während des Vollbildmodus oder vor dessen Start.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -58,6 +66,10 @@ webext-perms-sideload-menu-item = { $addonName } zu { -brand-short-name } hinzug
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } benötigt neue Berechtigungen
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = Abschluss der Installation von Erweiterungen, die in { -brand-short-name } importiert wurden
 
 ## Add-on removal warning
 
@@ -68,7 +80,7 @@ addon-removal-title = { $name } entfernen?
 #   $name (String): the name of the extension which is about to be removed.
 addon-removal-message = { $name } aus { -brand-shorter-name } entfernen?
 addon-removal-button = Entfernen
-addon-removal-abuse-report-checkbox = Erweiterung melden an { -vendor-short-name }
+addon-removal-abuse-report-checkbox = Erweiterung an { -vendor-short-name } melden
 # Variables:
 #   $addonCount (Number): the number of add-ons being downloaded
 addon-downloading-and-verifying =
@@ -120,3 +132,5 @@ addon-local-install-error-not-signed = Dieses Add-on konnte nicht installiert we
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = { $addonName } konnte nicht installiert werden, da es nicht mit { -brand-short-name } { $appVersion } kompatibel ist.
 addon-install-error-blocklisted = { $addonName } konnte nicht installiert werden, da es ein hohes Risiko bezüglich Stabilität und Sicherheit darstellt.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Sie können { $addonName } nicht als Endbenutzer installieren, es kann nur von einer Organisation installiert werden, die Unternehmensrichtlinien verwendet.

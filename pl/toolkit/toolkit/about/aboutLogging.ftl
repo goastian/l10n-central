@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Ślady stosów dla komunikatów dz
 
 about-logging-preset-networking-label = Sieć
 about-logging-preset-networking-description = Moduły do diagnozowania problemów sieciowych
+about-logging-preset-networking-cookie-label = Ciasteczka
+about-logging-preset-networking-cookie-description = Moduły do diagnozowania problemów z ciasteczkami
+about-logging-preset-networking-websocket-label = WebSocket
+about-logging-preset-networking-websocket-description = Moduły do diagnozowania problemów z WebSocket
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Moduły do diagnozowania problemów z HTTP/3 i QUIC
+about-logging-preset-networking-http3-upload-speed-label = Szybkość wysyłania przez HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Moduły do diagnozowania problemów z szybkością wysyłania przez HTTP/3
 about-logging-preset-media-playback-label = Odtwarzanie multimediów
 about-logging-preset-media-playback-description = Moduły do diagnozowania problemów z odtwarzaniem multimediów (ale nie problemów z wideokonferencjami)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Moduły do diagnozowania rozmów WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Moduły do diagnozowania problemów z WebGPU
+about-logging-preset-gfx-label = Grafika
+about-logging-preset-gfx-description = Moduły do diagnozowania problemów graficznych
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Moduły do diagnozowania problemów występujących tylko w systemie Microsoft Windows
 about-logging-preset-custom-label = Inne
 about-logging-preset-custom-description = Ręcznie wybrane moduły
 # Error handling

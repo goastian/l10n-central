@@ -5,17 +5,10 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-
-
-## Permission Dialog
-## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
+##  $appName (string) - Name of the application that will be opened.
+##  $extension (string) - Name of extension that initiated the request
 
 permission-dialog-description = Tillad dette websted at åbne { $scheme }-linket?
 permission-dialog-description-file = Tillad denne fil at åbne { $scheme }-linket?
@@ -25,10 +18,15 @@ permission-dialog-description-app = Tillad dette websted at åbne { $scheme }-li
 permission-dialog-description-host-app = Tillad { $host } at åbne { $scheme }-linket med { $appName }?
 permission-dialog-description-file-app = Tillad denne fil at åbne { $scheme }-linket med { $appName }?
 permission-dialog-description-extension-app = Tillad udvidelsen { $extension } at åbne { $scheme }-linket med { $appName }?
+permission-dialog-description-system-app = Åbn { $scheme }-linket med { $appName }?
+permission-dialog-description-system-noapp = Åbn { $scheme }-linket?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
+## Variables:
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
 
 permission-dialog-remember = Tillad altid <strong>{ $host }</strong> at åbne <strong>{ $scheme }</strong>-links
 permission-dialog-remember-file = Tillad altid denne fil at åbne <strong>{ $scheme }</strong>-links
@@ -47,7 +45,7 @@ permission-dialog-set-change-app-link = Vælg et andet program.
 
 ## Chooser dialog
 ## Variables:
-##  $scheme - the type of link that's being opened.
+##  $scheme (string) - The type of link that's being opened.
 
 chooser-window =
     .title = Vælg program

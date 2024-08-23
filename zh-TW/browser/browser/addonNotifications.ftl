@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = 這個存取請求不一定�
 ##
 
 xpinstall-disabled-locked = 您的系統管理員已停用軟體安裝。
+xpinstall-disabled-by-policy = 您的組織已停用軟體安裝。
 xpinstall-disabled = 目前已禁止安裝軟體。請點擊「啟用」後再試一次。
 xpinstall-disabled-button =
     .label = 啟用
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = 您的系統管理員已封鎖 { $addonName }（{ $addonId }）。
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = 您的系統管理員已阻擋此網站向您詢問是否要在電腦上安裝軟體。
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = 您的組織已封鎖 { $addonName }（{ $addonId }）。
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = 您的組織已阻擋此網站向您詢問是否要在電腦上安裝軟體。
 addon-install-full-screen-blocked = 進入全螢幕模式前或進入時，不允許安裝附加元件。
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -58,6 +66,10 @@ webext-perms-sideload-menu-item = 已安裝 { $addonName } 至 { -brand-short-na
 # Variables:
 #   $addonName (String): the localized name of the extension which has been updated.
 webext-perms-update-menu-item = { $addonName } 要求新權限
+# This message is shown when one or more extensions have been imported from a
+# different browser into Firefox, and the user needs to complete the import to
+# start these extensions. This message is shown in the appmenu.
+webext-imported-addons = 完成安裝匯入至 { -brand-short-name } 的擴充套件
 
 ## Add-on removal warning
 
@@ -108,3 +120,5 @@ addon-local-install-error-not-signed = 因為此附加元件尚未經過驗證�
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = 因為與 { -brand-short-name } { $appVersion } 不相容，無法安裝 { $addonName }。
 addon-install-error-blocklisted = 無法安裝 { $addonName }，因為它很可能會造成穩定性或安全性問題。
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = 無法以使用者身分安裝 { $addonName }，該元件僅能透過組織的企業政策安裝。

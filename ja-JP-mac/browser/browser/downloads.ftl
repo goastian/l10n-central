@@ -102,13 +102,13 @@ downloads-cmd-remove-from-history =
     .label = 履歴から削除
     .accesskey = e
 downloads-cmd-clear-list =
-    .label = プレビューパネルの消去
+    .label = プレビューパネルを消去
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = ダウンロード履歴をすべて消去
     .accesskey = C
 downloads-cmd-delete-file =
-    .label = 削除
+    .label = ファイルを削除
     .accesskey = D
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =

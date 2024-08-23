@@ -140,6 +140,14 @@ tabbrowser-confirm-caretbrowsing-title = Procházení stránky
 tabbrowser-confirm-caretbrowsing-message = Stisknutím klávesy F7 zapnete či vypnete funkci Procházení stránky. Ta umístí do stránky pohyblivý textový kurzor, který vám umožní vybírat text pomocí klávesnice. Chcete zapnout funkci Procházení stránky?
 tabbrowser-confirm-caretbrowsing-checkbox = Tento dialog příště nezobrazovat.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Pozor
+tabbrowser-confirm-close-duplicate-tabs-text = Ponecháme otevřený poslední aktivní panel
+tabbrowser-confirm-close-all-duplicate-tabs-title = Zavřít duplicitní panely?
+tabbrowser-confirm-close-all-duplicate-tabs-text = V tomto okně zavřeme duplicitní panely. Poslední aktivní panel zůstane otevřený.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Zavřít panely
+
 ##
 
 # Variables:

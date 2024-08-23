@@ -12,6 +12,7 @@
 
 policy-3rdparty = Nastavení pravidel, ke kterým mají přístup rozšíření skrze chrome.storage.managed.
 policy-AllowedDomainsForApps = Nastavení domén, které mají povolený přístup ke Google Workspace.
+policy-AllowFileSelectionDialogs = Povolí dialogová okna pro výběr souborů.
 policy-AppAutoUpdate = Vypnutí nebo zapnutí automatických aktualizací aplikace.
 policy-AppUpdatePin =
     { -brand-short-name.case-status ->
@@ -20,6 +21,8 @@ policy-AppUpdatePin =
     }
 policy-AppUpdateURL = Nastavení vlastní URL pro aktualizace aplikace.
 policy-Authentication = Konfigurace integrované autentizace webových stránek, které ji podporují.
+policy-AutofillAddressEnabled = Povolí automatické doplňování adres.
+policy-AutofillCreditCardEnabled = Povolí automatické vyplňování metod platby.
 policy-AutoLaunchProtocolsFromOrigins = Seznam externích protokolů, které lze použít z uvedených originů bez varování uživatele.
 policy-BackgroundAppUpdate2 = Povolení nebo zákaz aktualizací na pozadí.
 policy-BlockAboutAddons = Zablokování přístupu do správce doplňků (about:addons).
@@ -29,9 +32,11 @@ policy-BlockAboutSupport = Zablokování přístupu na stránku s technickými i
 policy-Bookmarks = Vytvoření záložek na liště, v nabídce nebo vybrané složce.
 policy-CaptivePortal = Povolení nebo zakázání podpory captive portálů.
 policy-CertificatesDescription = Přidat certifikáty nebo použít vestavěné certifikáty.
+policy-ContentAnalysis = Povolení nebo zakázání připojení k agentovi pro prevenci ztráty dat.
 policy-Cookies = Pravidla pro ukládání nebo blokování cookies.
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Nastavení pravidel souvisejících s kontejnery.
+policy-DisableAccounts = Zakáže služby vyžadující účty, včetně synchronizace.
 policy-DisabledCiphers = Zakázané metody šifrování.
 policy-DefaultDownloadDirectory = Nastavení výchozího adresáře pro stahování souborů.
 policy-DisableAppUpdate = Blokování aktualizací prohlížeče.
@@ -42,10 +47,13 @@ policy-DisableBuiltinPDFViewer =
     }
 policy-DisableDefaultBrowserAgent = Zabraňuje „výchozímu agentovi prohlížeče“ provádět jakékoliv akce. Dostupné pouze pro Windows, ostatní platformy agenty nemají.
 policy-DisableDeveloperTools = Blokování přístupu k nástrojům pro vývojáře.
+policy-DisableEncryptedClientHello = Zakáže použití funkce TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Blokování odeslání zpětné vazby z nabídky Nápověda (volby Odeslat zpětnou vazbu a Nahlásit klamavou stránku).
 policy-DisableFirefoxAccounts = Vypnutí služeb používajících { -fxaccount-brand-name(case: "acc", capitalization: "lower") }, včetně Syncu.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Vypnutí funkce Midori Screenshots.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Zakáže služby vyžadující účty, včetně synchronizace.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Vypnutí funkce Firefox Screenshots.
 policy-DisableFirefoxStudies =
     { -brand-short-name.case-status ->
         [with-cases] Zablokování spouštění studií { -brand-short-name(case: "gen") }.
@@ -55,7 +63,6 @@ policy-DisableForgetButton = Zablokování tlačítka Zapomenout.
 policy-DisableFormHistory = Vypnutí ukládání historie vyhledávání a formulářů.
 policy-DisablePrimaryPasswordCreation = Hodnota true znemožní nastavení hlavního hesla.
 policy-DisablePasswordReveal = Zakázání možnosti zobrazit hesla ve správci přihlašovacích údajů.
-policy-DisablePocket = Vypnutí funkce pro ukládání stránek do služby Pocket.
 policy-DisablePocket2 = Vypnutí funkce pro ukládání stránek do služby { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Zablokování anonymního prohlížení.
 policy-DisableProfileImport = Blokování importu dat z jiných prohlížečů.
@@ -90,14 +97,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Zakáže varován
 policy-Extensions = Instalace, odinstalace a uzamčení rozšíření. Pro instalaci je potřeba jako parametr zadat URL adresy nebo cesty. Pro odinstalaci nebo uzamčení ID rozšíření.
 policy-ExtensionSettings = Správa všech aspektů instalace rozšíření.
 policy-ExtensionUpdate = Vypnutí nebo zapnutí automatických aktualizací rozšíření.
-policy-FirefoxHome = Nastavení domovské stránky prohlížeče.
 policy-FirefoxHome2 = Nakonfiguruje { -firefox-home-brand-name(case: "acc", capitalization: "lower") }.
-policy-FlashPlugin = Povolení nebo zablokování zásuvného modulu Flash.
+policy-FirefoxSuggest = Nakonfiguruje { -firefox-suggest-brand-name(case: "acc", capitalization: "lower") }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Vynutí přímou navigaci v intranetu namísto vyhledávání při zadání jednotlivých slov do adresního řádku.
 policy-Handlers = Nastavení výchozích aplikací pro odkazy a typy souborů.
 policy-HardwareAcceleration = Hodnota false vypne použití hardwarové akcelerace.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nastavení a případné uzamčení domovské stránky.
+policy-HttpAllowlist = Zdroje, které nebudou povýšeny na HTTPS.
+policy-HttpsOnlyMode = Povolení režimu pouze HTTPS.
 policy-InstallAddonsPermission = Povolení instalace doplňků z vybraných webových stránek.
 policy-LegacyProfiles = Vypnutí funkce vynucující samostatný profil pro každou instalaci aplikace.
 
@@ -112,6 +120,7 @@ policy-LocalFileLinks = Povolí vybraným stránkám odkazovat na soubory ulože
 policy-ManagedBookmarks = Nastavení seznamu záložek spravovaných správcem. Takové záložky uživatel nemůže měnit.
 policy-ManualAppUpdateOnly = Povolit pouze ruční aktualizace a uživatele na dostupnost aktualizací neupozorňovat.
 policy-PrimaryPassword = Vyžadovat nebo zabránit používání hlavního hesla.
+policy-PrintingEnabled = Povolit nebo zakázat tisk.
 policy-NetworkPrediction = Povolení nebo zakázání přednačítání DNS.
 policy-NewTabPage = Povolení nebo zákaz stránky nového panelu.
 policy-NoDefaultBookmarks =
@@ -127,8 +136,11 @@ policy-OfferToSaveLogins =
 policy-OfferToSaveLoginsDefault = Nastavení výchozí hodnoty pro to, zda má { -brand-short-name } nabízet ukládání přihlašovacích údajů. Platné hodnoty jsou true a false.
 policy-OverrideFirstRunPage = Nastavení vlastní stránky při prvním spuštění. Pokud nechcete při prvním spuštění zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
 policy-OverridePostUpdatePage = Nastavení vlastní stránky po aktualizaci. Pokud nechcete po aktualizaci zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
-policy-PasswordManagerEnabled = Povolení ukládat přihlašovací údaje do správce hesel.
+policy-PasswordManagerEnabled = Povolení ukládat hesla do správce hesel.
 policy-PasswordManagerExceptions = Zabrání { -brand-short-name(case: "dat") } ukládat heslo pro vybrané servery.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Povolí postkvantovou dohodu o klíčích pro TLS.
 # PDF.js and PDF should not be translated
 policy-PDFjs =
     { -brand-short-name.case-status ->
@@ -146,8 +158,6 @@ policy-SanitizeOnShutdown2 = Vymazání dat o prohlížení během vypnutí.
 policy-SearchBar = Nastavení výchozího umístění vyhledávacího pole. Uživatel ho může přemístit.
 policy-SearchEngines = Nastavení vyhledávačů. Toto pravidlo je dostupné jen pro verzi s rozšířenou podporou (ESR).
 policy-SearchSuggestEnabled = Povolení nebo zákaz našeptávání dotazů pro vyhledávač.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Instalace modulů PKCS #11.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Přidání nebo odebrání modulů PKCS #11.
 policy-ShowHomeButton = Zobrazení domovského tlačítka na liště.
@@ -155,6 +165,7 @@ policy-SSLVersionMax = Nastavení maximální verze SSL.
 policy-SSLVersionMin = Nastavení minimální verze SSL.
 policy-StartDownloadsInTempDirectory = Vynutí spuštění stahování v místním dočasném umístění místo výchozího adresáře pro stažené soubory.
 policy-SupportMenu = Přidání vlastní položky nabídky s nápovědou.
+policy-TranslateEnabled = Povolí nebo zakáže překlad webových stránek.
 policy-UserMessaging = Nezobrazovat uživateli určité zprávy.
 policy-UseSystemPrintDialog = Vytisknout pomocí systémového dialogu.
 # “format” refers to the format used for the value of this policy.

@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name(capitalization: "uppercase") }
     .tooltiptext = { -fxaccount-brand-name(capitalization: "uppercase") }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Compte
+    .tooltiptext = Compte
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Marquer cette page
-    .accesskey = c
-    .tooltiptext = Marquer cette page
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Marquer cette page
-    .accesskey = m
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Modifier le marque-page
-    .accesskey = m
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Marquer cette page
-    .accesskey = c
-    .tooltiptext = Marquer cette page ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Modifier ce marque-page
-    .accesskey = c
-    .tooltiptext = Modifier ce marque-page
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Modifier ce marque-page
-    .accesskey = c
-    .tooltiptext = Modifier ce marque-page ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Marquer cette page…
     .accesskey = m
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Ouvrir le lien dans une fenêtre de navigation privée
     .accesskey = n
-main-context-menu-bookmark-link =
-    .label = Marque-page sur le lien
-    .accesskey = M
 main-context-menu-bookmark-link-2 =
     .label = Marquer le lien…
     .accesskey = l
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Copier le lien
     .accesskey = C
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Copier le lien sans le pistage du site
+    .accesskey = r
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Envoyer le fichier audio par e-mail…
     .accesskey = v
-main-context-menu-plugin-play =
-    .label = Activer ce plugin
-    .accesskey = v
-main-context-menu-plugin-hide =
-    .label = Masquer ce plugin
-    .accesskey = q
 main-context-menu-save-to-pocket =
     .label = Enregistrer la page dans { -pocket-brand-name }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Utiliser l’identifiant enregistré
     .accesskey = U
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Utiliser le mot de passe enregistré
     .accesskey = U
@@ -342,6 +313,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins2 =
     .label = Gérer les identifiants
     .accesskey = n
+main-context-menu-manage-passwords =
+    .label = Gérer les mots de passe
+    .accesskey = m
 main-context-menu-keyword =
     .label = Ajouter un mot-clé pour cette recherche…
     .accesskey = m
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Actualiser le cadre
     .accesskey = c
-main-context-menu-frame-bookmark =
-    .label = Marque-page sur ce cadre
-    .accesskey = M
 main-context-menu-frame-add-bookmark =
     .label = Marquer ce cadre…
     .accesskey = M
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Informations sur le cadre
     .accesskey = n
-main-context-menu-print-selection =
-    .label = Imprimer la sélection
-    .accesskey = I
 main-context-menu-print-selection-2 =
     .label = Imprimer la sélection…
     .accesskey = I

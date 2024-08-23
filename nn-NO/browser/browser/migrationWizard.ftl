@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 sikker nettlesar
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Passord frå CSV-fil
 migration-wizard-migrator-display-name-file-bookmarks = Bokmerke frå HTML-fil
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Leseliste (frå Safari)
+migration-imported-edge-reading-list = Leseliste (frå Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } har ikkje tilgang til profilar i andre nettlesarar installerte på denne eininga.
+migration-no-permissions-instructions = For å halde fram med å importere data frå ein annan nettlesar, gi { -brand-short-name } tilgang til profilmappa.
+migration-no-permissions-instructions-step1 = Vel «Hald fram»
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = I filveljaren, naviger til <code>{ $permissionsPath }</code> og vel «Vel»
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,7 +76,9 @@ migration-bookmarks-option-label = Bokmerke
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Favorittar
 migration-logins-and-passwords-option-label = Lagra innloggingar og passord
+migration-passwords-option-label = Lagra passord
 migration-history-option-label = Nettlesarhistorikk
+migration-extensions-option-label = Utvidingar
 migration-form-autofill-option-label = Autofylldata for skjema
 migration-payment-methods-option-label = Betalingsmåtar
 migration-cookies-option-label = Infokapslar
@@ -68,6 +89,7 @@ migration-passwords-from-file-success-header = Passord importerte
 migration-passwords-from-file = Ser etter passord i fila
 migration-passwords-new = Nye passord
 migration-passwords-updated = Eksisterande passord
+migration-passwords-from-file-no-valid-data = Fila inneheld ingen gyldige passorddata. Vel ei anna fil.
 migration-passwords-from-file-picker-title = Importer passordfil
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -107,6 +129,7 @@ migration-bookmarks-from-file-picker-title = Importer bokmerkefil
 migration-bookmarks-from-file-progress-header = Importerer bokmerke
 migration-bookmarks-from-file = Bokmerke
 migration-bookmarks-from-file-success-header = Bokmerka vart importerte
+migration-bookmarks-from-file-no-valid-data = Fila inneheld ingen bokmerkedata. Vel ei anna fil.
 # A description for the .html file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-html-filter-title =
@@ -148,13 +171,21 @@ migration-list-bookmark-label = bokmerke
 migration-list-favorites-label = favorittar
 migration-list-password-label = passord
 migration-list-history-label = historikk
+migration-list-extensions-label = Utvidingar
 migration-list-autofill-label = autofylldata
 migration-list-payment-methods-label = betalingsmåtar
 
 ##
 
 migration-wizard-progress-header = Importerer data
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Data vart importert
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Import av data fullført
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importerer…
 migration-wizard-progress-icon-completed =
@@ -189,6 +220,36 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } favoritt
        *[other] { $quantity } favorittar
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } utviding
+       *[other] { $quantity } utvidingar
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } av { $quantity } utvidingar
+migration-wizard-progress-extensions-support-link = Finn ut korleis { -brand-product-name } samsvarar tillegg
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Ingen matchande utvidingar
+migration-wizard-progress-extensions-addons-link = Bla i utvidingar for { -brand-short-name }
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #

@@ -45,3 +45,37 @@ default-browser-prompt-message-alt = Získejte rychlost, bezpečnost a soukromí
 default-browser-prompt-button-primary-alt = Nastavit jako výchozí prohlížeč
 default-browser-prompt-checkbox-not-again-label = Příště už nezobrazovat
 default-browser-prompt-button-secondary = Teď ne
+
+## Strings for a Windows native guidance notification when the user is forced to
+## use Windows Settings to set the default browser. Instructions differ for
+## Windows 10 and 11.
+
+default-browser-guidance-notification-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Dokončete nastavení { -brand-short-name(case: "gen") } jako výchozího prohlížeče
+       *[no-cases] Dokončete nastavení aplikace { -brand-short-name } jako výchozího prohlížeče
+    }
+# Quoted text are keywords to look for in the Windows Settings app.
+default-browser-guidance-notification-body-instruction-win10 =
+    { -brand-short-name.case-status ->
+        [with-cases]
+            Krok 1: Přejděte do Nastavení > Výchozí aplikace
+            Krok 2: Přejděte dolů na „Webový prohlížeč“
+            Krok 3: Vyberte { -brand-short-name(case: "acc") }
+       *[no-cases]
+            Krok 1: Přejděte do Nastavení > Výchozí aplikace
+            Krok 2: Přejděte dolů na „Webový prohlížeč“
+            Krok 3: Vyberte aplikaci { -brand-short-name }
+    }
+# Quoted text are keywords to look for in the Windows Settings app.
+default-browser-guidance-notification-body-instruction-win11 =
+    { -brand-short-name.case-status ->
+        [with-cases]
+            Krok 1: Přejděte do Nastavení > Výchozí aplikace
+            Krok 2: Vyberte { -brand-short-name(case: "acc") } a klepněte na „Nastavit jako výchozí“
+       *[no-cases]
+            Krok 1: Přejděte do Nastavení > Výchozí aplikace
+            Krok 2: Vyberte aplikaci { -brand-short-name } a klepněte na „Nastavit jako výchozí“
+    }
+default-browser-guidance-notification-info-page = Zobrazit
+default-browser-guidance-notification-dismiss = Hotovo

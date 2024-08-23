@@ -120,7 +120,6 @@ about-processes-frame-name-many = Részkeretek ({ $number }): { $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Ismeretlen szereplő
-about-processes-utility-actor-audio-decoder = Hangdekóder
 about-processes-utility-actor-audio-decoder-generic = Általános hangdekóder
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media hangdekóder
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework hangdekóder
@@ -128,6 +127,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windowsos segédprogramok
+about-processes-utility-actor-windows-file-dialog = Windowsos fájlválasztó párbeszédablak
 
 ## Displaying CPU (percentage and total)
 ## Variables:

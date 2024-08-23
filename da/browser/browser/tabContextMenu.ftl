@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Bogmærk faneblade…
     .accesskey = B
-bookmark-tab =
-    .label = Bogmærk faneblad
-    .accesskey = B
 tab-context-bookmark-tab =
     .label = Bogmærk faneblad…
     .accesskey = B
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Luk flere faneblade
     .accesskey = a
+tab-context-close-duplicate-tabs =
+    .label = Luk kopierede faneblade
+    .accesskey = o
 tab-context-share-url =
     .label = Del
     .accesskey = D
@@ -106,7 +106,6 @@ tab-context-move-tabs =
            *[other] Flyt faneblade
         }
     .accesskey = y
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -62,7 +55,7 @@ webrtc-camera-system-menu =
 webrtc-microphone-system-menu =
     .label = マイクを共有しています。クリックすると共有を制御します。
 webrtc-screen-system-menu =
-    .label = ウィンドウまたは画面をを共有しています。クリックすると共有を制御します。
+    .label = ウィンドウまたは画面を共有しています。クリックすると共有を制御します。
 
 ## Tooltips used by the legacy global sharing indicator
 
@@ -133,6 +126,20 @@ webrtc-allow-share-camera-and-audio-capture = { $origin } にカメラの使用�
 webrtc-allow-share-screen-and-microphone = { $origin } にマイクの使用とあなたの画面の表示を許可しますか？
 webrtc-allow-share-screen-and-audio-capture = { $origin } にこのタブの音声の再生と、あなたの画面の表示を許可しますか？
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = このローカルファイルにこのタブの音声の再生を許可しますか？
+webrtc-allow-share-camera-with-file = このローカルファイルにカメラの使用を許可しますか？
+webrtc-allow-share-microphone-with-file = このローカルファイルにマイクの使用を許可しますか？
+webrtc-allow-share-screen-with-file = このローカルファイルにあなたの画面の表示を許可しますか？
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = このローカルファイルに他のスピーカーの使用を許可しますか？
+webrtc-allow-share-camera-and-microphone-with-file = このローカルファイルにカメラとマイクの使用を許可しますか？
+webrtc-allow-share-camera-and-audio-capture-with-file = このローカルファイルにカメラの使用と、このタブの音声の再生を許可しますか？
+webrtc-allow-share-screen-and-microphone-with-file = このローカルファイルにマイクの使用とあなたの画面の表示を許可しますか？
+webrtc-allow-share-screen-and-audio-capture-with-file = このローカルファイルにこのタブの音声の再生と、あなたの画面の表示を許可しますか？
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
@@ -183,6 +190,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = 今後も同様に処理する
+webrtc-remember-allow-checkbox-camera = すべてのカメラを記憶する
+webrtc-remember-allow-checkbox-microphone = すべてのマイクを記憶する
+webrtc-remember-allow-checkbox-camera-and-microphone = すべてのカメラとマイクを記憶する
 webrtc-mute-notifications-checkbox = 共有中はウェブサイトからの通知を無効にする
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } はあなたの画面への永続的なアクセスを許可できません。
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } は共有を明示的に許可されない限り、あなたのタブの音声への永続的なアクセスを許可できません。

@@ -19,12 +19,12 @@ neterror-advanced-button = 고급…
 neterror-copy-to-clipboard-button = 클립보드에 텍스트 복사
 neterror-learn-more-link = 더 알아보기…
 neterror-open-portal-login-page-button = 네트워크 로그인 페이지 열기
-neterror-override-exception-button = 위험을 감수하고 계속 진행
+neterror-override-exception-button = 위험을 감수하고 계속
 neterror-pref-reset-button = 기본 설정으로 복원
 neterror-return-to-previous-page-button = 뒤로 가기
 neterror-return-to-previous-page-recommended-button = 뒤로 가기 (권장)
 neterror-try-again-button = 다시 시도
-neterror-add-exception-button = 이 사이트는 항상 계속 진행
+neterror-add-exception-button = 이 사이트는 항상 계속
 neterror-settings-button = DNS 설정 변경
 neterror-view-certificate-link = 인증서 보기
 neterror-trr-continue-this-time = 이번만 계속
@@ -56,14 +56,14 @@ neterror-dns-not-found-hint-firewall = { -brand-short-name }에 웹 액세스 �
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = { -brand-short-name }는 신뢰할 수 있는 DNS 확인자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
-neterror-dns-not-found-trr-third-party-warning = 안전하지 않은 DNS 확인자를 사용하여 계속할 수 있습니다. 그러나 제3자가 사용자가 방문하는 웹사이트를 볼 수 있습니다.
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name }는 보안 DNS 공급자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
 neterror-dns-not-found-trr-third-party-warning2 = 기본 DNS 확인자로 계속 사용할 수 있습니다. 그러나 제3자는 사용자가 방문하는 웹 사이트를 볼 수 있습니다.
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name }가 { $trrDomain }에 연결할 수 없습니다.
 neterror-dns-not-found-trr-only-timeout = { $trrDomain }에 대한 연결이 예상보다 오래 걸렸습니다.
 neterror-dns-not-found-trr-offline = 인터넷에 연결되어 있지 않습니다.
-neterror-dns-not-found-trr-unknown-host = { $trrDomain } 사이트가 이 웹사이트의 주소를 찾지 못했습니다.
 neterror-dns-not-found-trr-unknown-host2 = { $trrDomain }이(가) 이 웹 사이트를 찾지 못했습니다.
 neterror-dns-not-found-trr-server-problem = { $trrDomain }에 문제가 있습니다.
+neterror-dns-not-found-bad-trr-url = 잘못된 URL.
 neterror-dns-not-found-trr-unknown-problem = 예기치 않은 문제.
 
 ## Native fallback specific messages
@@ -71,6 +71,7 @@ neterror-dns-not-found-trr-unknown-problem = 예기치 않은 문제.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name }는 신뢰할 수 있는 DNS 확인자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
+neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name }는 보안 DNS 공급자를 통해 이 사이트 주소에 대한 요청을 보호할 수 없습니다. 이유:
 neterror-dns-not-found-native-fallback-heuristic = 네트워크에서 DNS over HTTP (HTTPS를 통한 DNS)가 비활성화되었습니다.
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name }가 { $trrDomain }에 연결할 수 없습니다.
 

@@ -17,7 +17,7 @@ account-manage-devices = 기기 관리…
 ##   $email (String): = Email address of user's Firefox Account.
 
 account-reconnect = { $email } 다시 연결
-account-verify = { $email } 검증
+account-verify = { $email } 확인
 
 ## Displayed in the Send Tab/Page/Link to Device context menu when right clicking a tab, a page or a link.
 
@@ -37,14 +37,17 @@ account-send-tab-to-device-connectdevice = 다른 기기 연결…
 ## Displayed in the Send Tabs context menu when right clicking a tab, a page or a link
 ## and the Sync account is unverified. Redirects to the Sync preferences page.
 
-account-send-tab-to-device-verify-status = 계정 검증되지 않음
-account-send-tab-to-device-verify = 계정 검증…
+account-send-tab-to-device-verify-status = 계정 확인되지 않음
+account-send-tab-to-device-verify = 계정 확인…
 
 ## These strings are used in a notification shown when a new device joins the Firefox account.
 
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = 계정
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = 이 컴퓨터는 이제 { $deviceName }와 연결되었습니다.
@@ -81,3 +84,11 @@ account-multiple-tabs-arriving-from-single-device = { $deviceName }에서 탭 { 
 account-multiple-tabs-arriving-from-multiple-devices = 연결된 기기에서 탭 { $tabCount }개 도착
 # This version is used when we don't know any device names.
 account-multiple-tabs-arriving-from-unknown-device = 탭 { $tabCount }개 도착
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = 최근에 닫은 탭 보기
+account-tabs-closed-remotely = { -brand-short-name } 탭 { $closedCount }개 닫힘

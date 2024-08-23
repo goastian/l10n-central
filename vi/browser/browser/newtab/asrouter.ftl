@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = bởi { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Đề xuất
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Đề xuất
     .tooltiptext = Tiện ích được đề xuất
     .a11y-announcement = Tiện ích được đề xuất có sẵn
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Đề xuất
     .tooltiptext = Tính năng được đề xuất
     .a11y-announcement = Tính năng được đề xuất có sẵn
@@ -59,6 +61,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Đồng bộ dấu trang của bạn ở mọi nơi.
 cfr-doorhanger-bookmark-fxa-body = Đã tìm thấy tuyệt vời! Bây giờ hãy đồng bộ các dấu trang này với thiết bị di động của bạn. Bắt đầu với một { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body-2 = Tìm thấy một trang web tuyệt vời! Tiếp theo, đừng để dấu trang này ra khỏi thiết bị di động của bạn. Đăng ký tài khoản để bắt đầu.
 cfr-doorhanger-bookmark-fxa-link-text = Đồng bộ hóa dấu trang ngay bây giờ...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Nút đóng
@@ -103,28 +106,12 @@ cfr-doorhanger-doh-primary-button-2 = Okey
 cfr-doorhanger-doh-secondary-button = Vô hiệu hóa
     .accesskey = D
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Quyền riêng tư của bạn được đặt lên hàng đầu. { -brand-short-name } hiện cô lập hoặc các trang web với nhau vào sandbox, điều này khiến tin tặc khó lấy cắp mật khẩu, số thẻ tín dụng và các thông tin nhạy cảm khác.
-cfr-doorhanger-fission-header = Cách ly trang web
-cfr-doorhanger-fission-primary-button = OK, đã hiểu
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = Tìm hiểu thêm
-    .accesskey = T
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Các video trên trang web này có thể phát không đúng trên phiên bản { -brand-short-name } này. Để được hỗ trợ đầy đủ về video, hãy cập nhật { -brand-short-name } ngay bây giờ.
 cfr-doorhanger-video-support-header = Cập nhật { -brand-short-name } để phát video
 cfr-doorhanger-video-support-primary-button = Cập nhật bây giờ
     .accesskey = U
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = Tìm hiểu thêm
-    .title = Mở rộng để tìm hiểu thêm về tính năng này
-spotlight-learn-more-expanded = Tìm hiểu thêm
-    .title = Đóng
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -139,20 +126,6 @@ spotlight-public-wifi-vpn-primary-button = Giữ riêng tư với { -mozilla-vpn
     .accesskey = S
 spotlight-public-wifi-vpn-link = Không phải bây giờ
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Thử trải nghiệm quyền riêng tư mạnh mẽ nhất
-    của chúng tôi từ trước đến nay
-spotlight-total-cookie-protection-body = Trình chống cookie chung ngăn những trình theo dõi sử dụng cookie để theo dõi bạn trên web.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } xây dựng một hàng rào xung quanh cookie, giới hạn chúng ở trang web bạn đang truy cập để trình theo dõi không thể sử dụng chúng để theo dõi bạn. Với quyền truy cập sớm, bạn sẽ giúp tối ưu hóa tính năng này để chúng tôi có thể tiếp tục xây dựng một trang web tốt hơn cho mọi người.
-spotlight-total-cookie-protection-primary-button = Bật Trình chống cookie chung
-spotlight-total-cookie-protection-secondary-button = Không phải bây giờ
 
 ## Emotive Continuous Onboarding
 
@@ -229,6 +202,9 @@ cfr-cbh-confirm-button = Từ chối biểu ngữ cookie
     .accesskey = R
 cfr-cbh-dismiss-button = Không phải bây giờ
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } vừa từ chối một biểu ngữ cookie cho bạn
+cookie-banner-blocker-onboarding-body = Ít phiền nhiễu hơn, ít cookie theo dõi bạn hơn trên trang web này.
+cookie-banner-blocker-onboarding-learn-more = Tìm hiểu thêm
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -258,7 +234,48 @@ fxa-sync-cfr-secondary = Nhắc tôi sau
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = Sử dụng thiết bị cũ hơn?
-device-migration-fxa-spotlight-body = Sao lưu dữ liệu của bạn để đảm bảo bạn không bị mất thông tin quan trọng như dấu trang và mật khẩu — đặc biệt nếu bạn chuyển sang một thiết bị mới.
-device-migration-fxa-spotlight-primary-button = Cách sao lưu dữ liệu của tôi
-device-migration-fxa-spotlight-link = Nhắc tôi sau
+device-migration-fxa-spotlight-heavy-user-header = Đừng quên sao lưu dữ liệu của bạn
+device-migration-fxa-spotlight-heavy-user-body = Đảm bảo thông tin quan trọng — như dấu trang và mật khẩu — được cập nhật và bảo vệ trên tất cả các thiết bị của bạn.
+device-migration-fxa-spotlight-heavy-user-primary-button = Bắt đầu
+device-migration-fxa-spotlight-older-device-header = Yên tâm và tin tưởng, từ { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = Tài khoản giúp thông tin quan trọng của bạn được cập nhật và bảo vệ trên mọi thiết bị bạn kết nối.
+device-migration-fxa-spotlight-older-device-primary-button = Tạo tài khoản
+device-migration-fxa-spotlight-getting-new-device-header-2 = Thiết bị mới trong tương lai của bạn?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Hãy làm theo một số bước đơn giản để mang theo dấu trang, lịch sử và mật khẩu khi bạn bắt đầu sử dụng thiết bị mới.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Làm thế nào để sao lưu dữ liệu của tôi
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>Đặt { -brand-short-name } làm trình đọc PDF mặc định của bạn?</strong> Sử dụng { -brand-short-name } để đọc và chỉnh sửa các tệp PDF được lưu vào máy tính của bạn.
+pdf-default-notification-set-default-button =
+    .label = Đặt làm mặc định
+pdf-default-notification-decline-button =
+    .label = Không phải bây giờ
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>Mở { -brand-short-name } mỗi khi bạn khởi động lại máy tính?</strong> Bây giờ bạn có thể thiết lập { -brand-short-name } để tự động mở khi bạn khởi động lại thiết bị của mình.
+launch-on-login-learnmore = Tìm hiểu thêm
+launch-on-login-infobar-confirm-button = Có, mở { -brand-short-name }
+    .accesskey = Y
+launch-on-login-infobar-reject-button = Không phải bây giờ
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>Mở { -brand-short-name } mỗi khi bạn khởi động lại máy tính?</strong> Để quản lý tùy chọn khởi động của bạn, hãy tìm kiếm “khởi động” trong cài đặt.
+launch-on-login-infobar-final-reject-button = Không phải bây giờ
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Loại bỏ những trình theo dõi phiền toái phía sau bạn
+tail-fox-spotlight-subtitle = Nói lời tạm biệt với những trình theo dõi quảng cáo phiền toái và tận hưởng trải nghiệm Internet nhanh chóng, an toàn hơn.
+tail-fox-spotlight-primary-button = Mở liên kết của tôi bằng { -brand-short-name }
+tail-fox-spotlight-secondary-button = Không phải bây giờ

@@ -16,6 +16,10 @@ support-addons-type = Tipo
 support-addons-enabled = Attivo
 support-addons-version = Versione
 support-addons-id = ID
+legacy-user-stylesheets-title = Fogli di stile utente (legacy)
+legacy-user-stylesheets-enabled = Attivo
+legacy-user-stylesheets-stylesheet-types = Fogli di stile
+legacy-user-stylesheets-no-stylesheets-found = Nessun foglio di stile trovato
 security-software-title = Software di sicurezza
 security-software-type = Tipo
 security-software-name = Nome
@@ -57,13 +61,14 @@ app-basics-launcher-process-status = Processo launcher
 app-basics-multi-process-support = Finestre multiprocesso
 app-basics-fission-support = Finestre Fission
 app-basics-remote-processes-count = Processi remoti
-app-basics-enterprise-policies = Criteri a livello aziendale
+app-basics-enterprise-policies = Criteri aziendali
 app-basics-location-service-key-google = Chiave servizio Google Location
 app-basics-safebrowsing-key-google = Chiave servizio Google Safebrowsing
 app-basics-key-mozilla = Chiave per georilevazione di Mozilla
 app-basics-safe-mode = Modalità provvisoria
 app-basics-memory-size = Dimensione memoria (RAM)
 app-basics-disk-available = Spazio su disco disponibile
+app-basics-pointing-devices = Dispositivi di puntamento
 
 # Variables:
 #   $value (number) - Amount of data being stored
@@ -169,6 +174,23 @@ media-codec-support-hw-decoding = Decodifica hardware
 media-codec-support-codec-name = Nome codec
 media-codec-support-supported = Supportata
 media-codec-support-unsupported = Non supportata
+media-codec-support-error = Informazioni di supporto sui codec non disponibili. Riprova dopo aver riprodotto un file multimediale.
+media-codec-support-lack-of-extension = Installa estensione
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informazioni sui moduli di decifrazione contenuti
+media-key-system-name = Nome Key System
+media-video-robustness = Solidità video
+media-audio-robustness = Solidità audio
+media-cdm-capabilities = Funzionalità
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Avvio in chiaro
+media-hdcp-22-compatible = Compatibilità HDCP 2.2
 
 ##
 
@@ -255,6 +277,7 @@ try-newer-driver = Bloccato a causa della versione dei driver della scheda grafi
 clear-type-parameters = Parametri ClearType
 
 compositing = Composizione
+support-font-determination = Informazioni di debug per visibilità caratteri
 hardware-h264 = Decodifica hardware H264
 main-thread-no-omtc = thread principale, no OMTC
 yes = Sì
@@ -322,6 +345,12 @@ has-seccomp-bpf = Seccomp-BPF (filtro chiamate di sistema)
 has-seccomp-tsync = Sincronizzazione thread seccomp
 has-user-namespaces = Namespace dell’utente
 has-privileged-user-namespaces = Namespace dell’utente per processi privilegiati
+
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable =
+    { $status } — Questa funzione non è consentita sul tuo sistema. Questo può limitare alcune funzioni di sicurezza di { -brand-short-name }.
+
 can-sandbox-content = Sandbox processo per i contenuti
 can-sandbox-media = Sandbox plugin multimediali
 content-sandbox-level = Livello sandbox content process
@@ -396,6 +425,20 @@ support-printing-modified-settings = Impostazioni di stampa modificate
 support-printing-prefs-name = Nome
 support-printing-prefs-value = Valore
 
+## Remote Settings sections
+
+support-remote-settings-title = Impostazioni remote
+support-remote-settings-status = Stato
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Non funzionante
+support-remote-settings-last-check = Ultimo controllo
+support-remote-settings-local-timestamp = Timestamp locale
+support-remote-settings-sync-history = Cronologia
+support-remote-settings-sync-history-status = Stato
+support-remote-settings-sync-history-datetime = Data
+support-remote-settings-sync-history-infos = Informazioni
+
 ## Normandy sections
 
 support-remote-experiments-title = Esperimenti remoti
@@ -406,3 +449,23 @@ support-remote-experiments-see-about-studies = Consultare <a data-l10n-name="sup
 support-remote-features-title = Funzioni remote
 support-remote-features-name = Nome
 support-remote-features-status = Stato
+
+## Pointing devices
+
+pointing-device-mouse = Mouse
+pointing-device-touchscreen = Schermo touch
+pointing-device-pen-digitizer = Penna digitale
+pointing-device-none = Nessuno dispositivo di puntamento
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Analisi contenuti (DLP)
+content-analysis-active = Attiva
+content-analysis-connected-to-agent = Connesso all’agente
+content-analysis-agent-path = Percorso agente
+content-analysis-agent-failed-signature-verification = Verifica firma dell’agente non riuscita
+content-analysis-request-count = Numero richieste
+

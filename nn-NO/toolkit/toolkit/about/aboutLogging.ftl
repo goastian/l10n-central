@@ -5,7 +5,7 @@
 # This is the title of the page
 about-logging-title = Om logging
 about-logging-page-title = Logghandsamar
-about-logging-current-log-file = Gjeldande loggfil
+about-logging-current-log-file = Gjeldande loggfil:
 about-logging-new-log-file = Ny loggfil:
 about-logging-currently-enabled-log-modules = Aktiverte loggmodular for augneblinken:
 about-logging-log-tutorial = Sjå <a data-l10n-name="logging">HTTP-loggning</a> for instruksjonar om korleis du brukar dette verktyet.
@@ -26,13 +26,31 @@ about-logging-logging-to-profiler = Loggar til { -profiler-brand-name }
 about-logging-no-log-modules = Ingen
 about-logging-no-log-file = Ingen
 about-logging-logging-preset-selector-text = Førehandsval for logging:
+about-logging-with-profiler-stacks-checkbox = Aktiver stack-sporing for loggmeldingar
 
 ## Logging presets
 
 about-logging-preset-networking-label = Nettverk
 about-logging-preset-networking-description = Loggmodular for å diagnostisere nettverksproblem
+about-logging-preset-networking-cookie-label = Infokapslar
+about-logging-preset-networking-cookie-description = Loggmodular for å diagnostisere infokapselproblem
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Loggmodular for å diagnostisere WebSocket-problem
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Loggmodular for å diagnostisere HTTP/3- og QUIC-problem
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3-opplastingsfart
+about-logging-preset-networking-http3-upload-speed-description = Loggmodular for å diagnostisere problem med HTTP/3-opplastingsfart
 about-logging-preset-media-playback-label = Medieavspeling
 about-logging-preset-media-playback-description = Loggmodular for å diagnostisere problem med medieavspeling (ikkje for problem med videokonferansar)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Loggmodular for å diagnostisere WebRTC-oppkall
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Loggmodular for å diagnostisere WebGPU-problem
+about-logging-preset-gfx-label = Grafikk
+about-logging-preset-gfx-description = Logg modular for å diagnostisere grafikkproblem
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Loggmodular for å diagnostisere problem som er spesifikke for Microsoft Windows
 about-logging-preset-custom-label = Tilpassa
 about-logging-preset-custom-description = Loggmodular valde manuelt
 # Error handling

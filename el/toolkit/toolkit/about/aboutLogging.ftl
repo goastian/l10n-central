@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Ενεργοποίηση ιχνώ�
 
 about-logging-preset-networking-label = Δικτύωση
 about-logging-preset-networking-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων δικτύωσης
+about-logging-preset-networking-cookie-label = Cookie
+about-logging-preset-networking-cookie-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων cookie
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων WebSocket
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων HTTP/3 και QUIC
+about-logging-preset-networking-http3-upload-speed-label = Ταχύτητα μεταφόρτωσης HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων ταχύτητας μεταφόρτωσης HTTP/3
 about-logging-preset-media-playback-label = Αναπαραγωγή πολυμέσων
 about-logging-preset-media-playback-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων αναπαραγωγής πολυμέσων (όχι ζητημάτων τηλεδιασκέψεων)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Μονάδες καταγραφής για τη διάγνωση κλήσεων WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων WebGPU
+about-logging-preset-gfx-label = Γραφικά
+about-logging-preset-gfx-description = Μονάδες καταγραφής για τη διάγνωση προβλημάτων γραφικών
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Μονάδες καταγραφής για τη διάγνωση ζητημάτων ειδικά για τα Microsoft Windows
 about-logging-preset-custom-label = Προσαρμοσμένο
 about-logging-preset-custom-description = Οι μονάδες καταγραφής επιλέχθηκαν χειροκίνητα
 # Error handling

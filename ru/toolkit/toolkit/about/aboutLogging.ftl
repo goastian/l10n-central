@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Включить трассиро�
 
 about-logging-preset-networking-label = Сеть
 about-logging-preset-networking-description = Модули журнала для диагностики проблем с сетью
+about-logging-preset-networking-cookie-label = Куки
+about-logging-preset-networking-cookie-description = Модули журнала для диагностики проблем с куками
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Модули журнала для диагностики проблем WebSocket
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Модули журнала для диагностики проблем с HTTP/3 и QUIC
+about-logging-preset-networking-http3-upload-speed-label = Скорость загрузки HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Модули журнала для диагностики проблем со скоростью загрузки HTTP/3
 about-logging-preset-media-playback-label = Воспроизведение медиа
 about-logging-preset-media-playback-description = Модули журнала для диагностики проблем с воспроизведением мультимедиа (не проблем с видеоконференциями)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Модули журнала для диагностики вызовов WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Модули журнала для диагностики проблем WebGPU
+about-logging-preset-gfx-label = Графика
+about-logging-preset-gfx-description = Модули журналирования для диагностики проблем с графикой
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Модули журналов для диагностики проблем, характерных для Microsoft Windows
 about-logging-preset-custom-label = Персональная
 about-logging-preset-custom-description = Вручную выбранные модули журнала
 # Error handling

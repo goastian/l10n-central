@@ -19,9 +19,6 @@ certmgr-remembered = These certificates are used to identify you to web sites
 certmgr-people = You have certificates on file that identify these people
 certmgr-server = These entries identify server certificate error exceptions
 certmgr-ca = You have certificates on file that identify these certificate authorities
-certmgr-edit-ca-cert =
-    .title = Edit CA certificate trust settings
-    .style = width: 48em;
 certmgr-edit-ca-cert2 =
     .title = Edit CA certificate trust settings
     .style = min-width: 48em;
@@ -30,9 +27,6 @@ certmgr-edit-cert-trust-ssl =
     .label = This certificate can identify web sites.
 certmgr-edit-cert-trust-email =
     .label = This certificate can identify mail users.
-certmgr-delete-cert =
-    .title = Delete Certificate
-    .style = width: 48em; height: 24em;
 certmgr-delete-cert2 =
     .title = Delete Certificate
     .style = min-width: 48em; min-height: 24em;
@@ -42,8 +36,6 @@ certmgr-cert-name =
     .label = Certificate Name
 certmgr-cert-server =
     .label = Server
-certmgr-override-lifetime =
-    .label = Lifetime
 certmgr-token-name =
     .label = Security Device
 certmgr-begins-label =
@@ -118,13 +110,13 @@ choose-p12-restore-file-dialog = Certificate File to Import
 
 file-browse-certificate-spec = Certificate Files
 import-ca-certs-prompt = Select File containing CA certificate(s) to import
-import-email-cert-prompt = Select File containing somebody's Email certificate to import
+import-email-cert-prompt = Select File containing somebody’s Email certificate to import
 
 ## For editing certificates trust
 
 # Variables:
 #   $certName: the name of certificate
-edit-trust-ca = The certificate "{ $certName }" represents a Certificate Authority.
+edit-trust-ca = The certificate “{ $certName }” represents a Certificate Authority.
 
 ## For Deleting Certificates
 
@@ -138,12 +130,12 @@ delete-ssl-override-confirm = Are you sure you want to delete this server except
 delete-ssl-override-impact = If you delete a server exception, you restore the usual security checks for that server and require it uses a valid certificate.
 delete-ca-cert-title =
     .title = Delete or Distrust CA Certificates
-delete-ca-cert-confirm = You have asked to delete these CA certificates. For built-in certificates all trust will be removed, which has the same effect. Are you sure you want to delete or distrust?
+delete-ca-cert-confirm = You have requested to delete these CA certificates. For built-in certificates all trust will be removed, which has the same effect. Are you sure you want to delete or distrust?
 delete-ca-cert-impact = If you delete or distrust a certificate authority (CA) certificate, this application will no longer trust any certificates issued by that CA.
 delete-email-cert-title =
     .title = Delete Email Certificates
-delete-email-cert-confirm = Are you sure you want to delete these people's email certificates?
-delete-email-cert-impact = If you delete a person's email certificate, you will no longer be able to send encrypted email to that person.
+delete-email-cert-confirm = Are you sure you want to delete these people’s email certificates?
+delete-email-cert-impact = If you delete a person’s email certificate, you will no longer be able to send encrypted email to that person.
 # Used for semi-uniquely representing a cert.
 #
 # Variables:
@@ -171,7 +163,7 @@ add-exception-domain-mismatch-long = The certificate belongs to a different site
 add-exception-expired-short = Outdated Information
 add-exception-expired-long = The certificate is not currently valid. It may have been stolen or lost, and could be used by someone to impersonate this site.
 add-exception-unverified-or-bad-signature-short = Unknown Identity
-add-exception-unverified-or-bad-signature-long = The certificate is not trusted because it hasn't been verified as issued by a trusted authority using a secure signature.
+add-exception-unverified-or-bad-signature-long = The certificate is not trusted because it hasn’t been verified as issued by a trusted authority using a secure signature.
 add-exception-valid-short = Valid Certificate
 add-exception-valid-long = This site provides valid, verified identification.  There is no need to add an exception.
 add-exception-checking-short = Checking Information

@@ -2,10 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-blocklist-window =
-    .title = Λίστες αποκλεισμού
-    .style = width: 55em
-
 blocklist-window2 =
     .title = Λίστες αποκλεισμού
     .style = min-width: 55em
@@ -34,4 +30,4 @@ blocklist-item-list-template = { $listName } { $description }
 blocklist-item-moz-std-listName = Λίστα αποκλεισμού επιπέδου 1 (Προτείνεται).
 blocklist-item-moz-std-description = Επιτρέπει ορισμένους ιχνηλάτες για να λειτουργούν περισσότεροι ιστότοποι.
 blocklist-item-moz-full-listName = Λίστα αποκλεισμού επιπέδου 2
-blocklist-item-moz-full-description = Αποκλείει όλους τους ανιχνευμένους ιχνηλάτες. Ορισμένοι ιστότοποι ή περιεχόμενο ενδέχεται να μην φορτώνονται κανονικά.
+blocklist-item-moz-full-description = Αποκλείει όλους τους ανιχνευμένους ιχνηλάτες. Ορισμένοι ιστότοποι ή περιεχόμενο ενδέχεται να μη φορτώνονται κανονικά.

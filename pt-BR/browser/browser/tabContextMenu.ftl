@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Adicionar abas aos favoritos…
     .accesskey = f
-bookmark-tab =
-    .label = Adicionar aba aos favoritos
-    .accesskey = A
 tab-context-bookmark-tab =
     .label = Adicionar aba aos favoritos…
     .accesskey = b
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Fechar várias abas
     .accesskey = v
+tab-context-close-duplicate-tabs =
+    .label = Fechar abas duplicadas
+    .accesskey = u
 tab-context-share-url =
     .label = Compartilhar
     .accesskey = h
@@ -104,7 +104,6 @@ tab-context-move-tabs =
            *[other] Mover abas
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

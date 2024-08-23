@@ -12,17 +12,31 @@ about-webrtc-document-title = WebRTC Internals
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = save about:webrtc as
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Show Closed PeerConnections
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Hide Closed PeerConnections
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = AEC Logging
 about-webrtc-aec-logging-off-state-label = Start AEC Logging
 about-webrtc-aec-logging-on-state-label = Stop AEC Logging
 about-webrtc-aec-logging-on-state-msg = AEC logging active (speak with the caller for a few minutes and then stop the capture)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Auto Refresh
+about-webrtc-aec-logging-toggled-on-state-msg = AEC logging active (speak with the caller for a few minutes and then stop the capture)
+about-webrtc-aec-logging-unavailable-sandbox = The environment variable MOZ_DISABLE_CONTENT_SANDBOX=1 is required to export AEC logs. Only set this variable if you understand the possible risks.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Captured log files can be found in: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Auto Refresh
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = Auto Refresh By Default
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Refresh
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
@@ -84,7 +98,11 @@ about-webrtc-save-page-label = Save Page
 about-webrtc-debug-mode-msg-label = Debug Mode
 about-webrtc-debug-mode-off-state-label = Start Debug Mode
 about-webrtc-debug-mode-on-state-label = Stop Debug Mode
+about-webrtc-enable-logging-label = Enable WebRTC Log Preset
 about-webrtc-stats-heading = Session Statistics
+about-webrtc-peerconnections-section-heading = RTCPeerConnection Statistics
+about-webrtc-peerconnections-section-show-msg = Show RTCPeerConnection Statistics
+about-webrtc-peerconnections-section-hide-msg = Hide RTCPeerConnection Statistics
 about-webrtc-stats-clear = Clear History
 about-webrtc-log-heading = Connection Log
 about-webrtc-log-clear = Clear Log
@@ -92,6 +110,10 @@ about-webrtc-log-show-msg = show log
     .title = click to expand this section
 about-webrtc-log-hide-msg = hide log
     .title = click to collapse this section
+about-webrtc-log-section-show-msg = Show Log
+    .title = Click to expand this section
+about-webrtc-log-section-hide-msg = Hide Log
+    .title = Click to collapse this section
 about-webrtc-copy-report-button = Copy Report
 about-webrtc-copy-report-history-button = Copy Report History
 
@@ -105,6 +127,14 @@ about-webrtc-copy-report-history-button = Copy Report History
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (closed) { $now }
 
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Send / Receive: { $codecs }
+about-webrtc-short-send-direction = Send: { $codecs }
+about-webrtc-short-receive-direction = Receive: { $codecs }
+
 ##
 
 about-webrtc-local-candidate = Local Candidate
@@ -116,11 +146,19 @@ about-webrtc-raw-cand-show-msg = show raw candidates
     .title = click to expand this section
 about-webrtc-raw-cand-hide-msg = hide raw candidates
     .title = click to collapse this section
+about-webrtc-raw-cand-section-show-msg = Show Raw Candidates
+    .title = Click to expand this section
+about-webrtc-raw-cand-section-hide-msg = Hide Raw Candidates
+    .title = Click to collapse this section
 about-webrtc-priority = Priority
 about-webrtc-fold-show-msg = show details
     .title = click to expand this section
 about-webrtc-fold-hide-msg = hide details
     .title = click to collapse this section
+about-webrtc-fold-default-show-msg = Show Details
+    .title = Click to expand this section
+about-webrtc-fold-default-hide-msg = Hide Details
+    .title = Click to collapse this section
 about-webrtc-dropped-frames-label = Dropped frames:
 about-webrtc-discarded-packets-label = Discarded packets:
 about-webrtc-decoder-label = Decoder
@@ -159,6 +197,17 @@ about-webrtc-configuration-element-provided = Provided
 about-webrtc-configuration-element-not-provided = Not Provided
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = User Set WebRTC Preferences
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = User Modified WebRTC Configuration
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Show User Modified Configuration
+about-webrtc-user-modified-configuration-hide-msg = Hide User Modified Configuration
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Estimated Bandwidth
 # The ID of the MediaStreamTrack
@@ -189,9 +238,11 @@ about-webrtc-save-page-msg = page saved to: { $path }
 about-webrtc-debug-mode-off-state-msg = trace log can be found at: { $path }
 about-webrtc-debug-mode-on-state-msg = debug mode active, trace log at: { $path }
 about-webrtc-aec-logging-off-state-msg = captured log files can be found in: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Page saved to: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.

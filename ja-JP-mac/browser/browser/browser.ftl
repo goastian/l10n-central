@@ -279,6 +279,9 @@ quickactions-cmd-plugins = plugins
 # Opens the print dialog
 quickactions-print2 = ページをプリント
 quickactions-cmd-print = print
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = ページを PDF 形式で保存
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = プライベートウインドウを開く
 quickactions-cmd-private = private browsing
@@ -344,9 +347,10 @@ identity-connection-secure = 安全な接続
 identity-connection-failure = 接続失敗
 identity-connection-internal = このページは { -brand-short-name } の安全な内部ページです。
 identity-connection-file = これはあなたのコンピューターに保存されているページです。
+identity-connection-associated = このページは別のページから読み込まれています。
 identity-extension-page = このページは拡張機能から読み込まれています。
 identity-active-blocked = このページの一部が安全でないため { -brand-short-name } がブロックしました。
-identity-custom-root = Mozilla が承認していない発行者の証明書で検証された接続です。
+identity-custom-root = Ablaze が承認していない発行者の証明書で検証された接続です。
 identity-passive-loaded = このページの一部 (画像など) は安全ではありません。
 identity-active-loaded = このページでの保護は無効に設定されています。
 identity-weak-encryption = このページは脆弱な暗号を使用しています。
@@ -374,7 +378,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = このサイトとの接続は安全ではありません。
 identity-connection-verified = このサイトとの接続は安全です。
 identity-ev-owner-label = 証明書の発行先:
-identity-description-custom-root2 = Mozilla はこの証明書の発行者を承認していません。OS またはシステム管理者により追加された可能性があります。
+identity-description-custom-root2 = Ablaze はこの証明書の発行者を承認していません。OS またはシステム管理者により追加された可能性があります。
 identity-remove-cert-exception =
     .label = 例外から削除
     .accesskey = R
@@ -404,7 +408,7 @@ browser-window-minimize-button =
 browser-window-maximize-button =
     .tooltiptext = 最大化
 browser-window-restore-down-button =
-    .tooltiptext = 元に戻す
+    .tooltiptext = 元に戻す (縮小)
 browser-window-close-button =
     .tooltiptext = ウインドウを閉じる
 
@@ -480,6 +484,9 @@ enable-devtools-popup-description2 = F12 ショートカットを使うには、
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = 閉じる
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -556,8 +563,13 @@ urlbar-result-action-search-w-engine = { $engine } で検索
 urlbar-result-action-sponsored = 広告
 urlbar-result-action-switch-tab = タブを表示
 urlbar-result-action-visit = 開く
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = タブを表示 · <span>{ $container }</span>
 # Allows the user to visit a URL that was previously copied to the clipboard.
-urlbar-result-action-visit-from-your-clipboard = クリップボードから開く
+urlbar-result-action-visit-from-clipboard = クリップボードから開く
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -586,6 +598,12 @@ urlbar-result-action-copy-to-clipboard = コピー
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = { $engine } で検索
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -610,6 +628,11 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = クイックアクション
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = 最近の検索
 
 ## Reader View toolbar buttons
 
@@ -639,7 +662,7 @@ picture-in-picture-enable-toggle =
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is full screen, e.g. "mozilla.org"
-fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> は現在全画面表示モードです。
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> は現在フルスクリーンモードです。
 fullscreen-warning-no-domain = このページは現在フルスクリーンモードです。
 fullscreen-exit-button = フルスクリーンモードを終了 (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
@@ -875,6 +898,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>前回のタブを開きますか？</strong> { -brand-short-name } アプリケーションメニュー<img data-l10n-name="icon"/>の履歴から前回のセッションを復元できます。
 restore-session-startup-suggestion-button = 方法を確認
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = 所属組織がこのコンピューター上のローカルファイルへのアクセスをブロックしています
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = ユーザー体験の向上のため、{ -brand-short-name } は自動的にいくつかのデータを { -vendor-short-name } に送信します。
@@ -883,6 +910,15 @@ data-reporting-notification-button =
     .accesskey = C
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = プライベートブラウジング
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = { $agentName } によるデータ損失防止 (DLP)。詳細情報はクリックしてください。
+content-analysis-panel-title = データ保護
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = データ損失から保護するため所属組織が { $agentName } を利用しています。<a data-l10n-name="info">詳細情報</a>
 
 ## Unified extensions (toolbar) button
 
@@ -907,6 +943,24 @@ unified-extensions-button-quarantined =
     .tooltiptext =
         拡張機能
         一部の拡張機能は許可されていません
+
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = プライベートセッションを終了
+    .tooltiptext = プライベートセッションを終了します
+reset-pbm-panel-heading = プライベートセッションを終了しますか？
+reset-pbm-panel-description = すべてのプライベートタブを閉じ、履歴、Cookie、その他すべてのサイトデータを削除します。
+reset-pbm-panel-always-ask-checkbox =
+    .label = 常に確認する
+    .accesskey = A
+reset-pbm-panel-cancel-button =
+    .label = キャンセル
+    .accesskey = C
+reset-pbm-panel-confirm-button =
+    .label = セッションデータを削除
+    .accesskey = D
+reset-pbm-panel-complete = プライベートセッションのデータを削除しました
 
 ## Autorefresh blocker
 

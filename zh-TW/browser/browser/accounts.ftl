@@ -45,6 +45,9 @@ account-send-tab-to-device-verify = 確認您的帳號…
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = 帳號
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = 此電腦已連結至 { $deviceName }。
@@ -81,3 +84,11 @@ account-multiple-tabs-arriving-from-single-device = 收到來自 { $deviceName }
 account-multiple-tabs-arriving-from-multiple-devices = 收到來自您已連結的裝置的 { $tabCount } 個分頁
 # This version is used when we don't know any device names.
 account-multiple-tabs-arriving-from-unknown-device = 收到 { $tabCount } 個分頁
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = 檢視最近關閉的分頁
+account-tabs-closed-remotely = 已關閉 { $closedCount } 個 { -brand-short-name }

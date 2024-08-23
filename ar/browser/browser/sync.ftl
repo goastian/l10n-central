@@ -7,6 +7,7 @@ sync-disconnect-dialog-title2 = هل أقطع الاتصال؟
 sync-disconnect-dialog-body = سيتوقف { -brand-product-name } عن مزامنة حسابك، لكن لن يحذف أيًا من بيانات تصفحك على هذا الجهاز.
 sync-disconnect-dialog-button = اقطع الاتصال
 fxa-signout-dialog2-title = أتريد الخروج من { -fxaccount-brand-name }؟
+fxa-signout-dialog-title2 = تسجيل الخروج من حسابك؟
 fxa-signout-dialog-body = ستبقى البيانات المُزامنة في حسابك.
 fxa-signout-dialog2-button = اخرج
 fxa-signout-dialog2-checkbox = احذف البيانات من هذا الجهاز (كلمات السر والتأريخ والعلامات وغيرها).

@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = A(z) { $targetURI } megnyitása új lapon
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = A(z) { $tabTitle } bezárása
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = A(z) { $tabTitle } eltüntetése
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = Mentés a { -pocket-brand-name }be
     .accesskey = M
 fxviewtabrow-copy-link = Hivatkozás másolása
     .accesskey = H
+fxviewtabrow-close-tab = Lap bezárása
+    .accesskey = b
+fxviewtabrow-move-tab = Lap áthelyezése
+    .accesskey = h
+fxviewtabrow-move-tab-start = Áthelyezés az elejére
+    .accesskey = e
+fxviewtabrow-move-tab-end = Áthelyezés a végére
+    .accesskey = v
+fxviewtabrow-move-tab-window = Áthelyezés új ablakba
+    .accesskey = a
+fxviewtabrow-send-tab = Lap küldése eszközre
+    .accesskey = k
+fxviewtabrow-pin-tab = Lap rögzítése
+    .accesskey = r
+fxviewtabrow-unpin-tab = Lap feloldása
+    .accesskey = o
+fxviewtabrow-mute-tab = Lap némítása
+    .accesskey = n
+fxviewtabrow-unmute-tab = Lap visszahangosítása
+    .accesskey = h
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = A(z) { $tabTitle } beállításai
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = A(z) { $tabTitle } némítása
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = A(z) { $tabTitle } némításának feloldása
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Lap némítása
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Lap visszahangosítása

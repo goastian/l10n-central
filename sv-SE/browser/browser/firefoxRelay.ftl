@@ -14,16 +14,10 @@ firefox-relay-get-reusable-masks-failed = { -relay-brand-name } kunde inte hitta
 ##
 
 firefox-relay-must-login-to-fxa = Du måste logga in på { -fxaccount-brand-name } för att kunna använda { -relay-brand-name }.
+firefox-relay-must-login-to-account = Logga in på ditt konto för att använda dina { -relay-brand-name } e-postalias.
 firefox-relay-get-unlimited-masks =
     .label = Hantera alias
     .accesskey = H
-firefox-relay-opt-in-title = Skydda din e-postadress
-firefox-relay-opt-in-subtitle = Lägg till { -relay-brand-name }
-firefox-relay-generate-mask-title = Skydda din e-postadress
-firefox-relay-generate-mask-subtitle = Generera { -relay-brand-short-name }-alias
-firefox-relay-opt-in-confirmation-enable =
-    .label = Fortsätt
-    .accesskey = F
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = Skydda din e-postadress:
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which

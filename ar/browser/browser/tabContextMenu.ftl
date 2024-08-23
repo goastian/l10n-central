@@ -4,7 +4,7 @@
 
 tab-context-new-tab =
     .label = لسان جديد
-    .accesskey = س
+    .accesskey = ج
 reload-tab =
     .label = أعِد تحميل اللسان
     .accesskey = ح
@@ -54,9 +54,9 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = علّم الألسنة…
     .accesskey = ن
-bookmark-tab =
-    .label = علّم اللسان
-    .accesskey = ع
+tab-context-bookmark-tab =
+    .label = علم اللسان…
+    .accesskey = م
 tab-context-open-in-new-container-tab =
     .label = افتح في لسانٍ حاوٍ جديد
     .accesskey = س
@@ -91,6 +91,18 @@ tab-context-reopen-closed-tabs =
            *[other] أعِد فتح الألسنة المغلقة
         }
     .accesskey = ع
+tab-context-close-n-tabs =
+    .label =
+        { $tabCount ->
+            [1] أغلِق اللسان
+            [zero] أغلِق اللسان
+            [one] أغلِق اللسان
+            [two] أغلِق اللسانين
+            [few] أغلِق { $tabCount } ألسنة
+            [many] أغلِق { $tabCount } لسانًا
+           *[other] أغلِق { $tabCount } لسان
+        }
+    .accesskey = ا
 tab-context-move-tabs =
     .label =
         { $tabCount ->
@@ -103,7 +115,6 @@ tab-context-move-tabs =
            *[other] انقل الألسنة
         }
     .accesskey = ن
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

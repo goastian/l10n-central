@@ -29,10 +29,6 @@ third-party-tag-background = Background
     .title =
         This module did not block the application because it was loaded
         in the background.
-third-party-unsigned-icon =
-    .title = This module is not signed
-third-party-warning-icon =
-    .title = { -brand-short-name } crashed in code from this module
 third-party-icon-unsigned =
     .title = This module is not signed
     .alt = This module is not signed
@@ -63,14 +59,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         Currently marked as blocked, although the blocklist is disabled for this run
         of { -brand-short-name }. Click to unblock it.
+third-party-button-to-block-module = Block this module
+    .title = Block this module
+    .aria-label = Block this module
+third-party-button-to-unblock-module = Unblock this module
+    .title = Currently blocked. Click to unblock it.
+    .aria-label = Currently blocked. Click to unblock it.
+third-party-button-to-unblock-module-disabled = Unblock this module (blocklist currently disabled)
+    .title =
+        Currently marked as blocked, although the blocklist is disabled for this run
+        of { -brand-short-name }. Click to unblock it.
+    .aria-label =
+        Currently marked as blocked, although the blocklist is disabled for this run
+        of { -brand-short-name }. Click to unblock it.
 third-party-button-expand =
     .title = Show detailed information
 third-party-button-collapse =
     .title = Collapse detailed information
-third-party-requires-restart = { -brand-short-name } must restart to change which third-party modules are blocked.
 third-party-blocking-requires-restart = To block a third-party module, { -brand-short-name } must restart.
 third-party-should-restart-title = Restart { -brand-short-name }
-third-party-should-restart-ok = Restart { -brand-short-name } now
 third-party-restart-now = Restart now
 third-party-restart-later = Restart later
 third-party-blocked-by-builtin =

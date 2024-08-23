@@ -4,14 +4,17 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Inloggningar & lösenord
-login-filter =
-    .placeholder = Sök inloggningar
-create-login-button = Skapa ny inloggning
 about-logins-login-filter =
     .placeholder = Sök inloggningar
     .key = F
 create-new-login-button =
     .title = Skapa ny inloggning
+about-logins-page-title-name = Lösenord
+about-logins-login-filter2 =
+    .placeholder = Sök lösenord
+    .key = F
+create-login-button =
+    .title = Lägg till lösenord
 fxaccounts-sign-in-text = Få dina lösenord på dina andra enheter
 fxaccounts-sign-in-sync-button = Logga in för att synkronisera
 fxaccounts-avatar-button =
@@ -26,6 +29,8 @@ about-logins-menu-menuitem-import-from-another-browser = Importera från en anna
 about-logins-menu-menuitem-import-from-a-file = Importera från en fil…
 about-logins-menu-menuitem-export-logins = Exportera inloggningar...
 about-logins-menu-menuitem-remove-all-logins = Ta bort alla inloggningar…
+about-logins-menu-menuitem-export-logins2 = Exportera lösenord…
+about-logins-menu-menuitem-remove-all-logins2 = Ta bort alla lösenord…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Inställningar
@@ -52,6 +57,21 @@ login-list-filtered-count =
         [one] { $count } av { $total } inloggning
        *[other] { $count } av { $total } inloggningar
     }
+# Variables
+#   $count (number) - Number of logins
+login-list-count2 =
+    { $count ->
+        [one] { $count } lösenord
+       *[other] { $count } lösenord
+    }
+# Variables
+#   $count (number) - Number of filtered logins
+#   $total (number) - Total number of logins
+login-list-filtered-count2 =
+    { $total ->
+        [one] { $count } av { $total } lösenord
+       *[other] { $count } av { $total } lösenord
+    }
 login-list-sort-label-text = Sortera efter:
 login-list-name-option = Namn (A-Ö)
 login-list-name-reverse-option = Namn (Ö-A)
@@ -61,11 +81,14 @@ about-logins-login-list-alerts-option = Varningar
 login-list-last-changed-option = Senast ändrad
 login-list-last-used-option = Senast använd
 login-list-intro-title = Inga inloggningar hittades
+login-list-intro-title2 = Inga lösenord sparade
 login-list-intro-description = När du sparar ett lösenord i { -brand-product-name }, kommer det att visas här.
 about-logins-login-list-empty-search-title = Inga inloggningar hittades
+about-logins-login-list-empty-search-title2 = Inga lösenord hittades
 about-logins-login-list-empty-search-description = Det finns inga resultat som matchar din sökning.
 login-list-item-title-new-login = Ny inloggning
 login-list-item-subtitle-new-login = Ange dina inloggningsuppgifter
+login-list-item-title-new-login2 = Lägg till lösenord
 login-list-item-subtitle-missing-username = (inget användarnamn)
 about-logins-list-item-breach-icon =
     .title = Webbplats med dataintrång
@@ -84,18 +107,29 @@ about-logins-login-intro-heading-logged-out2 = Letar du efter dina sparade inlog
 about-logins-login-intro-heading-logged-in = Inga synkroniserade inloggningar hittades.
 login-intro-description = Om du sparat dina inloggningar i { -brand-product-name } på en annan enhet, så här får du dem hit:
 login-intro-instructions-fxa = Skapa eller logga in på ditt { -fxaccount-brand-name } på enheten där dina inloggningar sparas.
+about-logins-login-intro-heading-message = Spara dina lösenord på en säker plats
+login-intro-description2 = Alla lösenord du sparar i { -brand-product-name } är krypterade. Dessutom är vi uppmärksamma på intrång och varnar dig om du drabbas. <a data-l10n-name="breach-alert-link">Läs mer</a>
+login-intro-instructions-fxa2 = Skapa eller logga in på ditt konto på enheten där dina inloggningar sparas.
 login-intro-instructions-fxa-settings = Gå till Inställningar > Synkronisering > Aktivera synkronisering… Markera kryssrutan Inloggningar och lösenord.
 login-intro-instructions-fxa-passwords-help = Besök <a data-l10n-name="passwords-help-link">lösenordssupport</a> för mer hjälp.
 about-logins-intro-browser-only-import = Om dina inloggningar sparas i en annan webbläsare kan du <a data-l10n-name="import-link">importera dem till { -brand-product-name }</a>
 about-logins-intro-import2 = Om dina inloggningar sparas utanför { -brand-product-name } kan du  <a data-l10n-name="import-browser-link">importera dem från en annan webbläsare</a> eller <a data-l10n-name="import-file-link">från en fil</a>
+about-logins-intro-import3 = Välj plustecknet ovan för att lägga till ett lösenord nu. Du kan också <a data-l10n-name="import-browser-link">importera lösenord från en annan webbläsare</a> eller <a data-l10n-name="import-file-link">från en fil</a> a>.
 
 ## Login
 
 login-item-new-login-title = Skapa ny inloggning
+# Header for adding a password
+about-logins-login-item-new-login-title = Lägg till lösenord
 login-item-edit-button = Redigera
 about-logins-login-item-remove-button = Ta bort
 login-item-origin-label = Webbadress
 login-item-tooltip-message = Se till att detta matchar den exakta adressen till webbplatsen där du loggar in.
+about-logins-origin-tooltip2 = Ange hela adressen och se till att den stämmer exakt med var du loggar in.
+# Variables
+#   $webTitle (String) - Website title of the password being changed.
+about-logins-edit-password-tooltip = Se till att du sparar ditt nuvarande lösenord för den här webbplatsen. Att ändra lösenordet här ändrar det inte med { $webTitle }.
+about-logins-add-password-tooltip = Se till att du sparar ditt nuvarande lösenord för den här webbplatsen.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Användarnamn
@@ -109,11 +143,9 @@ login-item-password-reveal-checkbox =
 login-item-copy-password-button-text = Kopiera
 login-item-copied-password-button-text = Kopierad!
 login-item-save-changes-button = Spara ändringar
+about-logins-login-item-save-changes-button = Spara
 login-item-save-new-button = Spara
 login-item-cancel-button = Avbryt
-login-item-time-changed = Senast ändrad: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
-login-item-time-created = Skapad: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
-login-item-time-used = Senast använt: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## The date is displayed in a timeline showing the password evolution.
 ## A label is displayed under the date to describe the type of change.
@@ -139,6 +171,18 @@ about-logins-edit-login-os-auth-dialog-message-win = Om du vill redigera din inl
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = redigera den sparade inloggningen
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
+# This message can be seen when attempting to disable osauth in about:preferences.
+about-logins-os-auth-dialog-message =
+    { PLATFORM() ->
+        [macos] ändra inställningarna för lösenord
+       *[other] { -brand-short-name } försöker ändra inställningarna för lösenord. Använd din enhetsinloggning för att tillåta detta.
+    }
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message2-win = För att redigera ditt lösenord, ange dina Windows-inloggningsuppgifter. Detta hjälper till att skydda dina konton.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message2-macosx = redigera det sparade lösenordet
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Ange dina inloggningsuppgifter för Windows för att se ditt lösenord. Detta skyddar dina kontons säkerhet.
 # This message can be seen when attempting to reveal a password in about:logins
@@ -154,6 +198,11 @@ about-logins-export-password-os-auth-dialog-message-win = För att exportera din
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = exportera sparade inloggningar och lösenord
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message2-win = För att exportera dina lösenord anger du dina Windows-inloggningsuppgifter. Detta hjälper till att skydda dina konton.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message2-macosx = exportera sparade lösenord
 
 ## Primary Password notification
 
@@ -169,6 +218,10 @@ confirmation-dialog-dismiss-button =
     .title = Avbryt
 about-logins-confirm-remove-dialog-title = Ta bort denna inloggning?
 confirm-delete-dialog-message = Den här åtgärden kan inte ångras.
+# Title for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-title = Ta bort lösenord?
+# Message for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-message = Du kan inte ångra den här åtgärden.
 about-logins-confirm-remove-dialog-confirm-button = Ta bort
 
 ## Variables
@@ -208,12 +261,47 @@ about-logins-confirm-remove-all-sync-dialog-message =
         [one] Detta tar bort inloggningen som du har sparat i { -brand-short-name } på alla enheter som synkroniserats med ditt { -fxaccount-brand-name }. Detta tar också bort varningar om intrång som visas här. Du kan inte ångra den här åtgärden.
        *[other] Detta tar bort alla inloggningar som du har sparat i { -brand-short-name } på alla enheter som synkroniserats med ditt { -fxaccount-brand-name }. Detta tar också bort varningar om intrång som visas här. Du kan inte ångra den här åtgärden.
     }
+# Checkbox for modal to confirm the removal of saved passwords
+about-logins-confirm-remove-all-dialog-checkbox-label2 =
+    { $count ->
+        [1] Ja, ta bort lösenordet
+       *[other] Ja, ta bort lösenorden
+    }
+# Title for modal to confirm the removal of all saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-title2 =
+    { $count ->
+        [one] Ta bort { $count } lösenord?
+       *[other] Ta bort alla { $count } lösenord?
+    }
+# Message for modal to confirm the removal of saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-message2 =
+    { $count ->
+        [1] Detta kommer att ta bort lösenordet som sparas till { -brand-short-name } och eventuella intrångsvarningar. Du kan inte ångra den här åtgärden.
+       *[other] Detta kommer att ta bort lösenorden som sparas till { -brand-short-name } och eventuella intrångsvarningar. Du kan inte ångra den här åtgärden.
+    }
+# Title for modal to confirm the removal of all saved passwords when user IS SYNCED
+about-logins-confirm-remove-all-sync-dialog-title2 =
+    { $count ->
+        [one] Vill du ta bort { $count } lösenord från alla enheter?
+       *[other] Vill du ta bort alla { $count } lösenord från alla enheter?
+    }
+# Message for modal to confirm the removal of saved passwords when user IS synced.
+about-logins-confirm-remove-all-sync-dialog-message3 =
+    { $count ->
+        [1] Detta kommer att ta bort lösenorden som sparas till { -brand-short-name } på alla dina synkroniserade enheter. Detta kommer också att ta bort eventuella intrångsvarningar som visas här. Du kan inte ångra den här åtgärden.
+       *[other] Detta kommer att ta bort alla lösenord som sparas till { -brand-short-name } på alla dina synkroniserade enheter. Detta kommer också att ta bort eventuella intrångsvarningar som visas här. Du kan inte ångra den här åtgärden.
+    }
 
 ##
 
 about-logins-confirm-export-dialog-title = Exportera inloggningar och lösenord
 about-logins-confirm-export-dialog-message = Dina lösenord sparas som läsbar text (t.ex. BadP@ssw0rd) så att alla som kan öppna den exporterade filen kan se dem.
 about-logins-confirm-export-dialog-confirm-button = Exportera…
+about-logins-confirm-export-dialog-title2 = En anteckning om att exportera lösenord
+about-logins-confirm-export-dialog-message2 =
+    När du exporterar sparas dina lösenord i en fil med läsbar text.
+    När du är klar med att använda filen rekommenderar vi att du tar bort den så att andra som använder den här enheten inte kan se dina lösenord.
+about-logins-confirm-export-dialog-confirm-button2 = Fortsätt med export
 about-logins-alert-import-title = Import slutförd
 about-logins-alert-import-message = Visa detaljerad importöversikt
 confirm-discard-changes-dialog-title = Ignorera dessa förändringar?
@@ -228,7 +316,6 @@ about-logins-breach-alert-date = Detta intrång inträffade den { DATETIME($date
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Gå till { $hostname }
-about-logins-breach-alert-learn-more-link = Läs mer
 
 ## Vulnerable Password notification
 
@@ -256,6 +343,11 @@ about-logins-export-file-picker-title = Exportera inloggningsfil
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = logins.csv
+# Title of the file picker dialog
+about-logins-export-file-picker-title2 = Exportera lösenord från { -brand-short-name }
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename2 = losenord.csv
 about-logins-export-file-picker-export-button = Exportera
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -269,6 +361,8 @@ about-logins-export-file-picker-csv-filter-title =
 
 # Title of the file picker dialog
 about-logins-import-file-picker-title = Importera inloggningsfil
+# Title of the file picker dialog
+about-logins-import-file-picker-title2 = Importera lösenord till { -brand-short-name }
 about-logins-import-file-picker-import-button = Importera
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -305,6 +399,21 @@ about-logins-import-dialog-items-no-change =
         [one] <span data-l10n-name="count">{ $count }</span><span>duplicerad inloggning hittades</span><span data-l10n-name="meta">(ej importerad)</span>
        *[other] <span data-l10n-name="count">{ $count }</span><span>duplicerad inloggningar hittades</span><span data-l10n-name="meta">(ej importerade)</span>
     }
+about-logins-import-dialog-items-added2 =
+    { $count ->
+        [one] <span>Nytt lösenord har lagts till:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Nya lösenord har lagts till:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified2 =
+    { $count ->
+        [one] <span>Befintlig post uppdaterad:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Befintliga poster uppdaterade:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change2 =
+    { $count ->
+        [one] <span>Duplicerad post hittad:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ej importerad)</span >
+       *[other] <span>Duplicerade poster hittades:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ej importerad)</span >
+    }
 about-logins-import-dialog-items-error =
     { $count ->
         [one] <span data-l10n-name="count">{ $count }</span><span>fel</span><span data-l10n-name="meta">(ej importerad)</span>
@@ -326,6 +435,7 @@ about-logins-import-dialog-error-try-import-again = Försök importera igen…
 about-logins-import-dialog-error-cancel = Avbryt
 about-logins-import-report-title = Importera sammanfattning
 about-logins-import-report-description = Inloggningar och lösenord importerade till { -brand-short-name }.
+about-logins-import-report-description2 = Lösenord importerade till { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -333,6 +443,9 @@ about-logins-import-report-row-index = Rad { $number }
 about-logins-import-report-row-description-no-change = Dubblett: Exakt matchning av befintlig inloggning
 about-logins-import-report-row-description-modified = Befintlig inloggning uppdaterad
 about-logins-import-report-row-description-added = Ny inloggning tillagd
+about-logins-import-report-row-description-no-change2 = Dubblett: Exakt matchning av befintlig post
+about-logins-import-report-row-description-modified2 = Befintlig post uppdaterad
+about-logins-import-report-row-description-added2 = Nytt lösenord har lagts till
 about-logins-import-report-row-description-error = Fel: Fält saknas
 
 ##
@@ -360,6 +473,21 @@ about-logins-import-report-no-change =
     { $count ->
         [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">dubbel inloggning</div> <div data-l10n-name="not-imported">(not imported)</div>
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">dubbla inloggningar</div> <div data-l10n-name="not-imported">(not imported)</div>
+    }
+about-logins-import-report-added2 =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Nytt lösenord har lagts till</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Nya lösenord har lagts till</div>
+    }
+about-logins-import-report-modified2 =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Befintlig post uppdaterad</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Befintliga poster uppdaterade</div>
+    }
+about-logins-import-report-no-change2 =
+    { $count ->
+        [one] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Duplicerad post</div> <div data-l10n-name="not-imported">(ej importerad)</div>
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Duplicerade poster</div> <div data-l10n-name="not-imported">(ej importerad)</div>
     }
 about-logins-import-report-error =
     { $count ->

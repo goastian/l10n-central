@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Bokmärk flikar…
     .accesskey = k
-bookmark-tab =
-    .label = Bokmärk flik
-    .accesskey = B
 tab-context-bookmark-tab =
     .label = Bokmärk flik…
     .accesskey = B
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Stäng flera flikar
     .accesskey = f
+tab-context-close-duplicate-tabs =
+    .label = Stäng dubbletter av flikar
+    .accesskey = d
 tab-context-share-url =
     .label = Dela
     .accesskey = D
@@ -104,7 +104,6 @@ tab-context-move-tabs =
            *[other] Flytta flikar
         }
     .accesskey = t
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

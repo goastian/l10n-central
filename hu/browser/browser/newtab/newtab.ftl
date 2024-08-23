@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Új lap
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Keresőszolgáltatás hozzáadása
 newtab-topsites-add-shortcut-header = Új gyorskereső
 newtab-topsites-edit-topsites-header = Népszerű oldal szerkesztése
 newtab-topsites-edit-shortcut-header = Gyorskereső szerkesztése
+newtab-topsites-add-shortcut-label = Indítóikon hozzáadása
 newtab-topsites-title-label = Cím
 newtab-topsites-title-input =
     .placeholder = Cím megadása
@@ -198,6 +199,7 @@ newtab-section-header-recent-activity = Legutóbbi tevékenység
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = A(z) { $provider } ajánlásával
+newtab-section-header-stories = Elgondolkodtató történetek
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -206,6 +208,8 @@ newtab-empty-section-highlights = Kezdjen el böngészni, és itt fognak megjele
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Már felzárkózott. Nézzen vissza később a legújabb { $provider } hírekért. Nem tud várni? Válasszon egy népszerű témát, hogy még több sztorit találjon a weben.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Már felzárkózott. Nézzen vissza később további történetekért. Nem tud várni? Válasszon egy népszerű témát, hogy még több sztorit találjon a weben.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -227,21 +231,17 @@ newtab-pocket-cta-button = { -pocket-brand-name } beszerzése
 newtab-pocket-cta-text = Mentse az Ön által kedvelt történeteket a { -pocket-brand-name }be, és töltse fel elméjét lebilincselő olvasnivalókkal.
 newtab-pocket-pocket-firefox-family = A { -pocket-brand-name } a { -brand-product-name } család része
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Mentés a { -pocket-brand-name }be
-newtab-pocket-saved-to-pocket = Mentve a { -pocket-brand-name }be
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = További történetek betöltése
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Mindet megnézte.
-newtab-pocket-last-card-desc = Nézzen vissza később újabbakért.
-newtab-pocket-last-card-image =
-    .alt = Mindet megnézte.
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Mentés
 newtab-pocket-saved = Mentve
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Több hasonló
+newtab-toast-dismiss-button =
+    .title = Eltüntetés
+    .aria-label = Eltüntetés
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -258,6 +258,9 @@ newtab-error-fallback-refresh-link = Az újrapróbálkozáshoz frissítse az old
 
 newtab-custom-shortcuts-title = Gyorskeresők
 newtab-custom-shortcuts-subtitle = Mentett vagy felkeresett webhelyek
+newtab-custom-shortcuts-toggle =
+    .label = Gyorskeresők
+    .description = Mentett vagy felkeresett webhelyek
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -268,9 +271,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Szponzorált gyorskeresők
 newtab-custom-pocket-title = A { -pocket-brand-name } által ajánlott
 newtab-custom-pocket-subtitle = Kivételes tartalmak a { -pocket-brand-name } válogatásában, amely a { -brand-product-name } család része
+newtab-custom-stories-toggle =
+    .label = Ajánlott történetek
+    .description = Kivételes tartalmak a { -brand-product-name } család válogatásában
 newtab-custom-pocket-sponsored = Szponzorált történetek
 newtab-custom-pocket-show-recent-saves = Legutóbbi mentések megjelenítése
 newtab-custom-recent-title = Legutóbbi tevékenység
 newtab-custom-recent-subtitle = Válogatás a legutóbbi webhelyekből és tartalmakból
+newtab-custom-recent-toggle =
+    .label = Legutóbbi tevékenység
+    .description = Válogatás a legutóbbi webhelyekből és tartalmakból
+newtab-custom-weather-toggle =
+    .label = Időjárás
+    .description = A mai előrejelzés egy pillantásra
 newtab-custom-close-button = Bezárás
 newtab-custom-settings = További beállítások kezelése
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Háttérképek
+newtab-wallpaper-reset = Visszaállítás az alapértelmezésre
+newtab-wallpaper-light-red-panda = Vörös panda
+newtab-wallpaper-light-mountain = Fehér hegy
+newtab-wallpaper-light-sky = Ég, lila és rózsaszín felhőkkel
+newtab-wallpaper-light-color = Kék, rózsaszín és sárga alakzatok
+newtab-wallpaper-light-landscape = Kék ködös hegyi táj
+newtab-wallpaper-light-beach = Strand pálmafával
+newtab-wallpaper-dark-aurora = Sarki fény
+newtab-wallpaper-dark-color = Vörös és kék alakzatok
+newtab-wallpaper-dark-panda = Vörös panda elrejtve az erdőben
+newtab-wallpaper-dark-sky = Városi táj éjszakai égbolttal
+newtab-wallpaper-dark-mountain = Hegyvidéki táj
+newtab-wallpaper-dark-city = Lila városi táj
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Egyszínű színek
+newtab-wallpaper-blue = Kék
+newtab-wallpaper-light-blue = Világoskék
+newtab-wallpaper-light-purple = Világoslila
+newtab-wallpaper-light-green = Világoszöld
+newtab-wallpaper-green = Zöld
+newtab-wallpaper-beige = Bézs
+newtab-wallpaper-yellow = Sárga
+newtab-wallpaper-orange = Narancssárga
+newtab-wallpaper-pink = Rózsaszín
+newtab-wallpaper-light-pink = Világos rózsaszín
+newtab-wallpaper-red = Vörös
+newtab-wallpaper-dark-blue = Sötétkék
+newtab-wallpaper-dark-purple = Sötétlila
+newtab-wallpaper-dark-green = Sötétzöld
+newtab-wallpaper-brown = Barna
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Absztrakt
+newtab-wallpaper-abstract-green = Zöld alakzatok
+newtab-wallpaper-abstract-blue = Kék alakzatok
+newtab-wallpaper-abstract-purple = Lila alakzatok
+newtab-wallpaper-abstract-orange = Narancssárga alakzatok
+newtab-wallpaper-gradient-orange = Narancssárga és rózsaszín átmenet
+newtab-wallpaper-abstract-blue-purple = Kék és lila alakzatok
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Fényképek
+newtab-wallpaper-beach-at-sunrise = Strand napkeltekor
+newtab-wallpaper-beach-at-sunset = Strand naplementekor
+newtab-wallpaper-storm-sky = Viharos égbolt
+newtab-wallpaper-sky-with-pink-clouds = Égbolt rózsaszín felhőkkel
+newtab-wallpaper-red-panda-yawns-in-a-tree = Vörös panda ásít egy fán
+newtab-wallpaper-white-mountains = Fehér hegyek
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Fénykép: <a data-l10n-name="name-link">{ $author_string }</a> itt: <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Próbáljon ki egy kis színt
+newtab-wallpaper-feature-highlight-content = Adjon friss külsőt az Új lap oldalnak háttérképekkel.
+newtab-wallpaper-feature-highlight-button = Megértettem!
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Eltüntetés
+    .aria-label = Felugró ablak bezárása
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Előrejelzés megtekintése itt: { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Szponzorálva
+newtab-weather-menu-change-location = Hely módosítása
+newtab-weather-change-location-search-input = Keresési hely
+newtab-weather-menu-weather-display = Időjárás-kijelző
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Egyszerű
+newtab-weather-menu-change-weather-display-simple = Átváltás egyszerű nézetre
+newtab-weather-menu-weather-display-option-detailed = Részletek
+newtab-weather-menu-change-weather-display-detailed = Átváltás részletes nézetre
+newtab-weather-menu-temperature-units = Hőmérséklet-egységek
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenheit
+newtab-weather-menu-temperature-option-celsius = Celsius
+newtab-weather-menu-change-temperature-units-fahrenheit = Váltás Fahrenheitre
+newtab-weather-menu-change-temperature-units-celsius = Váltás Celsiusra
+newtab-weather-menu-hide-weather = Időjárás elrejtése az Új lapon
+newtab-weather-menu-learn-more = További tudnivalók
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Az időjárásadatok most nem érhetők el

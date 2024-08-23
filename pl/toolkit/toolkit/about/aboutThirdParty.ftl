@@ -27,10 +27,6 @@ third-party-tag-shellex = Rozszerzenie powłoki
     .title = Ten typ modułu jest wczytywany podczas otwierania systemowego okna otwierania plików.
 third-party-tag-background = W tle
     .title = Ten moduł nie blokował aplikacji, ponieważ został wczytany w tle.
-third-party-unsigned-icon =
-    .title = Ten moduł nie jest podpisany
-third-party-warning-icon =
-    .title = { -brand-short-name } uległ awarii w kodzie z tego modułu
 third-party-icon-unsigned =
     .title = Ten moduł nie jest podpisany
     .alt = Ten moduł nie jest podpisany
@@ -61,14 +57,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         Obecnie oznaczony jako zablokowany, chociaż lista blokowania jest wyłączona
         na czas tego uruchomienia { -brand-short-name(case: "gen") }. Kliknij, aby go odblokować.
+third-party-button-to-block-module = Zablokuj ten moduł
+    .title = Zablokuj ten moduł
+    .aria-label = Zablokuj ten moduł
+third-party-button-to-unblock-module = Odblokuj ten moduł
+    .title = Obecnie zablokowany. Kliknij, aby go odblokować.
+    .aria-label = Obecnie zablokowany. Kliknij, aby go odblokować.
+third-party-button-to-unblock-module-disabled = Odblokuj ten moduł (lista blokowania jest obecnie wyłączona)
+    .title =
+        Obecnie oznaczony jako zablokowany, chociaż lista blokowania jest wyłączona
+        na czas tego uruchomienia { -brand-short-name(case: "gen") }. Kliknij, aby go odblokować.
+    .aria-label =
+        Obecnie oznaczony jako zablokowany, chociaż lista blokowania jest wyłączona
+        na czas tego uruchomienia { -brand-short-name(case: "gen") }. Kliknij, aby go odblokować.
 third-party-button-expand =
     .title = Wyświetl szczegółowe informacje
 third-party-button-collapse =
     .title = Zwiń szczegółowe informacje
-third-party-requires-restart = { -brand-short-name } musi zostać ponownie uruchomiony, aby zmienić blokowane moduły zewnętrzne.
 third-party-blocking-requires-restart = { -brand-short-name } musi zostać ponownie uruchomiony, aby zablokować moduł zewnętrzny.
 third-party-should-restart-title = Ponowne uruchomienie { -brand-short-name(case: "gen") }
-third-party-should-restart-ok = Uruchom { -brand-short-name(case: "acc") } ponownie
 third-party-restart-now = Uruchom ponownie
 third-party-restart-later = Uruchom ponownie później
 third-party-blocked-by-builtin =

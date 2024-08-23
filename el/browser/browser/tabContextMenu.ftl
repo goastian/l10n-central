@@ -34,7 +34,7 @@ close-tabs-to-the-end =
     .label = Κλείσιμο καρτελών στα δεξιά
     .accesskey = ξ
 close-other-tabs =
-    .label = Κλείσιμο των άλλων καρτελών
+    .label = Κλείσιμο άλλων καρτελών
     .accesskey = ω
 reload-tabs =
     .label = Ανανέωση καρτελών
@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Αποθήκευση καρτελών…
     .accesskey = Α
-bookmark-tab =
-    .label = Προσθήκη σελιδοδείκτη
-    .accesskey = Π
 tab-context-bookmark-tab =
     .label = Προσθήκη σελιδοδείκτη…
     .accesskey = Π
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Κλείσιμο πολλαπλών καρτελών
     .accesskey = π
+tab-context-close-duplicate-tabs =
+    .label = Κλείσιμο διπλών καρτελών
+    .accesskey = λ
 tab-context-share-url =
     .label = Κοινή χρήση
     .accesskey = χ
@@ -103,7 +103,6 @@ tab-context-move-tabs =
            *[other] Μετακίνηση καρτελών
         }
     .accesskey = τ
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

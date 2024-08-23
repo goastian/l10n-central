@@ -12,17 +12,31 @@ about-webrtc-document-title = WebRTC 내부 정보
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = about:webrtc를 다음으로 저장
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = 닫힌 PeerConnections 표시
+about-webrtc-closed-peerconnection-disclosure-hide-msg = 닫힌 PeerConnections 숨기기
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = AEC 로깅
 about-webrtc-aec-logging-off-state-label = AEC 로깅 시작
 about-webrtc-aec-logging-on-state-label = AEC 로깅 중지
 about-webrtc-aec-logging-on-state-msg = AEC 로깅 활성화(몇 분 간 대화를 하고 캡처를 중지하세요)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = 자동 새로 고침
+about-webrtc-aec-logging-toggled-on-state-msg = AEC 로깅 활성화(몇 분 간 대화를 하고 캡처를 중지하세요)
+about-webrtc-aec-logging-unavailable-sandbox = AEC 로그를 내보내려면 환경 변수 MOZ_DISABLE_CONTENT_SANDBOX=1 이 필요합니다. 가능한 위험을 이해하는 경우에만 이 변수를 설정하세요.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = 캡처된 로그파일 위치: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = 자동 새로 고침
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = 기본으로 자동 새로 고침
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = 새로 고침
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
@@ -84,13 +98,21 @@ about-webrtc-save-page-label = 페이지 저장
 about-webrtc-debug-mode-msg-label = 디버그 모드
 about-webrtc-debug-mode-off-state-label = 디버그 모드 시작
 about-webrtc-debug-mode-on-state-label = 디버그 모드 중지
+about-webrtc-enable-logging-label = WebRTC 로그 프리셋 활성화
 about-webrtc-stats-heading = 세션 통계
+about-webrtc-peerconnections-section-heading = RTCPeerConnection 통계
+about-webrtc-peerconnections-section-show-msg = RTCPeerConnection 통계 표시
+about-webrtc-peerconnections-section-hide-msg = RTCPeerConnection 통계 숨기기
 about-webrtc-stats-clear = 기록 지우기
 about-webrtc-log-heading = 연결 로그
 about-webrtc-log-clear = 로그 지우기
 about-webrtc-log-show-msg = 로그 표시
     .title = 이 섹션을 펼치려면 누르세요
 about-webrtc-log-hide-msg = 로그 숨기기
+    .title = 이 섹션을 접으려면 누르세요
+about-webrtc-log-section-show-msg = 로그 표시
+    .title = 이 섹션을 펼치려면 누르세요
+about-webrtc-log-section-hide-msg = 로그 숨기기
     .title = 이 섹션을 접으려면 누르세요
 about-webrtc-copy-report-button = 보고서 복사
 about-webrtc-copy-report-history-button = 보고서 기록 복사
@@ -105,6 +127,14 @@ about-webrtc-copy-report-history-button = 보고서 기록 복사
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (닫기) { $now }
 
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = 보내기 / 받기: { $codecs }
+about-webrtc-short-send-direction = 보내기: { $codecs }
+about-webrtc-short-receive-direction = 받기: { $codecs }
+
 ##
 
 about-webrtc-local-candidate = 로컬 후보자
@@ -116,10 +146,18 @@ about-webrtc-raw-cand-show-msg = 원시 후보자 표시
     .title = 이 섹션을 펼치려면 누르세요
 about-webrtc-raw-cand-hide-msg = 원시 후보자 숨기기
     .title = 이 섹션을 접으려면 누르세요
+about-webrtc-raw-cand-section-show-msg = 원시 후보자 표시
+    .title = 이 섹션을 펼치려면 누르세요
+about-webrtc-raw-cand-section-hide-msg = 원시 후보자 숨기기
+    .title = 이 섹션을 접으려면 누르세요
 about-webrtc-priority = 우선 순위
 about-webrtc-fold-show-msg = 상세 표시
     .title = 이 섹션을 펼치려면 누르세요
 about-webrtc-fold-hide-msg = 상세 숨기기
+    .title = 이 섹션을 접으려면 누르세요
+about-webrtc-fold-default-show-msg = 상세 표시
+    .title = 이 섹션을 펼치려면 누르세요
+about-webrtc-fold-default-hide-msg = 상세 숨기기
     .title = 이 섹션을 접으려면 누르세요
 about-webrtc-dropped-frames-label = 손실된 프레임:
 about-webrtc-discarded-packets-label = 버려진 패킷:
@@ -159,6 +197,17 @@ about-webrtc-configuration-element-provided = 제공됨
 about-webrtc-configuration-element-not-provided = 제공되지 않음
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = 사용자 WebRTC 설정
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = 사용자가 수정한 WebRTC 구성
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = 사용자가 수정한 구성 표시
+about-webrtc-user-modified-configuration-hide-msg = 사용자가 수정한 구성 숨기기
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = 예상 대역폭
 # The ID of the MediaStreamTrack
@@ -189,9 +238,11 @@ about-webrtc-save-page-msg = 페이지 저장됨: { $path }
 about-webrtc-debug-mode-off-state-msg = 추적로그 위치: { $path }
 about-webrtc-debug-mode-on-state-msg = 디버그 모드 활성화, 추적로그 위치: { $path }
 about-webrtc-aec-logging-off-state-msg = 캡처된 로그파일 위치: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = 페이지 저장됨: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.

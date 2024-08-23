@@ -28,7 +28,7 @@ about-private-browsing-hide-activity-1 = Αποκρύψτε τη δραστηρ�
 about-private-browsing-prominent-cta = Προστατέψτε το απόρρητό σας με το { -mozilla-vpn-brand-name }
 about-private-browsing-focus-promo-cta = Λήψη του { -focus-brand-name }
 about-private-browsing-focus-promo-header = { -focus-brand-name }: Ιδιωτική περιήγηση εν κινήσει
-about-private-browsing-focus-promo-text = Η εφαρμογή ιδιωτικής περιήγησής μας για κινητές συσκευές διαγράφει το ιστορικό και τα cookies σας κάθε φορά.
+about-private-browsing-focus-promo-text = Η εφαρμογή ιδιωτικής περιήγησής μας για κινητές συσκευές διαγράφει το ιστορικό και τα cookie σας κάθε φορά.
 
 ## The following strings will be used for experiments in Fx99 and Fx100
 
@@ -59,12 +59,22 @@ about-private-browsing-pin-promo-link-text =
         [macos] Διατήρηση στο Dock
        *[other] Καρφίτσωμα στη γραμμή εργασιών
     }
-about-private-browsing-pin-promo-title = Χωρίς αποθήκευση cookies ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μην σας παρακολουθεί κανείς.
+about-private-browsing-pin-promo-title = Χωρίς αποθήκευση cookie ή ιστορικού, απευθείας από την επιφάνεια εργασίας σας. Περιηγηθείτε σαν να μη σας παρακολουθεί κανείς.
 
 ## Strings used in a promotion message for cookie banner reduction
 
 # Simplified version of the headline if the original text doesn't work
 # in your language: `See fewer cookie requests`.
-about-private-browsing-cookie-banners-promo-header = Εξαφανιστείτε μηνύματα για cookies!
-about-private-browsing-cookie-banners-promo-button = Μείωση μηνυμάτων για cookies
-about-private-browsing-cookie-banners-promo-message = Επιτρέψτε στο { -brand-short-name } να απαντά αυτόματα σε αναδυόμενα μηνύματα για cookies, ώστε να κάνετε περιήγηση χωρίς περισπασμούς. Το { -brand-short-name } θα απορρίψει όλα τα αιτήματα εάν αυτό είναι δυνατό.
+about-private-browsing-cookie-banners-promo-header = Εξαφανιστείτε μηνύματα για cookie!
+about-private-browsing-cookie-banners-promo-button = Μείωση μηνυμάτων για cookie
+about-private-browsing-cookie-banners-promo-message = Επιτρέψτε στο { -brand-short-name } να απαντά αυτόματα σε αναδυόμενα μηνύματα για cookie, ώστε να κάνετε περιήγηση χωρίς περισπασμούς. Το { -brand-short-name } θα απορρίψει όλα τα αιτήματα εάν αυτό είναι δυνατό.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = Το { -brand-short-name } φροντίζει για εσάς τα μηνύματα για cookie
+about-private-browsing-cookie-banners-promo-body = Απορρίπτουμε πλέον αυτόματα πολλά μηνύματα για cookie, ώστε να σας παρακολουθούν λιγότερο και να περιηγείστε στο διαδίκτυο χωρίς περισπασμούς.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Περιηγηθείτε χωρίς να αφήνετε ίχνη σε αυτήν τη συσκευή
+about-private-browsing-felt-privacy-v1-info-body = Το { -brand-short-name } διαγράφει τα cookie, το ιστορικό και τα δεδομένα ιστοτόπων σας όταν κλείνετε όλα τα ιδιωτικά σας παράθυρα.
+about-private-browsing-felt-privacy-v1-info-link = Ποιος ενδέχεται να μπορεί να δει τη δραστηριότητά μου;

@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = 关于 Glean
-about-glean-description = Mozilla 在产品中使用 <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a> 收集数据。此页面向开发者和测试人员提供，用于<a data-l10n-name="fog-debug-doc-link">调试 Glean SDK 配置及记录状态</a>。
-about-glean-warning = 不当使用此接口可能会导致 { -brand-short-name } 崩溃。
-tag-pings-label = 使用此标签标记所有已发送的 Ping
-log-pings-label = 在发送前记录 Ping 有效载荷？
-send-pings-label = 发送有命名的 Ping
-controls-button-label = 提交设置
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -54,6 +44,8 @@ about-glean-manual-testing = 完整说明文档请见 <a data-l10n-name="fog-ins
 about-glean-no-ping-label = （不提交任何 Ping）
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = 在此栏设置好记的调试标签，方便之后快速找到您的 ping。
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = 设置一个容易记忆的调试标签<span>（20个字符以内，仅限字母数字和短横线）</span>以便您随后可以识别您的 ping。
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names = 请从下拉列表选择您测试仪器所在的位置。若位于<a data-l10n-name="custom-ping-link">自定义 ping</a>，则选择该项；否则默认的 <code>event</code> 指标是 <code>event</code>，而其他所有指标的默认值为 <code>metrics</code> ping。
@@ -66,6 +58,13 @@ about-glean-label-for-controls-submit = 按下此按钮会将所有 { -glean-bra
 about-glean-li-for-visit-gdpv = <a data-l10n-name="gdpv-tagged-pings-link">请访问 { glean-debug-ping-viewer-brand-name }页面查看带有您标签的 ping</a>。从按下按钮到收到 ping 应该不会超过几秒钟，有时可能需要几分钟。
 # Do not translate strings between <code> </code> tags.
 about-glean-adhoc-explanation = 如需进行 <i>ad hoc 临时测试</i>，也可在 <code>about:glean</code> 页面打开开发者控制台，并使用 <code>Glean.metricCategory.metricName.testGetValue()</code> 等 <code>testGetValue()</code> API 确定测试仪器的当前值。
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 = 如需进行 <i>ad hoc 临时测试</i>，也可在 <code>about:glean</code> 页面打开开发者控制台，并使用 <code>Glean.metricCategory.metricName.testGetValue()</code> 等 <code>testGetValue()</code> API 来获取名称为 <code>metric.category.metric_name</code> 的指标，以确定测试仪器的当前值。
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    请注意您正在通过开发工具控制台使用 Glean JS API。
+    这意味着指标类别和指标名称的格式为
+    <code>camelCase</code>，这与 Rust 和 C++ API 不同。
 controls-button-label-verbose = 应用设置并提交 ping
 about-glean-about-data-header = 关于数据
 about-glean-about-data-explanation = 要浏览收集的数据列表，请查阅 <a data-l10n-name="glean-dictionary-link">{ -glean-brand-name } 词典</a>。

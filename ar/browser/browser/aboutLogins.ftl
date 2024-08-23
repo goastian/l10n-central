@@ -4,11 +4,17 @@
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = جلسات الولوج وكلمات السر
-login-filter =
-    .placeholder = ابحث في جلسات الولوج
-create-login-button = أنشئ جلسة ولوج جديدة
+about-logins-login-filter =
+    .placeholder = البحث في جلسات الولوج
+    .key = F
 create-new-login-button =
     .title = أنشِئ جلسة ولوج جديدة
+about-logins-page-title-name = كلمات السر
+about-logins-login-filter2 =
+    .placeholder = البحث في كلمات السر
+    .key = F
+create-login-button =
+    .title = أضِف كلمة سر
 fxaccounts-sign-in-text = استعمل كلمات السر لحساباتك في أجهزتك الأخرى
 fxaccounts-sign-in-sync-button = لِج كي تبدأ المزامنة
 fxaccounts-avatar-button =
@@ -23,6 +29,8 @@ about-logins-menu-menuitem-import-from-another-browser = استورِد من م�
 about-logins-menu-menuitem-import-from-a-file = استورِد من ملف…
 about-logins-menu-menuitem-export-logins = صدّر جلسات الولوج…
 about-logins-menu-menuitem-remove-all-logins = أزِل كل جلسات الولوج…
+about-logins-menu-menuitem-export-logins2 = صدّر كلمات السر…
+about-logins-menu-menuitem-remove-all-logins2 = أزِل كل كلمات السر…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] الخيارات
@@ -45,6 +53,18 @@ login-list-count =
         [many] { $count } جلسة ولوج
        *[other] { $count } جلسة ولوج
     }
+# Variables
+#   $count (number) - Number of filtered logins
+#   $total (number) - Total number of logins
+login-list-filtered-count =
+    { $total ->
+        [zero] { $count } من أصل { $total } جلسة ولوج
+        [one] { $count } من أصل { $total } جلسة ولوج
+        [two] { $count } من أصل { $total } جلسة ولوج
+        [few] { $count } من أصل { $total } جلسة ولوج
+        [many] { $count } من أصل { $total } جلسات الولوج
+       *[other] { $count } من أصل { $total } جلسات الولوج
+    }
 login-list-sort-label-text = افرز حسب:
 login-list-name-option = الاسم (ا-ي)
 login-list-name-reverse-option = الاسم (ي-ا)
@@ -56,9 +76,11 @@ login-list-last-used-option = آخر استخدام
 login-list-intro-title = لا جلسات ولوج
 login-list-intro-description = متى ما حفظت كلمة سر في { -brand-product-name } ستظهر هنا.
 about-logins-login-list-empty-search-title = لا جلسات ولوج
+about-logins-login-list-empty-search-title2 = لم يُعثر على كلمات السر
 about-logins-login-list-empty-search-description = لا نتائج تطابق البحث.
 login-list-item-title-new-login = جلسة ولوج جديدة
 login-list-item-subtitle-new-login = أدخِل معلومات الولوج
+login-list-item-title-new-login2 = أضِف كلمة سر
 login-list-item-subtitle-missing-username = (لا اسم مستخدم)
 about-logins-list-item-breach-icon =
     .title = موقع مسرّب بياناته
@@ -77,6 +99,7 @@ about-logins-login-intro-heading-logged-out2 = أتبحث عن جلسات ولو
 about-logins-login-intro-heading-logged-in = لم نجد أيّ جلسة ولوج متزامنة.
 login-intro-description = إن حفظت جلسات ولوجك في { -brand-product-name } على جهاز آخر، فهكذا يمكنك أن تزامنها هنا:
 login-intro-instructions-fxa = أنشِئ أو لِج إلى { -fxaccount-brand-name } على الأجهزة التي لديك عليها جلسات ولوج محفوظة
+login-intro-instructions-fxa2 = أنشئ أو لج إلى حسابك على الأجهزة التي لديك عليها جلسات ولوج محفوظة.
 login-intro-instructions-fxa-settings = انتقل إلى ”الإعدادات > المزامنة > فعّل المزامنة…“ وضَع علامة على ”جلسات الولوج وكلمات السر“.
 login-intro-instructions-fxa-passwords-help = زُر <a data-l10n-name="passwords-help-link">دعم كلمات السر</a> لمزيد من المساعدة.
 about-logins-intro-browser-only-import = لو كانت جلسات ولوجك محفوظة في متصفّح آخر فيمكنك <a data-l10n-name="import-link">استيرادها إلى { -brand-product-name }</a>
@@ -85,6 +108,8 @@ about-logins-intro-import2 = إن حفظت جلسات الولوج خارج { -b
 ## Login
 
 login-item-new-login-title = أنشِئ جلسة ولوج جديدة
+# Header for adding a password
+about-logins-login-item-new-login-title = أضِف كلمة سر
 login-item-edit-button = حرِّر
 about-logins-login-item-remove-button = أزِل
 login-item-origin-label = عنوان الموقع
@@ -104,9 +129,6 @@ login-item-copied-password-button-text = نُسخ.
 login-item-save-changes-button = احفظ التغييرات
 login-item-save-new-button = احفظ
 login-item-cancel-button = ألغِ
-login-item-time-changed = آخر تعديل: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
-login-item-time-created = تاريخ الإنشاء: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
-login-item-time-used = آخر استخدام: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## The date is displayed in a timeline showing the password evolution.
 ## A label is displayed under the date to describe the type of change.
@@ -245,7 +267,6 @@ about-logins-breach-alert-date = حدث هذا التسرّب بتاريخ { DAT
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = انتقل إلى { $hostname }
-about-logins-breach-alert-learn-more-link = اطّلع على المزيد
 
 ## Vulnerable Password notification
 

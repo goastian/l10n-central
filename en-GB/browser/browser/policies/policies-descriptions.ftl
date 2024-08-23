@@ -12,10 +12,13 @@
 
 policy-3rdparty = Set policies that WebExtensions can access via chrome.storage.managed.
 policy-AllowedDomainsForApps = Define domains allowed to access Google Workspace.
+policy-AllowFileSelectionDialogs = Allow file selection dialogues.
 policy-AppAutoUpdate = Enable or disable automatic application update.
 policy-AppUpdatePin = Prevent { -brand-short-name } from being updated beyond the specified version.
 policy-AppUpdateURL = Set custom app update URL.
 policy-Authentication = Configure integrated authentication for web sites that support it.
+policy-AutofillAddressEnabled = Enable autofill for addresses.
+policy-AutofillCreditCardEnabled = Enable autofill for payment methods.
 policy-AutoLaunchProtocolsFromOrigins = Define a list of external protocols that can be used from listed origins without prompting the user.
 policy-BackgroundAppUpdate2 = Enable or disable the background updater.
 policy-BlockAboutAddons = Block access to the Add-ons Manager (about:addons).
@@ -25,25 +28,29 @@ policy-BlockAboutSupport = Block access to the about:support page.
 policy-Bookmarks = Create bookmarks in the Bookmarks toolbar, Bookmarks menu, or a specified folder inside them.
 policy-CaptivePortal = Enable or disable captive portal support.
 policy-CertificatesDescription = Add certificates or use built-in certificates.
+policy-ContentAnalysis = Enable or disable connection to data-loss-prevention agent.
 policy-Cookies = Allow or deny web sites to set cookies.
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Set policies related to containers.
+policy-DisableAccounts = Disable account-based services, including sync.
 policy-DisabledCiphers = Disable ciphers.
 policy-DefaultDownloadDirectory = Set the default download directory.
 policy-DisableAppUpdate = Prevent the browser from updating.
 policy-DisableBuiltinPDFViewer = Disable PDF.js, the built-in PDF viewer in { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Prevent the default browser agent from taking any actions. Only applicable to Windows; other platforms don’t have the agent.
 policy-DisableDeveloperTools = Block access to the developer tools.
+policy-DisableEncryptedClientHello = Disable use of the TLS feature Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Disable commands to send feedback from the Help menu (Submit Feedback and Report Deceptive Site).
 policy-DisableFirefoxAccounts = Disable { -fxaccount-brand-name } based services, including Sync.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Disable the Midori Screenshots feature.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Disable account-based services, including sync.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Disable the Firefox Screenshots feature.
 policy-DisableFirefoxStudies = Prevent { -brand-short-name } from running studies.
 policy-DisableForgetButton = Prevent access to the Forget button.
 policy-DisableFormHistory = Don’t remember search and form history.
 policy-DisablePrimaryPasswordCreation = If true, a Primary Password can’t be created.
 policy-DisablePasswordReveal = Do not allow passwords to be revealed in saved logins.
-policy-DisablePocket = Disable the feature to save web pages to Pocket.
 policy-DisablePocket2 = Disable the feature to save web pages to { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Disable Private Browsing.
 policy-DisableProfileImport = Disable the menu command to Import data from another browser.
@@ -70,14 +77,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Disable warnings 
 policy-Extensions = Install, uninstall or lock extensions. The Install option takes URLs or paths as parameters. The Uninstall and Locked options take extension IDs.
 policy-ExtensionSettings = Manage all aspects of extension installation.
 policy-ExtensionUpdate = Enable or disable automatic extension updates.
-policy-FirefoxHome = Configure Midori Home.
 policy-FirefoxHome2 = Configure { -firefox-home-brand-name }.
-policy-FlashPlugin = Allow or deny usage of the Flash plugin.
+policy-FirefoxSuggest = Configure { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Force direct intranet site navigation instead of searching when typing single word entries in the address bar.
 policy-Handlers = Configure default application handlers.
 policy-HardwareAcceleration = If false, turn off hardware acceleration.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Set and optionally lock the homepage.
+policy-HttpAllowlist = Origins that will not be upgraded to HTTPS.
+policy-HttpsOnlyMode = Allow HTTPS-Only Mode to be enabled.
 policy-InstallAddonsPermission = Allow certain web sites to install add-ons.
 policy-LegacyProfiles = Disable the feature enforcing a separate profile for each installation.
 
@@ -92,6 +100,7 @@ policy-LocalFileLinks = Allow specific web sites to link to local files.
 policy-ManagedBookmarks = Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
 policy-ManualAppUpdateOnly = Allow manual updates only and do not notify the user about updates.
 policy-PrimaryPassword = Require or prevent using a Primary Password.
+policy-PrintingEnabled = Enable or disable printing.
 policy-NetworkPrediction = Enable or disable network prediction (DNS prefetching).
 policy-NewTabPage = Enable or disable the New Tab page.
 policy-NoDefaultBookmarks = Disable creation of the default bookmarks bundled with { -brand-short-name }, and the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
@@ -101,6 +110,9 @@ policy-OverrideFirstRunPage = Override the first run page. Set this policy to bl
 policy-OverridePostUpdatePage = Override the post-update “What’s New” page. Set this policy to blank if you want to disable the post-update page.
 policy-PasswordManagerEnabled = Enable saving passwords to the password manager.
 policy-PasswordManagerExceptions = Prevent { -brand-short-name } from saving passwords for specific sites.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Enable post-quantum key agreement for TLS.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Disable or configure PDF.js, the built-in PDF viewer in { -brand-short-name }.
 policy-Permissions2 = Configure permissions for camera, microphone, location, notifications, and autoplay.
@@ -114,8 +126,6 @@ policy-SanitizeOnShutdown2 = Clear navigation data on shutdown.
 policy-SearchBar = Set the default location of the search bar. The user is still allowed to customise it.
 policy-SearchEngines = Configure search engine settings. This policy is only available on the Extended Support Release (ESR) version.
 policy-SearchSuggestEnabled = Enable or disable search suggestions.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Install PKCS #11 modules.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Add or delete PKCS #11 modules.
 policy-ShowHomeButton = Show the home button on the toolbar.
@@ -123,6 +133,7 @@ policy-SSLVersionMax = Set the maximum SSL version.
 policy-SSLVersionMin = Set the minimum SSL version.
 policy-StartDownloadsInTempDirectory = Force downloads to start off in a local, temporary location rather than the default download directory.
 policy-SupportMenu = Add a custom support menu item to the help menu.
+policy-TranslateEnabled = Enable or disable web page translation.
 policy-UserMessaging = Don’t show certain messages to the user.
 policy-UseSystemPrintDialog = Print using the system print dialogue.
 # “format” refers to the format used for the value of this policy.

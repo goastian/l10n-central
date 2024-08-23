@@ -14,13 +14,6 @@ onboarding-welcome-header = Välkommen till { -brand-short-name }
 onboarding-start-browsing-button-label = Börja surfa
 onboarding-not-now-button-label = Inte nu
 mr1-onboarding-get-started-primary-button-label = Kom igång
-mr1-onboarding-welcome-header = Välkommen till { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Gör { -brand-short-name } till min primära webbläsare
-    .title = Ställer in { -brand-short-name } som standardwebbläsare och fäster den i aktivitetsfältet
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Gör { -brand-short-name } till min standardwebbläsare
-mr1-onboarding-set-default-secondary-button-label = Inte nu
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,25 +34,6 @@ mr1-return-to-amo-add-extension-label = Lägg till { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Kom igång:  skärm { $current } av { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = Det börjar här
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Möbeldesigner, Firefox-fan
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -70,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Framsteg: steg { $current } av { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Stäng av animationer
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] Behåll { -brand-short-name } i Dock för enkel åtkomst
-       *[other] Fäst { -brand-short-name } i ditt aktivitetsfält för enkel åtkomst
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Behåll i Dock
-       *[other] Fäst till aktivitetsfältet
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Logga in
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = Gör { -brand-short-name } till din standardwebbläsare
-mr1-onboarding-default-subtitle = Sätt hastighet, säkerhet och integritet på autopilot.
-mr1-onboarding-default-primary-button-label = Gör till standardwebbläsare
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Ta med dig allt
-mr1-onboarding-import-subtitle = Importera dina lösenord, <br/>bokmärken och mer.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importera från { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importera från tidigare webbläsare
-mr1-onboarding-import-secondary-button-label = Inte nu
-mr2-onboarding-colorway-header = Ett liv i färg
-mr2-onboarding-colorway-subtitle = Levande nya colorways. Tillgängliga under en begränsad tid.
-mr2-onboarding-colorway-primary-button-label = Spara colorway
-mr2-onboarding-colorway-secondary-button-label = Inte nu
-mr2-onboarding-colorway-label-soft = Mjuk
-mr2-onboarding-colorway-label-balanced = Balanserad
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Djärv
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Automatisk
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Standard
 mr1-onboarding-theme-header = Gör den till din egen
 mr1-onboarding-theme-subtitle = Anpassa { -brand-short-name } med ett tema.
-mr1-onboarding-theme-primary-button-label = Spara tema
 mr1-onboarding-theme-secondary-button-label = Inte nu
+newtab-wallpaper-onboarding-title = Prova en skvätt färg
+newtab-wallpaper-onboarding-subtitle = Välj en bakgrundsbild för att ge din Nya flik ett fräscht utseende.
+newtab-wallpaper-onboarding-primary-button-label = Välj bakgrundsbild
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Systemtema
 mr1-onboarding-theme-label-light = Ljust
@@ -181,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Använd ett dynamiskt färgglatt tema för knappar,
         menyer och fönster.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Använd denna colorway.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Använd denna colorway.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Utforska colorways { $colorwayName }.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Utforska colorways { $colorwayName }.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Utforska standardteman.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Utforska standardteman.
 
@@ -209,14 +117,6 @@ mr2-onboarding-default-theme-label = Utforska standardteman.
 mr2-onboarding-thank-you-header = Tack för att du väljer oss
 mr2-onboarding-thank-you-text = { -brand-short-name } är en oberoende webbläsare som stöds av en ideell organisation. Tillsammans gör vi webben säkrare, hälsosammare och mer privat.
 mr2-onboarding-start-browsing-button-label = Börja surfa
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -432,4 +332,36 @@ onboarding-device-migration-image-alt =
     .aria-label = En räv på skärmen på en bärbar dator vinkar. Den bärbara datorn har en mus ansluten till den.
 onboarding-device-migration-title = Välkommen tillbaka!
 onboarding-device-migration-subtitle = Logga in på ditt { -fxaccount-brand-name } för att ta med dig dina bokmärken, lösenord och historik på din nya enhet.
+onboarding-device-migration-subtitle2 = Logga in på ditt konto för att ta med dig dina bokmärken, lösenord och historik på din nya enhet.
 onboarding-device-migration-primary-button-label = Logga in
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Vi älskar att hålla dig säker
+onboarding-easy-setup-security-and-privacy-subtitle = Vår icke-vinstdrivande webbläsare hjälper till att hindra företag från att i hemlighet följa dig på webben.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Håll dig krypterad när du byter enhet
+onboarding-mobile-download-security-and-privacy-subtitle = När du synkroniserar dina data krypterar { -brand-short-name } dina lösenord, bokmärken och mer. Du kan också hämta flikar från dina andra enheter.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } tar hand om dig
+onboarding-gratitude-security-and-privacy-subtitle = Tack för att du använder { -brand-short-name }, med stöd av Mozilla Foundation. Med ditt stöd arbetar vi för att göra internet säkrare och mer tillgängligt för alla.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Hur länge har du använt { -brand-short-name }?
+onboarding-new-user-familiarity-based-survey-title = Hur bekant är du med { -brand-short-name }?
+onboarding-new-user-survey-subtitle = Din feedback hjälper till att göra { -brand-short-name } ännu bättre.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Nästa
+onboarding-new-user-survey-legal-link-label = Genom att välja "{ onboarding-new-user-survey-next-button-label }" godkänner du { -brand-product-name }:s <a data-l10n-name="privacy_notice">sekretesspolicy</a >
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Jag är ny
+onboarding-new-user-survey-time-based-option-2 = Mindre än 1 månad
+onboarding-new-user-survey-time-based-option-3 = Mer än 1 månad, regelbundet
+onboarding-new-user-survey-time-based-option-4 = Mer än 1 månad, ibland
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Jag är ny
+onboarding-new-user-survey-familiarity-based-option-2 = Jag har använt det en del
+onboarding-new-user-survey-familiarity-based-option-3 = Jag är mycket bekant med det
+onboarding-new-user-survey-familiarity-based-option-4 = Jag använde det tidigare, men det var ett tag sedan

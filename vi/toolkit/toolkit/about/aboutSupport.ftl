@@ -15,6 +15,10 @@ support-addons-type = Kiểu
 support-addons-enabled = Đã bật
 support-addons-version = Phiên bản
 support-addons-id = ID
+legacy-user-stylesheets-title = Stylesheet của người dùng (cũ)
+legacy-user-stylesheets-enabled = Hoạt động
+legacy-user-stylesheets-stylesheet-types = Stylesheet
+legacy-user-stylesheets-no-stylesheets-found = Không phát hiện stylesheet nào
 security-software-title = Phần mềm bảo mật
 security-software-type = Kiểu
 security-software-name = Tên
@@ -74,6 +78,7 @@ app-basics-key-mozilla = Khóa dịch vụ định vị Mozilla
 app-basics-safe-mode = Chế độ an toàn
 app-basics-memory-size = Dung lượng bộ nhớ (RAM)
 app-basics-disk-available = Không gian đĩa có sẵn
+app-basics-pointing-devices = Thiết bị điều khiển con trỏ
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -179,6 +184,17 @@ media-codec-support-hw-decoding = Giải mã phần cứng
 media-codec-support-codec-name = Tên codec
 media-codec-support-supported = Được hỗ trợ
 media-codec-support-unsupported = Không hỗ trợ
+media-codec-support-error = Không có thông tin Codec được hỗ trợ. Hãy thử lại sau khi phát tập tin phương tiện.
+media-codec-support-lack-of-extension = Cài đặt tiện ích mở rộng
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Thông tin module giải mã nội dung
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Tương thích HDCP 2.2
 
 ##
 
@@ -238,6 +254,7 @@ try-newer-driver = Bị chặn đối với phiên bản trình điều khiển 
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Tham số ClearType
 compositing = Cách tổng hợp
+support-font-determination = Phông chữ hiển thị thông tin gỡ lỗi
 hardware-h264 = Giải mã phần cứng H264
 main-thread-no-omtc = chủ đề chính, không có OMTC
 yes = Có
@@ -299,6 +316,9 @@ has-seccomp-bpf = Seccomp-BPF (Lọc cuộc gọi hệ thống)
 has-seccomp-tsync = Đồng bộ hóa chủ đề Seccomp
 has-user-namespaces = User Namespaces
 has-privileged-user-namespaces = User Namespaces với các tiến trình ưu tiên
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Tính năng này không được hệ thống của bạn cho phép. Điều này có thể hạn chế các tính năng bảo mật của { -brand-short-name }.
 can-sandbox-content = Nội dung tiến trình Sandboxing
 can-sandbox-media = Media Plugin Sandboxing
 content-sandbox-level = Cấp độ quy trình nội dung hộp cát
@@ -367,6 +387,20 @@ support-printing-modified-settings = Đã sửa đổi cài đặt in
 support-printing-prefs-name = Tên
 support-printing-prefs-value = Giá trị
 
+## Remote Settings sections
+
+support-remote-settings-title = Cài đặt từ xa
+support-remote-settings-status = Trạng thái
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Không hoạt động
+support-remote-settings-last-check = Lần kiểm tra cuối
+support-remote-settings-local-timestamp = Dấu thời gian cục bộ
+support-remote-settings-sync-history = Lịch sử
+support-remote-settings-sync-history-status = Trạng thái
+support-remote-settings-sync-history-datetime = Ngày
+support-remote-settings-sync-history-infos = Thông tin
+
 ## Normandy sections
 
 support-remote-experiments-title = Thử nghiệm từ xa
@@ -376,3 +410,22 @@ support-remote-experiments-see-about-studies = Xem trang <a data-l10n-name="supp
 support-remote-features-title = Tính năng từ xa
 support-remote-features-name = Tên
 support-remote-features-status = Trạng thái
+
+## Pointing devices
+
+pointing-device-mouse = Chuột
+pointing-device-touchscreen = Màn hình cảm ứng
+pointing-device-pen-digitizer = Bút kỹ thuật số
+pointing-device-none = Không có thiết bị điều khiển con trỏ
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Phân tích nội dung (DLP)
+content-analysis-active = Đang hoạt động
+content-analysis-connected-to-agent = Đã kết nối tới tác nhân
+content-analysis-agent-path = Đường dẫn tác nhân
+content-analysis-agent-failed-signature-verification = Xác minh chữ ký tác nhân không thành công
+content-analysis-request-count = Số lượng yêu cầu

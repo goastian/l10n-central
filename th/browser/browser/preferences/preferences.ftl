@@ -3,11 +3,22 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = ส่งสัญญาณ “ไม่ติดตาม” ให้กับเว็บไซต์ว่าคุณไม่ต้องการถูกติดตาม
+do-not-track-description2 =
+    .label = ส่งคำขอ “ไม่ติดตาม” ให้กับเว็บไซต์
+    .accesskey = ม
 do-not-track-learn-more = เรียนรู้เพิ่มเติม
 do-not-track-option-default-content-blocking-known =
     .label = เฉพาะเมื่อ { -brand-short-name } ถูกตั้งให้ปิดกั้นตัวติดตามที่รู้จัก
 do-not-track-option-always =
     .label = เสมอ
+global-privacy-control-description =
+    .label = บอกเว็บไซต์ไม่ให้ขายหรือแบ่งปันข้อมูลของฉัน
+    .accesskey = บ
+non-technical-privacy-header = การกำหนดลักษณะความเป็นส่วนตัวของเว็บ
+# Do not translate.
+# "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
+# included to facilitate power-user search of the about:preferences page.
+global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = การตั้งค่า
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -21,6 +32,8 @@ search-input-box2 =
     .style = width: 15.4em
     .placeholder = ค้นหาในการตั้งค่า
 managed-notice = เบราว์เซอร์ของคุณกำลังถูกจัดการโดยองค์กรของคุณ
+managed-notice-info-icon =
+    .alt = ข้อมูล
 category-list =
     .aria-label = หมวดหมู่
 pane-general-title = ทั่วไป
@@ -44,11 +57,14 @@ category-experimental =
 pane-experimental-subtitle = ดำเนินการต่อด้วยความระมัดระวัง
 pane-experimental-search-results-header = คุณลักษณะทดลองของ { -brand-short-name }: ดำเนินการต่อด้วยความระมัดระวัง
 pane-experimental-description2 = การเปลี่ยนแปลงการตั้งค่าขั้นสูงอาจส่งผลต่อประสิทธิภาพหรือความปลอดภัยของ { -brand-short-name } ได้
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
 pane-experimental-reset =
     .label = เรียกคืนค่าเริ่มต้น
     .accesskey = R
 help-button-label = การสนับสนุนของ { -brand-short-name }
-addons-button-label = ส่วนขยายและชุดรูปแบบ
+addons-button-label = ส่วนขยายและชุดตกแต่ง
 focus-search =
     .key = f
 close-button =
@@ -62,17 +78,6 @@ should-restart-title = เริ่มการทำงาน { -brand-short-na
 should-restart-ok = เริ่มการทำงาน { -brand-short-name } ใหม่ตอนนี้
 cancel-no-restart-button = ยกเลิก
 restart-later = เริ่มการทำงานใหม่ในภายหลัง
-
-## Extension Control Notifications
-##
-## These strings are used to inform the user
-## about changes made by extensions to browser settings.
-##
-## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
-##
-## Variables:
-##   $name (String): name of the extension
-
 
 ## Extension Control Notifications
 ##
@@ -127,6 +132,10 @@ set-as-my-default-browser =
 startup-restore-windows-and-tabs =
     .label = เปิดหน้าต่างและแท็บก่อนหน้า
     .accesskey = ก
+windows-launch-on-login =
+    .label = เปิด { -brand-short-name } โดยอัตโนมัติตอนเปิดเครื่องคอมพิวเตอร์
+    .accesskey = ป
+windows-launch-on-login-disabled = การกำหนดลักษณะนี้ถูกปิดใช้งานใน Windows เมื่อต้องการเปลี่ยน ให้ไปที่ <a data-l10n-name="startup-link">แอปเริ่มต้น</a> ในการตั้งค่าระบบ
 startup-restore-warn-on-quit =
     .label = เตือนคุณเมื่อออกจากเบราว์เซอร์
 disable-extension =
@@ -175,7 +184,7 @@ containers-disable-alert-title = ปิดแท็บแยกข้อมู�
 ## Variables:
 ##   $tabCount (number) - Number of tabs
 
-containers-disable-alert-desc = หากคุณปิดใช้งานแท็บแยกข้อมูลตอนนี้ { $tabCount } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการปิดใช้งานแท็บแยกข้อมูล?
+containers-disable-alert-desc = ถ้าคุณปิดใช้งานแท็บแยกข้อมูลตอนนี้ { $tabCount } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการปิดใช้งานแท็บแยกข้อมูล?
 containers-disable-alert-ok-button = ปิด { $tabCount } แท็บแยกข้อมูล
 
 ##
@@ -184,34 +193,27 @@ containers-disable-alert-cancel-button = เปิดใช้งานต่อ
 containers-remove-alert-title = เอาการแยกข้อมูลนี้ออก?
 # Variables:
 #   $count (number) - Number of tabs that will be closed.
-containers-remove-alert-msg = หากคุณเอาการแยกข้อมูลนี้ออกตอนนี้ { $count } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการเอาการแยกข้อมูลนี้ออก?
+containers-remove-alert-msg = ถ้าคุณเอาการแยกข้อมูลนี้ออกตอนนี้ { $count } แท็บแยกข้อมูลจะถูกปิด คุณแน่ใจหรือไม่ว่าต้องการเอาการแยกข้อมูลนี้ออก?
 containers-remove-ok-button = เอาการแยกข้อมูลนี้ออก
 containers-remove-cancel-button = ไม่เอาการแยกข้อมูลนี้ออก
+settings-tabs-show-image-in-preview =
+    .label = แสดงตัวอย่างภาพเมื่อคุณวางเมาส์เหนือแท็บ
+    .accessKey = แ
 
 ## General Section - Language & Appearance
 
-language-and-appearance-header = ภาษาและลักษณะที่ปรากฏ
-preferences-web-appearance-header = ลักษณะที่ปรากฏของเว็บไซต์
+language-and-appearance-header = ภาษาและรูปลักษณ์
+preferences-web-appearance-header = รูปลักษณ์ของเว็บไซต์
 preferences-web-appearance-description = บางเว็บไซต์ปรับโทนสีตามการกำหนดลักษณะของคุณ เลือกชุดสีที่คุณต้องการใช้สำหรับไซต์เหล่านั้น
-preferences-web-appearance-choice-browser = ชุดรูปแบบของ { -brand-short-name }
-preferences-web-appearance-choice-system = ชุดรูปแบบของระบบ
 preferences-web-appearance-choice-auto = อัตโนมัติ
 preferences-web-appearance-choice-light = สว่าง
 preferences-web-appearance-choice-dark = มืด
-preferences-web-appearance-choice-tooltip-browser =
-    .title = จับคู่การตั้งค่าธีม { -brand-short-name } ของคุณสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
-preferences-web-appearance-choice-tooltip-system =
-    .title = จับคู่การตั้งค่าระบบของคุณสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
 preferences-web-appearance-choice-tooltip-auto =
-    .title = เปลี่ยนพื้นหลังและเนื้อหาของเว็บไซต์โดยอัตโนมัติตามการตั้งค่าระบบและธีมของ { -brand-short-name }
+    .title = เปลี่ยนพื้นหลังและเนื้อหาของเว็บไซต์โดยอัตโนมัติตามการตั้งค่าระบบและชุดตกแต่งของ { -brand-short-name }
 preferences-web-appearance-choice-tooltip-light =
-    .title = ใช้ลักษณะที่ปรากฏแบบสว่างสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
+    .title = ใช้รูปลักษณ์แบบสว่างสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
 preferences-web-appearance-choice-tooltip-dark =
-    .title = ใช้ลักษณะที่ปรากฏแบบมืดสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
-preferences-web-appearance-choice-input-browser =
-    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
-preferences-web-appearance-choice-input-system =
-    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
+    .title = ใช้รูปลักษณ์แบบมืดสำหรับพื้นหลังและเนื้อหาของเว็บไซต์
 preferences-web-appearance-choice-input-auto =
     .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
@@ -220,10 +222,14 @@ preferences-web-appearance-choice-input-dark =
     .aria-description = { preferences-web-appearance-choice-tooltip-dark.title }
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
-preferences-web-appearance-override-warning = การเลือกสีของคุณมีผลเหนือลักษณะที่ปรากฏของเว็บไซต์ <a data-l10n-name="colors-link">จัดการสี</a>
+preferences-web-appearance-override-warning = การเลือกสีของคุณมีผลเหนือรูปลักษณ์ของเว็บไซต์ <a data-l10n-name="colors-link">จัดการสี</a>
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning2 =
+    .message = การเลือกสีของคุณมีผลเหนือรูปลักษณ์ของเว็บไซต์
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
-preferences-web-appearance-footer = จัดการธีมของ { -brand-short-name } ใน <a data-l10n-name="themes-link">ส่วนขยายและธีม</a>
+preferences-web-appearance-footer = จัดการชุดตกแต่งของ { -brand-short-name } ใน <a data-l10n-name="themes-link">ส่วนขยายและชุดตกแต่ง</a>
 preferences-colors-header = สี
 preferences-colors-description = แทนที่สีเริ่มต้นของ { -brand-short-name } สำหรับข้อความ พื้นหลังของเว็บไซต์ และลิงก์
 preferences-colors-manage-button =
@@ -248,6 +254,8 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = ซูมข้อความเท่านั้น
     .accesskey = ข
+preferences-text-zoom-override-warning =
+    .message = คำเตือน: ถ้าคุณเลือก “ซูมข้อความเท่านั้น” และค่าการซูมเริ่มต้นของคุณไม่ได้ตั้งไว้ที่ 100% ก็อาจจะทำให้ไซต์บางไซต์หรือเนื้อหาบางส่วนใช้งานไม่ได้
 language-header = ภาษา
 choose-language-description = เลือกภาษาที่คุณต้องการในการแสดงผลหน้า
 choose-button =
@@ -418,9 +426,9 @@ update-setting-write-failure-title2 = เกิดข้อผิดพลาด
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message2 =
-    { -brand-short-name } พบข้อผิดพลาดและไม่ได้บันทึกการเปลี่ยนแปลงนี้ โปรดทราบว่าการเปลี่ยนการตั้งค่าการอัปเดตนี้จำเป็นต้องได้รับสิทธิอนุญาตให้เขียนไปยังไฟล์ด้านล่าง คุณหรือผู้ดูแลระบบอาจสามารถแก้ไขข้อผิดพลาดได้ด้วยการมอบสิทธิ์ให้กับกลุ่มผู้ใช้เพื่อให้สามารถควบคุมไฟล์นี้ได้อย่างเต็มที่
+    { -brand-short-name } พบข้อผิดพลาดและไม่ได้บันทึกการเปลี่ยนแปลงนี้ โปรดทราบว่าการเปลี่ยนการตั้งค่าการอัปเดตนี้จำเป็นต้องได้รับการอนุญาตสิทธิ์ให้เขียนข้อมูลลงในไฟล์ด้านล่างนี้ ซึ่งตัวคุณเองหรือผู้ดูแลระบบอาจสามารถแก้ไขข้อผิดพลาดได้ด้วยการมอบสิทธิ์ให้กับกลุ่ม “ผู้ใช้” เพื่อให้สามารถควบคุมไฟล์นี้ได้อย่างเต็มที่
     
-    ไม่สามารถเขียนไปยังไฟล์: { $path }
+    ไม่สามารถเขียนข้อมูลลงในไฟล์: { $path }
 update-in-progress-title = กำลังอัปเดต
 update-in-progress-message = คุณต้องการให้ { -brand-short-name } ดำเนินการต่อกับการอัปเดตนี้หรือไม่?
 update-in-progress-ok-button = &ละทิ้ง
@@ -439,10 +447,10 @@ performance-settings-learn-more = เรียนรู้เพิ่มเต�
 performance-allow-hw-accel =
     .label = ใช้การเร่งความเร็วด้วยฮาร์ดแวร์เมื่อพร้อมใช้งาน
     .accesskey = ง
-performance-limit-content-process-option = ขีดจำกัดโปรเซสเนื้อหา
+performance-limit-content-process-option = ขีดจำกัดโพรเซสเนื้อหา
     .accesskey = ข
-performance-limit-content-process-enabled-desc = โปรเซสเนื้อหาที่เพิ่มขึ้นสามารถปรับปรุงประสิทธิภาพเมื่อใช้หลายแท็บ แต่จะใช้หน่วยความจำมากขึ้นเช่นกัน
-performance-limit-content-process-blocked-desc = การเปลี่ยนแปลงจำนวนโปรเซสเนื้อหาทำได้เฉพาะกับ { -brand-short-name } แบบมัลติโปรเซส <a data-l10n-name="learn-more">เรียนรู้วิธีตรวจสอบว่าการทำงานมัลติโปรเซสถูกเปิดใช้งานอยู่หรือไม่</a>
+performance-limit-content-process-enabled-desc = โพรเซสเนื้อหาที่เพิ่มขึ้นสามารถปรับปรุงประสิทธิภาพเมื่อใช้หลายแท็บ แต่จะใช้หน่วยความจำมากขึ้นเช่นกัน
+performance-limit-content-process-blocked-desc = การปรับเปลี่ยนจำนวนโพรเซสเนื้อหาทำได้เฉพาะกับ { -brand-short-name } แบบมัลติโพรเซส <a data-l10n-name="learn-more">เรียนรู้วิธีตรวจสอบว่าการทำงานแบบมัลติโพรเซสเปิดใช้งานอยู่</a>
 # Variables:
 #   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -460,12 +468,18 @@ browsing-use-smooth-scrolling =
 browsing-gtk-use-non-overlay-scrollbars =
     .label = แสดงแถบเลื่อนเสมอ
     .accesskey = o
+browsing-always-underline-links =
+    .label = ขีดเส้นใต้ลิงก์เสมอ
+    .accesskey = ข
 browsing-use-onscreen-keyboard =
     .label = แสดงแป้นพิมพ์แบบสัมผัสเมื่อจำเป็น
     .accesskey = ผ
 browsing-use-cursor-navigation =
     .label = ใช้ปุ่มลูกศรเพื่อนำทางภายในหน้าเสมอ
     .accesskey = ป
+browsing-use-full-keyboard-navigation =
+    .label = ใช้ปุ่มแท็บเพื่อย้ายโฟกัสไปมาระหว่างตัวควบคุมแบบฟอร์มและลิงก์
+    .accesskey = ท
 browsing-search-on-start-typing =
     .label = ค้นหาข้อความเมื่อคุณเริ่มพิมพ์
     .accesskey = ว
@@ -506,14 +520,10 @@ home-newtabs-mode-label = แท็บใหม่
 home-restore-defaults =
     .label = เรียกคืนค่าเริ่มต้น
     .accesskey = ร
-# "Firefox" should be treated as a brand and kept in English,
-# while "Home" and "(Default)" can be localized.
-home-mode-choice-default =
-    .label = หน้าแรก Firefox (ค่าเริ่มต้น)
 home-mode-choice-default-fx =
     .label = { -firefox-home-brand-name } (ค่าเริ่มต้น)
 home-mode-choice-custom =
-    .label = URL ที่กำหนดเอง…
+    .label = URL กำหนดเอง…
 home-mode-choice-blank =
     .label = หน้าว่าง
 home-homepage-custom-url =
@@ -533,10 +543,8 @@ choose-bookmark =
     .label = ใช้ที่คั่นหน้า…
     .accesskey = ท
 
-## Home Section - Midori Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = เนื้อหาหน้าแรก Firefox
-home-prefs-content-description = เลือกเนื้อหาที่คุณต้องการในหน้าจอหน้าแรก Firefox ของคุณ
 home-prefs-content-header2 = เนื้อหา { -firefox-home-brand-name }
 home-prefs-content-description2 = เลือกเนื้อหาที่คุณต้องการบนหน้าจอ { -firefox-home-brand-name } ของคุณ
 home-prefs-search-header =
@@ -548,15 +556,14 @@ home-prefs-shortcuts-by-option-sponsored =
     .label = ทางลัดที่ได้รับการสนับสนุน
 
 ## Variables:
-##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
-
-
-## Variables:
 ##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = แนะนำโดย { $provider }
-home-prefs-recommended-by-description-new = เนื้อหาสุดพิเศษที่คัดสรรโดย { $provider } ซึ่งเป็นส่วนหนึ่งของตระกูล { -brand-product-name }
+home-prefs-recommended-by-description-new = เนื้อหาคัดสรรพิเศษโดย { $provider } ซึ่งเป็นส่วนหนึ่งของตระกูล { -brand-product-name }
+home-prefs-recommended-by-header-generic =
+    .label = เรื่องราวแนะนำ
+home-prefs-recommended-by-description-generic = เนื้อหาคัดสรรพิเศษโดยผลิตภัณฑ์ตระกูล { -brand-product-name }
 
 ##
 
@@ -583,6 +590,10 @@ home-prefs-recent-activity-description = ไซต์และเนื้อห
 home-prefs-snippets-header =
     .label = ส่วนย่อย
 home-prefs-snippets-description-new = เคล็ดลับและข่าวสารจาก { -vendor-short-name } และ { -brand-product-name }
+home-prefs-weather-header =
+    .label = พยากรณ์อากาศ
+home-prefs-weather-description = ดูพยากรณ์อากาศประจำวันนี้ได้อย่างรวดเร็ว
+home-prefs-weather-learn-more-link = เรียนรู้เพิ่มเติม
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -606,6 +617,9 @@ search-suggestions-desc = เลือกว่าจะทำให้เคร
 search-suggestions-option =
     .label = ให้ข้อเสนอแนะการค้นหา
     .accesskey = ห
+search-show-suggestions-option =
+    .label = แสดงข้อเสนอแนะการค้นหา
+    .accesskey = ส
 search-show-suggestions-url-bar-option =
     .label = แสดงข้อเสนอแนะการค้นหาในผลลัพธ์ของแถบที่อยู่
     .accesskey = ส
@@ -665,10 +679,6 @@ containers-settings-button =
 containers-remove-button =
     .label = เอาออก
 
-## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
-## more discrete ("signed in" no longer means "and sync is connected").
-
-
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -687,13 +697,17 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = ดาวน์โหลด Firefox สำหรับ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> หรือ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> เพื่อซิงค์กับอุปกรณ์มือถือของคุณ
 
-## Firefox Account - Signed in
-
-
 ## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = เปลี่ยนรูปโปรไฟล์
+sync-profile-picture-with-alt =
+    .tooltiptext = เปลี่ยนรูปโปรไฟล์
+    .alt = เปลี่ยนรูปโปรไฟล์
+sync-profile-picture-account-problem =
+    .alt = รูปโปรไฟล์บัญชี
+fxa-login-rejected-warning =
+    .alt = คำเตือน
 sync-sign-out =
     .label = ลงชื่อออก…
     .accesskey = g
@@ -711,6 +725,9 @@ sync-signedin-login-failure = โปรดลงชื่อเข้าเพ�
 sync-resend-verification =
     .label = ส่งการยืนยันใหม่
     .accesskey = ส
+sync-verify-account =
+    .label = ยืนยันบัญชี
+    .accesskey = ย
 sync-remove-account =
     .label = เอาบัญชีออก
     .accesskey = อ
@@ -738,14 +755,15 @@ prefs-syncing-button =
 
 ## The list of things currently syncing.
 
-sync-currently-syncing-heading = คุณกำลังซิงค์รายการเหล่านี้:
 sync-syncing-across-devices-heading = คุณกำลังซิงค์รายการเหล่านี้กับอุปกรณ์ที่เชื่อมต่อทั้งหมดของคุณ:
 sync-currently-syncing-bookmarks = ที่คั่นหน้า
 sync-currently-syncing-history = ประวัติ
 sync-currently-syncing-tabs = แท็บที่เปิด
 sync-currently-syncing-logins-passwords = การเข้าสู่ระบบและรหัสผ่าน
+sync-currently-syncing-passwords = รหัสผ่าน
 sync-currently-syncing-addresses = ที่อยู่
 sync-currently-syncing-creditcards = บัตรเครดิต
+sync-currently-syncing-payment-methods = วิธีการชำระเงิน
 sync-currently-syncing-addons = ส่วนเสริม
 sync-currently-syncing-settings = การตั้งค่า
 sync-change-options =
@@ -754,13 +772,6 @@ sync-change-options =
 
 ## The "Choose what to sync" dialog.
 
-sync-choose-what-to-sync-dialog =
-    .title = เลือกสิ่งที่จะซิงค์
-    .style = width: 36em; min-height: 35em;
-    .buttonlabelaccept = บันทึกการเปลี่ยนแปลง
-    .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = ตัดการเชื่อมต่อ…
-    .buttonaccesskeyextra2 = D
 sync-choose-what-to-sync-dialog3 =
     .title = เลือกสิ่งที่จะซิงค์
     .style = min-width: 36em;
@@ -783,6 +794,10 @@ sync-engine-logins-passwords =
     .label = การเข้าสู่ระบบและรหัสผ่าน
     .tooltiptext = ชื่อผู้ใช้และรหัสผ่านที่คุณบันทึกไว้
     .accesskey = L
+sync-engine-passwords =
+    .label = รหัสผ่าน
+    .tooltiptext = รหัสผ่านที่คุณบันทึกไว้
+    .accesskey = ร
 sync-engine-addresses =
     .label = ที่อยู่
     .tooltiptext = ที่อยู่ไปรษณีย์ที่คุณได้บันทึกไว้ (เดสก์ท็อปเท่านั้น)
@@ -791,6 +806,10 @@ sync-engine-creditcards =
     .label = บัตรเครดิต
     .tooltiptext = ชื่อ, หมายเลข และวันหมดอายุ (เดสก์ท็อปเท่านั้น)
     .accesskey = ต
+sync-engine-payment-methods2 =
+    .label = วิธีการชำระเงิน
+    .tooltiptext = ชื่อ หมายเลขบัตร และวันหมดอายุ
+    .accesskey = ว
 sync-engine-addons =
     .label = ส่วนเสริม
     .tooltiptext = ส่วนขยายและชุดรูปแบบสำหรับ Firefox เดสก์ท็อป
@@ -837,20 +856,35 @@ pane-privacy-logins-and-passwords-header = การเข้าสู่ระ�
 forms-ask-to-save-logins =
     .label = ถามเพื่อบันทึกการเข้าสู่ระบบและรหัสผ่านสำหรับเว็บไซต์
     .accesskey = ถ
+
+## Privacy Section - Passwords
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = รหัสผ่าน
+    .searchkeywords = การเข้าสู่ระบบ
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-passwords =
+    .label = ถามว่าจะบันทึกรหัสผ่านหรือไม่
+    .accesskey = ถ
 forms-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = อ
 forms-generate-passwords =
     .label = แนะนำและสร้างรหัสผ่านที่คาดเดายาก
     .accesskey = แ
+forms-suggest-passwords =
+    .label = แนะนำรหัสผ่านที่คาดเดายาก
+    .accesskey = น
 forms-breach-alerts =
     .label = แสดงการแจ้งเตือนเกี่ยวกับรหัสผ่านสำหรับเว็บไซต์ที่มีการรั่วไหล
     .accesskey = b
 forms-breach-alerts-learn-more-link = เรียนรู้เพิ่มเติม
-relay-integration =
-    .label = เปิดใช้งาน { -relay-brand-name } ในตัวจัดการรหัสผ่านของ { -brand-short-name } ของคุณ
 preferences-relay-integration-checkbox =
     .label = แนะนำตัวปกปิดอีเมล { -relay-brand-name } เพื่อปกป้องที่อยู่อีเมลของคุณ
+preferences-relay-integration-checkbox2 =
+    .label = แนะนำตัวปกปิดอีเมล { -relay-brand-name } เพื่อปกป้องที่อยู่อีเมลของคุณ
+    .accesskey = แ
 relay-integration-learn-more-link = เรียนรู้เพิ่มเติม
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -859,9 +893,19 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = การเข้าสู่ระบบที่บันทึกไว้…
     .accesskey = ก
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-usernames-and-passwords =
+    .label = เติมชื่อผู้ใช้และรหัสผ่านโดยอัตโนมัติ
+    .accesskey = ต
+forms-saved-passwords =
+    .label = รหัสผ่านที่บันทึกไว้
+    .accesskey = บ
 forms-primary-pw-use =
     .label = ใช้รหัสผ่านหลัก
     .accesskey = ช
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = กำหนดให้ต้องลงชื่อเข้าในอุปกรณ์เพื่อกรอกและจัดการรหัสผ่าน
 forms-primary-pw-learn-more-link = เรียนรู้เพิ่มเติม
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -882,17 +926,42 @@ forms-windows-sso =
     .label = อนุญาต Windows single sign-on สำหรับบัญชีที่ทำงานและโรงเรียนของ Microsoft
 forms-windows-sso-learn-more-link = เรียนรู้เพิ่มเติม
 forms-windows-sso-desc = จัดการบัญชีในการตั้งค่าอุปกรณ์ของคุณ
+windows-passkey-settings-label = จัดการพาสคีย์ในการตั้งค่าระบบ
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = หากต้องการสร้างรหัสผ่านหลัก ให้ป้อนข้อมูลประจำตัวการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่าง ๆ ของคุณ
+primary-password-os-auth-dialog-message-win = ถ้าต้องการสร้างรหัสผ่านหลัก ให้ป้อนข้อมูลประจำตัวการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่าง ๆ ของคุณ
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = สร้างรหัสผ่านหลัก
 master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] เปลี่ยนการตั้งค่าเกี่ยวกับวิธีการชำระเงิน
+       *[other] { -brand-short-name } กำลังพยายามที่จะเปลี่ยนการตั้งค่าเกี่ยวกับวิธีการชำระเงิน ให้ใช้อุปกรณ์ของคุณลงชื่อเข้าเพื่ออนุญาตการกระทำนี้
+    }
+autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = การเติมอัตโนมัติ
+autofill-addresses-checkbox = บันทึกและเติมที่อยู่อัตโนมัติ
+    .accesskey = ท
+autofill-saved-addresses-button = ที่อยู่ที่บันทึกไว้
+    .accesskey = บ
+autofill-payment-methods-checkbox-message = บันทึกและเติมวิธีการชำระเงิน
+    .accesskey = ว
+autofill-payment-methods-checkbox-submessage = รวมบัตรเครดิตและเดบิตด้วย
+    .accesskey = ร
+autofill-saved-payment-methods-button = วิธีการชำระเงินที่บันทึกไว้
+    .accesskey = ไ
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = กำหนดให้ต้องลงชื่อเข้าในอุปกรณ์เพื่อกรอกและจัดการวิธีการชำระเงิน
+    .accesskey = ก
 
 ## Privacy Section - History
 
@@ -913,7 +982,7 @@ history-remember-option-all =
 history-remember-option-never =
     .label = ไม่จดจำประวัติเสมอ
 history-remember-option-custom =
-    .label = ใช้การตั้งค่าที่กำหนดเองสำหรับประวัติ
+    .label = ใช้การตั้งค่ากำหนดเองสำหรับประวัติ
 history-remember-description = { -brand-short-name } จะจดจำประวัติการเรียกดู, การดาวน์โหลด, แบบฟอร์ม และการค้นหาของคุณ
 history-dontremember-description = { -brand-short-name } จะใช้การตั้งค่าเดียวกับการเรียกดูแบบส่วนตัวและจะไม่จดจำประวัติใด ๆ ขณะที่คุณเรียกดู
 history-private-browsing-permanent =
@@ -948,6 +1017,7 @@ sitedata-delete-on-close =
     .label = ลบคุกกี้และข้อมูลไซต์เมื่อ { -brand-short-name } ถูกปิด
     .accesskey = บ
 sitedata-delete-on-close-private-browsing = ในโหมดการเรียกดูแบบส่วนตัวแบบถาวร คุกกี้และข้อมูลไซต์จะถูกล้างทุกครั้งเมื่อปิด { -brand-short-name }
+sitedata-delete-on-close-private-browsing2 = ตามการตั้งค่าประวัติของคุณ { -brand-short-name } จะลบคุกกี้และข้อมูลไซต์ออกจากวาระของคุณเมื่อปิดเบราว์เซอร์
 sitedata-allow-cookies-option =
     .label = ยอมรับคุกกี้และข้อมูลไซต์
     .accesskey = ย
@@ -963,11 +1033,9 @@ sitedata-option-block-cross-site-trackers =
 sitedata-option-block-cross-site-tracking-cookies =
     .label = คุกกี้ติดตามข้ามไซต์
 sitedata-option-block-cross-site-cookies =
-    .label = คุกกี้ติดตามข้ามไซต์ และแยกคุกกี้ข้ามไซต์อื่น ๆ
+    .label = คุกกี้ติดตามข้ามไซต์ และคัดแยกคุกกี้ข้ามไซต์อื่นๆ
 sitedata-option-block-unvisited =
     .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
-sitedata-option-block-all-third-party =
-    .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-option-block-all-cross-site-cookies =
     .label = คุกกี้ข้ามไซต์ทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-option-block-all =
@@ -986,9 +1054,16 @@ sitedata-cookies-exceptions =
 
 cookie-banner-handling-header = การลดแบนเนอร์คุกกี้
 cookie-banner-handling-description = { -brand-short-name } จะพยายามปฏิเสธคำขอคุกกี้บนไซต์ที่รองรับโดยอัตโนมัติ
+
+## Privacy Section - Cookie Banner Blocking
+
+cookie-banner-blocker-header = ตัวปิดกั้นแบนเนอร์คุกกี้
+cookie-banner-blocker-description = เมื่อมีไซต์ขอใช้คุกกี้ในโหมดการเรียกดูแบบส่วนตัว { -brand-short-name } จะปฏิเสธให้คุณโดยอัตโนมัติ ใช้ได้กับไซต์ที่รองรับเท่านั้น
 cookie-banner-learn-more = เรียนรู้เพิ่มเติม
 forms-handle-cookie-banners =
     .label = ลดแบนเนอร์คุกกี้
+cookie-banner-blocker-checkbox-label =
+    .label = ปฏิเสธแบนเนอร์คุกกี้โดยอัตโนมัติ
 
 ## Privacy Section - Address Bar
 
@@ -1000,6 +1075,9 @@ addressbar-locbar-history-option =
 addressbar-locbar-bookmarks-option =
     .label = ที่คั่นหน้า
     .accesskey = ท
+addressbar-locbar-clipboard-option =
+    .label = คลิปบอร์ด
+    .accesskey = C
 addressbar-locbar-openpage-option =
     .label = แท็บที่เปิดอยู่
     .accesskey = บ
@@ -1017,6 +1095,9 @@ addressbar-locbar-quickactions-option =
     .label = คำสั่งด่วน
     .accesskey = ด
 addressbar-suggestions-settings = เปลี่ยนการกำหนดลักษณะสำหรับข้อเสนอแนะของเครื่องมือค้นหา
+addressbar-locbar-showrecentsearches-option =
+    .label = แสดงการค้นหาล่าสุด
+    .accesskey = ล
 addressbar-quickactions-learn-more = เรียนรู้เพิ่มเติม
 
 ## Privacy Section - Content Blocking
@@ -1025,6 +1106,10 @@ content-blocking-enhanced-tracking-protection = การป้องกัน�
 content-blocking-section-top-level-description = ตัวติดตามจะติดตามคุณทางออนไลน์เพื่อรวบรวมข้อมูลเกี่ยวกับพฤติกรรมการค้นหาและความสนใจของคุณ { -brand-short-name } ปิดกั้นตัวติดตามและสคริปต์ที่เป็นอันตรายอื่น ๆ จำนวนมาก
 content-blocking-learn-more = เรียนรู้เพิ่มเติม
 content-blocking-fpi-incompatibility-warning = คุณกำลังใช้ First Party Isolation (FPI) ซึ่งจะเขียนทับการตั้งค่าคุกกี้บางอย่างของ { -brand-short-name }
+# There is no need to translate "Resist Fingerprinting (RFP)". This is a
+# feature that can only be enabled via about:config, and it's not exposed to
+# standard users (e.g. via Settings).
+content-blocking-rfp-incompatibility-warning = คุณกำลังใช้ Resist Fingerprinting (RFP) ซึ่งจะแทนที่การตั้งค่าการป้องกันการตรวจลายนิ้วมือของ { -brand-short-name } บางส่วน ซึ่งอาจทำให้บางไซต์ใช้งานไม่ได้
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1047,24 +1132,21 @@ content-blocking-etp-strict-desc = การป้องกันที่แก
 content-blocking-etp-custom-desc = เลือกตัวติดตามหรือสคริปต์ที่ต้องการปิดกั้น
 content-blocking-etp-blocking-desc = { -brand-short-name } จะปิดกั้นสิ่งต่อไปนี้:
 content-blocking-private-windows = ตัวติดตามเนื้อหาในหน้าต่างส่วนตัว
-content-blocking-cross-site-cookies-in-all-windows = คุกกี้แบบข้ามไซต์ในทุกหน้าต่าง (รวมถึงคุกกี้ติดตาม)
 content-blocking-cross-site-cookies-in-all-windows2 = คุกกี้แบบข้ามไซต์ในทุกหน้าต่าง
 content-blocking-cross-site-tracking-cookies = คุกกี้ติดตามข้ามไซต์
 content-blocking-all-cross-site-cookies-private-windows = คุกกี้แบบข้ามไซต์ในหน้าต่างส่วนตัว
-content-blocking-cross-site-tracking-cookies-plus-isolate = คุกกี้ติดตามข้ามไซต์ และแยกคุกกี้ที่เหลืออยู่
+content-blocking-cross-site-tracking-cookies-plus-isolate = คุกกี้ติดตามข้ามไซต์ และคัดแยกคุกกี้ที่เหลืออยู่
 content-blocking-social-media-trackers = ตัวติดตามสื่อสังคมออนไลน์
 content-blocking-all-cookies = คุกกี้ทั้งหมด
 content-blocking-unvisited-cookies = คุกกี้จากไซต์ที่ไม่ได้เยี่ยมชม
 content-blocking-all-windows-tracking-content = ตัวติดตามเนื้อหาในทุกหน้าต่าง
-content-blocking-all-third-party-cookies = คุกกี้จากบุคคลที่สามทั้งหมด
 content-blocking-all-cross-site-cookies = คุกกี้ข้ามไซต์ทั้งหมด
 content-blocking-cryptominers = ตัวขุดเหรียญดิจิทัล
 content-blocking-fingerprinters = ลายนิ้วมือดิจิทัล
-# "Test pilot" is used as a verb. Possible alternatives:
-# "Be the first to try", "Join an early experiment".
-content-blocking-etp-standard-tcp-rollout-checkbox =
-    .label = ลองใช้คุณลักษณะเกี่ยวกับความเป็นส่วนตัวที่ทรงพลังที่สุดของเราก่อนใคร
-    .accesskey = ล
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices. And
+# the suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-known-and-suspected-fingerprinters = ลายนิ้วมือดิจิทัลที่รู้จักและต้องสงสัย
 
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 
@@ -1073,7 +1155,7 @@ content-blocking-etp-standard-tcp-rollout-description = การป้องก
 content-blocking-etp-standard-tcp-rollout-learn-more = เรียนรู้เพิ่มเติม
 content-blocking-etp-standard-tcp-title = มาพร้อมกับการป้องกันคุกกี้แบบทั้งหมด คุณลักษณะความเป็นส่วนตัวที่ทรงพลังที่สุดของเรา
 content-blocking-warning-title = ระวัง!
-content-blocking-and-isolating-etp-warning-description-2 = การตั้งค่านี้อาจส่งผลให้บางเว็บไซต์ไม่แสดงผลเนื้อหาหรือไม่ทำงานอย่างถูกต้อง หากไซต์ดูเหมือนจะพัง คุณอาจต้องปิดการป้องกันการติดตามสำหรับไซต์นั้นเพื่อโหลดเนื้อหาทั้งหมด
+content-blocking-and-isolating-etp-warning-description-2 = การตั้งค่านี้อาจส่งผลให้บางเว็บไซต์ไม่แสดงผลเนื้อหาหรือไม่ทำงานอย่างถูกต้อง ถ้าไซต์ดูเหมือนจะใช้การไม่ได้ คุณอาจต้องปิดการป้องกันการติดตามสำหรับไซต์นั้นเพื่อโหลดเนื้อหาทั้งหมด
 content-blocking-warning-learn-how = เรียนรู้วิธี
 content-blocking-reload-description = คุณจะต้องโหลดแท็บของคุณใหม่เพื่อใช้การเปลี่ยนแปลงเหล่านี้
 content-blocking-reload-tabs-button =
@@ -1103,6 +1185,18 @@ content-blocking-cryptominers-label =
 content-blocking-fingerprinters-label =
     .label = ลายนิ้วมือดิจิทัล
     .accesskey = F
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+#
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices.
+content-blocking-known-fingerprinters-label =
+    .label = ลายนิ้วมือดิจิทัลที่รู้จัก
+    .accesskey = ร
+# The suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-suspected-fingerprinters-label =
+    .label = ลายนิ้วมือดิจิทัลที่ต้องสงสัย
+    .accesskey = ส
 
 ## Privacy Section - Tracking
 
@@ -1112,7 +1206,7 @@ tracking-manage-exceptions =
 
 ## Privacy Section - Permissions
 
-permissions-header = สิทธิอนุญาต
+permissions-header = การกำหนดสิทธิ์
 permissions-location = ตำแหน่งที่ตั้ง
 permissions-location-settings =
     .label = การตั้งค่า…
@@ -1165,6 +1259,8 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = การเก็บรวบรวมและใช้ข้อมูล { -brand-short-name }
+collection-header2 = การเก็บรวบรวมและใช้ข้อมูล { -brand-short-name }
+    .searchkeywords = การวัดและส่งข้อมูลทางไกล
 collection-description = เรามุ่งมั่นที่จะให้ทางเลือกกับคุณและเก็บรวบรวมเฉพาะสิ่งที่เราจำเป็นต้องให้บริการและปรับปรุง { -brand-short-name } สำหรับทุกคน เราขออนุญาตก่อนที่จะรับข้อมูลส่วนบุคคลเสมอ
 collection-privacy-notice = ข้อกำหนดความเป็นส่วนตัว
 collection-health-report-telemetry-disabled = คุณจะไม่อนุญาตให้ { -vendor-short-name } เก็บข้อมูลทางเทคนิคและการโต้ตอบอีกต่อไป ข้อมูลที่ผ่านมาทั้งหมดจะถูกลบภายใน 30 วัน
@@ -1184,12 +1280,17 @@ addon-recommendations-link = เรียนรู้เพิ่มเติม
 collection-health-report-disabled = การรายงานข้อมูลถูกปิดใช้งานสำหรับการกำหนดค่าการสร้างนี้
 collection-backlogged-crash-reports-with-link = อนุญาตให้ { -brand-short-name } ส่งรายงานข้อขัดข้องในชื่อของคุณ <a data-l10n-name="crash-reports-link">เรียนรู้เพิ่มเติม</a>
     .accesskey = ข
+collection-backlogged-crash-reports = อนุญาตให้ { -brand-short-name } ส่งรายงานข้อขัดข้องในชื่อของคุณ
+    .accesskey = ข
 privacy-segmentation-section-header = คุณลักษณะใหม่ที่จะทำให้การท่องเว็บของคุณดีขึ้น
 privacy-segmentation-section-description = เมื่อเรานำเสนอคุณลักษณะที่ใช้ข้อมูลของคุณเพื่อมอบประสบการณ์ที่เป็นส่วนตัวมากขึ้น:
 privacy-segmentation-radio-off =
     .label = ใช้คำแนะนำจาก { -brand-product-name }
 privacy-segmentation-radio-on =
     .label = แสดงข้อมูลโดยละเอียด
+
+## Privacy Section - Website Advertising Preferences
+
 
 ## Privacy Section - Security
 ##
@@ -1221,6 +1322,9 @@ certs-view =
 certs-devices =
     .label = อุปกรณ์ความปลอดภัย…
     .accesskey = ค
+certs-thirdparty-toggle =
+    .label = ยอมให้ { -brand-short-name } เชื่อถือใบรับรองหลักของบุคคลที่สามที่คุณติดตั้งโดยอัตโนมัติ
+    .accesskey = ช
 space-alert-over-5gb-settings-button =
     .label = เปิดการตั้งค่า
     .accesskey = ป
@@ -1230,7 +1334,7 @@ space-alert-under-5gb-message2 = <strong>พื้นที่ดิสก์ข
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = โหมด HTTPS-Only
-httpsonly-description = HTTPS จะจัดให้มีการเชื่อมต่อแบบเข้ารหัสที่ปลอดภัยระหว่าง { -brand-short-name } และเว็บไซต์ที่คุณเยี่ยมชม เว็บไซต์ส่วนใหญ่จะรองรับ HTTPS และหากเปิดใช้งานโหมด HTTPS-Only แล้ว { -brand-short-name } จะอัปเกรดการเชื่อมต่อทั้งหมดเป็น HTTPS
+httpsonly-description = HTTPS จะจัดให้มีการเชื่อมต่อแบบเข้ารหัสที่ปลอดภัยระหว่าง { -brand-short-name } และเว็บไซต์ที่คุณเยี่ยมชม เว็บไซต์ส่วนใหญ่จะรองรับ HTTPS และถ้าเปิดใช้งานโหมด HTTPS-Only แล้ว { -brand-short-name } จะอัปเกรดการเชื่อมต่อทั้งหมดเป็น HTTPS
 httpsonly-learn-more = เรียนรู้เพิ่มเติม
 httpsonly-radio-enabled =
     .label = เปิดใช้งานโหมด HTTPS-Only ในหน้าต่างทั้งหมด
@@ -1243,6 +1347,7 @@ httpsonly-radio-disabled =
 
 preferences-doh-header = DNS over HTTPS
 preferences-doh-description = Domain Name System (DNS) over HTTPS จะส่งคำขอชื่อโดเมนของคุณผ่านการเชื่อมต่อที่มีการเข้ารหัส เพื่อเสริมความปลอดภัยให้กับ DNS และทำให้ผู้อื่นดูว่าคุณกำลังจะเข้าถึงเว็บไซต์ใดได้ยากขึ้น
+preferences-doh-description2 = Domain Name System (DNS) over HTTPS จะส่งคำขอชื่อโดเมนของคุณผ่านการเชื่อมต่อที่มีการเข้ารหัส เพื่อเสริมความปลอดภัยให้กับ DNS และทำให้ผู้อื่นดูว่าคุณกำลังจะเข้าถึงเว็บไซต์ใดได้ยากขึ้น
 # Variables:
 #   $status (string) - The status of the DoH connection
 preferences-doh-status = สถานะ: { $status }
@@ -1259,6 +1364,7 @@ preferences-doh-status-disabled = ปิด
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
 preferences-doh-status-not-active = ไม่ทำงาน ({ $reason })
 preferences-doh-group-message = เปิดใช้งาน secure DNS โดยใช้:
+preferences-doh-group-message2 = เปิดใช้งาน DNS over HTTPS โดยใช้:
 preferences-doh-expand-section =
     .tooltiptext = ข้อมูลเพิ่มเติม
 preferences-doh-setting-default =
@@ -1266,8 +1372,8 @@ preferences-doh-setting-default =
     .accesskey = ป
 preferences-doh-default-desc = { -brand-short-name } จะตัดสินใจว่าควรใช้ secure DNS เมื่อใดเพื่อที่จะปกป้องความเป็นส่วนตัวของคุณ
 preferences-doh-default-detailed-desc-1 = ใช้ secure DNS ในภูมิภาคที่สามารถใช้ได้
-preferences-doh-default-detailed-desc-2 = ใช้ DNS resolver เริ่มต้นของคุณหากมีปัญหากับผู้ให้บริการ secure DNS
-preferences-doh-default-detailed-desc-3 = ใช้ผู้ให้บริการเฉพาะที่หากเป็นไปได้
+preferences-doh-default-detailed-desc-2 = ใช้ DNS resolver เริ่มต้นของคุณถ้ามีปัญหากับผู้ให้บริการ secure DNS
+preferences-doh-default-detailed-desc-3 = ใช้ผู้ให้บริการเฉพาะที่ถ้าเป็นไปได้
 preferences-doh-default-detailed-desc-4 = ปิดใช้เมื่อ VPN, การควบคุมโดยผู้ปกครอง, หรือนโยบายองค์กรทำงาน
 preferences-doh-default-detailed-desc-5 = ปิดใช้เมื่อเครือข่ายบอกกับ { -brand-short-name } ว่าไม่ควรใช้ secure DNS
 preferences-doh-setting-enabled =
@@ -1282,13 +1388,13 @@ preferences-doh-setting-strict =
 preferences-doh-strict-desc = { -brand-short-name } จะใช้ secure DNS เสมอ คุณจะเห็นคำเตือนเกี่ยวกับความเสี่ยงด้านความปลอดภัยก่อนที่เราจะใช้ DNS ของระบบของคุณ
 preferences-doh-strict-detailed-desc-1 = ใช้เฉพาะผู้ให้บริการที่คุณเลือกเท่านั้น
 preferences-doh-strict-detailed-desc-2 = เตือนเสมอเมื่อ secure DNS ใช้ไม่ได้
-preferences-doh-strict-detailed-desc-3 = หาก secure DNS ใช้ไม่ได้ ไซต์ต่างๆ จะไม่โหลดหรือทำงานถูกต้อง
+preferences-doh-strict-detailed-desc-3 = ถ้า secure DNS ใช้ไม่ได้ ไซต์ต่างๆ จะไม่โหลดหรือทำงานถูกต้อง
 preferences-doh-setting-off =
     .label = ปิด
     .accesskey = ป
 preferences-doh-off-desc = ใช้ DNS resolver เริ่มต้นของคุณ
 preferences-doh-checkbox-warn =
-    .label = เตือนหากมีบุคคลที่สามเข้ามาขัดขวาง secure DNS อย่างต่อเนื่อง
+    .label = เตือนถ้ามีบุคคลที่สามเข้ามาขัดขวาง secure DNS อย่างต่อเนื่อง
     .accesskey = ต
 preferences-doh-select-resolver = เลือกผู้ให้บริการ:
 preferences-doh-exceptions-description = { -brand-short-name } จะไม่ใช้ secure DNS บนไซต์เหล่านี้

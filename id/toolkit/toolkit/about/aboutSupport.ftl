@@ -15,6 +15,7 @@ support-addons-type = Tipe
 support-addons-enabled = Diaktifkan
 support-addons-version = Versi
 support-addons-id = ID
+legacy-user-stylesheets-enabled = Aktif
 security-software-title = Perangkat Lunak Keamanan
 security-software-type = Jenis
 security-software-name = Nama
@@ -171,6 +172,12 @@ media-capabilities-title = Kemampuan Media
 media-codec-support-info = Informasi Dukungan Codec
 # List all the entries of the database.
 media-capabilities-enumerate = Daftar basis data
+
+## Codec support table
+
+media-codec-support-hw-decoding = Dekode Perangkat Keras
+media-codec-support-supported = Didukung
+media-codec-support-unsupported = Tidak didukung
 
 ##
 

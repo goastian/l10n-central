@@ -84,8 +84,6 @@ perftools-thread-renderer =
   .title = Quando WebRender è attivo, il thread che esegue le chiamate OpenGL
 perftools-thread-render-backend =
   .title = Il thread WebRender RenderBackend
-perftools-thread-paint-worker =
-  .title = Quando è attivo il painting fuori dal thread principale (“off-main-thread”), il painting viene eseguito in questo thread
 perftools-thread-timer =
   .title = Il thread che gestisce i timer (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
@@ -166,6 +164,9 @@ perftools-presets-networking-description = Preset per la diagnosi di problemi di
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Energia
 perftools-presets-power-description = Preset per la diagnosi di problemi relativi al consumo di energia in { -brand-shorter-name }, con overhead limitato.
+
+perftools-presets-debug-label = Debug
+perftools-presets-debug-description = Preset per il debug di { -brand-shorter-name }. Overhead elevato, non utilizzare per analisi delle prestazioni ma solo per comprendere il comportamento del browser.
 
 perftools-presets-custom-label = Personalizzato
 

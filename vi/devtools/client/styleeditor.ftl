@@ -20,7 +20,6 @@ styleeditor-save-button = Lưu
     .accesskey = S
 styleeditor-options-button =
     .tooltiptext = Tùy chọn trình soạn thảo kiểu mẫu
-styleeditor-media-rules = Quy tắc @media
 styleeditor-at-rules = At-rules
 styleeditor-editor-textbox =
     .data-placeholder = Gõ CSS tại đây.
@@ -45,3 +44,9 @@ styleeditor-stylesheet-all-filtered = Không tìm thấy style sheet cho từ kh
 # Variables:
 #   $ruleCount (Integer) - The number of rules in the stylesheet.
 styleeditor-stylesheet-rule-count = { $ruleCount } quy tắc.
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = In đẹp style sheet
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Chỉ có thể in đẹp các tập tin CSS

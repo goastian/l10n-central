@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Аккаунт
+    .tooltiptext = Аккаунт
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Добавить страницу в закладки
-    .accesskey = з
-    .tooltiptext = Добавить страницу в закладки
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Добавить страницу в закладки
-    .accesskey = з
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Изменить закладку
-    .accesskey = И
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Добавить страницу в закладки
-    .accesskey = з
-    .tooltiptext = Добавить страницу в закладки ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Изменить закладку
-    .accesskey = И
-    .tooltiptext = Изменить закладку
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Изменить закладку
-    .accesskey = И
-    .tooltiptext = Изменить закладку ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Добавить страницу в закладки…
     .accesskey = а
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Открыть ссылку в новом приватном окне
     .accesskey = п
-main-context-menu-bookmark-link =
-    .label = Добавить ссылку в закладки
-    .accesskey = з
 main-context-menu-bookmark-link-2 =
     .label = Добавить ссылку в закладки…
     .accesskey = ы
@@ -183,14 +154,19 @@ main-context-menu-save-link-to-pocket =
 ## are mutually exclusive.
 
 main-context-menu-copy-email =
-    .label = Скопировать адрес электронной почты
+    .label = Копировать адрес электронной почты
     .accesskey = а
 main-context-menu-copy-phone =
-    .label = Скопировать номер телефона
+    .label = Копировать номер телефона
     .accesskey = н
 main-context-menu-copy-link-simple =
-    .label = Скопировать ссылку
+    .label = Копировать ссылку
     .accesskey = ы
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Копировать ссылку без параметров отслеживания
+    .accesskey = н
 
 ## Media (video/audio) controls
 ##
@@ -263,16 +239,16 @@ main-context-menu-video-view-new-tab =
     .label = Открыть видео в новой вкладке
     .accesskey = и
 main-context-menu-image-copy =
-    .label = Скопировать изображение
+    .label = Копировать изображение
     .accesskey = ж
 main-context-menu-image-copy-link =
-    .label = Скопировать ссылку на изображение
+    .label = Копировать ссылку на изображение
     .accesskey = б
 main-context-menu-video-copy-link =
-    .label = Скопировать ссылку на видео
+    .label = Копировать ссылку на видео
     .accesskey = в
 main-context-menu-audio-copy-link =
-    .label = Скопировать ссылку на аудио
+    .label = Копировать ссылку на аудио
     .accesskey = д
 main-context-menu-image-save-as =
     .label = Сохранить изображение как…
@@ -284,7 +260,7 @@ main-context-menu-image-set-image-as-background =
     .label = Сделать фоновым рисунком рабочего стола…
     .accesskey = у
 main-context-menu-image-copy-text =
-    .label = Скопировать текст из изображения
+    .label = Копировать текст из изображения
     .accesskey = е
 main-context-menu-image-info =
     .label = Информация об изображении
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Отправить аудио по почте…
     .accesskey = а
-main-context-menu-plugin-play =
-    .label = Включить этот плагин
-    .accesskey = ю
-main-context-menu-plugin-hide =
-    .label = Скрыть этот плагин
-    .accesskey = к
 main-context-menu-save-to-pocket =
     .label = Сохранить страницу в { -pocket-brand-name }
     .accesskey = ь
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Использовать сохранённый логин
     .accesskey = й
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Использовать сохраненный пароль
     .accesskey = н
@@ -342,6 +313,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins2 =
     .label = Управление логинами
     .accesskey = п
+main-context-menu-manage-passwords =
+    .label = Управление паролями
+    .accesskey = ь
 main-context-menu-keyword =
     .label = Добавить ключевое слово для этого запроса…
     .accesskey = к
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Обновить фрейм
     .accesskey = и
-main-context-menu-frame-bookmark =
-    .label = Добавить фрейм в закладки
-    .accesskey = б
 main-context-menu-frame-add-bookmark =
     .label = Добавить фрейм в закладки…
     .accesskey = й
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Информация о фрейме
     .accesskey = ц
-main-context-menu-print-selection =
-    .label = Печать выделенной области
-    .accesskey = ы
 main-context-menu-print-selection-2 =
     .label = Печать выделенной области…
     .accesskey = о

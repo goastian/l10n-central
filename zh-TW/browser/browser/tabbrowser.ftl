@@ -67,7 +67,7 @@ tabbrowser-confirm-close-tabs-with-key-title = 要關閉視窗並離開 { -brand
 tabbrowser-confirm-close-tabs-with-key-button = 離開 { -brand-short-name }
 # Variables:
 #   $quitKey (String): the text of the keyboard shortcut for quitting.
-tabbrowser-confirm-close-tabs-with-key-checkbox = 按下 { $quitKey } 離開前跟我確認
+tabbrowser-confirm-close-tabs-with-key-checkbox = 按 { $quitKey } 離開之前跟我確認
 
 ## Confirmation dialog when opening multiple tabs simultaneously
 
@@ -86,6 +86,14 @@ tabbrowser-confirm-open-multiple-tabs-checkbox = 開啟多個分頁使 { -brand-
 tabbrowser-confirm-caretbrowsing-title = 鍵盤瀏覽
 tabbrowser-confirm-caretbrowsing-message = 按 F7 鍵可切換「鍵盤瀏覽」功能開關。此功能會在網頁上顯示游標，讓您只用鍵盤就能選取文字或瀏覽網頁。確定要開啟「鍵盤瀏覽」功能嗎？
 tabbrowser-confirm-caretbrowsing-checkbox = 下次不要再顯示此對話方塊。
+
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = 請注意
+tabbrowser-confirm-close-duplicate-tabs-text = 將只保留最後開啟的分頁
+tabbrowser-confirm-close-all-duplicate-tabs-title = 要關閉重複開啟的分頁嗎？
+tabbrowser-confirm-close-all-duplicate-tabs-text = 將關閉此視窗中重複的分頁，只保留最後一個開啟的分頁。
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = 關閉分頁
 
 ##
 

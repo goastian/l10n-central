@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Ingen lagra infokapslar eller historikk
 about-private-browsing-cookie-banners-promo-header = Fjern infokapselbanner!
 about-private-browsing-cookie-banners-promo-button = Færre infokapselbanner
 about-private-browsing-cookie-banners-promo-message = La { -brand-short-name } automatisk svare på sprettoppvindauge om infokapslar for deg slik at du kan gå tilbake til distraksjonsfri surfing. { -brand-short-name } vil avvise alle førespurnadar dersom muleg.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } tek seg av infokapselbanner for deg
+about-private-browsing-cookie-banners-promo-body = Vi nektar no automatisk mange infokapselbanner, slik at du kan sporast mindre og gå tilbake til distraksjonsfri surfing.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Etterlèt ingen spor på denne eininga
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } slettar infokapslar, historikk og nettstad-data, når du lèt att alle nettlesarvindauga.
+about-private-browsing-felt-privacy-v1-info-link = Kven kan kanskje sjå aktiviteten min?

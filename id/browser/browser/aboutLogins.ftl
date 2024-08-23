@@ -3,15 +3,18 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
-about-logins-page-title = Info Masuk dan Kata Sandi
-login-filter =
-    .placeholder = Cari Info Masuk
-create-login-button = Buat Info Masuk Baru
+about-logins-page-title = Info Masuk & Kata Sandi
 about-logins-login-filter =
     .placeholder = Cari Info Masuk
     .key = F
 create-new-login-button =
     .title = Buat info masuk baru
+about-logins-page-title-name = Sandi
+about-logins-login-filter2 =
+    .placeholder = Cari Sandi
+    .key = F
+create-login-button =
+    .title = Tambahkan sandi
 fxaccounts-sign-in-text = Dapatkan kata sandi Anda di perangkat lain
 fxaccounts-sign-in-sync-button = Masuk untuk sinkronisasi
 fxaccounts-avatar-button =
@@ -26,6 +29,8 @@ about-logins-menu-menuitem-import-from-another-browser = Impor dari Peramban Lai
 about-logins-menu-menuitem-import-from-a-file = Impor dari Berkas…
 about-logins-menu-menuitem-export-logins = Ekspor Info Masuk…
 about-logins-menu-menuitem-remove-all-logins = Hapus Semua Log Masuk…
+about-logins-menu-menuitem-export-logins2 = Ekspor Kata Sandi…
+about-logins-menu-menuitem-remove-all-logins2 = Hapus Semua Kata Sandi…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Pengaturan
@@ -47,6 +52,13 @@ login-list-count =
 #   $count (number) - Number of filtered logins
 #   $total (number) - Total number of logins
 login-list-filtered-count = { $count } dari { $total } info masuk
+# Variables
+#   $count (number) - Number of logins
+login-list-count2 = { $count } sandi
+# Variables
+#   $count (number) - Number of filtered logins
+#   $total (number) - Total number of logins
+login-list-filtered-count2 = { $count } dari { $total } sandi
 login-list-sort-label-text = Urutkan berdasarkan:
 login-list-name-option = Nama (A-Z)
 login-list-name-reverse-option = Nama (Z-A)
@@ -56,11 +68,14 @@ about-logins-login-list-alerts-option = Peringatan
 login-list-last-changed-option = Terakhir Diubah
 login-list-last-used-option = Terakhir Digunakan
 login-list-intro-title = Tidak ada info masuk ditemukan
+login-list-intro-title2 = Tidak ada sandi yang disimpan
 login-list-intro-description = Ketika Anda menyimpan kata sandi di { -brand-product-name }, itu akan muncul di sini.
 about-logins-login-list-empty-search-title = Tidak ada info masuk ditemukan
+about-logins-login-list-empty-search-title2 = Tidak ada sandi ditemukan
 about-logins-login-list-empty-search-description = Tidak ada hasil pencarian yang cocok
 login-list-item-title-new-login = Info Masuk Baru
 login-list-item-subtitle-new-login = Masukkan kredensial info masuk Anda
+login-list-item-title-new-login2 = Tambahkan sandi
 login-list-item-subtitle-missing-username = (tidak ada nama pengguna)
 about-logins-list-item-breach-icon =
     .title = Situs web yang dibobol
@@ -79,18 +94,29 @@ about-logins-login-intro-heading-logged-out2 = Mencari info masuk Anda yang simp
 about-logins-login-intro-heading-logged-in = Info masuk yang disinkronkan tidak ditemukan.
 login-intro-description = Jika Anda menyimpan info masuk Anda di { -brand-product-name } pada perangkat lain, berikut cara mendapatkannya di sini:
 login-intro-instructions-fxa = Buat atau masuk ke { -fxaccount-brand-name } Anda pada perangkat tempat info masuk Anda tersimpan
+about-logins-login-intro-heading-message = Simpan kata sandi Anda di tempat yang aman
+login-intro-description2 = Semua kata sandi yang Anda simpan ke { -brand-product-name } dienkripsi. Selain itu, kami waspada terhadap pembobolan dan memperingatkan Anda jika Anda terpengaruh. <a data-l10n-name="breach-alert-link">Pelajari lebih lanjut</a>
+login-intro-instructions-fxa2 = Buat atau masuk ke akun Anda di perangkat tempat info masuk Anda tersimpan.
 login-intro-instructions-fxa-settings = Buka Pengaturan > Sinkronisasi > Aktifkan sinkronisasi… Centang Info masuk dan sandi.
 login-intro-instructions-fxa-passwords-help = Kunjungi <a data-l10n-name="passwords-help-link">dukungan sandi</a> untuk bantuan lebih lanjut.
 about-logins-intro-browser-only-import = Jika info masuk Anda disimpan di browser lain, Anda dapat <a data-l10n-name="import-link">mengimpornya ke { -brand-product-name }</a>
 about-logins-intro-import2 = Jika info masuk Anda tersimpan di luar { -brand-product-name }, Anda bisa <a data-l10n-name="import-browser-link">mengimpornya dari peramban lain</a> atau <a data-l10n-name="import-file-link">mengimpornya dari berkas</a>.
+about-logins-intro-import3 = Pilih tombol tanda tambah di atas untuk menambahkan kata sandi sekarang. Anda juga dapat <a data-l10n-name="import-browser-link">mengimpor kata sandi dari peramban lain</a> atau <a data-l10n-name="import-file-link">dari suatu berkas</a>.
 
 ## Login
 
 login-item-new-login-title = Buat Info Masuk Baru
+# Header for adding a password
+about-logins-login-item-new-login-title = Tambahkan kata sandi
 login-item-edit-button = Edit
 about-logins-login-item-remove-button = Hapus
 login-item-origin-label = Alamat Situs Web
 login-item-tooltip-message = Pastikan ini sesuai dengan alamat situs web tempat Anda masuk.
+about-logins-origin-tooltip2 = Masukkan alamat lengkap dan pastikan sama persis dengan tempat Anda masuk.
+# Variables
+#   $webTitle (String) - Website title of the password being changed.
+about-logins-edit-password-tooltip = Pastikan Anda menyimpan sandi Anda saat ini untuk situs ini. Mengubah sandi di sini tidak akan mengubah sandi di { $webTitle } secara otomatis.
+about-logins-add-password-tooltip = Pastikan Anda menyimpan sandi Anda saat ini untuk situs ini.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nama Pengguna
@@ -104,11 +130,9 @@ login-item-password-reveal-checkbox =
 login-item-copy-password-button-text = Salin
 login-item-copied-password-button-text = Tersalin!
 login-item-save-changes-button = Simpan Perubahan
+about-logins-login-item-save-changes-button = Simpan
 login-item-save-new-button = Simpan
 login-item-cancel-button = Batal
-login-item-time-changed = Terakhir diubah: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
-login-item-time-created = Dibuat: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
-login-item-time-used = Terakhir digunakan: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## The date is displayed in a timeline showing the password evolution.
 ## A label is displayed under the date to describe the type of change.
@@ -134,6 +158,18 @@ about-logins-edit-login-os-auth-dialog-message-win = Untuk mengubah info masuk A
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = mengedit info masuk tersimpan
+# The macOS strings are preceded by the operating system with "Firefox is trying to ".
+# This message can be seen when attempting to disable osauth in about:preferences.
+about-logins-os-auth-dialog-message =
+    { PLATFORM() ->
+        [macos] ubah setelan sandi
+       *[other] { -brand-short-name } mencoba mengubah setelan sandi. Gunakan perangkat masuk Anda untuk mengizinkan ini.
+    }
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message2-win = Untuk mengedit kata sandi Anda, masukkan kredensial masuk Windows Anda. Ini membantu melindungi keamanan akun Anda.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message2-macosx = mengedit kata sandi tersimpan
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Untuk melihat kata sandi Anda, masukkan kredensial info masuk Windows Anda. Hal ini membantu melindungi keamanan akun Anda.
 # This message can be seen when attempting to reveal a password in about:logins
@@ -149,6 +185,11 @@ about-logins-export-password-os-auth-dialog-message-win = Untuk mengekspor info 
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = mengekspor info masuk dan sandi tersimpan
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message2-win = Untuk mengekspor kata sandi Anda, ketikkan kredensial masuk Windows Anda. Hal ini membantu melindungi keamanan akun Anda.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message2-macosx = mengekspor kata sandi tersimpan
 
 ## Primary Password notification
 
@@ -164,6 +205,10 @@ confirmation-dialog-dismiss-button =
     .title = Batal
 about-logins-confirm-remove-dialog-title = Hapus info masuk ini?
 confirm-delete-dialog-message = Tindakan ini tidak dapat diurungkan.
+# Title for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-title = Hapus kata sandi?
+# Message for modal to confirm the removal of one saved password
+about-logins-confirm-delete-dialog-message = Anda tidak dapat membatalkan tindakan ini.
 about-logins-confirm-remove-dialog-confirm-button = Hapus
 
 ## Variables
@@ -193,12 +238,39 @@ about-logins-confirm-remove-all-sync-dialog-message =
         [1] Ini akan menghapus info masuk yang Anda simpan ke { -brand-short-name } di semua perangkat yang disinkronkan ke { -fxaccount-brand-name } Anda. Ini juga akan menghapus peringatan pembobolan yang muncul di sini. Anda tidak akan dapat mengurungkan tindakan ini.
        *[other] Ini akan menghapus info masuk yang Anda simpan ke { -brand-short-name } di semua perangkat yang disinkronkan ke { -fxaccount-brand-name } Anda. Ini juga akan menghapus peringatan pembobolan yang muncul di sini. Anda tidak akan dapat mengurungkan tindakan ini.
     }
+# Checkbox for modal to confirm the removal of saved passwords
+about-logins-confirm-remove-all-dialog-checkbox-label2 =
+    { $count ->
+        [1] Ya, hapus kata sandi
+       *[other] Ya, hapus kata sandi
+    }
+# Title for modal to confirm the removal of all saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-title2 = Hapus semua { $count } kata sandi?
+# Message for modal to confirm the removal of saved passwords when user is NOT synced
+about-logins-confirm-remove-all-dialog-message2 =
+    { $count ->
+        [1] Ini akan menghapus kata sandi yang disimpan ke { -brand-short-name } dan semua peringatan pembobolan. Anda tidak dapat membatalkan tindakan ini.
+       *[other] Ini akan menghapus kata sandi yang disimpan ke { -brand-short-name } dan semua peringatan pembobolan. Anda tidak dapat membatalkan tindakan ini.
+    }
+# Title for modal to confirm the removal of all saved passwords when user IS SYNCED
+about-logins-confirm-remove-all-sync-dialog-title2 = Hapus semua { $count } sandi dari semua perangkat?
+# Message for modal to confirm the removal of saved passwords when user IS synced.
+about-logins-confirm-remove-all-sync-dialog-message3 =
+    { $count ->
+        [1] Ini akan menghapus kata sandi yang disimpan ke { -brand-short-name } pada semua perangkat Anda yang disinkronkan. Ini juga akan menghapus peringatan pembobolan yang muncul di sini. Anda tidak dapat membatalkan tindakan ini.
+       *[other] Ini akan menghapus semua kata sandi yang disimpan ke { -brand-short-name } pada semua perangkat Anda yang disinkronkan. Ini juga akan menghapus peringatan pembobolan yang muncul di sini. Anda tidak dapat membatalkan tindakan ini.
+    }
 
 ##
 
 about-logins-confirm-export-dialog-title = Ekspor info masuk dan sandi
 about-logins-confirm-export-dialog-message = Kata sandi Anda akan disimpan sebagai teks biasa yang bisa dibaca (contoh: P@sw0rd) sehingga siapa pun yang dapat membuka berkas yang Anda ekspor akan bisa membacanya.
 about-logins-confirm-export-dialog-confirm-button = Ekspor…
+about-logins-confirm-export-dialog-title2 = Catatan tentang mengekspor kata sandi
+about-logins-confirm-export-dialog-message2 =
+    Saat Anda mengekspor, kata sandi Anda disimpan ke suatu berkas dengan teks yang dapat dibaca.
+    Setelah selesai menggunakan berkas tersebut, kami sarankan untuk menghapusnya agar orang lain yang menggunakan perangkat ini tidak dapat melihat kata sandi Anda.
+about-logins-confirm-export-dialog-confirm-button2 = Lanjutkan dengan ekspor
 about-logins-alert-import-title = Proses Impor Selesai
 about-logins-alert-import-message = Lihat ringkasan Detail Impor
 confirm-discard-changes-dialog-title = Buang perubahan yang belum disimpan?
@@ -213,7 +285,6 @@ about-logins-breach-alert-date = Pembobolan ini terjadi pada { DATETIME($date, d
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Buka { $hostname }
-about-logins-breach-alert-learn-more-link = Pelajari lebih lanjut
 
 ## Vulnerable Password notification
 
@@ -241,6 +312,11 @@ about-logins-export-file-picker-title = Ekspor Berkas Info Masuk
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = logins.csv
+# Title of the file picker dialog
+about-logins-export-file-picker-title2 = Ekspor Kata Sandi dari { -brand-short-name }
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename2 = passwords.csv
 about-logins-export-file-picker-export-button = Ekspor
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -254,6 +330,8 @@ about-logins-export-file-picker-csv-filter-title =
 
 # Title of the file picker dialog
 about-logins-import-file-picker-title = Impor Berkas Info Masuk
+# Title of the file picker dialog
+about-logins-import-file-picker-title2 = Impor Sandi ke { -brand-short-name }
 about-logins-import-file-picker-import-button = Impor
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -287,6 +365,9 @@ about-logins-import-dialog-items-no-change =
     { $count ->
        *[other] <span>Info masuk ganda ditemukan:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(tidak diimpor)</span>
     }
+about-logins-import-dialog-items-added2 = <span>Sandi baru ditambahkan:</span> <span data-l10n-name="count">{ $count }</span>
+about-logins-import-dialog-items-modified2 = <span>Entri yang ada diperbarui:</span> <span data-l10n-name="count">{ $count }</span>
+about-logins-import-dialog-items-no-change2 = <span>Entri ganda ditemukan:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(tidak diimpor)</span>
 about-logins-import-dialog-items-error =
     { $count ->
        *[other] <span>Kesalahan:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(tidak diimpor)</span>
@@ -307,6 +388,7 @@ about-logins-import-dialog-error-try-import-again = Coba Impor Lagi…
 about-logins-import-dialog-error-cancel = Batalkan
 about-logins-import-report-title = Ringkasan Impor
 about-logins-import-report-description = Info masuk dan kata sandi yang diimpor ke { -brand-short-name }.
+about-logins-import-report-description2 = Sandi diimpor ke { -brand-short-name }.
 #
 # Variables:
 #  $number (number) - The number of the row
@@ -314,6 +396,9 @@ about-logins-import-report-row-index = Baris { $number }
 about-logins-import-report-row-description-no-change = Duplikat: Persis sama dengan info masuk yang ada
 about-logins-import-report-row-description-modified = Info masuk yang sudah ada yang diperbarui
 about-logins-import-report-row-description-added = Info masuk baru yang ditambahkan
+about-logins-import-report-row-description-no-change2 = Duplikat: Persis sama dengan entri yang ada
+about-logins-import-report-row-description-modified2 = Entri yang sudah ada telah diperbarui
+about-logins-import-report-row-description-added2 = Sandi baru ditambahkan
 about-logins-import-report-row-description-error = Kesalahan: Bidang tidak ada
 
 ##
@@ -339,6 +424,12 @@ about-logins-import-report-no-change =
     { $count ->
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Info masuk duplikat</div> <div data-l10n-name="not-imported">(tidak diimpor)</div>
     }
+about-logins-import-report-added2 =
+    { $count ->
+       *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Sandi baru ditambahkan</div>
+    }
+about-logins-import-report-modified2 = <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Entri yang sudah ada yang diperbarui</div>
+about-logins-import-report-no-change2 = <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Entri duplikat</div> <div data-l10n-name="not-imported">(tidak diimpor)</div>
 about-logins-import-report-error =
     { $count ->
        *[other] <div data-l10n-name="count">{ $count }</div> <div data-l10n-name="details">Kesalahan</div> <div data-l10n-name="not-imported">(tidak diimpor)</div>

@@ -5,17 +5,10 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-
-
-## Permission Dialog
-## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
+##  $appName (string) - Name of the application that will be opened.
+##  $extension (string) - Name of extension that initiated the request
 
 permission-dialog-description = Cho phép trang web này mở liên kết { $scheme }?
 permission-dialog-description-file = Cho phép tập tin này mở liên kết { $scheme }?
@@ -25,10 +18,15 @@ permission-dialog-description-app = Cho phép trang web này mở liên kết { 
 permission-dialog-description-host-app = Cho phép { $host } mở liên kết { $scheme } bằng { $appName }?
 permission-dialog-description-file-app = Cho phép tập tin này mở liên kết { $scheme } bằng { $appName }?
 permission-dialog-description-extension-app = Cho phép tiện ích mở rộng { $extension } mở liên kết { $scheme } với { $appName }?
+permission-dialog-description-system-app = Mở liên kết { $scheme } với { $appName }?
+permission-dialog-description-system-noapp = Mở liên kết { $scheme }?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
+## Variables:
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
 
 permission-dialog-remember = Luôn cho phép <strong>{ $host }</strong> mở các liên kết <strong>{ $scheme }</strong>
 permission-dialog-remember-file = Luôn cho phép tập tin này mở các liên kết <strong>{ $scheme }</strong>
@@ -47,7 +45,7 @@ permission-dialog-set-change-app-link = Chọn một ứng dụng khác.
 
 ## Chooser dialog
 ## Variables:
-##  $scheme - the type of link that's being opened.
+##  $scheme (string) - The type of link that's being opened.
 
 chooser-window =
     .title = Chọn ứng dụng

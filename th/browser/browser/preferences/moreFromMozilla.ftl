@@ -11,18 +11,8 @@ more-from-moz-category =
 more-from-moz-subtitle = ดูผลิตภัณฑ์อื่น ๆ ของ { -vendor-short-name } ที่ร่วมสนับสนุนอินเทอร์เน็ตที่แข็งแกร่ง
 more-from-moz-firefox-mobile-title = { -brand-product-name } รุ่นมือถือ
 more-from-moz-firefox-mobile-description = เบราว์เซอร์มือถือที่ให้ความสำคัญกับความเป็นส่วนตัวของคุณเป็นอันดับแรก
-more-from-moz-firefox-mobile-description-advanced = เบราว์เซอร์มือถือ { -brand-product-name } ทำงานล่วงเวลาเพื่อให้แน่ใจว่าคุณจะได้ใช้อินเทอร์เน็ตที่ดี ไม่ว่าจะเป็นการปิดกั้นตัวติดตามไปจนถึงการระงับการเล่นอัตโนมัติที่น่ารำคาญ
 more-from-moz-mozilla-vpn-title = { -mozilla-vpn-brand-name }
 more-from-moz-mozilla-vpn-description = ค้นพบการเรียกดูและการป้องกันแบบไม่ระบุชื่อที่สูงขึ้นไปอีกขั้น
-more-from-moz-mozilla-vpn-description-advanced = { -mozilla-vpn-brand-name } เสริมการเรียกดูและการป้องกันแบบไม่ระบุชื่อให้สูงขึ้นไปอีกขั้น อีกทั้งยังปลอดภัยและไม่ติดตามกิจกรรมของคุณแบบ VPN อื่น ๆ
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-title = { -rally-brand-name }
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-description = มอบข้อมูลของคุณเพื่อร่วมสร้างอินเทอร์เน็ตที่ดีขึ้นสำหรับทุกคน
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-description-advanced = บริจาคข้อมูลของคุณเพื่อร่วมวิจัยที่สร้างอินเทอร์เน็ตที่ปลอดภัยและเปิดกว้างยิ่งขึ้นเพื่อช่วยเหลือผู้คน ไม่ใช่บริษัทเทคโนโลยีขนาดใหญ่
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-button-mozilla-rally-2 = เข้าร่วม { -rally-short-name }
 more-from-moz-qr-code-box-firefox-mobile-title = ดาวน์โหลดโดยใช้อุปกรณ์มือถือของคุณ ชี้กล้องของคุณไปที่รหัส QR เมื่อลิงก์ปรากฏขึ้น ให้แตะที่ลิงก์นั้น
 more-from-moz-qr-code-box-firefox-mobile-button = ส่งอีเมลไปยังโทรศัพท์ของคุณแทน
 more-from-moz-qr-code-firefox-mobile-img =
@@ -35,3 +25,10 @@ more-from-moz-learn-more-link = เรียนรู้เพิ่มเติ
 more-from-moz-firefox-relay-title = { -relay-brand-name }
 more-from-moz-firefox-relay-description = ปกป้องกล่องจดหมายและตัวตนของคุณด้วยการปกปิดอีเมลฟรี
 more-from-moz-firefox-relay-button = รับ { -relay-brand-short-name }
+
+## These strings are for the Mozilla Monitor card in about:preferences moreFromMozilla page
+
+more-from-moz-mozilla-monitor-title = { -mozmonitor-brand-name }
+more-from-moz-mozilla-monitor-us-description = นำข้อมูลส่วนตัวที่ถูกเปิดเผยของคุณกลับคืนโดยอัตโนมัติ
+more-from-moz-mozilla-monitor-global-description = รับการเตือนเมื่อข้อมูลของคุณรั่วไหล
+more-from-moz-mozilla-monitor-button = รับ { -monitor-brand-short-name }

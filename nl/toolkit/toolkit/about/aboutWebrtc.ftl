@@ -12,17 +12,31 @@ about-webrtc-document-title = Interne werking van WebRTC
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = about:webrtc opslaan als
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Gesloten PeerConnections tonen
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Gesloten PeerConnections verbergen
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = AEC-registratie
 about-webrtc-aec-logging-off-state-label = AEC-registratie starten
 about-webrtc-aec-logging-on-state-label = AEC-registratie stoppen
 about-webrtc-aec-logging-on-state-msg = AEC-registratie actief (spreek enkele minuten met de beller en stop daarna het vastleggen)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Automatisch vernieuwen
+about-webrtc-aec-logging-toggled-on-state-msg = AEC-registratie actief (spreek enkele minuten met de beller en stop daarna het vastleggen)
+about-webrtc-aec-logging-unavailable-sandbox = De omgevingsvariabele MOZ_DISABLE_CONTENT_SANDBOX=1 is vereist om AEC-logboeken te exporteren. Stel deze variabele alleen in als u de mogelijke risico’s begrijpt.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Vastgelegde logbestanden zijn te vinden in: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Automatisch vernieuwen
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = Standaard automatisch vernieuwen
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Vernieuwen
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
@@ -84,7 +98,11 @@ about-webrtc-save-page-label = Pagina opslaan
 about-webrtc-debug-mode-msg-label = Debugmodus
 about-webrtc-debug-mode-off-state-label = Debugmodus starten
 about-webrtc-debug-mode-on-state-label = Debugmodus stoppen
+about-webrtc-enable-logging-label = WebRTC-logboekvoorinstelling inschakelen
 about-webrtc-stats-heading = Sessiestatistieken
+about-webrtc-peerconnections-section-heading = RTCPeerConnection-statistieken
+about-webrtc-peerconnections-section-show-msg = RTCPeerConnection-statistieken tonen
+about-webrtc-peerconnections-section-hide-msg = RTCPeerConnection-statistieken verbergen
 about-webrtc-stats-clear = Geschiedenis wissen
 about-webrtc-log-heading = Verbindingslogboek
 about-webrtc-log-clear = Logboek wissen
@@ -92,6 +110,10 @@ about-webrtc-log-show-msg = logboek tonen
     .title = klik om deze sectie uit te vouwen
 about-webrtc-log-hide-msg = logboek verbergen
     .title = klik om deze sectie samen te vouwen
+about-webrtc-log-section-show-msg = Logboek tonen
+    .title = Klik om deze sectie uit te vouwen
+about-webrtc-log-section-hide-msg = Logboek verbergen
+    .title = Klik om deze sectie samen te vouwen
 about-webrtc-copy-report-button = Rapport kopiëren
 about-webrtc-copy-report-history-button = Rapportgeschiedenis kopiëren
 
@@ -105,6 +127,14 @@ about-webrtc-copy-report-history-button = Rapportgeschiedenis kopiëren
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (gesloten) { $now }
 
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Verzenden / ontvangen: { $codecs }
+about-webrtc-short-send-direction = Verzenden: { $codecs }
+about-webrtc-short-receive-direction = Ontvangen: { $codecs }
+
 ##
 
 about-webrtc-local-candidate = Lokale kandidaat
@@ -116,11 +146,19 @@ about-webrtc-raw-cand-show-msg = ruwe kandidaten tonen
     .title = klik om deze sectie uit te vouwen
 about-webrtc-raw-cand-hide-msg = ruwe kandidaten verbergen
     .title = klik om deze sectie samen te vouwen
+about-webrtc-raw-cand-section-show-msg = Ruwe kandidaten tonen
+    .title = Klik om deze sectie uit te vouwen
+about-webrtc-raw-cand-section-hide-msg = Ruwe kandidaten verbergen
+    .title = Klik om deze sectie samen te vouwen
 about-webrtc-priority = Prioriteit
 about-webrtc-fold-show-msg = details tonen
     .title = klik om deze sectie uit te vouwen
 about-webrtc-fold-hide-msg = details verbergen
     .title = klik om deze sectie samen te vouwen
+about-webrtc-fold-default-show-msg = Details tonen
+    .title = Klik om deze sectie uit te vouwen
+about-webrtc-fold-default-hide-msg = Details verbergen
+    .title = Klik om deze sectie samen te vouwen
 about-webrtc-dropped-frames-label = Verloren frames:
 about-webrtc-discarded-packets-label = Verwijderde pakketten:
 about-webrtc-decoder-label = Decoder
@@ -159,6 +197,17 @@ about-webrtc-configuration-element-provided = Voorzien
 about-webrtc-configuration-element-not-provided = Niet voorzien
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Door gebruiker ingestelde WebRTC-voorkeuren
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Door gebruiker aangepaste WebRTC-configuratie
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Door gebruiker gewijzigde configuratie tonen
+about-webrtc-user-modified-configuration-hide-msg = Door gebruiker gewijzigde configuratie verbergen
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Geschatte bandbreedte
 # The ID of the MediaStreamTrack
@@ -189,9 +238,11 @@ about-webrtc-save-page-msg = pagina opgeslagen in: { $path }
 about-webrtc-debug-mode-off-state-msg = traceerlogboek is te vinden in: { $path }
 about-webrtc-debug-mode-on-state-msg = debugmodus actief, traceerlogboek in: { $path }
 about-webrtc-aec-logging-off-state-msg = vastgelegde logbestanden zijn te vinden in: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Pagina opgeslagen in: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.

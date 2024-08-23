@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Exceções
-    .style = width: 45em
 permissions-window2 =
     .title = Exceções
     .style = min-width: 45em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Digite um nome de servidor válido
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Exceções à proteção aprimorada contra rastreamento
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Você desativou proteções nestes sites.
 permissions-exceptions-etp-window2 =
     .title = Exceções à proteção aprimorada contra rastreamento
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Você pode especificar quais sites têm
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Exceções - Cookies e dados de sites
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Exceções - Cookies e dados de sites
     .style = { permissions-window2.style }
@@ -97,39 +87,35 @@ permissions-exceptions-cookie-desc = Você pode especificar alguns sites para se
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Exceções - Modo somente HTTPS
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Exceções - Modo somente HTTPS
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Você pode desativar o modo somente HTTPS em sites específicos. O { -brand-short-name } não tenta mudar a conexão para HTTPS seguro nesses sites. As exceções não se aplicam em janelas privativas.
+permissions-exceptions-https-only-desc2 = Você pode desativar o modo somente HTTPS em sites específicos. O { -brand-short-name } não tenta mudar a conexão para HTTPS seguro nesses sites.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Sites permitidos - Abertura de janelas
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
-    .title = Sites permitidos - Abertura de janelas
+    .title = Sites permitidos - Abertura de janelas ou abas
     .style = { permissions-window2.style }
-permissions-exceptions-popup-desc = Você pode especificar que sites têm permissão para abrir janelas. Digite o endereço exato de um site e clique em Permitir.
+permissions-exceptions-popup-desc = Você pode especificar quais sites têm permissão para abrir janelas ou abas. Digite o endereço exato de um site e clique em Permitir.
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Exceções - Contas de acesso salvas
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Exceções - Contas de acesso salvas
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = As contas de acesso dos seguintes sites não serão salvas
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Exceções - Senhas salvas
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = O { -brand-short-name } não salva senhas dos sites desta lista.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Sites permitidos - Instalação de extensões
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Sites permitidos - Instalação de extensões
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Você pode especificar que sites têm permi
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Configurações - Reprodução automática
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Configurações - Reprodução automática
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Você pode gerenciar aqui os sites que não dev
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Configurações - Permissões de Notificações
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Configurações - Permissões de notificações
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Isso impede que qualquer site solic
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Configurações - Permissões de Localização
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Configurações - Permissões de localização
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Isso impede que qualquer site solicite 
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Configurações - Permissões de realidade virtual
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Configurações - Permissões de realidade virtual
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Isso impede que qualquer site solicite nova p
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Configurações - Permissões da Câmera
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Configurações - Permissões de câmera
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Isso impede que qualquer site solicite no
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Configurações - Permissões do Microfone
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Configurações - Permissões de microfone
     .style = { permissions-window2.style }

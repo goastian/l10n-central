@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Thẻ mới
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Thêm công cụ tìm kiếm
 newtab-topsites-add-shortcut-header = Lối tắt mới
 newtab-topsites-edit-topsites-header = Sửa trang web hàng đầu
 newtab-topsites-edit-shortcut-header = Chỉnh sửa lối tắt
+newtab-topsites-add-shortcut-label = Thêm lối tắt
 newtab-topsites-title-label = Tiêu đề
 newtab-topsites-title-input =
     .placeholder = Nhập tiêu đề
@@ -198,6 +199,7 @@ newtab-section-header-recent-activity = Hoạt động gần đây
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Được đề xuất bởi { $provider }
+newtab-section-header-stories = Những câu chuyện kích động tư tưởng
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -206,6 +208,8 @@ newtab-empty-section-highlights = Bắt đầu duyệt web và chúng tôi sẽ 
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Bạn đã bắt kịp. Kiểm tra lại sau để biết thêm các câu chuyện hàng đầu từ { $provider }. Không muốn đợi? Chọn một chủ đề phổ biến để tìm thêm những câu chuyện tuyệt vời từ khắp nơi trên web.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Bạn đã bắt kịp. Kiểm tra lại sau để biết thêm các câu chuyện. Không muốn đợi? Chọn một chủ đề phổ biến để tìm thêm những câu chuyện tuyệt vời từ khắp nơi trên web.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -223,25 +227,25 @@ newtab-pocket-read-more = Các chủ đề phổ biến:
 newtab-pocket-new-topics-title = Muốn nhiều câu chuyện hơn nữa? Xem các chủ đề phổ biến này từ { -pocket-brand-name }
 newtab-pocket-more-recommendations = Nhiều khuyến nghị hơn
 newtab-pocket-learn-more = Tìm hiểu thêm
-newtab-pocket-cta-button = Nhận { -pocket-brand-name }
+newtab-pocket-cta-button = Sử dụng { -pocket-brand-name }
 newtab-pocket-cta-text = Lưu những câu chuyện bạn yêu thích trong { -pocket-brand-name } và vui vẻ khi đọc chúng.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } là một phần của gia đình { -brand-product-name }
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Lưu vào { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Đã lưu vào { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Tải thêm các câu chuyện
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Bạn đã bắt kịp tất cả!
-newtab-pocket-last-card-desc = Kiểm tra lại sau để biết thêm.
-newtab-pocket-last-card-image =
-    .alt = Bạn đã bắt kịp tất cả
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Lưu
 newtab-pocket-saved = Đã lưu
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Thêm những nội dung giống thế này
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Không hợp với tôi
+newtab-toast-thumbs-up-or-down = Cảm ơn. Những phản hồi của bạn sẽ giúp chúng tôi cải thiện bản tin của bạn.
+newtab-toast-dismiss-button =
+    .title = Bỏ qua
+    .aria-label = Bỏ qua
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -258,6 +262,9 @@ newtab-error-fallback-refresh-link = Thử làm mới lại trang.
 
 newtab-custom-shortcuts-title = Lối tắt
 newtab-custom-shortcuts-subtitle = Các trang web bạn lưu hoặc truy cập
+newtab-custom-shortcuts-toggle =
+    .label = Lối tắt
+    .description = Các trang web bạn lưu hoặc truy cập
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -267,9 +274,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Các lối tắt được tài trợ
 newtab-custom-pocket-title = Được đề xuất bởi { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Nội dung đặc biệt do { -pocket-brand-name }, một phần của { -brand-product-name }, quản lý
+newtab-custom-stories-toggle =
+    .label = Câu chuyện được đề xuất
+    .description = Nội dung đặc biệt được quản lý bởi gia đình { -brand-product-name }
 newtab-custom-pocket-sponsored = Câu chuyện được tài trợ
 newtab-custom-pocket-show-recent-saves = Hiển thị các lần lưu gần đây
 newtab-custom-recent-title = Hoạt động gần đây
 newtab-custom-recent-subtitle = Tuyển chọn các trang và nội dung gần đây
+newtab-custom-recent-toggle =
+    .label = Hoạt động gần đây
+    .description = Tuyển chọn các trang và nội dung gần đây
+newtab-custom-weather-toggle =
+    .label = Thời tiết
+    .description = Sơ lược về dự báo hôm nay
 newtab-custom-close-button = Đóng
 newtab-custom-settings = Quản lý các cài đặt khác
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Hình nền
+newtab-wallpaper-reset = Đặt lại về mặc định
+newtab-wallpaper-light-red-panda = Gấu trúc đỏ
+newtab-wallpaper-light-mountain = Núi trắng
+newtab-wallpaper-light-sky = Bầu trời với những đám mây màu tím và hồng
+newtab-wallpaper-light-color = Hình dạng màu xanh, hồng và vàng
+newtab-wallpaper-light-landscape = Phong cảnh núi sương mù xanh
+newtab-wallpaper-light-beach = Bãi biển có cây cọ
+newtab-wallpaper-dark-aurora = Cực quang
+newtab-wallpaper-dark-color = Hình dạng màu đỏ và màu xanh
+newtab-wallpaper-dark-panda = Gấu trúc đỏ ẩn trong rừng
+newtab-wallpaper-dark-sky = Cảnh quan thành phố với bầu trời đêm
+newtab-wallpaper-dark-mountain = Phong cảnh núi
+newtab-wallpaper-dark-city = Phong cảnh thành phố màu tím
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Màu
+newtab-wallpaper-blue = Xanh dương
+newtab-wallpaper-light-blue = Xanh dương nhạt
+newtab-wallpaper-light-purple = Tím nhạt
+newtab-wallpaper-light-green = Xanh lục nhạt
+newtab-wallpaper-green = Xanh lục
+newtab-wallpaper-beige = Be
+newtab-wallpaper-yellow = Vàng
+newtab-wallpaper-orange = Da cam
+newtab-wallpaper-pink = Hồng
+newtab-wallpaper-light-pink = Hồng nhạt
+newtab-wallpaper-red = Đỏ
+newtab-wallpaper-dark-blue = Xanh dương đậm
+newtab-wallpaper-dark-purple = Tím đậm
+newtab-wallpaper-dark-green = Xanh lục đậm
+newtab-wallpaper-brown = Nâu
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Trừu tượng
+newtab-wallpaper-abstract-green = Hình dạng màu xanh lục
+newtab-wallpaper-abstract-blue = Hình dạng màu xanh dương
+newtab-wallpaper-abstract-purple = Hình dạng màu tím
+newtab-wallpaper-abstract-orange = Hình dạng màu cam
+newtab-wallpaper-gradient-orange = Gradient màu cam và màu hồng
+newtab-wallpaper-abstract-blue-purple = Hình dạng màu xanh dương và màu tím
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Hình ảnh
+newtab-wallpaper-beach-at-sunrise = Bãi biển lúc bình minh
+newtab-wallpaper-beach-at-sunset = Bãi biển lúc hoàng hôn
+newtab-wallpaper-storm-sky = Trời giông bão
+newtab-wallpaper-sky-with-pink-clouds = Bầu trời với đám mây màu hồng
+newtab-wallpaper-red-panda-yawns-in-a-tree = Gấu trúc đỏ ngáp trên cây
+newtab-wallpaper-white-mountains = Núi trắng
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Hình ảnh bởi <a data-l10n-name="name-link">{ $author_string }</a> trên <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Thử một chút màu sắc
+newtab-wallpaper-feature-highlight-content = Mang lại diện mạo mới cho thẻ mới của bạn bằng hình nền.
+newtab-wallpaper-feature-highlight-button = Đã hiểu
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Bỏ qua
+    .aria-label = Đóng cửa sổ bật lên
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Xem dự báo với { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Được tài trợ
+newtab-weather-menu-change-location = Thay đổi khu vực
+newtab-weather-change-location-search-input = Tìm kiếm khu vực
+newtab-weather-menu-weather-display = Cách hiển thị thời tiết
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Đơn giản
+newtab-weather-menu-change-weather-display-simple = Chuyển sang xem đơn giản
+newtab-weather-menu-weather-display-option-detailed = Chi tiết
+newtab-weather-menu-change-weather-display-detailed = Chuyển sang xem chi tiết
+newtab-weather-menu-temperature-units = Đơn vị nhiệt độ
+newtab-weather-menu-temperature-option-fahrenheit = Độ F
+newtab-weather-menu-temperature-option-celsius = Độ C
+newtab-weather-menu-change-temperature-units-fahrenheit = Chuyển sang độ F
+newtab-weather-menu-change-temperature-units-celsius = Chuyển sang độ C
+newtab-weather-menu-hide-weather = Ẩn thời tiết trên thẻ mới
+newtab-weather-menu-learn-more = Tìm hiểu thêm
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Dữ liệu thời tiết hiện không có sẵn.

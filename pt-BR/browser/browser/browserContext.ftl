@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Conta
+    .tooltiptext = Conta
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Adicionar esta página aos favoritos
-    .accesskey = m
-    .tooltiptext = Adicionar aos favoritos
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Adicionar página aos favoritos
-    .accesskey = f
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Editar favorito
-    .accesskey = f
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Adicionar esta página aos favoritos
-    .accesskey = m
-    .tooltiptext = Adicionar aos favoritos ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Editar este favorito
-    .accesskey = m
-    .tooltiptext = Editar este favorito
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Editar este favorito
-    .accesskey = m
-    .tooltiptext = Editar este favorito ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Adicionar página aos favoritos…
     .accesskey = f
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Abrir link em nova janela privativa
     .accesskey = r
-main-context-menu-bookmark-link =
-    .label = Adicionar link aos favoritos
-    .accesskey = f
 main-context-menu-bookmark-link-2 =
     .label = Adicionar link aos favoritos…
     .accesskey = v
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Copiar link
     .accesskey = l
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Copiar link sem rastreamento de sites
+    .accesskey = i
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Enviar áudio por email…
     .accesskey = r
-main-context-menu-plugin-play =
-    .label = Ativar este plugin
-    .accesskey = t
-main-context-menu-plugin-hide =
-    .label = Ocultar este plugin
-    .accesskey = c
 main-context-menu-save-to-pocket =
     .label = Salvar página no { -pocket-brand-name }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Usar conta salva
     .accesskey = o
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Usar senha salva
     .accesskey = e
@@ -341,6 +312,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = S
 main-context-menu-manage-logins2 =
     .label = Gerenciar contas
+    .accesskey = G
+main-context-menu-manage-passwords =
+    .label = Gerenciar senhas
     .accesskey = G
 main-context-menu-keyword =
     .label = Adicionar um atalho a esta pesquisa…
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Recarregar frame
     .accesskey = R
-main-context-menu-frame-bookmark =
-    .label = Adicionar este frame aos favoritos
-    .accesskey = d
 main-context-menu-frame-add-bookmark =
     .label = Adicionar frame aos favoritos…
     .accesskey = m
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Ver informações do frame
     .accesskey = i
-main-context-menu-print-selection =
-    .label = Imprimir seleção
-    .accesskey = r
 main-context-menu-print-selection-2 =
     .label = Imprimir seleção…
     .accesskey = r

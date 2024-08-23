@@ -2,9 +2,18 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# The button for "Midori Translations" in the url bar.
+# The button for "Firefox Translations" in the url bar.
 urlbar-translations-button =
     .tooltiptext = Dịch trang này
+# The button for "Firefox Translations" in the url bar. Note that here "Beta" should
+# not be translated, as it is a reflection of the un-localized BETA icon that is in the
+# panel.
+urlbar-translations-button2 =
+    .tooltiptext = Dịch trang này - Beta
+# Note that here "Beta" should not be translated, as it is a reflection of the
+# un-localized BETA icon that is in the panel.
+urlbar-translations-button-intro =
+    .tooltiptext = Thử bản dịch riêng tư trong { -brand-shorter-name } - Beta
 # If your language requires declining the language name, a possible solution
 # is to adapt the structure of the phrase, or use a support noun, e.g.
 # `Page translated from: { $fromLanguage }. Current target language: { $toLanguage }`
@@ -24,11 +33,13 @@ translations-panel-settings-button =
 translations-panel-displayname-beta =
     .label = { $language } BETA
 
-## Options in the Midori Translations settings.
+## Options in the Firefox Translations settings.
 
 translations-panel-settings-manage-languages =
     .label = Quản lý ngôn ngữ
 translations-panel-settings-about = Về bản dịch trong { -brand-shorter-name }
+translations-panel-settings-about2 =
+    .label = Về bản dịch trong { -brand-shorter-name }
 # Text displayed for the option to always translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
@@ -36,6 +47,8 @@ translations-panel-settings-always-translate-language =
     .label = Luôn dịch { $language }
 translations-panel-settings-always-translate-unknown-language =
     .label = Luôn dịch ngôn ngữ này
+translations-panel-settings-always-offer-translation =
+    .label = Luôn đề nghị dịch
 # Text displayed for the option to never translate a given language
 # Variables:
 #   $language (string) - The localized display name of the detected language
@@ -57,6 +70,9 @@ translations-panel-translate-button-loading =
     .label = Vui lòng chờ…
 translations-panel-translate-cancel =
     .label = Hủy bỏ
+translations-panel-learn-more-link = Tìm hiểu thêm
+translations-panel-intro-header = Thử bản dịch riêng tư trong { -brand-shorter-name }
+translations-panel-intro-description = Vì riêng tư của bạn, bản dịch sẽ không bao giờ rời khỏi thiết bị của bạn. Sắp có các ngôn ngữ và cải tiến mới!
 translations-panel-error-translating = Có sự cố khi dịch. Hãy thử lại.
 translations-panel-error-load-languages = Không thể tải ngôn ngữ
 translations-panel-error-load-languages-hint = Kiểm tra kết nối Internet của bạn và thử lại.
@@ -100,7 +116,7 @@ translations-panel-choose-language =
 translations-panel-restore-button =
     .label = Hiển thị bản gốc
 
-## Midori Translations language management in about:preferences.
+## Firefox Translations language management in about:preferences.
 
 translations-manage-header = Dịch
 translations-manage-settings-button =
@@ -110,14 +126,29 @@ translations-manage-description = Tải xuống ngôn ngữ để dịch ngoại
 translations-manage-all-language = Tất cả ngôn ngữ
 translations-manage-download-button = Tải xuống
 translations-manage-delete-button = Xóa
+translations-manage-intro = Đặt tùy chọn ngôn ngữ và bản dịch trang web của bạn, đồng thời quản lý các ngôn ngữ được cài đặt để dịch ngoại tuyến.
+translations-manage-install-description = Cài đặt ngôn ngữ để dịch ngoại tuyến
+translations-manage-language-install-button =
+    .label = Cài đặt
+translations-manage-language-install-all-button =
+    .label = Cài đặt tất cả
+    .accesskey = I
+translations-manage-intro-2 = Đặt tùy chọn ngôn ngữ và bản dịch trang web của bạn, đồng thời quản lý các ngôn ngữ được tải xuống để dịch ngoại tuyến.
+translations-manage-download-description = Tải xuống ngôn ngữ để dịch ngoại tuyến
 translations-manage-language-download-button =
     .label = Tải xuống
+translations-manage-language-download-all-button =
+    .label = Tải xuống tất cả
     .accesskey = D
-translations-manage-language-delete-button =
+translations-manage-language-remove-button =
     .label = Xóa
+translations-manage-language-remove-all-button =
+    .label = Xóa tất cả
     .accesskey = e
+translations-manage-error-install = Đã xảy ra sự cố khi cài đặt tập tin ngôn ngữ. Vui lòng thử lại.
 translations-manage-error-download = Đã xảy ra sự cố khi tải xuống tập tin ngôn ngữ. Hãy thử lại.
 translations-manage-error-delete = Đã xảy ra sự cố khi xóa tập tin ngôn ngữ. Hãy thử lại.
+translations-manage-error-remove = Đã xảy ra lỗi khi xóa tập tin ngôn ngữ. Vui lòng thử lại.
 translations-manage-error-list = Không tải được danh sách các ngôn ngữ có sẵn để dịch. Làm mới trang để thử lại.
 translations-settings-title =
     .title = Cài đặt dịch
@@ -146,3 +177,77 @@ translations-settings-remove-all-sites-button =
 translations-settings-close-dialog =
     .buttonlabelaccept = Đóng
     .buttonaccesskeyaccept = C
+# Text displayed in the right-click context menu for translating
+# selected text to a yet-to-be-determined language.
+main-context-menu-translate-selection =
+    .label = Dịch phần lựa chọn…
+    .accesskey = n
+# Text displayed in the right-click context menu for translating
+# selected text to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-selection-to-language =
+    .label = Dịch phần lựa chọn sang { $language }
+    .accesskey = n
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a yet-to-be-determined language.
+main-context-menu-translate-link-text =
+    .label = Dịch văn bản liên kết…
+    .accesskey = n
+# Text displayed in the right-click context menu for translating
+# the text of a hyperlink to a target language.
+#
+# Variables:
+#   $language (string) - The localized display name of the target language
+main-context-menu-translate-link-text-to-language =
+    .label = Dịch văn bản liên kết sang { $language }
+    .accesskey = n
+# Text displayed in the select translations panel header.
+select-translations-panel-header = Dịch
+# Text displayed above the from-language dropdown menu.
+select-translations-panel-from-label = Từ
+# Text displayed above the to-language dropdown menu.
+select-translations-panel-to-label = Sang
+# Text displayed above the try-another-source-language dropdown menu.
+select-translations-panel-try-another-language-label = Hãy thử ngôn ngữ nguồn khác
+select-translations-panel-cancel-button =
+    .label = Hủy bỏ
+# Text displayed on the copy button before it is clicked.
+select-translations-panel-copy-button =
+    .label = Sao chép
+# Text displayed on the copy button after it is clicked.
+select-translations-panel-copy-button-copied =
+    .label = Đã sao chép
+select-translations-panel-done-button =
+    .label = Xong
+select-translations-panel-translate-full-page-button =
+    .label = Dịch toàn trang
+select-translations-panel-translate-button =
+    .label = Dịch
+select-translations-panel-try-again-button =
+    .label = Thử lại
+# Text displayed as a placeholder when the panel is idle.
+select-translations-panel-idle-placeholder-text = Văn bản đã dịch sẽ xuất hiện ở đây.
+# Text displayed as a placeholder when the panel is actively translating.
+select-translations-panel-translating-placeholder-text = Đang dịch…
+select-translations-panel-init-failure-message =
+    .message = Không thể tải ngôn ngữ. Hãy kiểm tra kết nối Internet của bạn và thử lại.
+# Text displayed when the translation fails to complete.
+select-translations-panel-translation-failure-message =
+    .message = Có sự cố khi dịch. Hãy thử lại.
+# If your language requires declining the language name, a possible solution
+# is to adapt the structure of the phrase, or use a support noun, e.g.
+# `Sorry, we don't support the language yet: { $language }
+#
+# Variables:
+#   $language (string) - The language of the document.
+select-translations-panel-unsupported-language-message-known =
+    .message = Xin lỗi, chúng tôi chưa hỗ trợ { $language }.
+select-translations-panel-unsupported-language-message-unknown =
+    .message = Xin lỗi, chúng tôi chưa hỗ trợ ngôn ngữ này.
+# Text displayed on the menuitem that opens the Translation Settings page.
+select-translations-panel-open-translations-settings-menuitem =
+    .label = Cài đặt dịch
+# An announcement made to assistive technology when the translation is complete
+select-translations-panel-translation-complete-announcement = Đã hoàn tất dịch

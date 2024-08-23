@@ -19,6 +19,11 @@ migration-wizard-selection-option-without-profile = { $sourceBrowser }
 #  $sourceBrowser (String): the name of the browser to import from.
 #  $profileName (String): the name of the user profile to import from.
 migration-wizard-selection-option-with-profile = { $sourceBrowser } — { $profileName }
+
+# Each migrator is expected to include a display name string, and that display
+# name string should have a key with "migration-wizard-migrator-display-name-"
+# as a prefix followed by the unique identification key for the migrator.
+
 # Each migrator is expected to include a display name string, and that display
 # name string should have a key with "migration-wizard-migrator-display-name-"
 # as a prefix followed by the unique identification key for the migrator.
@@ -32,7 +37,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = パスワード (CSV ファイルから)
 migration-wizard-migrator-display-name-file-bookmarks = ブックマーク (HTML ファイルから)
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -40,6 +45,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = リーディングリスト (Safari から)
+migration-imported-edge-reading-list = リーディングリスト (Edge から)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } には、この端末にインストールされた他のブラウザーのプロファイルへのアクセス権がありません。
+migration-no-permissions-instructions = 別のブラウザーからのデータの読み込みを続けるには、{ -brand-short-name } にそのブラウザーのプロファイルフォルダーへのアクセス権を与えてください。
+migration-no-permissions-instructions-step1 = “続行” を選択します
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = ファイル選択画面で <code>{ $permissionsPath }</code> を開き、“選択” ボタンを押します。
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -55,7 +79,8 @@ migration-bookmarks-option-label = ブックマーク
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = お気に入り
 migration-logins-and-passwords-option-label = 保存したログイン情報とパスワード
-migration-history-option-label = ブラウジング履歴
+migration-passwords-option-label = 保存したパスワード
+migration-history-option-label = 閲覧履歴
 migration-extensions-option-label = 拡張機能
 migration-form-autofill-option-label = フォームの自動入力データ
 migration-payment-methods-option-label = 支払い方法
@@ -71,18 +96,10 @@ migration-passwords-from-file-no-valid-data = このファイルには正しい�
 migration-passwords-from-file-picker-title = パスワードファイルの読み込み
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
-migration-passwords-from-file-csv-filter-title =
-    { PLATFORM() ->
-        [macos] CSV ドキュメント
-       *[other] CSV ファイル
-    }
+migration-passwords-from-file-csv-filter-title = CSV ファイル
 # A description for the .tsv file format that may be shown as the file type
 # filter by the operating system. TSV is short for 'tab separated values'.
-migration-passwords-from-file-tsv-filter-title =
-    { PLATFORM() ->
-        [macos] TSV ドキュメント
-       *[other] TSV ファイル
-    }
+migration-passwords-from-file-tsv-filter-title = TSV ファイル
 # Shown in the migration wizard after importing passwords from a file
 # has completed, if new passwords were added.
 #
@@ -259,6 +276,6 @@ migration-wizard-progress-success-payment-methods =
         [one] 支払い方法 { $quantity } 件
        *[other] 支払い方法 { $quantity } 件
     }
-migration-wizard-safari-permissions-sub-header = Safari のブックマークとブラウジング履歴を読み込むには:
+migration-wizard-safari-permissions-sub-header = Safari のブックマークと閲覧履歴を読み込むには:
 migration-wizard-safari-instructions-continue = “続ける” を選択します
 migration-wizard-safari-instructions-folder = リストから Safari フォルダーを選択し、“開く” をクリックします

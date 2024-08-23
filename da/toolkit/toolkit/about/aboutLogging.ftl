@@ -34,8 +34,25 @@ about-logging-with-profiler-stacks-checkbox = Aktiver stack-traces for logbesked
 
 about-logging-preset-networking-label = Netværk
 about-logging-preset-networking-description = Logmoduler til at diagnosticere netværksproblemer
+about-logging-preset-networking-cookie-label = Cookies
+about-logging-preset-networking-cookie-description = Logmoduler til at diagnosticere cookieproblemer
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Logmoduler til at diagnosticere WebSocket-problemer
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Logmoduler til at diagnosticere HTTP/3- og QUIC-problemer
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3-upload-hastighed
+about-logging-preset-networking-http3-upload-speed-description = Logmoduler til at diagnosticere HTTP/3-problemer med upload-hastighed
 about-logging-preset-media-playback-label = Medieafspilning
 about-logging-preset-media-playback-description = Logmoduler til at diagnosticere problemer med medieafspilning (ikke problemer med videokonferencer)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Logmoduler til at diagnosticere WebRTC-opkald
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Logmoduler til at diagnosticere WebGPU-problemer
+about-logging-preset-gfx-label = Grafik
+about-logging-preset-gfx-description = Logmoduler til at diagnosticere grafikproblemer
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Logmoduler til at diagnosticere problemer med Microsoft Windows
 about-logging-preset-custom-label = Tilpasset
 about-logging-preset-custom-description = Manuelt valgte logmoduler
 # Error handling

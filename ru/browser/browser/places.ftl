@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Забыть об этом сайте
     .accesskey = б
+places-forget-domain-data =
+    .label = Забыть об этом сайте…
+    .accesskey = а
 places-sortby-name =
     .label = Упорядочивать по имени
     .accesskey = ч
@@ -138,14 +141,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Забыть об этом сайте
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Это действие удалит все данные, связанные с { $hostOrBaseDomain }, в том числе историю, пароли, куки, кеш и настройки содержимого. Вы уверены, что хотите продолжить?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Это действие удалит данные, связанные с { $hostOrBaseDomain }, включая историю, куки, кеш и настройки содержимого. Связанные закладки и пароли не будут удалены. Вы уверены, что хотите продолжить?
 places-forget-about-this-site-forget = Забыть
-places-library =
-    .title = Библиотека
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Библиотека
 places-organize-button =

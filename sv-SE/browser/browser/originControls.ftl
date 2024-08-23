@@ -12,6 +12,10 @@ origin-controls-no-access =
     .label = Tillägget kan inte läsa och ändra data
 origin-controls-quarantined =
     .label = Tillägget får inte läsa och ändra data
+origin-controls-quarantined-status =
+    .label = Tillägget är ej tillåtet på begränsade webbplatser
+origin-controls-quarantined-allow =
+    .label = Tillåt på begränsade webbplatser
 origin-controls-options =
     .label = Tillägg kan läsa och ändra data:
 origin-controls-option-all-domains =
@@ -28,7 +32,7 @@ origin-controls-option-always-on =
 ## These strings are used to map Origin Controls states to user-friendly
 ## messages. They currently appear in the unified extensions panel.
 
-origin-controls-state-no-access = Det går inte att läsa och ändra data på den här webbplatsen
+origin-controls-state-no-access = Kan inte läsa och ändra data på den här webbplatsen
 origin-controls-state-quarantined = Inte tillåtet av { -vendor-short-name } på den här webbplatsen
 origin-controls-state-always-on = Kan alltid läsa och ändra data på den här webbplatsen
 origin-controls-state-when-clicked = Behörighet krävs för att läsa och ändra data

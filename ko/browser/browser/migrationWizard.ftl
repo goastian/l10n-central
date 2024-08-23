@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge 레거시
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = CSV 파일의 비밀번호
 migration-wizard-migrator-display-name-file-bookmarks = HTML 파일의 북마크
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = 구독 목록 (Safari로부터)
+migration-imported-edge-reading-list = 구독 목록 (Edge로부터)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name }는 이 기기에 설치된 다른 브라우저의 프로필에 액세스할 수 없습니다.
+migration-no-permissions-instructions = 계속 다른 브라우저에서 데이터를 가져오려면, 해당 프로필 폴더에 대한 { -brand-short-name } 액세스 권한을 부여하세요.
+migration-no-permissions-instructions-step1 = "계속"을 선택하세요
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = 파일 선택기에서 <code>{ $permissionsPath }</code>로 이동하여 “선택”을 선택하세요.
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = 북마크
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = 즐겨찾기
 migration-logins-and-passwords-option-label = 저장된 로그인 및 비밀번호
+migration-passwords-option-label = 저장된 비밀번호
 migration-history-option-label = 방문 기록
 migration-extensions-option-label = 확장 기능
 migration-form-autofill-option-label = 양식 자동 채우기 데이터
@@ -146,7 +166,14 @@ migration-list-payment-methods-label = 결제 방법
 ##
 
 migration-wizard-progress-header = 데이터 가져오기
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = 데이터를 성공적으로 가져옴
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = 데이터 가져오기 완료
 migration-wizard-progress-icon-in-progress =
     .aria-label = 가져오는 중…
 migration-wizard-progress-icon-completed =

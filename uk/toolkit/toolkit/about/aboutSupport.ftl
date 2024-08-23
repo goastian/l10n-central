@@ -188,6 +188,24 @@ media-codec-support-codec-name = Назва кодека
 media-codec-support-supported = Підтримується
 media-codec-support-unsupported = Не підтримується
 media-codec-support-error = Інформація про підтримку кодеків недоступна. Повторіть спробу після відтворення медіафайлу.
+media-codec-support-lack-of-extension = Встановити розширення
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Інформація про модулі дешифрування вмісту
+media-key-system-name = Назва ключової системи
+media-video-robustness = Надійність відео
+media-audio-robustness = Надійність аудіо
+media-cdm-capabilities = Можливості
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Чистий початок
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Сумісність з HDCP 2.2
 
 ##
 
@@ -272,6 +290,7 @@ try-newer-driver = Заблоковано для вашого графічног
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Параметри ClearType
 compositing = Композиція
+support-font-determination = Інформація про налагодження видимості шрифту
 hardware-h264 = Апаратне декодування H264
 main-thread-no-omtc = головний потік, не OMTC
 yes = Так
@@ -417,3 +436,15 @@ pointing-device-mouse = Миша
 pointing-device-touchscreen = Сенсорний екран
 pointing-device-pen-digitizer = Цифрові ручки
 pointing-device-none = Немає вказівних пристроїв
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Аналіз вмісту (DLP)
+content-analysis-active = Активний
+content-analysis-connected-to-agent = Під'єднано до агента
+content-analysis-agent-path = Шлях до агента
+content-analysis-agent-failed-signature-verification = Агент не пройшов перевірку підпису
+content-analysis-request-count = Кількість запитів

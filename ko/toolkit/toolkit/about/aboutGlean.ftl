@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = Glean 정보
-about-glean-description = <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a>는 Mozilla 제품에 사용되는 데이터 수집 라이브러리입니다. 이 페이지는 <a data-l10n-name="fog-debug-doc-link">Glean SDK에서 디버깅 및 로깅 상태를 구성</a>해야 하는 개발자 및 테스터를 위한 페이지입니다.
-about-glean-warning = 이 인터페이스를 잘못 사용하면 { -brand-short-name } 작동이 중단될 수 있습니다.
-tag-pings-label = 전송된 모든 핑에 이 태그를 지정
-log-pings-label = 보내기 전에 핑 페이로드를 기록하시겠습니까?
-send-pings-label = 명명된 핑 보내기
-controls-button-label = 설정 제출
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -63,6 +53,8 @@ about-glean-manual-testing =
 about-glean-no-ping-label = (핑을 제출하지 마세요)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = 앞의 필드에서 기억할 수 있는 디버그 태그가 있는지 확인하여 나중에 핑을 인식할 수 있습니다.
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = 나중에 핑을 인식할 수 있도록 기억하기 쉬운 디버그 태그<span>(20자 이하, 영숫자 및 -만)</span>를 설정하세요.
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -89,9 +81,23 @@ about-glean-li-for-visit-gdpv =
 # Do not translate strings between <code> </code> tags.
 about-glean-adhoc-explanation =
     더 많은 <i>임시</i> 테스트를 위해
-    여기 <code>about:glean</code>에서 개발자 도구 콘솔을 열고 <code>Glean.metricCategory.metricName.testGetValue()</code> 같은 
+    여기 <code>about:glean</code>에서 개발자 도구 콘솔을 열고 
+    <code>Glean.metricCategory.metricName.testGetValue()</code> 같은 
     <code>testGetValue()</code> API를 사용하여 
-    특정 계측 부분의 현재 값을 결정할 수도 있습니다.
+    특정 계측 부분의 현재 값을 확인할 수도 있습니다.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 =
+    더 많은 <i>임시</i> 테스트를 위해 
+    여기 <code>about:glean</code>에서 개발자 도구 콘솔을 열고 
+    <code>metric.category.metric_name</code>이라는 메트릭에 대해 
+    <code>Glean.metricCategory.metricName.testGetValue()</code> 같은 
+    <code>testGetValue()</code> API를 사용하여 
+    특정 계측 부분의 현재 값을 확인할 수도 있습니다.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    devtools 콘솔을 사용하여 Glean JS API를 사용하고 있습니다.
+    이는 메트릭 카테고리와 메트릭 이름이 Rust 및 C++ API와 달리 
+    <code>camelCase</code> 형식으로 지정됨을 의미합니다.
 controls-button-label-verbose = 설정 적용 및 핑 제출
 about-glean-about-data-header = 데이터 정보
 about-glean-about-data-explanation =

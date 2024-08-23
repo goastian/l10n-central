@@ -45,6 +45,9 @@ account-send-tab-to-device-verify = Verifiera ditt konto…
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = Konto
 # Variables:
 #   $deviceName (String): the name of the new device
 account-connection-connected-with = Den här datorn är nu ansluten till { $deviceName }.
@@ -92,4 +95,16 @@ account-multiple-tabs-arriving-from-unknown-device =
     { $tabCount ->
         [one] { $tabCount } flik har kommit
        *[other] { $tabCount } flikar har kommit
+    }
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = Visa nyligen stängda flikar
+account-tabs-closed-remotely =
+    { $closedCount ->
+        [one] { $closedCount } { -brand-short-name } flik stängd
+       *[other] { $closedCount } { -brand-short-name } flikar stängda
     }

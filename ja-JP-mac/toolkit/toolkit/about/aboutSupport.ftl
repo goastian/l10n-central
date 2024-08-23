@@ -72,7 +72,7 @@ app-basics-remote-processes-count = リモートプロセス
 app-basics-enterprise-policies = エンタープライズポリシー
 app-basics-location-service-key-google = Google Location Service キー
 app-basics-safebrowsing-key-google = Google Safebrowsing キー
-app-basics-key-mozilla = Mozilla Location Service キー
+app-basics-key-mozilla = Ablaze Location Service キー
 app-basics-safe-mode = セーフモード
 app-basics-memory-size = メモリーサイズ (RAM)
 app-basics-disk-available = 空きディスク領域
@@ -183,6 +183,24 @@ media-codec-support-codec-name = コーデック名
 media-codec-support-supported = 対応
 media-codec-support-unsupported = 未対応
 media-codec-support-error = コーデック対応情報が利用できません。メディアファイルの再生後に再度試してください。
+media-codec-support-lack-of-extension = 拡張機能をインストール
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = コンテンツ復号モジュール (CDM) 情報
+media-key-system-name = 鍵システム名
+media-video-robustness = 動画の頑強性
+media-audio-robustness = 音声の頑強性
+media-cdm-capabilities = 機能
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = 平文リード
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2 互換
 
 ##
 
@@ -191,7 +209,7 @@ intl-app-title = アプリケーションの設定
 intl-locales-requested = 要求されたロケール
 intl-locales-available = 利用可能なロケール
 intl-locales-supported = アプリケーションのロケール
-intl-locales-default = デフォルトロケール
+intl-locales-default = デフォルトのロケール
 intl-os-title = オペレーティングシステム
 intl-os-prefs-system-locales = システムのロケール
 intl-regional-prefs = 地域設定
@@ -242,6 +260,7 @@ try-newer-driver = グラフィックドライバーのバージョンが対応�
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType パラメーター
 compositing = 画像処理
+support-font-determination = フォント表示のデバッグ情報
 hardware-h264 = ハードウェア H264 デコード
 main-thread-no-omtc = メインスレッド、OMTC なし
 yes = はい
@@ -277,7 +296,7 @@ webgl2-renderer = WebGL 2 ドライバーのレンダラー
 webgl2-version = WebGL 2 ドライバーのバージョン
 webgl2-driver-extensions = WebGL 2 ドライバーの拡張
 webgl2-extensions = WebGL 2 拡張
-webgpu-default-adapter = WebGPU のデフォルトアダプター
+webgpu-default-adapter = WebGPU のデフォルトのアダプター
 webgpu-fallback-adapter = WebGPU のフォールバックアダプター
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
@@ -303,6 +322,9 @@ has-seccomp-bpf = Seccomp-BPF (システムコールフィルタリング)
 has-seccomp-tsync = Seccomp スレッド同期
 has-user-namespaces = ユーザー名前空間
 has-privileged-user-namespaces = 特権プロセス用のユーザー名前空間
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — この機能はご使用のシステムにより許可されていません。これは { -brand-short-name } のセキュリティ機能を制限できます。
 can-sandbox-content = コンテンツプロセスのサンドボックス化
 can-sandbox-media = メディアプラグインのサンドボックス化
 content-sandbox-level = コンテンツプロセスのサンドボックスレベル
@@ -371,6 +393,20 @@ support-printing-modified-settings = 変更されたプリント設定
 support-printing-prefs-name = 設定名
 support-printing-prefs-value = 値
 
+## Remote Settings sections
+
+support-remote-settings-title = リモート設定
+support-remote-settings-status = 状態
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = 動作していません
+support-remote-settings-last-check = 最終確認
+support-remote-settings-local-timestamp = ローカルタイムスタンプ
+support-remote-settings-sync-history = 履歴
+support-remote-settings-sync-history-status = 状態
+support-remote-settings-sync-history-datetime = 日時
+support-remote-settings-sync-history-infos = 情報
+
 ## Normandy sections
 
 support-remote-experiments-title = リモート機能の実験
@@ -387,3 +423,15 @@ pointing-device-mouse = マウス
 pointing-device-touchscreen = タッチスクリーン
 pointing-device-pen-digitizer = デジタイザーペン
 pointing-device-none = ポインティングデバイスなし
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = コンテンツ解析 (DLP)
+content-analysis-active = 有効
+content-analysis-connected-to-agent = エージェントへの接続
+content-analysis-agent-path = エージェントのパス
+content-analysis-agent-failed-signature-verification = エージェントによる署名検証の失敗
+content-analysis-request-count = 要求回数

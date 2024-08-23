@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = További információk a fokozott követés elleni védelemről
 protections-panel-etp-on-header = A fokozott követés elleni védelem BE van kapcsolva ezen a webhelyen
 protections-panel-etp-off-header = A fokozott követés elleni védelem KI van kapcsolva ezen a webhelyen
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Fokozott követés elleni védelem
+    .description = Bekapcsolva ezen az oldalon
+    .aria-label = Fokozott követés elleni védelem: Bekapcsolva ennél: { $host }
+protections-panel-etp-toggle-off =
+    .label = Fokozott követés elleni védelem
+    .description = Kikapcsolva ezen az oldalon
+    .aria-label = Fokozott követés elleni védelem: Kikapcsolva ennél: { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Nem működik az oldal?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Miért?
 protections-panel-not-blocking-why-etp-on-tooltip = Ezek blokkolása egyes webhelyek elemeinek hibáit okozhatja. A nyomkövetők nélkül egyes gombok, űrlapok és bejelentkezési mezők lehet, hogy nem fognak működni.
 protections-panel-not-blocking-why-etp-off-tooltip = A webhely összes nyomkövetője be lett töltve, mert a védelem ki van kapcsolva.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Ezek blokkolása egyes webhelyek elemeinek hibáit okozhatja. A nyomkövetők nélkül egyes gombok, űrlapok és bejelentkezési mezők lehet, hogy nem fognak működni.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = A webhely összes nyomkövetője be lett töltve, mert a védelem ki van kapcsolva.
 
 ##
 
@@ -105,6 +123,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Sütibannerek számának csökkentése
+protections-panel-cookie-banner-blocker-header = Sütibanner-blokkoló
 protections-panel-cookie-banner-handling-enabled = Bekapcsolva erre az oldalra
 protections-panel-cookie-banner-handling-disabled = Kikapcsolva erre az oldalra
 protections-panel-cookie-banner-handling-undetected = A webhely jelenleg nem támogatott
@@ -114,8 +133,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Kikapcsolja a sütibanner-csökkentést a következőnél: { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Bekapcsolja a sütibanner-csökkentést ennél a webhelynél?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Sütibanner-blokkoló
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Kikapcsolja a sütibanner-blokkolót a következőnél: { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Bekapcsolja a sütibanner-blokkolót ennél a webhelynél?
 protections-panel-cookie-banner-view-cookie-clear-warning = A { -brand-short-name } törli a webhely sütijeit, és frissíti az oldalt. Az összes süti törlésével kijelentkezhet, vagy kiürítheti a kosarait.
 protections-panel-cookie-banner-view-turn-on-description = A { -brand-short-name } automatikusan megpróbálja elutasítani az összes sütikérést a támogatott oldalakon.
 protections-panel-cookie-banner-view-cancel = Mégse
 protections-panel-cookie-banner-view-turn-off = Kikapcsolás
 protections-panel-cookie-banner-view-turn-on = Bekapcsolás
+protections-panel-cookie-banner-blocker-view-turn-on-description = Kapcsolja be, és a { -brand-short-name } automatikusan megpróbálja elutasítani a sütibannereket ezen az oldalon.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Mégse
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Kikapcsolás
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Bekapcsolás
+protections-panel-report-broken-site =
+    .label = Hibás webhely bejelentése
+    .title = Hibás webhely bejelentése
+
+## Protections panel info message
+
+cfr-protections-panel-header = Böngésszen anélkül, hogy követnék
+cfr-protections-panel-body = Tartsa meg az adatait. A { -brand-short-name } megvédi a leggyakoribb nyomkövetőktől, amelyek követik az online tevékenységét.
+cfr-protections-panel-link-text = További tudnivalók

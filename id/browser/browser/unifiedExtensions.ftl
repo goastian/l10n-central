@@ -32,3 +32,10 @@ unified-extensions-context-menu-remove-extension =
     .label = Hapus Ekstensi
 unified-extensions-context-menu-report-extension =
     .label = Laporkan Ekstensi
+
+## Notifications
+
+# .heading is processed by moz-message-bar to be used as a heading attribute
+unified-extensions-mb-quarantined-domain-message-3 =
+    .heading = Beberapa ekstensi mungkin tidak akan diizinkan
+    .message = Untuk melindungi data Anda, beberapa ekstensi tidak dapat membaca atau mengubah data pada situs ini. Gunakan pengaturan ekstensi untuk mengizinkan situs yang dibatasi oleh { -vendor-short-name }.

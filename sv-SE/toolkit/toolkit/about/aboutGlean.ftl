@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = Om Glean
-about-glean-description = <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a> är ett datainsamlingsbibliotek som används i Mozilla-produkter. Denna sida är för utvecklare och testare som behöver <a data-l10n-name="fog-debug-doc-link">konfigurera felsökning och loggning i Glean SDK</a>.
-about-glean-warning = Missbruk av detta gränssnitt kan krascha { -brand-short-name }.
-tag-pings-label = Tagga alla skickade pingar med den här taggen
-log-pings-label = Logga ping nyttolast innan du skickar?
-send-pings-label = Skicka den namngivna pingen
-controls-button-label = Skicka inställningar
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -64,6 +54,8 @@ about-glean-manual-testing =
 about-glean-no-ping-label = (skicka inte in någon ping)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = Se till att det finns en minnesvärd felsökningstagg i föregående fält så att du kan känna igen dina pingar senare.
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = Ställ in en minnesvärd felsökningstagg <span>(20 tecken eller färre, alfanumeriska och - endast)</span> så att du kan känna igen dina pingar senare.
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -95,6 +87,19 @@ about-glean-adhoc-explanation =
     genom att öppna en devtools-konsol här på <code>about:glean</code>
     och använda <code>testGetValue()</code> API som
     <code>Glean.metricCategory.metricName.testGetValue()</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 =
+    För mer <i>ad hoc</i>-tester,
+    Du kan också bestämma det aktuella värdet för en viss instrumentering
+    genom att öppna en devtools-konsol här på <code>about:glean</code>
+    och använda <code>testGetValue()</code> API som
+    <code>Glean.metricCategory.metricName.testGetValue()</code>
+    för ett mått som heter <code>metric.category.metric_name</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    Observera att du använder Glean JS API genom att använda devtools-konsolen.
+    Detta innebär att måttenhetskategorin och måttenhetsnamnet är formaterade i
+    <code>camelCase</code> till skillnad från Rust och C++ API:erna.
 controls-button-label-verbose = Tillämpa inställningar och skicka ping
 about-glean-about-data-header = Om data
 about-glean-about-data-explanation =

@@ -19,8 +19,8 @@
 browser-main-window-window-titles =
     .data-title-default = { -brand-full-name }
     .data-title-private = Приватний перегляд { -brand-full-name }
-    .data-content-title-default = { $content-title } — { -brand-full-name }
-    .data-content-title-private = { $content-title } — Приватний перегляд { -brand-full-name }
+    .data-content-title-default = { $content-title } – { -brand-full-name }
+    .data-content-title-private = { $content-title } – Приватний перегляд { -brand-full-name }
 # These are the default window titles on macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -40,9 +40,9 @@ browser-main-window-window-titles =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac-window-titles =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } — Приватний перегляд
+    .data-title-private = { -brand-full-name } – Приватний перегляд
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } — Приватний перегляд
+    .data-content-title-private = { $content-title } – Приватний перегляд
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -208,10 +208,10 @@ search-one-offs-context-open-new-tab =
     .label = Пошук в новій вкладці
     .accesskey = в
 search-one-offs-context-set-as-default =
-    .label = Встановити типовим засобом пошуку
+    .label = Встановити типовою пошуковою системою
     .accesskey = т
 search-one-offs-context-set-as-default-private =
-    .label = Встановити типовим засобом пошуку для приватних вікон
+    .label = Встановити типовою пошуковою системою для приватних вікон
     .accesskey = х
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
@@ -225,12 +225,12 @@ search-one-offs-engine-with-alias =
 #  $engineName (String): The name of the engine.
 search-one-offs-add-engine =
     .label = Додати “{ $engineName }”
-    .tooltiptext = Додати засіб пошуку “{ $engineName }”
-    .aria-label = Додати засіб пошуку “{ $engineName }”
+    .tooltiptext = Додати пошукову систему “{ $engineName }”
+    .aria-label = Додати пошукову систему “{ $engineName }”
 # When more than 5 engines are offered by a web page, they are grouped in a
 # submenu using this as its label.
 search-one-offs-add-engine-menu =
-    .label = Додати засіб пошуку
+    .label = Додати пошукову систему
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -279,6 +279,9 @@ quickactions-cmd-plugins = плагіни
 # Opens the print dialog
 quickactions-print2 = Друкувати сторінку
 quickactions-cmd-print = друк
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = Зберегти сторінку як PDF
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Відкрити приватне вікно
 quickactions-cmd-private = приватний перегляд
@@ -349,6 +352,7 @@ identity-connection-secure = Захищене з'єднання
 identity-connection-failure = Збій з'єднання
 identity-connection-internal = Це захищена сторінка { -brand-short-name }.
 identity-connection-file = Ця сторінка збережена на вашому комп'ютері.
+identity-connection-associated = Ця сторінка завантажується з іншої сторінки.
 identity-extension-page = Ця сторінка завантажена з розширення.
 identity-active-blocked = { -brand-short-name } заблокував незахищені частини цієї сторінки.
 identity-custom-root = З'єднання засвідчене сертифікатом, видавець якого не розпізнається Mozilla.
@@ -370,16 +374,16 @@ identity-https-only-info-turn-off2 = Якщо сторінка здається 
 identity-https-only-info-turn-on3 = Увімкніть оновлення до HTTPS для цього сайту, якщо ви хочете, щоб { -brand-short-name } оновлював з'єднання, коли це можливо.
 identity-https-only-info-turn-off3 = Якщо сторінка має вигляд пошкодженої, можливо, ви захочете вимкнути оновлення до HTTPS для цього сайту, щоб перезавантажити його в незахищеному режимі HTTP.
 identity-https-only-info-no-upgrade = Не вдалося змінити з'єднання з HTTP.
-identity-permissions-storage-access-header = Куки сторонніх сайтів
-identity-permissions-storage-access-hint = Ці сторони можуть використовувати куки сторонніх сайтів та дані сайту, поки ви перебуваєте на ньому.
+identity-permissions-storage-access-header = Міжсайтові файли cookie
+identity-permissions-storage-access-hint = Ці сторони можуть використовувати міжсайтові файли cookie та дані сайту, поки ви перебуваєте на ньому.
 identity-permissions-storage-access-learn-more = Докладніше
 identity-permissions-reload-hint = Для застосування змін, можливо, доведеться перезавантажити сторінку.
 identity-clear-site-data =
-    .label = Стерти куки та дані сайтів…
+    .label = Стерти файли cookie та дані сайтів…
 identity-connection-not-secure-security-view = Ваше з'єднання з цим сайтом незахищене.
 identity-connection-verified = Ваше з'єднання з цим сайтом захищене.
 identity-ev-owner-label = Сертифікат виданий:
-identity-description-custom-root2 = Mozilla не розпізнає цього видавця сертифіката. Він міг бути доданий вашою операційною системою чи адміністратором.
+identity-description-custom-root2 = Ablaze не розпізнає цього видавця сертифіката. Він міг бути доданий вашою операційною системою чи адміністратором.
 identity-remove-cert-exception =
     .label = Вилучити виняток
     .accesskey = В
@@ -388,10 +392,10 @@ identity-description-insecure-login-forms = Введені на цій стор�
 identity-description-weak-cipher-intro = Ваше з'єднання з цим вебсайтом використовує слабке шифрування і не є приватним.
 identity-description-weak-cipher-risk = Інші люди можуть переглядати вашу інформацію чи змінювати поведінку вебсайту.
 identity-description-active-blocked2 = { -brand-short-name } заблокував незахищені частини цієї сторінки.
-identity-description-passive-loaded = Ваше з'єднання не є приватним й інформація, якою ви ділитесь з сайтом може бути переглянута іншими.
+identity-description-passive-loaded = Ваше з'єднання не є приватним, тому інформація, якою ви ділитесь з сайтом, може бути переглянута іншими.
 identity-description-passive-loaded-insecure2 = Цей вебсайт містить незахищений вміст (наприклад, зображення).
 identity-description-passive-loaded-mixed2 = Хоча { -brand-short-name } заблокував деякий вміст, на сторінці все ще є незахищений вміст (наприклад, зображення).
-identity-description-active-loaded = Цей вебсайт має вміст, що не є безпечним (наприклад, сценарії) і ваше з'єднання з ним не є приватним.
+identity-description-active-loaded = Цей вебсайт має вміст, що не є безпечним (як-от скрипти) і ваше з'єднання з ним не є приватним.
 identity-description-active-loaded-insecure = Інформація, якою ви ділитесь з цим сайтом, може бути переглянута іншими (наприклад, паролі, повідомлення, дані кредитних карт та ін.).
 identity-disable-mixed-content-blocking =
     .label = Тимчасово вимкнути захист
@@ -488,6 +492,9 @@ enable-devtools-popup-description2 = Для використання клаві�
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = Закрити
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -564,8 +571,11 @@ urlbar-result-action-search-w-engine = Шукати за допомогою { $e
 urlbar-result-action-sponsored = Спонсоровано
 urlbar-result-action-switch-tab = Перейти на вкладку
 urlbar-result-action-visit = Відвідати
-# Allows the user to visit a URL that was previously copied to the clipboard.
-urlbar-result-action-visit-from-your-clipboard = Відкрити з буфера обміну
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = Перейти на вкладку · <span>{ $container }</span>
 # Allows the user to visit a URL that was previously copied to the clipboard.
 urlbar-result-action-visit-from-clipboard = Відкрити з буфера обміну
 # Directs a user to press the Tab key to perform a search with the specified
@@ -595,6 +605,12 @@ urlbar-result-action-copy-to-clipboard = Копіювати
 # Variables
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
+
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = Шукати за допомогою { $engine }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -644,8 +660,8 @@ picture-in-picture-urlbar-button-open =
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Закрити Зображення в зображенні ({ $shortcut })
 picture-in-picture-panel-header = Зображення в зображенні
-picture-in-picture-panel-headline = Цей вебсайт не рекомендує використовувати режим «Зображення в зображенні».
-picture-in-picture-panel-body = Відео може мати вигляд не такий, як передбачалося розробником, якщо увімкнено функцію «Зображення в зображенні».
+picture-in-picture-panel-headline = Цей вебсайт не рекомендує використовувати режим "Зображення в зображенні".
+picture-in-picture-panel-body = Відео може мати вигляд не такий, як передбачалося розробником, якщо увімкнено функцію "Зображення в зображенні".
 picture-in-picture-enable-toggle =
     .label = Усе одно ввімкнути
 
@@ -890,6 +906,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Відкрити попередні вкладки?</strong> Ви можете відновити попередній сеанс у меню { -brand-short-name } <img data-l10n-name="icon"/> у розділі Історія.
 restore-session-startup-suggestion-button = Покажіть як
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = Ваша організація заблокувала доступ до локальних файлів на цьому комп'ютері
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } автоматично відправляє деякі дані в { -vendor-short-name }, щоб ми могли вдосконалити вашу роботу.
@@ -898,6 +918,15 @@ data-reporting-notification-button =
     .accesskey = В
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Приватний перегляд
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = Запобігання втраті даних (DLP) від { $agentName }. Натисніть, щоб дізнатися більше.
+content-analysis-panel-title = Захист даних
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = Ваша організація використовує { $agentName } для захисту від втрати даних. <a data-l10n-name="info">Докладніше</a>
 
 ## Unified extensions (toolbar) button
 
@@ -929,7 +958,7 @@ reset-pbm-toolbar-button =
     .label = Завершити приватний сеанс
     .tooltiptext = Завершити приватний сеанс
 reset-pbm-panel-heading = Завершити приватний сеанс?
-reset-pbm-panel-description = Закрити всі приватні вкладки й видалити історію, куки та всі інші дані сайтів.
+reset-pbm-panel-description = Закрити всі приватні вкладки й видалити історію, файли cookie та всі інші дані сайтів.
 reset-pbm-panel-always-ask-checkbox =
     .label = Завжди запитувати мене
     .accesskey = З
@@ -955,7 +984,7 @@ firefox-relay-offer-why-to-use-relay = Наші захищені та прост
 # Variables:
 #  $useremail (String): user email that will receive messages
 firefox-relay-offer-what-relay-provides = Усі електронні листи, надіслані на ваші маски електронної пошти, будуть перенаправлені на <strong>{ $useremail }</strong> (якщо ви не вирішите їх заблокувати).
-firefox-relay-offer-legal-notice = Натискаючи “Використовувати маску електронної пошти”, ви погоджуєтеся із <label data-l10n-name="tos-url">Загальними положеннями та умовами</label> й <label data-l10n-name="privacy-url">Положенням про приватність</label>.
+firefox-relay-offer-legal-notice = Натискаючи “Використовувати маску електронної пошти”, ви погоджуєтеся з <label data-l10n-name="tos-url">Умовами надання послуг</label> і <label data-l10n-name="privacy-url">Положенням про приватність</label>.
 
 ## Add-on Pop-up Notifications
 
@@ -996,4 +1025,4 @@ popup-warning-button =
 # Variables:
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
-    .label = Показати '{ $popupURI }'
+    .label = Показати “{ $popupURI }”

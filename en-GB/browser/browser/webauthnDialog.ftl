@@ -4,14 +4,6 @@
 
 # Variables:
 #  $retriesLeft (Number): number of tries left
-webauthn-pin-invalid-prompt =
-    { $retriesLeft ->
-        [0] Wrong PIN! Please enter the correct PIN for your device.
-        [one] Wrong PIN! Please enter the correct PIN for your device. You have { $retriesLeft } attempt left.
-       *[other] Wrong PIN! Please enter the correct PIN for your device. You have { $retriesLeft } attempts left.
-    }
-# Variables:
-#  $retriesLeft (Number): number of tries left
 webauthn-pin-invalid-long-prompt =
     { $retriesLeft ->
         [one] Incorrect PIN. You have { $retriesLeft } attempt left before you permanently lose access to the credentials on this device.
@@ -19,6 +11,12 @@ webauthn-pin-invalid-long-prompt =
     }
 webauthn-pin-invalid-short-prompt = Incorrect PIN. Try again.
 webauthn-pin-required-prompt = Please enter the PIN for your device.
+webauthn-select-sign-result-unknown-account = Unknown account
+webauthn-a-passkey-label = Use a passkey
+webauthn-another-passkey-label = Use another passkey
+# Variables:
+#   $domain (String): the domain of the site.
+webauthn-specific-passkey-label = Passkey for { $domain }
 # Variables:
 #  $retriesLeft (Number): number of tries left
 webauthn-uv-invalid-long-prompt =

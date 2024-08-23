@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = การตั้งค่าการเชื่อมต่อ
-    .style =
-        { PLATFORM() ->
-            [macos] width: 44em
-           *[other] width: 49em
-        }
 connection-window2 =
     .title = การตั้งค่าการเชื่อมต่อ
     .style =
@@ -27,6 +20,9 @@ connection-proxy-option-no =
 connection-proxy-option-system =
     .label = ใช้การตั้งค่าพร็อกซีของระบบ
     .accesskey = ง
+connection-proxy-option-wpad =
+    .label = ใช้การตั้งค่าการค้นพบเว็บพร็อกซีแบบอัตโนมัติของระบบ
+    .accesskey = ค
 connection-proxy-option-auto =
     .label = ตรวจหาการตั้งค่าพร็อกซีอัตโนมัติสำหรับเครือข่ายนี้
     .accesskey = ว
@@ -66,21 +62,16 @@ connection-proxy-reload =
     .label = โหลดใหม่
     .accesskey = ล
 connection-proxy-autologin =
-    .label = ไม่ต้องถามสำหรับการรับรองความถูกต้องหากรหัสผ่านถูกบันทึกไว้
+    .label = ไม่ต้องถามเพื่อยืนยันตัวตนถ้ารหัสผ่านถูกบันทึกไว้
     .accesskey = ถ
-    .tooltip = ตัวเลือกนี้จะรับรองความถูกต้องของคุณไปยังพร็อกซีโดยอัตโนมัติเมื่อคุณได้บันทึกข้อมูลรับรองไว้ คุณจะได้รับการแจ้งหากการรับรองความถูกต้องล้มเหลว
+    .tooltip = ตัวเลือกนี้จะทำการยืนยันตัวตนของคุณกับพร็อกซีโดยอัตโนมัติเมื่อคุณได้บันทึกข้อมูลรับรองไว้ คุณจะถูกถามถ้าการยืนยันตัวตนล้มเหลว
 connection-proxy-autologin-checkbox =
-    .label = ไม่ต้องถามสำหรับการรับรองความถูกต้องหากรหัสผ่านถูกบันทึกไว้
+    .label = ไม่ต้องถามเพื่อยืนยันตัวตนถ้ารหัสผ่านถูกบันทึกไว้
     .accesskey = ถ
-    .tooltiptext = ตัวเลือกนี้จะรับรองความถูกต้องของคุณไปยังพร็อกซีโดยอัตโนมัติเมื่อคุณได้บันทึกข้อมูลรับรองไว้ คุณจะได้รับการแจ้งหากการรับรองความถูกต้องล้มเหลว
+    .tooltiptext = ตัวเลือกนี้จะทำการยืนยันตัวตนของคุณกับพร็อกซีโดยอัตโนมัติเมื่อคุณได้บันทึกข้อมูลรับรองไว้ คุณจะถูกถามถ้าการยืนยันตัวตนล้มเหลว
 connection-proxy-socks-remote-dns =
     .label = DNS แบบพร็อกซีเมื่อใช้ SOCKS v5
     .accesskey = d
-connection-dns-over-https =
-    .label = เปิดใช้งาน DNS ผ่าน HTTPS
-    .accesskey = ป
-connection-dns-over-https-url-resolver = ใช้ผู้ให้บริการ
-    .accesskey = ช
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

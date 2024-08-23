@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Usuń całą witrynę
     .accesskey = w
+places-forget-domain-data =
+    .label = Usuń całą witrynę…
+    .accesskey = w
 places-sortby-name =
     .label = Sortuj wg nazw
     .accesskey = r
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Edytuj folder…
     .accesskey = E
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -132,14 +137,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Usuwanie całej witryny
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Spowoduje to usunięcie wszystkich danych powiązanych z witryną { $hostOrBaseDomain }, w tym historię, hasła, ciasteczka, pamięć podręczną i preferencje dotyczące treści. Czy na pewno kontynuować?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Spowoduje to usunięcie danych powiązanych z witryną { $hostOrBaseDomain }, w tym historię, ciasteczka, pamięć podręczną i preferencje dotyczące treści. Powiązane zakładki i hasła nie zostaną usunięte. Czy na pewno kontynuować?
 places-forget-about-this-site-forget = Usuń całą witrynę
-places-library =
-    .title = Biblioteka
-    .style = width:1000px; height:500px;
 places-library3 =
     .title = Biblioteka
 places-organize-button =

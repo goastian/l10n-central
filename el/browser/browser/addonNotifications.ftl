@@ -40,6 +40,7 @@ site-permission-install-first-prompt-midi-message = Αυτή η πρόσβαση
 ##
 
 xpinstall-disabled-locked = Η εγκατάσταση λογισμικού έχει απενεργοποιηθεί από τον διαχειριστή του συστήματος σας.
+xpinstall-disabled-by-policy = Η εγκατάσταση λογισμικού έχει απενεργοποιηθεί από τον οργανισμό σας.
 xpinstall-disabled = Η εγκατάσταση λογισμικού είναι απενεργοποιημένη αυτήν τη στιγμή. Κάντε κλικ στο «Ενεργοποίηση» και δοκιμάστε ξανά.
 xpinstall-disabled-button =
     .label = Ενεργοποίηση
@@ -51,6 +52,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = Το { $addonName } ({ $addonId }) έχει αποκλειστεί από τον διαχειριστή του συστήματός σας.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = Ο διαχειριστής του συστήματός σας εμπόδισε την ερώτηση αυτού του ιστοτόπου για εγκατάσταση λογισμικού στον υπολογιστή σας.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = Το { $addonName } ({ $addonId }) έχει αποκλειστεί από τον οργανισμό σας.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Ο οργανισμός σας εμπόδισε την ερώτηση αυτού του ιστοτόπου για εγκατάσταση λογισμικού στον υπολογιστή σας.
 addon-install-full-screen-blocked = Η εγκατάσταση προσθέτων δεν επιτρέπεται κατά τη χρήση ή πριν την είσοδο σε λειτουργία πλήρους οθόνης.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -124,3 +132,5 @@ addon-local-install-error-not-signed = Δεν ήταν δυνατή η εγκα�
 #   $appVersion (String): the application version.
 addon-install-error-incompatible = Δεν ήταν δυνατή η εγκατάσταση του { $addonName } επειδή δεν είναι συμβατό με το { -brand-short-name } { $appVersion }.
 addon-install-error-blocklisted = Δεν ήταν δυνατή η εγκατάσταση του { $addonName } επειδή υπάρχει μεγάλος κίνδυνος πρόκλησης προβλημάτων σταθερότητας ή ασφάλειας.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Δεν μπορείτε να εγκαταστήσετε το { $addonName } ως τελικός χρήστης, καθώς μπορεί να εγκατασταθεί μόνο από έναν οργανισμό που χρησιμοποιεί εταιρικές πολιτικές.

@@ -111,6 +111,13 @@ tabbrowser-confirm-caretbrowsing-title = Περιήγηση με κέρσορα
 tabbrowser-confirm-caretbrowsing-message = Πατώντας το F7 (απ)ενεργοποιείται η περιήγηση με κέρσορα. Αυτή η λειτουργία προβάλλει έναν κινούμενο κέρσορα στις ιστοσελίδες και σας επιτρέπει να επιλέγετε κείμενο με το πληκτρολόγιο. Θέλετε να ενεργοποιήσετε την περιήγηση με κέρσορα;
 tabbrowser-confirm-caretbrowsing-checkbox = Να μην εμφανιστεί αυτός ο διάλογος ξανά.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Προσοχή
+tabbrowser-confirm-close-duplicate-tabs-text = Θα παραμείνει ανοικτή η τελευταία ενεργή καρτέλα
+tabbrowser-confirm-close-all-duplicate-tabs-title = Κλείσιμο διπλών καρτελών;
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Κλείσιμο καρτελών
+
 ##
 
 # Variables:

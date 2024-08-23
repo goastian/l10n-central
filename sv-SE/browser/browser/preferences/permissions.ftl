@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Undantag
-    .style = width: 45em
 permissions-window2 =
     .title = Undantag
     .style = min-width: 45em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Skriv in ett giltigt värdnamn
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Undantag för förbättrat spårningsskydd
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Du har inaktiverat skydd på dessa webbplatser.
 permissions-exceptions-etp-window2 =
     .title = Undantag för förbättrat spårningsskydd
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Du kan ange vilka webbplatser som har F
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Undantag - Kakor och webbplatsdata
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Undantag - Kakor och webbplatsdata
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Du kan ange vilka webbplatser som alltid el
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Undantag - Endast HTTPS-läge
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Undantag - Endast HTTPS-läge
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Du kan inaktivera Endast HTTPS-läge för specifika webbplatser. { -brand-short-name } försöker inte uppgradera anslutningen för att säkra HTTPS för dessa webbplatser. Undantag gäller inte privata fönster.
+permissions-exceptions-https-only-desc2 = Du kan stänga av endast HTTPS-läge för specifika webbplatser. { -brand-short-name } kommer inte att försöka uppgradera anslutningen till säker HTTPS för dessa webbplatser.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Tillåtna webbplatser - popup-fönster
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Tillåtna webbplatser - Popup-fönster
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Du kan ange vilka webbplatser som får öppn
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Undantag - Sparade inloggningar
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Undantag - Sparade inloggningar
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = Inloggningar för följande webbplatser kommer inte att sparas
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Undantag - Sparade lösenord
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } sparar inte lösenord för webbplatser som listas här.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Tillåtna webbplatser - Installation av tillägg
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Tillåtna webbplatser - Installation av tillägg
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Du kan ange vilka webbplatser som får inst
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Inställningar - Automatisk uppspelning
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Inställningar - Automatisk uppspelning
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Du kan hantera de webbplatser som inte följer 
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Inställningar - Behörigheter för aviseringar
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Inställningar - Behörigheter för aviseringar
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Detta kommer att förhindra att web
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Inställningar - Behörigheter för plats
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Inställningar - Behörigheter för plats
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Detta kommer att förhindra att webbpla
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Inställningar - Rättigheter för virtuell verklighet
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Inställningar - Rättigheter för virtuell verklighet
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Detta förhindrar alla webbplatser som inte l
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Inställningar - Behörigheter för kamera
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Inställningar - Behörigheter för kamera
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Detta kommer att förhindra att webbplats
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Inställningar - Behörigheter för mikrofon
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Inställningar - Behörigheter för mikrofon
     .style = { permissions-window2.style }

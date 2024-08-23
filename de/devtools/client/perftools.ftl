@@ -79,8 +79,6 @@ perftools-thread-renderer =
     .title = Bei aktivem WebRender führt dieser Thread OpenGL aus.
 perftools-thread-render-backend =
     .title = Der WebRender-RenderBackend-Thread
-perftools-thread-paint-worker =
-    .title = Wenn Zeichnen außerhalb des Hauptthreads aktiviert ist, wird mit diesem Thread gezeichnet.
 perftools-thread-timer =
     .title = Die Thread-Handling-Timer (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
@@ -125,7 +123,12 @@ perftools-onboarding-close-button =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = Web-Entwickler
@@ -141,6 +144,8 @@ perftools-presets-networking-description = Voreinstellung für die Untersuchung 
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = Leistung
 perftools-presets-power-description = Voreinstellung für die Untersuchung von Problemen beim Energieverbrauch in { -brand-shorter-name }, mit geringem Overhead.
+perftools-presets-debug-label = Debuggen
+perftools-presets-debug-description = Voreinstellung für das Debuggen in { -brand-shorter-name }. Großer Overhead, nicht für Arbeiten an der Leistung verwenden, sondern für Fokus auf das Verständnis des Browser-Verhaltens.
 perftools-presets-custom-label = Benutzerdefiniert
 
 ##

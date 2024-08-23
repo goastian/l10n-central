@@ -73,6 +73,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = さらにタブを表示
     .tooltiptext = この端末からのタブをさらに表示します
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = 休止中のタブ
+    .tooltiptext = この端末の休止中のタブを表示します
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = タブがありません
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -90,6 +94,7 @@ appmenuitem-fxa-toolbar-sync-now2 = 今すぐ同期
 appmenuitem-fxa-sign-in = { -brand-product-name } にログイン
 appmenuitem-fxa-manage-account = アカウントを管理
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = アカウント
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -124,8 +129,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = プロファイラー
     .tooltiptext = プロファイラーがプロファイルをキャプチャ中です
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = 詳細な情報を表示
@@ -161,11 +164,11 @@ profiler-popup-capture-shortcut =
 ## They are shown in the popup's select box.
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = 一般的なウェブアプリをデバッグするための低負荷な推奨プリセットです。
@@ -187,6 +190,9 @@ profiler-popup-presets-power-description = { -brand-shorter-name } の消費電�
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = 消費電力
+profiler-popup-presets-debug-description = { -brand-shorter-name } のデバッグ用プリセットです。オーバーヘッドが高いため、パフォーマンスが求められる作業を避け、ブラウザーの動作を調査する目的で使用してください。
+profiler-popup-presets-debug-label =
+    .label = デバッグ
 profiler-popup-presets-custom-label =
     .label = カスタム
 
@@ -194,8 +200,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = 履歴を管理
-appmenu-reopen-all-tabs = タブをすべて開きなおす
-appmenu-reopen-all-windows = ウィンドウをすべて開きなおす
 appmenu-restore-session =
     .label = 以前のセッションを復元
 appmenu-clear-history =
@@ -257,3 +261,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = ブラウザーツール
 appmenu-developer-tools-extensions =
     .label = 開発者用拡張機能
+appmenuitem-report-broken-site =
+    .label = 動作しないサイトを報告
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = アカウントにログイン
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = データ漏洩の警告を受け取ります
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = 実際のメールアドレスと電話番号を隠します
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = ユーザーのオンラインプライバシーを保護します

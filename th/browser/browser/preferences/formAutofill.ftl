@@ -7,27 +7,54 @@
 
 autofill-manage-addresses-title = ที่อยู่ที่บันทึกไว้
 autofill-manage-addresses-list-header = ที่อยู่
-
 autofill-manage-credit-cards-title = บัตรเครดิตที่บันทึกไว้
 autofill-manage-credit-cards-list-header = บัตรเครดิต
-
+autofill-manage-payment-methods-title = วิธีการชำระเงินที่บันทึกไว้
+autofill-manage-cards-list-header = บัตร
 autofill-manage-dialog =
     .style = min-width: 560px
 autofill-manage-remove-button = เอาออก
 autofill-manage-add-button = เพิ่ม…
 autofill-manage-edit-button = แก้ไข…
 
-##
+## The address capture doorhanger
 
+address-capture-save-doorhanger-header = ต้องการบันทึกที่อยู่หรือไม่?
+address-capture-save-doorhanger-description = บันทึกข้อมูลลงใน { -brand-short-name } เพื่อให้สามารถกรอกแบบฟอร์มได้อย่างรวดเร็ว
+address-capture-update-doorhanger-header = ต้องการปรับเปลี่ยนที่อยู่หรือไม่?
+address-capture-edit-doorhanger-header = แก้ไขที่อยู่
+address-capture-save-button =
+    .label = บันทึก
+    .accessKey = บ
+address-capture-not-now-button =
+    .label = ยังไม่ทำตอนนี้
+    .accessKey = ม
+address-capture-cancel-button =
+    .label = ยกเลิก
+    .accessKey = ย
+address-capture-update-button =
+    .label = ปรับเปลี่ยน
+    .accessKey = ป
+address-capture-manage-address-button =
+    .label = การตั้งค่าที่อยู่
+address-capture-learn-more-button =
+    .label = เรียนรู้เพิ่มเติม
 # The dialog title for creating addresses in browser preferences.
 autofill-add-new-address-title = เพิ่มที่อยู่ใหม่
+address-capture-open-menu-button =
+    .aria-label = เปิดเมนู
+address-capture-edit-address-button =
+    .aria-label = แก้ไขที่อยู่
+# The dialog title for creating addresses in browser preferences.
+autofill-add-address-title = เพิ่มที่อยู่
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = แก้ไขที่อยู่
-
+autofill-address-name = ชื่อ
 autofill-address-given-name = ชื่อจริง
 autofill-address-additional-name = ชื่อกลาง
 autofill-address-family-name = นามสกุล
 autofill-address-organization = องค์กร
+autofill-address-street-address = ที่อยู่ถนน
 autofill-address-street = ที่อยู่
 
 ## address-level-3 (Sublocality) names
@@ -81,19 +108,20 @@ autofill-address-eircode = เอียร์โค้ด
 
 ##
 
+
+##
+
 autofill-address-country = ประเทศหรือภูมิภาค
+autofill-address-country-only = ประเทศ
 autofill-address-tel = โทรศัพท์
 autofill-address-email = อีเมล
-
 autofill-cancel-button = ยกเลิก
 autofill-save-button = บันทึก
 autofill-country-warning-message = ขณะนี้การกรอกแบบฟอร์มมีให้บริการเฉพาะบางประเทศเท่านั้น
-
 # The dialog title for creating credit cards in browser preferences.
 autofill-add-new-card-title = เพิ่มบัตรเครดิตใหม่
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = แก้ไขบัตรเครดิต
-
 # In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
@@ -102,7 +130,11 @@ autofill-edit-card-password-prompt =
         [windows] { -brand-short-name } กำลังพยายามจะแสดงข้อมูลบัตรเครดิต ยืนยันการเข้าถึงบัญชี Windows นี้ด้านล่าง
        *[other] { -brand-short-name } กำลังพยายามจะแสดงข้อมูลบัตรเครดิต
     }
-
+autofill-message-tooltip = ดูข้อความเกี่ยวกับการเติมอัตโนมัติ
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-card-title = เพิ่มบัตร
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title2 = แก้ไขบัตร
 autofill-card-number = หมายเลขบัตร
 autofill-card-invalid-number = โปรดป้อนหมายเลขบัตรที่ถูกต้อง
 autofill-card-name-on-card = ชื่อบนบัตร

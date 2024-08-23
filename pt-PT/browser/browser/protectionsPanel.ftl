@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Mais informação sobre a Proteção melhorada contra a monitorização
 protections-panel-etp-on-header = A proteção melhorada contra a monitorização está ATIVADA para este site
 protections-panel-etp-off-header = A proteção melhorada contra a monitorização está DESATIVADA para este site
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Proteção melhorada contra a monitorização
+    .description = Ativada para este site
+    .aria-label = Proteção avançada contra a monitorização: ativada para { $host }
+protections-panel-etp-toggle-off =
+    .label = Proteção melhorada contra a monitorização
+    .description = Desativada para este site
+    .aria-label = Proteção melhorada contra a monitorização: desativada para { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = O site não está a funcionar?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Porquê?
 protections-panel-not-blocking-why-etp-on-tooltip = O bloqueio destes pode quebrar elementos em alguns sites. Sem rastreadores, alguns botões, formulários e campos de autenticação podem não funcionar.
 protections-panel-not-blocking-why-etp-off-tooltip = Todos os rastreadores deste site foram carregados porque as proteções estão desativadas.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = O bloqueio destes pode quebrar elementos em alguns sites. Sem rastreadores, alguns botões, formulários e campos de autenticação podem não funcionar.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Todos os rastreadores deste site foram carregados porque as proteções estão desativadas.
 
 ##
 
@@ -105,6 +123,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Redução de Faixas de Cookies
+protections-panel-cookie-banner-blocker-header = Bloqueador de faixas de cookies
 protections-panel-cookie-banner-handling-enabled = Ativado para este site
 protections-panel-cookie-banner-handling-disabled = Desativado para este site
 protections-panel-cookie-banner-handling-undetected = Site atualmente não suportado
@@ -114,8 +133,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Desativar redução de Faixa de Cookies para { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Ativar redução de Faixa de Cookies para este site?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Bloqueador de faixas de cookies
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Desativar o bloqueador de faixas de cookies para { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Ativar o bloqueador de faixa de cookies para este site?
 protections-panel-cookie-banner-view-cookie-clear-warning = O { -brand-short-name } irá limpar os cookies deste site e irá atualizar a página. A limpeza de todos os cookies pode fazer com que termine sessões ou esvazie os carrinhos de compras.
 protections-panel-cookie-banner-view-turn-on-description = O { -brand-short-name } tenta rejeitar automaticamente todos os pedidos de cookies em sites suportados.
 protections-panel-cookie-banner-view-cancel = Cancelar
 protections-panel-cookie-banner-view-turn-off = Desligar
 protections-panel-cookie-banner-view-turn-on = Ligar
+protections-panel-cookie-banner-blocker-view-turn-on-description = Ative e o { -brand-short-name } tentará recusar automaticamente faixas de cookies neste site.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Cancelar
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Desligar
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Ligar
+protections-panel-report-broken-site =
+    .label = Reportar site com problemas
+    .title = Reportar site com problemas
+
+## Protections panel info message
+
+cfr-protections-panel-header = Navegue sem ser seguido
+cfr-protections-panel-body = Guarde os seus dados para si. O { -brand-short-name } protege-o de muitos dos rastreadores mais comuns que monitorizam o que faz na Internet.
+cfr-protections-panel-link-text = Saber mais

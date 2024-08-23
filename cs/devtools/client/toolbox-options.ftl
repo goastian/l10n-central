@@ -41,6 +41,13 @@ options-inspector-draggable-properties-tooltip =
 # The label for the checkbox option to enable simplified highlighting on page elements
 # within the inspector for users who enabled prefers-reduced-motion = reduce
 options-inspector-simplified-highlighters-label = Použít jednodušší zvýrazňovače, pokud je použita vlastnost 'prefers-reduced-motion'
+options-inspector-simplified-highlighters-tooltip =
+    .title = Povolí zjednodušené zvýrazňovače, pokud je povolena funkce prefers-reduced-motion. Kreslí čáry místo vyplněných obdélníků kolem zvýrazněných prvků, aby se zabránilo efektům blikání.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Přepnout na další vstup pomocí klávesy <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Pokud je tato funkce povolena, stisknutí klávesy Enter při úpravě selektoru, názvu vlastnosti nebo hodnoty přesune fokus na další vstup.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -51,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Názvy barev
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Webová konzole
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Povolit rozdělení konzole
+options-webconsole-split-console-tooltip =
+    .title = Pomocí klávesy Escape otevírat rozdělenou konzoli
 
 ## Style Editor section
 
@@ -117,6 +133,8 @@ options-enable-f12-tooltip =
     .title = Zapnutím této možnosti se nastaví klávesa F12 k otevření či zavření Nástrojů pro vývojáře
 # The label for checkbox that toggles custom formatters for objects
 options-enable-custom-formatters-label = Povolit vlastní formátovače
+options-enable-custom-formatters-tooltip =
+    .title = Zapnutí této možnosti umožní webům definovat vlastní formátovače pro objekty DOM.
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Povolit Service Workers přes HTTP (když jsou nástroje otevřeny)
 options-enable-service-workers-http-tooltip =

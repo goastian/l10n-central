@@ -3,16 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### "Glean" and "Glean SDK" should remain in English.
-
-about-glean-page-title = Giới thiệu về Glean
-about-glean-description = <a data-l10n-name="glean-sdk-doc-link">Glean SDK</a> là thư viện thu thập dữ liệu được sử dụng trong các sản phẩm của Mozilla. Trang này dành cho các nhà phát triển và người kiểm tra, những người cần <a data-l10n-name="fog-debug-doc-link">định cấu hình trạng thái gỡ lỗi và ghi nhật ký trong Glean SDK</a>.
-about-glean-warning = Việc sử dụng sai giao diện này có thể làm vỡ { -brand-short-name }.
-tag-pings-label = Gắn thẻ tất cả các ping đã gửi với thẻ này
-log-pings-label = Ghi log tải trọng ping trước khi gửi?
-send-pings-label = Gửi ping được đặt tên
-controls-button-label = Gửi cài đặt
-
 ### "FOG", "Glean", and "Glean SDK" should remain in English.
 
 -fog-brand-name = FOG
@@ -64,6 +54,8 @@ about-glean-manual-testing =
 about-glean-no-ping-label = (không gửi bất kỳ ping nào)
 # An in-line text input field precedes this string.
 about-glean-label-for-tag-pings = Trong trường văn bản, hãy đảm bảo có một thẻ gỡ lỗi đáng nhớ để bạn có thể nhận ra các lần ping của mình sau này.
+# An in-line text input field precedes this string.
+about-glean-label-for-tag-pings-with-requirements = Đặt tag gỡ lỗi dễ ghi nhớ <span>(không quá 20 kí tự, chỉ chữ, số và dấu trừ “-”)</span> để bạn có thể nhận ra ping của mình sau này.
 # An in-line drop down list precedes this string.
 # Do not translate strings between <code> </code> tags.
 about-glean-label-for-ping-names =
@@ -95,6 +87,19 @@ about-glean-adhoc-explanation =
     bằng cách mở bảng điều khiển devtools tại đây trên <code>about:glean</code>
     và sử dụng API <code>testGetValue()</code> như
     <code>Glean.metricCategory.metricName.testGetValue()</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-explanation2 =
+    Để biết thêm về kiểm thử <i>đặc biệt</i>,
+    bạn cũng có thể xác định giá trị hiện tại của một thiết bị cụ thể
+    bằng cách mở bảng điều khiển devtools tại đây trên <code>about:glean</code>
+    và sử dụng API <code>testGetValue()</code> như
+    <code>Glean.metricCategory.metricName.testGetValue()</code>
+    cho một số liệu có tên <code>metric.category.metric_name</code>.
+# Do not translate strings between <code> </code> tags.
+about-glean-adhoc-note =
+    Xin lưu ý rằng bạn đang sử dụng API Glean JS bằng cách sử dụng bảng điều khiển devtools.
+    Điều này có nghĩa là danh mục chỉ số và tên chỉ số được định dạng trong
+    <code>camelCase</code> sẽ không giống như ở Rust và C++ API.
 controls-button-label-verbose = Áp dụng cài đặt và gửi ping
 about-glean-about-data-header = Về dữ liệu
 about-glean-about-data-explanation =

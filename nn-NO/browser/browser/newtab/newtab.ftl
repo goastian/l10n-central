@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Ny fane
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Legg til søkjemotor
 newtab-topsites-add-shortcut-header = Ny snarveg
 newtab-topsites-edit-topsites-header = Rediger Mest besøkt
 newtab-topsites-edit-shortcut-header = Rediger snarveg
+newtab-topsites-add-shortcut-label = Legg til snarveg
 newtab-topsites-title-label = Tittel
 newtab-topsites-title-input =
     .placeholder = Skriv inn ein tittel
@@ -197,6 +198,7 @@ newtab-section-header-recent-activity = Nyleg aktivitet
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Tilrådd av { $provider }
+newtab-section-header-stories = Tankevekkjande artiklar
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -205,6 +207,8 @@ newtab-empty-section-highlights = Begynn å surfe, og vi vil vise deg nokre av d
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Det finst ikkje fleire. Kom tilbake seinare for fleire topphistoriar frå { $provider }. Kan du ikkje vente? Vel eit populært emne for å finne fleire gode artiklar frå heile nettet.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Du har no lest alt. Kom tilbake seinare for fleire artiklar. Kan du ikkje vente? Vel eit populært emne for å finne fleire flotte artiklar frå nettet.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -226,21 +230,20 @@ newtab-pocket-cta-button = Last ned { -pocket-brand-name }
 newtab-pocket-cta-text = Lagre artiklane du synest er interessante i { -pocket-brand-name }, og stimuler tankane dine med fasinerande lesemateriell.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } er ein del av { -brand-product-name }-familien.
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Lagre til { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Lagra til { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Last inn fleire artiklar
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Du har lese alt!
-newtab-pocket-last-card-desc = Kom tilbake seinare for meir.
-newtab-pocket-last-card-image =
-    .alt = Du har lese alt
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Lagre
 newtab-pocket-saved = Lagra
+
+## Thumbs up and down buttons that shows over a newtab stories card thumbnail on hover.
+
+# Clicking the thumbs up button for this story will result in more stories like this one being recommended
+newtab-pocket-thumbs-up-tooltip =
+    .title = Meir som dette
+# Clicking the thumbs down button for this story informs us that the user does not feel like the story is interesting for them
+newtab-pocket-thumbs-down-tooltip =
+    .title = Ikkje for meg
+newtab-toast-dismiss-button =
+    .title = Avvis
+    .aria-label = Avvis
 
 ## Pocket content onboarding experience dialog and modal for new users seeing the Pocket section for the first time, shown as the first item in the Pocket section.
 
@@ -257,6 +260,9 @@ newtab-error-fallback-refresh-link = Oppdater sida for å prøve på nytt.
 
 newtab-custom-shortcuts-title = Snarvegar
 newtab-custom-shortcuts-subtitle = Nettstadar du lagrar eller besøkjer
+newtab-custom-shortcuts-toggle =
+    .label = Snarvegar
+    .description = Nettstadar du lagrar eller besøkjer
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -267,9 +273,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Sponsa snarvegar
 newtab-custom-pocket-title = Tilrådd av { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Eksepsjonelt innhald sett saman av { -pocket-brand-name }, ein del av { -brand-product-name }-familien
+newtab-custom-stories-toggle =
+    .label = Tilrådde artiklar
+    .description = Eineståande innhald utvalt av { -brand-product-name } familien
 newtab-custom-pocket-sponsored = Sponsa historier
 newtab-custom-pocket-show-recent-saves = Vis siste lagra
 newtab-custom-recent-title = Nyleg aktivitet
 newtab-custom-recent-subtitle = Eit utval av nylege nettstadar og innhald
+newtab-custom-recent-toggle =
+    .label = Nyleg aktivitet
+    .description = Eit utval av nylege nettstadar og innhald
+newtab-custom-weather-toggle =
+    .label = Vêr
+    .description = Dagens vêrmelding i korte trekk
 newtab-custom-close-button = Lat att
 newtab-custom-settings = Handsam fleire innstillingar
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Bakgrunnsbilde
+newtab-wallpaper-reset = Still tilbake til standard
+newtab-wallpaper-light-red-panda = Raudpanda
+newtab-wallpaper-light-mountain = Kvitt fjell
+newtab-wallpaper-light-sky = Himmel med lilla og rosa skyer
+newtab-wallpaper-light-color = Blå, rosa og gule former
+newtab-wallpaper-light-landscape = Fjellandskap med blå tåke
+newtab-wallpaper-light-beach = Strand med palmetre
+newtab-wallpaper-dark-aurora = Nordlys
+newtab-wallpaper-dark-color = Raude og blå former
+newtab-wallpaper-dark-panda = Raudpanda gøymt i skogen
+newtab-wallpaper-dark-sky = Bylandskap med nattehimmel
+newtab-wallpaper-dark-mountain = Fjellandskap
+newtab-wallpaper-dark-city = Lilla bylandskap
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Einsfarga
+newtab-wallpaper-blue = Blå
+newtab-wallpaper-light-blue = Lyseblå
+newtab-wallpaper-light-purple = Lyselilla
+newtab-wallpaper-light-green = Lysegrøn
+newtab-wallpaper-green = Grøn
+newtab-wallpaper-beige = Beige
+newtab-wallpaper-yellow = Gul
+newtab-wallpaper-orange = Oransje
+newtab-wallpaper-pink = Rosa
+newtab-wallpaper-light-pink = Lyserosa
+newtab-wallpaper-red = Raud
+newtab-wallpaper-dark-blue = Mørkeblå
+newtab-wallpaper-dark-purple = Mørkelilla
+newtab-wallpaper-dark-green = Mørkegrøn
+newtab-wallpaper-brown = Brun
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Abstrakt
+newtab-wallpaper-abstract-green = Grøne former
+newtab-wallpaper-abstract-blue = Blåe former
+newtab-wallpaper-abstract-purple = Lilla former
+newtab-wallpaper-abstract-orange = Oransje former
+newtab-wallpaper-gradient-orange = Fargeovergang oransje og rosa
+newtab-wallpaper-abstract-blue-purple = Blå og lilla former
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Fotografi
+newtab-wallpaper-beach-at-sunrise = Strand ved soloppgang
+newtab-wallpaper-beach-at-sunset = Strand ved solnedgang
+newtab-wallpaper-storm-sky = Stormhimmel
+newtab-wallpaper-sky-with-pink-clouds = Himmel med rosa skyer
+newtab-wallpaper-red-panda-yawns-in-a-tree = Raud panda som geispar i eit tre
+newtab-wallpaper-white-mountains = Kvite fjell
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Bilde av <a data-l10n-name="name-link">{ $author_string }</a> på <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Prøv ein fargeklatt
+newtab-wallpaper-feature-highlight-content = Gje ny fane-sida ein friskt utsjånad med bakgrunnsbilde.
+newtab-wallpaper-feature-highlight-button = Eg forstår
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Lat att
+    .aria-label = Lat att sprettoppvindauge
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Sjå vêrmelding hos { $provider }.
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Sponsa
+newtab-weather-menu-change-location = Endre plassering
+newtab-weather-change-location-search-input = Søk plassering
+newtab-weather-menu-weather-display = Vêrvising
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Enkel
+newtab-weather-menu-change-weather-display-simple = Byt til enkel vising
+newtab-weather-menu-weather-display-option-detailed = Detaljert
+newtab-weather-menu-change-weather-display-detailed = Byt til detaljert vising
+newtab-weather-menu-temperature-units = Temperatureiningar
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenheit
+newtab-weather-menu-temperature-option-celsius = Celsius
+newtab-weather-menu-change-temperature-units-fahrenheit = Byt til Fahrenheit
+newtab-weather-menu-change-temperature-units-celsius = Byt til Celsius
+newtab-weather-menu-hide-weather = Skjul vêret på ny fane
+newtab-weather-menu-learn-more = Les meir
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Vêrdata er ikkje tilgjengeleg akkurat no.

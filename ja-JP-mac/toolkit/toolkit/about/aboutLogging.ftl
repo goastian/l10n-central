@@ -26,7 +26,7 @@ about-logging-logging-to-profiler = ログを { -profiler-brand-name } に記録
 about-logging-no-log-modules = なし
 about-logging-no-log-file = なし
 about-logging-logging-preset-selector-text = ログプリセット:
-about-logging-with-profiler-stacks-checkbox = ログメッセージのスタックとレースを有効にする
+about-logging-with-profiler-stacks-checkbox = ログメッセージのスタックトレースを有効にする
 
 ## Logging presets
 
@@ -38,10 +38,19 @@ about-logging-preset-networking-websocket-label = WebSocket
 about-logging-preset-networking-websocket-description = WebSocket の問題を診断するログモジュールです
 about-logging-preset-networking-http3-label = HTTP/3
 about-logging-preset-networking-http3-description = HTTP/3 および QUIC の問題を診断するログモジュールです
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3 アップロード速度
+about-logging-preset-networking-http3-upload-speed-description = HTTP/3 のアップロード速度の問題を診断するログモジュールです
 about-logging-preset-media-playback-label = メディア再生
 about-logging-preset-media-playback-description = メディア再生の問題を診断するログモジュールです (ビデオ会議の問題は含みません)
 about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-webrtc-description = WebRTC コールを診断するログモジュールです
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = WebGPU の問題を診断するログモジュールです
+about-logging-preset-gfx-label = グラフィック
+about-logging-preset-gfx-description = グラフィックの問題を診断するログモジュールです
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Microsoft Windows 特有の問題を診断するログモジュールです
 about-logging-preset-custom-label = カスタム
 about-logging-preset-custom-description = 手動で選択されたログモジュールです
 

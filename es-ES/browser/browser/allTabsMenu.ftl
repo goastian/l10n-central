@@ -5,13 +5,14 @@
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Buscar pestañas
-
 all-tabs-menu-new-user-context =
     .label = Nueva pestaña contenedora
-
 all-tabs-menu-hidden-tabs =
     .label = Pestañas ocultas
-
 all-tabs-menu-manage-user-context =
     .label = Gestionar contenedores
     .accesskey = O
+all-tabs-menu-close-duplicate-tabs =
+    .label = Cerrar pestañas duplicadas
+all-tabs-menu-close-all-duplicate-tabs =
+    .label = Cerrar todas las pestañas duplicadas

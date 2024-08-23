@@ -12,10 +12,13 @@
 
 policy-3rdparty = Ange policyer som WebExtensions kan komma åt via chrome.storage.managed.
 policy-AllowedDomainsForApps = Definiera domäner som får åtkomst till Google Workspace.
+policy-AllowFileSelectionDialogs = Tillåt filmarkeringsdialoger.
 policy-AppAutoUpdate = Aktivera eller inaktivera automatisk applikationsuppdatering.
 policy-AppUpdatePin = Förhindra att { -brand-short-name } uppdateras utöver den angivna versionen.
 policy-AppUpdateURL = Ange anpassad URL för programuppdateringar.
 policy-Authentication = Ställ in integrerad autentisering för webbplatser som stödjer det.
+policy-AutofillAddressEnabled = Aktivera autofyll för adresser.
+policy-AutofillCreditCardEnabled = Aktivera autofyll för betalningsmetoder.
 policy-AutoLaunchProtocolsFromOrigins = Definiera en lista över externa protokoll som kan användas från listade ursprung utan att uppmana användaren.
 policy-BackgroundAppUpdate2 = Aktivera eller inaktivera uppdateringar i bakgrunden.
 policy-BlockAboutAddons = Blockera tillgång till tilläggshanteraren (about:addons)
@@ -25,25 +28,29 @@ policy-BlockAboutSupport = Blockera tillgång till sidan about:support.
 policy-Bookmarks = Skapa bokmärken i bokmärkesfältet, bokmärkesmenyn eller en angiven mapp inuti dem.
 policy-CaptivePortal = Aktivera eller inaktivera captive portal support.
 policy-CertificatesDescription = Lägg till certifikat eller använd inbyggda certifikat.
+policy-ContentAnalysis = Aktivera eller inaktivera anslutningen till agenten för förebyggande av dataförlust.
 policy-Cookies = Tillåt eller neka webbplatser att lagra kakor
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Ange policyer relaterade till behållare.
+policy-DisableAccounts = Inaktivera kontobaserade tjänster, inklusive synkronisering.
 policy-DisabledCiphers = Inaktivera chiffer.
 policy-DefaultDownloadDirectory = Ange standard för nedladdningskatalog.
 policy-DisableAppUpdate = Förhindra att webbläsaren uppdateras.
 policy-DisableBuiltinPDFViewer = Inaktivera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Förhindra att standardwebbläsaren agerar. Gäller endast Windows; andra plattformar har inte agenten.
 policy-DisableDeveloperTools = Blockera tillgång till utvecklarverktygen.
+policy-DisableEncryptedClientHello = Inaktivera användning av TLS-funktionen ECH (Encrypted Client Hello).
 policy-DisableFeedbackCommands = Inaktivera menyalternativen att skicka feedback från hjälpmenyn (Skicka in feedback och rapportera vilseledande webbplats).
 policy-DisableFirefoxAccounts = Inaktivera { -fxaccount-brand-name }-baserade tjänster, inklusive Sync.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Inaktivera funktionen Midori Screenshots
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Inaktivera kontobaserade tjänster, inklusive synkronisering.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Inaktivera funktionen Firefox Screenshots
 policy-DisableFirefoxStudies = Förhindra { -brand-short-name } att genomföra studier.
 policy-DisableForgetButton = Förhindra tillgång till knappen Glöm.
 policy-DisableFormHistory = Spara inte sök- och formulärhistorik.
 policy-DisablePrimaryPasswordCreation = Om det är sant kan ett huvudlösenord inte skapas.
 policy-DisablePasswordReveal = Låt inte lösenord avslöjas i sparade inloggningar.
-policy-DisablePocket = Inaktivera funktionen att spara webbsidor till Pocket.
 policy-DisablePocket2 = Inaktivera funktionen att spara webbsidor till { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Inaktivera privat surfning.
 policy-DisableProfileImport = Inaktivera menyalternativet att importera data från en annan webbläsare.
@@ -70,14 +77,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Inaktivera varnin
 policy-Extensions = Installera, avinstallera eller låsa tillägg. Installeringsalternativet tar webbadresser eller sökvägar som parametrar. Alternativen för borttagning och låsning använder tilläggs-ID.
 policy-ExtensionSettings = Hantera alla aspekter av tilläggsinstallation.
 policy-ExtensionUpdate = Aktivera eller inaktivera automatiska utökningsuppdateringar.
-policy-FirefoxHome = Konfigurera Firefox startsida.
 policy-FirefoxHome2 = Konfigurera { -firefox-home-brand-name }.
-policy-FlashPlugin = Tillåt eller neka att insticksmodulen Flash används.
+policy-FirefoxSuggest = Konfigurera { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Tvinga direkt navigering på intranätet istället för att söka när du skriver in enstaka ord i adressfältet.
 policy-Handlers = Konfigurera standardprogramhanterare.
 policy-HardwareAcceleration = Om inaktiv, stäng av hårdvaruacceleration.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Ställ in och eventuellt lås startsidan.
+policy-HttpAllowlist = Ursprung som inte kommer att uppgraderas till HTTPS.
+policy-HttpsOnlyMode = Tillåt endast HTTPS-läge.
 policy-InstallAddonsPermission = Tillåt vissa webbplatser att installera tillägg.
 policy-LegacyProfiles = Inaktivera funktionen som framtvingar en separat profil för varje installation
 
@@ -92,6 +100,7 @@ policy-LocalFileLinks = Tillåt specifika webbplatser att länka till lokala fil
 policy-ManagedBookmarks = Konfigurerar en lista över bokmärken som hanteras av en administratör som inte kan ändras av användaren.
 policy-ManualAppUpdateOnly = Tillåt endast manuella uppdateringar och meddela inte användaren om uppdateringar.
 policy-PrimaryPassword = Kräv eller förhindra användandet av ett huvudlösenord.
+policy-PrintingEnabled = Aktivera eller inaktivera utskrift.
 policy-NetworkPrediction = Aktivera eller inaktivera nätverksprediktning (DNS-prefetch).
 policy-NewTabPage = Aktivera eller inaktivera sidan Ny flik.
 policy-NoDefaultBookmarks = Inaktivera skapandet av standardbokmärken som levereras med { -brand-short-name } och smarta bokmärken (Mest besökta, Senast använda etiketter). OBS: denna policy fungerar bara om den är inställd innan profilen används för första gången.
@@ -101,6 +110,9 @@ policy-OverrideFirstRunPage = Åsidosätt sidan som visas första gången. Sätt
 policy-OverridePostUpdatePage = Åsidosätt sidan "Vad är nytt" efter uppdateringar. Sätt denna policy till blankt om du vill inaktivera sidan efter uppdateringar.
 policy-PasswordManagerEnabled = Aktivera att spara lösenord i lösenordshanteraren.
 policy-PasswordManagerExceptions = Förhindra { -brand-short-name } från att spara lösenord för specifika webbplatser.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Aktivera post-quantum nyckelöverenskommelse för TLS.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Inaktivera eller konfigurera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }
 policy-Permissions2 = Konfigurera behörigheter för kamera, mikrofon, plats, aviseringar och autoplay.
@@ -114,8 +126,6 @@ policy-SanitizeOnShutdown2 = Rensa navigeringsdata vid avstängning.
 policy-SearchBar = Ange standardplacering av sökfältet. Användaren kan fortfarande flytta det.
 policy-SearchEngines = Ange sökmotorinställningar. Denna policy finns bara på Extended Support Release (ESR)-versionen.
 policy-SearchSuggestEnabled = Aktivera eller inaktivera sökförslag.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Installera PKCS #11-moduler.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Lägg till eller ta bort PKCS #11-moduler.
 policy-ShowHomeButton = Visa hemknappen i verktygsfältet.
@@ -123,6 +133,7 @@ policy-SSLVersionMax = Ange den maximala SSL-versionen.
 policy-SSLVersionMin = Ange den lägsta SSL-versionen.
 policy-StartDownloadsInTempDirectory = Tvinga nedladdningar att starta på en lokal, tillfällig plats snarare än standardnedladdningskatalogen.
 policy-SupportMenu = Lägg till ett anpassat menyalternativ med hjälp i hjälpmenyn.
+policy-TranslateEnabled = Aktivera eller inaktivera webböversättning.
 policy-UserMessaging = Visa inte vissa meddelanden till användaren.
 policy-UseSystemPrintDialog = Skriv ut med hjälp av systemets utskriftsdialog.
 # “format” refers to the format used for the value of this policy.

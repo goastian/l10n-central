@@ -12,17 +12,29 @@ about-webrtc-document-title = WebRTC nội bộ
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = lưu about:webrtc thành
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Hiện PeerConnections đã đóng
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Ẩn PeerConnections đã đóng
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = Ghi nhật ký AEC
 about-webrtc-aec-logging-off-state-label = Bắt đầu ghi nhật ký AEC
 about-webrtc-aec-logging-on-state-label = Dừng ghi nhật ký AEC
 about-webrtc-aec-logging-on-state-msg = Bản ghi AEC đang hoạt động (nói chuyện với người gọi trong vài phút và sau đó dừng chụp)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Tự động làm mới
+about-webrtc-aec-logging-toggled-on-state-msg = Bản ghi AEC đang hoạt động (nói chuyện với người gọi trong vài phút và sau đó dừng chụp)
+about-webrtc-aec-logging-unavailable-sandbox = Biến môi trường MOZ_DISABLE_CONTENT_SANDBOX=1 được yêu cầu để xuất nhật ký AEC. Chỉ đặt biến này nếu bạn hiểu những rủi ro có thể xảy ra.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Các tập tin nhật ký đã chụp có thể được tìm thấy trong: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Tự động làm mới
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Làm mới
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
@@ -79,6 +91,7 @@ about-webrtc-debug-mode-msg-label = Chế độ gỡ lỗi
 about-webrtc-debug-mode-off-state-label = Bắt đầu chế độ gỡ lỗi
 about-webrtc-debug-mode-on-state-label = Dừng chế độ gỡ lỗi
 about-webrtc-stats-heading = Thống kê phiên
+about-webrtc-enable-logging-label = Bật cài đặt nhật ký WebRTC được định trước
 about-webrtc-stats-clear = Xóa lịch sử
 about-webrtc-log-heading = Nhật ký kết nối
 about-webrtc-log-clear = Xóa nhật ký
@@ -86,6 +99,12 @@ about-webrtc-log-show-msg = hiển thị nhật ký
     .title = nhấn chuột để mở rộng mục này
 about-webrtc-log-hide-msg = ẩn nhật ký
     .title = nhấn chuột để thu gọn mục này
+about-webrtc-log-section-show-msg = Hiển thị nhật ký
+    .title = Nhấn chuột để mở rộng mục này
+about-webrtc-log-section-hide-msg = Ẩn nhật ký
+    .title = Nhấn chuột để thu gọn mục này
+about-webrtc-copy-report-button = Sao chép báo cáo
+about-webrtc-copy-report-history-button = Sao chép lịch sử báo cáo
 
 ## These are used to display a header for a PeerConnection.
 ## Variables:
@@ -97,6 +116,14 @@ about-webrtc-log-hide-msg = ẩn nhật ký
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (đã đóng) { $now }
 
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Gửi / nhận: { $codecs }
+about-webrtc-short-send-direction = Gửi: { $codecs }
+about-webrtc-short-receive-direction = Nhận: { $codecs }
+
 ##
 
 about-webrtc-priority = Ưu tiên
@@ -104,6 +131,10 @@ about-webrtc-fold-show-msg = hiện chi tiết
     .title = nhấn chuột để mở rộng mục này
 about-webrtc-fold-hide-msg = ẩn chi tiết
     .title = nhấn chuột để thu gọn mục này
+about-webrtc-fold-default-show-msg = Hiện chi tiết
+    .title = Nhấn chuột để mở rộng mục này
+about-webrtc-fold-default-hide-msg = Ẩn chi tiết
+    .title = Nhấn chuột để thu gọn mục này
 about-webrtc-dropped-frames-label = Khung hình bị rơi:
 about-webrtc-discarded-packets-label = Các gói bị loại bỏ:
 about-webrtc-decoder-label = Bộ giải mã
@@ -135,6 +166,13 @@ about-webrtc-configuration-element-provided = Cung cấp
 about-webrtc-configuration-element-not-provided = Không cung cấp
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Người dùng thiết lập tùy chọn WebRTC
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Băng thông ước tính
 # The estimated bandwidth available for sending WebRTC media in bytes per second
@@ -163,9 +201,11 @@ about-webrtc-save-page-msg = đã lưu trang vào: { $path }
 about-webrtc-debug-mode-off-state-msg = nhật ký theo dõi có thể được tìm thấy tại: { $path }
 about-webrtc-debug-mode-on-state-msg = chế độ gỡ lỗi hoạt động, theo dõi nhật ký tại: { $path }
 about-webrtc-aec-logging-off-state-msg = các tập tin nhật ký đã chụp có thể được tìm thấy trong: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Đã lưu trang vào: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.
@@ -229,6 +269,13 @@ about-webrtc-sdp-set-at-timestamp-remote = Đặt SDP từ xa tại timestamp { 
 about-webrtc-sdp-set-timestamp = Timestamp { NUMBER($timestamp, useGrouping: "false") } (+ { $relative-timestamp } ms)
 
 ## These are displayed on the button that shows or hides the SDP information disclosure
+
+about-webrtc-show-msg-sdp = Hiển thị SDP
+about-webrtc-hide-msg-sdp = Ẩn SDP
+
+## These are displayed on the button that shows or hides the Media Context information disclosure.
+## The Media Context is the set of preferences and detected capabilities that informs
+## the negotiated CODEC settings.
 
 
 ##

@@ -29,6 +29,7 @@ perftools-heading-local-build = Místní sestavení
 perftools-description-intro =
     Nahrávání spustí v novém panelu <a>profiler.firefox.com</a>. Všechna data jsou
     ukládána lokálně na vašem počítači, ale můžete se rozhodnout je sdílet.
+perftools-description-local-build = Pokud profilujete sestavení, které jste si sami zkompilovali na tomto zařízení, přidejte prosím objdir vašeho sestavení do níže uvedeného seznamu, abyste mohli použít vyhledávání informací o symbolech.
 
 ## The controls for the interval at which the profiler samples the code.
 
@@ -52,10 +53,12 @@ perftools-status-restart-required = Pro povolení této funkce je potřeba prohl
 ## These are shown briefly when the user is waiting for the profiler to respond.
 
 perftools-request-to-stop-profiler = Ukončuje se nahrávání
+perftools-request-to-get-profile-and-stop-profiler = Zachytává se profil
 
 ##
 
 perftools-button-start-recording = Spustit nahrávání
+perftools-button-capture-recording = Zachytit záznam
 perftools-button-cancel-recording = Zrušit nahrávání
 perftools-button-save-settings = Uložit nastavení a přejít zpět
 perftools-button-restart = Restartovat
@@ -69,28 +72,44 @@ perftools-thread-gecko-main =
     .title = Hlavní procesy pro nadřazený proces a procesy obsahu
 perftools-thread-compositor =
     .title = Skládá dohromady různé vykreslené prvky na stránce
+perftools-thread-dom-worker =
+    .title = Toto zahrnuje skripty typu worker pro web a service.
 perftools-thread-renderer =
     .title = Pokud je WebRender povolen, jde o vlákno, které vykonává volání OpenGL
 perftools-thread-render-backend =
     .title = Vlákno WebRender RenderBackend
-perftools-thread-paint-worker =
-    .title = Pokud je povoleno vykreslování mimo hlavní vlákno, pak se jedná o vlákno, v kterém se vykreslování uskutečňuje
 perftools-thread-timer =
     .title = Časovače zpracování vláken (setTimeout, setInterval, nsITimer)
 perftools-thread-style-thread =
     .title = Výpočty pro styly jsou rozdělené do více vláken
+pref-thread-stream-trans =
+    .title = Přenos síťového toku
+perftools-thread-socket-thread =
+    .title = Vlákno, v kterém síťový kód spouští jakékoliv volání blokování soketů.
 perftools-thread-img-decoder =
     .title = Vlákna pro dekódování obrázků
 perftools-thread-dns-resolver =
     .title = V tomto vklákně probíhá překlad DNS
+perftools-thread-task-controller =
+    .title = Vlákno souboru vláken TaskController
 perftools-thread-jvm-gecko =
     .title = Hlavní vlákno Gecko JVM
+perftools-thread-jvm-nimbus =
+    .title = Hlavní vlákna pro experimentální sadu SDK Nimbus
+perftools-thread-jvm-default-dispatcher =
+    .title = Výchozí dispečer pro knihovnu Kotlin coroutines
 perftools-thread-jvm-glean =
     .title = Hlavní vlákna pro Glean telemetry SDK
+perftools-thread-jvm-arch-disk-io =
+    .title = Dispečer IO pro knihovnu Kotlin coroutines
+perftools-thread-jvm-pool =
+    .title = Vlákna vytvořená v nepojmenovaném fondu vláken
 
 ##
 
 perftools-record-all-registered-threads = Neuvažovat výše uvedené výběry a zaznamenávat všechna registrovaná vlákna
+perftools-tools-threads-input-label =
+    .title = Tyto názvy vláken jsou seznamem odděleným čárkou, který se používá k povolení profilování vláken v profilovači. Název musí být pouze částečnou shodou s názvem vlákna, které má být zahrnuto. Je citlivý na bílé znaky.
 
 ## Onboarding UI labels. These labels are displayed in the new performance panel UI, when
 ## devtools.performance.new-panel-onboarding preference is true.
@@ -103,12 +122,12 @@ perftools-onboarding-close-button =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = Vývoj webu
@@ -144,6 +163,8 @@ perftools-presets-power-description =
         [with-cases] Doporučené nastavení pro ladění chyb ve spotřebě { -brand-shorter-name(case: "gen") }.
        *[no-cases] Doporučené nastavení pro ladění chyb ve spotřebě aplikace { -brand-shorter-name }.
     }
+perftools-presets-debug-label = Ladění
+perftools-presets-debug-description = Přednastaveno pro ladění v aplikaci { -brand-shorter-name }. Vysoká režie, nepoužívat pro zlepšení výkonu, ale spíše pro pochopení chování prohlížeče.
 perftools-presets-custom-label = Vlastní
 
 ##

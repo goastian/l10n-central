@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Esquecer este site
     .accesskey = s
+places-forget-domain-data =
+    .label = Esquecer este site…
+    .accesskey = E
 places-sortby-name =
     .label = Ordenar por nome
     .accesskey = r
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Editar pasta…
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -93,7 +98,7 @@ places-delete-page =
            *[other] Apagar páginas
         }
     .accesskey = A
-# Managed bookmarks are created by an administrator and cannot be changed by the user.
+# Managed bookmarks are created by enterprise policy and cannot be changed by the user.
 managed-bookmarks =
     .label = Marcadores administrativos
 # This label is used when a managed bookmarks folder doesn't have a name.
@@ -132,14 +137,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Esquecer este site
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Esta ação irá remover todos os dados relativos a { $hostOrBaseDomain } incluindo histórico, palavras-passe, cookies, cache e preferências de conteúdo. Tem a certeza que pretende continuar?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Esta ação irá remover todos os dados relativos a { $hostOrBaseDomain } incluindo o histórico, cookies, cache e preferências de conteúdo. Marcadores e palavras-passe relacionados não serão removidos. Tem a certeza que pretende continuar?
 places-forget-about-this-site-forget = Esquecer
-places-library =
-    .title = Biblioteca
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Biblioteca
 places-organize-button =

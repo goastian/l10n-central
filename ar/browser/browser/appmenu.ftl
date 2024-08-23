@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = اطبع…
 appmenuitem-find-in-page =
     .label = ابحث في الصفحة…
+appmenuitem-translate =
+    .label = ترجِم الصفحة…
 appmenuitem-zoom =
     .value = قرّب
 appmenuitem-more-tools =
@@ -92,6 +94,7 @@ appmenuitem-fxa-toolbar-sync-now2 = زامِن الآن
 appmenuitem-fxa-sign-in = لِج إلى { -brand-product-name }
 appmenuitem-fxa-manage-account = أدِر الحساب
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = الحساب
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -126,8 +129,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = محلّل الأداء
     .tooltiptext = محلّل الأداء يلتقط ملفًا شخصيًا
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = اعرض معلومات أكثر
@@ -164,18 +165,16 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
-# Please take care that the same values are also defined in devtools' perftools.ftl.
-
-
-# Presets and their l10n IDs are defined in the file
 # devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
+profiler-popup-presets-web-developer-description = الإعداد المسبق الموصى به لتنقيح أغلبية تطبيقات الوِب دون استهلاك موارد كثيرة.
 profiler-popup-presets-web-developer-label =
     .label = مطوّري الوب
+profiler-popup-presets-firefox-description = الإعداد المسبق الموصى به لتحليل أداء { -brand-shorter-name }.
 profiler-popup-presets-firefox-label =
     .label = { -brand-shorter-name }
+profiler-popup-presets-graphics-description = إعداد مسبق للتحقيق في أخطاء الرسومات في { -brand-shorter-name }.
 profiler-popup-presets-graphics-label =
     .label = الرسوميات
 profiler-popup-presets-media-label =
@@ -192,8 +191,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = أدِر التأريخ
-appmenu-reopen-all-tabs = أعِد فتح كل الألسنة
-appmenu-reopen-all-windows = أعِد فتح كل النوافذ
 appmenu-restore-session =
     .label = استعد الجلسة السابقة
 appmenu-clear-history =
@@ -203,6 +200,9 @@ appmenu-recently-closed-tabs =
     .label = الألسنة المُغلقة مؤخرًا
 appmenu-recently-closed-windows =
     .label = النوافذ المغلقة مؤخرًا
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = ابحث في التأريخ
 
 ## Help panel
 
@@ -219,6 +219,11 @@ appmenu-help-more-troubleshooting-info =
     .accesskey = ه
 appmenu-help-report-site-issue =
     .label = أبلغ عن مشكلة بالموقع…
+appmenu-help-share-ideas =
+    .label = شارك الأفكار والتعليقات...
+    .accesskey = ك
+appmenu-help-switch-device =
+    .label = التبديل إلى جهاز جديد
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -247,3 +252,5 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = أدوات المتصفّح
 appmenu-developer-tools-extensions =
     .label = الامتدادات التي تخصّ المطوّرين
+appmenuitem-report-broken-site =
+    .label = أبلِغ عن موقع معطوب

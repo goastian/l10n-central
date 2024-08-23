@@ -111,6 +111,16 @@ tabbrowser-confirm-caretbrowsing-title = Caret Browsing
 tabbrowser-confirm-caretbrowsing-message = Pressing F7 turns Caret Browsing on or off. This feature places a moveable cursor in web pages, allowing you to select text with the keyboard. Do you want to turn Caret Browsing on?
 tabbrowser-confirm-caretbrowsing-checkbox = Do not show me this dialog box again.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Heads up
+tabbrowser-confirm-close-duplicate-tabs-text = We’ll keep open the last active tab
+tabbrowser-confirm-close-all-duplicate-tabs-title = Close duplicate tabs?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    We’ll close duplicate tabs in this window. The last active
+    tab will stay open.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Close tabs
+
 ##
 
 # Variables:

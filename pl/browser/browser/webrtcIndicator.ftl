@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -163,13 +157,26 @@ webrtc-allow-share-camera-and-audio-capture = Czy udostępnić obraz z kamery i
 webrtc-allow-share-screen-and-microphone = Czy udostępnić dźwięk z mikrofonu i obraz ekranu witrynie „{ $origin }”?
 webrtc-allow-share-screen-and-audio-capture = Czy udostępnić dźwięk tej karty i obraz ekranu witrynie „{ $origin }”?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Czy udostępnić dźwięk tej karty temu lokalnemu plikowi?
+webrtc-allow-share-camera-with-file = Czy udostępnić obraz z kamery temu lokalnemu plikowi?
+webrtc-allow-share-microphone-with-file = Czy udostępnić dźwięk z mikrofonu temu lokalnemu plikowi?
+webrtc-allow-share-screen-with-file = Czy udostępnić obraz ekranu temu lokalnemu plikowi?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Czy zezwolić temu lokalnemu plikowi na używanie innych głośników?
+webrtc-allow-share-camera-and-microphone-with-file = Czy udostępnić obraz z kamery i dźwięk z mikrofonu temu lokalnemu plikowi?
+webrtc-allow-share-camera-and-audio-capture-with-file = Czy udostępnić obraz z kamery i dźwięk tej karty temu lokalnemu plikowi?
+webrtc-allow-share-screen-and-microphone-with-file = Czy udostępnić dźwięk z mikrofonu i obraz ekranu temu lokalnemu plikowi?
+webrtc-allow-share-screen-and-audio-capture-with-file = Czy udostępnić dźwięk tej karty i obraz ekranu temu lokalnemu plikowi?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = Czy zezwolić witrynie „{ $origin }” na udostępnienie dźwięku tej karty witrynie „{ $thirdParty }”?
 webrtc-allow-share-camera-unsafe-delegation = Czy zezwolić witrynie „{ $origin }” na udostępnienie obrazu z kamery witrynie „{ $thirdParty }”?
-webrtc-allow-share-microphone-unsafe-delegations = Czy zezwolić witrynie „{ $origin }” na udostępnienie dźwięku z mikrofonu witrynie „{ $thirdParty }”?
 webrtc-allow-share-microphone-unsafe-delegation = Czy zezwolić witrynie „{ $origin }” na udostępnienie dźwięku z mikrofonu witrynie „{ $thirdParty }”?
 webrtc-allow-share-screen-unsafe-delegation = Czy zezwolić witrynie „{ $origin }” na udostępnienie obrazu ekranu witrynie „{ $thirdParty }”?
 # "Speakers" is used in a general sense that might include headphones or
@@ -219,6 +226,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Pamiętaj tę decyzję
+webrtc-remember-allow-checkbox-camera = Pamiętaj dla wszystkich kamer
+webrtc-remember-allow-checkbox-microphone = Pamiętaj dla wszystkich mikrofonów
+webrtc-remember-allow-checkbox-camera-and-microphone = Pamiętaj dla wszystkich kamer i mikrofonów
 webrtc-mute-notifications-checkbox = Nie wyświetlaj powiadomień ze stron podczas udostępniania
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } nie mógł zezwolić na trwały dostęp do obrazu ekranu.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } nie mógł zezwolić na trwały dostęp do dźwięku karty bez pytania o to, której karty dźwięk udostępniać.

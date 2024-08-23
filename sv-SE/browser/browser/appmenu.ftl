@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Visa fler flikar
     .tooltiptext = Visa flikar från denna enhet
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Inaktiva flikar
+    .tooltiptext = Se inaktiva flikar på den här enheten
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Inga öppna flikar
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Synkronisera nu
 appmenuitem-fxa-sign-in = Logga in på { -brand-product-name }
 appmenuitem-fxa-manage-account = Hantera konto
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Konto
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profilerare
     .tooltiptext = Profileraren fångar en profil
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Avslöja mer information
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Rekommenderad förinställning för de flesta webbappfelsökningar, med lite pålägg.
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = Förinställd för att undersöka bug
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Energi
+profiler-popup-presets-debug-description = Förinställd för felsökning i { -brand-shorter-name }. Hög omkostnad, använd inte för prestandaarbete men för att fokusera på att förstå webbläsarens beteende.
+profiler-popup-presets-debug-label =
+    .label = Felsök
 profiler-popup-presets-custom-label =
     .label = Anpassad
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Hantera historik
-appmenu-reopen-all-tabs = Återöppna alla flikar
-appmenu-reopen-all-windows = Återöppna alla fönster
 appmenu-restore-session =
     .label = Återställ föregående session
 appmenu-clear-history =
@@ -234,7 +238,7 @@ appmenu-help-share-ideas =
     .label = Dela idéer och feedback...
     .accesskey = D
 appmenu-help-switch-device =
-    .label = Byter till en ny enhet
+    .label = Byta till en ny enhet
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Webbläsarverktyg
 appmenu-developer-tools-extensions =
     .label = Tillägg för utvecklare
+appmenuitem-report-broken-site =
+    .label = Rapportera trasig webbplats
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Logga in på ditt konto
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Få varningar om dataintrång
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Dölj din riktiga e-postadress och telefonnummer
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Skydda din onlineaktivitet

@@ -23,6 +23,9 @@ bookmark-overlay-folders-expander2 =
     .tooltiptext = 북마크 폴더 모두 보기
 bookmark-overlay-folders-expander-hide =
     .tooltiptext = 숨기기
+# bookmark-overlay-folders-tree is used to provide an accessible name to the tree view of the Bookmarks directory, when it is expanded
+bookmark-overlay-folders-tree =
+    .aria-label = 폴더
 bookmark-overlay-new-folder-button =
     .label = 새 폴더
     .accesskey = o

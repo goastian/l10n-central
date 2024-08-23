@@ -127,7 +127,6 @@ about-processes-frame-name-many = Podrámy ({ $number }): { $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Neznámý actor
-about-processes-utility-actor-audio-decoder = Dekodér zvuku
 about-processes-utility-actor-audio-decoder-generic = Obecný zvukový dekodér
 about-processes-utility-actor-audio-decoder-applemedia = Zvukový dekodér Apple Media
 about-processes-utility-actor-audio-decoder-wmf = Zvukový dekodér Windows Media Framework
@@ -135,6 +134,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows Utils
+about-processes-utility-actor-windows-file-dialog = Dialogové okno Soubor systému Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:

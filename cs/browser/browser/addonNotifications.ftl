@@ -46,6 +46,7 @@ site-permission-install-first-prompt-midi-message = Tento přístup nemusí být
 ##
 
 xpinstall-disabled-locked = Instalace softwaru byla zakázána správcem vašeho systému.
+xpinstall-disabled-by-policy = Instalace softwaru byla vaší organizací zakázána.
 xpinstall-disabled = Instalace softwaru je v současnosti zakázána. Klepněte na Povolit a zkuste to prosím znovu.
 xpinstall-disabled-button =
     .label = Povolit
@@ -57,6 +58,13 @@ xpinstall-disabled-button =
 addon-install-blocked-by-policy = Doplněk { $addonName } ({ $addonId }) byl zablokován správcem vašeho počítače.
 # This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
 addon-domain-blocked-by-policy = Nastavení od správce vašeho systému zabránilo této stránce v dotazu na instalaci softwaru do vašeho počítače.
+# This message is shown when the installation of an add-on is blocked by enterprise policy.
+# Variables:
+#   $addonName (String): the name of the add-on.
+#   $addonId (String): the ID of add-on.
+addon-installation-blocked-by-policy = Doplněk { $addonName } ({ $addonId }) je zablokován vaší organizací.
+# This message is shown when the installation of add-ons from a domain is blocked by enterprise policy.
+addon-install-domain-blocked-by-policy = Vaše organizace zabránila tomuto serveru v dotazu na instalaci softwaru do vašeho počítače.
 addon-install-full-screen-blocked = V režimu celé obrazovky nebo těsně před jeho zapnutím není instalace doplňků povolena.
 # Variables:
 #   $addonName (String): the localized name of the sideloaded add-on.
@@ -200,3 +208,5 @@ addon-install-error-incompatible =
        *[no-cases] Doplněk { $addonName } nemohl být nainstalován, protože není kompatibilní s aplikací { -brand-short-name } { $appVersion }.
     }
 addon-install-error-blocklisted = Doplněk { $addonName } nemohl být nainstalován, protože přináší vysoké riziko nestability nebo bezpečnostních problémů.
+# Enterprise policies is a feature aimed at system administrators who want to deploy custom settings for Firefox.
+addon-install-error-admin-install-only = Doplněk { $addonName } nelze nainstalovat jako koncový uživatel, může jej nainstalovat pouze organizace pomocí zásad podniku.

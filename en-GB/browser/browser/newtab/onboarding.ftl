@@ -14,13 +14,6 @@ onboarding-welcome-header = Welcome to { -brand-short-name }
 onboarding-start-browsing-button-label = Start Browsing
 onboarding-not-now-button-label = Not now
 mr1-onboarding-get-started-primary-button-label = Get started
-mr1-onboarding-welcome-header = Welcome to { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Make { -brand-short-name } my primary browser
-    .title = Sets { -brand-short-name } as default browser and pins to taskbar
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Make { -brand-short-name } my default browser
-mr1-onboarding-set-default-secondary-button-label = Not now
 
 ## Custom Return To AMO onboarding strings
 
@@ -41,27 +34,6 @@ mr1-return-to-amo-add-extension-label = Add { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Getting started: screen { $current } of { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text =
-    Fire starts
-    here
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — Furniture designer, Firefox fan
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -72,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Progress: step { $current } of { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Turn off animations
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] Keep { -brand-short-name } in your Dock for easy access
-       *[other] Pin { -brand-short-name } to your taskbar for easy access
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Keep in Dock
-       *[other] Pin to taskbar
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Sign in
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = Make { -brand-short-name } your default
-mr1-onboarding-default-subtitle = Put speed, safety, and privacy on autopilot.
-mr1-onboarding-default-primary-button-label = Make default browser
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Bring it all with you
-mr1-onboarding-import-subtitle = Import your passwords, <br/>bookmarks and more.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Import from { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Import from previous browser
-mr1-onboarding-import-secondary-button-label = Not now
-mr2-onboarding-colorway-header = Life in colour
-mr2-onboarding-colorway-subtitle = Vibrant new colourways. Available for a limited time.
-mr2-onboarding-colorway-primary-button-label = Save colourway
-mr2-onboarding-colorway-secondary-button-label = Not now
-mr2-onboarding-colorway-label-soft = Soft
-mr2-onboarding-colorway-label-balanced = Balanced
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Bold
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Auto
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Default
 mr1-onboarding-theme-header = Make it your own
 mr1-onboarding-theme-subtitle = Personalise { -brand-short-name } with a theme.
-mr1-onboarding-theme-primary-button-label = Save theme
 mr1-onboarding-theme-secondary-button-label = Not now
+newtab-wallpaper-onboarding-title = Try a splash of colour
+newtab-wallpaper-onboarding-subtitle = Choose a wallpaper to give your New Tab a fresh look.
+newtab-wallpaper-onboarding-primary-button-label = Set wallpaper
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = System theme
 mr1-onboarding-theme-label-light = Light
@@ -183,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Use a dynamic, colourful theme for buttons,
         menus, and windows.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Use this colourway.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Use this colourway.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Explore { $colorwayName } colourways.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Explore { $colorwayName } colourways.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Explore default themes.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Explore default themes.
 
@@ -211,14 +117,6 @@ mr2-onboarding-default-theme-label = Explore default themes.
 mr2-onboarding-thank-you-header = Thank you for choosing us
 mr2-onboarding-thank-you-text = { -brand-short-name } is an independent browser backed by a non-profit. Together, we’re making the web safer, healthier and more private.
 mr2-onboarding-start-browsing-button-label = Start browsing
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -435,4 +333,36 @@ onboarding-device-migration-image-alt =
     .aria-label = A fox on the screen of a laptop computer waving. The laptop has a mouse plugged into it.
 onboarding-device-migration-title = Welcome back!
 onboarding-device-migration-subtitle = Sign in to your { -fxaccount-brand-name(capitalization: "sentence") } to bring your bookmarks, passwords, and history with you on your new device.
+onboarding-device-migration-subtitle2 = Sign in to your account to bring your bookmarks, passwords, and history with you on your new device.
 onboarding-device-migration-primary-button-label = Sign in
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = We love keeping you safe
+onboarding-easy-setup-security-and-privacy-subtitle = Our non-profit backed browser helps stop companies from secretly following you around the web.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Stay encrypted when you hop between devices
+onboarding-mobile-download-security-and-privacy-subtitle = When you’re synchronised, { -brand-short-name } encrypts your passwords, bookmarks, and more. Plus you can grab tabs from your other devices.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } has your back
+onboarding-gratitude-security-and-privacy-subtitle = Thank you for using { -brand-short-name }, backed by the Mozilla Foundation. With your support, we’re working to make the internet safer and more accessible for everyone.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = How long have you been using { -brand-short-name }?
+onboarding-new-user-familiarity-based-survey-title = How familiar are you with { -brand-short-name }?
+onboarding-new-user-survey-subtitle = Your feedback helps make { -brand-short-name } even better.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Next
+onboarding-new-user-survey-legal-link-label = By selecting “{ onboarding-new-user-survey-next-button-label },” you agree to { -brand-product-name }’s <a data-l10n-name="privacy_notice">Privacy Notice</a>
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = I’m brand new
+onboarding-new-user-survey-time-based-option-2 = Less than 1 month
+onboarding-new-user-survey-time-based-option-3 = More than 1 month, regularly
+onboarding-new-user-survey-time-based-option-4 = More than 1 month, occasionally
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = I’m brand new
+onboarding-new-user-survey-familiarity-based-option-2 = I’ve used it some
+onboarding-new-user-survey-familiarity-based-option-3 = I’m very familiar with it
+onboarding-new-user-survey-familiarity-based-option-4 = I used it in the past, but it’s been a while

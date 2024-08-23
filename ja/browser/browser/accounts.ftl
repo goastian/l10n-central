@@ -45,15 +45,18 @@ account-send-tab-to-device-verify = アカウントを認証...
 # The title shown in a notification when either this device or another device
 # has connected to, or disconnected from, a Firefox account.
 account-connection-title = { -fxaccount-brand-name(capitalization: "title") }
+# The title shown in a notification when either this device or another device
+# has connected to, or disconnected from, a Firefox account.
+account-connection-title-2 = アカウント
 # Variables:
 #   $deviceName (String): the name of the new device
-account-connection-connected-with = このコンピューターは { $deviceName } と接続しました。
+account-connection-connected-with = このコンピューターは { $deviceName } と接続されています。
 # Used when the name of the new device is not known.
-account-connection-connected-with-noname = このコンピューターは新しい端末と接続しました。
+account-connection-connected-with-noname = このコンピューターは新しい端末と接続されています。
 # Used in a notification shown after a Firefox account is connected to the current device.
 account-connection-connected = ログインできました
 # Used in a notification shown after the Firefox account was disconnected remotely.
-account-connection-disconnected = このコンピューターは切断されました。
+account-connection-disconnected = このコンピューターの接続が切断されました。
 
 ## These strings are used in a notification shown when we're opening
 ## a single tab another device sent us to display.
@@ -81,3 +84,11 @@ account-multiple-tabs-arriving-from-single-device = { $tabCount } 個のタブ�
 account-multiple-tabs-arriving-from-multiple-devices = { $tabCount } 個のタブが接続した端末から送られてきました
 # This version is used when we don't know any device names.
 account-multiple-tabs-arriving-from-unknown-device = { $tabCount } 個のタブが送られてきました
+
+## These strings are used in notifications in which the user remotely closed
+## tabs from other devices
+## Variables:
+##   $closedCount (Number): the number of tabs closed
+
+account-view-recently-closed-tabs = 最近閉じたタブを表示
+account-tabs-closed-remotely = { $closedCount } 個の { -brand-short-name } タブを閉じました

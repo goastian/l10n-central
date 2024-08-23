@@ -20,7 +20,6 @@ styleeditor-save-button = Zapisz
     .accesskey = Z
 styleeditor-options-button =
     .tooltiptext = Ustawienia edytora stylów
-styleeditor-media-rules = Reguły @media
 styleeditor-at-rules = Reguły @
 styleeditor-editor-textbox =
     .data-placeholder = Wprowadź tutaj CSS.
@@ -50,3 +49,9 @@ styleeditor-stylesheet-rule-count =
         [few] { $ruleCount } reguły.
        *[many] { $ruleCount } reguł.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Popraw czytelność arkusza stylów
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Można poprawiać czytelność tylko plików CSS

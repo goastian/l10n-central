@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = 刪除與此網站有關的記錄
     .accesskey = F
+places-forget-domain-data =
+    .label = 忘記此網站…
+    .accesskey = F
 places-sortby-name =
     .label = 依名稱排序
     .accesskey = r
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = 編輯資料夾…
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -132,14 +137,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = 刪除與此網站有關的記錄
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = 此動作將清除與 { $hostOrBaseDomain } 有關的所有資料，包含瀏覽紀錄、密碼、Cookie、快取資料與內容偏好設定。您確定要繼續嗎？
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = 此動作將清除與 { $hostOrBaseDomain } 有關的所有資料，包含瀏覽紀錄、Cookie、快取資料與內容偏好設定。不會清除書籤與密碼。您確定要繼續嗎？
 places-forget-about-this-site-forget = 忘記
-places-library =
-    .title = 收藏庫
-    .style = width:700px; height:500px;
 places-library3 =
     .title = 收藏庫
 places-organize-button =

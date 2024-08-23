@@ -53,7 +53,7 @@ import-from-chromium =
     .label = Chromium
     .accesskey = u
 import-from-firefox =
-    .label = Firefox
+    .label = Midori
     .accesskey = X
 import-from-360se =
     .label = 360 Secure Browser
@@ -66,8 +66,6 @@ import-source-page-title = Εισαγωγή ρυθμίσεων και δεδομ
 import-items-page-title = Στοιχεία προς εισαγωγή
 import-items-description = Επιλέξτε στοιχεία προς εισαγωγή:
 import-permissions-page-title = Παρακαλούμε παραχωρήστε στο { -brand-short-name } δικαιώματα
-# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
-import-permissions-description = Το macOS απαιτεί τη ρητή έγκρισή σας ώστε το { -brand-short-name } να προσπελάσει τους σελιδοδείκτες του Safari. Κάντε κλικ στο «Συνέχεια» και επιλέξτε το αρχείο «Bookmarks.plist» στο παράθυρο «Άνοιγμα αρχείου».
 # Do not translate "Safari" (the name of the browser on Apple devices)
 import-safari-permissions-string = Το macOS απαιτεί τη ρητή έγκρισή σας ώστε το { -brand-short-name } να προσπελάσει τα δεδομένα του Safari. Κάντε κλικ στο «Συνέχεια», επιλέξτε τον φάκελο του «Safari» στο παράθυρο διαλόγου του Finder και τέλος, κάντε κλικ στο «Άνοιγμα».
 import-migrating-page-title = Εισαγωγή…
@@ -98,9 +96,9 @@ imported-edge-reading-list = Λίστα ανάγνωσης (Από Edge)
 ## normalized to just "edge" and "chrome" for these strings.
 
 browser-data-cookies-checkbox =
-    .label = Cookies
+    .label = Cookie
 browser-data-cookies-label =
-    .value = Cookies
+    .value = Cookie
 browser-data-history-checkbox =
     .label =
         { $browser ->

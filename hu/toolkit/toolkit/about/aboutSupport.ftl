@@ -15,6 +15,10 @@ support-addons-type = Típus
 support-addons-enabled = Engedélyezve
 support-addons-version = Verzió
 support-addons-id = Azonosító
+legacy-user-stylesheets-title = Hagyományos felhasználói stíluslapok
+legacy-user-stylesheets-enabled = Aktív
+legacy-user-stylesheets-stylesheet-types = Stíluslapok
+legacy-user-stylesheets-no-stylesheets-found = Nem találhatók stíluslapok
 security-software-title = Biztonsági szoftver
 security-software-type = Típus
 security-software-name = Név
@@ -70,10 +74,11 @@ app-basics-remote-processes-count = Távoli folyamatok
 app-basics-enterprise-policies = Vállalati házirendek
 app-basics-location-service-key-google = Google helymeghatározási szolgáltatás kulcs
 app-basics-safebrowsing-key-google = Google Safebrowsing kulcs
-app-basics-key-mozilla = Mozilla helymeghatározási szolgáltatás kulcs
+app-basics-key-mozilla = Ablaze helymeghatározási szolgáltatás kulcs
 app-basics-safe-mode = Csökkentett mód
 app-basics-memory-size = Memória mérete (RAM)
 app-basics-disk-available = Szabad lemezterület
+app-basics-pointing-devices = Mutatóeszközök
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -132,7 +137,7 @@ a11y-instantiator = Kisegítő lehetőségek kezdeményezője
 library-version-title = Könyvtárak verziói
 copy-text-to-clipboard-label = Szöveg másolása a vágólapra
 copy-raw-data-to-clipboard-label = Nyers adatok másolása a vágólapra
-sandbox-title = Sandbox
+sandbox-title = Homokozó
 sandbox-sys-call-log-title = Elutasított rendszerhívások
 sandbox-sys-call-index = #
 sandbox-sys-call-age = másodperce
@@ -179,6 +184,25 @@ media-codec-support-hw-decoding = Hardveres dekódolás
 media-codec-support-codec-name = Kodeknév
 media-codec-support-supported = Támogatott
 media-codec-support-unsupported = Nem támogatott
+media-codec-support-error = A kodek támogatási információi nem érhetőek el. Próbálja újra egy médiafájl lejátszása után.
+media-codec-support-lack-of-extension = Kiegészítő telepítése
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = A tartalom-visszafejtő modulok információi
+media-key-system-name = Kulcsrendszer neve
+media-video-robustness = Videó robusztussága
+media-audio-robustness = Hang robusztussága
+media-cdm-capabilities = Képességek
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Titkosítatlan kezdet
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2 kompatibilis
 
 ##
 
@@ -258,6 +282,7 @@ try-newer-driver = Ezzel a grafikus illesztőprogrammal nem engedélyezett az eg
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType-paraméterek
 compositing = Kompozitálás
+support-font-determination = Betűtípus láthatóságának hibakeresési információi
 hardware-h264 = Hardveres H264-dekódolás
 main-thread-no-omtc = fő szál, nincs OMTC
 yes = Igen
@@ -319,12 +344,12 @@ has-seccomp-bpf = Seccomp-BPF (rendszerhívás-szűrés)
 has-seccomp-tsync = Seccomp szálszinkronizáció
 has-user-namespaces = Felhasználói névterek
 has-privileged-user-namespaces = Felhasználói névterek privilegizált folyamatokhoz
-can-sandbox-content = Tartalomfolyamat sandboxing
-can-sandbox-media = Médiabővítmény sandboxing
-content-sandbox-level = Tartalomfolyamat sandboxing szintje
-effective-content-sandbox-level = Tartalomfolyamat tényleges sandboxing szintje
+can-sandbox-content = Tartalomfolyamat homokozója
+can-sandbox-media = Médiabővítmény homokozója
+content-sandbox-level = Tartalomfolyamat homokozóhasználati szintje
+effective-content-sandbox-level = Tartalomfolyamat tényleges homokozóhasználati szintje
 content-win32k-lockdown-state = Win32k zárolási állapot a tartalmi folyamathoz
-support-sandbox-gpu-level = GPU-folyamat sandboxing szintje
+support-sandbox-gpu-level = GPU-folyamat homokozóhasználati szintje
 sandbox-proc-type-content = tartalom
 sandbox-proc-type-file = fájltartalom
 sandbox-proc-type-media-plugin = médiabővítmény
@@ -387,6 +412,20 @@ support-printing-modified-settings = Módosított nyomtatási beállítások
 support-printing-prefs-name = Név
 support-printing-prefs-value = Érték
 
+## Remote Settings sections
+
+support-remote-settings-title = Távoli beállítások
+support-remote-settings-status = Állapot
+support-remote-settings-status-ok = Rendben
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Nem működik
+support-remote-settings-last-check = Utolsó ellenőrzés
+support-remote-settings-local-timestamp = Helyi időbélyeg
+support-remote-settings-sync-history = Előzmények
+support-remote-settings-sync-history-status = Állapot
+support-remote-settings-sync-history-datetime = Dátum
+support-remote-settings-sync-history-infos = Információk
+
 ## Normandy sections
 
 support-remote-experiments-title = Távoli kísérletek
@@ -396,3 +435,22 @@ support-remote-experiments-see-about-studies = További információkért tekint
 support-remote-features-title = Távoli funkciók
 support-remote-features-name = Név
 support-remote-features-status = Állapot
+
+## Pointing devices
+
+pointing-device-mouse = Egér
+pointing-device-touchscreen = Érintőképernyő
+pointing-device-pen-digitizer = Digitalizáló toll
+pointing-device-none = Nincsenek mutatóeszközök
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Tartalomelemzés (DLP)
+content-analysis-active = Aktív
+content-analysis-connected-to-agent = Kapcsolódva az ügynökhöz
+content-analysis-agent-path = Ügynök útvonala
+content-analysis-agent-failed-signature-verification = Az ügynök nem ment át az aláírás-ellenőrzésen
+content-analysis-request-count = Kérések száma

@@ -40,9 +40,14 @@ options-inspector-draggable-properties-tooltip =
     .title = インスペクターのルール表示で、サイズの値をクリックしてドラッグすると値を編集できます。
 # The label for the checkbox option to enable simplified highlighting on page elements
 # within the inspector for users who enabled prefers-reduced-motion = reduce
-options-inspector-simplified-highlighters-label = Use simpler highlighters with prefers-reduced-motion
+options-inspector-simplified-highlighters-label = prefers-reduced-motion で簡易強調にする
 options-inspector-simplified-highlighters-tooltip =
-    .title = prefers-reduced-motion が有効な場合、簡易強調を有効にします。フラッシュ効果を避けるため、強調された要素の周りに塗りつぶされた四角形ではなく直線を描画します。
+    .title = prefers-reduced-motion が有効な場合、簡易強調を有効にしてアニメーションを抑制します。フラッシュ効果を避けるため、強調された要素の周りに塗りつぶされた四角形ではなく直線を描画します。
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = <kbd>Enter</kbd> キーで次の input にフォーカスする
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = この設定が有効な場合、セレクターやプロパティ名、値の編集時に Enter キーを入力すると、次の input 要素へフォーカスを移動します。
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = 色の名前
+
+## Web Console section
+
+# The heading
+options-webconsole-label = ウェブコンソール
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = コンソールペインを有効化
+options-webconsole-split-console-tooltip =
+    .title = ESC キーでコンソールペインを開きます
 
 ## Style Editor section
 
@@ -114,7 +128,7 @@ options-enable-remote-label = リモートデバッガーを有効化
 options-enable-remote-tooltip2 =
     .title = このオプションを有効にすると、このブラウザーインスタンスをリモートでデバッグできるようになります
 # The label for checkbox that enables F12 as a shortcut to open DevTools
-options-enable-f12-label = Use the F12 key to open or close DevTools
+options-enable-f12-label = F12 キーで DevTools を開閉する
 options-enable-f12-tooltip =
     .title = このオプションを有効にすると、F12 キーに DevTools ツールボックスの開閉を割り当てます
 # The label for checkbox that toggles custom formatters for objects
@@ -130,4 +144,4 @@ options-source-maps-label = ソースマップを有効化
 options-source-maps-tooltip =
     .title = このオプションを有効にすると、ソースがツールにマッピングされます
 # The message shown for settings that trigger page reload
-options-context-triggers-page-refresh = * 現在のセッションのみ有効。再読み込みで復帰
+options-context-triggers-page-refresh = * 現在のセッションのみ有効、ページを再読み込みします

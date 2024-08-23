@@ -51,6 +51,7 @@ about-processes-remote-sandbox-broker-process = Broker de isolamento (sandbox) r
 about-processes-fork-server-process = Servidor de fork ({ $pid })
 about-processes-preallocated-process = Pré-alocado ({ $pid })
 about-processes-utility-process = Utilidade ({ $pid })
+about-processes-inference-process = Inferência ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -120,7 +121,6 @@ about-processes-frame-name-many = Subframes ({ $number }): { $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Agente desconhecido
-about-processes-utility-actor-audio-decoder = Decodificador de áudio
 about-processes-utility-actor-audio-decoder-generic = Decodificador de áudio genérico
 about-processes-utility-actor-audio-decoder-applemedia = Decodificador de áudio de mídia da Apple
 about-processes-utility-actor-audio-decoder-wmf = Decodificador de áudio do Windows Media Framework
@@ -128,6 +128,7 @@ about-processes-utility-actor-mf-media-engine = Mecanismo de mídia Windows Medi
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Utilitários do Windows
+about-processes-utility-actor-windows-file-dialog = Diálogo arquivos do Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:

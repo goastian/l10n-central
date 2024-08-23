@@ -11,18 +11,8 @@ more-from-moz-category =
 more-from-moz-subtitle = Tekintse meg a többi { -vendor-short-name } termékét, amelyek az egészséges internetet támogatják.
 more-from-moz-firefox-mobile-title = { -brand-product-name } mobilon
 more-from-moz-firefox-mobile-description = A mobilböngésző, amely az Ön adatvédelmét helyezi előtérbe.
-more-from-moz-firefox-mobile-description-advanced = A { -brand-product-name } mobilböngészők letiltják a nyomkövetőket, megállítják az idegesítő automatikus lejátszást, hogy biztosítsák a kellemes internethasználatot.
 more-from-moz-mozilla-vpn-title = { -mozilla-vpn-brand-name }
 more-from-moz-mozilla-vpn-description = Fedezze fel az anonim böngészés és védelem további rétegét.
-more-from-moz-mozilla-vpn-description-advanced = A { -mozilla-vpn-brand-name } az anonim böngészés és védelem további rétegét nyújtja. Más VPN-ekkel ellentétben biztonságos, és nem követi nyomon a tevékenységét.
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-title = { -rally-brand-name }
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-description = Ajánlja fel az adatait egy mindenki számára jobb internetért.
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-description-advanced = Ajánlja fel az adatait olyan kutatási tanulmányokhoz, amelyek egy biztonságosabb, nyitottabb, az embereket, és nem a nagy technológiai vállalatokat előnyben részesítő internet létrehozásán dolgoznak.
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-button-mozilla-rally-2 = Csatlakozás a { -rally-short-name }hoz
 more-from-moz-qr-code-box-firefox-mobile-title = Töltse le a mobileszközével. Irányítsa a kamerát a QR-kódra. Amikor megjelenik egy hivatkozás, koppintson rá.
 more-from-moz-qr-code-box-firefox-mobile-button = Inkább e-mail küldése a telefonjára
 more-from-moz-qr-code-firefox-mobile-img =
@@ -35,3 +25,10 @@ more-from-moz-learn-more-link = További tudnivalók
 more-from-moz-firefox-relay-title = { -relay-brand-name }
 more-from-moz-firefox-relay-description = Védje meg a postafiókját és a személyazonosságát az ingyenes e-mail-maszkolás segítségével.
 more-from-moz-firefox-relay-button = A { -relay-brand-short-name } beszerzése
+
+## These strings are for the Mozilla Monitor card in about:preferences moreFromMozilla page
+
+more-from-moz-mozilla-monitor-title = { -mozmonitor-brand-name }
+more-from-moz-mozilla-monitor-us-description = Automatikusan szerezze vissza a kikerült személyes adatait.
+more-from-moz-mozilla-monitor-global-description = Kapjon értesítést, ha az adatai adatvédelmi incidensben voltak érintettek.
+more-from-moz-mozilla-monitor-button = A { -monitor-brand-short-name } beszerzése

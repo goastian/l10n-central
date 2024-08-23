@@ -8,24 +8,13 @@
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
 # refactoring them in some way, the script will need updating.
 
-# Variables:
-# $hostname (String) - Hostname of the website with SSL error.
-# $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = Προέκυψε σφάλμα κατά την σύνδεση στο { $hostname }. { $errorMessage }
-
-# Variables:
-# $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
-cert-error-code-prefix = Κωδικός σφάλματος: { $error }
-
 psmerr-ssl-disabled = Αδυναμία ασφαλούς σύνδεσης λόγω απενεργοποίησης του πρωτοκόλλου SSL.
 psmerr-ssl2-disabled = Αδυναμία ασφαλούς σύνδεσης. επειδή η σελίδα χρησιμοποιεί μια παλαιότερη, μη ασφαλή έκδοση του πρωτοκόλλου SSL.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Έχετε λάβει ένα μη έγκυρο πιστοποιητικό. Παρακαλώ επικοινωνήστε με τον διαχειριστή του συστήματος ή με τον αποστολέα του email και δώστε του αυτές τις πληροφορίες:
     
     Το πιστοποιητικό σας περιέχει τον ίδιο σειριακό αριθμό με ένα άλλο πιστοποιητικό που εκδόθηκε από την αρχή πιστοποίησης.  Παρακαλώ αποκτήστε ένα νέο πιστοποιητικό που να περιέχει έναν μοναδικό σειριακό αριθμό.
-
 ssl-error-export-only-server = Αδύνατη η επικοινωνία με ασφάλεια. Ο κόμβος δεν υποστηρίζει κρυπτογράφηση υψηλού βαθμού.
 ssl-error-us-only-server = Αδύνατη η επικοινωνία με ασφάλεια. Ο κόμβος απαιτεί κρυπτογράφηση υψηλού βαθμού που δεν υποστηρίζεται.
 ssl-error-no-cypher-overlap = Δεν ήταν δυνατή η ασφαλής επικοινωνία με τον κόμβο: κανένας κοινός αλγόριθμος κρυπτογράφησης.
@@ -212,14 +201,6 @@ sec-error-pkcs7-keyalg-mismatch = Αδυναμία αποκρυπτογράφη�
 sec-error-pkcs7-bad-signature = Η επαλήθευση της υπογραφής απέτυχε: δεν βρέθηκε ο υπογράφων, βρέθηκαν πολλοί υπογράφοντες, ή τα δεδομένα ήταν ακατάλληλα ή κατεστραμμένα.
 sec-error-unsupported-keyalg = Μη υποστηριζόμενος ή άγνωστος αλγόριθμος κλειδιού.
 sec-error-decryption-disallowed = Αδυναμία αποκρυπτογράφησης: κρυπτογραφήθηκε με μη επιτρεπόμενο αλγόριθμο ή μέγεθος κλειδιού.
-xp-sec-fortezza-bad-card = Η κάρτα Fortezza δεν έχει προετοιμαστεί σωστά. Παρακαλώ αφαιρέστε την και επιστρέψτε την στον εκδότη σας.
-xp-sec-fortezza-no-card = Δεν βρέθηκαν κάρτες Fortezza
-xp-sec-fortezza-none-selected = Δεν έχει επιλεγεί κάρτα Fortezza
-xp-sec-fortezza-more-info = Παρακαλώ επιλέξτε ένα πρόσωπο για περισσότερες πληροφορίες
-xp-sec-fortezza-person-not-found = Δεν βρέθηκε προσωπικότητα
-xp-sec-fortezza-no-more-info = Καμία επιπλέον πληροφορία σχετικά με αυτήν την προσωπικότητα
-xp-sec-fortezza-bad-pin = Άκυρο PIN
-xp-sec-fortezza-person-error = Αδυναμία προετοιμασίας προσωπικοτήτων Fortezza.
 sec-error-no-krl = Δεν βρέθηκε KRL για το πιστοποιητικό αυτού του ιστοτόπου.
 sec-error-krl-expired = Το KRL για το πιστοποιητικό αυτού του ιστοτόπου έχει λήξει.
 sec-error-krl-bad-signature = Το KRL για το πιστοποιητικό αυτού του ιστοτόπου δεν έχει έγκυρη υπογραφή.
@@ -234,9 +215,6 @@ sec-error-cert-nickname-collision = Υπάρχει ήδη ένα πιστοπο�
 sec-error-key-nickname-collision = Υπάρχει ήδη ένα κλειδί με το ίδιο ψευδώνυμο.
 sec-error-safe-not-created = σφάλμα κατά τη δημιουργία ασφαλούς αντικειμένου
 sec-error-baggage-not-created = σφάλμα κατά τη δημιουργία αντικειμένου αποσκευών
-xp-java-remove-principal-error = Αδυναμία αφαίρεσης αρχής
-xp-java-delete-privilege-error = Αδυναμία διαγραφής προνομίου
-xp-java-cert-not-exists-error = Αυτή η αρχή δεν διαθέτει πιστοποιητικό
 sec-error-bad-export-algorithm = Ο απαιτούμενος αλγόριθμος δεν επιτρέπεται.
 sec-error-exporting-certificates = Σφάλμα κατά την προσπάθεια εξαγωγής πιστοποιητικών.
 sec-error-importing-certificates = Σφάλμα κατά την προσπάθεια εισαγωγής πιστοποιητικών.
@@ -254,7 +232,7 @@ sec-error-pkcs12-duplicate-data = Δεν εισήχθη, είναι ήδη στ�
 sec-error-message-send-aborted = Το μήνυμα δεν εστάλη.
 sec-error-inadequate-key-usage = Η χρήση κλειδιού πιστοποιητικού δεν επαρκεί για την αποπειραθείσα λειτουργία.
 sec-error-inadequate-cert-type = Ο τύπος του πιστοποιητικού δεν εγκρίθηκε για εφαρμογή.
-sec-error-cert-addr-mismatch = Η διεύθυνση στο πιστοποιητικό υπογραφής δεν συμφωνεί με αυτή στις επικεφαλίδες μηνυμάτων.
+sec-error-cert-addr-mismatch = Η διεύθυνση στο πιστοποιητικό υπογραφής δεν συμφωνεί με αυτή στις κεφαλίδες μηνυμάτων.
 sec-error-pkcs12-unable-to-import-key = Δεν ήταν δυνατή η εισαγωγή. Σφάλμα προσπάθειας εισαγωγής ιδιωτικού κλειδιού.
 sec-error-pkcs12-importing-cert-chain = Δεν ήταν δυνατή η εισαγωγή. Σφάλμα προσπάθειας εισαγωγής αλυσίδας πιστοποιητικών.
 sec-error-pkcs12-unable-to-locate-object-by-name = Δεν ήταν δυνατή η εξαγωγή. Δεν ήταν δυνατός ο εντοπισμός πιστοποιητικού ή κλειδιού από το ψευδώνυμο.
@@ -353,3 +331,14 @@ mozilla-pkix-error-invalid-integer-encoding = Ο διακομιστής παρο
 mozilla-pkix-error-empty-issuer-name = Ο διακομιστής παρουσίασε ένα πιστοποιητικό με κενό επιφανές όνομα εκδότη.
 mozilla-pkix-error-additional-policy-constraint-failed = Ένας περιορισμός πρόσθετης πολιτικής απέτυχε κατά την επικύρωση αυτού του πιστοποιητικού.
 mozilla-pkix-error-self-signed-cert = Το πιστοποιητικό δεν είναι αξιόπιστο επειδή είναι αυτοϋπογεγραμμένο.
+xp-java-remove-principal-error = Αδυναμία αφαίρεσης αρχής
+xp-java-delete-privilege-error = Αδυναμία διαγραφής προνομίου
+xp-java-cert-not-exists-error = Αυτή η αρχή δεν διαθέτει πιστοποιητικό
+xp-sec-fortezza-bad-card = Η κάρτα Fortezza δεν έχει προετοιμαστεί σωστά. Παρακαλώ αφαιρέστε την και επιστρέψτε την στον εκδότη σας.
+xp-sec-fortezza-no-card = Δεν βρέθηκαν κάρτες Fortezza
+xp-sec-fortezza-none-selected = Δεν έχει επιλεγεί κάρτα Fortezza
+xp-sec-fortezza-more-info = Παρακαλώ επιλέξτε ένα πρόσωπο για περισσότερες πληροφορίες
+xp-sec-fortezza-person-not-found = Δεν βρέθηκε προσωπικότητα
+xp-sec-fortezza-no-more-info = Καμία επιπλέον πληροφορία σχετικά με αυτήν την προσωπικότητα
+xp-sec-fortezza-bad-pin = Άκυρο PIN
+xp-sec-fortezza-person-error = Αδυναμία προετοιμασίας προσωπικοτήτων Fortezza.

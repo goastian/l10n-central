@@ -68,3 +68,13 @@ about-private-browsing-pin-promo-title = Nincsenek mentett sütik vagy előzmén
 about-private-browsing-cookie-banners-promo-header = Elég a sütibannerekből!
 about-private-browsing-cookie-banners-promo-button = A sütibannerek számának csökkentése
 about-private-browsing-cookie-banners-promo-message = Hagyja, hogy a { -brand-short-name } automatikusan válaszoljon a sütik előugró ablakaira, így visszatérhet a zavartalan böngészéshez. A { -brand-short-name } elutasítja az összes kérést, ha az lehetséges.
+# Simplified version of the headline if the original text doesn't work
+# in your language: `{ -brand-short-name } will show fewer cookie requests`
+about-private-browsing-cookie-banners-promo-heading = A { -brand-short-name } gondoskodik a sütibannerekről Ön helyett
+about-private-browsing-cookie-banners-promo-body = Mostantól számos sütibannert automatikusan elutasítunk, így kevesebbet nyomkövetést kap, és visszatérhet a figyelemelterelés nélküli böngészéshez.
+
+## Strings for Felt Privacy v1 experiments in 119
+
+about-private-browsing-felt-privacy-v1-info-header = Ne hagyjon nyomot ezen az eszközön
+about-private-browsing-felt-privacy-v1-info-body = A { -brand-short-name } törli a sütiket, előzményeket és oldaladatokat, amikor bezárja az összes privát ablakot.
+about-private-browsing-felt-privacy-v1-info-link = Ki láthatja a tevékenységemet?

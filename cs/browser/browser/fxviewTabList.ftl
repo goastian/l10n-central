@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = Otevřít { $targetURI } v novém panelu
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = Zavřít panel { $tabTitle }
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = Zavřít { $tabTitle }
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = Uložit do { -pocket-brand-name(case: "gen") }
     .accesskey = o
 fxviewtabrow-copy-link = Kopírovat odkaz
     .accesskey = K
+fxviewtabrow-close-tab = Zavřít panel
+    .accesskey = Z
+fxviewtabrow-move-tab = Přesunout panel
+    .accesskey = s
+fxviewtabrow-move-tab-start = Přesunout na začátek
+    .accesskey = z
+fxviewtabrow-move-tab-end = Přesunout na konec
+    .accesskey = k
+fxviewtabrow-move-tab-window = Přesunout do nového okna
+    .accesskey = o
+fxviewtabrow-send-tab = Odeslat panel na zařízení
+    .accesskey = z
+fxviewtabrow-pin-tab = Připnout panel
+    .accesskey = P
+fxviewtabrow-unpin-tab = Odepnout panel
+    .accesskey = O
+fxviewtabrow-mute-tab = Vypnout zvuk panelu
+    .accesskey = V
+fxviewtabrow-unmute-tab = Zapnout zvuk panelu
+    .accesskey = z
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Možnosti pro panel { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = Ztlumí zvuk u stránky { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = Zapne zvuk u stránky { $tabTitle }
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Vypnout zvuk panelu
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Zapnout zvuk panelu

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nyt faneblad
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Tilføj søgetjeneste
 newtab-topsites-add-shortcut-header = Ny genvej
 newtab-topsites-edit-topsites-header = Rediger mest besøgte webside
 newtab-topsites-edit-shortcut-header = Rediger genvej
+newtab-topsites-add-shortcut-label = Tilføj genvej
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Indtast en titel
@@ -199,6 +200,7 @@ newtab-section-header-recent-activity = Seneste aktivitet
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Anbefalet af { $provider }
+newtab-section-header-stories = Tankevækkende historier
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -207,6 +209,8 @@ newtab-empty-section-highlights = Gå i gang med at browse, så vil vi vise dig 
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Der er ikke flere nye historier. Kom tilbage senere for at se flere tophistorier fra { $provider }. Kan du ikke vente? Vælg et populært emne og find flere spændende historier fra hele verden.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Der er ikke flere nye historier. Kom tilbage senere for at se flere. Kan du ikke vente? Vælg et populært emne og find flere spændende historier fra hele verden.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -228,19 +232,6 @@ newtab-pocket-cta-button = Hent { -pocket-brand-name }
 newtab-pocket-cta-text = Gem dine yndlingshistorier i { -pocket-brand-name } og hav dem altid ved hånden.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } er en del af { -brand-product-name }-familien
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Gem til { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Gemt til { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Indlæs flere historier
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Du har læst det hele!
-newtab-pocket-last-card-desc = Kom tilbage senere for at se flere historier.
-newtab-pocket-last-card-image =
-    .alt = Du har læst det hele
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Gem
 newtab-pocket-saved = Gemt
 
@@ -259,6 +250,9 @@ newtab-error-fallback-refresh-link = Prøv igen ved at genindlæse siden.
 
 newtab-custom-shortcuts-title = Genveje
 newtab-custom-shortcuts-subtitle = Gemte eller besøgte websteder
+newtab-custom-shortcuts-toggle =
+    .label = Genveje
+    .description = Gemte eller besøgte websteder
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -269,9 +263,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Sponsorerede genveje
 newtab-custom-pocket-title = Anbefalet af { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Interessant indhold udvalgt af { -pocket-brand-name }, en del af { -brand-product-name }-familien
+newtab-custom-stories-toggle =
+    .label = Anbefalede historier
+    .description = Interessant indhold udvalgt af { -brand-product-name }-holdet
 newtab-custom-pocket-sponsored = Sponsorerede historier
 newtab-custom-pocket-show-recent-saves = Vis seneste gemte
 newtab-custom-recent-title = Seneste aktivitet
 newtab-custom-recent-subtitle = Et udvalg af seneste websteder og indhold
+newtab-custom-recent-toggle =
+    .label = Seneste aktivitet
+    .description = Et udvalg af seneste websteder og indhold
+newtab-custom-weather-toggle =
+    .label = Vejr
+    .description = Dagens vejrudsigt
 newtab-custom-close-button = Luk
 newtab-custom-settings = Håndter flere indstillinger
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Baggrunde
+newtab-wallpaper-reset = Nulstil til standard
+newtab-wallpaper-light-red-panda = Rød panda
+newtab-wallpaper-light-mountain = Hvidt bjerg
+newtab-wallpaper-light-sky = Himmel med lilla og lyserøde skyer
+newtab-wallpaper-light-color = Blå, lyserøde og gule former
+newtab-wallpaper-light-landscape = Bjerglandskab med blå tåge
+newtab-wallpaper-light-beach = Strand med palme
+newtab-wallpaper-dark-aurora = Nordlys
+newtab-wallpaper-dark-color = Røde og blå former
+newtab-wallpaper-dark-panda = Rød panda skjult i en skov
+newtab-wallpaper-dark-sky = Udsigt over by med nattehimmel
+newtab-wallpaper-dark-mountain = Bjerglandskab
+newtab-wallpaper-dark-city = Lilla bylandskab
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Ensfarvede
+newtab-wallpaper-blue = Blå
+newtab-wallpaper-light-blue = Lyseblå
+newtab-wallpaper-light-purple = Lyslilla
+newtab-wallpaper-light-green = Lysegrøn
+newtab-wallpaper-green = Grøn
+newtab-wallpaper-beige = Beige
+newtab-wallpaper-yellow = Gul
+newtab-wallpaper-orange = Orange
+newtab-wallpaper-pink = Pink
+newtab-wallpaper-light-pink = Lyserød
+newtab-wallpaper-red = Rød
+newtab-wallpaper-dark-blue = Mørkeblå
+newtab-wallpaper-dark-purple = Mørklilla
+newtab-wallpaper-dark-green = Mørkegrøn
+newtab-wallpaper-brown = Brun
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Abstrakt
+newtab-wallpaper-abstract-green = Grønne former
+newtab-wallpaper-abstract-blue = Blå former
+newtab-wallpaper-abstract-purple = Lilla former
+newtab-wallpaper-abstract-orange = Orange former
+newtab-wallpaper-gradient-orange = Farveforløb i orange og pink
+newtab-wallpaper-abstract-blue-purple = Blå og lilla former
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Fotografier
+newtab-wallpaper-beach-at-sunrise = Strand ved solopgang
+newtab-wallpaper-beach-at-sunset = Strand ved solnedgang
+newtab-wallpaper-storm-sky = Stormfuld himmel
+newtab-wallpaper-sky-with-pink-clouds = Himmel med lyserøde skyer
+newtab-wallpaper-red-panda-yawns-in-a-tree = Rød panda gaber i et træ
+newtab-wallpaper-white-mountains = Hvide bjerge
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Foto af <a data-l10n-name="name-link">{ $author_string }</a> fra <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Tilføj lidt farve
+newtab-wallpaper-feature-highlight-content = Opdater siden Nyt faneblad med baggrundsbilleder.
+newtab-wallpaper-feature-highlight-button = Forstået
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Annuller
+    .aria-label = Luk pop op
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Se vejrudsigter på { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Sponsoreret
+newtab-weather-menu-change-location = Skift sted
+newtab-weather-change-location-search-input = Søg efter sted
+newtab-weather-menu-weather-display = Visning af vejr
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Enkel
+newtab-weather-menu-change-weather-display-simple = Skift til enkel visning
+newtab-weather-menu-weather-display-option-detailed = Detaljeret
+newtab-weather-menu-change-weather-display-detailed = Skift til detaljeret visning
+newtab-weather-menu-temperature-units = Temperaturenheder
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenheit
+newtab-weather-menu-temperature-option-celsius = Celsius
+newtab-weather-menu-change-temperature-units-fahrenheit = Skift til Fahrenheit
+newtab-weather-menu-change-temperature-units-celsius = Skift til Celsius
+newtab-weather-menu-hide-weather = Skjul vejr på nyt faneblad
+newtab-weather-menu-learn-more = Læs mere
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Vejrdata er ikke tilgængelige lige nu.

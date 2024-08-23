@@ -38,7 +38,7 @@ appmenuitem-translate =
 appmenuitem-zoom =
     .value = Thu phóng
 appmenuitem-more-tools =
-    .label = Thêm công cụ
+    .label = Công cụ khác
 appmenuitem-help =
     .label = Trợ giúp
 appmenuitem-exit2 =
@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Hiển thị thêm các thẻ
     .tooltiptext = Hiển thị các thẻ từ thiết bị này
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Thẻ không hoạt động
+    .tooltiptext = Xem các thẻ không hoạt động trên thiết bị này
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Không có thẻ đang mở
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Đồng bộ ngay
 appmenuitem-fxa-sign-in = Đăng nhập vào { -brand-product-name }
 appmenuitem-fxa-manage-account = Quản lý tài khoản
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Tài khoản
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profiler
     .tooltiptext = Profiler đang ghi một hồ sơ
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Hiển thị thêm thông tin
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Cài đặt trước được đề xuất cho hầu hết gỡ lỗi ứng dụng web, với chi phí thấp.
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = Giá trị đặt trước để đi�
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Nguồn điện
+profiler-popup-presets-debug-description = Giá trị đặt trước để gỡ lỗi trong { -brand-shorter-name }. Tải thêm cao, không sử dụng cho công việc về hiệu suất mà sử dụng để tập trung vào việc tìm hiểu hành vi của trình duyệt.
+profiler-popup-presets-debug-label =
+    .label = Gỡ lỗi
 profiler-popup-presets-custom-label =
     .label = Tùy chỉnh
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Quản lý lịch sử
-appmenu-reopen-all-tabs = Mở lại tất cả các thẻ
-appmenu-reopen-all-windows = Mở lại tất cả các cửa sổ
 appmenu-restore-session =
     .label = Khôi phục phiên làm việc trước
 appmenu-clear-history =
@@ -263,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Công cụ của trình duyệt
 appmenu-developer-tools-extensions =
     .label = Tiện ích mở rộng dành cho nhà phát triển
+appmenuitem-report-broken-site =
+    .label = Báo cáo trang web bị hỏng
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Đăng nhập vào tài khoản của bạn
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Nhận cảnh báo rò rỉ dữ liệu
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Che giấu email và điện thoại thật của bạn
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Bảo vệ hoạt động trực tuyến của bạn

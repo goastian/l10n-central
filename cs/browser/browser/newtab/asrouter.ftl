@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = autor: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Doporučení
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Doporučení
     .tooltiptext = Doporučené rozšíření
     .a11y-announcement = Je dostupné doporučené rozšíření
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Doporučení
     .tooltiptext = Doporučená funkce
     .a11y-announcement = Je dostupné doporučení funkce
@@ -63,6 +65,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Mějte své záložky všude s sebou.
 cfr-doorhanger-bookmark-fxa-body = Skvělý nález! Chcete mít tuto záložku i ve svém mobilním zařízení? Použijte { -fxaccount-brand-name(case: "acc", capitalization: "lower") }.
+cfr-doorhanger-bookmark-fxa-body-2 = Skvělý nález! Chcete mít tuto záložku i ve svém mobilním zařízení? Začněte s účtem.
 cfr-doorhanger-bookmark-fxa-link-text = Synchronizujte své záložky…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Zavírací tlačítko
@@ -119,15 +122,6 @@ cfr-doorhanger-doh-primary-button-2 = OK
 cfr-doorhanger-doh-secondary-button = Zakázat
     .accesskey = Z
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Vaše soukromí je důležité. { -brand-short-name } nyní navzájem izoluje jednotlivé weby, což hackerům ztěžuje krádež hesel, čísel platebních karet nebo jiných citlivých informací.
-cfr-doorhanger-fission-header = Izolace webů
-cfr-doorhanger-fission-primary-button = OK, rozumím
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = Zjistit více
-    .accesskey = Z
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body =
@@ -145,13 +139,6 @@ cfr-doorhanger-video-support-header =
 cfr-doorhanger-video-support-primary-button = Aktualizovat
     .accesskey = A
 
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = Zjistit více
-    .title = Zobrazit více informací o této funkci
-spotlight-learn-more-expanded = Zjistit více
-    .title = Zavřít
-
 ## VPN promotion dialog for public Wi-Fi users
 ##
 ## If a user is detected to be on a public Wi-Fi network, they are given a
@@ -165,20 +152,6 @@ spotlight-public-wifi-vpn-primary-button = Ochraňte své soukromí s { -mozilla
     .accesskey = s
 spotlight-public-wifi-vpn-link = Teď ne
     .accesskey = n
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Vyzkoušejte naši zatím nejsilnější
-    funkci na ochranu soukromí
-spotlight-total-cookie-protection-body = Úplná ochrana před cookies brání sledujícím subjektům používat cookies k vašemu sledování napříč webovými stránkami.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } ochrání vaše cookies tak, že omezí jejich dostupnost pro konkrétní stránku, kterou prohlížíte, takže je sledovací prvky nemohou používat pro vaše sledování napříč stránkami. Vykoušením této funkce nám je pomůžete dále optimalizovat pro vás i všechny ostatní uživatele.
-spotlight-total-cookie-protection-primary-button = Zapnout úplnou ochranu před cookies
-spotlight-total-cookie-protection-secondary-button = Teď ne
 
 ## Emotive Continuous Onboarding
 
@@ -283,6 +256,15 @@ cfr-cbh-confirm-button = Odmítat cookie lišty
     .accesskey = c
 cfr-cbh-dismiss-button = Teď ne
     .accesskey = n
+cookie-banner-blocker-onboarding-header =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } za vás právě odmítl lištu cookie
+        [feminine] { -brand-short-name } za vás právě odmítla lištu cookie
+        [neuter] { -brand-short-name } za vás právě odmítlo lištu cookie
+       *[other] Aplikace { -brand-short-name } za vás právě odmítla lištu cookie
+    }
+cookie-banner-blocker-onboarding-body = Méně rozptylování, méně souborů cookie, které vás na tomto webu sledují.
+cookie-banner-blocker-onboarding-learn-more = Dozvědět se více
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -328,7 +310,70 @@ fxa-sync-cfr-secondary = Upozornit mě později
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = Používáte starší zařízení?
-device-migration-fxa-spotlight-body = Zálohujte svá data, abyste neztratili důležité informace, jako jsou záložky a hesla – zejména pokud přejdete na nové zařízení.
-device-migration-fxa-spotlight-primary-button = Jak zálohovat moje data
-device-migration-fxa-spotlight-link = Upozornit mě později
+device-migration-fxa-spotlight-heavy-user-header = Nezapomeňte si zálohovat svá data
+device-migration-fxa-spotlight-heavy-user-body = Zajistěte, aby byly důležité informace – jako záložky a hesla – aktuální a chráněné na všech vašich zařízeních.
+device-migration-fxa-spotlight-heavy-user-primary-button = Začít
+device-migration-fxa-spotlight-older-device-header = { -brand-product-name } vám poskytne klid na duši
+device-migration-fxa-spotlight-older-device-body = Účet udržuje vaše důležité informace aktuální a chráněné na jakémkoli zařízení, které připojíte.
+device-migration-fxa-spotlight-older-device-primary-button = Vytvořit účet
+device-migration-fxa-spotlight-getting-new-device-header-2 = Plánujete v blízké budoucnosti nové zařízení?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Když začínáte používat nové zařízení, přeneste si s sebou své záložky, historii a hesla pomocí několika jednoduchých kroků.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Jak zálohovat moje data
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message =
+    { -brand-short-name.case-status ->
+        [with-cases] <strong>Nastavit { -brand-short-name(case: "acc") } jako výchozí čtečku souborů PDF?</strong> Pomocí { -brand-short-name(case: "gen") } můžete číst a upravovat soubory PDF uložené v počítači.
+       *[no-cases] <strong>Nastavit aplikaci { -brand-short-name } jako výchozí čtečku souborů PDF?</strong> Pomocí aplikace { -brand-short-name } můžete číst a upravovat soubory PDF uložené v počítači.
+    }
+pdf-default-notification-set-default-button =
+    .label = Nastavit jako výchozí
+pdf-default-notification-decline-button =
+    .label = Nyní ne
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message =
+    { -brand-short-name.gender ->
+        [masculine] <strong>Spustit { -brand-short-name(case: "acc") } po každém restartu počítače?</strong> Nyní můžete nastavit, aby se { -brand-short-name } otevíral automaticky po restartu zařízení.
+        [feminine] <strong>Spustit { -brand-short-name(case: "acc") } po každém restartu počítače?</strong> Nyní můžete nastavit, aby se { -brand-short-name } otevírala automaticky po restartu zařízení.
+        [neuter] <strong>Spustit { -brand-short-name(case: "acc") } po každém restartu počítače?</strong> Nyní můžete nastavit, aby se { -brand-short-name } otevíralo automaticky po restartu zařízení.
+       *[other] <strong>Spustit aplikaci { -brand-short-name } po každém restartu počítače?</strong> Nyní můžete nastavit, aby se aplikace { -brand-short-name } otevírala automaticky po restartu zařízení.
+    }
+launch-on-login-learnmore = Zjistit více
+launch-on-login-infobar-confirm-button =
+    { -brand-short-name.case-status ->
+        [with-cases] Ano, otevírat { -brand-short-name(case: "acc") }
+       *[no-cases] Ano, otevírat aplikaci { -brand-short-name }
+    }
+    .accesskey = A
+launch-on-login-infobar-reject-button = Nyní ne
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message =
+    { -brand-short-name.case-status ->
+        [with-cases] <strong>Otevřít { -brand-short-name(case: "acc") } při každém spuštění počítače?</strong> Chcete-li spravovat předvolby pro spouštění, vyhledejte v nastavení položku "spuštění".
+       *[no-cases] <strong>Otevřít aplikaci { -brand-short-name } při každém spuštění počítače?</strong> Chcete-li spravovat předvolby pro spouštění, vyhledejte v nastavení položku "spuštění".
+    }
+launch-on-login-infobar-final-reject-button = Ne, děkuji
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Zbavte se dotěrných sledovacích prvků
+tail-fox-spotlight-subtitle = Rozlučte se s otravnými reklamními sledovacími prvky a zažijte bezpečnější a rychlejší internet.
+tail-fox-spotlight-primary-button =
+    { -brand-short-name.case-status ->
+        [with-cases] Otevírat mé odkazy pomocí { -brand-short-name(case: "gen") }
+       *[no-cases] Otevírat mé odkazy pomocí aplikace { -brand-short-name }
+    }
+tail-fox-spotlight-secondary-button = Teď ne

@@ -5,8 +5,8 @@
 rights-title = Haklarınız Hakkında
 rights-intro = { -brand-full-name }, dünya çapındaki binlerce kişiden oluşan bir topluluk tarafından geliştirilen özgür ve açık kaynaklı bir yazılımdır. Bilmeniz gereken birkaç şey var:
 rights-intro-point-1 = { -brand-short-name } <a data-l10n-name="mozilla-public-license-link">Mozilla Kamu Lisansı</a> altında dağıtılmaktadır. Yani { -brand-short-name } serbestçe kullanılabilir, kopyalanabilir ve başkalarına dağıtılabilir. Ayrıca ihtiyaçlarınıza göre { -brand-short-name } kaynak kodlarını değiştirmekte de özgürsünüz. Mozilla Kamu Lisansı, değiştirdiğiniz sürümleri dağıtma hakkını da size vermektedir.
-rights-intro-point-2 = Mozilla Vakfı’nın veya başka bir kurumun herhangi bir ticari markasını (Firefox logosu ve adı da dahil olmak üzere) kullanma hakkına sahip değilsiniz. Ticari markalarla ilgili ayrıntılı bilgi <a data-l10n-name="mozilla-trademarks-link">burada bulunabilir</a>.
-rights-intro-point-3 = { -brand-short-name } tarayıcısındaki Çökme Habercisi gibi bazı özellikler size { -vendor-short-name }'ya geri bildirimde bulunma seçeneği sunar. Geri bildirimde bulunmayı tercih ederseniz, { -vendor-short-name }'ya ürünlerini geliştirmek için bu geri bildirimi kullanma, geri bildirimi web sitelerinde yayımlama ve geri bildirimi dağıtma izni vermiş olursunuz.
+rights-intro-point-2 = Ablaze Vakfının veya başka bir kurumun herhangi bir ticari markasını (Firefox logosu ve adı da dahil olmak üzere) kullanma hakkına sahip değilsiniz. Ticari markalarla ilgili ayrıntılı bilgi <a data-l10n-name="mozilla-trademarks-link">burada bulunabilir</a>.
+rights-intro-point-3 = { -brand-short-name } tarayıcısındaki çökme raporcusu gibi bazı özellikler size { -vendor-short-name }'ya geri bildirimde bulunma seçeneği sunar. Geri bildirimde bulunmayı tercih ederseniz, { -vendor-short-name }'ya ürünlerini geliştirmek için bu geri bildirimi kullanma, geri bildirimi web sitelerinde yayımlama ve geri bildirimi dağıtma izni vermiş olursunuz.
 rights-intro-point-4 = Kişisel bilgilerinizi ve { -brand-short-name } üzerinden { -vendor-short-name }'ya gönderdiğiniz geri bildirimleri nasıl kullandığımız <a data-l10n-name="mozilla-privacy-policy-link">{ -brand-short-name } Gizlilik İlkelerinde</a> açıklanmıştır.
 rights-intro-point-4-unbranded = Bu ürünle ilgili tüm gizlilik ilkeleri burada listelenmelidir.
 rights-intro-point-5 = Bazı { -brand-short-name } özellikleri web tabanlı bilgi hizmetlerinden yararlanır, ancak bunların tamamen doğru ve hatasız olduklarını garanti edemeyiz. Bu hizmetleri kullanan özelliklerin devre dışı bırakılmasıyla ilgili daha fazla bilgiyi <a data-l10n-name="mozilla-service-terms-link">hizmet koşulları</a> sayfasında bulabilirsiniz.
@@ -17,10 +17,10 @@ rights-webservices = { -brand-full-name } bu ikili { -brand-short-name } sürüm
 rights-safebrowsing = <strong>SafeBrowsing: </strong>Güvenli Gezinti özelliğini devre dışı bırakmanız güvensiz siteleri ziyaret etmenizle sonuçlanabileceği için tavsiye edilmez. Bu özelliği tamamen devre dışı bırakmak istiyorsanız şu adımları izleyin:
 rights-safebrowsing-term-1 = Uygulama tercihlerini açın
 rights-safebrowsing-term-2 = Güvenlik bölümünü seçin
-rights-safebrowsing-term-3 = "{ enableSafeBrowsing-label }" seçeneğinin işaretini kaldırın
+rights-safebrowsing-term-3 = “{ enableSafeBrowsing-label }” seçeneğinin işaretini kaldırın
 enableSafeBrowsing-label = Tehlikeli ve aldatıcı içerikleri engelle
 rights-safebrowsing-term-4 = Güvenli Gezinti artık devre dışıdır
-rights-locationawarebrowsing = <strong>Konuma Duyarlı Gezinti: </strong>her zaman sizin isteğinizle çalışır. Sizin izniniz alınmadan asla konum bilgisi gönderilmez. Bu özelliği tamamen devre dışı bırakmak istiyorsanız şu adımlar izleyin:
+rights-locationawarebrowsing = <strong>Konuma Duyarlı Gezinti: </strong>her zaman sizin isteğinizle çalışır. Sizin izniniz alınmadan asla konum bilgisi gönderilmez. Bu özelliği tamamen devre dışı bırakmak istiyorsanız şu adımları izleyin:
 rights-locationawarebrowsing-term-1 = Adres çubuğuna şunu yazın: <code>about:config</code>
 rights-locationawarebrowsing-term-2 = geo.enabled yazın
 rights-locationawarebrowsing-term-3 = geo.enabled tercihine çift tıklayın

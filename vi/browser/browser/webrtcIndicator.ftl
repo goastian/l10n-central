@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -133,6 +127,20 @@ webrtc-allow-share-camera-and-audio-capture = Cho phép { $origin } sử dụng 
 webrtc-allow-share-screen-and-microphone = Cho phép { $origin } sử dụng micrô của bạn và xem màn hình của bạn?
 webrtc-allow-share-screen-and-audio-capture = Cho phép { $origin } nghe âm thanh của thẻ này và xem màn hình của bạn?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = Cho phép tập tin cục bộ này nghe âm thanh của thẻ này?
+webrtc-allow-share-camera-with-file = Cho phép tập tin cục bộ này sử dụng máy ảnh của bạn?
+webrtc-allow-share-microphone-with-file = Cho phép tập tin cục bộ này sử dụng micrô của bạn?
+webrtc-allow-share-screen-with-file = Cho phép tập tin cục bộ này xem màn hình của bạn?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = Cho phép tập tin cục bộ này sử dụng loa khác?
+webrtc-allow-share-camera-and-microphone-with-file = Cho phép tập tin cục bộ này sử dụng máy ảnh và micrô của bạn?
+webrtc-allow-share-camera-and-audio-capture-with-file = Cho phép tập tin cục bộ này sử dụng máy ảnh của bạn và nghe âm thanh của thẻ này?
+webrtc-allow-share-screen-and-microphone-with-file = Cho phép tập tin cục bộ này sử dụng micrô và xem màn hình của bạn?
+webrtc-allow-share-screen-and-audio-capture-with-file = Cho phép tập tin cục bộ này nghe âm thanh của thẻ này và xem màn hình của bạn?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
@@ -183,6 +191,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Ghi nhớ quyết định này
+webrtc-remember-allow-checkbox-camera = Ghi nhớ cho tất cả các máy ảnh
+webrtc-remember-allow-checkbox-microphone = Ghi nhớ cho tất cả các micrô
+webrtc-remember-allow-checkbox-camera-and-microphone = Ghi nhớ cho tất cả máy ảnh và micrô
 webrtc-mute-notifications-checkbox = Ẩn thông báo trang web khi chia sẻ
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } có thể vĩnh viễn không cho phép quyền truy cập vào màn hình của bạn.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } không thể cho phép vĩnh viễn quyền truy cập vào phần âm thanh của thẻ mà không cần yêu cầu thẻ đó chia sẻ.

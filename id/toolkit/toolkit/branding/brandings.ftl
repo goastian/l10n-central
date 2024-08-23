@@ -16,29 +16,31 @@
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
 -facebook-container-brand-name = Facebook Container
--lockwise-brand-name = Firefox Lockwise
+-lockwise-brand-name = Midori Lockwise
 -lockwise-brand-short-name = Lockwise
 -monitor-brand-name = Firefox Monitor
 -monitor-brand-short-name = Monitor
+-mozmonitor-brand-name = Mozilla Monitor
 -pocket-brand-name = Pocket
--send-brand-name = Firefox Send
+-send-brand-name = Midori Send
 -screenshots-brand-name = Midori Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
--profiler-brand-name = Firefox Profiler
+-profiler-brand-name = Midori Profiler
 -translations-brand-name = Midori Translations
 -focus-brand-name = Firefox Focus
-
+-relay-brand-name = Firefox Relay
+-relay-brand-short-name = Relay
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-suggest-brand-name = Saran Firefox
-
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name = Beranda Firefox
-
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefoxview-brand-name = Midori View
-
--relay-brand-name = Firefox Relay
--relay-brand-short-name = Relay
+# Firefox Labs is the name for a page in Settings to allow users to learn about
+# experimental and in-development features, and turn those features on and off.
+# The "Labs" portion can be localized, “Firefox” must be treated as a brand
+# and kept in English.
+-firefoxlabs-brand-name = Midori Labs

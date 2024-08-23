@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = Bạn hiện đang ở chế độ FIPS. F
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = Đặt lại mật khẩu chính
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = Đặt lại mật khẩu chính
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = Đã đặt lại mật khẩu chí
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = Đang tải Chứng chỉ
-    .style = width: 46em
 download-cert-window2 =
     .title = Đang tải Chứng chỉ
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = Kiểm định chứng chỉ của CA
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = Yêu cầu Nhận diện Người dùng
 client-auth-site-description = Trang này yêu cầu bạn tự nhận diện chính mình với một chứng chỉ:
 client-auth-choose-cert = Chọn một chứng chỉ để thực hiện việc nhận diện này:
+client-auth-send-no-certificate =
+    .label = Không gửi chứng chỉ
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = “{ $hostname }” đã yêu cầu bạn xác minh chính mình bằng chứng chỉ:
 client-auth-cert-details = Thông tin chi tiết của chứng chỉ được chọn:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = Cấp cho: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = Số sê-ri: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = Hợp lệ từ { $notBefore } đến { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = Sử dụng khóa: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = Địa chỉ email: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = Cấp bởi: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = Lưu trữ trên: { $storedOn }
+client-auth-cert-remember-box =
+    .label = Ghi nhớ quyết định này
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Mật khẩu sao lưu chứng chỉ (nhập lại):
 set-password-reminder = Quan trọng: Nếu bạn quên mật khẩu sao lưu chứng chỉ, sau này bạn sẽ không thể phục hồi bản sao lưu này. Hãy lưu vào một nơi an toàn.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = Xác thực Mã thông báo được Bảo vệ
-protected-auth-msg = Vui lòng xác thực cho mã thông báo. Phương thức xác thực tùy thuộc vào kiểu mã thông báo của bạn.
-protected-auth-token = Mã thông báo:
 
 ## Protected authentication alert
 

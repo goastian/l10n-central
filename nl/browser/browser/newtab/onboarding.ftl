@@ -13,6 +13,7 @@
 onboarding-welcome-header = Welkom bij { -brand-short-name }
 onboarding-start-browsing-button-label = Beginnen met browsen
 onboarding-not-now-button-label = Niet nu
+mr1-onboarding-get-started-primary-button-label = Beginnen
 
 ## Custom Return To AMO onboarding strings
 
@@ -33,12 +34,6 @@ mr1-return-to-amo-add-extension-label = { $addon-name } toevoegen
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Aan de slag: scherm { $current } van { $total }
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -47,88 +42,20 @@ onboarding-welcome-steps-indicator =
 
 onboarding-welcome-steps-indicator-label =
     .aria-label = Voortgang: stap { $current } van { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = Het vuur begint hier
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio – Meubelontwerper, Firefox-fan
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Animaties uitschakelen
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] { -brand-short-name } aan uw Dock toevoegen voor eenvoudige toegang
-       *[other] { -brand-short-name } aan uw taakbalk vastzetten voor eenvoudige toegang
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Aan Dock toevoegen
-       *[other] Aan taakbalk vastzetten
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-# This string will be used on welcome page primary button label
-# when Firefox is both pinned and default
-mr1-onboarding-get-started-primary-button-label = Beginnen
-mr1-onboarding-welcome-header = Welkom bij { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } mijn voorkeursbrowser maken
-    .title = Stelt { -brand-short-name } in als standaardbrowser en maakt het aan de taakbalk vast
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } mijn voorkeursbrowser maken
-mr1-onboarding-set-default-secondary-button-label = Niet nu
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Aanmelden
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = { -brand-short-name } uw standaardbrowser maken
-mr1-onboarding-default-subtitle = Zet snelheid, veiligheid en privacy op de automatische piloot.
-mr1-onboarding-default-primary-button-label = Standaardbrowser maken
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Neem alles met u mee
-mr1-onboarding-import-subtitle = Importeer uw wachtwoorden, <br/>bladwijzers en meer.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importeren uit { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importeren uit vorige browser
-mr1-onboarding-import-secondary-button-label = Niet nu
-mr2-onboarding-colorway-header = Leven in kleur
-mr2-onboarding-colorway-subtitle = Levendige nieuwe kleurstellingen. Beschikbaar gedurende een beperkte tijd.
-mr2-onboarding-colorway-primary-button-label = Kleurstelling opslaan
-mr2-onboarding-colorway-secondary-button-label = Niet nu
-mr2-onboarding-colorway-label-soft = Zacht
-mr2-onboarding-colorway-label-balanced = Gebalanceerd
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Stevig
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Automatisch
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Standaard
 mr1-onboarding-theme-header = Maak het van uzelf
 mr1-onboarding-theme-subtitle = Personaliseer { -brand-short-name } met een thema.
-mr1-onboarding-theme-primary-button-label = Thema opslaan
 mr1-onboarding-theme-secondary-button-label = Niet nu
+newtab-wallpaper-onboarding-title = Probeer een vleugje kleur
+newtab-wallpaper-onboarding-subtitle = Kies een achtergrond om uw Nieuw-tabbladpagina een frisse uitstraling te geven.
+newtab-wallpaper-onboarding-primary-button-label = Achtergrond instellen
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Systeemthema
 mr1-onboarding-theme-label-light = Licht
@@ -182,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Een dynamisch, kleurrijk thema gebruiken voor knoppen,
         menu’s en vensters.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Deze kleurstelling gebruiken.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Deze kleurstelling gebruiken.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Kleurstellingen { $colorwayName } ontdekken.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Kleurstellingen { $colorwayName } ontdekken.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Standaardthema’s ontdekken.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Standaardthema’s ontdekken.
 
@@ -210,14 +117,6 @@ mr2-onboarding-default-theme-label = Standaardthema’s ontdekken.
 mr2-onboarding-thank-you-header = Bedankt dat u voor ons kiest
 mr2-onboarding-thank-you-text = { -brand-short-name } is een onafhankelijke browser die wordt ondersteund door een non-profitorganisatie. Samen maken we het internet veiliger, gezonder en meer privé.
 mr2-onboarding-start-browsing-button-label = Beginnen met surfen
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -427,3 +326,43 @@ mr2022-onboarding-gratitude-image-alt =
     .aria-label = Uitzicht op een zonsondergang door een raam met een vos en een kamerplant op een vensterbank
 mr2022-onboarding-colorways-image-alt =
     .aria-label = Een hand spuit een kleurrijke collage van een groen oog, oranje schoen, rode basketbal, paarse koptelefoon, blauw hart en gele kroon
+
+## Device migration onboarding
+
+onboarding-device-migration-image-alt =
+    .aria-label = Een zwaaiende vos op het scherm van een laptop. Op de laptop is een muis aangesloten.
+onboarding-device-migration-title = Welkom terug!
+onboarding-device-migration-subtitle = Meld u aan bij uw { -fxaccount-brand-name } om uw bladwijzers, wachtwoorden en geschiedenis mee te nemen op uw nieuwe apparaat.
+onboarding-device-migration-subtitle2 = Meld u aan bij uw account om uw bladwijzers, wachtwoorden en geschiedenis mee te nemen op uw nieuwe apparaat.
+onboarding-device-migration-primary-button-label = Aanmelden
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = We houden u graag veilig
+onboarding-easy-setup-security-and-privacy-subtitle = Onze door een non-profitorganisatie gesteunde browser helpt voorkomen dat bedrijven u stiekem volgen op internet.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Blijf versleuteld wanneer u van apparaat wisselt
+onboarding-mobile-download-security-and-privacy-subtitle = Wanneer u bent gesynchroniseerd, versleutelt { -brand-short-name } uw wachtwoorden, bladwijzers en meer. Bovendien kunt u tabbladen van uw andere apparaten ophalen.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } is er voor u
+onboarding-gratitude-security-and-privacy-subtitle = Bedankt voor het gebruik van { -brand-short-name }, ondersteund door de Mozilla Foundation. Met uw steun werken we eraan om het internet voor iedereen veiliger en meer toegankelijk te maken.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Hoe lang gebruikt u { -brand-short-name } al?
+onboarding-new-user-familiarity-based-survey-title = Hoe bekend bent u met { -brand-short-name }?
+onboarding-new-user-survey-subtitle = Uw feedback helpt { -brand-short-name } nog beter te maken.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Volgende
+onboarding-new-user-survey-legal-link-label = Door ‘{ onboarding-new-user-survey-next-button-label }’ te selecteren, gaat u akkoord met de <a data-l10n-name="privacy_notice">Privacyverklaring</a> van { -brand-product-name }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Ik ben helemaal nieuw
+onboarding-new-user-survey-time-based-option-2 = Minder dan een maand
+onboarding-new-user-survey-time-based-option-3 = Meer dan een maand, regelmatig
+onboarding-new-user-survey-time-based-option-4 = Meer dan een maand, af en toe
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Ik ben helemaal nieuw
+onboarding-new-user-survey-familiarity-based-option-2 = Ik heb het wat gebruikt
+onboarding-new-user-survey-familiarity-based-option-3 = Ik ben er heel bekend mee
+onboarding-new-user-survey-familiarity-based-option-4 = Ik heb het in het verleden gebruikt, maar het is een poosje geleden

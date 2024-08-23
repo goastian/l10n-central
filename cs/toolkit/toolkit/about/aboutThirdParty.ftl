@@ -32,16 +32,6 @@ third-party-tag-shellex = Rozšíření shellu
     .title = Tento typ modulu je načten, když otevřete systémový dialog pro výběr souborů.
 third-party-tag-background = Pozadí
     .title = Tento modul aplikaci neblokoval, protože byl načten na pozadí.
-third-party-unsigned-icon =
-    .title = Tento modul není podepsán
-third-party-warning-icon =
-    .title =
-        { -brand-short-name.gender ->
-            [masculine] { -brand-short-name } spadl
-            [feminine] { -brand-short-name } spadla
-            [neuter] { -brand-short-name } spadlo
-           *[other] Aplikace { -brand-short-name } spadla
-        } při vykonávání kódu tohoto modulu
 third-party-icon-unsigned =
     .title = Tento modul není podepsaný
     .alt = Tento modul není podepsaný
@@ -88,26 +78,33 @@ third-party-button-to-unblock-disabled =
             [with-cases] Označeno jako blokované, nicméně seznam blokovaných modulů je pro toto spuštění { -brand-short-name(case: "gen") } vypnutý. Klepněte pro odblokování.
            *[no-cases] Označeno jako blokované, nicméně seznam blokovaných modulů je pro toto spuštění aplikace { -brand-short-name } vypnutý. Klepněte pro odblokování.
         }
+third-party-button-to-block-module = Zablokovat tento modul
+    .title = Zablokovat tento modul
+    .aria-label = Zablokovat tento modul
+third-party-button-to-unblock-module = Odblokovat tento modul
+    .title = Aktuálně blokován. Klepnutím jej odblokujete.
+    .aria-label = Aktuálně blokován. Klepnutím jej odblokujete.
+third-party-button-to-unblock-module-disabled = Odblokovat tento modul (seznam blokovaných je aktuálně zakázán)
+    .title =
+        { -brand-short-name.case-status ->
+            [with-cases] Aktuálně označeno jako blokované, ačkoliv je pro toto spuštění { -brand-short-name(case: "gen") } seznam blokovaných zakázán. Pro odblokování klepněte.
+           *[no-cases] Aktuálně označeno jako blokované, ačkoliv je pro toto spuštění aplikace { -brand-short-name } seznam blokovaných zakázán. Pro odblokování klepněte.
+        }
+    .aria-label =
+        { -brand-short-name.case-status ->
+            [with-cases] Aktuálně označeno jako blokované, ačkoliv je pro toto spuštění { -brand-short-name(case: "gen") } seznam blokovaných zakázán. Pro odblokování klepněte.
+           *[no-cases] Aktuálně označeno jako blokované, ačkoliv je pro toto spuštění aplikace { -brand-short-name } seznam blokovaných zakázán. Pro odblokování klepněte.
+        }
 third-party-button-expand =
     .title = Zobrazit podrobnosti
 third-party-button-collapse =
     .title = Skrýt podrobnosti
-third-party-requires-restart =
-    { -brand-short-name.case-status ->
-        [with-cases] Pro změnu blokovaných modulů třetích stran je potřeba { -brand-short-name(case: "acc") } restartovat.
-       *[no-cases] Pro změnu blokovaných modulů třetích stran je potřeba aplikaci { -brand-short-name } restartovat.
-    }
 third-party-blocking-requires-restart =
     { -brand-short-name.case-status ->
         [with-cases] Chcete-li zablokovat modul třetí strany, musíte { -brand-short-name(case: "acc") } restartovat.
        *[no-cases] Chcete-li zablokovat modul třetí strany, musíte aplikaci { -brand-short-name } restartovat.
     }
 third-party-should-restart-title =
-    { -brand-short-name.case-status ->
-        [with-cases] Restartovat { -brand-short-name(case: "acc") }
-       *[no-cases] Restartovat aplikaci { -brand-short-name }
-    }
-third-party-should-restart-ok =
     { -brand-short-name.case-status ->
         [with-cases] Restartovat { -brand-short-name(case: "acc") }
        *[no-cases] Restartovat aplikaci { -brand-short-name }

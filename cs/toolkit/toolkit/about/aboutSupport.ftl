@@ -25,6 +25,10 @@ support-addons-type = Typ
 support-addons-enabled = Povoleno
 support-addons-version = Verze
 support-addons-id = ID
+legacy-user-stylesheets-title = Starší uživatelské kaskádové styly
+legacy-user-stylesheets-enabled = Aktivní
+legacy-user-stylesheets-stylesheet-types = Kaskádové styly
+legacy-user-stylesheets-no-stylesheets-found = Nebyly nalezeny žádné kaskádové styly
 security-software-title = Bezpečnostní software
 security-software-type = Typ
 security-software-name = Název
@@ -80,6 +84,7 @@ app-basics-key-mozilla = Klíč Mozilla Location Service
 app-basics-safe-mode = Nouzový režim
 app-basics-memory-size = Velikost paměti (RAM)
 app-basics-disk-available = Dostupné místo na disku
+app-basics-pointing-devices = Polohovací zařízení
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -192,6 +197,25 @@ media-codec-support-hw-decoding = Hardwarové dekódování
 media-codec-support-codec-name = Název kodeku
 media-codec-support-supported = Podporované
 media-codec-support-unsupported = Nepodporováné
+media-codec-support-error = Informace o podpoře kodeků není k dispozici. Zkuste to znovu po přehrání mediálního souboru.
+media-codec-support-lack-of-extension = Nainstalovat rozšíření
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informace o modulech pro dešifrování obsahu
+media-key-system-name = Název systémového klíče
+media-video-robustness = Odolnost videa
+media-audio-robustness = Odolnost zvuku
+media-cdm-capabilities = Schopnosti
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Nešifrovaný úvod (Clear Lead)
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Kompatibilní s HDCP 2.2
 
 ##
 
@@ -276,6 +300,7 @@ try-newer-driver = Zakázáno kvůli verzi ovladače grafické karty. Zkuste akt
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Technologie ClearType
 compositing = Compositing
+support-font-determination = Informace ladění viditelnosti písma
 hardware-h264 = Hardwarové dekódování H264
 main-thread-no-omtc = hlavní vlákno, ne OMTC
 yes = Ano
@@ -405,6 +430,20 @@ support-printing-modified-settings = Upravená nastavení tisku
 support-printing-prefs-name = Název
 support-printing-prefs-value = Hodnota
 
+## Remote Settings sections
+
+support-remote-settings-title = Vzdálené nastavení
+support-remote-settings-status = Stav
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Nefunkční
+support-remote-settings-last-check = Poslední kontrola
+support-remote-settings-local-timestamp = Místní časová značka
+support-remote-settings-sync-history = Historie
+support-remote-settings-sync-history-status = Stav
+support-remote-settings-sync-history-datetime = Datum
+support-remote-settings-sync-history-infos = Informace
+
 ## Normandy sections
 
 support-remote-experiments-title = Vzdálené experimenty
@@ -414,3 +453,22 @@ support-remote-experiments-see-about-studies = Podrobnosti o experimentech { -br
 support-remote-features-title = Vzdálené funkce
 support-remote-features-name = Název
 support-remote-features-status = Stav
+
+## Pointing devices
+
+pointing-device-mouse = Myš
+pointing-device-touchscreen = Dotyková obrazovka
+pointing-device-pen-digitizer = Digitální pero
+pointing-device-none = Žádná polohovací zařízení
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Analýza obsahu (DLP)
+content-analysis-active = Aktivní
+content-analysis-connected-to-agent = Připojeno k agentovi
+content-analysis-agent-path = Cesta k agentovi
+content-analysis-agent-failed-signature-verification = Ověření podpisu agenta selhalo
+content-analysis-request-count = Počet žádostí

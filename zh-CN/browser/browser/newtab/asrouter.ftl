@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = 由 { $name } 开发
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = 推荐
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = 推荐
     .tooltiptext = 推荐扩展
     .a11y-announcement = 有推荐扩展可用
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = 推荐
     .tooltiptext = 推荐功能
     .a11y-announcement = 有推荐功能可用
@@ -59,6 +61,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = 书签随身带着走
 cfr-doorhanger-bookmark-fxa-body = 发现好网站了！接下来也把该书签同步至移动设备吧。开始使用 { -fxaccount-brand-name }。
+cfr-doorhanger-bookmark-fxa-body-2 = 发现好网站了！接下来也把该书签同步至移动设备吧。登录账户即可开始使用。
 cfr-doorhanger-bookmark-fxa-link-text = 立即同步书签...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = 关闭按钮
@@ -87,7 +90,7 @@ cfr-whatsnew-release-notes-link-text = 阅读发行说明
 #   $date (Datetime) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading2 =
     { $blockedCount ->
-       *[other] 自 { DATETIME($date, month: "long", year: "numeric") } 起，{ -brand-short-name } 已拦截超过 <b>{ $blockedCount }</b> 个跟踪器！
+       *[other] 自{ DATETIME($date, month: "long", year: "numeric") }起，{ -brand-short-name }已拦截超过<b>{ $blockedCount }</b>个跟踪器！
     }
 cfr-doorhanger-milestone-ok-button = 查看全部
     .accesskey = S
@@ -103,28 +106,12 @@ cfr-doorhanger-doh-primary-button-2 = 好的
 cfr-doorhanger-doh-secondary-button = 禁用
     .accesskey = D
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = 隐私是公民的基本权利。现在起，{ -brand-short-name } 会将您打开的网站相互隔离或沙盒化，使黑客更难窃取您的密码、信用卡号或其他敏感信息。
-cfr-doorhanger-fission-header = 网站隔离
-cfr-doorhanger-fission-primary-button = 好，知道了
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = 详细了解
-    .accesskey = L
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = 该网站上的视频可能无法在此版本的 { -brand-short-name } 正常播放。若需完整的视频支持，请更新 { -brand-short-name }。
 cfr-doorhanger-video-support-header = 更新 { -brand-short-name } 以播放视频
 cfr-doorhanger-video-support-primary-button = 立即更新
     .accesskey = U
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = 详细了解
-    .title = 展开以详细了解该功能
-spotlight-learn-more-expanded = 详细了解
-    .title = 关闭
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -139,18 +126,6 @@ spotlight-public-wifi-vpn-primary-button = { -mozilla-vpn-brand-name } 可提供
     .accesskey = S
 spotlight-public-wifi-vpn-link = 暂时不要
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header = 体验有史以来最强大的隐私保护
-spotlight-total-cookie-protection-body = 全方位 Cookie 保护 - 阻止跟踪器借 Cookie 实施跟踪。
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } 可将每个网站的 Cookie 用“围栏”完全隔离，以阻止跟踪器借其实施跟踪。您可以通过抢先体验来帮助我们优化此功能，为每个人构建更好的网络环境。
-spotlight-total-cookie-protection-primary-button = 立即开启
-spotlight-total-cookie-protection-secondary-button = 暂时不要
 
 ## Emotive Continuous Onboarding
 
@@ -227,6 +202,9 @@ cfr-cbh-confirm-button = 拒绝 Cookie 横幅
     .accesskey = R
 cfr-cbh-dismiss-button = 暂时不要
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } 刚刚为您拒绝了 Cookie 横幅的请求
+cookie-banner-blocker-onboarding-body = 在此网站上专注浏览，少受 Cookie 跟踪。
+cookie-banner-blocker-onboarding-learn-more = 详细了解
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -242,7 +220,7 @@ fox-doodle-pin-secondary = 暂时不要
 
 ## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
-set-default-pdf-handler-headline = <strong>您的 PDF 文件现在可以在 { -brand-short-name } 中打开。</strong>请直接在您的浏览器中编辑或签署表格。要更改，请在设置中搜索“PDF”。
+set-default-pdf-handler-headline = <strong>现在起，您的 PDF 文件将在 { -brand-short-name } 中打开。</strong>您可以直接在浏览器中编辑或签署表单。若要更改，请在设置中搜索“PDF”。
 set-default-pdf-handler-primary = 明白了
 
 ## FxA sync CFR
@@ -256,7 +234,48 @@ fxa-sync-cfr-secondary = 稍后提醒我
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = 使用的是旧设备？
-device-migration-fxa-spotlight-body = 备份您的数据，以确保书签和密码等重要数据安全无虞。在换到新设备前更是如此。
-device-migration-fxa-spotlight-primary-button = 如何备份数据
-device-migration-fxa-spotlight-link = 稍后提醒我
+device-migration-fxa-spotlight-heavy-user-header = 不要忘记备份数据
+device-migration-fxa-spotlight-heavy-user-body = 将书签和密码等重要信息跨设备安全保存，并随时更新。
+device-migration-fxa-spotlight-heavy-user-primary-button = 开始使用
+device-migration-fxa-spotlight-older-device-header = { -brand-product-name } 为您省心
+device-migration-fxa-spotlight-older-device-body = 登录账户，将重要信息跨设备安全保存并随时更新。
+device-migration-fxa-spotlight-older-device-primary-button = 创建账户
+device-migration-fxa-spotlight-getting-new-device-header-2 = 打算换新设备？
+device-migration-fxa-spotlight-getting-new-device-body-2 = 只需简单几步，即可将您的书签、历史记录、密码同步至新设备。
+device-migration-fxa-spotlight-getting-new-device-primary-button = 如何备份数据
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>想将 { -brand-short-name } 设为默认 PDF 阅读器吗？</strong>使用 { -brand-short-name } 阅读和编辑电脑中的 PDF 文档。
+pdf-default-notification-set-default-button =
+    .label = 设为默认
+pdf-default-notification-decline-button =
+    .label = 暂时不要
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>想在重启电脑后自动打开 { -brand-short-name } 吗？</strong>现在可将 { -brand-short-name } 设为开机时自动打开。
+launch-on-login-learnmore = 详细了解
+launch-on-login-infobar-confirm-button = 打开 { -brand-short-name }
+    .accesskey = Y
+launch-on-login-infobar-reject-button = 暂时不要
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>想在重启电脑后自动打开 { -brand-short-name } 吗？</strong>在设置中搜索“启动”即可管理启动首选项。
+launch-on-login-infobar-final-reject-button = 不了，谢谢
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = 甩掉讨厌的跟踪器
+tail-fox-spotlight-subtitle = 甩掉广告跟踪器，上网安全又快速。
+tail-fox-spotlight-primary-button = 用 { -brand-short-name } 打开我的链接
+tail-fox-spotlight-secondary-button = 暂时不要

@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -157,13 +151,26 @@ webrtc-allow-share-camera-and-audio-capture = ¿Permitir a { $origin } usar su c
 webrtc-allow-share-screen-and-microphone = ¿Permitir a { $origin } usar su micrófono y ver su pantalla?
 webrtc-allow-share-screen-and-audio-capture = ¿Permitir a { $origin } escuchar el audio de esta pestaña y ver su pantalla?
 
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = ¿Permitir que esté archivo local escuche el audio de esta pestaña?
+webrtc-allow-share-camera-with-file = ¿Permitir que este archivo local use la cámara?
+webrtc-allow-share-microphone-with-file = ¿Permitir que este archivo local use el micrófono?
+webrtc-allow-share-screen-with-file = ¿Permitir que esté archivo local vea la pantalla?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = ¿Permitir que esté archivo local use otros altavoces?
+webrtc-allow-share-camera-and-microphone-with-file = ¿Permitir que esté archivo local use la cámara y el micrófono?
+webrtc-allow-share-camera-and-audio-capture-with-file = ¿Permitir que esté archivo local use la cámara y escuche el audio de esta pestaña?
+webrtc-allow-share-screen-and-microphone-with-file = ¿Permitir que este archivo local use el micrófono y vea la pantalla?
+webrtc-allow-share-screen-and-audio-capture-with-file = ¿Permitir que este archivo local escuche el audio de esta pestaña y vea la pantalla?
+
 ## Variables:
 ##   $origin (String): the first party origin.
 ##   $thirdParty (String): the third party origin.
 
 webrtc-allow-share-audio-capture-unsafe-delegation = ¿Permitir que { $origin } le dé a { $thirdParty } permiso para escuchar el audio de esta pestaña?
 webrtc-allow-share-camera-unsafe-delegation = ¿Permitir que { $origin } le dé a { $thirdParty } acceso a su cámara?
-webrtc-allow-share-microphone-unsafe-delegations = ¿Permitir que { $origin } le dé a { $thirdParty } acceso a su micrófono?
 webrtc-allow-share-microphone-unsafe-delegation = ¿Permitir que { $origin } le dé a { $thirdParty } acceso a su micrófono?
 webrtc-allow-share-screen-unsafe-delegation = ¿Permitir que { $origin } le dé a { $thirdParty } permiso para ver su pantalla?
 # "Speakers" is used in a general sense that might include headphones or
@@ -212,6 +219,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = Recordar esta decisión
+webrtc-remember-allow-checkbox-camera = Recordar para todas las cámaras
+webrtc-remember-allow-checkbox-microphone = Recordar para todos los micrófonos
+webrtc-remember-allow-checkbox-camera-and-microphone = Recordar para todas las cámaras y micrófonos
 webrtc-mute-notifications-checkbox = Silenciar notificaciones de la página mientras se comparte
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name } no puede conceder acceso permanente a su pantalla.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name } no puede permitir acceso permanente al audio de su pestaña sin preguntar qué pestaña compartir.

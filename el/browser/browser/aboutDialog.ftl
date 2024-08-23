@@ -12,8 +12,6 @@ update-updateButton =
     .label = Επανεκκίνηση για ενημέρωση του { -brand-shorter-name }
     .accesskey = Ε
 update-checkingForUpdates = Έλεγχος για ενημερώσεις…
-update-downloading = <img data-l10n-name="icon"/>Λήψη ενημέρωσης — <label data-l10n-name="download-status"/>
-update-downloading-message = Λήψη ενημέρωσης — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = Εφαρμογή ενημέρωσης…
 update-failed = Αποτυχία ενημέρωσης. <label data-l10n-name="failed-link">Λήψη της πιο πρόσφατης έκδοσης</label>
 update-failed-main = Αποτυχία ενημέρωσης. <a data-l10n-name="failed-link-main">Λήψη της πιο πρόσφατης έκδοσης</a>
 update-adminDisabled = Οι ενημερώσεις έχουν απενεργοποιηθεί από τον διαχειριστή του συστήματος σας
+update-policy-disabled = Οι ενημερώσεις έχουν απενεργοποιηθεί από τον οργανισμό σας.
 update-noUpdatesFound = Το { -brand-short-name } είναι ενημερωμένο
 aboutdialog-update-checking-failed = Ο έλεγχος για ενημερώσεις απέτυχε.
 update-otherInstanceHandlingUpdates = Το { -brand-short-name } ενημερώνεται από μια άλλη διεργασία
-update-manual = Διαθέσιμες ενημερώσεις στο <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = Διαθέσιμες ενημερώσεις στο <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,8 +37,6 @@ aboutdialog-update-manual-with-link = Διαθέσιμες ενημερώσει�
 settings-update-manual-with-link = Διαθέσιμες ενημερώσεις στο <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = Δεν μπορείτε να εκτελέσετε περαιτέρω ενημερώσεις σε αυτό το σύστημα. <label data-l10n-name="unsupported-link">Μάθετε περισσότερα</label>
 update-restarting = Επανεκκίνηση…
-channel-description = Αυτήν τη στιγμή, βρίσκεστε στο κανάλι ενημερώσεων της έκδοσης <label data-l10n-name="current-channel"></label>.
-update-internal-error = Δεν είναι δυνατός ο έλεγχος για ενημερώσεις λόγω εσωτερικού σφάλματος. Οι ενημερώσεις διατίθενται στο <label data-l10n-name="manual-link"/>
 update-internal-error2 = Δεν είναι δυνατός ο έλεγχος για ενημερώσεις λόγω εσωτερικού σφάλματος. Οι ενημερώσεις διατίθενται στο <label data-l10n-name="manual-link">{ $displayUrl }</label>
 
 ##

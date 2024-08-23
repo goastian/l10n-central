@@ -12,10 +12,13 @@
 
 policy-3rdparty = Permettre de définir les stratégies auxquelles les WebExtensions peuvent accéder par chrome.storage.managed.
 policy-AllowedDomainsForApps = Définir les domaines autorisés à accéder à Google Workspace.
+policy-AllowFileSelectionDialogs = Autoriser les boîtes de dialogue de sélection de fichiers.
 policy-AppAutoUpdate = Activer ou désactiver les mises à jour automatiques des applications.
 policy-AppUpdatePin = Empêcher { -brand-short-name } d’être mis à jour au-delà de la version spécifiée.
 policy-AppUpdateURL = Définir une URL de mise à jour personnalisée pour l’application.
 policy-Authentication = Configurer l’authentification intégrée pour les sites web qui la proposent.
+policy-AutofillAddressEnabled = Activer le remplissage automatique des adresses.
+policy-AutofillCreditCardEnabled = Activer le remplissage automatique des moyens de paiement.
 policy-AutoLaunchProtocolsFromOrigins = Définir une liste de protocoles externes qui peuvent être utilisés à partir d’origines répertoriées sans demander à l’utilisateur.
 policy-BackgroundAppUpdate2 = Activer ou désactiver la mise à jour en arrière-plan.
 policy-BlockAboutAddons = Bloquer l’accès au gestionnaire de modules (about:addons).
@@ -25,25 +28,29 @@ policy-BlockAboutSupport = Bloquer l’accès à la page about:support.
 policy-Bookmarks = Créer des marque-pages dans la Barre personnelle, le menu des marque-pages ou un de leurs sous-dossiers.
 policy-CaptivePortal = Permettre ou interdire la prise en charge des portails captifs.
 policy-CertificatesDescription = Ajouter des certificats ou utiliser des certificats prédéfinis.
+policy-ContentAnalysis = Activer ou désactiver la connexion à l’agent de protection contre la perte de données.
 policy-Cookies = Permettre ou interdire aux sites de définir des cookies.
 # Containers in this context is referring to container tabs in Firefox.
 policy-Containers = Définir des politiques relatives aux conteneurs.
+policy-DisableAccounts = Désactiver les services qui demandent un compte, y compris la synchronisation.
 policy-DisabledCiphers = Désactiver les chiffrements.
 policy-DefaultDownloadDirectory = Définir le répertoire de téléchargement par défaut.
 policy-DisableAppUpdate = Empêcher le navigateur de se mettre à jour.
 policy-DisableBuiltinPDFViewer = Désactiver PDF.js, la visionneuse PDF intégrée dans { -brand-short-name }.
 policy-DisableDefaultBrowserAgent = Empêcher l’agent de navigateur par défaut de prendre des mesures. Uniquement applicable à Windows ; les autres plateformes n’ont pas cet agent.
 policy-DisableDeveloperTools = Bloquer l’accès aux outils de développement.
+policy-DisableEncryptedClientHello = Désactiver la fonctionnalité TLS Encrypted Client Hello (ECH).
 policy-DisableFeedbackCommands = Désactiver les commandes permettant d’envoyer des commentaires dans le menu d’aide (Donner votre avis et Signaler un site trompeur).
 policy-DisableFirefoxAccounts = Désactiver les services basés sur un { -fxaccount-brand-name }, y compris la synchronisation.
-# Midori Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Désactiver la fonctionnalité Midori Screenshots.
+# This string is in the process of being deprecated in favor of policy-DisableAccounts.
+policy-DisableFirefoxAccounts1 = Désactiver les services qui demandent un compte, y compris la synchronisation.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = Désactiver la fonctionnalité Firefox Screenshots.
 policy-DisableFirefoxStudies = Empêcher { -brand-short-name } d’exécuter des études.
 policy-DisableForgetButton = Empêcher l’accès au bouton d’effacement des données.
 policy-DisableFormHistory = Désactiver la conservation de l’historique des recherches et des formulaires.
 policy-DisablePrimaryPasswordCreation = Si la valeur est sur true, la création d’un mot de passe principal est impossible.
 policy-DisablePasswordReveal = Ne pas permettre de révéler les mots de passe dans les identifiants enregistrés.
-policy-DisablePocket = Désactiver la fonctionnalité d’enregistrement de pages web dans Pocket.
 policy-DisablePocket2 = Désactiver la fonctionnalité d’enregistrement de pages web dans { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = Désactiver la navigation privée.
 policy-DisableProfileImport = Désactiver la commande de menu permettant d’importer des données à partir d’un autre navigateur.
@@ -70,14 +77,15 @@ policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = Désactiver les a
 policy-Extensions = Installer, désinstaller ou verrouiller les extensions. L’option d’installation accepte des URL ou des chemins comme paramètres. Les options Désinstaller et Verrouiller utilisent les identifiants des extensions.
 policy-ExtensionSettings = Gérer tous les aspects de l’installation d’extensions.
 policy-ExtensionUpdate = Activer ou désactiver la mise à jour automatique des extensions.
-policy-FirefoxHome = Configurer l’accueil de Firefox.
 policy-FirefoxHome2 = Configurer la { -firefox-home-brand-name }.
-policy-FlashPlugin = Autoriser ou non l’utilisation du plugin Flash.
+policy-FirefoxSuggest = Configurer { -firefox-suggest-brand-name }.
 policy-GoToIntranetSiteForSingleWordEntryInAddressBar = Forcer directement la navigation dans le site intranet plutôt que vers la recherche quand des entrées ne comprenant qu’un seul mot sont saisies dans la barre d’adresse.
 policy-Handlers = Configurer les gestionnaires d’applications par défaut.
 policy-HardwareAcceleration = Positionner à false pour désactiver l’accélération matérielle.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Définir la page d’accueil et permettre de la verrouiller.
+policy-HttpAllowlist = Origines qui ne seront pas mises à niveau vers HTTPS.
+policy-HttpsOnlyMode = Autoriser l’activation du mode HTTPS uniquement.
 policy-InstallAddonsPermission = Autoriser certains sites web à installer des extensions.
 policy-LegacyProfiles = Désactiver la fonctionnalité qui impose l’utilisation d’un profil distinct pour chaque installation.
 
@@ -92,6 +100,7 @@ policy-LocalFileLinks = Autoriser des sites précis à utiliser des liens vers d
 policy-ManagedBookmarks = Configurer une liste de marque-pages gérés par un administrateur qui ne peut pas être modifiée par l’utilisateur.
 policy-ManualAppUpdateOnly = Autoriser uniquement les mises à jour manuelles et ne pas informer l’utilisateur ou l’utilisatrice de la disponibilité de mises à jour.
 policy-PrimaryPassword = Exiger ou empêcher l’utilisation d’un mot de passe principal.
+policy-PrintingEnabled = Activer ou désactiver l’impression.
 policy-NetworkPrediction = Permettre ou interdire la prédiction réseau (prélecture DNS).
 policy-NewTabPage = Activer ou désactiver la page de nouvel onglet.
 policy-NoDefaultBookmarks = Désactiver la création des marque-pages par défaut fournis avec { -brand-short-name } ainsi que les marque-pages intelligents (sites les plus visités, sites récents). Note : cette politique ne fonctionne que si elle est activée avant le premier lancement du profil.
@@ -101,6 +110,9 @@ policy-OverrideFirstRunPage = Contrôler la page de premier démarrage. Laissez 
 policy-OverridePostUpdatePage = Contrôler la page « Nouveautés » après une mise à jour. Laissez cette règle vide pour désactiver la page après une mise à jour.
 policy-PasswordManagerEnabled = Activer l’enregistrement des mots de passe dans le gestionnaire de mots de passe.
 policy-PasswordManagerExceptions = Empêcher { -brand-short-name } d’enregistrer les mots de passe pour certains sites.
+# Post-quantum refers to cryptography that is safe from attacks by quantum
+# computers. See https://en.wikipedia.org/wiki/Post-quantum_cryptography
+policy-PostQuantumKeyAgreementEnabled = Activer l’acceptation de clé post-quantique pour TLS.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Désactiver ou configurer PDF.js, la visionneuse PDF intégrée dans { -brand-short-name }.
 policy-Permissions2 = Configurer les permissions pour la caméra, le microphone, la localisation, les notifications et la lecture automatique.
@@ -114,8 +126,6 @@ policy-SanitizeOnShutdown2 = Permettre d’effacer des données de navigation à
 policy-SearchBar = Définir l’emplacement par défaut de la barre de recherche. L’utilisateur garde la possibilité de la personnaliser.
 policy-SearchEngines = Configurer les paramètres du moteur de recherche. Cette propriété n’est disponible que sur la version Extended Support Release (ESR).
 policy-SearchSuggestEnabled = Activer ou désactiver les suggestions de recherche.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Installer des modules PKCS #11.
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = Ajouter ou supprimer des modules PKCS #11.
 policy-ShowHomeButton = Afficher le bouton d’accueil dans la barre d’outils.
@@ -123,6 +133,7 @@ policy-SSLVersionMax = Définir la version maximale de SSL à utiliser.
 policy-SSLVersionMin = Définir la version minimale de SSL à utiliser.
 policy-StartDownloadsInTempDirectory = Forcer les téléchargements à démarrer dans un emplacement temporaire local plutôt que dans le dossier de téléchargement par défaut.
 policy-SupportMenu = Ajouter une entrée personnalisée au menu d’aide pour l’assistance.
+policy-TranslateEnabled = Activer ou désactiver la traduction des pages web.
 policy-UserMessaging = Masquer certains messages à destination de l’utilisateur.
 policy-UseSystemPrintDialog = Imprimer en utilisant la boîte de dialogue système.
 # “format” refers to the format used for the value of this policy.

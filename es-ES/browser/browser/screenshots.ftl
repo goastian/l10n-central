@@ -40,9 +40,62 @@ screenshots-login-error-details = No se pudo guardar la captura porque hay un pr
 screenshots-unshootable-page-error-title = No podemos hacer una captura de esta página.
 screenshots-unshootable-page-error-details = No es una página web común, por lo que no podemos hacer captura de pantalla.
 screenshots-empty-selection-error-title = Tu selección es demasiado pequeña
-screenshots-private-window-error-title = Firefox { -screenshots-brand-name } está desactivado en el modo de navegación privada
+screenshots-private-window-error-title = Midori { -screenshots-brand-name } está desactivado en el modo de navegación privada
 screenshots-private-window-error-details = Sentimos las molestias. Estamos trabajando en esta característica para próximos lanzamientos.
 screenshots-generic-error-title = ¡Vaya! { -screenshots-brand-name } se ha vuelto loco.
 screenshots-generic-error-details = No estamos seguros de lo que acaba de pasar. ¿Te importa volver a intentarlo o hacer una captura de otra página?
 screenshots-too-large-error-title = La captura de pantalla ha sido recortada porque era demasiado grande
 screenshots-too-large-error-details = Intente seleccionar una región de menos de 32.700 píxeles en su lado más largo o 124.900.000 píxeles en total.
+screenshots-component-retry-button =
+    .title = Reintentar captura de pantalla
+    .aria-label = Reintentar captura de pantalla
+screenshots-component-cancel-button =
+    .title =
+        { PLATFORM() ->
+            [macos] Cancelar (esc)
+           *[other] Cancelar (Esc)
+        }
+    .aria-label = Cancelar
+# Variables
+#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
+screenshots-component-copy-button =
+    .title = Copiar ({ $shortcut })
+    .aria-label = Copiar
+screenshots-component-copy-button-label = Copiar
+# Variables
+#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
+screenshots-component-download-button =
+    .title = Descargar ({ $shortcut })
+    .aria-label = Descargar
+screenshots-component-download-button-label = Descargar
+# Variables
+#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
+screenshots-component-copy-button-2 = Copiar
+    .title = Copiar ({ $shortcut })
+    .aria-label = Copiar
+# Variables
+#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
+screenshots-component-download-button-2 = Descargar
+    .title = Descargar ({ $shortcut })
+    .aria-label = Descargar
+
+## The below strings are used to capture keydown events so the strings should
+## not be changed unless the keyboard layout in the locale requires it.
+
+screenshots-component-download-key = S
+screenshots-component-copy-key = C
+
+##
+
+# This string represents the selection size area
+# "x" here represents "by" (i.e 123 by 456)
+# Variables:
+#   $width (Number) - The width of the selection region in pixels
+#   $height (Number) - The height of the selection region in pixels
+screenshots-overlay-selection-region-size-2 = { $width } x { $height }
+# This string represents the selection size area
+# "×" here represents "by" (i.e 123 by 456)
+# Variables:
+#   $width (Number) - The width of the selection region in pixels
+#   $height (Number) - The height of the selection region in pixels
+screenshots-overlay-selection-region-size-3 = { $width } × { $height }

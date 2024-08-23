@@ -12,8 +12,6 @@ update-updateButton =
     .label = Reinicie para actualizar { -brand-shorter-name }
     .accesskey = R
 update-checkingForUpdates = Comprobando actualizaciones…
-update-downloading = <img data-l10n-name="icon"/>Descargando actualización — <label data-l10n-name="download-status"/>
-update-downloading-message = Descargando actualización — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = Aplicando actualización…
 update-failed = La actualización falló. <label data-l10n-name="failed-link">Descargar la última versión</label>
 update-failed-main = La actualización falló. <a data-l10n-name="failed-link-main">Descargar la última versión</a>
 update-adminDisabled = Actualizaciones desactivadas por su administrador
+update-policy-disabled = Actualizaciones deshabilitadas por su organización
 update-noUpdatesFound = { -brand-short-name } está actualizado
 aboutdialog-update-checking-failed = Error al buscar actualizaciones.
 update-otherInstanceHandlingUpdates = { -brand-short-name } está siendo actualizado por otra instancia
-update-manual = Actualización disponible en <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = Actualización disponible en <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,8 +37,6 @@ aboutdialog-update-manual-with-link = Actualización disponible en <label data-l
 settings-update-manual-with-link = Actualización disponible en <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = No puede ejecutar más actualizaciones en este sistema. <label data-l10n-name="unsupported-link">Saber más</label>
 update-restarting = Reiniciando…
-channel-description = Está usando el canal <label data-l10n-name="current-channel"></label> para actualizar.
-update-internal-error = No se pueden buscar actualizaciones debido a un error interno. Actualizaciones disponibles en <label data-l10n-name="manual-link"/>
 update-internal-error2 = No se pueden buscar actualizaciones debido a un error interno. Actualizaciones disponibles en <label data-l10n-name="manual-link">{ $displayUrl }</label>
 
 ##

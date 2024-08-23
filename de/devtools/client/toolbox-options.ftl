@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Vereinfachte Hervorhebung mit prefers-reduced-motion verwenden
 options-inspector-simplified-highlighters-tooltip =
     .title = Aktiviert vereinfachte Hervorhebung, wenn prefers-reduced-motion aktiviert ist. Dies zeichnet Linien statt ausgefüllter Rechtecke um hervorgehobene Elemente, um Blinkeffekte zu vermeiden.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Nächste Eingabe mit <kbd>Eingabetaste</kbd> fokussieren
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Wenn dies aktiviert ist, wird durch Drücken der Eingabetaste beim Bearbeiten eines Selektors, eines Eigenschaftsnamens oder -wertes der Fokus auf die nächste Eingabe verschoben.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Farbnamen
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Web-Konsole
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Zusätzliche Konsole aktivieren
+options-webconsole-split-console-tooltip =
+    .title = Zusätzliche Konsole mit der Escape-Taste öffnen
 
 ## Style Editor section
 

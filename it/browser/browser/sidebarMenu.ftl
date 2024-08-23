@@ -11,8 +11,12 @@ sidebar-menu-history =
 sidebar-menu-synced-tabs =
     .label = Schede sincronizzate
 
+sidebar-menu-megalist =
+  .label = Password
+
 sidebar-menu-close =
     .label = Chiudi barra laterale
 
 sidebar-close-button =
     .tooltiptext = Chiudi la barra laterale
+

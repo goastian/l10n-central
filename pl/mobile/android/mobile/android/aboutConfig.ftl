@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 config-toolbar-search =
-    .placeholder = Wyszukaj
+    .placeholder = Szukaj
 config-new-pref-name =
     .placeholder = Nazwa
 config-new-pref-value-boolean = Wartość logiczna

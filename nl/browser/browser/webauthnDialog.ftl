@@ -4,10 +4,24 @@
 
 # Variables:
 #  $retriesLeft (Number): number of tries left
-webauthn-pin-invalid-prompt =
+webauthn-pin-invalid-long-prompt =
     { $retriesLeft ->
-        [0] Foutieve pincode! Voer de juiste pincode voor uw apparaat in.
-        [one] Foutieve pincode! Voer de juiste pincode voor uw apparaat in. U hebt nog { $retriesLeft } poging over.
-       *[other] Foutieve pincode! Voer de juiste pincode voor uw apparaat in. U hebt nog { $retriesLeft } pogingen over.
+        [one] Onjuiste pincode. U hebt nog { $retriesLeft } poging voordat u permanent de toegang tot de aanmeldgegevens op dit apparaat verliest.
+       *[other] Onjuiste pincode. U hebt nog { $retriesLeft } pogingen voordat u permanent de toegang tot de aanmeldgegevens op dit apparaat verliest.
     }
+webauthn-pin-invalid-short-prompt = Onjuiste pincode. Probeer het opnieuw.
 webauthn-pin-required-prompt = Voer de pincode voor uw apparaat in.
+webauthn-select-sign-result-unknown-account = Onbekende account
+webauthn-a-passkey-label = Een wachtwoordsleutel gebruiken
+webauthn-another-passkey-label = Andere wachtwoordsleutel gebruiken
+# Variables:
+#   $domain (String): the domain of the site.
+webauthn-specific-passkey-label = Wachtwoordsleutel voor { $domain }
+# Variables:
+#  $retriesLeft (Number): number of tries left
+webauthn-uv-invalid-long-prompt =
+    { $retriesLeft ->
+        [one] Gebruikersverificatie mislukt. U hebt nog { $retriesLeft } poging over. Probeer het opnieuw.
+       *[other] Gebruikersverificatie mislukt. U hebt nog { $retriesLeft } pogingen over. Probeer het opnieuw.
+    }
+webauthn-uv-invalid-short-prompt = Gebruikersverificatie mislukt. Probeer het opnieuw.

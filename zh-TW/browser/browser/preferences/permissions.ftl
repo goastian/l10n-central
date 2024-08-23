@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = 例外網站
-    .style = width: 45em
 permissions-window2 =
     .title = 例外網站
     .style = min-width: 45em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = 請輸入正確的主機名稱
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = 加強型追蹤保護的例外
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = 您已針對下列網站關閉保護。
 permissions-exceptions-etp-window2 =
     .title = 加強型追蹤保護的例外
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = 您可以指定要針對哪些網站關
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = 例外 - Cookie 與網站資料
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = 例外 - Cookie 與網站資料
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = 您可以指定哪些網站是否可以設�
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = 例外 - 純 HTTPS 模式
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = 例外 - 純 HTTPS 模式
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = 您可以針對特定網站關閉純 HTTPS 模式。連線到這些網站時，{ -brand-short-name } 不會嘗試升級為安全的 HTTPS 連線。例外網站不會在隱私保護視窗中生效。
+permissions-exceptions-https-only-desc2 = 您可以針對特定網站關閉純 HTTPS 模式。連線到這些網站時，{ -brand-short-name } 不會嘗試升級為安全的 HTTPS 連線。
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = 允許彈出型視窗的網站
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = 允許彈出型視窗的網站
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = 您可以指定哪些網站可以開啟彈�
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = 儲存的登入資訊 - 例外
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = 儲存的登入資訊 - 例外
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = 將不會儲存下列網站的登入資訊
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = 儲存的密碼 - 例外
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } 不會儲存下列網站的密碼。
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = 允許安裝附加元件的網站
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = 允許安裝附加元件的網站
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = 您可以指定哪些網站可以安裝附�
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = 設定 - 自動播放
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = 設定 - 自動播放
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = 您可以在此處管理不遵守預設自動�
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = 設定 - 通知權限
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = 設定 - 通知權限
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = 將防止上列以外的網站請�
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = 設定 - 位置權限
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = 設定 - 位置權限
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = 將防止上列以外的網站請您允
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = 設定 - 虛擬實境權限
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = 設定 - 虛擬實境權限
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = 將防止上列以外的網站請求使用您
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = 設定 - 攝影機權限
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = 設定 - 攝影機權限
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = 將防止上列以外的網站請您允�
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = 設定 - 麥克風權限
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = 設定 - 麥克風權限
     .style = { permissions-window2.style }

@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = 透過 prefers-reduced-motion 使用較簡單的強調器
 options-inspector-simplified-highlighters-tooltip =
     .title = 開啟 prefers-reduced-motion 時會使用較簡單的強調器。會對要強調的元素畫線強調，而不填入實心長方形來避免閃爍效果。
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = 按下 <kbd>Enter</kbd> 時，聚焦到下一個輸入欄位
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = 啟用後，編輯選擇器、屬性名稱或元素值後按下 Enter 鍵，就會自動將焦點移動到下一個輸入框。
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = 色彩名稱
+
+## Web Console section
+
+# The heading
+options-webconsole-label = 網頁主控台
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = 啟用分割主控台
+options-webconsole-split-console-tooltip =
+    .title = 使用 Esc 鍵開啟分割主控台
 
 ## Style Editor section
 

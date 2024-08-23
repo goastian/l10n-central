@@ -14,10 +14,6 @@ tabbrowser-menuitem-close =
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } - { $containerName }
 # Variables:
-#   $title (String): the title of the current tab.
-tabbrowser-tab-tooltip =
-    .label = { $title }
-# Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
     .label =
@@ -115,6 +111,16 @@ tabbrowser-confirm-caretbrowsing-title = Cursornavigatie
 tabbrowser-confirm-caretbrowsing-message = Door op F7 te drukken, wordt Cursornavigatie in- of uitgeschakeld. Deze functie plaatst een beweegbare cursor in webpagina’s, waarmee u tekst kunt selecteren met het toetsenbord. Wilt u Cursornavigatie inschakelen?
 tabbrowser-confirm-caretbrowsing-checkbox = Dit dialoogvenster niet meer tonen.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Opgelet
+tabbrowser-confirm-close-duplicate-tabs-text = We houden het laatste actieve tabblad open
+tabbrowser-confirm-close-all-duplicate-tabs-title = Dubbele tabbladen sluiten?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    Dubbele tabbladen in dit venster worden gesloten. Het laatst actieve
+    tabblad blijft geopend.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Tabbladen sluiten
+
 ##
 
 # Variables:
@@ -139,3 +145,21 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = Tabbladen dempen opheffen
     .accesskey = d
+# This string is used as an additional tooltip and accessibility description for tabs playing audio
+tabbrowser-tab-audio-playing-description = Geluid afspelen
+
+## Ctrl-Tab dialog
+
+# Variables:
+#   $tabCount (Number): The number of tabs in the current browser window. It will always be 2 at least.
+tabbrowser-ctrl-tab-list-all-tabs =
+    .label = Alle { $tabCount } tabbladtitels tonen
+
+## Tab manager menu buttons
+
+tabbrowser-manager-mute-tab =
+    .tooltiptext = Tabblad dempen
+tabbrowser-manager-unmute-tab =
+    .tooltiptext = Tabblad dempen opheffen
+tabbrowser-manager-close-tab =
+    .tooltiptext = Tabblad sluiten

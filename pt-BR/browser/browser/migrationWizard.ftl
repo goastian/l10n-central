@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge (Legado)
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Senhas de arquivo CSV
 migration-wizard-migrator-display-name-file-bookmarks = Favoritos de arquivo HTML
 migration-wizard-migrator-display-name-ie = Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Lista de leitura (do Safari)
+migration-imported-edge-reading-list = Lista de leitura (do Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = O { -brand-short-name } não tem acesso a perfis de outros navegadores instalados neste dispositivo.
+migration-no-permissions-instructions = Para continuar a importação de dados de outro navegador, conceda ao { -brand-short-name } acesso à sua pasta de perfil.
+migration-no-permissions-instructions-step1 = Selecione “Avançar”
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = No seletor de arquivos, navegue até <code>{ $permissionsPath }</code> e escolha “Selecionar”
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = Favoritos
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Favoritos
 migration-logins-and-passwords-option-label = Contas e senhas salvas
+migration-passwords-option-label = Senhas salvas
 migration-history-option-label = Histórico de navegação
 migration-extensions-option-label = Extensões
 migration-form-autofill-option-label = Dados de preenchimento automático de formulários
@@ -158,7 +178,14 @@ migration-list-payment-methods-label = métodos de pagamento
 ##
 
 migration-wizard-progress-header = Importando dados
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Dados importados com sucesso
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Importação de dados concluída
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importando…
 migration-wizard-progress-icon-completed =
@@ -240,8 +267,8 @@ migration-wizard-progress-success-passwords =
 #  $maxAgeInDays (Number): the maximum number of days of history that might be imported.
 migration-wizard-progress-success-history =
     { $maxAgeInDays ->
-        [one] Do último dia
-       *[other] Dos últimos { $maxAgeInDays } dias
+        [one] do último dia
+       *[other] dos últimos { $maxAgeInDays } dias
     }
 migration-wizard-progress-success-formdata = Histórico de formulários
 # Shown in the migration wizard after importing payment methods from another

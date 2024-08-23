@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 biztonságos böngé
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge béta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Jelszavak egy CSV-fájlból
 migration-wizard-migrator-display-name-file-bookmarks = Könyvjelzők HTML-fájlból
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Olvasási lista (a Safariból)
+migration-imported-edge-reading-list = Olvasási lista (az Edge-ből)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = A { -brand-short-name } nem fér hozzá más böngészők erre az eszközre telepített profiljához.
+migration-no-permissions-instructions = Ha folytatni szeretné az adatok másik böngészőből történő importálását, adjon hozzáférést a { -brand-short-name } profilmappájához.
+migration-no-permissions-instructions-step1 = Válassza a „Folytatás” gombot
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = A fájlválasztóban navigáljon ide: <code>{ $permissionsPath }</code>, és válassza a „Kiválasztás” lehetőséget
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,14 +76,20 @@ migration-bookmarks-option-label = Könyvjelzők
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Kedvencek
 migration-logins-and-passwords-option-label = Mentett bejelentkezések és jelszavak
+migration-passwords-option-label = Mentett jelszavak
 migration-history-option-label = Böngészési előzmények
+migration-extensions-option-label = Kiegészítők
 migration-form-autofill-option-label = Adatok automatikus kitöltése
 migration-payment-methods-option-label = Fizetési módok
+migration-cookies-option-label = Sütik
+migration-session-option-label = Ablakok és lapok
+migration-otherdata-option-label = További adatok
 migration-passwords-from-file-progress-header = Jelszófájl importálása
 migration-passwords-from-file-success-header = A jelszavak sikeresen importálva
 migration-passwords-from-file = Jelszavak keresése a fájlban
 migration-passwords-new = Új jelszavak
 migration-passwords-updated = Meglévő jelszavak
+migration-passwords-from-file-no-valid-data = A fájl nem tartalmaz érvényes jelszóadatokat. Válasszon másik fájlt.
 migration-passwords-from-file-picker-title = Jelszófájl importálása
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -104,6 +129,7 @@ migration-bookmarks-from-file-picker-title = Könyvjelzőfájl importálása
 migration-bookmarks-from-file-progress-header = Könyvjelzők importálása
 migration-bookmarks-from-file = Könyvjelzők
 migration-bookmarks-from-file-success-header = A könyvjelzők sikeresen importálva
+migration-bookmarks-from-file-no-valid-data = A fájl nem tartalmaz érvényes könyvjelzőadatokat. Válasszon másik fájlt.
 # A description for the .html file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-html-filter-title =
@@ -145,13 +171,21 @@ migration-list-bookmark-label = könyvjelzők
 migration-list-favorites-label = kedvencek
 migration-list-password-label = jelszavak
 migration-list-history-label = előzmények
+migration-list-extensions-label = kiegészítők
 migration-list-autofill-label = adatok automatikus kitöltése
 migration-list-payment-methods-label = fizetési módok
 
 ##
 
 migration-wizard-progress-header = Adatok importálása
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Az adatok sikeresen importálva
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Az adatimportálás befejeződött
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importálás…
 migration-wizard-progress-icon-completed =
@@ -186,6 +220,36 @@ migration-wizard-progress-success-favorites =
         [one] { $quantity } kedvenc
        *[other] { $quantity } kedvenc
     }
+
+## The import process identifies extensions installed in other supported
+## browsers and installs the corresponding (matching) extensions compatible
+## with Firefox, if available.
+
+# Shown in the migration wizard after importing all matched extensions
+# from supported browsers.
+#
+# Variables:
+#   $quantity (Number): the number of successfully imported extensions
+migration-wizard-progress-success-extensions =
+    { $quantity ->
+        [one] { $quantity } kiegészítő
+       *[other] { $quantity } kiegészítő
+    }
+# Shown in the migration wizard after importing a partial amount of
+# matched extensions from supported browsers.
+#
+# Variables:
+#   $matched (Number): the number of matched imported extensions
+#   $quantity (Number): the number of total extensions found during import
+migration-wizard-progress-partial-success-extensions = { $matched } / { $quantity } kiegészítő
+migration-wizard-progress-extensions-support-link = Tudja meg, hogy a { -brand-product-name } hogyan találja meg a megfelelő kiegészítőket
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Nincs megfelelő kiegészítő
+migration-wizard-progress-extensions-addons-link = Kiegészítők tallózása a { -brand-short-name }hoz
+
+##
+
 # Shown in the migration wizard after importing passwords from another
 # browser has completed.
 #

@@ -3,12 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-# Note: This is currently placed under browser/base/content so that we can
-# get the strings to appear without having our localization community need
-# to go through and translate everything. Once these strings are ready for
-# translation, we'll move it to the locales folder.
-
-
 ## These strings are used so that the window has a title in tools that
 ## enumerate/look for window titles. It is not normally visible anywhere.
 
@@ -129,9 +123,23 @@ webrtc-allow-share-screen = { $origin } 사이트가 화면을 볼 수 있도록
 # another audio output connection.
 webrtc-allow-share-speaker = { $origin } 사이트가 다른 스피커를 사용하도록 허용하시겠습니까?
 webrtc-allow-share-camera-and-microphone = { $origin } 사이트가 카메라와 마이크를 사용하도록 허용하시겠습니까?
-webrtc-allow-share-camera-and-audio-capture = { $origin } 사이트가 카메라를 사용하고 이 탭의 소리를 듣을 수 있도록 허용하시겠습니까?
+webrtc-allow-share-camera-and-audio-capture = { $origin } 사이트가 카메라를 사용하고 이 탭의 소리를 들을 수 있도록 허용하시겠습니까?
 webrtc-allow-share-screen-and-microphone = { $origin } 사이트가 마이크를 사용하고 화면을 볼 수 있도록 허용하시겠습니까?
 webrtc-allow-share-screen-and-audio-capture = { $origin } 사이트가 이 탭의 소리를 듣고 화면을 볼 수 있도록 허용하시겠습니까?
+
+## Special phrasing for sharing devices when the origin is a file url.
+
+webrtc-allow-share-audio-capture-with-file = 이 로컬 파일이 이 탭의 소리를 들을 수 있도록 허용하시겠습니까?
+webrtc-allow-share-camera-with-file = 이 로컬 파일이 카메라를 사용하도록 허용하시겠습니까?
+webrtc-allow-share-microphone-with-file = 이 로컬 파일이 마이크를 사용하도록 허용하시겠습니까?
+webrtc-allow-share-screen-with-file = 이 로컬 파일이 화면을 볼 수 있도록 허용하시겠습니까?
+# "Speakers" is used in a general sense that might include headphones or
+# another audio output connection.
+webrtc-allow-share-speaker-with-file = 이 로컬 파일이 다른 스피커를 사용하도록 허용하시겠습니까?
+webrtc-allow-share-camera-and-microphone-with-file = 이 로컬 파일이 카메라와 마이크를 사용하도록 허용하시겠습니까?
+webrtc-allow-share-camera-and-audio-capture-with-file = 이 로컬 파일이 카메라를 사용하고 이 탭의 소리를 들을 수 있도록 허용하시겠습니까?
+webrtc-allow-share-screen-and-microphone-with-file = 이 로컬 파일이 마이크를 사용하고 화면을 볼 수 있도록 허용하시겠습니까?
+webrtc-allow-share-screen-and-audio-capture-with-file = 이 로컬 파일이 이 탭의 소리를 듣고 화면을 볼 수 있도록 허용하시겠습니까?
 
 ## Variables:
 ##   $origin (String): the first party origin.
@@ -139,7 +147,6 @@ webrtc-allow-share-screen-and-audio-capture = { $origin } 사이트가 이 탭�
 
 webrtc-allow-share-audio-capture-unsafe-delegation = { $origin } 사이트가 { $thirdParty }에 이 탭의 소리를 들을 수 있도록 권한을 부여하는 것을 허용하시겠습니까?
 webrtc-allow-share-camera-unsafe-delegation = { $origin } 사이트가 { $thirdParty }에 카메라에 접근할 수 있도록 허용하시겠습니까?
-webrtc-allow-share-microphone-unsafe-delegations = { $origin } 사이트가 { $thirdParty }에 마이크에 접근할 수 있도록 허용하시겠습니까?
 webrtc-allow-share-microphone-unsafe-delegation = { $origin } 사이트가 { $thirdParty }에 마이크에 접근할 수 있도록 허용하시겠습니까?
 webrtc-allow-share-screen-unsafe-delegation = { $origin } 사이트가 { $thirdParty }에 화면을 볼 수 있도록 권한을 부여하는 것을 허용하시겠습니까?
 # "Speakers" is used in a general sense that might include headphones or
@@ -184,6 +191,9 @@ webrtc-action-not-now =
 ##
 
 webrtc-remember-allow-checkbox = 이 선택 기억하기
+webrtc-remember-allow-checkbox-camera = 모든 카메라에 대해 기억하기
+webrtc-remember-allow-checkbox-microphone = 모든 마이크에 대해 기억하기
+webrtc-remember-allow-checkbox-camera-and-microphone = 모든 카메라와 마이크에 대해 기억하기
 webrtc-mute-notifications-checkbox = 공유하는 동안 웹 사이트 알림 음소거
 webrtc-reason-for-no-permanent-allow-screen = { -brand-short-name }가 더 이상 당신의 화면에 접근할 수 없습니다.
 webrtc-reason-for-no-permanent-allow-audio = { -brand-short-name }가 이제 어느 탭을 공유할지 더 이상 묻지 않고 탭의 소리에 접근합니다.

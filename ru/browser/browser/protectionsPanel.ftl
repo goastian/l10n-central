@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Больше информации об улучшенной защите от отслеживания
 protections-panel-etp-on-header = Улучшенная защита от отслеживания на этом сайте ВКЛЮЧЕНА
 protections-panel-etp-off-header = Улучшенная защита от отслеживания на этом сайте ОТКЛЮЧЕНА
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Улучшенная защита от отслеживания
+    .description = Включена для этого сайта
+    .aria-label = Улучшенная защита от отслеживания: Включена для { $host }
+protections-panel-etp-toggle-off =
+    .label = Улучшенная защита от отслеживания
+    .description = Отключена для этого сайта
+    .aria-label = Улучшенная защита от отслеживания: Отключена для { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Сайт не работает?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Почему?
 protections-panel-not-blocking-why-etp-on-tooltip = Блокировка может привести к неработоспособности элементов некоторых веб-сайтов. Без трекеров некоторые кнопки, формы и поля для входа могут не работать.
 protections-panel-not-blocking-why-etp-off-tooltip = Все трекеры на этом сайте были загружены, потому что защита отключена.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Блокировка может привести к неработоспособности элементов некоторых веб-сайтов. Без трекеров некоторые кнопки, формы и поля для входа могут не работать.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Все трекеры на этом сайте были загружены, потому что защита отключена.
 
 ##
 
@@ -105,6 +123,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Снижение числа уведомлений о куках
+protections-panel-cookie-banner-blocker-header = Блокировщик уведомления о куки
 protections-panel-cookie-banner-handling-enabled = Включено для этого сайта
 protections-panel-cookie-banner-handling-disabled = Отключено для этого сайта
 protections-panel-cookie-banner-handling-undetected = В настоящее время сайт не поддерживается
@@ -114,8 +133,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Отключить снижение числа уведомлений о куках для { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Включить снижение числа уведомлений о куках для этого сайта?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Блокировщик уведомления о куки
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Отключить снижение числа уведомлений о куках для { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Включить снижение числа уведомлений о куках для этого сайта?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } удалит куки этого сайта и обновит страницу. Удаление всех кук может привести к выходу из учётных записей или опустошению корзин с покупками.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } пытается автоматически отклонить все запросы кук на поддерживаемых сайтах.
 protections-panel-cookie-banner-view-cancel = Отмена
 protections-panel-cookie-banner-view-turn-off = Отключить
 protections-panel-cookie-banner-view-turn-on = Включить
+protections-panel-cookie-banner-blocker-view-turn-on-description = Включите, и { -brand-short-name } попытается автоматически отклонить уведомления о куки на этом сайте.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Отмена
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Отключить
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Включить
+protections-panel-report-broken-site =
+    .label = Сообщить о сломанном сайте
+    .title = Сообщить о сломанном сайте
+
+## Protections panel info message
+
+cfr-protections-panel-header = Работайте в Интернете без слежки
+cfr-protections-panel-body = Храните свои данные при себе. { -brand-short-name } защищает вас от большинства наиболее известных трекеров, которые следят за вами в Интернете.
+cfr-protections-panel-link-text = Подробнее

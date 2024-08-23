@@ -95,7 +95,7 @@ downloads-cmd-go-to-download-page =
     .label = Перейти на страницу загрузки
     .accesskey = н
 downloads-cmd-copy-download-link =
-    .label = Скопировать ссылку на загрузку
+    .label = Копировать ссылку на загрузку
     .accesskey = ы
 downloads-cmd-remove-from-history =
     .label = Удалить из истории
@@ -149,11 +149,6 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = Откроется через { $hours } ч { $minutes } мин…
-downloading-file-opens-in-minutes = Откроется через { $minutes } мин…
-downloading-file-opens-in-minutes-and-seconds = Откроется через { $minutes } мин { $seconds } с…
-downloading-file-opens-in-seconds = Откроется через { $seconds } с…
-downloading-file-opens-in-some-time = Откроется после завершения…
 downloading-file-opens-in-hours-and-minutes-2 =
     .value = Откроется через { $hours } ч { $minutes } мин…
 downloading-file-opens-in-minutes-2 =
@@ -183,7 +178,7 @@ downloads-cancel-download =
 downloads-history =
     .label = Показать все загрузки
     .accesskey = а
-# This string is shown at the top of the Download Details Panel, to indicate
+# This string is shown at the top of the download details sub-panel to indicate
 # that we are showing the details of a single download.
 downloads-details =
     .title = Сведения о загрузке

@@ -23,6 +23,12 @@ protections-panel-etp-more-info =
     .aria-label = Informasi lebih lanjut tentang Perlindungan Pelacakan yang Ditingkatkan
 protections-panel-etp-on-header = Perlindungan Pelacakan yang Ditingkatkan AKTIF untuk situs ini
 protections-panel-etp-off-header = Perlindungan Pelacakan yang Ditingkatkan NONAKTIF untuk situs ini
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Situs tidak berfungsi?
 # The heading/title of the sub-panel view
@@ -35,6 +41,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Mengapa?
 protections-panel-not-blocking-why-etp-on-tooltip = Memblokir yang berikut dapat merusak elemen pada beberapa situs web. Tanpa pelacak, beberapa tombol, formulir, dan bidang info masuk mungkin tidak berfungsi.
 protections-panel-not-blocking-why-etp-off-tooltip = Semua pelacak di situs ini telah dimuat karena perlindungan dinonaktifkan.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Memblokir yang berikut dapat merusak elemen pada beberapa situs web. Tanpa pelacak, beberapa tombol, formulir, dan bidang info masuk mungkin tidak berfungsi.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Semua pelacak di situs ini telah dimuat karena perlindungan dinonaktifkan.
 
 ##
 
@@ -118,3 +128,15 @@ protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name }
 protections-panel-cookie-banner-view-cancel = Batal
 protections-panel-cookie-banner-view-turn-off = Nonaktifkan
 protections-panel-cookie-banner-view-turn-on = Aktifkan
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Batal
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Nonaktifkan
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Aktifkan
+
+## Protections panel info message
+
+cfr-protections-panel-header = Menjelajah tanpa diikuti
+cfr-protections-panel-body = Simpan data Anda untuk diri sendiri. { -brand-short-name } melindungi Anda dari banyak pelacak umum yang mengikuti apa yang Anda lakukan daring.
+cfr-protections-panel-link-text = Pelajari lebih lanjut

@@ -67,7 +67,7 @@ cert-error-details-cert-chain-label = 인증 체인:
 open-in-new-window-for-csp-or-xfo-error = 사이트를 새 창에서 열기
 # Variables:
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
-csp-xfo-blocked-long-desc = 보안을 위해 { $hostname } 사이트는 다른 사이트에서 해당 페이지를 포함하면 { -brand-short-name }가 페이지를 표시하지 못하게 합니다. 이 페이지를 보려면 새 창에 열어야 합니다.
+csp-xfo-blocked-long-desc = 보안을 위해 { $hostname } 사이트는 다른 사이트에서 해당 페이지를 포함하면 { -brand-short-name }가 페이지를 표시하지 못하게 합니다. 이 페이지를 보려면 새 창에서 열어야 합니다.
 
 ## Messages used for certificate error titles
 
@@ -76,12 +76,6 @@ deniedPortAccess-title = 이 주소는 제한되어 있음
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
 dnsNotFound-title = 해당 사이트를 찾는데 문제가 발생했습니다.
-# Variables:
-#   $hostname (string) - Hostname of the website to which the user was trying to connect.
-dns-not-found-trr-only-title = { $hostname }에 가능한 보안 위험.
-# Variables:
-#   $hostname (string) - Hostname of the website to which the user was trying to connect.
-dns-not-found-native-fallback-title = { $hostname }에 가능한 보안 위험.
 dns-not-found-trr-only-title2 = 이 도메인을 찾는 가능한 보안 위험
 dns-not-found-native-fallback-title2 = 이 도메인을 찾는 가능한 보안 위험
 fileNotFound-title = 파일을 찾을 수 없음

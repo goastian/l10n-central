@@ -127,6 +127,16 @@ tabbrowser-confirm-caretbrowsing-title = Активный курсор
 tabbrowser-confirm-caretbrowsing-message = Нажатие клавиши F7 включает или выключает режим активного курсора. В этом режиме, поместив курсор на страницу, вы можете выделять текст с помощью клавиатуры. Включить этот режим?
 tabbrowser-confirm-caretbrowsing-checkbox = Больше не показывать это окно.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Внимание
+tabbrowser-confirm-close-duplicate-tabs-text = Мы будем держать открытой последнюю активную вкладку
+tabbrowser-confirm-close-all-duplicate-tabs-title = Закрыть дублирующиеся вкладки?
+tabbrowser-confirm-close-all-duplicate-tabs-text =
+    Мы закроем дублирующиеся вкладки в этом окне. Последняя активная
+    вкладка останется открытой.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Закрыть вкладки
+
 ##
 
 # Variables:

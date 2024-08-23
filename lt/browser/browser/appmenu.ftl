@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = Spausdinti…
 appmenuitem-find-in-page =
     .label = Rasti tinklalapyje…
+appmenuitem-translate =
+    .label = Išversti tinklalapį…
 appmenuitem-zoom =
     .value = Mastelis
 appmenuitem-more-tools =
@@ -92,6 +94,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Sinchronizuoti dabar
 appmenuitem-fxa-sign-in = Prisijungti prie „{ -brand-product-name }“
 appmenuitem-fxa-manage-account = Tvarkyti paskyrą
 appmenu-fxa-header2 = „{ -fxaccount-brand-name }“ paskyra
+appmenu-account-header = Paskyra
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -126,8 +129,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profiliuoklė
     .tooltiptext = Profiliuoklė fiksuoja profilį
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Rodyti daugiau informacijos
@@ -164,7 +165,7 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Rekomenduojamas nustatymas daugelio saityno programų derinimui, su nedidelėmis sąnaudomis.
@@ -193,8 +194,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Tvarkyti žurnalą
-appmenu-reopen-all-tabs = Įkelti visas korteles
-appmenu-reopen-all-windows = Įkelti visus langus
 appmenu-restore-session =
     .label = Atkurti paskiausiąjį seansą
 appmenu-clear-history =
@@ -204,6 +203,9 @@ appmenu-recently-closed-tabs =
     .label = Paskiausiai užvertos kortelės
 appmenu-recently-closed-windows =
     .label = Paskiausiai užverti langai
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = Paieškos istorija
 
 ## Help panel
 
@@ -223,6 +225,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = Pasidalinti idėjomis ir atsiliepimais…
     .accesskey = s
+appmenu-help-switch-device =
+    .label = Perėjimas prie naujo įrenginio
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.

@@ -27,13 +27,10 @@ toolbox-meatball-menu-noautohide-label = Απενεργοποίηση αυτόμ
 toolbox-meatball-menu-pseudo-locale-accented = Ενεργοποίηση γλώσσας «accented»
 toolbox-meatball-menu-pseudo-locale-bidi = Ενεργοποίηση γλώσσας «bidi»
 
-##
-
-
 ## These labels are shown in the top-toolbar in the Browser Toolbox and Browser Console
 
-toolbox-mode-browser-toolbox-label = Λειτουργία εργαλειοθήκης φυλλομετρητή
-toolbox-mode-browser-console-label = Λειτουργία κονσόλας φυλλομετρητή
+toolbox-mode-browser-toolbox-label = Λειτουργία εργαλειοθήκης προγράμματος περιήγησης
+toolbox-mode-browser-console-label = Λειτουργία κονσόλας προγράμματος περιήγησης
 toolbox-mode-everything-label = Πολυδιεργασία
 toolbox-mode-everything-sub-label = (Πιο αργό)
 toolbox-mode-everything-container =
@@ -42,10 +39,6 @@ toolbox-mode-parent-process-label = Μόνο γονική διεργασία
 toolbox-mode-parent-process-sub-label = (Γρήγορο)
 toolbox-mode-parent-process-container =
     .title = Εστίαση μόνο σε πόρους από τη γονική διεργασία.
-toolbox-always-on-top-enabled =
-    .title = Απενεργοποίηση προβολής πάντα σε πρώτο πλάνο (Θα επανεκκινηθούν τα εργαλεία ανάπτυξης)
-toolbox-always-on-top-disabled =
-    .title = Ενεργοποίηση προβολής πάντα σε πρώτο πλάνο (Θα επανεκκινηθούν τα εργαλεία ανάπτυξης)
 toolbox-always-on-top-enabled2 = Απενεργοποίηση προβολής «Πάντα στην κορυφή»
     .title = Θα γίνει επανεκκίνηση των εργαλείων ανάπτυξης
 toolbox-always-on-top-disabled2 = Ενεργοποίηση προβολής «Πάντα στην κορυφή»

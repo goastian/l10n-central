@@ -5,39 +5,6 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
-#
-# default - "Mozilla Firefox"
-# private - "Mozilla Firefox (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (Navigation privée)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Navigation privée)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox — (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
-#
-# Also note the other subtle difference here: we use a `-` to separate the
-# brand name from `(Private Browsing)`, which does not happen on other OSes.
-#
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window-mac =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Navigation privée)
-    .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Navigation privée)
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -114,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = Ouvrir le panneau d’autorisations pour la réalité virtuelle
 urlbar-storage-access-anchor =
     .tooltiptext = Ouvrir le panneau des permissions relatives à la navigation
-urlbar-translate-notification-anchor =
-    .tooltiptext = Traduire cette page
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Gérer le partage de fenêtres ou d’écran avec ce site
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Afficher le message concernant le stockage de données hors connexion
 urlbar-password-notification-anchor =
     .tooltiptext = Afficher la demande d’enregistrement du mot de passe
-urlbar-translated-notification-anchor =
-    .tooltiptext = Gérer la traduction de la page
 urlbar-plugins-notification-anchor =
     .tooltiptext = Gérer l’utilisation du plugin
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -218,10 +181,6 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
-    .label = Gérer l’extension…
-page-action-remove-extension =
-    .label = Supprimer l’extension
 page-action-manage-extension2 =
     .label = Gérer l’extension…
     .accesskey = G
@@ -320,6 +279,9 @@ quickactions-cmd-plugins = plugins
 # Opens the print dialog
 quickactions-print2 = Imprimer la page
 quickactions-cmd-print = imprimer
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = Enregistrer la page au format PDF
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Ouvrir une fenêtre de navigation privée
 quickactions-cmd-private = navigation privée
@@ -389,6 +351,7 @@ identity-connection-secure = Connexion sécurisée
 identity-connection-failure = Échec de connexion
 identity-connection-internal = Cette page de { -brand-short-name } est sécurisée.
 identity-connection-file = Cette page est stockée sur votre ordinateur.
+identity-connection-associated = Cette page a été chargée depuis une autre page.
 identity-extension-page = Cette page a été chargée depuis une extension.
 identity-active-blocked = { -brand-short-name } a bloqué des éléments non sécurisés sur cette page.
 identity-custom-root = Connexion vérifiée par un émetteur de certificat non reconnu par Mozilla.
@@ -398,6 +361,7 @@ identity-weak-encryption = Cette page utilise un faible niveau de chiffrement.
 identity-insecure-login-forms = Les identifiants saisis sur cette page pourraient être compromis.
 identity-https-only-connection-upgraded = (surclassée en HTTPS)
 identity-https-only-label = Mode HTTPS uniquement
+identity-https-only-label2 = Passer automatiquement ce site vers une connexion sécurisée
 identity-https-only-dropdown-on =
     .label = Activé
 identity-https-only-dropdown-off =
@@ -405,7 +369,9 @@ identity-https-only-dropdown-off =
 identity-https-only-dropdown-off-temporarily =
     .label = Désactivé temporairement
 identity-https-only-info-turn-on2 = Activez le mode « HTTPS uniquement » pour ce site si vous voulez que { -brand-short-name } sécurise la connexion lorsque c’est possible.
-identity-https-only-info-turn-off2 = Si la page ne semble pas fonctionnelle, vous pouvez désactiver le mode « HTTPS uniquement » pour  ce site afin de la recharger en utilisant le protocole non sécurisé HTTP.
+identity-https-only-info-turn-off2 = Si la page ne semble pas fonctionnelle, vous pouvez désactiver le mode « HTTPS uniquement » pour ce site afin de la recharger en utilisant le protocole non sécurisé HTTP.
+identity-https-only-info-turn-on3 = Activez les mises à niveau HTTPS pour ce site si vous voulez que { -brand-short-name } sécurise la connexion lorsque c’est possible.
+identity-https-only-info-turn-off3 = Si la page ne semble pas fonctionnelle, vous pouvez désactiver les mises à niveau HTTPS pour ce site afin de la recharger en utilisant le protocole non sécurisé HTTP.
 identity-https-only-info-no-upgrade = Impossible de sécuriser la connexion.
 identity-permissions-storage-access-header = Cookies intersites
 identity-permissions-storage-access-hint = Ces organismes peuvent utiliser des cookies intersites et les données du site tant que vous êtes sur ce site.
@@ -416,8 +382,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Votre connexion à ce site n’est pas sécurisée.
 identity-connection-verified = Votre connexion à ce site est sécurisée.
 identity-ev-owner-label = Certificat émis pour :
-identity-description-custom-root = Mozilla ne reconnaît pas cet émetteur de certificat. Il a peut-être été ajouté à partir de votre système d’exploitation ou par un administrateur. <label data-l10n-name="link">En savoir plus</label>
-identity-description-custom-root2 = Mozilla ne reconnaît pas cet émetteur de certificat. Il a peut-être été ajouté à partir de votre système d’exploitation ou par un administrateur.
+identity-description-custom-root2 = Ablaze ne reconnaît pas cet émetteur de certificat. Il a peut-être été ajouté à partir de votre système d’exploitation ou par un administrateur.
 identity-remove-cert-exception =
     .label = Supprimer l’exception
     .accesskey = S
@@ -425,17 +390,12 @@ identity-description-insecure = Votre connexion à ce site n’est pas privée. 
 identity-description-insecure-login-forms = Les informations d’identification que vous saisissez sur cette page ne sont pas sécurisées et pourraient être compromises.
 identity-description-weak-cipher-intro = Votre connexion à ce site web n’est pas privée et utilise un faible niveau de chiffrement.
 identity-description-weak-cipher-risk = D’autres personnes peuvent accéder à vos informations ou modifier le comportement du site web.
-identity-description-active-blocked = { -brand-short-name } a bloqué des éléments non sécurisés sur cette page. <label data-l10n-name="link">En savoir plus</label>
 identity-description-active-blocked2 = { -brand-short-name } a bloqué des éléments non sécurisés sur cette page.
 identity-description-passive-loaded = Votre connexion n’est pas privée et les informations que vous partagez avec ce site peuvent être visualisées par d’autres personnes.
-identity-description-passive-loaded-insecure = Ce site web possède du contenu non sécurisé (tel que des images). <label data-l10n-name="link">En savoir plus</label>
-identity-description-passive-loaded-mixed = Bien que { -brand-short-name } ait bloqué du contenu, il reste néanmoins des éléments non sécurisés sur la page (tels que des images). <label data-l10n-name="link">En savoir plus</label>
 identity-description-passive-loaded-insecure2 = Ce site web possède du contenu non sécurisé (tel que des images).
 identity-description-passive-loaded-mixed2 = Bien que { -brand-short-name } ait bloqué du contenu, il reste néanmoins des éléments non sécurisés sur la page (tels que des images).
 identity-description-active-loaded = Ce site web possède du contenu non sécurisé (tel que des scripts) et la connexion établie n’est pas privée.
 identity-description-active-loaded-insecure = Les informations que vous partagez avec ce site peuvent être visualisées par d’autres personnes (comme par exemple les mots de passe, les messages, les cartes bancaires, etc.).
-identity-learn-more =
-    .value = En savoir plus
 identity-disable-mixed-content-blocking =
     .label = Désactiver la protection pour l’instant
     .accesskey = D
@@ -515,13 +475,6 @@ popup-select-window-or-screen =
     .label = Fenêtre ou écran :
     .accesskey = F
 popup-all-windows-shared = L’ensemble des fenêtres visibles sur votre écran seront partagées.
-popup-screen-sharing-block =
-    .label = Bloquer
-    .accesskey = B
-popup-screen-sharing-always-block =
-    .label = Toujours bloquer
-    .accesskey = T
-popup-mute-notifications-checkbox = Désactiver les notifications du site web lors du partage
 
 ## WebRTC window or screen share tab switch warning
 
@@ -534,11 +487,13 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = Pour utiliser le raccourci F12, ouvrez d’abord les outils de développement via le menu Développement web.
 enable-devtools-popup-description2 = Pour vous servir du raccourci F12, commencez par ouvrir les outils de développement en passant par le menu « Outils supplémentaires ».
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = Fermer
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -615,6 +570,13 @@ urlbar-result-action-search-w-engine = Rechercher avec { $engine }
 urlbar-result-action-sponsored = Sponsorisé
 urlbar-result-action-switch-tab = Aller à l’onglet
 urlbar-result-action-visit = Consulter
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = Aller à l’onglet · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = Ouvrir l’adresse du presse-papiers
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -643,6 +605,12 @@ urlbar-result-action-copy-to-clipboard = Copier
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = Rechercher avec { $engine }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -654,7 +622,7 @@ urlbar-result-action-search-actions = Actions de recherche
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -667,6 +635,26 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = Actions rapides
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = Recherches récentes
+# The header shown above trending results.
+# Variables:
+#  $engine (String): the name of the search engine providing the trending suggestions
+urlbar-group-trending =
+    .label = Populaire sur { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show =
+    .label = Ne pas afficher les recherches populaires
+    .accesskey = N
+urlbar-result-menu-trending-why =
+    .label = Pourquoi ce résultat s’affiche-t-il ?
+    .accesskey = P
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-trending-dismissal-acknowledgment = Merci de votre retour. Vous ne verrez plus apparaître de recherches populaires.
 
 ## Reader View toolbar buttons
 
@@ -706,19 +694,6 @@ fullscreen-exit-mac-button = Quitter le mode plein écran (« esc »)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
 pointerlock-warning-no-domain = Ce document contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>Une partie de cette page a planté.</strong> Pour informer { -brand-product-name } de ce problème et le résoudre plus rapidement, veuillez envoyer un rapport.
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = Une partie de cette page a planté. Pour informer { -brand-product-name } de ce problème et le résoudre plus rapidement, veuillez envoyer un rapport.
-crashed-subframe-learnmore-link =
-    .value = En savoir plus
-crashed-subframe-submit =
-    .label = Envoyer un rapport
-    .accesskey = r
 
 ## Bookmarks panels, menus and toolbar
 
@@ -771,8 +746,6 @@ bookmarks-search =
     .label = Rechercher dans les marque-pages
 bookmarks-tools =
     .label = Outils de marque-pages
-bookmarks-bookmark-edit-panel =
-    .label = Modifier ce marque-page
 bookmarks-subview-edit-bookmark =
     .label = Modifier ce marque-page…
 # The aria-label is a spoken label that should not include the word "toolbar" or
@@ -788,9 +761,6 @@ bookmarks-toolbar-placeholder =
     .title = Éléments de la barre personnelle
 bookmarks-toolbar-placeholder-button =
     .label = Éléments de la barre personnelle
-# "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = Marquer l’onglet courant
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-subview-bookmark-tab =
     .label = Marquer l’onglet courant…
@@ -816,11 +786,6 @@ repair-text-encoding-button =
 
 ## Customize Toolbar Buttons
 
-# Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = Extensions et thèmes
-    .tooltiptext = Gérer vos extensions et thèmes ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -870,13 +835,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = n
 
 panel-save-update-username = Nom d’utilisateur
 panel-save-update-password = Mot de passe
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = Supprimer { $name } ?
-addon-removal-abuse-report-checkbox = Signaler cette extension à { -vendor-short-name }
 
 ##
 
@@ -945,8 +903,6 @@ navbar-library =
     .tooltiptext = Consulter l’historique, les marque-pages enregistrés et plus encore
 navbar-search =
     .title = Rechercher
-navbar-accessibility-indicator =
-    .tooltiptext = Fonctionnalités d’accessibilité activées
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -964,6 +920,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Rouvrir les onglets précédents ?</strong> Vous pouvez restaurer votre session précédente depuis le menu de l’application { -brand-short-name } <img data-l10n-name="icon"/>, sous Historique.
 restore-session-startup-suggestion-button = Comment faire
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = Votre organisation a bloqué l’accès aux fichiers locaux sur cet ordinateur
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } envoie automatiquement certaines informations à { -vendor-short-name } afin que nous puissions améliorer votre navigation.
@@ -972,6 +932,15 @@ data-reporting-notification-button =
     .accesskey = C
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Navigation privée
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = Protection contre la perte de données (DLP) par { $agentName }. Cliquer pour plus d’informations.
+content-analysis-panel-title = Protection des données
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = Votre organisation utilise { $agentName } pour se protéger contre la perte de données. <a data-l10n-name="info">En savoir plus</a>
 
 ## Unified extensions (toolbar) button
 
@@ -997,6 +966,24 @@ unified-extensions-button-quarantined =
         Extensions
         Certaines extensions ne sont pas autorisées
 
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = Mettre fin à la session privée
+    .tooltiptext = Mettre fin à la session privée
+reset-pbm-panel-heading = Mettre fin à votre session privée ?
+reset-pbm-panel-description = Fermer tous les onglets privés et supprimer l’historique, les cookies et toutes les autres données des sites.
+reset-pbm-panel-always-ask-checkbox =
+    .label = Toujours me demander
+    .accesskey = T
+reset-pbm-panel-cancel-button =
+    .label = Annuler
+    .accesskey = A
+reset-pbm-panel-confirm-button =
+    .label = Supprimer les données de la session
+    .accesskey = S
+reset-pbm-panel-complete = Données de session privée supprimées
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } a empêché le rechargement automatique de cette page.
@@ -1006,15 +993,6 @@ refresh-blocked-allow =
     .accesskey = A
 
 ## Firefox Relay integration
-
-firefox-relay-offer-why-relay = { -relay-brand-name } masque votre véritable adresse e-mail pour vous protéger des fuites de données et du courrier indésirable.
-firefox-relay-offer-how-we-integrate = En poursuivant, vous pourrez générer de nouveaux alias de messagerie de { -relay-brand-short-name } directement depuis le gestionnaire de mots de passe de { -brand-shorter-name }.
-# Variables:
-#  $sitename (String): name of the site where user enters their Relay mask
-#  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-does = Nous transférerons tous les e-mails de <strong>{ $sitename }</strong> vers <strong>{ $useremail }</strong>.
-
-## Popup Notification
 
 firefox-relay-offer-why-to-use-relay = Nos alias sécurisés et faciles à utiliser protègent votre identité et bloquent le spam en masquant votre adresse e-mail.
 # Variables:
@@ -1027,6 +1005,10 @@ firefox-relay-offer-legal-notice = En cliquant sur « Utiliser les alias de mes
 popup-notification-addon-install-unsigned =
     .value = (Non vérifié)
 popup-notification-xpinstall-prompt-learn-more = En apprendre plus sur l’installation des modules complémentaires en toute sécurité
+# Note: Access key is set to P to match "Private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox =
+    .label = Exécution dans les fenêtres privées
+    .accesskey = p
 
 ## Pop-up warning
 

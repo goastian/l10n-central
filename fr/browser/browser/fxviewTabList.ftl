@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = Ouvrir { $targetURI } dans un nouvel onglet
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = Fermer { $tabTitle }
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = Fermer { $tabTitle }
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = Enregistrer dans { -pocket-brand-name }
     .accesskey = E
 fxviewtabrow-copy-link = Copier le lien
     .accesskey = C
+fxviewtabrow-close-tab = Fermer l’onglet
+    .accesskey = F
+fxviewtabrow-move-tab = Déplacer l’onglet
+    .accesskey = D
+fxviewtabrow-move-tab-start = Déplacer vers le début
+    .accesskey = r
+fxviewtabrow-move-tab-end = Déplacer vers la fin
+    .accesskey = f
+fxviewtabrow-move-tab-window = Déplacer vers une nouvelle fenêtre
+    .accesskey = v
+fxviewtabrow-send-tab = Envoyer l’onglet à un appareil
+    .accesskey = E
+fxviewtabrow-pin-tab = Épingler l’onglet
+    .accesskey = o
+fxviewtabrow-unpin-tab = Désépingler l’onglet
+    .accesskey = o
+fxviewtabrow-mute-tab = Couper le son de l’onglet
+    .accesskey = u
+fxviewtabrow-unmute-tab = Réactiver le son de l’onglet
+    .accesskey = R
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Options pour { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = Couper le son de { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = Réactiver le son de { $tabTitle }
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Couper le son de l’onglet
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Réactiver le son de l’onglet

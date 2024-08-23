@@ -74,13 +74,13 @@ mobile-app-title = Blokování sledujících reklam napříč zařízeními
 mobile-app-card-content = Používejte mobilní prohlížeč s vestavěnou ochranou proti sledujícím reklamám.
 mobile-app-links = Prohlížeč { -brand-product-name } pro <a data-l10n-name="android-mobile-inline-link">Android</a> a <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Už žádná zapomenutá hesla
-passwords-title-logged-in = Správa přihlašovacích údajů
-passwords-header-content = { -brand-product-name } bezpečně ukládá přihlašovací údaje ve vašem prohlížeči.
+passwords-title-logged-in = Správa hesel
+passwords-header-content = { -brand-product-name } bezpečně ukládá hesla ve vašem prohlížeči.
 lockwise-header-content-logged-in = Bezpečně uchovává a synchronizuje vaše hesla na všech vašich zařízeních.
-protection-report-passwords-save-passwords-button = Ukládat přihlašovací údaje
-    .title = Ukládat přihlašovací údaje
-protection-report-passwords-manage-passwords-button = Správa přihlašovacích údajů
-    .title = Správa přihlašovacích údajů
+protection-report-passwords-save-passwords-button = Ukládat hesla
+    .title = Ukládat hesla
+protection-report-passwords-manage-passwords-button = Správa hesel
+    .title = Správa hesel
 # Variables:
 # $count (Number) - Number of passwords exposed in data breaches.
 lockwise-scanned-text-breached-logins =

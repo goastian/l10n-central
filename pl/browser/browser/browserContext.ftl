@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Konto
+    .tooltiptext = Konto
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Dodaj zakładkę do tej strony
-    .accesskey = D
-    .tooltiptext = Dodaj zakładkę do tej strony
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Dodaj zakładkę do tej strony
-    .accesskey = D
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Edytuj zakładkę
-    .accesskey = d
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Dodaj zakładkę do tej strony
-    .accesskey = D
-    .tooltiptext = Dodaj zakładkę do tej strony ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Edytuj tę zakładkę
-    .accesskey = d
-    .tooltiptext = Edytuj tę zakładkę
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Edytuj tę zakładkę
-    .accesskey = d
-    .tooltiptext = Edytuj tę zakładkę ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Dodaj zakładkę do tej strony…
     .accesskey = D
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Otwórz odnośnik w nowym oknie w trybie prywatnym
     .accesskey = w
-main-context-menu-bookmark-link =
-    .label = Dodaj zakładkę do tego odnośnika
-    .accesskey = D
 main-context-menu-bookmark-link-2 =
     .label = Dodaj zakładkę do tego odnośnika…
     .accesskey = D
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Kopiuj odnośnik
     .accesskey = o
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Kopiuj odnośnik bez elementów śledzących
+    .accesskey = b
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Wyślij dźwięk…
     .accesskey = d
-main-context-menu-plugin-play =
-    .label = Aktywuj tę wtyczkę
-    .accesskey = w
-main-context-menu-plugin-hide =
-    .label = Ukryj tę wtyczkę
-    .accesskey = U
 main-context-menu-save-to-pocket =
     .label = Wyślij stronę do { -pocket-brand-name }
     .accesskey = l
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Użyj zachowanych danych logowania
     .accesskey = U
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Użyj zachowanego hasła
     .accesskey = U
@@ -342,6 +313,9 @@ main-context-menu-suggest-strong-password =
 main-context-menu-manage-logins2 =
     .label = Zarządzaj danymi logowania
     .accesskey = d
+main-context-menu-manage-passwords =
+    .label = Zarządzaj hasłami
+    .accesskey = h
 main-context-menu-keyword =
     .label = Utwórz słowo kluczowe dla tej wyszukiwarki…
     .accesskey = U
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Odśwież ramkę
     .accesskey = O
-main-context-menu-frame-bookmark =
-    .label = Dodaj zakładkę do tej ramki
-    .accesskey = D
 main-context-menu-frame-add-bookmark =
     .label = Dodaj zakładkę do ramki…
     .accesskey = D
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Pokaż informacje o ramce
     .accesskey = i
-main-context-menu-print-selection =
-    .label = Drukuj tylko zaznaczenie
-    .accesskey = u
 main-context-menu-print-selection-2 =
     .label = Drukuj tylko zaznaczenie…
     .accesskey = u

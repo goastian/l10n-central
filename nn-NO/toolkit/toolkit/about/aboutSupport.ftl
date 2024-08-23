@@ -15,6 +15,10 @@ support-addons-type = Type
 support-addons-enabled = Slått på
 support-addons-version = Versjon
 support-addons-id = ID
+legacy-user-stylesheets-title = Eldre brukar-stilsett
+legacy-user-stylesheets-enabled = Aktiv
+legacy-user-stylesheets-stylesheet-types = Stilsett
+legacy-user-stylesheets-no-stylesheets-found = Fann ingen stilsett
 security-software-title = Sikkerheitsprogram
 security-software-type = Type
 security-software-name = Namn
@@ -70,10 +74,11 @@ app-basics-remote-processes-count = Fjernprosessar
 app-basics-enterprise-policies = Bedriftspolitikk
 app-basics-location-service-key-google = Google Location Service-nøkkel
 app-basics-safebrowsing-key-google = Google Safebrowsing-nøkkel
-app-basics-key-mozilla = Mozilla Location Service-nykel
+app-basics-key-mozilla = Ablaze Location Service-nykel
 app-basics-safe-mode = Trygg modus
 app-basics-memory-size = Minnestorleik (RAM)
 app-basics-disk-available = Tilgjengeleg diskplass
+app-basics-pointing-devices = Peike-einingar
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -179,6 +184,25 @@ media-codec-support-hw-decoding = Maskinvaredekoding
 media-codec-support-codec-name = Kodeknamn
 media-codec-support-supported = Støtta
 media-codec-support-unsupported = Ikkje støtta
+media-codec-support-error = Kodek-støtteinformasjon utilgjengeleg. Prøv på nytt etter å ha spelt av ei mediefil.
+media-codec-support-lack-of-extension = Installer utviding
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informasjon om innhaldsdekrypteringsmodular
+media-key-system-name = Nøkkelsystemnamn
+media-video-robustness = Videorobustheit
+media-audio-robustness = Lydrobustheit
+media-cdm-capabilities = Eigenskapar
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Fri start
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2-kompatibel
 
 ##
 
@@ -258,6 +282,7 @@ try-newer-driver = Blokkert av grafikkdrivaren. Prøv å oppdatera grafikkdrivar
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType-parameter
 compositing = Kompositt
+support-font-determination = Feilsøkingsinformasjon for skriftsynlegheit
 hardware-h264 = H264 hardvaredekodning
 main-thread-no-omtc = hovudtråd, ingen OMTC
 yes = Ja
@@ -387,6 +412,20 @@ support-printing-modified-settings = Endra utskriftsinnstillingar
 support-printing-prefs-name = Namn
 support-printing-prefs-value = Verdi
 
+## Remote Settings sections
+
+support-remote-settings-title = Fjerninnstillingar
+support-remote-settings-status = Status
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Fungerer ikkje
+support-remote-settings-last-check = Siste sjekk
+support-remote-settings-local-timestamp = Lokalt tidsstempel
+support-remote-settings-sync-history = Historikk
+support-remote-settings-sync-history-status = Status
+support-remote-settings-sync-history-datetime = Dato
+support-remote-settings-sync-history-infos = Info
+
 ## Normandy sections
 
 support-remote-experiments-title = Eksterne eksperiment
@@ -396,3 +435,22 @@ support-remote-experiments-see-about-studies = Sjå <a data-l10n-name="support-a
 support-remote-features-title = Eksterne funksjonar
 support-remote-features-name = Namn
 support-remote-features-status = Status
+
+## Pointing devices
+
+pointing-device-mouse = Mus
+pointing-device-touchscreen = Berøringsskjerm
+pointing-device-pen-digitizer = Digitalpenn
+pointing-device-none = Inga peikeeining
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Innhaldsanalyse (DLP)
+content-analysis-active = Aktiv
+content-analysis-connected-to-agent = Tilkopla til agent
+content-analysis-agent-path = Sti til agent
+content-analysis-agent-failed-signature-verification = Agenten klarte ikkje å verifisere signaturen
+content-analysis-request-count = Antal førespurnadar

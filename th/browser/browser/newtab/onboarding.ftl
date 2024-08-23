@@ -14,13 +14,6 @@ onboarding-welcome-header = ยินดีต้อนรับสู่ { -bra
 onboarding-start-browsing-button-label = เริ่มการเรียกดู
 onboarding-not-now-button-label = ไม่ใช่ตอนนี้
 mr1-onboarding-get-started-primary-button-label = เริ่มต้น
-mr1-onboarding-welcome-header = ยินดีต้อนรับสู่ { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = ทำให้ { -brand-short-name } เป็นเบราว์เซอร์หลักของฉัน
-    .title = ตั้ง { -brand-short-name } เป็นเบราว์เซอร์หลักและปักหมุดเข้ากับแถบงาน
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = ทำให้ { -brand-short-name } เป็นเบราว์เซอร์เริ่มต้นของฉัน
-mr1-onboarding-set-default-secondary-button-label = ไม่ใช่ตอนนี้
 
 ## Custom Return To AMO onboarding strings
 
@@ -31,7 +24,7 @@ return-to-amo-subtitle = เยี่ยม คุณได้ติดตั้
 #   $addon-name (String) - Name of the add-on
 return-to-amo-addon-title = ตอนนี้มาติดตั้ง <img data-l10n-name="icon"/> <b>{ $addon-name }</b> กันเลย
 return-to-amo-add-extension-label = เพิ่มส่วนขยาย
-return-to-amo-add-theme-label = เพิ่มชุดรูปแบบ
+return-to-amo-add-theme-label = เพิ่มชุดตกแต่ง
 
 ##  Variables: $addon-name (String) - Name of the add-on to be installed
 
@@ -41,27 +34,6 @@ mr1-return-to-amo-add-extension-label = เพิ่ม { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = เริ่มต้นใช้งาน: หน้าจอ { $current } จาก { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text =
-    ทุกอย่างเริ่มจาก
-    ที่นี่
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — นักออกแบบเฟอร์นิเจอร์ แฟน Firefox
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -72,66 +44,20 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = ความคืบหน้า: ขั้นตอนที่ { $current } จาก { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = ปิดภาพเคลื่อนไหว
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] เก็บ { -brand-short-name } ไว้ใน Dock ของคุณเพื่อให้เข้าถึงได้อย่างง่ายดาย
-       *[other] ปักหมุด { -brand-short-name } เข้ากับแถบงานของคุณเพื่อให้เข้าถึงได้อย่างง่ายดาย
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] เก็บไว้ใน Dock
-       *[other] ปักหมุดเข้ากับแถบงาน
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = ลงชื่อเข้า
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = ทำให้ { -brand-short-name } เป็นค่าเริ่มต้นของคุณ
-mr1-onboarding-default-subtitle = พบกับความเร็ว ความปลอดภัย และความเป็นส่วนตัวแบบอัตโนมัติ
-mr1-onboarding-default-primary-button-label = ทำให้เป็นเบราว์เซอร์เริ่มต้น
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = นำทุกอย่างติดตัวไปด้วย
-mr1-onboarding-import-subtitle = นำเข้ารหัสผ่าน <br/>ที่คั่นหน้า และอื่น ๆ ของคุณ
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = นำเข้าจาก { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = นำเข้าจากเบราว์เซอร์ก่อนหน้า
-mr1-onboarding-import-secondary-button-label = ไม่ใช่ตอนนี้
-mr2-onboarding-colorway-header = Life in color
-mr2-onboarding-colorway-subtitle = ชุดรูปแบบสีใหม่ที่สดใส มีให้ใช้ในช่วงเวลาจำกัด
-mr2-onboarding-colorway-primary-button-label = บันทึกชุดรูปแบบสี
-mr2-onboarding-colorway-secondary-button-label = ไม่ใช่ตอนนี้
-mr2-onboarding-colorway-label-soft = Soft
-mr2-onboarding-colorway-label-balanced = Balanced
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Bold
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = อัตโนมัติ
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = ค่าเริ่มต้น
 mr1-onboarding-theme-header = ทำให้เป็นของคุณเอง
-mr1-onboarding-theme-subtitle = ปรับแต่ง { -brand-short-name } ด้วยชุดรูปแบบ
-mr1-onboarding-theme-primary-button-label = บันทึกชุดรูปแบบ
+mr1-onboarding-theme-subtitle = ปรับแต่ง { -brand-short-name } ด้วยชุดตกแต่ง
 mr1-onboarding-theme-secondary-button-label = ไม่ใช่ตอนนี้
+newtab-wallpaper-onboarding-title = ลองเลือกสีสันที่คุณชอบ
+newtab-wallpaper-onboarding-subtitle = เลือกรูปพื้นหลังเพื่อให้แท็บใหม่ของคุณดูสดใหม่
+newtab-wallpaper-onboarding-primary-button-label = ตั้งค่ารูปพื้นหลัง
 # System theme uses operating system color settings
-mr1-onboarding-theme-label-system = ชุดรูปแบบของระบบ
+mr1-onboarding-theme-label-system = ชุดตกแต่งของระบบ
 mr1-onboarding-theme-label-light = สว่าง
 mr1-onboarding-theme-label-dark = มืด
 # "Alpenglow" here is the name of the theme, and should be kept in English.
@@ -146,79 +72,51 @@ onboarding-theme-primary-button-label = เสร็จสิ้น
 # Tooltip displayed on hover of system theme
 mr1-onboarding-theme-tooltip-system =
     .title =
-        ใช้ธีมสำหรับปุ่ม เมนู และหน้าต่าง
+        ใช้ชุดตกแต่งสำหรับปุ่ม เมนู และหน้าต่าง
         ตามระบบปฏิบัติการ
 # Input description for system theme
 mr1-onboarding-theme-description-system =
     .aria-description =
-        ใช้ธีมสำหรับปุ่ม เมนู และหน้าต่าง
+        ใช้ชุดตกแต่งสำหรับปุ่ม เมนู และหน้าต่าง
         ตามระบบปฏิบัติการ
 # Tooltip displayed on hover of light theme
 mr1-onboarding-theme-tooltip-light =
     .title =
-        ใช้ธีมแบบสว่างสำหรับปุ่ม
+        ใช้ชุดตกแต่งแบบสว่างสำหรับปุ่ม
         เมนู และหน้าต่าง
 # Input description for light theme
 mr1-onboarding-theme-description-light =
     .aria-description =
-        ใช้ธีมแบบสว่างสำหรับปุ่ม
+        ใช้ชุดตกแต่งแบบสว่างสำหรับปุ่ม
         เมนู และหน้าต่าง
 # Tooltip displayed on hover of dark theme
 mr1-onboarding-theme-tooltip-dark =
     .title =
-        ใช้ธีมแบบมืดสำหรับปุ่ม
+        ใช้ชุดตกแต่งแบบมืดสำหรับปุ่ม
         เมนู และหน้าต่าง
 # Input description for dark theme
 mr1-onboarding-theme-description-dark =
     .aria-description =
-        ใช้ธีมแบบมืดสำหรับปุ่ม
+        ใช้ชุดตกแต่งแบบมืดสำหรับปุ่ม
         เมนู และหน้าต่าง
 # Tooltip displayed on hover of Alpenglow theme
 mr1-onboarding-theme-tooltip-alpenglow =
     .title =
-        ใช้ธีมแบบไดนามิกที่มีสีสันสำหรับปุ่ม
+        ใช้ชุดตกแต่งสีสันสดใสสำหรับปุ่ม
         เมนู และหน้าต่าง
 # Input description for Alpenglow theme
 mr1-onboarding-theme-description-alpenglow =
     .aria-description =
-        ใช้ธีมแบบไดนามิกที่มีสีสันสำหรับปุ่ม
+        ใช้ชุดตกแต่งสีสันสดใสสำหรับปุ่ม
         เมนู และหน้าต่าง
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = ใช้ชุดรูปแบบสีนี้
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = ใช้ชุดรูปแบบสีนี้
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = สำรวจชุดรูปแบบสี { $colorwayName }
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = สำรวจชุดรูปแบบสี { $colorwayName }
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = สำรวจชุดรูปแบบเริ่มต้น
 # Selector description for default themes
-mr2-onboarding-default-theme-label = สำรวจชุดรูปแบบเริ่มต้น
+mr2-onboarding-default-theme-label = สำรวจชุดตกแต่งเริ่มต้น
 
 ## Strings for Thank You page
 
 mr2-onboarding-thank-you-header = ขอบคุณที่เลือกเรา
 mr2-onboarding-thank-you-text = { -brand-short-name } เป็นเบราว์เซอร์อิสระที่สนับสนุนโดยองค์กรไม่แสวงหาผลกำไร เรากำลังร่วมกันทำให้เว็บปลอดภัยขึ้น แข็งแกร่งขึ้น และเป็นส่วนตัวมากขึ้น
 mr2-onboarding-start-browsing-button-label = เริ่มการเรียกดู
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -435,4 +333,36 @@ onboarding-device-migration-image-alt =
     .aria-label = สุนัขจิ้งจอกบนหน้าจอคอมพิวเตอร์แล็ปท็อปโบกมือ แล็ปท็อปมีเมาส์เสียบอยู่
 onboarding-device-migration-title = ยินดีต้อนรับกลับมา!
 onboarding-device-migration-subtitle = ลงชื่อเข้าใช้ { -fxaccount-brand-name(capitalization: "sentence") } ของคุณเพื่อนำที่คั่นหน้า รหัสผ่าน และประวัติติดตัวไปด้วยบนอุปกรณ์เครื่องใหม่ของคุณ
+onboarding-device-migration-subtitle2 = ลงชื่อเข้าใช้บัญชีของคุณเพื่อนำที่คั่นหน้า รหัสผ่าน และประวัติไปกับคุณบนอุปกรณ์เครื่องใหม่ของคุณ
 onboarding-device-migration-primary-button-label = ลงชื่อเข้า
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = เรารักที่จะดูแลคุณให้ปลอดภัย
+onboarding-easy-setup-security-and-privacy-subtitle = เบราว์เซอร์ที่สนับสนุนโดยองค์กรไม่แสวงหาผลกำไรของเราจะช่วยหยุดบริษัทต่างๆ ไม่ให้แอบติดตามคุณทางเว็บได้
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = คงการเข้ารหัสเมื่อคุณเปลี่ยนจากอุปกรณ์เครื่องหนึ่งไปยังอีกเครื่องหนึ่ง
+onboarding-mobile-download-security-and-privacy-subtitle = เมื่อคุณซิงค์แล้ว { -brand-short-name } จะเข้ารหัสรหัสผ่าน ที่คั่นหน้า และอื่นๆ ของคุณ นอกจากนี้คุณยังสามารถดึงแท็บจากอุปกรณ์อื่นๆ ของคุณเข้ามาได้อีกด้วย
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } พร้อมดูแลคุณ
+onboarding-gratitude-security-and-privacy-subtitle = ขอบคุณที่ใช้ { -brand-short-name } ซึ่งสนับสนุนโดย Mozilla Foundation ด้วยการสนับสนุนของคุณ เรากำลังทำงานเพื่อให้อินเทอร์เน็ตปลอดภัยและเข้าถึงได้มากยิ่งขึ้นสำหรับทุกคน
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = คุณใช้ { -brand-short-name } มานานเท่าไรแล้ว?
+onboarding-new-user-familiarity-based-survey-title = คุณคุ้นเคยกับ { -brand-short-name } แค่ไหน?
+onboarding-new-user-survey-subtitle = คำติชมของคุณช่วยทำให้ { -brand-short-name } ดียิ่งขึ้นไปอีก
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = ถัดไป
+onboarding-new-user-survey-legal-link-label = การเลือก “{ onboarding-new-user-survey-next-button-label }” แสดงว่าคุณยอมรับ<a data-l10n-name="privacy_notice">ประกาศความเป็นส่วนตัว</a>ของ { -brand-product-name }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = ฉันเพิ่งเริ่มใช้
+onboarding-new-user-survey-time-based-option-2 = น้อยกว่า 1 เดือน
+onboarding-new-user-survey-time-based-option-3 = มากกว่า 1 เดือน ใช้เป็นประจำ
+onboarding-new-user-survey-time-based-option-4 = มากกว่า 1 เดือน ใช้เป็นบางครั้ง
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = ฉันเพิ่งเริ่มใช้
+onboarding-new-user-survey-familiarity-based-option-2 = ฉันใช้มาบ้างแล้ว
+onboarding-new-user-survey-familiarity-based-option-3 = ฉันคุ้นเคยมาก
+onboarding-new-user-survey-familiarity-based-option-4 = ฉันเคยใช้ในอดีต แต่ก็ผ่านไปนานแล้ว

@@ -4,15 +4,18 @@
 
 tabbrowser-empty-tab-title = Nuova scheda
 tabbrowser-empty-private-tab-title = Nuova scheda anonima
+
 tabbrowser-menuitem-close-tab =
     .label = Chiudi scheda
 tabbrowser-menuitem-close =
     .label = Chiudi
+
 # Displayed as a tooltip on container tabs
 # Variables:
 #   $title (String): the title of the current tab.
 #   $containerName (String): the name of the current container.
 tabbrowser-container-tab-title = { $title } – { $containerName }
+
 # Variables:
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
@@ -111,12 +114,22 @@ tabbrowser-confirm-caretbrowsing-title = Navigazione nel testo
 tabbrowser-confirm-caretbrowsing-message = Premendo il tasto F7 è possibile attivare o disattivare la Navigazione nel testo. Questa funzione visualizza un cursore all’interno della pagina web e consente la selezione del testo attraverso la tastiera. Attivare la Navigazione nel testo?
 tabbrowser-confirm-caretbrowsing-checkbox = Non visualizzare questo avviso in futuro.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Attenzione
+tabbrowser-confirm-close-duplicate-tabs-text = La scheda con attività più recente rimarrà aperta
+
+tabbrowser-confirm-close-all-duplicate-tabs-title = Chiudere le schede duplicate?
+tabbrowser-confirm-close-all-duplicate-tabs-text = Le schede duplicate in questa finestra verranno chiuse. La scheda con attività più recente rimarrà aperta.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Chiudi schede
+
 ##
 
 # Variables:
 #   $domain (String): URL of the page that is trying to steal focus.
 tabbrowser-allow-dialogs-to-get-focus =
     .label = Consenti a notifiche da { $domain } come questa di portarti alla relativa scheda
+
 tabbrowser-customizemode-tab-title = Personalizza { -brand-short-name }
 
 ## Context menu buttons, of which only one will be visible at a time
@@ -135,6 +148,7 @@ tabbrowser-context-mute-selected-tabs =
 tabbrowser-context-unmute-selected-tabs =
     .label = Attiva audio nelle schede
     .accesskey = v
+
 # This string is used as an additional tooltip and accessibility description for tabs playing audio
 tabbrowser-tab-audio-playing-description = Riproduzione audio
 
@@ -153,3 +167,4 @@ tabbrowser-manager-unmute-tab =
   .tooltiptext = Attiva audio nella scheda
 tabbrowser-manager-close-tab =
   .tooltiptext = Chiudi scheda
+

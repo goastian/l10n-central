@@ -46,3 +46,56 @@ screenshots-generic-error-title = Oj! { -screenshots-brand-name } verkar inte fu
 screenshots-generic-error-details = Vi är inte säkra på vad som just hände. Kan du försöka igen eller ta en bild på en annan sida?
 screenshots-too-large-error-title = Din skärmdump har beskurits eftersom den var för stor
 screenshots-too-large-error-details = Prova att välja ett område som är mindre än 32 700 pixlar på sin längsta sida eller 124 900 000 pixlar total yta.
+screenshots-component-retry-button =
+    .title = Försök ta skärmdump igen
+    .aria-label = Försök ta skärmdump igen
+screenshots-component-cancel-button =
+    .title =
+        { PLATFORM() ->
+            [macos] Avbryt (esc)
+           *[other] Avbryt (Esc)
+        }
+    .aria-label = Avbryt
+# Variables
+#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
+screenshots-component-copy-button =
+    .title = Kopiera ({ $shortcut })
+    .aria-label = Kopiera
+screenshots-component-copy-button-label = Kopiera
+# Variables
+#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
+screenshots-component-download-button =
+    .title = Hämta ({ $shortcut })
+    .aria-label = Hämta
+screenshots-component-download-button-label = Hämta
+# Variables
+#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
+screenshots-component-copy-button-2 = Kopiera
+    .title = Kopiera ({ $shortcut })
+    .aria-label = Kopiera
+# Variables
+#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
+screenshots-component-download-button-2 = Hämta
+    .title = Hämta ({ $shortcut })
+    .aria-label = Hämta
+
+## The below strings are used to capture keydown events so the strings should
+## not be changed unless the keyboard layout in the locale requires it.
+
+screenshots-component-download-key = S
+screenshots-component-copy-key = C
+
+##
+
+# This string represents the selection size area
+# "x" here represents "by" (i.e 123 by 456)
+# Variables:
+#   $width (Number) - The width of the selection region in pixels
+#   $height (Number) - The height of the selection region in pixels
+screenshots-overlay-selection-region-size-2 = { $width } x { $height }
+# This string represents the selection size area
+# "×" here represents "by" (i.e 123 by 456)
+# Variables:
+#   $width (Number) - The width of the selection region in pixels
+#   $height (Number) - The height of the selection region in pixels
+screenshots-overlay-selection-region-size-3 = { $width } × { $height }

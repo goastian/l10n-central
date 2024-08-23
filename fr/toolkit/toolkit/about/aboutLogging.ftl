@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Activer les traces d’appels pour
 
 about-logging-preset-networking-label = Réseau
 about-logging-preset-networking-description = Modules de journalisation pour diagnostiquer les problèmes de réseau
+about-logging-preset-networking-cookie-label = Cookies
+about-logging-preset-networking-cookie-description = Modules de journalisation pour diagnostiquer les problèmes de cookies
+about-logging-preset-networking-websocket-label = WebSocket
+about-logging-preset-networking-websocket-description = Modules de journalisation pour diagnostiquer les problèmes de WebSocket
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Modules de journalisation pour diagnostiquer les problèmes d’HTTP/3 et QUIC
+about-logging-preset-networking-http3-upload-speed-label = Vitesse d’envoi HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Modules de journalisation pour diagnostiquer les problèmes de vitesse d’envoi HTTP/3
 about-logging-preset-media-playback-label = Lecture multimédia
 about-logging-preset-media-playback-description = Modules de journalisation pour diagnostiquer les problèmes de lecture multimédia (mais non ceux de visioconférence)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Modules de journalisation pour diagnostiquer les appels WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Modules de journalisation pour diagnostiquer les problèmes de WebGPU
+about-logging-preset-gfx-label = Accélération graphique
+about-logging-preset-gfx-description = Modules de journalisation pour diagnostiquer les problèmes d’accélération graphique
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Modules de journalisation pour diagnostiquer les problèmes spécifiques à Microsoft Windows
 about-logging-preset-custom-label = Personnalisé
 about-logging-preset-custom-description = Modules de journalisation sélectionnés manuellement
 # Error handling

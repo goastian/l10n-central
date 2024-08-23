@@ -20,7 +20,6 @@ styleeditor-save-button = 保存
     .accesskey = S
 styleeditor-options-button =
     .tooltiptext = スタイルエディターのオプション
-styleeditor-media-rules = メディアクエリー
 styleeditor-at-rules = @ 規則
 styleeditor-editor-textbox =
     .data-placeholder = ここに CSS を入力します。
@@ -45,3 +44,9 @@ styleeditor-stylesheet-all-filtered = 一致するスタイルシートが見つ
 # Variables:
 #   $ruleCount (Integer) - The number of rules in the stylesheet.
 styleeditor-stylesheet-rule-count = { $ruleCount } 個のルール
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = スタイルシートを整形します
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = CSS ファイル以外は整形できません

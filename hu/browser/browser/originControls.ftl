@@ -12,6 +12,10 @@ origin-controls-no-access =
     .label = A kiegészítő nem tud adatokat olvasni és módosítani
 origin-controls-quarantined =
     .label = A kiegészítő nem olvashatja és módosíthatja az adatokat
+origin-controls-quarantined-status =
+    .label = A kiegészítő nem engedélyezett a korlátozott webhelyeken
+origin-controls-quarantined-allow =
+    .label = Engedélyezés a korlátozott webhelyeken
 origin-controls-options =
     .label = A kiegészítő képes adatokat olvasni és módosítani
 origin-controls-option-all-domains =
@@ -51,3 +55,10 @@ origin-controls-toolbar-button-permission-needed =
     .tooltiptext =
         { $extensionTitle }
         Jogosultság szükséges
+# Extension's toolbar button when quarantined.
+# Note that the new line is intentionally part of the tooltip.
+origin-controls-toolbar-button-quarantined =
+    .label = { $extensionTitle }
+    .tooltiptext =
+        { $extensionTitle }
+        A { -vendor-short-name } nem engedélyezi ezen a webhelyen

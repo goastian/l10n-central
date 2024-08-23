@@ -33,6 +33,8 @@ appmenuitem-print =
     .label = Afdrukken…
 appmenuitem-find-in-page =
     .label = Zoeken op pagina…
+appmenuitem-translate =
+    .label = Pagina vertalen…
 appmenuitem-zoom =
     .value = Zoomen
 appmenuitem-more-tools =
@@ -75,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Meer tabbladen tonen
     .tooltiptext = Meer tabbladen van dit apparaat tonen
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Inactieve tabbladen
+    .tooltiptext = Inactieve tabbladen op dit apparaat bekijken
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Geen open tabbladen
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -92,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Nu synchroniseren
 appmenuitem-fxa-sign-in = Aanmelden bij { -brand-product-name }
 appmenuitem-fxa-manage-account = Account beheren
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Account
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -126,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Profiler
     .tooltiptext = De profiler neemt een profiel op
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Meer informatie onthullen
@@ -164,7 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
+# Please take care that the same values are also defined in devtools' perftools.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Aanbevolen voorinstelling voor de meeste foutopsporing in web-apps, met lage overhead.
@@ -186,6 +196,9 @@ profiler-popup-presets-power-description = Voorinstelling voor het onderzoeken v
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Vermogen
+profiler-popup-presets-debug-description = Voorinstelling voor debugging in { -brand-shorter-name }. Hoge overhead, niet gebruiken voor prestatiewerk, maar om te focussen op het begrijpen van browsergedrag.
+profiler-popup-presets-debug-label =
+    .label = Debuggen
 profiler-popup-presets-custom-label =
     .label = Aangepast
 
@@ -193,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Geschiedenis beheren
-appmenu-reopen-all-tabs = Alle tabbladen opnieuw openen
-appmenu-reopen-all-windows = Alle vensters opnieuw openen
 appmenu-restore-session =
     .label = Vorige sessie herstellen
 appmenu-clear-history =
@@ -204,6 +215,9 @@ appmenu-recently-closed-tabs =
     .label = Onlangs gesloten tabbladen
 appmenu-recently-closed-windows =
     .label = Onlangs gesloten vensters
+# This allows to search through the browser's history.
+appmenu-search-history =
+    .label = Geschiedenis doorzoeken
 
 ## Help panel
 
@@ -223,6 +237,8 @@ appmenu-help-report-site-issue =
 appmenu-help-share-ideas =
     .label = Ideeën en feedback delen…
     .accesskey = f
+appmenu-help-switch-device =
+    .label = Wisselen naar een nieuw apparaat
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -251,3 +267,15 @@ appmenu-customizetoolbar =
 appmenu-developer-tools-subheader = Browserhulpmiddelen
 appmenu-developer-tools-extensions =
     .label = Extensies voor ontwikkelaars
+appmenuitem-report-broken-site =
+    .label = Niet-werkende website melden
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Aanmelden bij uw account
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Ontvang waarschuwingen over datalekken
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Maskeer uw echte e-mailadres en telefoonnummer
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Bescherm uw online activiteit

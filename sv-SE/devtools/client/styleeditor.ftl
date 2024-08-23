@@ -20,7 +20,6 @@ styleeditor-save-button = Spara
     .accesskey = S
 styleeditor-options-button =
     .tooltiptext = Alternativ för stilredigerare
-styleeditor-media-rules = Media-förfrågningar
 styleeditor-at-rules = At-rules
 styleeditor-editor-textbox =
     .data-placeholder = Skriv in CSS här.
@@ -49,3 +48,9 @@ styleeditor-stylesheet-rule-count =
         [one] { $ruleCount } regel.
        *[other] { $ruleCount } regler.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Formatera stilmall
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Kan endast kodformatera CSS-filer

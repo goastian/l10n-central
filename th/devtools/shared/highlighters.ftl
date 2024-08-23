@@ -39,9 +39,9 @@ flextype-dual = ตัวบรรจุ/รายการ Flex
 #                    remote-node-picker-notice-action-touch
 remote-node-picker-notice = เปิดใช้งานตัวเลือกโหนด DevTools แล้ว { $action }
 # Text displayed in `remote-node-picker-notice`, when the remote page is on desktop
-remote-node-picker-notice-action-desktop = คลิกองค์ประกอบเพื่อเลือกในตัวตรวจสอบ
+remote-node-picker-notice-action-desktop = คลิกอิลิเมนต์เพื่อเลือกในตัวตรวจสอบ
 # Text displayed in `remote-node-picker-notice`, when the remote page is on Android
-remote-node-picker-notice-action-touch = แตะองค์ประกอบเพื่อเลือกในตัวตรวจสอบ
+remote-node-picker-notice-action-touch = แตะอิลิเมนต์เพื่อเลือกในตัวตรวจสอบ
 # The text displayed in the button that is in the notice in the content page when the user
 # clicks on the "Pick an element from the page" in about:devtools-toolbox inspector panel,
 # when debugging a remote page.

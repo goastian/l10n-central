@@ -20,7 +20,7 @@ about-logging-some-elements-disabled = 已透過網址設定記錄功能，無�
 about-logging-info = 資訊：
 about-logging-log-modules-selection = 選擇記錄模組
 about-logging-new-log-modules = 新記錄模組：
-about-logging-logging-output-selection = 輸出記錄資料
+about-logging-logging-output-selection = 輸出紀錄資料
 about-logging-logging-to-file = 記錄到檔案
 about-logging-logging-to-profiler = 記錄到 { -profiler-brand-name }
 about-logging-no-log-modules = 無
@@ -32,10 +32,27 @@ about-logging-with-profiler-stacks-checkbox = 開啟紀錄訊息的堆疊追踪
 
 about-logging-preset-networking-label = 網路連線
 about-logging-preset-networking-description = 用來診斷網路問題的記錄模組
+about-logging-preset-networking-cookie-label = Cookie
+about-logging-preset-networking-cookie-description = 用來診斷 Cookie 問題的記錄模組
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = 用來診斷 WebSocket 問題的記錄模組
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = 用來診斷 HTTP/3 與 QUIC 問題的記錄模組
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3 上傳速度
+about-logging-preset-networking-http3-upload-speed-description = 用來診斷 HTTP/3 上傳速度問題的記錄模組
 about-logging-preset-media-playback-label = 媒體播放
 about-logging-preset-media-playback-description = 用來診斷媒體播放問題（非網路會議問題）的記錄模組
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = 用來診斷 WebRTC 問題的記錄模組
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = 用來診斷 WebGPU 問題的記錄模組
+about-logging-preset-gfx-label = 圖形
+about-logging-preset-gfx-description = 用來診斷圖形問題的記錄模組
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = 用來診斷 Microsoft Windows 問題的記錄模組
 about-logging-preset-custom-label = 自訂
-about-logging-preset-custom-description = 手動選擇的記錄模組
+about-logging-preset-custom-description = 手動選擇要記錄的模組
 # Error handling
 about-logging-error = 錯誤：
 

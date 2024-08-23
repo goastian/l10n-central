@@ -4,1162 +4,1121 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> It is a light, fast and secure browser that respects the privacy of users. It is based on Firefox and continues to operate under <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, to improve the web. Want to help? <label data-l10n-name="helpus-donateLink">Make a donation</label>
-
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> es uno de los navegadores nacionales desarrollados en Japón. Se basa en Firefox y sigue operando bajo <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>para mejorar la web. ¿Quiere ayudar? <label data-l10n-name="helpus-donateLink">Haga una donación</label>
+icon-creator = Creador de iconos <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> y <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
+contributors = Lista de colaboradores y desarrolladores de <label data-l10n-name="about-contributor"></label>
 #################################################################### about:preferences ####################################################################
 
-pane-design-title = Design
-category-design =
+pane-design-title = Diseño
+category-design = 
     .tooltiptext = { pane-design-title }
-design-header = Design
-
-feature-requires-restart = A restart is required to apply changes
-
-tab-width = Minimum width of tabs
-preferences-tabs-newtab-position = New Tab position
-open-new-tab-use-default =
- .label = Open new tabs at default position
-open-new-tab-at-the-end =
- .label = Open new tabs at the end of the Tab Bar
-open-new-tab-next-to-current =
- .label = Open new tabs next to the current tab
-enable-multitab = 
- .label = Enable multi-row tabs
+design-header = { pane-design-title }
+feature-requires-restart = Es necesario reiniciar para aplicar los cambios
+tab-width = Anchura mínima de pestañas
+tab-height = Minimum height of tabs
+preferences-tabs-newtab-position = Posición de pestañas nuevas
+open-new-tab-use-default = 
+    .label = Abrir pestañas nuevas en la posición predeterminada
+open-new-tab-at-the-end = 
+    .label = Abrir pestañas nuevas al final de la barra de pestañas
+open-new-tab-next-to-current = 
+    .label = Abrir pestañas nuevas junto a la pestaña actual
 multirow-tabs-limit = 
- .label = Enable row limit for multi-row tabs
+    .label = Activar límite de filas para pestañas de varias filas
 multirow-tabs-newtab = 
- .label = Place the "Open a new tab" button at the end of the lowest row of tabs
-multirow-tabs-value = Number of rows when multi-row tabs are enabled
+    .label = Colocar botón «Abrir pestaña nueva» al final de la fila de pestañas inferior
+multirow-tabs-value = Número de filas cuando las pestañas de varias filas están activadas
 enable-tab-sleep = 
- .label = Enable Sleeping Tabs
-tab-sleep-timeout-minutes-value = Tabs will sleep after being inactive for (minutes)
-tab-sleep-settings-button = Settings...
-tab-sleep-settings-dialog-title =
- .title = Sleeping Tabs Settings
-tab-sleep-settings-dialog-excludehosts-label = Exclude hosts
-tab-sleep-settings-dialog-excludehosts-label-2 = Enter one host per line.
-tab-sleep-tab-context-menu-excludetab = Keep Tab awake
-enable-floorp-workspace =
- .label = Enable Workspaces
-workspace-warring = Workspaces cannot be used with Tab Group add-ons. If you want to use tab group add-ons, please disable Workspaces and restart { -brand-short-name }.
-enable-tab-scroll-change =
- .label = Switch tabs by scrolling with your mouse
-enable-tab-scroll-reverse =
- .label = Reverse direction of scrolling tabs
-enable-tab-scroll-wrap =
- .label = Wrap scrolling tabs at the edge
-enable-double-click-block =
- .label = Close tabs when double-clicking them
-enable-show-pinned-tabs-title =
- .label = Show the title of pinned tabs
-Mouse-side-button =
-  .label = Optimise browser for mouse with side buttons
-
-tabbar-preference = Tab Bar
-
-None-mode = 
- .label= Normal mode
-
-hide-horizontality-tabs =
- .label= Hide tabs on Horizontal Tab Bar
-
-verticalTab-setting =
- .label = Optimise browser for Vertical Tab Bar
-
-move-tabbar-position =
- .label = Display Tab Bar underneath the Toolbar
-
-tabbar-on-bottom =
- .label = Display Tab Bar at the bottom of the window
-
-tabbar-favicon-color =
- .label = Color the Tab Bar using the current website's favicon color
-
-tabbar-style-preference = Tab Bar Style
-
-horizontal-tabbar =
- .label = Horizontal Tab Bar
-
-tabbar-style-description = A restart of { -brand-short-name } is required to fully apply this setting.
-multirow-tabbar =
- .label = Multi-Row Tab Bar
-vertical-tabbar =
- .label = Vertical Tab Bar (experimental)
-native-tabbar-tip = Sidebar add-ons and in-built sidebars cannot be used at the same time as Vertical Tabs as this leverages the Firefox sidebar.
-
-native-vertical-tab-show-right =
- .label = Show Vertical Tab Bar on the left side of the window
-
-hover-vertical-tab =
- .label = Collapse Vertical Tab Bar
-
-TST = Tree Style Tab
-about-TST = Tree Style Tab is a popular add-on that allows you to display tabs in a tree structure. Midori 10 has a built-in this add-on. Please install the add-on restore Midori 10's built-in Tree Style Tab.
+    .label = Activar pestañas en reposo
+tab-sleep-timeout-minutes-value = Las pestañas entrarán en reposo tras estar inactivas durante (minutos)
+tab-sleep-settings-button = Configuración...
+tab-sleep-settings-dialog-title = 
+    .title = Configuración de pestañas en reposo
+tab-sleep-settings-dialog-excludehosts-label = Excluir hosts
+tab-sleep-settings-dialog-excludehosts-label-2 = Introduzca un anfitrión por renglón.
+tab-sleep-tab-context-menu-excludetab = Mantener pestaña en actividad
+enable-tab-scroll-change = 
+    .label = Cambia las pestañas desplazándose con el ratón
+enable-tab-scroll-reverse = 
+    .label = Invertir dirección de las pestañas desplazables
+enable-tab-scroll-wrap = 
+    .label = Ajustar pestañas desplazables en la orilla
+enable-double-click-block = 
+    .label = Cerrar pestañas con pulsación doble
+enable-show-pinned-tabs-title = 
+    .label = Mostrar título de pestañas ancladas
+tabbar-preference = Barra de pestañas
+tab-normal-mode = 
+    .label = Predeterminado
+hide-horizontality-tabs = 
+    .label = Ocultar pestañas en barra de pestañas horizontal
+verticalTab-setting = 
+    .label = Optimizar navegador para Vertical Tab Bar
+move-tabbar-position = 
+    .label = Mostrar barra de pestañas debajo de la barra de herramientas
+tabbar-on-bottom = 
+    .label = Mostrar barra de pestañas en la parte inferior de la ventana
+tabbar-favicon-color = 
+    .label = Colorear barra de pestañas con el color del favicon del sitio web actual
+tabbar-style-preference = Estilo de barra de pestañas
+horizontal-tabbar = 
+    .label = Barra de pestañas horizontal
+tabbar-style-description = Es necesario reiniciar { -brand-short-name } para aplicar completamente esta configuración.
+multirow-tabbar = 
+    .label = Barra de pestañas de varias filas
+vertical-tabbar = 
+    .label = Barra de pestañas vertical (experimental)
+native-vertical-tab-show-right = 
+    .label = Mostrar barra de pestañas vertical a la derecha de la ventana
+native-vertical-tab-show-padding = 
+    .label = Enable padding at the top
+hover-vertical-tab = 
+    .label = Contraer barra de pestañas vertical
+floorp-show-vertical-tab-newtab-button = 
+    .label = Mostrar botón «Abrir pestaña nueva» en barra de pestañas vertical
+floorp-show-vertical-tab-scrollbar = 
+    .label = Mostrar barra de desplazamiento en barra de pestañas vertical
+TST = Pestañas estilo árbol
+about-TST = Tree Style Tab es un complemento popular que le permite mostrar las pestañas en una estructura arbórea. Este complemento ya está preintegrado en { -brand-short-name }. Instale el complemento para activar el Tree Style Tab de { -brand-short-name }.
 treestyletab-Settings = 
- .label = Collapse Tree Style Tab
-
-sidebar-reverse-position-toolbar = Show Sidebars on the other side
-
-bookmarks-bar-settings = Bookmarks Toolbar (only one option can be used at a time)
-bookmarks-focus-mode =
- .label = Hide the Bookmarks Toolbar unless hovering over the navigation bar
-bookmarks-bottom-mode =
- .label = Show the Bookmarks Toolbar at the bottom of { -brand-short-name }
-
-nav-bar-settings = Toolbar
-show-nav-bar-bottom =
- .label = Show the Toolbar at the bottom of { -brand-short-name } (experimental)
-
-material-effect =
- .label = Allow Mica For Everyone to modify the browser design
-disable-extension-check-compatibility-option =
- .label = Do not check for compatibility with add-ons
-other-preference = Other Preferences
-
-enable-userscript =
- .label = Enable legacy components
-about-legacy-components = Enabling this feature may cause unexpected bugs or fatal errors.
-
-Search-positon-top =
- .label = Display the Find Bar at the top of the page
-allow-auto-restart =
- .label = Restart automatically when settings that require a restart are changed
-
-browser-rest-mode =
- .label = Enable Rest Mode shortcut (F9)
-
-disable-fullscreen-notification =
- .label = Do not show a notification when entering full screen
-
-floorp-updater = { -brand-short-name } Updates
-enable-floorp-updater =
- .label = Check for { -brand-short-name } updates on startup
-floorp-update-latest =
- .label = Notify me if { -brand-short-name } is up-to-date during automatic update checks
+    .label = Colapsar pestaña estilo árbol
+sidebar-reverse-position-toolbar = Mostrar barras laterales en el otro lado
+bookmarks-bar-settings = Barra de herramientas de marcadores (sólo una opción puede utilizarse a la vez)
+bookmarks-focus-mode = 
+    .label = Ocultar la barra de herramientas de marcadores a menos que pase el cursor sobre la barra de navegación
+bookmarks-bottom-mode = 
+    .label = Mostrar la barra de herramientas de marcadores en la parte inferior de la { -brand-short-name }
+navbar-settings = Barra de navegación
+show-nav-bar-bottom = 
+    .label = Mostrar la barra de herramientas en la parte inferior de { -brand-short-name } (experimental)
+disable-extension-check-compatibility-option = 
+    .label = Do not check for compatibility with add-ons (deprecated)
+other-preference = Otras preferencias
+search-positon-top = 
+    .label = Mostrar barra de búsqueda en la parte superior de la página
+allow-auto-restart = 
+    .label = Reiniciar automáticamente cuando se cambien configuraciones que requieren reinicio
+disable-fullscreen-notification = 
+    .label = No mostrar una notificación al entrar en pantalla completa
 
 ## Browser Theme
 
-system-color-settings = Some themes have both light and dark modes - choose which mode you'd like these themes to use.
-preferences-theme-appearance-header = Theme Mode
-
-system-theme-dark =
- .label = Dark
-
-system-theme-light =
- .label = Light
-
-system-theme-auto =
- .label = Follow my system appearance
+system-color-settings = Algunos temas tienen modos claros y oscuros - elija el modo que desea usar estos temas.
+preferences-theme-appearance-header = Modo de tema
+system-theme-dark = 
+    .label = Oscuro
+system-theme-light = 
+    .label = Claro
+system-theme-auto = 
+    .label = Seguir la apariencia de mi sistema
 
 ## User interface preferences
 
-ui-preference = Browser appearance
-preferences-browser-appearance-description = Choose a built-in third-party design to use in { -brand-short-name }. Some designs may not be compatible with your configuration.
-
-firefox-proton =
- .label = Firefox Proton UI
-
-firefox-proton-fix =
- .label = Firefox Proton Fix UI
-
-firefox-photon-lepton =
- .label = Firefox Photon・Lepton UI
- 
-floorp-legacy =
- .label = Midori Legacy UI・Unsupported
-
-floorp-fluentUI =
- .label = Microsoft Fluent UI
- 
-floorp-fluerialUI =
- .label = Midori Fluerial UI
-
-floorp-gnomeUI =
- .label = GNOME Theme
+ui-preference = Apariencia del navegador
+preferences-browser-appearance-description = Elija un diseño integrado de terceros para utilizarlo en { -brand-short-name }. Algunos diseños pueden no ser compatibles con su configuración.
+firefox-proton = 
+    .label = IU Proton de Firefox
+firefox-photon-lepton = 
+    .label = IU de Lepton de Firefox
+floorp-fluentUI = 
+    .label = Fluent UI de Microsoft (obsolescido)
+floorp-fluerialUI = 
+    .label = { -brand-short-name } Fluerial UI (New)
 
 ## Download Manager
-download-notification-preferences = Download Notifications
-start-always-notify =
- .label = Notify only when starting downloads
-finish-always-notify =
- .label = Notify only when a download finishes
-always-notify =
- .label = Notify when starting downloads and when a download finishes
-do-not-notify =
- .label = Disable download notifications
 
-floorp-translater = Translator Settings
-click-to-option =
-    .label = Open Settings...
-    .accesskey = O
+download-notification-preferences = Notificaciones de descarga
+start-always-notify = 
+    .label = Notificar solo al iniciar descargas
+finish-always-notify = 
+    .label = Notificar solo al finalizar descargas
+always-notify = 
+    .label = Notificar al iniciar y finalizar descargas
+do-not-notify = 
+    .label = Desactivar notificaciones de descarga
 
 ## Sidebar
-profiles-button-label = Manage Profiles
-floorp-help-button-label = { -brand-short-name } Support
 
-appmenuitem-reboot =
- .label = Restart
-
-## UserAgent
-
-UserAgent-preference = User Agent
-default-useragent-mode =
- .label = Use Firefox User Agent (Default)
-windows-chrome-useragent-mode =
- .label = Spoof Chrome on Windows
-macOS-chrome-useragent-mode =
- .label = Spoof Chrome on macOS
-linux-chrome-useragent-mode =
- .label = Spoof Chrome on Linux
-mobile-chrome-useragent-mode =
- .label = Spoof Chrome on iOS
-use-custom-useragent-mode =
- .label = Use Custom User Agent
+profiles-button-label = Gestionar perfiles
+floorp-help-button-label = Asistencia de { -brand-short-name }
+appmenuitem-reboot = 
+    .label = Reiniciar
 
 ## DMR UI
-download-mgr-UI =
- .label = Enable the SimpleUI Download Manager
-downloading-red-color =
- .label = Use the red downloads icon when downloading
 
-sidebar-preferences = Sidebar
-
-bsb-preferences = Browser Manager Sidebar Settings
+download-mgr-UI = 
+    .label = Activar gestor de descargas de SimpleUI
+downloading-red-color = 
+    .label = Usar el icono de descargas rojas al descargar
+sidebar-preferences = Barra lateral
+bsb-preferences = Configuración de barra lateral Gestor del navegador
 view-sidebar2-right = 
- .label = Display the Browser Manager Sidebar on the right
-enable-sidebar2 =
- .label = Enable the Browser Manager Sidebar
+    .label = Mostrar la barra lateral Gestor del navegador a la derecha
+enable-sidebar2 = 
+    .label = Activar la barra lateral Gestor del navegador
 visible-bms = 
- .label = Show the Browser Manager Sidebar
-hide-bms-to-unload-panel =
-  .label = Unload panel when hiding panel
-custom-URL-option = Set Web Panel URLs
-set-custom-URL-button =
-    .label = Set Custom URLs...
+    .label = Mostrar la barra lateral Gestor del navegador
+hide-bms-to-unload-panel = 
+    .label = Descargar panel al ocultar el panel
+enable-addons-in-sidebar2-with-experimental = 
+    .label = Enable Extensions Content Scripts in Browser Manager Sidebar (experimental)
+enable-addons-in-sidebar2 = 
+    .label = Enable Extensions Content Scripts in Browser Manager Sidebar
+sidebar2-enable-addons-desc = If this setting is enabled, ad blocking extensions and other extensions will work in the sidebar. However, not all extensions will work.
+custom-URL-option = Configurar URLs del Panel Web
+set-custom-URL-button = 
+    .label = Establecer URL personalizadas...
     .accesskey = S
-
 pane-BSB-title = { bsb-header }
-category-BSB =
+category-BSB = 
     .tooltiptext = { pane-BSB-title }
-
 category-downloads = 
     .tooltiptext = { files-and-applications-title }
-
-bsb-header = Browser Manager Sidebar
-bsb-context = Use the following Container Tab
+bsb-header = Barra lateral Gestor del navegador
+bsb-context = Utilizar el contenedor siguiente
 bsb-userAgent-label = 
-  .label = Use Mobile User Agent in this Web Panel
-bsb-width = Width (if set to 0, the global value will be used)
-bsb-page = Page to open
-
-bsb-add = Add Web Panel on Browser Manager Sidebar
-
-bsb-setting = Web Panel Settings
-
-bsb-add-title =
- .title = { bsb-add }
-
+    .label = Usar agente de usuario móvil en este Panel Web
+bsb-width = Anchura (si se establece en 0, se utilizará el valor global)
+bsb-page = Página para abrir
+bsb-add = Añadir Panel Web en la barra lateral Gestor del navegador
+bsb-setting = Configuración de panel web
+bsb-add-title = 
+    .title = { bsb-add }
 bsb-setting-title = 
- .title = { bsb-setting }
-
-bsb-browser-manager-sidebar =
-  .label = { sidebar2-browser-manager-sidebar }
-
-bsb-bookmark-sidebar =
-  .label = { sidebar2-bookmark-sidebar }
-
-bsb-history-sidebar =
-  .label = { sidebar2-history-sidebar }
-
-bsb-download-sidebar =
-  .label = { sidebar2-download-sidebar }
-
-bsb-notes-sidebar =
-  .label = { sidebar2-notes-sidebar }
-
+    .title = { bsb-setting }
+bsb-browser-manager-sidebar = 
+    .label = { sidebar2-browser-manager-sidebar }
+bsb-bookmark-sidebar = 
+    .label = { sidebar2-bookmark-sidebar }
+bsb-history-sidebar = 
+    .label = { sidebar2-history-sidebar }
+bsb-download-sidebar = 
+    .label = { sidebar2-download-sidebar }
+bsb-notes-sidebar = 
+    .label = { sidebar2-notes-sidebar }
 bsb-website = 
-  .label = Website
-
-sidebar2-pref-delete =
- .label = Delete
-
-sidebar2-pref-setting =
- .label = Settings
-
-sidebar2-global-width = Global Web Panels width
-
-use-icon-provider-option = Use Icon Provider
-
-use-icon-provider-option-google =
- .label = Google
-
-use-icon-provider-option-duckduckgo =
- .label = DuckDuckGo
-
-use-icon-provider-option-yandex =
- .label = Yandex (available in China)
-
-use-icon-provider-option-hatena =
- .label = Hatena (available in China)
-
-memory-and-performance = Memory and Performance
-
+    .label = Sitio web
+sidebar2-pref-delete = 
+    .label = Eliminar
+sidebar2-pref-setting = 
+    .label = Configuración
+sidebar2-global-width = Anchura global de paneles web
+use-icon-provider-option = Utilizar proveedor de iconos
+use-icon-provider-option-google = 
+    .label = Google
+use-icon-provider-option-duckduckgo = 
+    .label = DuckDuckGo
+use-icon-provider-option-yandex = 
+    .label = Yandex (disponible en China)
+use-icon-provider-option-hatena = 
+    .label = Hatena (disponible en China)
+memory-and-performance = Memoria y desempeño
 min-memory = 
-    .label = Minimum Memory Usage (low performance)
-
+    .label = Uso mínimo de memoria (bajo rendimiento)
 balance-memory = 
-    .label = Balance Memory Usage and Performance
-
+    .label = Equilibrar uso de memoria y desempeño
 max-memory = 
-    .label = Best Speed and Performance (high memory usage)
-
-delete-border-and-roundup-option =
-  .label = Round the corners of pages
+    .label = Mejor desempeño (uso de memoria elevado)
+delete-border-and-roundup-option = 
+    .label = Redondear esquinas de las páginas
 
 ## DualTheme
-dualtheme-enable =
- .label = Enable Dual Theme
 
-newtab-background = { -brand-short-name } Home Background
-
-newtab-background-random-image =
-    .label = Random images from Unsplash
-
-newtab-background-gradation =
-    .label = Gradient
-
-newtab-background-not-background =
-    .label = Disable background
-
-newtab-background-selected-image =
-    .label = Custom folder...
-
-newtab-background-folder = Use images from this folder:
-
+dualtheme-enable = 
+    .label = Activar tema dual
+newtab-background = Fondo de Inicio de { -brand-short-name }
+newtab-background-random-image = 
+    .label = Imágenes aleatorias de Unsplash
+newtab-background-gradation = 
+    .label = Gradiente
+newtab-background-not-background = 
+    .label = Desactivar fondo
+newtab-background-selected-image = 
+    .label = Carpeta personalizada...
+newtab-background-selected-one-image = 
+    .label = Imagen personalizada...
+newtab-background-folder = Usar imágenes de esta carpeta:
+newtab-background-image = Utilizar imagen:
+newtab-choose-image = Elegir imagen...
 newtab-background-folder-reload = 
-  .label = Reload images
-
+    .label = Reload images
 newtab-background-folder-default = 
-  .label = Restore Defaults
-
+    .label = Restaurar valores predeterminados
 newtab-background-folder-open = 
-  .label = Open folder
-
-newtab-background-folder-choose = Choose images folder...
-
-newtab-background-extensions = Use images with these file extensions (separated by ",")
-
+    .label = Abrir carpeta
+newtab-background-folder-choose = Seleccionar carpeta de imágenes...
+newtab-background-image-choose = Elegir imagen...
+newtab-background-extensions = Usar imágenes con estas extensiones de archivo (separadas por ",")
 disable-blur-on-newtab = 
-  .label = Disable blur effect on { -brand-short-name } Home
+    .label = Desactivar efecto de desenfoque en Inicio de { -brand-short-name }
+disable-releasenote-on-newtab = 
+    .label = Desactivar enlaces de novedades y asistencia en Inicio de { -brand-short-name }
+disable-imagecredit-on-newtab = 
+    .label = Desactivar crédito de imagen (Unsplash) en Inicio de { -brand-short-name }
 
 ## Lepton Preferences
 
-about-lepton = Customize { -brand-short-name } with Lepton
-
-lepton-preference-button =
-    .label = Lepton Settings...
+about-lepton = Personalizar { -brand-short-name } con Lepton
+lepton-preference-button = 
+    .label = Configuración de Lepton...
     .accesskey = L
-
-lepton-header = Lepton Settings
-
-lepton-preference = Lepton Settings
-photon-mode =
-    .label = Use Photon design
-
+lepton-header = Configuración de Lepton
+lepton-preference = Configuración de Lepton
+photon-mode = 
+    .label = Usar diseño de Photon
 lepton-mode = 
-    .label = Use Lepton design
-
-protonfix-mode =
-    .label = Use tweaked Proton design
-
-autohide-preference = Automatically hide browser elements
-
-floorp-lepton-enable-tab-autohide =
-    .label = Automatically hide tabs
-floorp-lepton-enable-navbar-autohide =
-    .label = Automatically hide Toolbar
-floorp-lepton-enable-sidebar-autohide =
-    .label = Automatically hide Sidebar
-floorp-lepton-enable-urlbar-autohide =
-    .label = Automatically hide Address Bar
-floorp-lepton-enable-back-button-autohide =
-    .label = Automatically hide back button
-floorp-lepton-enable-forward-button-autohide =
-    .label = Automatically hide forward button
-floorp-lepton-enable-page-action-button-autohide =
-    .label = Automatically hide buttons on the Address Bar
-floorp-lepton-enable-toolbar-overlap =
-    .label = Show Toolbar over website content
-floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide =
-    .label = Automatically hide Toolbar when displaying "ltr" content
-
-hide-preference = Manage browser elements
-
-floorp-lepton-enable-tab_icon-hide =
-    .label = Hide Tab icons
-floorp-lepton-enable-tabbar-hide =
-    .label = Hide Tab Bar
-floorp-lepton-enable-navbar-hide =
-    .label = Hide Toolbar
-floorp-lepton-enable-sidebar_header-hide =
-    .label = Hide Sidebar Headers
-floorp-lepton-enable-urlbar_iconbox-hide =
-    .label = Hide Address Bar icons
-floorp-lepton-enable-bookmarkbar_icon-hide =
-    .label = Hide Bookmarks Bar icons
-floorp-lepton-enable-bookmarkbar_label-hide =
-    .label = Hide Bookmarks Bar labels
-floorp-lepton-enable-disabled_menu-hide =
-    .label = Hide disabled context menu items
-
-floorp-lepton-disable-userChrome-icon =
-    .label = Disable Lepton's context menu and panel menu icons
-floorp-lepton-disable-userChrome-menu-icon =
-    .label = Enable Lepton's context menu icons
-
-positon-preferences = Position adjustments
-
-floorp-lepton-enable-centered-tab =
-    .label = Center labels in tabs
-floorp-lepton-enable-centered-urlbar =
-    .label = Center text in the Address Bar
-floorp-lepton-enable-centered-bookmarkbar =
-    .label = Center Bookmarks Bar items
-
-urlbar-preferences = Address Bar
-
-floorp-lepton-enable-urlbar-icon-move-to-left =
-    .label = Move Address Bar icons to the left side
-floorp-lepton-enable-urlname-go_button_when_typing =
-    .label = When typing, show a Go button
-floorp-lepton-enable-always-show-page_action =
-    .label = Always show page actions in the Address Bar
-
-tabbar-preferences = Tab Bar
-
-floorp-lepton-enable-tabbar-positon-as-titlebar =
-    .label = Tab Bar in the titlebar
-floorp-lepton-enable-tabbar-as-urlbar =
-    .label = Combine Tab Bar and Toolbar
-
+    .label = Usar diseño de Lepton
+protonfix-mode = 
+    .label = Usar diseño de Proton modificado
+autohide-preference = Ocultar automáticamente los elementos del navegador
+floorp-lepton-enable-tab-autohide = 
+    .label = Ocultar pestañas automáticamente
+floorp-lepton-enable-navbar-autohide = 
+    .label = Ocultar barra de herramientas automáticamente
+floorp-lepton-enable-sidebar-autohide = 
+    .label = Ocultar barra lateral automáticamente
+floorp-lepton-enable-urlbar-autohide = 
+    .label = Ocultar automáticamente la barra de direcciones
+floorp-lepton-enable-back-button-autohide = 
+    .label = Ocultar botón atrás automáticamente
+floorp-lepton-enable-forward-button-autohide = 
+    .label = Ocultar automáticamente el botón de avance
+floorp-lepton-enable-page-action-button-autohide = 
+    .label = Ocultar automáticamente los botones en la barra de direcciones
+floorp-lepton-enable-toolbar-overlap = 
+    .label = Mostrar barra de herramientas sobre el contenido del sitio web
+floorp-lepton-enable-toolbar-overlap-allow-layout-shift-autohide = 
+    .label = Ocultar automáticamente la barra de herramientas al mostrar el contenido "ltr"
+hide-preference = Administrar elementos del navegador
+floorp-lepton-enable-tab_icon-hide = 
+    .label = Ocultar iconos de pestañas
+floorp-lepton-enable-tabbar-hide = 
+    .label = Ocultar barra de pestañas
+floorp-lepton-enable-navbar-hide = 
+    .label = Ocultar barra de herramientas
+floorp-lepton-enable-sidebar_header-hide = 
+    .label = Ocultar cabeceras de barra lateral
+floorp-lepton-enable-urlbar_iconbox-hide = 
+    .label = Ocultar iconos de la barra de direcciones
+floorp-lepton-enable-bookmarkbar_icon-hide = 
+    .label = Ocultar iconos de la barra de marcadores
+floorp-lepton-enable-bookmarkbar_label-hide = 
+    .label = Ocultar etiquetas de la barra de marcadores
+floorp-lepton-enable-disabled_menu-hide = 
+    .label = Ocultar elementos de menú contextual desactivados
+floorp-lepton-disable-userChrome-icon = 
+    .label = Desactivar el menú contextual de Lepton y los iconos del menú del panel
+floorp-lepton-disable-userChrome-menu-icon = 
+    .label = Activar los iconos del menú contextual de Lepton
+positon-preferences = Ajustes de posición
+floorp-lepton-enable-centered-tab = 
+    .label = Centrar etiquetas en pestañas
+floorp-lepton-enable-centered-urlbar = 
+    .label = Centrar texto en la barra de direcciones
+floorp-lepton-enable-centered-bookmarkbar = 
+    .label = Centrar la barra de marcadores
+urlbar-preferences = Barra de direcciones
+floorp-lepton-enable-urlbar-icon-move-to-left = 
+    .label = Mover iconos de la barra de direcciones al lado izquierdo
+floorp-lepton-enable-urlname-go_button_when_typing = 
+    .label = Al escribir, mostrar botón «Ir»
+floorp-lepton-enable-always-show-page_action = 
+    .label = Mostrar siempre las acciones de la página en la barra de direcciones
+tabbar-preferences = Barra de pestañas
+floorp-lepton-enable-tabbar-positon-as-titlebar = 
+    .label = Barra de pestañas sobre barra de título
+floorp-lepton-enable-tabbar-as-urlbar = 
+    .label = Combinar barra y barra de herramientas
 lepton-sidebar-preferences = Sidebar
-floorp-lepton-enable-overlap-sidebar =
-    .label = Show Sidebar over website content
-
-floorp-home-mode-choice-default =
-    .label = { -brand-short-name } Home (Default)
-floorp-home-prefs-content-header = { -brand-short-name } Home Content
-floorp-home-prefs-content-description = Choose the content you want to see on the { -brand-short-name } Home Page.
+floorp-lepton-enable-overlap-sidebar = 
+    .label = Mostrar barra lateral sobre el contenido del sitio web
+floorp-home-mode-choice-default = 
+    .label = Inicio de { -brand-short-name } (predeterminado)
+floorp-home-prefs-content-header = Contenido de Inicio de { -brand-short-name }
+floorp-home-prefs-content-description = Elija el contenido que desea ver en la página principal { -brand-short-name }.
 
 ## Notes
-floorp-notes = { -brand-short-name } Notes
-restore-from-backup = Restore Notes from backup
+
+floorp-notes = Notas { -brand-short-name }
+restore-from-backup = Restaurar notas de respaldo
 enable-notes-sync = 
- .label = Enable { -brand-short-name } Notes Sync
-about-notes-backup-tips = Midori Notes uses Firefox Sync to sync your notes with other devices. If you lose your notes, you can restore them from a backup. A backup is created when you start { -brand-short-name }.
-notes-sync-description = This can solve the problem of losing content due to overwriting notes during synchronization.
-backuped-time = Backed up at
-notes-backup-option = Backup Settings
-backup-option-button = Backup Settings...
-
-restore-from-backup-prompt-title = Midori Notes Restore Service
-restore-from-this-backup = Restore Notes back to the state they were in this backup?
-
-restore-button = Restore
+    .label = Activar sincronización de notas de { -brand-short-name }
+about-notes-backup-tips = Notas de { -brand-short-name } usa Firefox Sync para sincronizar sus notas con otros dispositivos. Si pierde sus notas, puede restaurarlas de una copia de respaldo. Se crea una copia de respaldo cuando inicia { -brand-short-name }.
+notes-sync-description = Esto puede resolver el problema de la pérdida de contenido debido a la sobreescritura de notas durante la sincronización.
+backuped-time = Respaldado en
+notes-backup-option = Configuración de copias de respaldo
+backup-option-button = Configuración de copias de respaldo...
+restore-from-backup-prompt-title = Servicio de restauración de notas de { -brand-short-name }
+restore-from-this-backup = ¿Quiere restaurar las notas al estado que tenían en esta copia de respaldo?
+restore-button = Restaurar
 
 ## user.js
-header-userjs = user.js
-userjs-customize = Customize { -brand-short-name } with user.js
-about-userjs-customize = user.js is a configuration file that allows you to customize { -brand-short-name }. user.js files are downloaded from the Internet and overwrite your current user.js file. Please back up your current user.js file before continuing. user.js configurations will be applied automatically after restarting { -brand-short-name }.
 
-userjs-label = user.js list
-userjs-prompt = Apply this user.js?
-apply-userjs-attention = Applying a new user.js will overwrite your current user.js file.
-apply-userjs-attention2 = Please back up your current user.js file before continuing.
+header-userjs = usuario.js
+userjs-customize = Personalizar { -brand-short-name } con user.js
+about-userjs-customize = user.js es un archivo de configuración que le permite personalizar { -brand-short-name }. Los archivos user.js se descargan de Internet y sobrescriben a su usuario actual. Haga una copia de respaldo de su archivo user.js actual antes de continuar. Las configuraciones user.js se aplicarán automáticamente después de reiniciar { -brand-short-name }.
+userjs-label = lista user.js
+userjs-prompt = ¿Aplicar este user.js?
+apply-userjs-attention = Aplicar un nuevo user.js sobrescribirá su archivo user.js actual.
+apply-userjs-attention2 = Haga una copia de respaldo de su archivo user.js actual antes de continuar.
+userjs-button = Configuración user.js...
+userjs-select-option = Administre el user.js actualmente utilizado en { -brand-short-name } para mejorar el rendimiento y la privacidad.
+apply-userjs-button = Aplicar
 
-userjs-button = user.js Settings...
-userjs-select-option = Manage the user.js currently used in { -brand-short-name } to improve performance and privacy.
-
-apply-userjs-button = Apply
 ## userjs Options
 
-default-userjs-label = Midori Default
-about-default-userjs = Telemetry disabled. Well balanced { -brand-short-name } with various customizations enabled.
-
-Securefox-label = Yokoffing Securefox
-about-Securefox = HTTPS-by-Default. Total Cookie Protection with site isolation. Enhanced state and network partitioning. Various other enhancements.
-
-default-label = Yokoffing Default
-about-default = All the essentials. None of the breakage. This is your user.js.
-
-Fastfox-label = Yokoffing Fastfox
-about-Fastfox = Immensely increase Firefox's browsing speed. Give Chrome a run for its money!
-
+default-userjs-label = Predeterminado de { -brand-short-name }
+about-default-userjs = Telemetría desactivada. { -brand-short-name } bien equilibrado con varias personalizaciones activadas.
+Securefox-label = Securefox Yokoffing
+about-Securefox = HTTPS de manera predeterminada. Protección total de cookies con aislamiento de sitios. Particionado de estado y red optimizado. Mejoras varias.
+default-label = Yokoffing predeterminado
+about-default = Todo lo esencial. Ninguna de las roturas. Este es su user.js.
+Fastfox-label = Fastzorro Yokoffing
+about-Fastfox = Aumenta enormemente la velocidad de navegación de Firefox. ¡Haga sudar a Chrome!
 Peskyfox-label = Yokoffing Peskyfox
-about-Peskyfox = Unclutter the new tab page. Remove Pocket. Restore compact mode as an option. Stop webpage notifications, pop-ups, and other annoyances.
-
+about-Peskyfox = Desagüe la nueva página de pestañas. Remover Pocket. Restaurar modo compacto como una opción. Detener notificaciones de páginas web, ventanas emergentes y otras molestias.
 Smoothfox-label = Yokoffing Smoothfox
-about-Smoothfox = Get Edge-like smooth scrolling on your favorite browser — or choose something more your style. 
-
-## Workspaces
-floorp-workspaces-title = { -brand-short-name } Workspaces
-workspaces-backup-discription = Backup and restore your Workspaces
-
-workspaces-restore-service-title = Midori Workspaces Backup Service
-workspaces-restore-warning = Warning! Running this operation will cause the browser to freeze temporarily and restart automatically.
-floorp-workspace-settings-button = Workspace Settings...
-
-change-to-close-workspace-popup-option = 
- .label = Close workspaces popup when selecting a Workspace
-pinned-tabs-exclude-workspace-option = 
- .label = Exclude pinned tabs from Workspaces
-
-workspaces-reset-title = Reset Workspaces
-workspaces-reset-label =
-    .label = Reset Workspaces
-workspaces-reset-description = If a backup does not work and the Workspace does not start, reset the Workspace.
-workspaces-reset-button = Reset Workspaces
-
-workspaces-reset-service-title = Midori Workspaces
-workspaces-reset-warning = Warning! Running this operation will delete all your Workspaces and restart the browser.
-
-manage-workspace-on-bms-option =
-    .label = Manage Workspace on Browser Manager Sidebar
-
-show-workspace-name-option =
-    .label = Show Workspace Name on Tab Bar's Workspace Button
-change-workspace-with-default-key-option =
-    .label = Change Workspace with Shift and ↑ and ↓ keys.
-
-workspaces-manage-title = Manage Workspaces
-workspaces-manage-description = Manage your Workspaces. Change workspace icon.
-workspaces-manage-label =
-    .label = Manage Workspaces
-
-workspaces-manage-button = Open Workspace Manager...
-
-select-workspace = Select Workspace
-workspace-select-icon = Select Workspace Icon
- .label = Select Workspace Icon
-workspace-select-container = Select Container Tab
- .label = Select Container Tab
+about-Smoothfox = Obtén un desplazamiento suave al estilo Edge en tu navegador favorito, o elige algo más de tu estilo.
+select-workspace = Seleccionar espacio de trabajo
+workspace-select-icon = Seleccionar icono del área de trabajo
+    .label = Seleccionar icono del área de trabajo
+workspace-select-container = Seleccionar pestaña de contenedor
+    .label = Seleccionar pestaña de contenedor
 workspace-customize = 
- .title = Customize Workspace
-
-workspace-icon-briefcase =
- .label = Job
-workspace-icon-cart =
- .label = Shopping
-workspace-icon-circle =
- .label = Circle
-workspace-icon-compass =
- .label = Compass
-workspace-icon-dollar =
- .label = Bank
-workspace-icon-fence =
- .label = Fence
-workspace-icon-fingerprint =
- .label = Personal
-workspace-icon-gift =
- .label = Gift
-workspace-icon-vacation =
- .label = Vacation
-workspace-icon-food =
- .label = Food
-workspace-icon-fruit =
- .label = Fruit
-workspace-icon-gear =
- .label = Gear
-workspace-icon-pet =
- .label = Pet
-workspace-icon-question =
- .label = Question
-workspace-icon-star =
- .label = Star
-workspace-icon-tree =
- .label = Tree
-workspace-icon-chill =
- .label = Private
-
+    .title = Personalizar espacio de trabajo
+floorp-no-workspace-container = 
+    .label = Ningún contenedor
+workspace-icon-article = 
+    .label = Artículo
+workspace-icon-book = 
+    .label = Libro
+workspace-icon-briefcase = 
+    .label = Trabajo
+workspace-icon-cart = 
+    .label = Compras
+workspace-icon-chat = 
+    .label = Chat
+workspace-icon-chill = 
+    .label = Privado
+workspace-icon-circle = 
+    .label = Círculo
+workspace-icon-compass = 
+    .label = Brújula
+workspace-icon-code = 
+    .label = Código
+workspace-icon-dollar = 
+    .label = Banco
+workspace-icon-fence = 
+    .label = Valla
+workspace-icon-fingerprint = 
+    .label = Personal
+workspace-icon-food = 
+    .label = Comida
+workspace-icon-fruit = 
+    .label = Fruta
+workspace-icon-game = 
+    .label = Juego
+workspace-icon-gear = 
+    .label = Engrane
+workspace-icon-gift = 
+    .label = Regalo
+workspace-icon-key = 
+    .label = Llave
+workspace-icon-lightning = 
+    .label = Rayo
+workspace-icon-network = 
+    .label = Internet
+workspace-icon-notes = 
+    .label = Notas
+workspace-icon-paint = 
+    .label = Pintura
+workspace-icon-photo = 
+    .label = Fotografía
+workspace-icon-pin = 
+    .label = Pin
+workspace-icon-pet = 
+    .label = Mascota
+workspace-icon-question = 
+    .label = Pregunta
+workspace-icon-smartphone = 
+    .label = Teléfono inteligente
+workspace-icon-star = 
+    .label = Estrella
+workspace-icon-tree = 
+    .label = Árbol
+workspace-icon-vacation = 
+    .label = Vacación
+workspace-icon-love = 
+    .label = Amor
+workspace-icon-moon = 
+    .label = Luna
+workspace-icon-music = 
+    .label = Música
+workspace-icon-user = 
+    .label = Usuario
 # Custom Keyboard Shortcuts
-floorp-CSK-title = Custom keyboard shortcuts
-floorp-CSK-description = Customize { -brand-short-name }'s keyboard shortcuts. Midori provides more than 80 customizable keyboard shortcuts - restart { -brand-short-name } to apply these settings. Duplicate keyboard shortcuts will not work.
-disable-fx-actions =
- .label = Disable Mozilla Firefox's keyboard shortcuts
-customize-Action =
- .label = Add shortcut
-remove-Action =
- .label = Remove shortcut
-CSK-reset-title = Reset custom keyboard shortcuts
-CSK-reset-description = Reset custom keyboard shortcuts to { -brand-short-name }'s defaults.
-CSK-reset-label = Reset custom keyboard shortcuts
-CSK-reset-button = Restore Defaults
-CSK-manage-title = Manage keyboard shortcuts
-
-CSK-remove-shortcutkey = Remove custom keyboard shortcut?
-CSK-remove-shortcutkey-description = Are you sure you want to remove this keyboard shortcut?
-
-CSK-restore-default = Restore Defaults?
-CSK-restore-default-description = Restore Midori's default keyboard shortcuts? Your current shortcuts will be lost.
-
-CSK-reboot-browser-label = Restart { -brand-short-name } to apply these settings
-CSK-reboot-browser-button = Restart { -brand-short-name }
-
+floorp-CSK-title = Atajos de teclado personalizados
+floorp-CSK-description = Personalice los atajos de teclado de { -brand-short-name }. { -brand-short-name } provee más de 80 atajos personalizables. Los atajos de teclado duplicados no funcionarán. Reinicie { -brand-short-name } para aplicar esta configuración.
+disable-fx-actions = 
+    .label = Desactivar los atajos de teclado de Mozilla Firefox
+customize-Action = 
+    .label = Añadir atajo
+remove-Action = 
+    .label = Quitar atajo
+CSK-reset-title = Restablecer atajos de teclado personalizados
+CSK-reset-description = Restablecer los atajos de teclado personalizados a los valores predeterminados de { -brand-short-name }.
+CSK-reset-label = Restablecer atajos de teclado personalizados
+CSK-reset-button = Restaurar valores predeterminados
+CSK-manage-title = Administrar atajos de teclado
+CSK-remove-shortcutkey = ¿Quiere quitar el atajo de teclado personalizado?
+CSK-remove-shortcutkey-description = ¿Confirma que quiere quitar este atajo de teclado?
+CSK-restore-default = ¿Quiere restaurar los valores predeterminados?
+CSK-restore-default-description = ¿Quiere restaurar los atajos de teclado predeterminados de { -brand-short-name }? Se perderán sus atajos actuales.
+CSK-reboot-browser-label = Reinicie { -brand-short-name } para aplicar esta configuración
+CSK-reboot-browser-button = Reiniciar { -brand-short-name }
 # Exist shortcut key: "S", "shift"
-CSK-keyborad-shortcut-info = Current keyboard shortcut: { $key } & { $modifiers }.
-CSK-keyborad-shortcut-info-with-keycode = Current keyboard shortcut: { $key }.
-
-CSK-keyborad-shortcut-is-changed = (Not Applied)
-
-floorp-custom-actions-tab-action = Tab Actions
-floorp-custom-actions-page-action = Page Actions
-floorp-custom-actions-visible-action = Visible Actions
-floorp-custom-actions-search-action = Search Actions
-floorp-custom-actions-tools-action = Tools Actions
-floorp-custom-actions-bookmark-action = Bookmark Actions
-floorp-custom-actions-open-page-action = Open Page Actions
-floorp-custom-actions-history-action = History Actions
-floorp-custom-actions-pip-action = Picture-in-Picture Actions
-floorp-custom-actions-downloads-action = Downloads Actions
-floorp-custom-actions-sidebar-action = Sidebar Actions
-floorp-custom-actions-bms-action = Browser Manager Sidebar Actions
-floorp-custom-actions-workspace-action = Workspaces Actions
+CSK-keyborad-shortcut-info = Atajo de teclado actual: { $key } & { $modifiers }.
+CSK-keyborad-shortcut-info-with-keycode = Atajo de teclado actual: { $key }.
+CSK-keyborad-shortcut-is-changed = (Sin aplicar)
+floorp-custom-actions-tab-action = Acciones de pestaña
+floorp-custom-actions-page-action = Acciones de página
+floorp-custom-actions-visible-action = Acciones visibles
+floorp-custom-actions-search-action = Buscar acciones
+floorp-custom-actions-tools-action = Acciones de herramientas
+floorp-custom-actions-bookmark-action = Acciones de marcadores
+floorp-custom-actions-open-page-action = Acciones de la página abierta
+floorp-custom-actions-history-action = Acciones del historial
+floorp-custom-actions-pip-action = Acciones de imagen en imagen
+floorp-custom-actions-downloads-action = Acciones de descargas
+floorp-custom-actions-sidebar-action = Acciones de la barra lateral
+floorp-custom-actions-bms-action = Acciones de barra lateral Gestor del navegador
+floorp-custom-actions-split-view-action = Acciones de vista dividida
+floorp-custom-actions-workspaces-action = Acciones de espacios de trabajo
+floorp-custom-actions-custom-action = Acciones personalizadas (Experimental)
 
 ## Mouse Gestures
-mouse-gesture = Mouse Gestures
-mouse-gesture-description = Gesturefy must be installed to use mouse gestures with { -brand-short-name }.
-Gesturefy = Gesturefy
-about-Gesturefy = Gesturefy is an extension that adds mouse gestures to your browser. If { -brand-short-name } detects the installation of this add-on, it will add gesture commands to Gesturefy that are only available in { -brand-short-name }. Also, this add-on can work with new tabs!
 
+mouse-gesture = Gestos del ratón
+mouse-gesture-description = Gesturefy debe estar instalado para usar gestos del ratón con { -brand-short-name }.
+Gesturefy = Gesturefy
+about-Gesturefy = Gesturefy es una extensión que añade gestos del ratón al navegador. Si { -brand-short-name } detecta la instalación de este complemento, añadirá órdenes de gestos a Gesturefy exclusivas de { -brand-short-name }. Este complemento también crea pestañas nuevas.
 # Translate
 TWS = Translate Web Page
-about-TWS = Translate your page in real time using Google or Yandex. You can also translate selected text or the entire page.
+about-TWS = Traduzca su página en tiempo real con Google o Yandex. Puede también traducir el texto seleccionado o toda la página.
 
 # Privacy Hub
+
+
 ## BlockMoreTrackers
-privacy-hub-header = Privacy Hub
-block-more-tracker = Block more Ads and Trackers
-block-tracker = This section contains a set of extensions designed to block ads and trackers
-view-at-AMO = View this addon in addons.mozilla.org
-uBlock-Origin = uBlock Origin
-about-uboori = uBlock Origin blocks ads, extensive trackers, and additional dangerous sites.
-Facebook-Container = Facebook Container
-about-Facebook-Container = Prevent Facebook from tracking you around the web. Facebook Container extension helps you take control and isolate your web activity from Facebook.
+
+privacy-hub-header = Central de privacidad
+block-more-tracker = Bloquear más anuncios y rastreadores
+block-tracker = Esta sección contiene un conjunto de extensiones diseñadas para bloquear anuncios y rastreadores
+view-at-AMO = Ver este complemento en addons.mozilla.org
+uBlock-Origin = uBlock origen
+about-uboori = uBlock Origin bloquea anuncios, rastreadores extensos y sitios peligrosos adicionales.
+Facebook-Container = Contenedor de Facebook
+about-Facebook-Container = Evita que Facebook te rastree alrededor de la web. La extensión del contenedor de Facebook te ayuda a tomar el control y a aislar tu actividad web de Facebook.
 
 ## Fingerprinting
-fingerprint-header = Resist Fingerprinting & IP address leaks
-block-fingerprint = Fingerprinting is a tracking mechanism that relies on the unique features of your browser and operating system. This section contains settings to further enhance this protection beyond the default blocking.
-enable-firefox-fingerprint-protections = Enable strong protection against fingerprinting
-about-firefox-fingerprint-protection = Enabling protection by Firefox includes forced light mode, disabling some APIs, etc. Some sites may be broken.
-fingerprint-Protection =
- .label =  Anti-fingerprinting protections
-html5-canvas-prompt-settings =
- .label =  Automatically dismiss access confirmation prompts for HTML5 image data
-canvas-prompt = Prevents websites from using the canvas-reading prompt unless manually permitted.
-disable-webgl =
- .label =  Disable WebGL
-about-webgl = WebGL is a Javascript API used to render graphics, which can be used to identify GPU.
-Canvas-Blocker = Canvas Blocker
-about-CB = This add-on spoofs data used by fingerprinting techniques.
-WebRTC-connection = WebRTC is a standard that provides real-time calling. If you disable this setting, you will not be able to use Discord, etc.
-WebRTC = 
- .label = Enable WebRTC Connection
 
+fingerprint-header = Resistir huella dactilar y fugas de direcciones IP
+block-fingerprint = El «fingerprinting» es un mecanismo de rastreo que usa las características únicas de su navegador y sistema operativo. Esta sección contiene configuraciones que mejoran esta protección, más allá del bloqueo predeterminado.
+enable-firefox-fingerprint-protections = Activar protección fuerte contra el «fingerprinting»
+about-firefox-fingerprint-protection = Al activar la protección de Firefox se fuerza el modo claro y se desactivan determinadas API. Algunos sitios web pueden no funcionar.
+fingerprint-Protection = 
+    .label = Protección contra las huellas dactilares
+html5-canvas-prompt-settings = 
+    .label = Descartar automáticamente las peticiones de confirmación de acceso para los datos de imagen HTML5
+canvas-prompt = Evita que los sitios web utilicen el indicador de lectura del lienzo a menos que se permita manualmente.
+disable-webgl = 
+    .label = Desactivar WebGL
+about-webgl = WebGL es una API Javascript que se utiliza para renderizar gráficos, que se puede utilizar para identificar GPU.
+Canvas-Blocker = Bloqueador de lienzo
+about-CB = Este complemento falsifica los datos utilizados por las técnicas de toma de huellas dactilares.
+WebRTC-connection = WebRTC es un estándar que proporciona llamadas en tiempo real. Si desactiva esta configuración, no podrá usar Discord, etc.
+WebRTC = 
+    .label = Activar conexión WebRTC
 ################################################################### browser ###############################################################
 
-rest-mode = Taking a break...
-rest-mode-description = Midori is currently suspended. Press ENTER or OK to continue.
-
-Sidebar2 =
-  .label = Browser Manager Sidebar
-  .tooltiptext = Change Sidebar visibility
-
-sidebar2-mute-and-unmute =
-  .label = Mute/Unmute this Panel
-
-sidebar2-unload-panel =
-  .label = Unload this Panel
-
-sidebar2-change-ua-panel =
-  .label = Toggle Mobile User Agent
-
-sidebar2-delete-panel =
-  .label = Delete this Panel
-
-sidebar2-close-button =
-  .tooltiptext = Close Sidebar
-
-sidebar-back-button =
-  .tooltiptext = Back
-
-sidebar-forward-button =
-  .tooltiptext = Forward
-
+rest-mode = Tomando un descanso...
+rest-mode-description = { -brand-short-name } está suspendido actualmente. Presione INTRO o ACEPTAR para continuar.
+Sidebar2 = 
+    .label = Barra lateral Gestor del navegador
+    .tooltiptext = Cambiar visibilidad de la barra lateral
+sidebar2-mute-and-unmute = 
+    .label = Silenciar/Quitar este Panel
+sidebar2-unload-panel = 
+    .label = Descargar este Panel
+sidebar2-change-ua-panel = 
+    .label = Alternar agente de usuario móvil
+sidebar2-delete-panel = 
+    .label = Eliminar este Panel
+sidebar2-change-zoom-level = 
+    .label = Cambiar nivel de zum
+sidebar2-zoom-in = 
+    .label = Ampliar
+sidebar2-zoom-out = 
+    .label = Reducir
+sidebar2-reset-zoom = 
+    .label = Restablecer zum
+sidebar2-close-button = 
+    .tooltiptext = Cerrar barra lateral
+sidebar-back-button = 
+    .tooltiptext = Atrás
+sidebar-forward-button = 
+    .tooltiptext = Reenviar
 sidebar-reload-button = 
-  .tooltiptext = Reload
-
-sidebar-go-index-button =
-  .tooltiptext = Go Home
-
-sidebar-muteAndUnmute-button =
-  .tooltiptext = Mute/Unmute sidebar
-
-sidebar2-browser-manager-sidebar = Browser Manager
-
-show-browser-manager-sidebar =
-  .tooltiptext = Show { sidebar2-browser-manager-sidebar } Sidebar
-
-sidebar2-bookmark-sidebar = Bookmarks
-
-show-bookmark-sidebar =
-  .tooltiptext = Show { sidebar2-bookmark-sidebar } Sidebar
-
-sidebar2-history-sidebar = History
-
-show-history-sidebar =
-  .tooltiptext = Show { sidebar2-history-sidebar } Sidebar
-
-sidebar2-download-sidebar = Downloads
-
-show-download-sidebar =
-  .tooltiptext = Show { sidebar2-download-sidebar } Sidebar
-
-sidebar2-notes-sidebar = Notes
-
-show-notes-sidebar =
-  .tooltiptext = Show { sidebar2-notes-sidebar } Sidebar
-
-sidebar-add-button =
-  .tooltiptext = { bsb-add }
-
-sidebar-addons-button =
-  .tooltiptext = Add-ons and themes
-
-sidebar-passwords-button =
-  .tooltiptext = Passwords
-
-sidebar-preferences-button =
-  .tooltiptext = Settings
-
-sidebar-keepWidth-button =
-  .tooltiptext = Keep using the current width on this Panel
-
-sidebar2-keep-width-for-global =
-  .label = Apply this width to all panels without a custom width
-
+    .tooltiptext = Reload
+sidebar-go-index-button = 
+    .tooltiptext = Ir a casa
+sidebar-muteAndUnmute-button = 
+    .tooltiptext = Mute/Unmute sidebar
+sidebar2-browser-manager-sidebar = Gestor del navegador
+show-browser-manager-sidebar = 
+    .tooltiptext = Mostrar barra lateral { sidebar2-browser-manager-sidebar }
+sidebar2-bookmark-sidebar = Marcadores
+show-bookmark-sidebar = 
+    .tooltiptext = Mostrar barra lateral { sidebar2-bookmark-sidebar }
+sidebar2-history-sidebar = Historial
+show-history-sidebar = 
+    .tooltiptext = Mostrar barra lateral { sidebar2-history-sidebar }
+sidebar2-download-sidebar = Descargas
+show-download-sidebar = 
+    .tooltiptext = Mostrar barra lateral { sidebar2-download-sidebar }
+sidebar2-notes-sidebar = Notas
+show-notes-sidebar = 
+    .tooltiptext = Mostrar barra lateral { sidebar2-notes-sidebar }
+sidebar-add-button = 
+    .tooltiptext = { bsb-add }
+sidebar-addons-button = 
+    .tooltiptext = Complementos y temas
+sidebar2-hide-sidebar-button = 
+    .tooltiptext = Ocultar barra lateral Gestor del navegador
+sidebar-passwords-button = 
+    .tooltiptext = Contraseñas
+sidebar-preferences-button = 
+    .tooltiptext = Configuración
+sidebar-keepWidth-button = 
+    .tooltiptext = Seguir usando anchura actual en este panel
+sidebar2-keep-width-for-global = 
+    .label = Aplicar esta anchura a todos los paneles sin anchura personalizada
 bsb-context-add = 
-  .label = Add page to Web Panel...
-
+    .label = Añadir página al Panel Web...
 bsb-context-link-add = 
-  .label = Add link to Web Panel...
+    .label = Añadir enlace al Panel Web...
 #################################################################### menu panel ############################################################
 
 open-profile-dir = 
-    .label = Open Profile Directory
-
+    .label = Abrir directorio de perfil
 ####################################################################### menu ###############################################################
 
-css-menu =
+css-menu = 
     .label = CSS
     .accesskey = C
-
-css-menubar =
+css-menubar = 
     .label = CSS
     .accesskey = C
-
-rebuild-css =
-    .label = Rebuild browser CSS files
+rebuild-css = 
+    .label = Reconstruir archivos CSS del navegador
     .accesskey = R
-
-make-browsercss-file =
-    .label = Create browser CSS file
+make-browsercss-file = 
+    .label = Crear archivo CSS del navegador
     .accesskey = M
-
-open-css-folder =
-    .label = Open CSS folder
+open-css-folder = 
+    .label = Abrir carpeta CSS
     .accesskey = O
-
-edit-userChromeCss-editor =
-    .label = Edit userChrome.css file
-
-edit-userContentCss-editor =
-    .label = Edit userContent.css file
-
-not-found-editor-path = Could not find a CSS file editor
-set-pref-description = Input the file location of the CSS file editor you want to use:
-rebuild-complete = Rebuild has been completed.
-please-enter-filename = Please enter a file name.
-
+edit-userChromeCss-editor = 
+    .label = Editar archivo userChrome.css
+edit-userContentCss-editor = 
+    .label = Editar archivo userContent.css
+not-found-editor-path = No se pudo encontrar un editor de archivos CSS
+set-pref-description = Introduzca la ubicación del archivo del editor de archivos CSS que desea utilizar:
+rebuild-complete = La reconstrucción ha sido completada.
+please-enter-filename = Proporcione un nombre de archivo.
 ################################################################### Undo-Closed-Tab ###############################################################
 
-undo-closed-tab = Reopen closed tab
-
+undo-closed-tab = Reabrir pestaña cerrada
 ################################################################### about:addons ###############################################################
 
 # Dual Theme
-dual-theme-enable-addon-button = Enable as a sub-theme
-dual-theme-disable-addon-button = Disable sub-theme
-dual-theme-enabled-heading = Enabled as a sub-theme
-
+dual-theme-enable-addon-button = Activar como subtema
+dual-theme-disable-addon-button = Desactivar subtema
+dual-theme-enabled-heading = Activado como subtema
 ##################################################################### toolbar ###############################################################
 
-status-bar =
-    .label = Status Bar
-     .accesskey = S
-
+status-bar = 
+    .label = Barra de estado
+    .accesskey = S
 ##################################################################### Gesturefy ###############################################################
 
-gf-floorp-open-tree-style-tab-name = [Midori] Open Tree Style Tab Panel
-gf-floorp-open-tree-style-tab-description = Open Tree Style Tab Panel of Sidebar
+gf-floorp-open-tree-style-tab-name = [{ -brand-short-name }] Abrir panel Pestañas estilo árbol
+gf-floorp-open-tree-style-tab-description = Abrir panel Pestañas estilo árbol en barra lateral
+gf-floorp-open-bookmarks-sidebar-name = [{ -brand-short-name }] Abrir panel Marcadores
+gf-floorp-open-bookmarks-sidebar-description = Abrir panel Marcadores en barra lateral
+gf-floorp-open-history-sidebar-name = [{ -brand-short-name }] Abrir panel Historial
+gf-floorp-open-history-sidebar-description = Abrir panel Historial barra lateral
+gf-floorp-open-synctabs-sidebar-name = [{ -brand-short-name }] Abrir panel Pestañas sincronizadas
+gf-floorp-open-synctabs-sidebar-description = Abrir panel Pestañas sincronizadas en barra lateral
+gf-floorp-close-sidebar-name = [{ -brand-short-name }] Cerrar barra lateral
+gf-floorp-close-sidebar-description = Cerrar barra lateral
+gf-floorp-open-browser-manager-sidebar-name = [{ -brand-short-name }] Open BMS
+gf-floorp-open-browser-manager-sidebar-description = Abrir barra lateral Gestor del navegador si se carga el Panel web de esta
+gf-floorp-close-browser-manager-sidebar-name = [{ -brand-short-name }] Close BMS
+gf-floorp-close-browser-manager-sidebar-description = Cerrar barra lateral Gestor del navegador
+gf-floorp-show-browser-manager-sidebar-name = [{ -brand-short-name }] Toggle BMS
+gf-floorp-show-browser-manager-sidebar-description = Cambiar la barra lateral Gestor del navegador
+gf-floorp-hide-statusbar-name = [{ -brand-short-name }] Ocultar barra de estado
+gf-floorp-hide-statusbar-description = Ocultar barra de estado
+gf-floorp-show-statusbar-name = [{ -brand-short-name }] Alternar barra de estado
+gf-floorp-show-statusbar-description = Mostrar u ocultar barra de estado
+gf-floorp-open-extension-sidebar-name = [{ -brand-short-name }] Abrir barra lateral del complemento seleccionado
+gf-floorp-open-extension-sidebar-description = Abrir complemento seleccionado en la barra lateral
+gf-floorp-open-extension-sidebar-settings-addons-id = Añadido de barra lateral
+gf-floorp-open-extension-sidebar-settings-addons-id-description = La extensión del complemento abierto de la barra lateral
+gf-floorp-open-extension-sidebar-settings-list-default = Seleccione el complemento
+gf-floorp-open-extension-sidebar-settings-list-unknwon = Complemento desconocido
+##################################################################### { -brand-short-name } System Update Portable Version ###############################################################
 
-gf-floorp-open-bookmarks-sidebar-name = [Midori] Open Bookmarks Panel of Sidebar
-gf-floorp-open-bookmarks-sidebar-description = Open Bookmarks Panel of Sidebar
+update-portable-notification-found-title = ¡Actualizaciones encontradas!
+update-portable-notification-found-message = Descargando actualizaciones...
+update-portable-notification-ready-title = ¡Listo para actualizar!
+update-portable-notification-ready-message = { -brand-short-name } se actualizará durante el próximo reinicio.
+update-portable-notification-success-title = ¡Actualización exitosa!
+update-portable-notification-success-message = La actualización se efectuó correctamente. Disfrute de la versión nueva de { -brand-short-name }.
+update-portable-notification-failed-title = Error al actualizar.
+update-portable-notification-failed-redirector-message = Error de actualización. Reiniciar su navegador puede resolver este problema.
+update-portable-notification-failed-prepare-message = Error al preparar la actualización.
+##################################################################### { -brand-short-name } Portable Preferences ###############################################################
 
-gf-floorp-open-history-sidebar-name = [Midori] Open History Panel of Sidebar
-gf-floorp-open-history-sidebar-description = Open History Panel of Sidebar
-
-gf-floorp-open-synctabs-sidebar-name = [Midori] Open Synced Tabs Panel of Sidebar
-gf-floorp-open-synctabs-sidebar-description = Open Synced Tabs Panel of Sidebar
-
-gf-floorp-close-sidebar-name = [Midori] Close Sidebar
-gf-floorp-close-sidebar-description = Close Sidebar
-
-
-gf-floorp-open-browser-manager-sidebar-name = [Midori] Open BMS
-gf-floorp-open-browser-manager-sidebar-description =  Open Browser Manager Sidebar, if webpanel of Browser Manager Sidebar was loaded
-
-gf-floorp-close-browser-manager-sidebar-name = [Midori] Close BMS
-gf-floorp-close-browser-manager-sidebar-description = Close Browser Manager Sidebar
-
-gf-floorp-show-browser-manager-sidebar-name = [Midori] Toggle BMS
-gf-floorp-show-browser-manager-sidebar-description = Toggle Browser Manager Sidebar
-
-gf-floorp-hide-statusbar-name = [Midori] Hide Status Bar
-gf-floorp-hide-statusbar-description = Hide Status Bar
-
-gf-floorp-show-statusbar-name = [Midori] Toggle Status Bar
-gf-floorp-show-statusbar-description = Show or Hide Status Bar
-
-gf-floorp-open-extension-sidebar-name = [Midori] Open selected add-on of Sidebar
-gf-floorp-open-extension-sidebar-description = Open selected add-on of Sidebar
-gf-floorp-open-extension-sidebar-settings-addons-id = Add-on of Sidebar
-gf-floorp-open-extension-sidebar-settings-addons-id-description = The extension of the add-on open of sidebar
-gf-floorp-open-extension-sidebar-settings-list-default = Please select add-on
-gf-floorp-open-extension-sidebar-settings-list-unknwon = Unknown add-on
-##################################################################### Midori System Update Portable Version ###############################################################
-
-update-portable-notification-found-title = Updates found!
-update-portable-notification-found-message = Downloading updates...
-update-portable-notification-ready-title = Ready to update!
-update-portable-notification-ready-message = { -brand-short-name } will be updated when it launches next.
-update-portable-notification-success-title = Update succeeded!
-update-portable-notification-success-message = Update succeeded! Hope you enjoy the new version of Midori!
-update-portable-notification-failed-title = Update failed.
-update-portable-notification-failed-redirector-message = Update failed. Restarting your browser may solve this problem.
-update-portable-notification-failed-prepare-message = Failed to prepare the update.
-
-##################################################################### Midori Portable Preferences ###############################################################
-
-floorp-portable-update-application-allow = { -brand-short-name } Portable Update
-floorp-update-application-auto-enabled-option =
-  .label = Automatically check for updates to { -brand-short-name } portable. (Recommended)
-  
+floorp-portable-update-application-allow = Actualización portable { -brand-short-name }
+floorp-update-application-auto-enabled-option = 
+    .label = Comprobar automáticamente las actualizaciones de { -brand-short-name } portable. (Recomendado)
 ##################################################################### Open link in external ###############################################################
-openInExternal-title = Open in external browser
-open-link-in-external-enabled-option =
- .label = Enable the "Open in external browser" feature
-open-link-in-external-select-browser-option = Choose what browser will be opened
-open-link-in-external-select-browser-option-default =
- .label = Default browser
-open-link-in-external-tab-context-menu = Open in external browser
-open-link-in-external-tab-dialog-title-error = An error occurred:
-open-link-in-external-tab-dialog-message-default-browser-not-found = Default browser was not found or is not configured.
-open-link-in-external-tab-dialog-message-selected-browser-not-found = The selected browser does not exist.
+openInExternal-title = Abrir en navegador externo
+open-link-in-external-enabled-option = 
+    .label = Activar funcionalidad «Abrir en navegador externo»
+open-link-in-external-select-browser-option = Elija qué navegador se abrirá
+open-link-in-external-select-browser-option-default = 
+    .label = Navegador predeterminado
+open-link-in-external-tab-context-menu = Abrir en navegador externo
+open-link-in-external-tab-dialog-title-error = Se ha producido un error:
+open-link-in-external-tab-dialog-message-default-browser-not-found = El navegador predeterminado no se ha encontrado o no está configurado.
+open-link-in-external-tab-dialog-message-selected-browser-not-found = El navegador seleccionado no existe.
+######################################################################### { -brand-short-name } Notes ###############################################################
 
-
-######################################################################### Midori Notes ###############################################################
-
-new-memo = New
-memo-title-input-placeholder = Write a title here
-memo-input-placeholder = Write or paste a memo here
-delete-memo = Delete
-save-memo = Save
-memo-welcome-title = Welcome!
-memo-first-tip = Welcome to Midori Notes! Here are some instructions on how to use it!
-memo-second-tip = Midori Notes is a notepad that lets you store multiple notes that sync across devices. To enable synchronization, you need to sign in to Midori with your Firefox account.
-memo-third-tip = Midori Notes will be saved in your Midori settings and synchronized across devices using Firefox Sync. Firefox Sync encrypts the contents of the sync with your Firefox account password, so no one but you knows its contents.
-memo-import-data-tip = Firefox Sync is not a backup service. We recommend you to create backups.
-memo-new-title = New Note
-chage-view-mode = Toggle View/Edit Mode
-readonly-mode = Offline (Read-only)
-
+new-memo = Nuevo
+memo-title-input-placeholder = Escribe un título aquí
+memo-input-placeholder = Escribe o pega un memo aquí
+delete-memo = Eliminar
+save-memo = Guardar
+memo-welcome-title = Le damos la bienvenida
+memo-first-tip = Le damos la bienvenida a Notas de { -brand-short-name }. He aquí instrucciones de uso.
+memo-second-tip = Notas de { -brand-short-name } es un bloc de notas que permite guardar apuntes que se sincronizarán entre dispositivos. Para activar la sincronización, acceda a { -brand-short-name } con su cuenta de Firefox.
+memo-third-tip = Las notas de { -brand-short-name } se guardarán en la configuración de { -brand-short-name } y se sincronizarán entre dispositivos por medio de Firefox Sync. Firefox Sync cifra el contenido de la sincronización con la contraseña de su cuenta de Firefox, de modo tal que nadie salvo usted sabrá su contenido.
+memo-import-data-tip = Firefox Sync no es un servicio de copias de respaldo. Recomendamos que cree copias de respaldo.
+memo-new-title = Nueva nota
+chage-view-mode = Alternar modo vista/edición
+readonly-mode = Desconectado (sólo lectura)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Astian Support
-default-bookmark-notes = Midori Notes
-
+default-bookmark-ablaze-support = Soporte de Ablaze
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 
-  .label = Clear Downloads
-  .accesskey = D
-  .tooltiptext = Clear Downloads
-
-floorp-show-all-downloads =
-  .label = Show all downloads
-  .accesskey = S
-  .tooltiptext = Show all downloads
-
+    .label = Limpiar descargas
+    .accesskey = D
+    .tooltiptext = Limpiar descargas
+floorp-show-all-downloads = 
+    .label = Mostrar todas las descargas
+    .accesskey = S
+    .tooltiptext = Mostrar todas las descargas
 ######################################################################### workspace ###############################################################
 
-workspace-prompt-title = Midori Workspace
-please-enter-workspace-name = Please enter the Workspace's new name.
-please-enter-workspace-name-2 = The Workspace's name cannot contain symbols and spaces.
-workspace-error = An error occurred:
-workspace-error-discription = Either a Workspace with this name exists or the name is invalid.
+workspaces-create-new-workspace-button = 
+    .label = Crear espacio de trabajo nuevo…
+    .tooltiptext = Crear un espacio de trabajo nuevo
+workspaces-manage-workspaces-button = 
+    .label = Gestionar espacios de trabajo…
+    .tooltiptext = Gestionar sus espacios de trabajo
+reorder-this-workspace-to-up = 
+    .label = Subir este espacio de trabajo
+    .accesskey = B
+reorder-this-workspace-to-down = 
+    .label = Bajar este espacio de trabajo
+    .accesskey = A
+rename-this-workspace = 
+    .label = Cambiar nombre de espacio de trabajo
+    .accesskey = N
+delete-this-workspace = 
+    .label = Eliminar espacio de trabajo
+    .accesskey = E
+manage-this-workspaces = 
+    .label = Gestionar espacios de trabajo…
+    .accesskey = G
+workspace-new-default-name = Espacio de trabajo nuevo
+workspace-default-name = Predeterminado
+move-tab-another-workspace = 
+    .label = Mover a otro espacio de trabajo
+rename-workspace-prompt-title = Cambiar nombre de espacio de trabajo
+rename-workspace-prompt-text = Introduzca el nombre del espacio de trabajo. Se puede usar la mayoría de caracteres y símbolos.
+workspaces-toolbar-button = Espacios de trabajo
+    .label = Espacios de trabajo
+    .tooltiptext = Seleccionar espacio de trabajo…
 
-workspace-button = Workspaces
-  .label = Workspaces
-  .tooltiptext = Select a Workspace...
+## Preferences
 
-workspace-default = Default
-workspace-add = 
- .label= New Workspace...
-
-workspace-context-menu-selected-tab =
- .label = Selected tab cannot be moved
-move-tab-another-workspace =
- .label = Move to another Workspace
-workspace-rename = 
-  .label = Rename this Workspace
-
-workspace-delete = 
-  .label = Delete Workspace
-
-manage-workspace = Manage this Workspace
-  .label = Manage this workspace
+enable-workspaces = 
+    .label = Activar espacios de trabajo
+    .tooltiptext = Activar espacios de trabajo
+workspace-notice = Los espacios de trabajo no funcionarán con esta configuración activada salvo que el botón de estos se añada a la barra de herramientas. Use esta opción si quiere desactivar por completo los espacios de trabajo.
+enable-workspaces-with-experimental = 
+    .label = Activar espacios de trabajo (experimental)
+    .tooltiptext = Activar espacios de trabajo (experimental)
+workspace-warning = Workspaces cannot be used with Tab Group add-ons. If you want to use Tab Group add-ons, please disable Workspaces and restart { -brand-short-name }.
+category-workspaces = 
+    .label = Espacios de trabajo
+    .tooltiptext = Espacios de trabajo
+pane-workspaces-title = Espacios de trabajo
+floorp-workspaces-title = Espacios de trabajo de { -brand-short-name }
+floorp-workspace-settings-button = Configuración de espacio de trabajo...
+floorp-preferences-label = Preferencias
+floorp-extensions-label = Extensiones
+floorp-private-label = Privado
+change-to-close-workspace-popup-option = 
+    .label = Cerrar ventana emergente Espacios de trabajo al seleccionar uno
+manage-workspace-on-bms-option = 
+    .label = Gestionar espacio de trabajo en la barra lateral Gestor del navegador
+show-workspace-name-option = 
+    .label = Mostrar nombre del espacio de trabajo en el botón Espacios de trabajo de la barra de pestañas
 ######################################################################### menubar item ###############################################################
 
-sharemode-menuitem =
-  .label = Share Mode
-  .accesskey = S
-
-
+sharemode-menuitem = 
+    .label = Modo compartir
+    .accesskey = S
 ############################################################################## Welcome page ###############################################################
 
-welcome-login-to-firefox-account = Sign in to your Firefox Account
-welcome-to-floorp = Welcome to { -brand-short-name }!
-welcome-discribe-floorp = { -brand-short-name } is a fast and secure lightweight browser committed to user privacy and security.
-welcome-start-setup = Ready to jump in?
-welcome-skip-to-start-browsing = Skip to Start Browsing
-welcome-select-preferences-template = Select a template
-welcome-minimum-template = Basic
-welcome-enable-basic-features = Enable basic features & settings for a simple experience.
-welcome-medium-template = Default
-welcome-enable-some-features = Enable additional features & settings for a better experience.
-welcome-maximum-template = Advanced
-welcome-enable-most-of-features = Enable advanced features & settings. Recommended for experienced users.
-welcome-go-next-setup = Next
-welcome-select-browser-design = Select a Browser Design
-welcome-discribe-browser-design = You can choose one of the wonderful third-party { -brand-short-name } designs. OS specific designs are also available at Preferences.
-welcome-design-lepton-name = Lepton Original Design
-welcome-design-photon-name = Lepton Photon Design
-welcome-design-ProtonFix-name = Lepton ProtonFix Design
-welcome-design-floorp-fluerial-name = Midori Fluerial Design
-welcome-design-firefox-proton-name = Firefox Proton Design
-welcome-import-data = Import Your Browser Data
-welcome-import-data-description = Fast setup! Import your bookmarks, passwords, and more from your old browser. Firefox user can import data from Firefox Sync.
-welcome-import-data-button = Import Data...
-welcome-import-data-skip = Skip Import
-welcome-select-button = Select
-welcome-finish-setup = Setup Complete!
-welcome-finish-setup-description = You're all set! Other settings like Vertical Tabs & Add-ons can be found in about:preferences. Enjoy { -brand-short-name }!
-welcomet-finish-setup = Start Browsing the Web
-
+welcome-login-to-firefox-account = Inicia sesión en tu cuenta de Firefox
+welcome-to-floorp = ¡Le damos la bienvenida a { -brand-short-name }!
+welcome-describe-floorp = { -brand-short-name } is a feature-rich, flexible browser that supports various environments and is based on Firefox.
+welcome-start-setup = Ready to dive in?
+welcome-skip-to-start-browsing = Omitir para empezar a navegar
+welcome-select-preferences-template = Elija una plantilla
+welcome-minimum-template = Básico
+welcome-enable-basic-features = Enable basic features and settings for a simple experience.
+welcome-medium-template = Predeterminado
+welcome-enable-some-features = Enable additional features and settings for a better experience.
+welcome-maximum-template = Avanzado
+welcome-enable-most-of-features = Enable advanced features and settings. Recommended for experienced users.
+welcome-go-next-setup = Siguiente
+welcome-select-browser-design = Seleccione un diseño del navegador
+welcome-describe-browser-design = You can choose one of the wonderful third-party { -brand-short-name } designs. OS-specific designs are also available in Preferences.
+welcome-design-lepton-name = Diseño original de Lepton
+welcome-design-photon-name = Diseño de Lepton Photon
+welcome-design-ProtonFix-name = Diseño ProtonFix de Lepton
+welcome-design-floorp-fluerial-name = Diseño Fluerial de { -brand-short-name }
+welcome-design-firefox-proton-name = Diseño de Firefox Proton
+welcome-import-data = Importar tus datos del navegador
+welcome-import-data-description = Quick setup! Import your bookmarks, passwords, and more from your old browser. Firefox users can import data from Firefox Sync.
+welcome-import-data-button = Importar datos...
+welcome-import-data-skip = Omitir importación
+welcome-select-button = Seleccionar
+welcome-finish-setup = ¡Configuración completada!
+welcome-finish-setup-description = You're all set! Other features like Vertical Tabs & Workspaces can be found in { -brand-short-name }'s Settings. Enjoy { -brand-short-name }!
+welcomet-finish-setup = Empezar a navegar por la web
 ############################################################# Custom Shortcutkey ###############################################################
 
-category-CSK =
- .label = Keyboard shortcuts
- .tooltiptext = Keyboard shortcuts
-category-CSK-title = Keyboard shortcuts
+category-CSK = 
+    .label = Atajos de teclado
+    .tooltiptext = Atajos de teclado
+category-CSK-title = Atajos de teclado
 shortcutkey-customize = 
- .title = Keyboard shortcuts
-select-shortcutkeyAction = Select an action to trigger
-shortcutkey-customize-key-list-placeholder = Your keyboard shortcut will appear here
-shortcut-key-label = Keyboard shortcut
-start-input-button-listen = Start listening
-end-input-button-listen = Stop listening
-shortcut-key-description = Click "Start listening" and enter your new keyboard shortcut for this action. Multiple keys can be used, however keyboard shortcuts will not work if already assigned to other actions.
-
-floorp-custom-actions-open-new-tab = Open a new tab
-  .label = Open a new tab
-
-floorp-custom-actions-close-tab = Close the current tab
-  .label = Close the current tab
-floorp-custom-actions-open-new-window = Open a new window
-  .label = Open a new window
-floorp-custom-actions-open-new-private-window = Open a new private window
-  .label = Open a new private window
-floorp-custom-actions-close-window = Close the current window
-  .label = Close the current window
-floorp-custom-actions-restore-last-session = Restore the last session
-  .label = Restore the last session
-floorp-custom-actions-restore-last-window = Restore the last window
-  .label = Restore the last window
-floorp-custom-actions-show-next-tab = Show the next tab
-  .label = Show the next tab
-floorp-custom-actions-show-previous-tab = Show the previous tab
-  .label = Show the previous tab
-floorp-custom-actions-show-all-tabs-panel = Show all tabs panel
-  .label = Show the tabs list
-floorp-custom-actions-send-with-mail = Send with mail
-  .label = Send via email
-floorp-custom-actions-save-page = Save page
-  .label = Save page
+    .title = Atajos de teclado
+select-shortcutkeyAction = Seleccione una acción para activar
+shortcutkey-customize-key-list-placeholder = Su atajo de teclado aparecerá aquí
+shortcut-key-label = Atajo de teclado
+start-input-button-listen = Start Listening
+end-input-button-listen = Stop Listening
+shortcut-key-description = Click "Start Listening" and enter your new keyboard shortcut for this action. Multiple keys can be used; however, keyboard shortcuts will not work if already assigned to other actions.
+floorp-custom-actions-open-new-tab = Abrir una pestaña nueva
+    .label = Abrir una pestaña nueva
+floorp-custom-actions-close-tab = Cerrar la pestaña actual
+    .label = Cerrar la pestaña actual
+floorp-custom-actions-open-new-window = Abrir una nueva ventana
+    .label = Abrir una nueva ventana
+floorp-custom-actions-open-new-private-window = Abrir una ventana privada nueva
+    .label = Abrir una ventana privada nueva
+floorp-custom-actions-close-window = Cerrar la ventana actual
+    .label = Cerrar la ventana actual
+floorp-custom-actions-restore-last-session = Restaurar la última sesión
+    .label = Restaurar la última sesión
+floorp-custom-actions-restore-last-window = Restaurar la última ventana
+    .label = Restaurar la última ventana
+floorp-custom-actions-show-next-tab = Mostrar la siguiente pestaña
+    .label = Mostrar la siguiente pestaña
+floorp-custom-actions-show-previous-tab = Mostrar la pestaña anterior
+    .label = Mostrar la pestaña anterior
+floorp-custom-actions-show-all-tabs-panel = Mostrar todo el panel de pestañas
+    .label = Mostrar la lista de pestañas
+floorp-custom-actions-send-with-mail = Enviar con correo
+    .label = Enviar por email
+floorp-custom-actions-save-page = Guardar página
+    .label = Guardar página
 floorp-custom-actions-print-page = Print page
-  .label = Print page
-floorp-custom-actions-mute-current-tab = Toggle mute/unmute current tab
-  .label = Toggle mute/unmute current tab
-floorp-custom-actions-toggle-bookmark-toolbar =
-  .label = Toggle Bookmarks Toolbar
-floorp-custom-actions-show-source-of-page = Show source of page
-  .label = Open Page Source
-floorp-custom-actions-show-page-info = Show page info
-  .label = Open Page Info
-floorp-custom-actions-zoom-in = Zoom in
-  .label = Zoom in
-floorp-custom-actions-zoom-out = Zoom out
-  .label = Zoom out
+    .label = Print page
+floorp-custom-actions-mute-current-tab = Alternar silenciar/desactivar la pestaña actual
+    .label = Alternar silenciar/desactivar la pestaña actual
+floorp-custom-actions-toggle-bookmark-toolbar = Conmutar barra de marcadores
+    .label = Alternar barra de marcadores
+floorp-custom-actions-show-source-of-page = Mostrar origen de la página
+    .label = Código abierto
+floorp-custom-actions-show-page-info = Mostrar información de página
+    .label = Abrir página Info
+floorp-custom-actions-zoom-in = Acercarse en
+    .label = Acercarse en
+floorp-custom-actions-zoom-out = Apagar
+    .label = Apagar
 floorp-custom-actions-reset-zoom = Reset zoom
-  .label = Reset zoom
-floorp-custom-actions-back = Back
-  .label = Back
-floorp-custom-actions-forward = Forward
-  .label = Forward
+    .label = Reset zoom
+floorp-custom-actions-back = Atrás
+    .label = Atrás
+floorp-custom-actions-forward = Reenviar
+    .label = Reenviar
 floorp-custom-actions-reload = Reload
-  .label = Reload
-floorp-custom-actions-stop = Stop
-  .label = Stop
-floorp-custom-actions-force-reload = Force reload
-  .label = Force reload
-floorp-custom-actions-search-in-this-page = Search in this page
-  .label = Find in page
-floorp-custom-actions-show-next-search-result = Show next search word in this page result
-  .label = Next "Find in page" result
-floorp-custom-actions-show-previous-search-result = Show previous search word in this page result
-  .label = Previous "Find in page" result
-floorp-custom-actions-search-the-web = Search the web
-  .label = Search the web
-floorp-custom-actions-open-migration-wizard = Open migration wizard
-  .label = Open migration wizard
-floorp-custom-actions-quit-from-application = Quit from application
-  .label = Quit { -brand-short-name }
-floorp-custom-actions-enter-into-customize-mode = Enter in toolbar Customize mode
-  .label = Open Customize { -brand-short-name }
-floorp-custom-actions-enter-into-offline-mode = Enter in offline mode
-  .label = Enter offline mode
-floorp-custom-actions-open-screen-capture = Open screen capture tool
-  .label = Take a screenshot
-floorp-custom-actions-show-pip = Show picture in picture
-  .label = Show Picture-in-Picture
-floorp-custom-actions-bookmark-this-page = Bookmark this page
-  .label = Bookmark this page
-floorp-custom-actions-open-bookmarks-sidebar = Open bookmarks sidebar
-  .label = Open Bookmarks sidebar
-floorp-custom-actions-open-bookmark-add-tool = Open bookmark add tool
-  .label = Add Bookmark
-floorp-custom-actions-open-bookmark-add-toolbar = Open bookmark add toolbar
-  .label = Add to Bookmarks Toolbar
-floorp-custom-actions-open-bookmarks-manager = Open bookmarks manager
-  .label = Open Bookmarks Manager
-floorp-custom-actions-show-bookmark-toolbar = Toggle bookmark toolbar
-  .label = Toggle Bookmarks Toolbar
-floorp-custom-actions-open-general-preferences = Open general preferences
-  .label = Open General Preferences
-floorp-custom-actions-open-privacy-preferences = Open privacy preferences
-  .label = Open Privacy Preferences
-floorp-custom-actions-open-workspaces-preferences = Open workspaces preferences
-  .label = Open Workspaces Preferences
-floorp-custom-actions-open-containers-preferences = Open containers preferences
-  .label = Open Containers Preferences
-floorp-custom-actions-open-search-preferences = Open search preferences
-  .label = Open Search Preferences
-floorp-custom-actions-open-sync-preferences = Open sync preferences
-  .label = Open Sync Preferences
-floorp-custom-actions-open-task-manager = Open task manager
-  .label = Open { -brand-short-name }'s Task Manager
-floorp-custom-actions-open-home-page = Open { -brand-short-name }'s home page
-  .label = Open { -brand-short-name }'s homepage
-floorp-custom-actions-open-addons-manager = Open addons manager
-  .label = Open Add-ons and themes
-floorp-custom-actions-forget-history = Forget history
-  .label = Forget history
-floorp-custom-actions-quick-forget-history = Quick forget history
-  .label = Quick forget history
-floorp-custom-actions-clear-recent-history = Clear recent history
-  .label = Clear recent history
-floorp-custom-actions-search-history = Search history
-  .label = Search history
-floorp-custom-actions-manage-history = Manage history
-  .label = Manage history
-floorp-custom-actions-open-downloads = Open downloads
-  .label = Open Downloads
-floorp-custom-actions-show-bsm = Show browser manager sidebar
-  .label = Show the Browser Manager Sidebar
-floorp-custom-actions-show-bookmark-sidebar = Show bookmark sidebar
-  .label = Show Bookmarks Sidebar
-floorp-custom-actions-show-history-sidebar = Show history sidebar
-  .label = Show History Sidebar
-floorp-custom-actions-show-synced-tabs-sidebar = Show synced tabs sidebar
-  .label = Show Synced Tabs Sidebar
-floorp-custom-actions-reverse-sidebar = Reverse sidebar position
-  .label = Reverse sidebar position
+    .label = Reload
+floorp-custom-actions-stop = Parar
+    .label = Parar
+floorp-custom-actions-force-reload = Forzar recarga
+    .label = Forzar recarga
+floorp-custom-actions-search-in-this-page = Buscar en esta página
+    .label = Buscar en la página
+floorp-custom-actions-show-next-search-result = Mostrar siguiente palabra de búsqueda en este resultado de página
+    .label = Siguiente resultado "Encontrar en la página"
+floorp-custom-actions-show-previous-search-result = Mostrar la palabra de búsqueda anterior en este resultado de página
+    .label = Resultado anterior de "Buscar en la página"
+floorp-custom-actions-search-the-web = Buscar en la web
+    .label = Buscar en la web
+floorp-custom-actions-open-migration-wizard = Abrir asistente de migración
+    .label = Abrir asistente de migración
+floorp-custom-actions-quit-from-application = Salir de la aplicación
+    .label = Salir de { -brand-short-name }
+floorp-custom-actions-enter-into-customize-mode = Personalizar barra de herramientas
+    .label = Abrir personalizar { -brand-short-name }
+floorp-custom-actions-enter-into-offline-mode = Entrar en modo sin conexión
+    .label = Entrar en modo sin conexión
+floorp-custom-actions-open-screen-capture = Abrir herramienta de captura de pantalla
+    .label = Captura de pantalla
+floorp-custom-actions-show-pip = Mostrar imagen en la imagen
+    .label = Mostrar imagen en imagen
+floorp-custom-actions-bookmark-this-page = Marcar esta página
+    .label = Marcar esta página
+floorp-custom-actions-open-bookmarks-sidebar = Abrir barra lateral de marcadores
+    .label = Abrir barra lateral de marcadores
+floorp-custom-actions-open-bookmark-add-tool = Abrir herramienta añadir marcadores
+    .label = Añadir marcador
+floorp-custom-actions-open-bookmark-add-toolbar = Abrir ventana emergente «Añadir marcador nuevo»
+    .label = Añadir a la barra de herramientas de favoritos
+floorp-custom-actions-open-bookmarks-manager = Abrir gestor de marcadores
+    .label = Abrir gestor de marcadores
+floorp-custom-actions-show-bookmark-toolbar = Cambiar barra de herramientas de marcadores
+    .label = Alternar barra de marcadores
+floorp-custom-actions-open-general-preferences = Abrir preferencias generales
+    .label = Abrir preferencias generales
+floorp-custom-actions-open-privacy-preferences = Abrir preferencias de privacidad
+    .label = Abrir preferencias de privacidad
+floorp-custom-actions-open-workspaces-preferences = Abrir preferencias de espacios de trabajo
+    .label = Abrir Preferencias de espacios de trabajo
+floorp-custom-actions-open-containers-preferences = Abrir preferencias de contenedores
+    .label = Abrir Preferencias de Contenedores
+floorp-custom-actions-open-search-preferences = Abrir preferencias de búsqueda
+    .label = Abrir preferencias de búsqueda
+floorp-custom-actions-open-sync-preferences = Abrir preferencias de sincronización
+    .label = Abrir preferencias de sincronización
+floorp-custom-actions-open-task-manager = Abrir gestor de tareas
+    .label = Abrir el administrador de tareas de { -brand-short-name }
+floorp-custom-actions-open-home-page = Abrir la página de inicio de { -brand-short-name }
+    .label = Abrir la página principal de { -brand-short-name }
+floorp-custom-actions-open-addons-manager = Abrir Complementos y temas
+    .label = Abrir complementos y temas
+floorp-custom-actions-forget-history = Olvidar historial
+    .label = Olvidar historial
+floorp-custom-actions-quick-forget-history = Historial de olvidos rápidos
+    .label = Historial de olvidos rápidos
+floorp-custom-actions-clear-recent-history = Borrar historial reciente
+    .label = Borrar historial reciente
+floorp-custom-actions-search-history = Historial de búsqueda
+    .label = Historial de búsqueda
+floorp-custom-actions-manage-history = Gestionar historial
+    .label = Gestionar historial
+floorp-custom-actions-open-downloads = Abrir descargas
+    .label = Abrir descargas
+floorp-custom-actions-show-bms = Toggle browser manager sidebar
+    .label = Toggle the Browser Manager Sidebar
+floorp-custom-actions-show-current-panel = Toggle current panel
+    .label = Toggle Current Panel
+floorp-custom-actions-show-bookmark-sidebar = Mostrar barra lateral Marcadores
+    .label = Mostrar barra lateral Marcadores
+floorp-custom-actions-show-history-sidebar = Mostrar barra lateral Historial
+    .label = Mostrar barra lateral Historial
+floorp-custom-actions-show-synced-tabs-sidebar = Mostrar barra lateral Pestañas sincronizadas
+    .label = Mostrar barra lateral Pestañas sincronizadas
+floorp-custom-actions-reverse-sidebar = Invertir posición lateral
+    .label = Invertir posición lateral
 floorp-custom-actions-hide-sidebar = Hide sidebar
-  .label = Hide sidebar
-floorp-custom-actions-show-sidebar = Toggle sidebar
-  .label = Toggle sidebar
-floorp-custom-actions-open-previous-workspace = Open previous workspace
-  .label = Open previous workspace
-floorp-custom-actions-open-next-workspace = Open next workspace
-  .label = Open next workspace
-floorp-custom-actions-show-panel-1 = Toggle panel 1
-  .label = Toggle panel 1
-floorp-custom-actions-show-panel-2 = Toggle panel 2
-  .label = Toggle panel 2
-floorp-custom-actions-show-panel-3 = Toggle panel 3
-  .label = Toggle panel 3
-floorp-custom-actions-show-panel-4 = Toggle panel 4
-  .label = Toggle panel 4
-floorp-custom-actions-show-panel-5 = Toggle panel 5
-  .label = Toggle panel 5
-floorp-custom-actions-show-panel-6 = Toggle panel 6
-  .label = Toggle panel 6
-floorp-custom-actions-show-panel-7 = Toggle panel 7
-  .label = Toggle panel 7
-floorp-custom-actions-show-panel-8 = Toggle panel 8
-  .label = Toggle panel 8
-floorp-custom-actions-show-panel-9 = Toggle panel 9
-  .label = Toggle panel 9
-floorp-custom-actions-show-panel-10 = Toggle panel 10
-  .label = Toggle panel 10
-
+    .label = Hide sidebar
+floorp-custom-actions-show-sidebar = Alternar barra lateral
+    .label = Alternar barra lateral
+floorp-custom-actions-toggle-sidebar = Alternar barra lateral
+    .label = Alternar barra lateral
+floorp-custom-actions-open-previous-workspace = Abrir espacio de trabajo anterior
+    .label = Abrir espacio de trabajo anterior
+floorp-custom-actions-open-next-workspace = Abrir espacio de trabajo siguiente
+    .label = Abrir espacio de trabajo siguiente
+floorp-custom-actions-show-panel-1 = Alternar panel 1
+    .label = Alternar panel 1
+floorp-custom-actions-show-panel-2 = Alternar panel 2
+    .label = Alternar panel 2
+floorp-custom-actions-show-panel-3 = Alternar panel 3
+    .label = Alternar panel 3
+floorp-custom-actions-show-panel-4 = Alternar panel 4
+    .label = Alternar panel 4
+floorp-custom-actions-show-panel-5 = Alternar panel 5
+    .label = Alternar panel 5
+floorp-custom-actions-show-panel-6 = Panel 6
+    .label = Panel 6
+floorp-custom-actions-show-panel-7 = Alternar panel 7
+    .label = Alternar panel 7
+floorp-custom-actions-show-panel-8 = Alternar panel 8
+    .label = Alternar panel 8
+floorp-custom-actions-show-panel-9 = Alternar panel 9
+    .label = Alternar panel 9
+floorp-custom-actions-show-panel-10 = Alternar panel 10
+    .label = Alternar panel 10
+floorp-custom-actions-open-split-view-on-left = Abrir pestaña actual a la izquierda en vista dividida
+    .label = Abrir pestaña actual a la izquierda en vista dividida
+floorp-custom-actions-open-split-view-on-right = Abrir pestaña actual a la derecha en vista dividida
+    .label = Abrir pestaña actual a la derecha en vista dividida
+floorp-custom-actions-close-split-view = Cerrar vista dividida
+    .label = Cerrar vista dividida
+floorp-custom-actions-custom-action-1 = Acción personalizada 1
+    .label = Acción personalizada 1
+floorp-custom-actions-custom-action-2 = Acción personalizada 2
+    .label = Acción personalizada 2
+floorp-custom-actions-custom-action-3 = Acción personalizada 3
+    .label = Acción personalizada 3
+floorp-custom-actions-custom-action-4 = Acción personalizada 4
+    .label = Acción personalizada 4
+floorp-custom-actions-custom-action-5 = Acción personalizada 5
+    .label = Acción personalizada 5
+floorp-custom-actions-rest-mode = Activar modo de descanso
+    .label = Activar modo de descanso
+floorp-custom-actions-hide-user-interface = Toggle User Interface
+    .label = Toggle User Interface
+floorp-custom-actions-toggle-navigation-panel = Toggle Navigation Panel
+    .label = Toggle Navigation Panel
 ##################################################################### Profile Switcher ###############################################################
 
-floorp-open-profile-with-new-instance = Launch
- .tooltiptext = Launch { -brand-short-name } with this profile
-floorp-profiles-in-use = This profile is in use.
+floorp-open-profile-with-new-instance = Iniciar
+    .tooltiptext = Iniciar { -brand-short-name } con este perfil
+floorp-profiles-in-use = Este perfil está en uso.
 floorp-profiles-title = Profiles
-floorp-profile-manager = Profile Manager
-floorp-profiles-create = Create Profile
-floorp-profile = Profile
- .label = Profile Manager
- .tooltiptext = Open Profile Manager
-fxa-not-signed-in = Not signed in
-
-
+floorp-profile-manager = Gestor de perfiles
+floorp-profiles-create = Crear perfil
+floorp-profile = Perfil
+    .label = Gestor de perfiles
+    .tooltiptext = Abrir gestor de perfiles
+fxa-not-signed-in = No conectado
 ###################################################################### Private Container ##############################################################
-floorp-private-container-name = Private
-floorp-toggle-private-container =
-  .label = Reopen in Private/No Container
-  .accesskey = P
-open-in_private-container =
-  .label = Open in New tab with Private Container
+floorp-private-container-name = Privado
+floorp-toggle-private-container = 
+    .label = Reabrir en Privado/Sin Contenedor
+    .accesskey = P
+open-in_private-container = 
+    .label = Abrir en pestaña nueva con contenedor privado
+######################################################################## Split View ###############################################################
+
+floorp-split-view-open-menu = 
+    .label = Abrir en vista dividida
+floorp-split-view-open-menu-disabled = 
+    .label = Need Unspliting and Unselected tab
+split-view-remove-button = Quitar vista dividida
+split-view-title = Configuración de vista dividida
+split-view-position = Posición
+split-view-flex-type = Flex Type
+split-view-position-top = Lado superior
+split-view-position-left = Predeterminado
+split-view-position-right = Invertido
+split-view-flex-column = Vertical
+split-view-flex-row = Horizontal
+######################################################################### Page Actions ###############################################################
+qrcode-generate-page-action-title = Escanee el código QR con su teléfono
+qrcode-generate-page-action = 
+    .tooltiptext = Comparta esta página con su teléfono
+######################################################################### Customize Mode ###############################################################
+floorp-customize-mode-unified-extensions-button = 
+    .label = Botón unificado de extensiones
+######################################################################### Progressive Web Apps (SSB) ###############################################################
+
+ssb-page-action = 
+    .label = Instalar aplicación
+    .tooltiptext = Instalar este sitio web como aplicación
+ssb-page-action-title = Instalar aplicación
+ssb-app-open-button = 
+    .label = Abrir en aplicación
+ssb-app-install-button = 
+    .label = Instalar
+ssb-app-cancel-button = 
+    .label = Cancelar
+floorp-open-manage-ssb-page = 
+    .label = Gestionar aplicaciones web instaladas
+appmenuitem-webapps = 
+    .label = Aplicaciones web
+appmenu-open-installed-apps-subheader = Abrir aplicaciones web instaladas
+appmenuitem-install-current-page = 
+    .label = Instalar este sitio como aplicación
+appmenuitem-open-current-page = 
+    .label = Abrir este sitio en aplicación instalada
+appmenuitem-contextmenu-open-app = 
+    .label = Abrir esta aplicación
+appmenuitem-contextmenu-uninstall-app = 
+    .label = Desinstalar esta aplicación
+
+## Preferences
+
+category-ssb = 
+    .label = Aplicaciones web
+    .tooltiptext = Aplicaciones web
+category-ssb-title = Aplicaciones web
+floorp-ssb-title = Aplicaciones web
+floorp-ssb-description = Las aplicaciones web son sitios de internet que pueden instalarse como si fuesen aplicaciones. Se pueden iniciar desde el panel de menú de { -brand-short-name } o el menú Inicio de Windows.
+ssb-preferences = Configuración de aplicaciones web
+floorp-enable-ssb = 
+    .label = Activar aplicaciones web
+floorp-enable-ssb-with-experimental = 
+    .label = Activar aplicaciones web (experimental)
+floorp-enable-ssb-description = Esta funcionalidad es experimental en Mac y Linux. Es recomendable activar esta función en Windows.
+floorp-disable-toolbars = 
+    .label = Desactivar barras de herramientas en ventanas de aplicaciones web
+floorp-disable-toolbars-description = Esta configuración ocultará todas las extensiones y barras de herramientas de las ventanas de aplicaciones web.
+ssb-installed-list-title = Aplicaciones web instaladas
+ssb-uninstall-title = Desinstalar aplicación web
+ssb-uninstall-message = ¿Confirma que quiere desinstalar esta aplicación web de { -brand-short-name }?
+ssb-uninstall-button = 
+    .label = Desinstalar
+ssb-uninstall-cancel = Cancelar
+######################################################################### Download Notification ###############################################################
+floorp-started-download = Comenzó la descarga
+floorp-finished-download = Descarga finalizada
+######################################################################### Update notify ###############################################################
+
+floorp-notificationTitle-latest = { -brand-short-name } está al día.
+floorp-notificationContent-latest = { -brand-short-name } está al día. Utiliza la versión más reciente de { -brand-short-name }.
+floorp-notificationTitle = Hay una versión nueva de { -brand-short-name } disponible.
+floorp-notificationContent = Pulse para descargar la versión más reciente.
+######################################################################### vertical tab bar ###############################################################
+
+close-tabs-to-the-start-on-vertical-tab-bar = 
+    .label = Close Tabs to Start
+    .accesskey = S
+close-tabs-to-the-end-on-vertical-tab-bar = 
+    .label = Close Tabs to End
+    .accesskey = E

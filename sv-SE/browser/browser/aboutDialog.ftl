@@ -12,8 +12,6 @@ update-updateButton =
     .label = Starta om för att uppdatera { -brand-shorter-name }
     .accesskey = S
 update-checkingForUpdates = Söker efter uppdateringar…
-update-downloading = <img data-l10n-name="icon"/>Hämtar uppdatering — <label data-l10n-name="download-status"/>
-update-downloading-message = Hämtar uppdatering — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = Utför uppdatering…
 update-failed = Uppdatering misslyckades. <label data-l10n-name="failed-link">Hämta den senaste versionen</label>
 update-failed-main = Uppdatering misslyckades. <a data-l10n-name="failed-link-main">Hämta den senaste versionen</a>
 update-adminDisabled = Uppdateringar är inaktiverade av systemadministratören
+update-policy-disabled = Uppdateringar är inaktiverade av din organisation
 update-noUpdatesFound = { -brand-short-name } är redan uppdaterad
 aboutdialog-update-checking-failed = Det gick inte att söka efter uppdateringar.
 update-otherInstanceHandlingUpdates = { -brand-short-name } uppdateras av en annan instans
-update-manual = Uppdateringar finns på <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = Uppdateringar finns tillgängliga på <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,15 +37,13 @@ aboutdialog-update-manual-with-link = Uppdateringar finns på <label data-l10n-n
 settings-update-manual-with-link = Uppdateringar finns tillgängliga på <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = Du kan inte utföra fler uppdateringar på detta system. <label data-l10n-name="unsupported-link">Läs mer</label>
 update-restarting = Startar om…
-channel-description = Du finns för närvarande på uppdateringskanalen <label data-l10n-name="current-channel"></label>uppdaterings kanal.
-update-internal-error = Det gick inte att söka efter uppdateringar på grund av internt fel. Uppdateringar finns tillgängliga på <label data-l10n-name="manual-link"/>
 update-internal-error2 = Det gick inte att söka efter uppdateringar på grund av internt fel. Uppdateringar finns tillgängliga på <label data-l10n-name="manual-link">{ $displayUrl }</label>
 
 ##
 
 # Variables:
 #   $channel (String): description of the update channel (e.g. "release", "beta", "nightly" etc.)
-aboutdialog-channel-description = Du finns för närvarande på uppdateringskanalen <label data-l10n-name="current-channel">{ $channel }</label>uppdaterings kanal.
+aboutdialog-channel-description = Du finns för närvarande på uppdateringskanalen <label data-l10n-name="current-channel">{ $channel }</label>.
 warningDesc-version = { -brand-short-name } är experimentell och kan vara instabil.
 aboutdialog-help-user = { -brand-product-name } Hjälp
 aboutdialog-submit-feedback = Skicka in återkoppling

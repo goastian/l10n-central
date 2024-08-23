@@ -5,39 +5,6 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
-#
-# default - "Mozilla Firefox"
-# private - "Mozilla Firefox (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (Ιδιωτική Περιήγηση)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Ιδιωτική Περιήγηση)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox — (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
-#
-# Also note the other subtle difference here: we use a `-` to separate the
-# brand name from `(Private Browsing)`, which does not happen on other OSes.
-#
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window-mac =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Ιδιωτική Περιήγηση)
-    .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Ιδιωτική Περιήγηση)
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -114,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = Άνοιγμα πίνακα δικαιωμάτων εικονικής πραγματικότητας
 urlbar-storage-access-anchor =
     .tooltiptext = Άνοιγμα πίνακα δικαιωμάτων δραστηριότητας περιήγησης
-urlbar-translate-notification-anchor =
-    .tooltiptext = Μετάφραση σελίδας
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Διαχείριση του διαμοιρασμού των παραθύρων ή της οθόνης σας με τον ιστοτόπο
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων αποθηκευμένων εκτός σύνδεσης
 urlbar-password-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων αποθήκευσης συνθηματικού
-urlbar-translated-notification-anchor =
-    .tooltiptext = Διαχείριση μετάφρασης σελίδας
 urlbar-plugins-notification-anchor =
     .tooltiptext = Διαχείριση χρήσης αρθρωμάτων
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -218,10 +181,6 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
-    .label = Διαχείριση επέκτασης…
-page-action-remove-extension =
-    .label = Αφαίρεση επέκτασης
 page-action-manage-extension2 =
     .label = Διαχείριση επέκτασης…
     .accesskey = ε
@@ -320,6 +279,9 @@ quickactions-cmd-plugins = αρθρώματα
 # Opens the print dialog
 quickactions-print2 = Εκτύπωση σελίδας
 quickactions-cmd-print = εκτύπωση
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = Αποθήκευση σελίδας ως PDF
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Άνοιγμα ιδιωτικού παραθύρου
 quickactions-cmd-private = ιδιωτική περιήγηση
@@ -389,6 +351,7 @@ identity-connection-secure = Ασφαλής σύνδεση
 identity-connection-failure = Αποτυχία σύνδεσης
 identity-connection-internal = Αυτή είναι μια ασφαλής σελίδα του { -brand-short-name }.
 identity-connection-file = Αυτή η σελίδα είναι αποθηκευμένη στον υπολογιστή σας.
+identity-connection-associated = Αυτή η σελίδα φορτώνεται από άλλη σελίδα.
 identity-extension-page = Αυτή η σελίδα έχει φορτωθεί από μια επέκταση.
 identity-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.
 identity-custom-root = Η σύνδεση επαληθεύτηκε από έναν εκδότη πιστοποιητικών που δεν αναγνωρίζεται από τη Mozilla.
@@ -398,6 +361,7 @@ identity-weak-encryption = Αυτή η σελίδα δεν χρησιμοποι�
 identity-insecure-login-forms = Τα στοιχεία σύνδεσης που εισάγονται σε αυτήν τη σελίδα ενδέχεται να υποκλαπούν.
 identity-https-only-connection-upgraded = (αναβαθμίστηκε σε HTTPS)
 identity-https-only-label = Λειτουργία «Μόνο HTTPS»
+identity-https-only-label2 = Αυτόματη αναβάθμιση ιστοτόπου σε ασφαλή σύνδεση
 identity-https-only-dropdown-on =
     .label = Ενεργή
 identity-https-only-dropdown-off =
@@ -406,17 +370,18 @@ identity-https-only-dropdown-off-temporarily =
     .label = Προσωρινά ανενεργή
 identity-https-only-info-turn-on2 = Ενεργοποιήστε τη λειτουργία «Μόνο HTTPS» σε αυτόν τον ιστότοπο αν θέλετε το { -brand-short-name } να αναβαθμίζει τη σύνδεση όταν είναι εφικτό.
 identity-https-only-info-turn-off2 = Αν η σελίδα δεν λειτουργεί σωστά, απενεργοποιήσετε τη λειτουργία «Μόνο HTTPS» για ανανέωση του ιστοτόπου με το μη ασφαλές HTTP.
+identity-https-only-info-turn-on3 = Ενεργοποιήστε τις αναβαθμίσεις HTTPS σε αυτόν τον ιστότοπο αν θέλετε το { -brand-short-name } να αναβαθμίζει τη σύνδεση όταν είναι εφικτό.
+identity-https-only-info-turn-off3 = Αν η σελίδα δεν λειτουργεί σωστά, μπορείτε να απενεργοποιήσετε τις αναβαθμίσεις HTTPS για να γίνει ανανέωση του ιστοτόπου μέσω του επισφαλούς HTTP.
 identity-https-only-info-no-upgrade = Δεν είναι δυνατή η αναβάθμιση της σύνδεσης από HTTP.
-identity-permissions-storage-access-header = Cookies μεταξύ ιστοτόπων
-identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookies μεταξύ ιστοτόπων και δεδομένα ιστοτόπων όσο βρίσκεστε σε αυτόν τον ιστότοπο.
+identity-permissions-storage-access-header = Cookie μεταξύ ιστοτόπων
+identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookie μεταξύ ιστοτόπων και δεδομένα ιστοτόπων όσο βρίσκεστε σε αυτόν τον ιστότοπο.
 identity-permissions-storage-access-learn-more = Μάθετε περισσότερα
 identity-permissions-reload-hint = Ίσως χρειαστεί να επαναφορτώσετε τη σελίδα για εφαρμογή των αλλαγών.
 identity-clear-site-data =
-    .label = Διαγραφή cookies και δεδομένων ιστοτόπου…
+    .label = Απαλοιφή cookie και δεδομένων ιστοτόπου…
 identity-connection-not-secure-security-view = Η σύνδεσή σας με αυτόν τον ιστότοπο δεν είναι ασφαλής.
 identity-connection-verified = Η σύνδεσή σας με αυτόν τον ιστότοπο είναι ασφαλής.
 identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
-identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτόν τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-description-custom-root2 = Η Mozilla δεν αναγνωρίζει αυτόν τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή.
 identity-remove-cert-exception =
     .label = Αφαίρεση εξαίρεσης
@@ -425,17 +390,12 @@ identity-description-insecure = Η σύνδεσή σας με αυτόν τον 
 identity-description-insecure-login-forms = Τα στοιχεία σύνδεσης που εισαγάγατε στη σελίδα δεν είναι ασφαλή και ενδέχεται να παραβιαστούν.
 identity-description-weak-cipher-intro = Η σύνδεση σας με αυτόν τον ιστότοπο δεν χρησιμοποιεί ισχυρή κρυπτογράφηση και δεν είναι ιδιωτική.
 identity-description-weak-cipher-risk = Τρίτα άτομα μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν τη συμπεριφορά αυτού του ιστοτόπου.
-identity-description-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας. <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-description-active-blocked2 = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.
 identity-description-passive-loaded = Η σύνδεσή σας δεν είναι ιδιωτική και οι πληροφορίες που μοιράζεστε με αυτόν τον ιστότοπο μπορεί να προβληθούν από τρίτους.
-identity-description-passive-loaded-insecure = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
-identity-description-passive-loaded-mixed = Παρόλο που το { -brand-short-name } έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-description-passive-loaded-insecure2 = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως εικόνες).
 identity-description-passive-loaded-mixed2 = Παρόλο που το { -brand-short-name } έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες).
 identity-description-active-loaded = Αυτός ο ιστότοπος διαθέτει επισφαλές περιεχόμενο (όπως σενάρια) και η σύνδεσή σας δεν είναι ιδιωτική.
 identity-description-active-loaded-insecure = Οι πληροφορίες που μοιράζεστε με αυτόν τον ιστότοπο μπορεί να προβληθούν από τρίτους (όπως κωδικοί πρόσβασης, μηνύματα, πιστωτικές κάρτες κ.λπ.).
-identity-learn-more =
-    .value = Μάθετε περισσότερα
 identity-disable-mixed-content-blocking =
     .label = Προσωρινή απενεργοποίηση προστασίας
     .accesskey = Π
@@ -512,13 +472,6 @@ popup-select-window-or-screen =
     .label = Παράθυρο ή οθόνη:
     .accesskey = Π
 popup-all-windows-shared = Όλα τα ορατά παράθυρα της οθόνης σας θα γίνουν κοινόχρηστα.
-popup-screen-sharing-block =
-    .label = Φραγή
-    .accesskey = Φ
-popup-screen-sharing-always-block =
-    .label = Πάντα φραγή
-    .accesskey = τ
-popup-mute-notifications-checkbox = Σίγαση ειδοποιήσεων ιστοτόπου κατά την κοινή χρήση
 
 ## WebRTC window or screen share tab switch warning
 
@@ -531,11 +484,13 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα DevTools μέσω του μενού προγραμματιστών ιστού.
 enable-devtools-popup-description2 = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα DevTools μέσω του μενού εργαλείων του προγράμματος περιήγησης.
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = Κλείσιμο
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -558,15 +513,15 @@ urlbar-placeholder-search-mode-other-engine =
     .aria-label = Αναζήτηση { $name }
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
-    .placeholder = Εισάγετε όρους αναζήτησης
+    .placeholder = Εισαγάγετε όρους αναζήτησης
     .aria-label = Αναζήτηση σελιδοδεικτών
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
-    .placeholder = Εισάγετε όρους αναζήτησης
+    .placeholder = Εισαγάγετε όρους αναζήτησης
     .aria-label = Αναζήτηση ιστορικού
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
-    .placeholder = Εισάγετε όρους αναζήτησης
+    .placeholder = Εισαγάγετε όρους αναζήτησης
     .aria-label = Αναζήτηση καρτελών
 # This placeholder is used when searching quick actions.
 urlbar-placeholder-search-mode-other-actions =
@@ -580,7 +535,7 @@ urlbar-placeholder-with-name =
 #  $component (String): the name of the component which forces remote control.
 #    Example: "DevTools", "Marionette", "RemoteAgent".
 urlbar-remote-control-notification-anchor2 =
-    .tooltiptext = Ο φυλλομετρητής βρίσκεται υπό απομακρυσμένο έλεγχο (αιτία: { $component })
+    .tooltiptext = Το πρόγραμμα περιήγησης ελέγχεται απομακρυσμένα (αιτία: { $component })
 urlbar-permissions-granted =
     .tooltiptext = Έχετε χορηγήσει επιπλέον άδειες σε αυτόν τον ιστότοπο.
 urlbar-switch-to-tab =
@@ -612,6 +567,13 @@ urlbar-result-action-search-w-engine = Αναζήτηση με { $engine }
 urlbar-result-action-sponsored = Χορηγία
 urlbar-result-action-switch-tab = Εναλλαγή σε καρτέλα
 urlbar-result-action-visit = Επίσκεψη
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = Εναλλαγή σε καρτέλα · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = Επίσκεψη από το πρόχειρο
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -640,6 +602,12 @@ urlbar-result-action-copy-to-clipboard = Αντιγραφή
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = Αναζήτηση με { $engine }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -651,7 +619,7 @@ urlbar-result-action-search-actions = Αναζήτηση ενεργειών
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -664,6 +632,26 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = Γρήγορες ενέργειες
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = Πρόσφατες αναζητήσεις
+# The header shown above trending results.
+# Variables:
+#  $engine (String): the name of the search engine providing the trending suggestions
+urlbar-group-trending =
+    .label = Τάσεις στο { $engine }
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show =
+    .label = Απόκρυψη δημοφιλών αναζητήσεων
+    .accesskey = Α
+urlbar-result-menu-trending-why =
+    .label = Γιατί το βλέπω αυτό;
+    .accesskey = Γ
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-trending-dismissal-acknowledgment = Ευχαριστούμε για τα σχόλιά σας. Δεν θα βλέπετε πλέον δημοφιλείς αναζητήσεις.
 
 ## Reader View toolbar buttons
 
@@ -703,19 +691,6 @@ fullscreen-exit-mac-button = Έξοδος από πλήρη οθόνη (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Το <span data-l10n-name="domain">{ $domain }</span> ελέγχει τον κέρσορα. Πατήστε το Esc για ανάκτηση ελέγχου.
 pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει τον κέρσορά σας. Πατήστε το Esc για ανάκτηση ελέγχου.
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>Μέρος της σελίδας κατέρρευσε.</strong> Για να ενημερώσετε το { -brand-product-name } σχετικά με αυτό το ζήτημα, ώστε να διορθωθεί γρηγορότερα, παρακαλώ υποβάλετε μια αναφορά.
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = Μέρος της σελίδας κατέρρευσε. Για να ενημερώσετε το { -brand-product-name } σχετικά με αυτό το ζήτημα, ώστε να διορθωθεί γρηγορότερα, παρακαλώ υποβάλετε μια αναφορά.
-crashed-subframe-learnmore-link =
-    .value = Μάθετε περισσότερα
-crashed-subframe-submit =
-    .label = Υποβολή αναφοράς
-    .accesskey = Υ
 
 ## Bookmarks panels, menus and toolbar
 
@@ -768,8 +743,6 @@ bookmarks-search =
     .label = Αναζήτηση σελιδοδεικτών
 bookmarks-tools =
     .label = Εργαλεία σελιδοδεικτών
-bookmarks-bookmark-edit-panel =
-    .label = Επεξεργασία σελιδοδείκτη
 bookmarks-subview-edit-bookmark =
     .label = Επεξεργασία σελιδοδείκτη…
 # The aria-label is a spoken label that should not include the word "toolbar" or
@@ -785,9 +758,6 @@ bookmarks-toolbar-placeholder =
     .title = Στοιχεία γραμμής σελιδοδεικτών
 bookmarks-toolbar-placeholder-button =
     .label = Στοιχεία γραμμής σελιδοδεικτών
-# "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = Προσθήκη σελιδοδείκτη
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-subview-bookmark-tab =
     .label = Προσθήκη σελιδοδείκτη…
@@ -813,11 +783,6 @@ repair-text-encoding-button =
 
 ## Customize Toolbar Buttons
 
-# Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = Πρόσθετα και θέματα
-    .tooltiptext = Διαχειριστείτε τα πρόσθετα και τα θέματά σας ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -867,13 +832,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = Α
 
 panel-save-update-username = Όνομα χρήστη
 panel-save-update-password = Κωδικός πρόσβασης
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = Αφαίρεση του { $name };
-addon-removal-abuse-report-checkbox = Αναφορά επέκτασης στη { -vendor-short-name }
 
 ##
 
@@ -942,13 +900,11 @@ navbar-library =
     .tooltiptext = Προβολή ιστορικού, σελιδοδεικτών και πολλών άλλων
 navbar-search =
     .title = Αναζήτηση
-navbar-accessibility-indicator =
-    .tooltiptext = Οι λειτουργίες προσβασιμότητας ενεργοποιήθηκαν
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
 tabs-toolbar =
-    .aria-label = Καρτέλες φυλλομετρητή
+    .aria-label = Καρτέλες προγράμματος περιήγησης
 tabs-toolbar-new-tab =
     .label = Νέα καρτέλα
 tabs-toolbar-list-all-tabs =
@@ -961,6 +917,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Άνοιγμα προηγούμενων καρτελών;</strong> Μπορείτε να ανακτήσετε την προηγούμενη συνεδρία σας από το μενού εφαρμογής του { -brand-short-name } <img data-l10n-name="icon"/>, στην ενότητα «Ιστορικό».
 restore-session-startup-suggestion-button = Εμφάνιση οδηγιών
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = Η εταιρεία σας έχει αποκλείσει την πρόσβαση σε τοπικά αρχεία αυτού του υπολογιστή
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = Το { -brand-short-name } στέλνει αυτόματα μερικά δεδομένα στη { -vendor-short-name }, έτσι ώστε να μπορέσουμε να βελτιώσουμε την εμπειρία σας.
@@ -969,6 +929,15 @@ data-reporting-notification-button =
     .accesskey = ξ
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Ιδιωτική περιήγηση
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = Πρόληψη απώλειας δεδομένων (DLP) του { $agentName }. Κάντε κλικ για περισσότερες πληροφορίες.
+content-analysis-panel-title = Προστασία δεδομένων
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = Ο οργανισμός σας χρησιμοποιεί το { $agentName } για προστασία από απώλεια δεδομένων. <a data-l10n-name="info">Μάθετε περισσότερα</a>
 
 ## Unified extensions (toolbar) button
 
@@ -994,6 +963,24 @@ unified-extensions-button-quarantined =
         Επεκτάσεις
         Ορισμένες επεκτάσεις δεν επιτρέπονται
 
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = Τερματισμός ιδιωτικής συνεδρίας
+    .tooltiptext = Τερματισμός ιδιωτικής συνεδρίας
+reset-pbm-panel-heading = Τερματισμός ιδιωτικής συνεδρίας;
+reset-pbm-panel-description = Κλείστε όλες τις ιδιωτικές καρτέλες και διαγράψτε το ιστορικό, τα cookie και όλα τα άλλα δεδομένα ιστοτόπων.
+reset-pbm-panel-always-ask-checkbox =
+    .label = Ερώτηση πάντα
+    .accesskey = Ε
+reset-pbm-panel-cancel-button =
+    .label = Ακύρωση
+    .accesskey = Α
+reset-pbm-panel-confirm-button =
+    .label = Διαγραφή δεδομένων συνεδρίας
+    .accesskey = Δ
+reset-pbm-panel-complete = Τα δεδομένα της ιδιωτικής συνεδρίας διαγράφηκαν
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = Το { -brand-short-name } εμπόδισε την αυτόματη ανανέωση της σελίδας.
@@ -1003,15 +990,6 @@ refresh-blocked-allow =
     .accesskey = Α
 
 ## Firefox Relay integration
-
-firefox-relay-offer-why-relay = Το { -relay-brand-name } κρύβει την πραγματική σας διεύθυνση email για να σας προστατεύσει από παραβιάσεις δεδομένων και ανεπιθύμητα μηνύματα.
-firefox-relay-offer-how-we-integrate = Αν συνεχίσετε, θα μπορείτε να δημιουργήσετε νέες μάσκες email του { -relay-brand-short-name } απευθείας από τη διαχείριση κωδικών πρόσβασης του { -brand-shorter-name }.
-# Variables:
-#  $sitename (String): name of the site where user enters their Relay mask
-#  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-does = Θα προωθήσουμε όλα τα email από το <strong>{ $sitename }</strong> στο <strong>{ $useremail }</strong>.
-
-## Popup Notification
 
 firefox-relay-offer-why-to-use-relay = Οι ασφαλείς και εύχρηστες μάσκες μας, προστατεύουν την ταυτότητά σας και αποτρέπουν τα ανεπιθύμητα μηνύματα κρύβοντας τη διεύθυνση email σας.
 # Variables:
@@ -1024,6 +1002,10 @@ firefox-relay-offer-legal-notice = Κάνοντας κλικ στο «Χρήση
 popup-notification-addon-install-unsigned =
     .value = (Μη επαληθευμένο)
 popup-notification-xpinstall-prompt-learn-more = Μάθετε περισσότερα σχετικά με την ασφαλή εγκατάσταση πρόσθετων
+# Note: Access key is set to P to match "Private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox =
+    .label = Εκτέλεση σε ιδιωτικά παράθυρα
+    .accesskey = Ε
 
 ## Pop-up warning
 
@@ -1046,8 +1028,8 @@ popup-warning-button =
         }
     .accesskey =
         { PLATFORM() ->
-            [windows] λ
-           *[other] ρ
+            [windows] Ε
+           *[other] Π
         }
 # Variables:
 #   $popupURI (String): the URI for the pop-up window

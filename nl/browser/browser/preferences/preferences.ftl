@@ -3,11 +3,22 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = Websites een ‘Niet volgen’-signaal sturen om te laten weten dat u niet gevolgd wilt worden
+do-not-track-description2 =
+    .label = Stuur websites een ‘Niet-volgen’-verzoek
+    .accesskey = v
 do-not-track-learn-more = Meer info
 do-not-track-option-default-content-blocking-known =
     .label = Alleen wanneer { -brand-short-name } is ingesteld om bekende trackers te blokkeren
 do-not-track-option-always =
     .label = Altijd
+global-privacy-control-description =
+    .label = Websites vertellen mijn gegevens niet te verkopen of te delen
+    .accesskey = s
+non-technical-privacy-header = Websiteprivacyvoorkeuren
+# Do not translate.
+# "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
+# included to facilitate power-user search of the about:preferences page.
+global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = Instellingen
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
@@ -21,6 +32,8 @@ search-input-box2 =
     .style = width: 15.4em
     .placeholder = Zoeken in Instellingen
 managed-notice = Uw browser wordt door uw organisatie beheerd.
+managed-notice-info-icon =
+    .alt = Informatie
 category-list =
     .aria-label = Categorieën
 pane-general-title = Algemeen
@@ -44,6 +57,10 @@ category-experimental =
 pane-experimental-subtitle = Ga voorzichtig verder
 pane-experimental-search-results-header = { -brand-short-name }-experimenten: voorzichtigheid geadviseerd
 pane-experimental-description2 = Het wijzigen van geavanceerde configuratie-instellingen kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description3 = Probeer onze experimentele functies! Ze zijn in ontwikkeling en worden steeds beter, wat van invloed kan zijn op de manier waarop { -brand-short-name } werkt.
 pane-experimental-reset =
     .label = Standaardwaarden herstellen
     .accesskey = h
@@ -62,17 +79,6 @@ should-restart-title = { -brand-short-name } herstarten
 should-restart-ok = { -brand-short-name } nu herstarten
 cancel-no-restart-button = Annuleren
 restart-later = Later herstarten
-
-## Extension Control Notifications
-##
-## These strings are used to inform the user
-## about changes made by extensions to browser settings.
-##
-## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
-##
-## Variables:
-##   $name (String): name of the extension
-
 
 ## Extension Control Notifications
 ##
@@ -127,6 +133,10 @@ set-as-my-default-browser =
 startup-restore-windows-and-tabs =
     .label = Eerdere vensters en tabbladen openen
     .accesskey = s
+windows-launch-on-login =
+    .label = { -brand-short-name } automatisch openen bij het opstarten van uw computer
+    .accesskey = a
+windows-launch-on-login-disabled = Deze voorkeur is uitgeschakeld in Windows. Ga naar <a data-l10n-name="startup-link">Apps > Opstarten</a> in Systeeminstellingen om dit te wijzigen.
 startup-restore-warn-on-quit =
     .label = Waarschuwen bij het afsluiten van de browser
 disable-extension =
@@ -199,31 +209,24 @@ containers-remove-alert-msg =
     }
 containers-remove-ok-button = Deze container verwijderen
 containers-remove-cancel-button = Deze container niet verwijderen
+settings-tabs-show-image-in-preview =
+    .label = Een afbeeldingsvoorbeeld tonen als u een tabblad aanwijst
+    .accessKey = w
 
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Taal en Vormgeving
 preferences-web-appearance-header = Uiterlijk van de website
 preferences-web-appearance-description = Sommige websites passen hun kleurenschema aan op basis van uw voorkeuren. Kies welk kleurenschema u voor die websites wilt gebruiken.
-preferences-web-appearance-choice-browser = { -brand-short-name }-thema
-preferences-web-appearance-choice-system = Systeemthema
 preferences-web-appearance-choice-auto = Automatisch
 preferences-web-appearance-choice-light = Licht
 preferences-web-appearance-choice-dark = Donker
-preferences-web-appearance-choice-tooltip-browser =
-    .title = Uw { -brand-short-name }-thema-instellingen toepassen op website-achtergronden en -inhoud.
-preferences-web-appearance-choice-tooltip-system =
-    .title = Uw systeeminstellingen toepassen op website-achtergronden en -inhoud.
 preferences-web-appearance-choice-tooltip-auto =
     .title = Automatisch website-achtergronden en -inhoud wijzigen op basis van uw systeeminstellingen en { -brand-short-name }-thema.
 preferences-web-appearance-choice-tooltip-light =
     .title = Een lichte uitstraling voor website-achtergronden en -inhoud gebruiken.
 preferences-web-appearance-choice-tooltip-dark =
     .title = Een donkere uitstraling voor website-achtergronden en -inhoud gebruiken.
-preferences-web-appearance-choice-input-browser =
-    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
-preferences-web-appearance-choice-input-system =
-    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
 preferences-web-appearance-choice-input-auto =
     .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
@@ -233,6 +236,10 @@ preferences-web-appearance-choice-input-dark =
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = Uw kleurselecties hebben voorrang op het uiterlijk van de website. <a data-l10n-name="colors-link">Kleuren beheren</a>
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning2 =
+    .message = Uw kleurselecties hebben voorrang op het uiterlijk van de website.
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = U kunt { -brand-short-name }-thema’s beheren in <a data-l10n-name="themes-link">Extensies en thema’s</a>
@@ -260,6 +267,8 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = Alleen tekst inzoomen
     .accesskey = t
+preferences-text-zoom-override-warning =
+    .message = Waarschuwing: als u ‘Alleen tekst zoomen’ selecteert en uw standaardzoom niet is ingesteld op 100%, kan dit ervoor zorgen dat bepaalde websites of inhoud niet goed werken.
 language-header = Taal
 choose-language-description = Talen van uw voorkeur kiezen voor het weergeven van webpagina’s
 choose-button =
@@ -472,12 +481,18 @@ browsing-use-smooth-scrolling =
 browsing-gtk-use-non-overlay-scrollbars =
     .label = Schuifbalken altijd tonen
     .accesskey = o
+browsing-always-underline-links =
+    .label = Koppelingen altijd onderstrepen
+    .accesskey = s
 browsing-use-onscreen-keyboard =
     .label = Een schermtoetsenbord tonen wanneer nodig
     .accesskey = c
 browsing-use-cursor-navigation =
     .label = Altijd de pijltoetsen gebruiken om binnen pagina’s te navigeren
     .accesskey = o
+browsing-use-full-keyboard-navigation =
+    .label = Gebruik de tab-toets om de focus te verplaatsen tussen formulierbesturingselementen en koppelingen
+    .accesskey = t
 browsing-search-on-start-typing =
     .label = Naar tekst zoeken wanneer u begint met typen
     .accesskey = t
@@ -518,10 +533,6 @@ home-newtabs-mode-label = Nieuwe tabbladen
 home-restore-defaults =
     .label = Standaardwaarden herstellen
     .accesskey = S
-# "Firefox" should be treated as a brand and kept in English,
-# while "Home" and "(Default)" can be localized.
-home-mode-choice-default =
-    .label = Firefox-startpagina (Standaard)
 home-mode-choice-default-fx =
     .label = { -firefox-home-brand-name } (standaard)
 home-mode-choice-custom =
@@ -545,10 +556,8 @@ choose-bookmark =
     .label = Bladwijzer gebruiken…
     .accesskey = B
 
-## Home Section - Midori Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Inhoud van Firefox-startpagina
-home-prefs-content-description = Kies welke inhoud u op uw Firefox-startscherm wilt laten weergeven.
 home-prefs-content-header2 = { -firefox-home-brand-name }-inhoud
 home-prefs-content-description2 = Kies welke inhoud u op uw { -firefox-home-brand-name }-scherm wilt laten weergeven.
 home-prefs-search-header =
@@ -560,15 +569,14 @@ home-prefs-shortcuts-by-option-sponsored =
     .label = Gesponsorde snelkoppelingen
 
 ## Variables:
-##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
-
-
-## Variables:
 ##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Aanbevolen door { $provider }
 home-prefs-recommended-by-description-new = Uitzonderlijke inhoud, samengesteld door { $provider }, onderdeel van de { -brand-product-name }-familie
+home-prefs-recommended-by-header-generic =
+    .label = Aanbevolen verhalen
+home-prefs-recommended-by-description-generic = Uitzonderlijke inhoud, verzameld door de { -brand-product-name }-familie
 
 ##
 
@@ -595,6 +603,10 @@ home-prefs-recent-activity-description = Een selectie van recente websites en in
 home-prefs-snippets-header =
     .label = Snippets
 home-prefs-snippets-description-new = Tips en nieuws van { -vendor-short-name } en { -brand-product-name }
+home-prefs-weather-header =
+    .label = Weer
+home-prefs-weather-description = De weersverwachting van vandaag in een oogopslag.
+home-prefs-weather-learn-more-link = Meer info
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -622,6 +634,9 @@ search-suggestions-desc = Kies hoe suggesties van zoekmachines worden weergegeve
 search-suggestions-option =
     .label = Zoeksuggesties geven
     .accesskey = Z
+search-show-suggestions-option =
+    .label = Zoeksuggesties tonen
+    .accesskey = Z
 search-show-suggestions-url-bar-option =
     .label = Zoeksuggesties in adresbalkresultaten tonen
     .accesskey = l
@@ -638,7 +653,7 @@ search-show-search-term-option =
 search-show-suggestions-above-history-option =
     .label = Zoeksuggesties boven browsergeschiedenis tonen in adresbalkresultaten
 search-show-suggestions-private-windows =
-    .label = Zoeksuggesties weergeven in privévensters
+    .label = Zoeksuggesties tonen in privévensters
 suggestions-addressbar-settings-generic2 = Instellingen voor overige adresbalksuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header2 = Zoeksnelkoppelingen
@@ -681,7 +696,7 @@ containers-settings-button =
 containers-remove-button =
     .label = Verwijderen
 
-## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
+## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Neem uw web mee
@@ -699,10 +714,17 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Download Firefox voor <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> of <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> om met uw mobiele apparaat te synchroniseren.
 
-## Firefox Account - Signed in
+## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profielafbeelding wijzigen
+sync-profile-picture-with-alt =
+    .tooltiptext = Profielafbeelding wijzigen
+    .alt = Profielafbeelding wijzigen
+sync-profile-picture-account-problem =
+    .alt = Accountprofielafbeelding
+fxa-login-rejected-warning =
+    .alt = Waarschuwing
 sync-sign-out =
     .label = Afmelden…
     .accesskey = f
@@ -720,6 +742,9 @@ sync-signedin-login-failure = Meld u aan om { $email } opnieuw te verbinden
 sync-resend-verification =
     .label = Verificatie opnieuw verzenden
     .accesskey = d
+sync-verify-account =
+    .label = Account verifiëren
+    .accesskey = v
 sync-remove-account =
     .label = Account verwijderen
     .accesskey = r
@@ -739,17 +764,23 @@ prefs-sync-now =
     .labelnotsyncing = Nu synchroniseren
     .accesskeynotsyncing = N
     .labelsyncing = Synchroniseren…
+prefs-sync-now-button =
+    .label = Nu synchroniseren
+    .accesskey = N
+prefs-syncing-button =
+    .label = Synchroniseren…
 
 ## The list of things currently syncing.
 
-sync-currently-syncing-heading = U synchroniseert momenteel deze onderdelen:
 sync-syncing-across-devices-heading = U synchroniseert deze items tussen al uw verbonden apparaten:
 sync-currently-syncing-bookmarks = Bladwijzers
 sync-currently-syncing-history = Geschiedenis
 sync-currently-syncing-tabs = Open tabbladen
 sync-currently-syncing-logins-passwords = Aanmeldingen en wachtwoorden
+sync-currently-syncing-passwords = Wachtwoorden
 sync-currently-syncing-addresses = Adressen
 sync-currently-syncing-creditcards = Creditcards
+sync-currently-syncing-payment-methods = Betalingsmethoden
 sync-currently-syncing-addons = Add-ons
 sync-currently-syncing-settings = Instellingen
 sync-change-options =
@@ -758,13 +789,6 @@ sync-change-options =
 
 ## The "Choose what to sync" dialog.
 
-sync-choose-what-to-sync-dialog =
-    .title = Kies wat u wilt synchroniseren
-    .style = width: 36em; min-height: 35em;
-    .buttonlabelaccept = Wijzigingen opslaan
-    .buttonaccesskeyaccept = o
-    .buttonlabelextra2 = Verbinding verbreken…
-    .buttonaccesskeyextra2 = b
 sync-choose-what-to-sync-dialog3 =
     .title = Kies wat u wilt synchroniseren
     .style = min-width: 36em;
@@ -787,6 +811,10 @@ sync-engine-logins-passwords =
     .label = Aanmeldingen en wachtwoorden
     .tooltiptext = Door u opgeslagen gebruikersnamen en wachtwoorden
     .accesskey = A
+sync-engine-passwords =
+    .label = Wachtwoorden
+    .tooltiptext = Door u opgeslagen wachtwoorden
+    .accesskey = W
 sync-engine-addresses =
     .label = Adressen
     .tooltiptext = Postadressen die u hebt opgeslagen (alleen desktop)
@@ -795,6 +823,10 @@ sync-engine-creditcards =
     .label = Creditcards
     .tooltiptext = Namen, nummers en vervaldata (alleen desktop)
     .accesskey = C
+sync-engine-payment-methods2 =
+    .label = Betalingsmethoden
+    .tooltiptext = Namen, kaartnummers en vervaldata
+    .accesskey = n
 sync-engine-addons =
     .label = Add-ons
     .tooltiptext = Extensies en thema’s voor Firefox op desktops
@@ -818,6 +850,16 @@ sync-device-name-save =
     .accesskey = s
 sync-connect-another-device = Een ander apparaat verbinden
 
+## These strings are shown in a desktop notification after the
+## user requests we resend a verification email.
+
+sync-verification-sent-title = Verificatie verzonden
+# Variables:
+#   $email (String): Email address of user's Firefox account.
+sync-verification-sent-body = Er is een verificatiekoppeling verzonden naar { $email }.
+sync-verification-not-sent-title = Kan geen verificatie verzenden
+sync-verification-not-sent-body = We kunnen op dit moment geen verificatie-e-mail verzenden, probeer het later opnieuw.
+
 ## Privacy Section
 
 privacy-header = Browserprivacy
@@ -831,18 +873,35 @@ pane-privacy-logins-and-passwords-header = Aanmeldingen en wachtwoorden
 forms-ask-to-save-logins =
     .label = Vragen voor opslaan van aanmeldingen en wachtwoorden voor websites
     .accesskey = r
+
+## Privacy Section - Passwords
+
+# "Logins" is the former term for "Passwords". Users should find password settings
+# by searching for the former term "logins". It's not displayed in the UI.
+pane-privacy-passwords-header = Wachtwoorden
+    .searchkeywords = aanmeldingen
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-passwords =
+    .label = Vragen om wachtwoorden op te slaan
+    .accesskey = V
 forms-exceptions =
     .label = Uitzonderingen…
     .accesskey = t
 forms-generate-passwords =
     .label = Sterke wachtwoorden voorstellen en genereren
     .accesskey = w
+forms-suggest-passwords =
+    .label = Sterke wachtwoorden voorstellen
+    .accesskey = S
 forms-breach-alerts =
     .label = Waarschuwingen over wachtwoorden voor getroffen websites tonen
     .accesskey = f
 forms-breach-alerts-learn-more-link = Meer info
-relay-integration =
-    .label = { -relay-brand-name } inschakelen in uw { -brand-short-name }-wachtwoordenbeheerder
+preferences-relay-integration-checkbox =
+    .label = { -relay-brand-name }-e-mailmaskers voorstellen om uw e-mailadres te beschermen
+preferences-relay-integration-checkbox2 =
+    .label = { -relay-brand-name }-e-mailmaskers voorstellen om uw e-mailadres te beschermen
+    .accesskey = r
 relay-integration-learn-more-link = Meer info
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -851,9 +910,19 @@ forms-fill-logins-and-passwords =
 forms-saved-logins =
     .label = Opgeslagen aanmeldingen…
     .accesskey = m
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-usernames-and-passwords =
+    .label = Gebruikersnamen en wachtwoorden automatisch invullen
+    .accesskey = v
+forms-saved-passwords =
+    .label = Opgeslagen wachtwoorden
+    .accesskey = d
 forms-primary-pw-use =
     .label = Een hoofdwachtwoord gebruiken
     .accesskey = h
+# This operation requires the user to authenticate with the operating system (device sign-in)
+forms-os-reauth =
+    .label = Apparaataanmelding voor invullen en beheren van wachtwoorden vereisen
 forms-primary-pw-learn-more-link = Meer info
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
@@ -874,6 +943,7 @@ forms-windows-sso =
     .label = Windows-single-sign-on toestaan voor Microsoft-, werk- en schoolaccounts
 forms-windows-sso-learn-more-link = Meer info
 forms-windows-sso-desc = Accounts beheren in uw apparaatinstellingen
+windows-passkey-settings-label = Wachtwoordsleutels beheren in systeeminstellingen
 
 ## OS Authentication dialog
 
@@ -885,6 +955,30 @@ primary-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Windo
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = een hoofdwachtwoord aanmaken
 master-password-os-auth-dialog-caption = { -brand-full-name }
+# The macOS string is preceded by the operating system with "Firefox is trying to ".
+autofill-creditcard-os-dialog-message =
+    { PLATFORM() ->
+        [macos] instellingen voor betalingsmethoden wijzigen
+       *[other] { -brand-short-name } probeert de instellingen voor betalingsmethoden te wijzigen. Gebruik uw apparaataanmelding om dit toe te staan.
+    }
+autofill-creditcard-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
+pane-privacy-autofill-header = Automatisch invullen
+autofill-addresses-checkbox = Adressen opslaan en invullen
+    .accesskey = a
+autofill-saved-addresses-button = Opgeslagen adressen
+    .accesskey = O
+autofill-payment-methods-checkbox-message = Betalingsmethoden opslaan en invullen
+    .accesskey = m
+autofill-payment-methods-checkbox-submessage = Omvat creditcards en bankpassen
+    .accesskey = a
+autofill-saved-payment-methods-button = Opgeslagen betalingsmethoden
+    .accesskey = l
+# This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-reauth-payment-methods-checkbox = Apparaataanmelding voor invullen en beheren van betalingsmethoden vereisen
+    .accesskey = m
 
 ## Privacy Section - History
 
@@ -940,6 +1034,7 @@ sitedata-delete-on-close =
     .label = Cookies en websitegegevens verwijderen zodra { -brand-short-name } wordt gesloten
     .accesskey = C
 sitedata-delete-on-close-private-browsing = In permanente privénavigatiemodus worden cookies en websitegegevens altijd gewist zodra { -brand-short-name } wordt gesloten.
+sitedata-delete-on-close-private-browsing2 = Op basis van uw geschiedenisinstellingen verwijdert { -brand-short-name } cookies en websitegegevens uit uw sessie wanneer u de browser sluit.
 sitedata-allow-cookies-option =
     .label = Cookies en websitegegevens accepteren
     .accesskey = a
@@ -958,8 +1053,6 @@ sitedata-option-block-cross-site-cookies =
     .label = Cross-site-trackingcookies, en andere cross-sitecookies isoleren
 sitedata-option-block-unvisited =
     .label = Cookies van niet-bezochte websites
-sitedata-option-block-all-third-party =
-    .label = Alle cookies van derden (kan ervoor zorgen dat websites niet goed werken)
 sitedata-option-block-all-cross-site-cookies =
     .label = Alle cross-sitecookies (kan ervoor zorgen dat websites niet goed werken)
 sitedata-option-block-all =
@@ -978,9 +1071,16 @@ sitedata-cookies-exceptions =
 
 cookie-banner-handling-header = Reductie van cookiebanners
 cookie-banner-handling-description = { -brand-short-name } probeert cookieverzoeken op cookiebanners op ondersteunde websites automatisch te weigeren.
+
+## Privacy Section - Cookie Banner Blocking
+
+cookie-banner-blocker-header = Blokkering van cookiebanners
+cookie-banner-blocker-description = Wanneer een website vraagt of cookies in de privénavigatiemodus mogen worden gebruikt, weigert { -brand-short-name } automatisch voor u. Alleen op ondersteunde websites.
 cookie-banner-learn-more = Meer info
 forms-handle-cookie-banners =
     .label = Cookiebanners reduceren
+cookie-banner-blocker-checkbox-label =
+    .label = Cookiebanners automatisch weigeren
 
 ## Privacy Section - Address Bar
 
@@ -992,6 +1092,9 @@ addressbar-locbar-history-option =
 addressbar-locbar-bookmarks-option =
     .label = Bladwijzers
     .accesskey = d
+addressbar-locbar-clipboard-option =
+    .label = Klembord
+    .accesskey = K
 addressbar-locbar-openpage-option =
     .label = Open tabbladen
     .accesskey = O
@@ -1009,6 +1112,12 @@ addressbar-locbar-quickactions-option =
     .label = Snelle acties
     .accesskey = S
 addressbar-suggestions-settings = Voorkeuren voor zoekmachinesuggesties wijzigen
+addressbar-locbar-showrecentsearches-option =
+    .label = Recente zoekopdrachten tonen
+    .accesskey = R
+addressbar-locbar-showtrendingsuggestions-option =
+    .label = Trending zoeksuggesties tonen
+    .accesskey = T
 addressbar-quickactions-learn-more = Meer info
 
 ## Privacy Section - Content Blocking
@@ -1017,6 +1126,10 @@ content-blocking-enhanced-tracking-protection = Verbeterde bescherming tegen vol
 content-blocking-section-top-level-description = Trackers volgen u online om gegevens over uw surfgedrag en interesses te verzamelen. { -brand-short-name } blokkeert veel van deze trackers en andere kwaadwillende scripts.
 content-blocking-learn-more = Meer info
 content-blocking-fpi-incompatibility-warning = U gebruikt First Party Isolation (FPI), dat een aantal cookie-instellingen van { -brand-short-name } overschrijft.
+# There is no need to translate "Resist Fingerprinting (RFP)". This is a
+# feature that can only be enabled via about:config, and it's not exposed to
+# standard users (e.g. via Settings).
+content-blocking-rfp-incompatibility-warning = U gebruikt Resist Fingerprinting (RFP), dat een aantal van de { -brand-short-name }-instellingen voor bescherming tegen fingerprinting vervangt. Dit kan ervoor zorgen dat sommige websites niet goed werken.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1039,7 +1152,6 @@ content-blocking-etp-strict-desc = Sterkere bescherming, maar kan er voor zorgen
 content-blocking-etp-custom-desc = Kies welke trackers en scripts u wilt blokkeren.
 content-blocking-etp-blocking-desc = { -brand-short-name } blokkeert het volgende:
 content-blocking-private-windows = Volginhoud in privévensters
-content-blocking-cross-site-cookies-in-all-windows = Cross-site-cookies in alle vensters (inclusief trackingcookies)
 content-blocking-cross-site-cookies-in-all-windows2 = Cross-site-cookies in alle vensters
 content-blocking-cross-site-tracking-cookies = Cross-site-trackingcookies
 content-blocking-all-cross-site-cookies-private-windows = Cross-site-cookies in privévensters
@@ -1048,15 +1160,13 @@ content-blocking-social-media-trackers = Sociale-mediatrackers
 content-blocking-all-cookies = Alle cookies
 content-blocking-unvisited-cookies = Cookies van niet-bezochte websites
 content-blocking-all-windows-tracking-content = Volginhoud in alle vensters
-content-blocking-all-third-party-cookies = Alle cookies van derden
 content-blocking-all-cross-site-cookies = Alle cross-sitecookies
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
-# "Test pilot" is used as a verb. Possible alternatives:
-# "Be the first to try", "Join an early experiment".
-content-blocking-etp-standard-tcp-rollout-checkbox =
-    .label = Maak een testrit in onze krachtigste privacyfunctie ooit
-    .accesskey = t
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices. And
+# the suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-known-and-suspected-fingerprinters = Bekende en verdachte fingerprinters
 
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 
@@ -1095,6 +1205,18 @@ content-blocking-cryptominers-label =
 content-blocking-fingerprinters-label =
     .label = Fingerprinters
     .accesskey = F
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+#
+# The known fingerprinters are those that are known for collecting browser fingerprints from user devices.
+content-blocking-known-fingerprinters-label =
+    .label = Bekende fingerprinters
+    .accesskey = B
+# The suspected fingerprinters are those that we are uncertain about browser fingerprinting activities. But they could
+# possibly acquire browser fingerprints because of the behavior on accessing APIs that expose browser fingerprints.
+content-blocking-suspected-fingerprinters-label =
+    .label = Verdachte fingerprinters
+    .accesskey = V
 
 ## Privacy Section - Tracking
 
@@ -1157,6 +1279,8 @@ permissions-addon-exceptions =
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name }-gegevensverzameling en -gebruik
+collection-header2 = { -brand-short-name }-gegevensverzameling en -gebruik
+    .searchkeywords = telemetrie
 collection-description = We streven ernaar u keuzes te bieden en alleen te verzamelen wat we nodig hebben om { -brand-short-name } voor iedereen beschikbaar te maken en te verbeteren. We vragen altijd toestemming voordat we persoonlijke gegevens ontvangen.
 collection-privacy-notice = Privacyverklaring
 collection-health-report-telemetry-disabled = U staat { -vendor-short-name } niet langer toe technische en interactiegegevens vast te leggen. Alle eerdere gegevens worden binnen 30 dagen verwijderd.
@@ -1176,12 +1300,22 @@ addon-recommendations-link = Meer info
 collection-health-report-disabled = Gegevensrapportage is uitgeschakeld voor deze buildconfiguratie
 collection-backlogged-crash-reports-with-link = { -brand-short-name } toestaan om namens u achterstallige crashrapporten te verzenden. <a data-l10n-name="crash-reports-link">Meer info</a>
     .accesskey = c
+collection-backlogged-crash-reports = { -brand-short-name } toestaan om namens u achterstallige crashrapporten te verzenden.
+    .accesskey = c
 privacy-segmentation-section-header = Nieuwe functies die uw browsen verbeteren
 privacy-segmentation-section-description = Wanneer we functies aanbieden die uw gegevens gebruiken om u een meer persoonlijke ervaring te bieden:
 privacy-segmentation-radio-off =
     .label = { -brand-product-name }-aanbevelingen gebruiken
 privacy-segmentation-radio-on =
     .label = Detailinformatie tonen
+
+## Privacy Section - Website Advertising Preferences
+
+website-advertising-header = Website-advertentievoorkeuren
+website-advertising-private-attribution =
+    .label = Websites toestaan privacybeschermende advertentiemetingen uit te voeren
+    .accesskey = a
+website-advertising-private-attribution-description = Dit helpt websites te begrijpen hoe hun advertenties presteren zonder gegevens over u te verzamelen.
 
 ## Privacy Section - Security
 ##
@@ -1213,6 +1347,9 @@ certs-view =
 certs-devices =
     .label = Beveiligingsapparaten…
     .accesskey = B
+certs-thirdparty-toggle =
+    .label = { -brand-short-name } toestaan om door u geïnstalleerde rootcertificaten van derden automatisch te vertrouwen
+    .accesskey = t
 space-alert-over-5gb-settings-button =
     .label = Instellingen openen
     .accesskey = o
@@ -1235,6 +1372,7 @@ httpsonly-radio-disabled =
 
 preferences-doh-header = DNS over HTTPS
 preferences-doh-description = Domain Name System (DNS) over HTTPS verzendt uw aanvraag voor een domeinnaam via een versleutelde verbinding, waardoor een veilige DNS wordt gecreëerd en het voor anderen moeilijker wordt om te zien welke website u gaat bezoeken.
+preferences-doh-description2 = Domain Name System (DNS) over HTTPS verzendt uw aanvraag voor een domeinnaam via een versleutelde verbinding, waardoor een veilige DNS wordt geboden en het voor anderen moeilijker wordt om te zien welke website u gaat bezoeken.
 # Variables:
 #   $status (string) - The status of the DoH connection
 preferences-doh-status = Status: { $status }
@@ -1251,6 +1389,7 @@ preferences-doh-status-disabled = Uit
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
 preferences-doh-status-not-active = Niet actief ({ $reason })
 preferences-doh-group-message = Beveiligde DNS inschakelen met:
+preferences-doh-group-message2 = DNS over HTTPS inschakelen via:
 preferences-doh-expand-section =
     .tooltiptext = Meer informatie
 preferences-doh-setting-default =

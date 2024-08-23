@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = 로그 메시지에 대한 스택 
 
 about-logging-preset-networking-label = 네트워킹
 about-logging-preset-networking-description = 네트워킹 문제를 진단하기 위한 로그 모듈
+about-logging-preset-networking-cookie-label = 쿠키
+about-logging-preset-networking-cookie-description = 쿠키 문제를 진단하기 위한 로그 모듈
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = WebSocket 문제를 진단하기 위한 로그 모듈
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = HTTP/3 및 QUIC 문제를 진단하기 위한 로그 모듈
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3 업로드 속도
+about-logging-preset-networking-http3-upload-speed-description = HTTP/3 업로드 속도 문제를 진단하기 위한 로그 모듈
 about-logging-preset-media-playback-label = 미디어 재생
 about-logging-preset-media-playback-description = 미디어 재생 문제를 진단하기 위한 로그 모듈 (화상 회의 문제 아님)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = WebRTC 호출을 진단하기 위한 로그 모듈
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = WebGPU 문제를 진단하기 위한 로그 모듈
+about-logging-preset-gfx-label = 그래픽
+about-logging-preset-gfx-description = 그래픽 문제를 진단하기 위한 로그 모듈
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Microsoft Windows 관련 문제를 진단하기 위한 로그 모듈
 about-logging-preset-custom-label = 사용자 지정
 about-logging-preset-custom-description = 수동으로 선택한 로그 모듈
 # Error handling

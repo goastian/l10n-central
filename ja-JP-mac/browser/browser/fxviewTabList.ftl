@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = { $targetURI } を新規タブで開きます
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = { $tabTitle } を閉じます
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = { $tabTitle } を閉じます
@@ -37,3 +41,34 @@ fxviewtabrow-save-to-pocket = { -pocket-brand-name } に保存
     .accesskey = o
 fxviewtabrow-copy-link = リンクをコピー
     .accesskey = L
+fxviewtabrow-close-tab = タブを閉じる
+    .accesskey = C
+fxviewtabrow-move-tab = タブを移動
+    .accesskey = v
+fxviewtabrow-move-tab-start = 先頭へ移動
+    .accesskey = S
+fxviewtabrow-move-tab-end = 末尾へ移動
+    .accesskey = E
+fxviewtabrow-move-tab-window = 新規ウインドウへ移動
+    .accesskey = W
+fxviewtabrow-send-tab = タブを端末へ送信
+    .accesskey = n
+fxviewtabrow-pin-tab = タブをピン留め
+    .accesskey = P
+fxviewtabrow-unpin-tab = タブのピン留めを外す
+    .accesskey = p
+fxviewtabrow-mute-tab = タブをミュート
+    .accesskey = M
+fxviewtabrow-unmute-tab = タブのミュートを解除
+    .accesskey = m
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = { $tabTitle } タブのオプション
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = タブをミュートにします
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = タブのミュートを解除します

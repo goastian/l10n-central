@@ -13,6 +13,11 @@ about-webrtc-document-title = WebRTC - Elementi interni
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = Salva about:webrtc come
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Mostra PeerConnection chiuse
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Nascondi PeerConnection chiuse
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = Registrazione AEC
@@ -20,14 +25,19 @@ about-webrtc-aec-logging-off-state-label = Avvia registrazione AEC
 about-webrtc-aec-logging-on-state-label = Interrompi registrazione AEC
 about-webrtc-aec-logging-on-state-msg = Registrazione AEC attiva (parlare per qualche minuto con un interlocutore e interrompere la registrazione)
 
+about-webrtc-aec-logging-toggled-on-state-msg = Registrazione AEC attiva (parlare per qualche minuto con un interlocutore e interrompere la registrazione)
+about-webrtc-aec-logging-unavailable-sandbox = È obbligatorio utilizzare la variabile d’ambiente MOZ_DISABLE_CONTENT_SANDBOX=1 per esportare i registri AEC. Impostare questa variabile solo se si comprendono i potenziali rischi associati.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = I file di registro creati sono disponibili in: { $path }
+
+##
+
 # The autorefresh checkbox causes the page to autorefresh its content when checked
 about-webrtc-auto-refresh-label = Aggiorna automaticamente
 
-about-webrtc-auto-refresh-default-label = Aggiorna automaticamente per impostazione predefinita
-
 about-webrtc-force-refresh-button = Aggiorna
 
-##
 
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
@@ -72,8 +82,6 @@ about-webrtc-ice-pair-bytes-sent = Byte inviati:
 about-webrtc-ice-pair-bytes-received = Byte ricevuti:
 about-webrtc-ice-component-id = ID componente
 
-## "Avg." is an abbreviation for Average. These are used as data labels.
-
 ## These adjectives are used to label a line of statistics collected for a peer
 ## connection. The data represents either the local or remote end of the
 ## connection.
@@ -82,7 +90,6 @@ about-webrtc-type-local = Locale
 about-webrtc-type-remote = Remoto
 
 ##
-
 
 # This adjective is used to label a table column. Cells in this column contain
 # the localized javascript string representation of "true" or are left blank.
@@ -97,7 +104,11 @@ about-webrtc-save-page-label = Salva pagina
 about-webrtc-debug-mode-msg-label = Modalità di debug
 about-webrtc-debug-mode-off-state-label = Avvia modalità di debug
 about-webrtc-debug-mode-on-state-label = Interrompi modalità di debug
+about-webrtc-enable-logging-label = Attiva preset di registrazione per WebRTC
 about-webrtc-stats-heading = Statistiche di sessione
+about-webrtc-peerconnections-section-heading = Statistiche RTCPeerConnection
+about-webrtc-peerconnections-section-show-msg = Mostra statistiche RTCPeerConnection
+about-webrtc-peerconnections-section-hide-msg = Nascondi statistiche RTCPeerConnection
 about-webrtc-stats-clear = Cancella cronologia
 about-webrtc-log-heading = Registro di connessione
 about-webrtc-log-clear = Cancella registro
@@ -105,6 +116,11 @@ about-webrtc-log-show-msg = Visualizza registro
     .title = fare clic per espandere questa sezione
 about-webrtc-log-hide-msg = Nascondi registro
     .title = fare clic per comprimere questa sezione
+
+about-webrtc-log-section-show-msg = Visualizza registro
+    .title = Fare clic per espandere questa sezione
+about-webrtc-log-section-hide-msg = Nascondi registro
+    .title = Fare clic per comprimere questa sezione
 about-webrtc-copy-report-button = Copia rapporto
 about-webrtc-copy-report-history-button = Copia cronologia rapporti
 
@@ -118,8 +134,15 @@ about-webrtc-copy-report-history-button = Copia cronologia rapporti
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (chiusa) { $now }
 
-##
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
 
+about-webrtc-short-send-receive-direction = Invio/ricezione: { $codecs }
+about-webrtc-short-send-direction = Invio: { $codecs }
+about-webrtc-short-receive-direction = Ricezione: { $codecs }
+
+##
 
 about-webrtc-local-candidate = Candidato locale
 about-webrtc-remote-candidate = Candidato remoto
@@ -130,11 +153,19 @@ about-webrtc-raw-cand-show-msg = mostra candidati non elaborati
     .title = fare clic per espandere questa sezione
 about-webrtc-raw-cand-hide-msg = nascondi candidati non elaborati
     .title = fare clic per comprimere questa sezione
+about-webrtc-raw-cand-section-show-msg = Mostra candidati non elaborati
+    .title = Fare clic per espandere questa sezione
+about-webrtc-raw-cand-section-hide-msg = Nascondi candidati non elaborati
+    .title = Fare clic per comprimere questa sezione
 about-webrtc-priority = Priorità
 about-webrtc-fold-show-msg = visualizza dettagli
     .title = fare clic per espandere questa sezione
 about-webrtc-fold-hide-msg = nascondi dettagli
     .title = fare clic per comprimere questa sezione
+about-webrtc-fold-default-show-msg = Visualizza dettagli
+    .title = Fare clic per espandere questa sezione
+about-webrtc-fold-default-hide-msg = Nascondi dettagli
+    .title = Fare clic per comprimere questa sezione
 about-webrtc-dropped-frames-label = Frame persi:
 about-webrtc-discarded-packets-label = Pacchetti scartati:
 about-webrtc-decoder-label = Decodificatore
@@ -175,6 +206,15 @@ about-webrtc-configuration-element-not-provided = Non fornito
 
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Impostazioni WebRTC modificate dall’utente
+about-webrtc-user-modified-configuration-heading = Impostazioni WebRTC modificate dall’utente
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Mostra impostazioni WebRTC modificate dall’utente
+about-webrtc-user-modified-configuration-hide-msg = Nascondi impostazioni WebRTC modificate dall’utente
+
+##
 
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Larghezza di banda stimata
@@ -214,6 +254,8 @@ about-webrtc-debug-mode-off-state-msg = I registri di traccia sono disponibili i
 about-webrtc-debug-mode-on-state-msg = Modalità di debug attiva, scrittura registri di traccia in: { $path }
 about-webrtc-aec-logging-off-state-msg = I file di registro creati sono disponibili in: { $path }
 
+about-webrtc-save-page-complete-msg = Pagina salvata in: { $path }
+
 ##
 
 # This is the total number of frames encoded or decoded over an RTP stream.
@@ -225,38 +267,37 @@ about-webrtc-frames = { $frames } frame
 # Variables:
 #  $channels (Number) - The number of channels encoded or decoded.
 about-webrtc-channels =
-  { $channels ->
-      [one] { $channels } canale
-     *[other] { $channels } canali
-  }
-
+    { $channels ->
+        [one] { $channels } canale
+       *[other] { $channels } canali
+    }
 
 # This is the total number of packets received on the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets received.
 about-webrtc-received-label =
-  { $packets ->
-      [one] { $packets } pacchetto ricevuto
-     *[other] { $packets } pacchetti ricevuti
-  }
+    { $packets ->
+        [one] { $packets } pacchetto ricevuto
+       *[other] { $packets } pacchetti ricevuti
+    }
 
 # This is the total number of packets lost by the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets lost.
 about-webrtc-lost-label =
-  { $packets ->
-      [one] { $packets } pacchetto perso
-     *[other] { $packets } pacchetti persi
-  }
+    { $packets ->
+        [one] { $packets } pacchetto perso
+       *[other] { $packets } pacchetti persi
+    }
 
 # This is the total number of packets sent by the PeerConnection.
 # Variables:
 #  $packets (Number) - The number of packets sent.
 about-webrtc-sent-label =
-  { $packets ->
-      [one] { $packets } pacchetto inviato
-     *[other] { $packets } pacchetti inviati
-  }
+    { $packets ->
+        [one] { $packets } pacchetto inviato
+       *[other] { $packets } pacchetti inviati
+    }
 
 # Jitter is the variance in the arrival time of packets.
 # See: https://w3c.github.io/webrtc-stats/#dom-rtcreceivedrtpstreamstats-jitter
@@ -300,4 +341,3 @@ about-webrtc-hide-msg-sdp = Nascondi SDP
 about-webrtc-media-context-show-msg = Mostra contesto multimediale
 about-webrtc-media-context-hide-msg = Nascondi contesto multimediale
 about-webrtc-media-context-heading = Contesto multimediale
-

@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = ขณะนี้คุณอยู่ใ
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = ตั้งรหัสผ่านหลักใหม่
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = ตั้งรหัสผ่านหลักใหม่
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = รหัสผ่านหลั�
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = กำลังดาวน์โหลดใบรับรอง
-    .style = width: 46em
 download-cert-window2 =
     .title = กำลังดาวน์โหลดใบรับรอง
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = ตรวจสอบใบรับรอง CA
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = คำขออัตลักษณ์ผู้ใช้
 client-auth-site-description = ไซต์นี้ได้ขอให้คุณระบุตัวคุณเองด้วยใบรับรอง:
 client-auth-choose-cert = เลือกใบรับรองเพื่อระบุตัวตน:
+client-auth-send-no-certificate =
+    .label = อย่าส่งใบรับรอง
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = “{ $hostname }” ได้ขอให้คุณระบุตัวตนของคุณเองด้วยใบรับรอง:
 client-auth-cert-details = รายละเอียดของใบรับรองที่เลือก:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = ออกให้: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = หมายเลขอนุกรม: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = มีผลตั้งแต่ { $notBefore } ถึง { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = การใช้กุญแจ: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = ที่อยู่อีเมล: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = ออกโดย: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = จัดเก็บไว้ใน: { $storedOn }
+client-auth-cert-remember-box =
+    .label = จดจำการตัดสินใจนี้
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = รหัสผ่านสำรองใบรับรอง (อีกครั้ง) :
 set-password-reminder = สำคัญมาก : หากคุณลืมรหัสผ่านสำรองใบรับรอง คุณจะไม่สามารถเรียกคืนข้อมูลที่สำรองไว้ได้อีกต่อไป ควรบันทึกรหัสผ่านนี้ไว้ในที่ปลอดภัย
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = การพิสูจน์ว่าโทเค็นที่ปกป้องไว้เป็นของจริง
-protected-auth-msg = โปรดพิสูจน์ว่าโทเค็นเป็นของจริง วิธีพิสูจน์จะขึ้นกับชนิดของโทเค็น
-protected-auth-token = โทเค็น:
 
 ## Protected authentication alert
 

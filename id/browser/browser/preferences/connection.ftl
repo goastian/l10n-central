@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-connection-window =
-    .title = Pengaturan Sambungan
-    .style =
-        { PLATFORM() ->
-            [macos] width: 44em
-           *[other] width: 49em
-        }
 connection-window2 =
     .title = Pengaturan Sambungan
     .style =
@@ -54,8 +47,8 @@ connection-proxy-socks4 =
 connection-proxy-socks5 =
     .label = SOCKS v5
     .accesskey = v
-connection-proxy-noproxy = Tanpa Proksi untuk
-    .accesskey = t
+connection-proxy-noproxy = Tanpa proksi untuk
+    .accesskey = n
 connection-proxy-noproxy-desc = Contoh: .mozilla.org, .net.id, 192.168.1.0/24
 # Do not translate "localhost", "127.0.0.1/8" and "::1". (You can translate "and".)
 connection-proxy-noproxy-localhost-desc-2 = Koneksi ke localhost, 127.0.0.1/8, dan ::1 tidak pernah diproksi.
@@ -76,11 +69,6 @@ connection-proxy-autologin-checkbox =
 connection-proxy-socks-remote-dns =
     .label = DNS proksi saat menggunakan SOCKS v5
     .accesskey = d
-connection-dns-over-https =
-    .label = Aktifkan DNS lewat HTTPS
-    .accesskey = D
-connection-dns-over-https-url-resolver = Gunakan Penyedia
-    .accesskey = P
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

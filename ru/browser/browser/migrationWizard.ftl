@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Пароли из CSV-файла
 migration-wizard-migrator-display-name-file-bookmarks = Закладки из HTML-файла
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Список для чтения (из Safari)
+migration-imported-edge-reading-list = Список для чтения (из Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } не имеет доступа к профилям других браузеров, установленным на этом устройстве.
+migration-no-permissions-instructions = Чтобы продолжить импорт данных из другого браузера, предоставьте { -brand-short-name } доступ к папке его профиля.
+migration-no-permissions-instructions-step1 = Нажмите «Продолжить»
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = В средстве выбора файлов перейдите к <code>{ $permissionsPath }</code> и нажмите «Выбрать».
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = Закладки
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Избранное
 migration-logins-and-passwords-option-label = Сохранённые логины и пароли
+migration-passwords-option-label = Сохранённые пароли
 migration-history-option-label = Журнал посещений
 migration-extensions-option-label = Расширения
 migration-form-autofill-option-label = Данные автозаполнения форм
@@ -161,7 +181,14 @@ migration-list-payment-methods-label = способы оплаты
 ##
 
 migration-wizard-progress-header = Импорт данных
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Данные успешно импортированы
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Импорт данных завершен
 migration-wizard-progress-icon-in-progress =
     .aria-label = Идёт импорт…
 migration-wizard-progress-icon-completed =

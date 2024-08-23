@@ -5,46 +5,15 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (Mode Penjelajahan Pribadi)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Mode Penjelajahan Pribadi)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox — (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
-#
-# Also note the other subtle difference here: we use a `-` to separate the
-# brand name from `(Private Browsing)`, which does not happen on other OSes.
-#
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window-mac =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Mode Penjelajahan Pribadi)
-    .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Mode Penjelajahan Pribadi)
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
-#
-# default - "Mozilla Firefox"
-# private - "Mozilla Firefox (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
@@ -52,14 +21,17 @@ browser-main-window-window-titles =
     .data-title-private = Penjelajahan Pribadi { -brand-full-name }
     .data-content-title-default = { $content-title } — { -brand-full-name }
     .data-content-title-private = { $content-title } — Penjelajahan Pribadi { -brand-full-name }
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
+#
 #
 # "default" - "Mozilla Firefox"
 # "private" - "Mozilla Firefox — (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
@@ -109,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = Buka panel perizinan realitas virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Buka panel perizinan aktivitas penjelajahan
-urlbar-translate-notification-anchor =
-    .tooltiptext = Terjemahkan laman ini
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Mengelola berbagi laman atau layar Anda dengan situs ini
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Buka panel pesan penyimpanan luring
 urlbar-password-notification-anchor =
     .tooltiptext = Buka panel pesan penyimpanan sandi
-urlbar-translated-notification-anchor =
-    .tooltiptext = Kelola terjemahan laman
 urlbar-plugins-notification-anchor =
     .tooltiptext = Kelola penggunaan plug-in
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -213,10 +181,6 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
-    .label = Kelola Ekstensi…
-page-action-remove-extension =
-    .label = Hapus Ekstensi
 page-action-manage-extension2 =
     .label = Kelola Ekstensi…
     .accesskey = E
@@ -315,6 +279,9 @@ quickactions-cmd-plugins = plugin
 # Opens the print dialog
 quickactions-print2 = Cetak halaman
 quickactions-cmd-print = cetak
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = Simpan laman sebagai PDF
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = Buka jendela pribadi
 quickactions-cmd-private = penjelajahan pribadi
@@ -380,6 +347,7 @@ identity-connection-secure = Sambungan aman
 identity-connection-failure = Sambungan gagal
 identity-connection-internal = Ini adalah laman { -brand-short-name } aman.
 identity-connection-file = Laman ini tersimpan di komputer Anda.
+identity-connection-associated = Laman ini dimuat dari laman lainnya.
 identity-extension-page = Laman ini dimuat dari ekstensi.
 identity-active-blocked = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman.
 identity-custom-root = Koneksi diverifikasi oleh penerbit sertifikat yang tidak dikenali oleh Mozilla.
@@ -389,6 +357,7 @@ identity-weak-encryption = Laman ini menggunakan enkripsi lemah.
 identity-insecure-login-forms = Info masuk yang dimasukkan di laman ini bisa diketahui orang lain.
 identity-https-only-connection-upgraded = (ditingkatkan ke HTTPS)
 identity-https-only-label = Mode Hanya HTTPS
+identity-https-only-label2 = Tingkatkan sambungan situs ini secara otomatis ke sambungan aman
 identity-https-only-dropdown-on =
     .label = Aktif
 identity-https-only-dropdown-off =
@@ -397,6 +366,8 @@ identity-https-only-dropdown-off-temporarily =
     .label = Nonaktif sementara
 identity-https-only-info-turn-on2 = Nyalakan Mode HTTPS-Only untuk situs ini jika Anda ingin { -brand-short-name } meningkatkan sambungan bila memungkinkan.
 identity-https-only-info-turn-off2 = Jika laman terlihat bermasalah, Anda mungkin ingin menonaktifkan Mode HTTPS-Only lalu memuat ulang situsnya dengan HTTP yang tidak aman.
+identity-https-only-info-turn-on3 = Nyalakan peningkatan HTTPS untuk situs ini jika Anda ingin { -brand-short-name } meningkatkan sambungan bila memungkinkan.
+identity-https-only-info-turn-off3 = Jika laman terlihat bermasalah, Anda mungkin ingin menonaktifkan peningkatan HTTPS lalu memuat ulang situsnya menggunakan HTTP yang tidak aman.
 identity-https-only-info-no-upgrade = Tidak dapat meningkatkan koneksi dari HTTP.
 identity-permissions-storage-access-header = Kuki lintas situs
 identity-permissions-storage-access-hint = Pihak berikut dapat menggunakan kuki lintas situs dan data situs saat Anda berada di situs ini.
@@ -407,8 +378,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = Anda tidak terhubung dengan aman ke situs ini.
 identity-connection-verified = Anda terhubung dengan aman ke situs ini.
 identity-ev-owner-label = Sertifikat diterbitkan untuk:
-identity-description-custom-root = Mozilla tidak mengenali penerbit sertifikat ini. Itu mungkin telah ditambahkan dari sistem operasi Anda atau oleh administrator. <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
-identity-description-custom-root2 = Mozilla tidak mengenali penerbit sertifikat ini. Itu mungkin telah ditambahkan dari sistem operasi Anda atau oleh administrator.
+identity-description-custom-root2 = Ablaze tidak mengenali penerbit sertifikat ini. Itu mungkin telah ditambahkan dari sistem operasi Anda atau oleh administrator.
 identity-remove-cert-exception =
     .label = Buang Pengecualian
     .accesskey = B
@@ -416,17 +386,12 @@ identity-description-insecure = Sambungan Anda ke laman ini tidak pribadi. Infor
 identity-description-insecure-login-forms = Info masuk yang Anda masukkan di laman ini tidak aman dan bisa diketahui orang lain.
 identity-description-weak-cipher-intro = Sambungan Anda ke situs web ini menggunakan enkripsi lemah dan tidak pribadi.
 identity-description-weak-cipher-risk = Orang lain dapat melihat informasi Anda atau memodifikasi perilaku situs web ini.
-identity-description-active-blocked = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman. <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
 identity-description-active-blocked2 = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman.
 identity-description-passive-loaded = Sambungan Anda tidak pribadi dan informasi yang Anda bagikan dengan situs ini dapat dilihat oleh pihak lain.
-identity-description-passive-loaded-insecure = Situs web ini mengandung konten yang tidak aman (misalnya, gambar). <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
-identity-description-passive-loaded-mixed = Meskipun { -brand-short-name } telah memblokir sejumlah konten, tetapi masih ada konten di laman ini yang tidak aman (misalnya gambar). <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
 identity-description-passive-loaded-insecure2 = Situs web ini mengandung konten yang tidak aman (misalnya, gambar).
 identity-description-passive-loaded-mixed2 = Meskipun { -brand-short-name } telah memblokir sejumlah konten, tetapi masih ada konten di laman ini yang tidak aman (misalnya gambar).
 identity-description-active-loaded = Situs web ini mengandung konten yang tidak aman (misalnya skrip) dan sambungan Anda tidak pribadi.
 identity-description-active-loaded-insecure = Informasi yang Anda bagikan dengan situs ini dapat dilihat oleh pihak lain (misalnya sandi, pesan, kartu kredit, dll.)
-identity-learn-more =
-    .value = Pelajari Lebih Lanjut
 identity-disable-mixed-content-blocking =
     .label = Nonaktifkan perlindungan untuk saat ini
     .accesskey = N
@@ -503,13 +468,6 @@ popup-select-window-or-screen =
     .label = Jendela atau layar:
     .accesskey = J
 popup-all-windows-shared = Semua jendela yang terlihat pada layar Anda akan dibagikan.
-popup-screen-sharing-block =
-    .label = Blokir
-    .accesskey = B
-popup-screen-sharing-always-block =
-    .label = Selalu blokir
-    .accesskey = S
-popup-mute-notifications-checkbox = Bisukan notifikasi situs web ketika sedang berbagi
 
 ## WebRTC window or screen share tab switch warning
 
@@ -522,11 +480,13 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = Untuk menggunakan pintasan F12, pertama buka DevTools melalui menu Pengembang Web.
 enable-devtools-popup-description2 = Untuk menggunakan pintasan F12, pertama-tama, buka DevTools melalui menu Alat Peramban.
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = Tutup
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -603,6 +563,13 @@ urlbar-result-action-search-w-engine = Cari lewat { $engine }
 urlbar-result-action-sponsored = Bersponsor
 urlbar-result-action-switch-tab = Pindah ke Tab
 urlbar-result-action-visit = Kunjungi
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = Pindah ke Tab · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = Kunjungi dari papan klip
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -631,6 +598,12 @@ urlbar-result-action-copy-to-clipboard = Salin
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = Cari lewat { $engine }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -642,7 +615,7 @@ urlbar-result-action-search-actions = Cari Tindakan
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -655,6 +628,11 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = Tindakan Cepat
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = Pencarian Terkini
 
 ## Reader View toolbar buttons
 
@@ -673,6 +651,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Buka Gambar dalam Gambar ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Tutup Gambar dalam Gambar ({ $shortcut })
+picture-in-picture-panel-header = Gambar dalam Gambar
+picture-in-picture-panel-headline = Situs web ini tidak merekomendasikan Gambar dalam Gambar
+picture-in-picture-panel-body = Video mungkin tidak ditampilkan seperti yang dinginkan pengembang saat fitur Gambar dalam Gambar diaktifkan.
+picture-in-picture-enable-toggle =
+    .label = Tetap aktifkan
 
 ## Full Screen and Pointer Lock UI
 
@@ -689,19 +672,6 @@ fullscreen-exit-mac-button = Keluar dari Layar Penuh (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> memiliki kendali atas penunjuk Anda. Tekan Esc untuk mengembalikan kendali.
 pointerlock-warning-no-domain = Dokumen ini memiliki kendali atas pointer Anda. Tekan Esc untuk mengambil kembali kendali.
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>Sebagian dari laman ini mogok. </strong>Untuk memberi tahu { -brand-product-name } tentang masalah ini dan memperbaikinya lebih cepat, harap kirimkan laporan.
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = Sebagian dari laman ini mogok. Untuk memberi tahu { -brand-product-name } tentang masalah ini dan memperbaikinya lebih cepat, harap kirimkan laporan.
-crashed-subframe-learnmore-link =
-    .value = Pelajari Lebih Lanjut
-crashed-subframe-submit =
-    .label = Kirimkan Laporan
-    .accesskey = K
 
 ## Bookmarks panels, menus and toolbar
 
@@ -754,8 +724,6 @@ bookmarks-search =
     .label = Cari Markah
 bookmarks-tools =
     .label = Alat Pemarkahan
-bookmarks-bookmark-edit-panel =
-    .label = Edit Markah Ini
 bookmarks-subview-edit-bookmark =
     .label = Ubah markah ini…
 # The aria-label is a spoken label that should not include the word "toolbar" or
@@ -771,9 +739,6 @@ bookmarks-toolbar-placeholder =
     .title = Nama Markah
 bookmarks-toolbar-placeholder-button =
     .label = Nama Markah
-# "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = Markahi Tab Saat Ini
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-subview-bookmark-tab =
     .label = Markahi tab saat ini…
@@ -799,11 +764,6 @@ repair-text-encoding-button =
 
 ## Customize Toolbar Buttons
 
-# Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = Pengaya dan tema
-    .tooltiptext = Kelola pengaya dan tema ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -853,13 +813,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = T
 
 panel-save-update-username = Nama Pengguna
 panel-save-update-password = Kata Sandi
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = Hapus { $name }?
-addon-removal-abuse-report-checkbox = Laporkan ekstensi ini ke { -vendor-short-name }
 
 ##
 
@@ -928,8 +881,6 @@ navbar-library =
     .tooltiptext = Lihat riwayat, markah tersimpan, dan lainnya
 navbar-search =
     .title = Cari
-navbar-accessibility-indicator =
-    .tooltiptext = Fitur Aksesibilitas Aktif
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -947,6 +898,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Buka tab sebelumnya?</strong> Anda dapat memulihkan sesi sebelumnya dari menu aplikasi { -brand-short-name } <img data-l10n-name="icon"/>, di bawah menu Riwayat.
 restore-session-startup-suggestion-button = Tunjukkan caranya
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = Organisasi Anda telah memblokir akses ke berkas lokal di komputer ini
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } mengirimkan beberapa jenis data ke { -vendor-short-name } agar kami dapat meningkatkan pengalaman Anda.
@@ -955,6 +910,7 @@ data-reporting-notification-button =
     .accesskey = P
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Penjelajahan pribadi
+content-analysis-panel-title = Perlindungan data
 
 ## Unified extensions (toolbar) button
 
@@ -971,6 +927,31 @@ unified-extensions-button-permissions-needed =
         Ekstensi
         Izin dibutuhkan
 
+## Unified extensions button when some extensions are quarantined.
+## Note that the new line is intentionally part of the tooltip.
+
+unified-extensions-button-quarantined =
+    .label = Ekstensi
+    .tooltiptext = Ekstensi
+
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = Akhiri Sesi Pribadi
+    .tooltiptext = Akhiri Sesi Pribadi
+reset-pbm-panel-heading = Akhiri sesi pribadi Anda?
+reset-pbm-panel-description = Tutup semua tab pribadi dan hapus riwayat, kuki, dan semua data situs lainnya.
+reset-pbm-panel-always-ask-checkbox =
+    .label = Selalu tanyakan
+    .accesskey = t
+reset-pbm-panel-cancel-button =
+    .label = Batal
+    .accesskey = B
+reset-pbm-panel-confirm-button =
+    .label = Hapus  data sesi
+    .accesskey = d
+reset-pbm-panel-complete = Data sesi pribadi dihapus
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } telah mencegah laman ini untuk otomatis dimuat ulang.
@@ -981,15 +962,11 @@ refresh-blocked-allow =
 
 ## Firefox Relay integration
 
-firefox-relay-offer-why-relay = { -relay-brand-name } menyembunyikan alamat surel Anda yang sebenarnya untuk membantu melindungi Anda dari kebocoran data dan spam.
-firefox-relay-offer-how-we-integrate = Dengan melanjutkan, Anda dapat membuat topeng surel { -relay-brand-short-name } baru secara langsung dari pengelola sandi { -brand-shorter-name } Anda.
+firefox-relay-offer-why-to-use-relay = Topeng aman dan mudah digunakan dari kami dapat melindungi identitas Anda dan mencegah spam dengan menyembunyikan alamat email Anda.
 # Variables:
-#  $sitename (String): name of the site where user enters their Relay mask
 #  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-does = Kami akan meneruskan semua email dari <strong>{ $sitename }</strong> ke <strong>{ $useremail }</strong>.
-
-## Popup Notification
-
+firefox-relay-offer-what-relay-provides = Semua surel yang dikirim ke topeng surel Anda akan diteruskan ke <strong>{ $useremail }</strong> (kecuali jika Anda memutuskan untuk memblokir mereka).
+firefox-relay-offer-legal-notice = Dengan mengklik “Gunakan masker surel”, Anda setuju dengan <label data-l10n-name="tos-url">Ketentuan Layanan</label> dan <label data-l10n-name="privacy-url">Pernyataan Privasi</label>.
 
 ## Add-on Pop-up Notifications
 

@@ -14,17 +14,10 @@ onboarding-welcome-header = Bem-vindo(a) ao { -brand-short-name }
 onboarding-start-browsing-button-label = Começar a navegar
 onboarding-not-now-button-label = Agora não
 mr1-onboarding-get-started-primary-button-label = Começar
-mr1-onboarding-welcome-header = Bem-vindo(a) ao { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label = Definir o { -brand-short-name } como o meu navegador principal
-    .title = Define o { -brand-short-name } como o navegador principal e fixa o mesmo à barra de tarefas
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = Definir o { -brand-short-name } no meu navegador principal
-mr1-onboarding-set-default-secondary-button-label = Agora não
 
 ## Custom Return To AMO onboarding strings
 
-return-to-amo-subtitle = Ótimo, você tem o { -brand-short-name }
+return-to-amo-subtitle = Ótimo, tem o { -brand-short-name }
 # <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
 #
 # Variables:
@@ -41,25 +34,6 @@ mr1-return-to-amo-add-extension-label = Adicionar { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = Primeiros passos: ecrã { $current } de { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = O fogo começa aqui
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio - Designer de mobiliário, fã do Firefox
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -70,64 +44,18 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Progresso: passo { $current } de { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Desativar as animações
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] Mantenha o { -brand-short-name } na sua Doca para um acesso mais fácil
-       *[other] Fixe o { -brand-short-name } na sua barra de tarefas para um acesso mais fácil
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Manter na Doca
-       *[other] Fixar na barra de tarefas
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Iniciar sessão
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = Predefinir o { -brand-short-name }
-mr1-onboarding-default-subtitle = Coloque a velocidade, segurança e privacidade em piloto automático.
-mr1-onboarding-default-primary-button-label = Predefinir o navegador
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Leve tudo consigo
-mr1-onboarding-import-subtitle = Importe as suas palavras-passe, <br/>marcadores e muito mais.
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importar de { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importar do navegador anterior
-mr1-onboarding-import-secondary-button-label = Agora não
-mr2-onboarding-colorway-header = Vida a cores
-mr2-onboarding-colorway-subtitle = Estilos de cor vibrantes. Disponíveis por tempo limitado.
-mr2-onboarding-colorway-primary-button-label = Guardar estilo de cor
-mr2-onboarding-colorway-secondary-button-label = Agora não
-mr2-onboarding-colorway-label-soft = Suave
-mr2-onboarding-colorway-label-balanced = Equilibrado
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Audacioso
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Automático
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Predefinido
 mr1-onboarding-theme-header = Personalize
 mr1-onboarding-theme-subtitle = Personalize o { -brand-short-name } com um tema.
-mr1-onboarding-theme-primary-button-label = Guardar tema
 mr1-onboarding-theme-secondary-button-label = Agora não
+newtab-wallpaper-onboarding-title = Experimente um toque de cor
+newtab-wallpaper-onboarding-subtitle = Escolha um fundo para dar um novo visual ao seu novo separador.
+newtab-wallpaper-onboarding-primary-button-label = Definir fundo
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Tema do sistema
 mr1-onboarding-theme-label-light = Claro
@@ -181,26 +109,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Utilizar um tema dinâmico e colorido para 
         botões, menus e janelas.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Utilizar este estilo de cor.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Utilizar este estilo de cor.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Explorar os estilos de cor { $colorwayName }.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Explorar os estilos de cor { $colorwayName }.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Explorar os temas predefinidos.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Explorar os temas predefinidos.
 
@@ -209,14 +117,6 @@ mr2-onboarding-default-theme-label = Explorar os temas predefinidos.
 mr2-onboarding-thank-you-header = Obrigado por nos escolher
 mr2-onboarding-thank-you-text = O { -brand-short-name } é um navegador independente apoiado por uma organização sem fins lucrativos. Juntos, estamos tornar a Internet mais segura, mais saudável e mais privada.
 mr2-onboarding-start-browsing-button-label = Começar a navegar
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -430,4 +330,36 @@ onboarding-device-migration-image-alt =
     .aria-label = Uma raposa a acenar no ecrã de um portátil. O portátil tem um rato ligado.
 onboarding-device-migration-title = Olá novamente!
 onboarding-device-migration-subtitle = Entre na { -fxaccount-brand-name(capitalization: "sentence") } para levar os seus marcadores, palavras-passe e histórico consigo no seu novo dispositivo.
+onboarding-device-migration-subtitle2 = Inicie a sessão na sua conta para trazer os seus marcadores, palavras-passe e o histórico consigo no seu novo dispositivo.
 onboarding-device-migration-primary-button-label = Entrar
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Nós adoramos mantê-lo seguro
+onboarding-easy-setup-security-and-privacy-subtitle = O nosso navegador apoiado por uma organização sem fins lucrativos, ajuda a impedir que as empresas o sigam secretamente na Web.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Mantenha-se encriptado quando alterna entre os dispositivos
+onboarding-mobile-download-security-and-privacy-subtitle = Quando está sincronizado, o { -brand-short-name } encripta as suas palavras-passe, marcadores e muito mais. Além disso, pode ter os separadores dos seus outros dispositivos.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } protege-o
+onboarding-gratitude-security-and-privacy-subtitle = Obrigado por utilizar o { -brand-short-name }, apoiado pela Mozilla Foundation. Com o seu apoio, nós estamos a trabalhar para tornar a Internet segura e mais acessível para todos.
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = Há quanto tempo utiliza o { -brand-short-name }?
+onboarding-new-user-familiarity-based-survey-title = Quão familiarizado está com o { -brand-short-name }?
+onboarding-new-user-survey-subtitle = A sua opinião ajuda a tornar o { -brand-short-name } ainda melhor.
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Seguinte
+onboarding-new-user-survey-legal-link-label = Ao selecionar “{ onboarding-new-user-survey-next-button-label }”, concorda com a <a data-l10n-name="privacy_notice">informação de privacidade</a> do { -brand-product-name }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Estou a começar
+onboarding-new-user-survey-time-based-option-2 = Menos de 1 mês
+onboarding-new-user-survey-time-based-option-3 = Mais de 1 mês, regularmente
+onboarding-new-user-survey-time-based-option-4 = Mais de 1 mês, ocasionalmente
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Estou a começar
+onboarding-new-user-survey-familiarity-based-option-2 = Eu já o utilizei um pouco
+onboarding-new-user-survey-familiarity-based-option-3 = Eu estou muito familiarizado com o mesmo
+onboarding-new-user-survey-familiarity-based-option-4 = Eu já o utilizei, mas foi há algum tempo

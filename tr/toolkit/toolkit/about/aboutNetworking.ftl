@@ -4,6 +4,7 @@
 
 about-networking-title = Ağ Hakkında
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = HTTP önbelleğini temizle
 about-networking-sockets = Sockets
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = DNS önbelleğini temizle
@@ -19,7 +20,7 @@ about-networking-http-version = HTTP sürümü
 about-networking-ssl = SSL
 about-networking-active = Etkin
 about-networking-idle = Beklemede
-about-networking-host = Makine
+about-networking-host = Ana makine
 about-networking-type = Tür
 about-networking-sent = Gönderilen
 about-networking-received = Alınan
@@ -37,7 +38,7 @@ about-networking-logging = Log Kaydı
 about-networking-dns-lookup = DNS Çözümleme
 about-networking-dns-lookup-button = Çözümle
 about-networking-dns-domain = Alan adı:
-about-networking-dns-lookup-table-column = IP'ler
+about-networking-dns-lookup-table-column = IP’ler
 about-networking-dns-https-rr-lookup-table-column = HTTP RR’leri
 about-networking-rcwn = RCWN İstatistikleri
 about-networking-rcwn-status = RCWN durumu

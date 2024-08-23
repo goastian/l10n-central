@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Marquer ces onglets…
     .accesskey = u
-bookmark-tab =
-    .label = Ajouter l’onglet aux marque-pages
-    .accesskey = M
 tab-context-bookmark-tab =
     .label = Ajouter aux marque-pages…
     .accesskey = m
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Fermer plusieurs onglets
     .accesskey = l
+tab-context-close-duplicate-tabs =
+    .label = Fermer les onglets en double
+    .accesskey = u
 tab-context-share-url =
     .label = Partager
     .accesskey = P
@@ -105,7 +105,6 @@ tab-context-move-tabs =
            *[other] Déplacer les onglets
         }
     .accesskey = c
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

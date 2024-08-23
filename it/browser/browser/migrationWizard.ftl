@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Password da file CSV
 migration-wizard-migrator-display-name-file-bookmarks = Segnalibri da file HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Elenco lettura (da Safari)
+migration-imported-edge-reading-list = Elenco di lettura (da Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } non ha accesso ai profili di altri browser installati su questo dispositivo.
+migration-no-permissions-instructions = Per proseguire con l’importazione da un altro browser, garantire a { -brand-short-name } l’accesso alla cartella del profilo.
+migration-no-permissions-instructions-step1 = Seleziona “Continua”
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = Nella finestra di selezione file, passa a <code>{ $permissionsPath }</code> e fai clic su “Seleziona”
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = Segnalibri
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Preferiti
 migration-logins-and-passwords-option-label = Credenziali e password salvate
+migration-passwords-option-label = Password salvate
 migration-history-option-label = Cronologia di navigazione
 migration-extensions-option-label = Estensioni
 migration-form-autofill-option-label = Dati per la compilazione automatica dei moduli
@@ -105,25 +125,21 @@ migration-wizard-progress-success-updated-passwords =
         [one] { $updatedEntries } aggiornata
        *[other] { $updatedEntries } aggiornate
     }
-
 migration-bookmarks-from-file-picker-title = Importazione file di segnalibri
 migration-bookmarks-from-file-progress-header = Importazione segnalibri
 migration-bookmarks-from-file = Segnalibri
 migration-bookmarks-from-file-success-header = Segnalibri importati correttamente
 migration-bookmarks-from-file-no-valid-data = Il file non include alcuna informazione relativa ai segnalibri. Seleziona un altro file.
-
 # A description for the .html file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-html-filter-title =
-  { PLATFORM() ->
-      [macos] Documento HTML
-     *[other] File HTML
-  }
-
+    { PLATFORM() ->
+        [macos] Documento HTML
+       *[other] File HTML
+    }
 # A description for the .json file format that may be shown as the file type
 # filter by the operating system.
 migration-bookmarks-from-file-json-filter-title = File JSON
-
 # Shown in the migration wizard after importing bookmarks from a file
 # has completed.
 #
@@ -134,7 +150,6 @@ migration-wizard-progress-success-new-bookmarks =
         [one] { $newEntries } segnalibro
        *[other] { $newEntries } segnalibri
     }
-
 migration-import-button-label = Importa
 migration-choose-to-import-from-file-button-label = Importa da file
 migration-import-from-file-button-label = Seleziona file
@@ -163,7 +178,8 @@ migration-list-payment-methods-label = metodi di pagamento
 ##
 
 migration-wizard-progress-header = Importazione dati
-migration-wizard-progress-done-header = Importazione dei dati completata
+migration-wizard-progress-done-header = Importazione dei dati completata correttamente
+migration-wizard-progress-done-with-warnings-header = Importazione dei dati completata
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importazione in corso…
 migration-wizard-progress-icon-completed =
@@ -213,7 +229,6 @@ migration-wizard-progress-success-extensions =
         [one] { $quantity } estensione
        *[other] { $quantity } estensioni
     }
-
 # Shown in the migration wizard after importing a partial amount of
 # matched extensions from supported browsers.
 #
@@ -221,12 +236,10 @@ migration-wizard-progress-success-extensions =
 #   $matched (Number): the number of matched imported extensions
 #   $quantity (Number): the number of total extensions found during import
 migration-wizard-progress-partial-success-extensions = { $matched } di { $quantity } estensioni
-
 migration-wizard-progress-extensions-support-link = Scopri in che modo { -brand-product-name } trova corrispondenze tra le estensioni
 # Shown in the migration wizard if there are no matched extensions
 # on import from supported browsers.
 migration-wizard-progress-no-matched-extensions = Nessuna estensione corrispondente
-
 migration-wizard-progress-extensions-addons-link = Scopri estensioni per { -brand-short-name }
 
 ##

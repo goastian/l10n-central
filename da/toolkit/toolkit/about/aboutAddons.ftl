@@ -6,11 +6,16 @@ addons-page-title = Tilføjelser
 search-header =
     .placeholder = Søg på addons.mozilla.org
     .searchbuttonlabel = Søg
-search-header-shortcut =
-    .key = f
+
+## Variables
+##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
+
 list-empty-get-extensions-message = Hent udvidelser og temaer på <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-dictionaries-message = Hent ordbøger på <a data-l10n-name="get-extensions">{ $domain }</a>
 list-empty-get-language-packs-message = Hent sprogpakker på <a data-l10n-name="get-extensions">{ $domain }</a>
+
+##
+
 list-empty-installed =
     .value = Du har ikke nogen tilføjelser af denne type installeret
 list-empty-available-updates =
@@ -148,18 +153,27 @@ addon-category-sitepermission-title =
     .title = Websteds-tilladelser
 # String displayed in about:addons in the Site Permissions section
 # Variables:
-#  $host (string): DNS host name for which the webextension enables permissions
+#  $host (string) - DNS host name for which the webextension enables permissions
 addon-sitepermission-host = Websteds-tilladelser for { $host }
 
 ## These are global warnings
 
 extensions-warning-safe-mode = Alle tilføjelser er blevet deaktiveret i fejlsikker tilstand.
 extensions-warning-check-compatibility = Kompatibilitetstjek for tilføjelser er deaktiverert. Du kan have inkompatible tilføjelser.
+extensions-warning-safe-mode2 =
+    .message = Alle tilføjelser er blevet deaktiveret i fejlsikker tilstand.
+extensions-warning-check-compatibility2 =
+    .message = Kompatibilitetstjek for tilføjelser er deaktiverert. Du kan have inkompatible tilføjelser.
 extensions-warning-check-compatibility-button = Aktiver
     .title = Aktiver kompatibilitetstjek for tilføjelser
 extensions-warning-update-security = Sikkerhedstjek ved opdatering af tilføjelser er deaktiveret. Du kan blive kompromiteret ved opdateringer.
+extensions-warning-update-security2 =
+    .message = Sikkerhedstjek ved opdatering af tilføjelser er deaktiveret. Du kan blive kompromiteret ved opdateringer.
 extensions-warning-update-security-button = Aktiver
     .title = Aktiver sikkerhedstjek ved opdatering af tilføjelser
+extensions-warning-imported-addons2 =
+    .message = Færdiggør installeringen af udvidelser importeret til { -brand-short-name }.
+extensions-warning-imported-addons-button = Installer udvidelser
 
 ## Strings connected to add-on updates
 
@@ -210,6 +224,9 @@ shortcuts-no-addons = Du har ikke aktiveret nogen udvidelser.
 shortcuts-no-commands = Følgende udvidelser han ingen genveje:
 shortcuts-input =
     .placeholder = Indtast en genvej.
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = Fjern genvej
 shortcuts-browserAction2 = Aktiver knap på værktøjslinjen
 shortcuts-pageAction = Aktiver sidehandling
 shortcuts-sidebarAction = Vis/skjul sidepanelet
@@ -224,10 +241,17 @@ shortcuts-duplicate = Genvej findes allerede
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = { $shortcut } bliver brugt som genvej i mere end ét tilfælde. Dette kan give anledning til uventet opførsel.
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = { $shortcut } bliver brugt som genvej i mere end ét tilfælde. Dette kan give anledning til uventet opførsel.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
 shortcuts-exists = Bruges allerede af { $addon }
+# Variables:
+#   $numberToShow (number) - Number of other elements available to show
 shortcuts-card-expand-button =
     { $numberToShow ->
        *[other] vis { $numberToShow } til
@@ -251,6 +275,11 @@ discopane-intro =
 discopane-notice-recommendations =
     Nogle af disse anbefalinger er målrettet dig. De er baseret på andre 
     udvidelser, du har installeret, dine indstillinger og statistik for brug.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message =
+        Nogle af disse anbefalinger er målrettet dig. De er baseret på andre 
+        udvidelser, du har installeret, dine indstillinger og statistik for brug.
 discopane-notice-learn-more = Læs mere
 privacy-policy = Privatlivs-politik
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -296,17 +325,7 @@ permissions-addon-button = Tilladelser
 extension-enabled-heading = Aktiveret
 extension-disabled-heading = Deaktiveret
 theme-enabled-heading = Aktiveret
-theme-disabled-heading = Deaktiveret
 theme-disabled-heading2 = Gemte temaer
-theme-monochromatic-heading = Farvekombinationer
-theme-monochromatic-subheading = Dynamiske nye farvekombinationer fra { -brand-product-name }. Findes kun i begrænset tid.
-# Refers to the button label for the colorways card when a user does not have a colorway theme enabled.
-theme-colorways-button = Prøv farvekombinationer
-# Refers to the button label for the colorways card when a user has a colorway theme enabled.
-theme-colorways-button-colorway-enabled = Skift farvekombination
-# Variables:
-#   $expiryDate (string) - date on which the colorway collection expires. When formatting this, you may omit the year, only exposing the month and day, as colorway collections will always expire within a year.
-colorway-collection-expiry-label = Udløber { DATETIME($expiryDate, month: "long", day: "numeric") }
 plugin-enabled-heading = Aktiveret
 plugin-disabled-heading = Deaktiveret
 dictionary-enabled-heading = Aktiveret
@@ -324,6 +343,9 @@ addon-detail-homepage-label = Websted
 addon-detail-rating-label = Bedømmelse
 # Message for add-ons with a staged pending update.
 install-postponed-message = Denne udvidelse opdateres når { -brand-short-name } genstarter.
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message = Denne udvidelse opdateres når { -brand-short-name } genstarter.
 install-postponed-button = Opdater nu
 # The average rating that the add-on has received.
 # Variables:
@@ -348,6 +370,10 @@ addon-detail-reviews-link =
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> er blevet fjernet.
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = { $addon } er blevet fjernet.
 pending-uninstall-undo-button = Fortryd
 addon-detail-updates-label = Tillad automatiske opdateringer
 addon-detail-updates-radio-default = Standard
@@ -355,6 +381,10 @@ addon-detail-updates-radio-on = Til
 addon-detail-updates-radio-off = Fra
 addon-detail-update-check-label = Søg efter opdateringer
 install-update-button = Opdater
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -363,6 +393,24 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Udvidelsen har adgang til dine aktiviteter i privat browsing-tilstand, hvis du giver den tilladelse til det. <a data-l10n-name="learn-more">Læs mere</a>
 addon-detail-private-browsing-allow = Tillad
 addon-detail-private-browsing-disallow = Tillad ikke
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
+
+## "sites with restrictions" (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = Kør på websteder med begrænsninger
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = Når udvidelsen har tilladelse til det, har den adgang til websteder begrænset af { -vendor-short-name }. Tillad kun dette, hvis du stoler på udvidelsen.
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = Tillad
+addon-detail-quarantined-domains-disallow = Tillad ikke
+# aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
+addon-detail-group-label-quarantined-domains =
+    .aria-label = { addon-detail-quarantined-domains-label }
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -391,6 +439,8 @@ addon-permissions-optional = Valgfrie tilladelser for yderligere funktionalitet:
 addon-permissions-learnmore = Læs mere om tilladelser
 recommended-extensions-heading = Anbefalede udvidelser
 recommended-themes-heading = Anbefalede temaer
+# Variables:
+#   $hostname (string) - Host where the permissions are granted
 addon-sitepermissions-required = Tilføjer følgende funktioner til <span data-l10n-name="hostname">{ $hostname }</span>:
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
@@ -415,18 +465,41 @@ addon-page-options-button =
 
 ## Detail notifications
 ## Variables:
-##   $name (String): name of the add-on.
+##   $name (string) - Name of the add-on.
 
 # Variables:
-#   $version (String): application version.
+#   $version (string) - Application version.
 details-notification-incompatible = { $name } er inkompatibel med { -brand-short-name } { $version }.
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message = { $name } er inkompatibel med { -brand-short-name } { $version }.
 details-notification-incompatible-link = Mere information
 details-notification-unsigned-and-disabled = { $name } kunne ikke verificeres til brug i { -brand-short-name } og er blevet deaktiveret.
+details-notification-unsigned-and-disabled2 =
+    .message = { $name } kunne ikke verificeres til brug i { -brand-short-name } og er blevet deaktiveret.
 details-notification-unsigned-and-disabled-link = Læs mere
 details-notification-unsigned = { $name } kunne ikke verificeres til brug i { -brand-short-name }. Fortsæt på eget ansvar.
+details-notification-unsigned2 =
+    .message = { $name } kunne ikke verificeres til brug i { -brand-short-name }. Fortsæt på eget ansvar.
 details-notification-unsigned-link = Læs mere
 details-notification-blocked = { $name } er blevet deaktiveret af sikkerheds- eller stabilitetsgrunde.
+details-notification-blocked2 =
+    .message = { $name } er blevet deaktiveret af sikkerheds- eller stabilitetsgrunde.
 details-notification-blocked-link = Mere information
 details-notification-softblocked = { $name } har kendte sikkerheds- og/eller stabilitetsproblemer.
+details-notification-softblocked2 =
+    .message = { $name } har kendte sikkerheds- og/eller stabilitetsproblemer.
 details-notification-softblocked-link = Mere information
 details-notification-gmp-pending = { $name } vil snart blive installeret.
+details-notification-gmp-pending2 =
+    .message = { $name } vil snart blive installeret.
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = Licensinformation
+plugins-gmp-privacy-info = Privatlivsinformation
+plugins-openh264-name = OpenH264 Video Codec provided by Cisco Systems, Inc.
+plugins-openh264-description = Dette plugin installeres automatisk af Mozilla for at overholde WebRTC-specifikationerne og muliggøre WebRTC-samtaler, som benytter video codec'et H.264. Du kan læse mere om implementeringen, og du kan finde kildekoden, på http://www.openh264.org/.
+plugins-widevine-name = Widevine Content Decryption Module provided by Google Inc.
+plugins-widevine-description = Dette plugin gør det muligt at afspille krypterede mediefiler i overensstemmelse med Encrypted Media Extensions specification. Websteder anvender typisk krypterede mediefiler for at undgå kopiering af betalt medie-indhold. Læs mere om Encrypted Media Extensions på https://www.w3.org/TR/encrypted-media/

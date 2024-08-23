@@ -5,14 +5,6 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
-
-
-## Permission Dialog
-## Variables:
 ##  $host (string) - The hostname that is initiating the request
 ##  $scheme (string) - The type of link that's being opened.
 ##  $appName (string) - Name of the application that will be opened.
@@ -26,11 +18,8 @@ permission-dialog-description-app = Tillate denne nettsaden å opne { $scheme } 
 permission-dialog-description-host-app = Tillate { $host } å opne lenka { $scheme } med { $appName }?
 permission-dialog-description-file-app = Tillate denne fila å opne lenka { $scheme } med { $appName }?
 permission-dialog-description-extension-app = Tillate utvidinga { $extension } å opne { $scheme }-lenka med { $appName }?
-
-## Please keep the emphasis around the hostname and scheme (ie the
-## `<strong>` HTML tags). Please also keep the hostname as close to the start
-## of the sentence as your language's grammar allows.
-
+permission-dialog-description-system-app = Opne { $scheme }-lenka med { $appName }?
+permission-dialog-description-system-noapp = Opne { $scheme }-lenka?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
@@ -53,11 +42,6 @@ permission-dialog-btn-choose-app =
     .accessKey = V
 permission-dialog-unset-description = Du må velje eit program.
 permission-dialog-set-change-app-link = Vel eit anna program.
-
-## Chooser dialog
-## Variables:
-##  $scheme - the type of link that's being opened.
-
 
 ## Chooser dialog
 ## Variables:

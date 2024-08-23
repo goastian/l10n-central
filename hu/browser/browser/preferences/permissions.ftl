@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = Kivételek
-    .style = width: 55em
 permissions-window2 =
     .title = Kivételek
     .style = min-width: 55em
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = Írjon be egy érvényes gépnevet.
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = Kivételek a fokozott követés elleni védelemhez
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = Ezeken a webhelyeken kikapcsolta a védelmeket.
 permissions-exceptions-etp-window2 =
     .title = Kivételek a fokozott követés elleni védelemhez
     .style = { permissions-window2.style }
@@ -87,9 +80,6 @@ permissions-exceptions-manage-etp-desc = Megadhatja azokat a webhelyeket, amelye
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = Kivételek – Sütik és oldaladatok
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = Kivételek – Sütik és oldaladatok
     .style = { permissions-window2.style }
@@ -97,19 +87,14 @@ permissions-exceptions-cookie-desc = Megadhatja mely webhelyek nem használhatna
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = Kivételek – Csak HTTPS mód
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = Kivételek – Csak HTTPS mód
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = Az egyes webhelyeknél kikapcsolhatja a Csak HTTPS módot. A { -brand-short-name } nem próbálja meg biztonságos HTTPS-re frissíteni a kapcsolatot ezeknél a webhelyeknél. A kivételek nem vonatkoznak a privát ablakokra.
+permissions-exceptions-https-only-desc2 = Az egyes webhelyeknél kikapcsolhatja a Csak HTTPS módot. A { -brand-short-name } nem próbálja meg biztonságos HTTPS-re frissíteni a kapcsolatot ezeknél a webhelyeknél.
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = Engedélyezett webhelyek – Felugró ablakok
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = Engedélyezett webhelyek – Felugró ablakok
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = Megadhatja azokat a webhelyeket, amelyek fel
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = Kivételek – mentett bejelentkezések
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = Kivételek – mentett bejelentkezések
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = A bejelentkezések a következő oldalakhoz nem lesznek mentve
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = Kivételek – mentett jelszavak
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = A { -brand-short-name } nem menti el a jelszavakat az itt felsorolt webhelyeknél.
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = Engedélyezett webhelyek – Kiegészítők telepítése
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = Engedélyezett webhelyek – Kiegészítők telepítése
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = Megadhatja azokat a webhelyeket, amelyekrő
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = Beállítások – Automatikus lejátszás
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = Beállítások – Automatikus lejátszás
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = Itt kezelheti azokat a webhelyeket, amelyek nem
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = Beállítások – Értesítési engedélyek
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = Beállítások – Értesítési engedélyek
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = Ez megakadályozza, hogy a fent fel
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = Beállítások – Tartózkodási hely engedélyek
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = Beállítások – Tartózkodási hely engedélyek
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = Ez megakadályozza, hogy a fent fel nem
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = Beállítások – Virtuális valóság engedélyek
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = Beállítások – Virtuális valóság engedélyek
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = Ez megakadályozza, hogy a fent fel nem sorol
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = Beállítások – Kamera engedélyek
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = Beállítások – Kamera engedélyek
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = Ez megakadályozza, hogy a fent fel nem s
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = Beállítások – Mikrofon engedélyek
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = Beállítások – Mikrofon engedélyek
     .style = { permissions-window2.style }

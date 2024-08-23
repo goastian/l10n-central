@@ -4,22 +4,14 @@
 
 pictureinpicture-player-title = Picture-in-Picture
 
-pictureinpicture-pause =
-    .aria-label = Pausa
-pictureinpicture-play =
-    .aria-label = Riproduci
+## Variables:
+##   $shortcut (String) - Keyboard shortcut to execute the command.
 
-pictureinpicture-mute =
-    .aria-label = Disattiva audio
-pictureinpicture-unmute =
-    .aria-label = Attiva audio
-
-pictureinpicture-unpip =
-    .aria-label = Rimanda alla scheda
-
-pictureinpicture-close =
-    .aria-label = Chiudi
-
+## Note that this uses .tooltip rather than the standard '.title'
+## or '.tooltiptext' -  but it has the same effect. Code in the
+## picture-in-picture window will read and copy this to an in-document
+## DOM node that then shows the tooltip.
+##
 ## Variables:
 ##   $shortcut (String) - Keyboard shortcut to execute the command.
 
@@ -49,8 +41,6 @@ pictureinpicture-subtitles-btn =
     .aria-label = Sottotitoli
     .tooltip = Sottotitoli
 
-##
-
 pictureinpicture-fullscreen-btn2 =
     .aria-label = Schermo intero
     .tooltip = Schermo intero (doppio clic o { $shortcut })
@@ -59,17 +49,16 @@ pictureinpicture-exit-fullscreen-btn2 =
     .aria-label = Esci da schermo intero
     .tooltip = Esci da schermo intero (doppio clic o { $shortcut })
 
+##
+
 # Keyboard shortcut to toggle fullscreen mode when Picture-in-Picture is open.
 pictureinpicture-toggle-fullscreen-shortcut =
   .key = F
 
-pictureinpicture-fullscreen-btn =
-    .aria-label = Schermo intero
-    .tooltip = Schermo intero (doppio clic)
-
-pictureinpicture-exit-fullscreen-btn =
-    .aria-label = Esci da schermo intero
-    .tooltip = Esci da schermo intero (doppio clic)
+## Note that this uses .tooltip rather than the standard '.title'
+## or '.tooltiptext' -  but it has the same effect. Code in the
+## picture-in-picture window will read and copy this to an in-document
+## DOM node that then shows the tooltip.
 
 pictureinpicture-seekbackward-btn =
     .aria-label = Indietro
@@ -78,6 +67,8 @@ pictureinpicture-seekbackward-btn =
 pictureinpicture-seekforward-btn =
     .aria-label = Avanti
     .tooltip = Avanti (→)
+
+##
 
 # This string is never displayed on the window. Is intended to be announced by
 # a screen reader whenever a user opens the subtitles settings panel

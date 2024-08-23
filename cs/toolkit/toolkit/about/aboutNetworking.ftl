@@ -4,6 +4,7 @@
 
 about-networking-title = O spojeních
 about-networking-http = HTTP
+about-networking-http-clear-cache-button = Vymazat mezipaměť HTTP
 about-networking-sockets = Sockety
 about-networking-dns = DNS
 about-networking-dns-clear-cache-button = Vymazat mezipaměť DNS
@@ -34,13 +35,6 @@ about-networking-messages-received = Přijato zpráv
 about-networking-bytes-sent = Odesláno bajtů
 about-networking-bytes-received = Obdrženo bajtů
 about-networking-logging = Protokol
-about-networking-log-tutorial = Pro informace o používání tohoto nástroje prosím navštivte stránku <a data-l10n-name="logging">HTTP Logging</a>.
-about-networking-current-log-file = Současný soubor protokolu:
-about-networking-current-log-modules = Současné moduly protokolu:
-about-networking-set-log-file = Nastavit soubor protokolu
-about-networking-set-log-modules = Nastavit moduly protokolu
-about-networking-start-logging = Spustit ukládání protokolu
-about-networking-stop-logging = Ukončit ukládání protokolu
 about-networking-dns-lookup = Vyhledávání v DNS
 about-networking-dns-lookup-button = Přeložit
 about-networking-dns-domain = Doména:

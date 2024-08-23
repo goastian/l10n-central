@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = oleh { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Rekomendasi
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Rekomendasi
     .tooltiptext = Rekomendasi ekstensi
     .a11y-announcement = Rekomendasi ekstensi tersedia
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Rekomendasi
     .tooltiptext = Rekomendasi fitur
     .a11y-announcement = Rekomendasi fitur tersedia
@@ -103,28 +105,12 @@ cfr-doorhanger-doh-primary-button-2 = Oke
 cfr-doorhanger-doh-secondary-button = Nonaktifkan
     .accesskey = D
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Privasi Anda penting. { -brand-short-name } sekarang mengisolasi (atau memasukkan ke kotak pasir) masing-masing situs, yang mempersulit peretas untuk mencuri kata sandi, nomor kartu kredit, dan informasi sensitif lainnya.
-cfr-doorhanger-fission-header = Isolasi Situs
-cfr-doorhanger-fission-primary-button = Oke, paham
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = Pelajari lebih lanjut
-    .accesskey = P
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Video pada situs ini mungkin tidak dapat diputar dengan benar dalam versi { -brand-short-name } ini. Untuk dukungan video penuh, perbarui { -brand-short-name } sekarang.
 cfr-doorhanger-video-support-header = Perbarui { -brand-short-name } untuk memutar video
 cfr-doorhanger-video-support-primary-button = Perbarui Sekarang
     .accesskey = u
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = Pelajari Lebih Lanjut
-    .title = Buka untuk pempelajari fitur ini lebih lanjut
-spotlight-learn-more-expanded = Pelajari lebih lanjut
-    .title = Tutup
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -139,20 +125,6 @@ spotlight-public-wifi-vpn-primary-button = Tetap terjaga dengan { -mozilla-vpn-b
     .accesskey = T
 spotlight-public-wifi-vpn-link = Jangan Sekarang
     .accesskey = J
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Uji coba pengalaman privasi terkuat
-    kami yang pernah ada
-spotlight-total-cookie-protection-body = Perlindungan Kuki Total mencegah pelacak menggunakan kuki untuk menguntit Anda di web.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } membangun pagar di sekitar kuki, dengan membatasi kuki di situs tempat Anda berada, sehingga pelacak tidak dapat menggunakannya untuk mengikuti Anda. Dengan akses awal, Anda akan membantu mengoptimalkan fitur ini agar kami dapat terus membangun web yang lebih baik untuk semua orang.
-spotlight-total-cookie-protection-primary-button = Aktifkan Perlindungan Kuki Total
-spotlight-total-cookie-protection-secondary-button = Jangan sekarang
 
 ## Emotive Continuous Onboarding
 
@@ -227,12 +199,14 @@ cfr-cbh-confirm-button = Tolak spanduk kuki
     .accesskey = T
 cfr-cbh-dismiss-button = Jangan sekarang
     .accesskey = J
+cookie-banner-blocker-onboarding-learn-more = Pelajari lebih lanjut
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
 july-jam-headline = Kami membantu Anda
 july-jam-body = Setiap bulan { -brand-short-name } memblokir rata-rata 3000+ pelacak per pengguna, memberikan Anda akses yang aman dan cepat ke internet yang baik.
 july-jam-set-default-primary = Buka tautan saya dengan { -brand-short-name }
+fox-doodle-pin-headline = Selamat datang kembali
 
 ## These strings are used in the Set Firefox as Default PDF Handler for Existing Users experiment
 
@@ -240,6 +214,25 @@ set-default-pdf-handler-primary = Paham
 
 ## FxA sync CFR
 
+fxa-sync-cfr-primary = Pelajari lebih lanjut
+    .accesskey = L
+fxa-sync-cfr-secondary = Ingatkan saya nanti
+    .accesskey = R
 
 ## Device Migration FxA Spotlight
+
+device-migration-fxa-spotlight-heavy-user-header = Jangan lupa mencadangkan data Anda
+device-migration-fxa-spotlight-heavy-user-primary-button = Memulai
+
+## Set as Default PDF Reader Infobar
+
+
+## Launch on login infobar notification
+
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+
+## Tail Fox Set Default Spotlight
 

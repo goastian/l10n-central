@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = 將分頁加入書籤…
     .accesskey = k
-bookmark-tab =
-    .label = 將分頁加入書籤
-    .accesskey = B
 tab-context-bookmark-tab =
     .label = 將分頁加入書籤…
     .accesskey = B
@@ -70,11 +67,14 @@ move-to-end =
     .label = 移動至結尾
     .accesskey = E
 move-to-new-window =
-    .label = 移動到新視窗
+    .label = 移動至新視窗
     .accesskey = W
 tab-context-close-multiple-tabs =
     .label = 關閉多個分頁
     .accesskey = M
+tab-context-close-duplicate-tabs =
+    .label = 關閉重複的分頁
+    .accesskey = u
 tab-context-share-url =
     .label = 分享
     .accesskey = h
@@ -102,7 +102,6 @@ tab-context-move-tabs =
            *[other] 移動分頁
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

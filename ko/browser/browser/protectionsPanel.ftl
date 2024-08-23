@@ -20,14 +20,28 @@ protections-popup-footer-protection-label-standard = 표준
 
 # The text a screen reader speaks when focused on the info button.
 protections-panel-etp-more-info =
-    .aria-label = 향상된 추적 방지 기능에 대한 추가 정보
-protections-panel-etp-on-header = 이 사이트에 향상된 추적 방지 기능이 켜짐
-protections-panel-etp-off-header = 이 사이트에 향상된 추적 방지 기능이 꺼짐
+    .aria-label = 향상된 추적 방지에 대한 추가 정보
+protections-panel-etp-on-header = 이 사이트에 향상된 추적 방지 켜짐
+protections-panel-etp-off-header = 이 사이트에 향상된 추적 방지 꺼짐
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = 사이트가 작동하지 않습니까?
 # The heading/title of the sub-panel view
 protections-panel-site-not-working-view =
     .title = 사이트가 작동하지 않습니까?
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = 향상된 추적 방지
+    .description = 이 사이트에 켜짐
+    .aria-label = 향상된 추적 방지: { $host }에 켜짐
+protections-panel-etp-toggle-off =
+    .label = 향상된 추적 방지
+    .description = 이 사이트에 꺼짐
+    .aria-label = 향상된 추적 방지: { $host }에 꺼짐
 
 ## The "Allowed" header also includes a "Why?" link that, when hovered, shows
 ## a tooltip explaining why these items were not blocked in the page.
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = 이유?
 protections-panel-not-blocking-why-etp-on-tooltip = 이것들을 차단하면 일부 웹 사이트의 요소가 손상될 수 있습니다. 추적기가 없으면 일부 버튼, 양식 및 로그인 필드가 작동하지 않을 수 있습니다.
 protections-panel-not-blocking-why-etp-off-tooltip = 보호 기능이 꺼져 있어 이 사이트의 모든 추적기가 로드되었습니다.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = 이것들을 차단하면 일부 웹 사이트의 요소가 손상될 수 있습니다. 추적기가 없으면 일부 버튼, 양식 및 로그인 필드가 작동하지 않을 수 있습니다.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = 보호 기능이 꺼져 있어 이 사이트의 모든 추적기가 로드되었습니다.
 
 ##
 
@@ -90,7 +108,6 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = 깨진 사이트 신고
 protections-panel-content-blocking-breakage-report-view-description = 특정 추적기를 차단하면 일부 웹 사이트에서 문제가 발생할 수 있습니다. 이러한 문제를 보고하면 모든 사람에게 더 나은 { -brand-short-name }를 제공하는데 도움이 됩니다. 이 보고서를 보내면 URL과 브라우저 설정에 대한 정보가 Mozilla로 전송됩니다. <label data-l10n-name="learn-more">더 알아보기</label>
-protections-panel-content-blocking-breakage-report-view-description2 = 특정 추적기를 차단하면 일부 웹 사이트에서 문제가 발생할 수 있습니다. 이러한 문제를 보고하면 모든 사람에게 더 나은 { -brand-short-name }를 제공하는데 도움이 됩니다. 이 보고서를 보내면 URL과 브라우저 설정에 대한 정보가 { -vendor-short-name }로 전송됩니다.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -105,17 +122,40 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = 쿠키 배너 감소
-protections-panel-cookie-banner-handling-enabled = 이 사이트에서 켜짐
-protections-panel-cookie-banner-handling-disabled = 이 사이트에서 꺼짐
+protections-panel-cookie-banner-blocker-header = 쿠키 배너 차단기
+protections-panel-cookie-banner-handling-enabled = 이 사이트에 켜짐
+protections-panel-cookie-banner-handling-disabled = 이 사이트에 꺼짐
 protections-panel-cookie-banner-handling-undetected = 현재 지원되지 않는 사이트
 protections-panel-cookie-banner-view-title =
     .title = 쿠키 배너 감소
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = { $host }에 대해 쿠키 배너 감소를 끄시겠습니까?
-protections-panel-cookie-banner-view-turn-on-for-site = 이 사이트에 대해 쿠키 배너 감소를 켜시겠습니까?
+protections-panel-cookie-banner-view-turn-on-for-site = 이 사이트에 쿠키 배너 감소를 켜시겠습니까?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = 쿠키 배너 차단기
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = { $host }에 쿠키 배너 차단기를 끄시겠습니까?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = 이 사이트에 쿠키 배너 차단기를 켜시겠습니까?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name }는 이 사이트의 쿠키를 지우고 페이지를 새로 고침합니다. 모든 쿠키를 삭제하면 로그아웃되거나 장바구니가 비워질 수 있습니다.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name }는 지원되는 사이트에서 모든 쿠키 요청을 자동으로 거부하려고 시도합니다.
 protections-panel-cookie-banner-view-cancel = 취소
 protections-panel-cookie-banner-view-turn-off = 끄기
 protections-panel-cookie-banner-view-turn-on = 켜기
+protections-panel-cookie-banner-blocker-view-turn-on-description = 켜면, { -brand-short-name }가 이 사이트에 쿠키 배너를 자동으로 거부하려고 시도합니다.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = 취소
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = 끄기
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = 켜기
+protections-panel-report-broken-site =
+    .label = 깨진 사이트 신고
+    .title = 깨진 사이트 신고
+
+## Protections panel info message
+
+cfr-protections-panel-header = 브라우저 추적 차단하기
+cfr-protections-panel-body = 자신의 데이터를 보호하세요. { -brand-short-name }는 온라인에서 하는 일을 추적하는 가장 일반적인 많은 추적기로부터 사용자를 보호합니다.
+cfr-protections-panel-link-text = 더 알아보기

@@ -21,8 +21,8 @@ about-processes-shutdown-tab =
 about-processes-profile-process =
     .title =
         { $duration ->
-            [one] Profilez tous les threads de ce processus pendant { $duration } seconde
-           *[other] Profilez tous les threads de ce processus pendant { $duration } secondes
+            [one] Profiler tous les threads de ce processus pendant { $duration } seconde
+           *[other] Profiler tous les threads de ce processus pendant { $duration } secondes
         }
 
 ## Column headers
@@ -48,9 +48,10 @@ about-processes-vr-process = Réalité virtuelle ({ $pid })
 about-processes-rdd-process = Décodeur de données ({ $pid })
 about-processes-socket-process = Réseau ({ $pid })
 about-processes-remote-sandbox-broker-process = Broker du bac à sable distant ({ $pid })
-about-processes-fork-server-process = Copie du serveur ({ $pid })
+about-processes-fork-server-process = Serveur d’instanciation de processus ({ $pid })
 about-processes-preallocated-process = Préalloué ({ $pid })
 about-processes-utility-process = Utilitaire ({ $pid })
+about-processes-inference-process = Inférence ({ $pid })
 # Unknown process names
 # Variables:
 #    $pid (String) The process id of this process, assigned by the OS.
@@ -120,7 +121,6 @@ about-processes-frame-name-many = Iframes imbriqués ({ $number }) : { $shortUr
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Utilitaire inconnu
-about-processes-utility-actor-audio-decoder = Décodeur audio
 about-processes-utility-actor-audio-decoder-generic = Décodeur audio générique
 about-processes-utility-actor-audio-decoder-applemedia = Décodeur audio multimédia Apple
 about-processes-utility-actor-audio-decoder-wmf = Décodeur audio Windows Media Framework
@@ -128,6 +128,7 @@ about-processes-utility-actor-mf-media-engine = CDM du moteur multimédia Window
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = Oracle JavaScript
 about-processes-utility-actor-windows-utils = Utilitaires Windows
+about-processes-utility-actor-windows-file-dialog = Boîte de dialogue de fichiers de Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:

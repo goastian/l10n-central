@@ -5,13 +5,14 @@
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Søk i faner
-
 all-tabs-menu-new-user-context =
     .label = Ny innhaldsfane
-
 all-tabs-menu-hidden-tabs =
     .label = Gøymde faner
-
 all-tabs-menu-manage-user-context =
     .label = Handsam behaldarar
     .accesskey = H
+all-tabs-menu-close-duplicate-tabs =
+    .label = Lat att duplikatfaner
+all-tabs-menu-close-all-duplicate-tabs =
+    .label = Lat att alle duplikatfaner

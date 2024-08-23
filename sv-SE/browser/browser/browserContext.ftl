@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Konto
+    .tooltiptext = Konto
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Bokmärk denna sida
-    .accesskey = m
-    .tooltiptext = Bokmärk denna sida
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Bokmärk sida
-    .accesskey = m
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Redigera bokmärke
-    .accesskey = m
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Bokmärk denna sida
-    .accesskey = m
-    .tooltiptext = Bokmärk denna sida ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Redigera bokmärket
-    .accesskey = m
-    .tooltiptext = Redigera detta bokmärke
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Redigera bokmärket
-    .accesskey = m
-    .tooltiptext = Redigera detta bokmärke ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Bokmärk sida…
     .accesskey = m
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Öppna länk i nytt privat fönster
     .accesskey = i
-main-context-menu-bookmark-link =
-    .label = Bokmärk länk
-    .accesskey = B
 main-context-menu-bookmark-link-2 =
     .label = Bokmärk länk…
     .accesskey = n
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Kopiera länk
     .accesskey = K
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Kopiera länk utan webbplatsspårning
+    .accesskey = w
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = E-posta ljud…
     .accesskey = E
-main-context-menu-plugin-play =
-    .label = Aktivera insticksmodulen
-    .accesskey = k
-main-context-menu-plugin-hide =
-    .label = Dölj insticksmodulen
-    .accesskey = ö
 main-context-menu-save-to-pocket =
     .label = Spara sida till { -pocket-brand-name }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Använd sparad inloggning
     .accesskey = A
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Använd sparat lösenord
     .accesskey = A
@@ -341,6 +312,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = F
 main-context-menu-manage-logins2 =
     .label = Hantera inloggningar
+    .accesskey = H
+main-context-menu-manage-passwords =
+    .label = Hantera lösenord
     .accesskey = H
 main-context-menu-keyword =
     .label = Lägg till ett nyckelord för denna sökning…
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Uppdatera ram
     .accesskey = U
-main-context-menu-frame-bookmark =
-    .label = Bokmärk den här ramen
-    .accesskey = r
 main-context-menu-frame-add-bookmark =
     .label = Bokmärk ram…
     .accesskey = r
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Visa raminfo
     .accesskey = i
-main-context-menu-print-selection =
-    .label = Skriv ut markering
-    .accesskey = r
 main-context-menu-print-selection-2 =
     .label = Skriv ut markering…
     .accesskey = r

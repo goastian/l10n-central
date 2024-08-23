@@ -78,6 +78,12 @@ toolbar-button-fxaccount =
     .label = { -fxaccount-brand-name }
     .tooltiptext = { -fxaccount-brand-name }
 
+## Account toolbar Button
+
+toolbar-button-account =
+    .label = Tài khoản
+    .tooltiptext = Tài khoản
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +92,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Đánh dấu trang này
-    .accesskey = m
-    .tooltiptext = Đánh dấu trang này
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Đánh dấu trang
-    .accesskey = m
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Chỉnh sửa dấu trang
-    .accesskey = m
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Đánh dấu trang này
-    .accesskey = m
-    .tooltiptext = Đánh dấu trang này ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Chỉnh sửa dấu trang này
-    .accesskey = m
-    .tooltiptext = Chỉnh sửa dấu trang này
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Chỉnh sửa dấu trang này
-    .accesskey = m
-    .tooltiptext = Chỉnh sửa dấu trang này ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Đánh dấu trang…
     .accesskey = m
@@ -165,9 +139,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Mở liên kết trong cửa sổ riêng tư mới
     .accesskey = P
-main-context-menu-bookmark-link =
-    .label = Đánh dấu liên kết
-    .accesskey = B
 main-context-menu-bookmark-link-2 =
     .label = Đánh dấu liên kết…
     .accesskey = B
@@ -191,6 +162,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Sao chép liên kết
     .accesskey = L
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Sao chép liên kết (không tham số theo dõi)
+    .accesskey = y
 
 ## Media (video/audio) controls
 ##
@@ -237,7 +213,7 @@ main-context-menu-media-show-controls =
     .label = Hiển thị điều khiển
     .accesskey = C
 main-context-menu-media-hide-controls =
-    .label = Ẩn các điều khiển
+    .label = Ẩn điều khiển
     .accesskey = C
 
 ##
@@ -307,12 +283,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Gửi âm thanh qua email…
     .accesskey = a
-main-context-menu-plugin-play =
-    .label = Kích hoạt phần bổ trợ này
-    .accesskey = c
-main-context-menu-plugin-hide =
-    .label = Ẩn phần bổ trợ này
-    .accesskey = H
 main-context-menu-save-to-pocket =
     .label = Lưu trang vào { -pocket-brand-name }
     .accesskey = k
@@ -327,6 +297,7 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Sử dụng thông tin đăng nhập đã lưu
     .accesskey = o
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Sử dụng mật khẩu đã lưu
     .accesskey = o
@@ -341,6 +312,9 @@ main-context-menu-suggest-strong-password =
     .accesskey = S
 main-context-menu-manage-logins2 =
     .label = Quản lý thông tin đăng nhập
+    .accesskey = M
+main-context-menu-manage-passwords =
+    .label = Quản lý mật khẩu
     .accesskey = M
 main-context-menu-keyword =
     .label = Tạo từ khóa cho chuỗi tìm kiếm này…
@@ -363,9 +337,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Tải lại khung
     .accesskey = R
-main-context-menu-frame-bookmark =
-    .label = Đánh dấu khung này
-    .accesskey = m
 main-context-menu-frame-add-bookmark =
     .label = Đánh dấu khung…
     .accesskey = m
@@ -381,9 +352,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Xem thông tin khung
     .accesskey = I
-main-context-menu-print-selection =
-    .label = Lựa chọn in
-    .accesskey = i
 main-context-menu-print-selection-2 =
     .label = In phần lựa chọn…
     .accesskey = r

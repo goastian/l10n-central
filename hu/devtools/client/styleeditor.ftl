@@ -20,7 +20,6 @@ styleeditor-save-button = Mentés
     .accesskey = s
 styleeditor-options-button =
     .tooltiptext = Stílusszerkesztő beállításai
-styleeditor-media-rules = @media szabályok
 styleeditor-at-rules = @-os szabályok
 styleeditor-editor-textbox =
     .data-placeholder = Írja ide a CSS-t.
@@ -49,3 +48,9 @@ styleeditor-stylesheet-rule-count =
         [one] { $ruleCount } szabály.
        *[other] { $ruleCount } szabály.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Formázott kiírás stíluslapja
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Csak a CSS-fájlok írhatók ki formázottan

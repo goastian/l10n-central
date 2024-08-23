@@ -12,17 +12,31 @@ about-webrtc-document-title = Interní WebRTC
 # translated. This string is used as a title for a file save dialog box.
 about-webrtc-save-page-dialog-title = uložit about:webrtc jako
 
+## These labels are for a disclosure which contains the information for closed PeerConnection sections
+
+about-webrtc-closed-peerconnection-disclosure-show-msg = Zobrazit uzavřená PeerConnections
+about-webrtc-closed-peerconnection-disclosure-hide-msg = Skrýt uzavřená PeerConnections
+
 ## AEC is an abbreviation for Acoustic Echo Cancellation.
 
 about-webrtc-aec-logging-msg-label = Protokol AEC
 about-webrtc-aec-logging-off-state-label = Spustit protokol AEC
 about-webrtc-aec-logging-on-state-label = Zastavit protokol AEC
 about-webrtc-aec-logging-on-state-msg = Protokol AEC je aktivní (hovořte s volajícím pár minut, a pak zastavte sběr)
-# The autorefresh checkbox causes the page to autorefresh its content when checked
-about-webrtc-auto-refresh-label = Automatické opětovné načtení
+about-webrtc-aec-logging-toggled-on-state-msg = Protokol AEC je aktivní (hovořte s volajícím pár minut, a pak zastavte sběr)
+about-webrtc-aec-logging-unavailable-sandbox = Proměnná prostředí MOZ_DISABLE_CONTENT_SANDBOX=1 je pro export protokolů AEC vyžadována. Tuto proměnnou nastavte pouze v případě, že si uvědomujete možná rizika.
+# Variables:
+#  $path (String) - The path to which the aec log file is saved.
+about-webrtc-aec-logging-toggled-off-state-msg = Soubory sběru protokolu můžete nalézt v: { $path }
 
 ##
 
+# The autorefresh checkbox causes a stats section to autorefresh its content when checked
+about-webrtc-auto-refresh-label = Automatické opětovné načtení
+# Determines the default state of the Auto Refresh check boxes
+about-webrtc-auto-refresh-default-label = Automaticky obnovovat
+# A button which forces a refresh of displayed statistics
+about-webrtc-force-refresh-button = Obnovit
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
 # an abbreviation for Identifier. This string should not normally be translated
 # and is used as a data label.
@@ -84,7 +98,11 @@ about-webrtc-save-page-label = Uložit stránku
 about-webrtc-debug-mode-msg-label = Režim ladění
 about-webrtc-debug-mode-off-state-label = Spustit režim ladění
 about-webrtc-debug-mode-on-state-label = Zastavit režim ladění
+about-webrtc-enable-logging-label = Povolit protokolování WebRTC
 about-webrtc-stats-heading = Statistiky relace
+about-webrtc-peerconnections-section-heading = Statistiky spojení RTCPeerConnection
+about-webrtc-peerconnections-section-show-msg = Zobrazit statistiky RTCPeerConnection
+about-webrtc-peerconnections-section-hide-msg = Skrýt statistiky RTCPeerConnection
 about-webrtc-stats-clear = Vymazat historii
 about-webrtc-log-heading = Protokol připojení
 about-webrtc-log-clear = Vymazat protokol
@@ -92,6 +110,10 @@ about-webrtc-log-show-msg = zobrazit protokol
     .title = klepněte pro rozbalení této sekce
 about-webrtc-log-hide-msg = skrýt protokol
     .title = klepněte pro zabalení této sekce
+about-webrtc-log-section-show-msg = Zobrazit protokol
+    .title = Klepněte pro rozbalení této sekce
+about-webrtc-log-section-hide-msg = Skrýt protokol
+    .title = Klepněte pro zabalení této sekce
 about-webrtc-copy-report-button = Kopírovat hlášení
 about-webrtc-copy-report-history-button = Kopírovat historii hlášení
 
@@ -105,6 +127,14 @@ about-webrtc-copy-report-history-button = Kopírovat historii hlášení
 about-webrtc-connection-open = [ { $browser-id } | { $id } ] { $url } { $now }
 about-webrtc-connection-closed = [ { $browser-id } | { $id } ] { $url } (uzavřeno) { $now }
 
+## These are used to indicate what direction media is flowing.
+## Variables:
+##  $codecs - a list of media codecs
+
+about-webrtc-short-send-receive-direction = Odesílání/přijímání: { $codecs }
+about-webrtc-short-send-direction = Odesílání: { $codecs }
+about-webrtc-short-receive-direction = Přijímání: { $codecs }
+
 ##
 
 about-webrtc-local-candidate = Místní kandidát
@@ -116,11 +146,19 @@ about-webrtc-raw-cand-show-msg = zobrazit raw candidates
     .title = klepněte pro rozbalení této sekce
 about-webrtc-raw-cand-hide-msg = skrýt raw candidates
     .title = klepněte pro zabalení této sekce
+about-webrtc-raw-cand-section-show-msg = Zobrazit raw candidates
+    .title = Klepněte pro rozbalení této sekce
+about-webrtc-raw-cand-section-hide-msg = Skrýt raw candidates
+    .title = Klepněte pro zabalení této sekce
 about-webrtc-priority = Priorita
 about-webrtc-fold-show-msg = zobrazit detaily
     .title = klepněte pro rozbalení této sekce
 about-webrtc-fold-hide-msg = skrýt detaily
     .title = klepněte pro zabalení této sekce
+about-webrtc-fold-default-show-msg = Zobrazit detaily
+    .title = Klepněte pro rozbalení této sekce
+about-webrtc-fold-default-hide-msg = Skrýt detaily
+    .title = Klepněte pro zabalení této sekce
 about-webrtc-dropped-frames-label = Vynecháno snímků:
 about-webrtc-discarded-packets-label = Zahozeno paketů:
 about-webrtc-decoder-label = Dekodér
@@ -159,6 +197,17 @@ about-webrtc-configuration-element-provided = Poskytnuto
 about-webrtc-configuration-element-not-provided = Neposkytnuto
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = Uživatelská nastavení WebRTC
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = Uživatelem upravená konfigurace WebRTC
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = Zobrazit uživatelem upravenou konfiguraci
+about-webrtc-user-modified-configuration-hide-msg = Skrýt uživatelem upravenou konfiguraci
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = Odhadovaná šířka pásma
 # The ID of the MediaStreamTrack
@@ -189,9 +238,11 @@ about-webrtc-save-page-msg = stránka uložena do: { $path }
 about-webrtc-debug-mode-off-state-msg = trasu protokolu lze nalézt na adrese: { $path }
 about-webrtc-debug-mode-on-state-msg = režim ladění aktivní, protokol v: { $path }
 about-webrtc-aec-logging-off-state-msg = soubory sběru protokolu můžete nalézt v: { $path }
-
-##
-
+# This path is used for saving the about:webrtc page so it can be attached to
+# bug reports.
+# Variables:
+#  $path (String) - The path to which the file is saved.
+about-webrtc-save-page-complete-msg = Stránka uložena do: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.

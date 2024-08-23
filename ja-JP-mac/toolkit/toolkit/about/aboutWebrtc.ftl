@@ -24,6 +24,7 @@ about-webrtc-aec-logging-off-state-label = AEC ログ記録を開始
 about-webrtc-aec-logging-on-state-label = AEC ログ記録を停止
 about-webrtc-aec-logging-on-state-msg = AEC ログ記録が有効です (数分間、通話相手と会話してから停止してください)
 about-webrtc-aec-logging-toggled-on-state-msg = AEC ログ記録が有効です (数分間、通話相手と会話してから停止してください)
+about-webrtc-aec-logging-unavailable-sandbox = AEC ログを書き出すには環境変数 MOZ_DISABLE_CONTENT_SANDBOX=1 が必要です。この環境変数は潜在的な危険性を理解している場合のみ設定してください。
 # Variables:
 #  $path (String) - The path to which the aec log file is saved.
 about-webrtc-aec-logging-toggled-off-state-msg = 記録したログファイルの保存場所: { $path }
@@ -32,8 +33,6 @@ about-webrtc-aec-logging-toggled-off-state-msg = 記録したログファイル�
 
 # The autorefresh checkbox causes a stats section to autorefresh its content when checked
 about-webrtc-auto-refresh-label = 自動更新する
-# Determines the default state of the Auto Refresh check boxes
-about-webrtc-auto-refresh-default-label = デフォルトで自動更新する
 # A button which forces a refresh of displayed statistics
 about-webrtc-force-refresh-button = 更新
 # "PeerConnection" is a proper noun associated with the WebRTC module. "ID" is
@@ -97,8 +96,11 @@ about-webrtc-save-page-label = ページを保存
 about-webrtc-debug-mode-msg-label = デバッグモード
 about-webrtc-debug-mode-off-state-label = デバッグモードを開始
 about-webrtc-debug-mode-on-state-label = デバッグモードを停止
-about-webrtc-enable-logging-label = WebRTC ログのプリセットを有効化
 about-webrtc-stats-heading = セッション統計
+about-webrtc-enable-logging-label = WebRTC ログのプリセットを有効化
+about-webrtc-peerconnections-section-heading = RTCPeerConnection 統計
+about-webrtc-peerconnections-section-show-msg = RTCPeerConnection 統計を表示
+about-webrtc-peerconnections-section-hide-msg = RTCPeerConnection 統計を隠す
 about-webrtc-stats-clear = 履歴を消去
 about-webrtc-log-heading = 接続ログ
 about-webrtc-log-clear = ログを消去
@@ -193,6 +195,17 @@ about-webrtc-configuration-element-provided = 提供済み
 about-webrtc-configuration-element-not-provided = 未提供
 # The options set by the user in about:config that could impact a WebRTC call
 about-webrtc-custom-webrtc-configuration-heading = ユーザー設定の WebRTC オプション
+# The options set by the user in about:config that could impact a WebRTC call
+about-webrtc-user-modified-configuration-heading = 変更された WebRTC 設定
+
+## These are displayed on the button that shows or hides the
+## user modified configuration disclosure
+
+about-webrtc-user-modified-configuration-show-msg = 変更された設定を表示
+about-webrtc-user-modified-configuration-hide-msg = 変更された設定を隠す
+
+##
+
 # Section header for estimated bandwidths of WebRTC media flows
 about-webrtc-bandwidth-stats-heading = 推定帯域幅
 # The ID of the MediaStreamTrack
@@ -228,8 +241,6 @@ about-webrtc-aec-logging-off-state-msg = 記録したログファイルの保存
 # Variables:
 #  $path (String) - The path to which the file is saved.
 about-webrtc-save-page-complete-msg = ページを保存しました: { $path }
-about-webrtc-debug-mode-toggled-off-state-msg = トレースログの保存場所: { $path }
-about-webrtc-debug-mode-toggled-on-state-msg = デバッグモードが有効です。トレースログの保存場所: { $path }
 # This is the total number of frames encoded or decoded over an RTP stream.
 # Variables:
 #  $frames (Number) - The number of frames encoded or decoded.
@@ -309,7 +320,5 @@ about-webrtc-hide-msg-sdp = SDP を隠す
 about-webrtc-media-context-show-msg = メディアコンテキストを表示
 about-webrtc-media-context-hide-msg = メディアコンテキストを隠す
 about-webrtc-media-context-heading = メディアコンテキスト
-
-##
 
 ##

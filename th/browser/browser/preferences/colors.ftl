@@ -2,13 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-colors-window =
-    .title = สี
-    .style =
-        { PLATFORM() ->
-            [macos] width: 41em
-           *[other] width: 38em
-        }
 colors-dialog2 =
     .title = สี
     .style = min-width: 41em;
@@ -19,7 +12,7 @@ colors-page-override = เขียนทับสีที่ระบุโด
 colors-page-override-option-always =
     .label = เสมอ
 colors-page-override-option-auto =
-    .label = เฉพาะกับธีมความเปรียบต่างสูง
+    .label = เฉพาะกับชุดตกแต่งความเปรียบต่างสูง
 colors-page-override-option-never =
     .label = ไม่เลย
 colors-text-and-background = ข้อความและพื้นหลัง

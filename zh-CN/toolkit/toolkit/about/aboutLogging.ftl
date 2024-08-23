@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = 启用日志消息的堆栈跟踪
 
 about-logging-preset-networking-label = 网络
 about-logging-preset-networking-description = 用于诊断网络问题的日志模块
+about-logging-preset-networking-cookie-label = Cookie
+about-logging-preset-networking-cookie-description = 用于诊断 Cookie 问题的日志模块
+about-logging-preset-networking-websocket-label = WebSocket
+about-logging-preset-networking-websocket-description = 用于诊断 WebSocket 问题的日志模块
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = 用于诊断 HTTP/3 和 QUIC 问题的日志模块
+about-logging-preset-networking-http3-upload-speed-label = HTTP/3 上传速度
+about-logging-preset-networking-http3-upload-speed-description = 用于诊断 HTTP/3 上传速度问题的日志模块
 about-logging-preset-media-playback-label = 媒体播放
 about-logging-preset-media-playback-description = 用于诊断媒体播放（非视频会议）问题的日志模块
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = 用于诊断 WebRTC 调用的日志模块
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = 用于诊断 WebGPU 问题的日志模块
+about-logging-preset-gfx-label = 图形
+about-logging-preset-gfx-description = 用于诊断图形问题的日志模块
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = 用于诊断 Microsoft Windows 特有问题的日志模块
 about-logging-preset-custom-label = 自定义
 about-logging-preset-custom-description = 手动选择的日志模块
 # Error handling

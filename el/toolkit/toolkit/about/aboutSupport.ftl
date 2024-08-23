@@ -18,6 +18,10 @@ support-addons-type = Τύπος
 support-addons-enabled = Ενεργό
 support-addons-version = Έκδοση
 support-addons-id = ID
+legacy-user-stylesheets-title = Φύλλα στυλ χρήστη παλαιού τύπου
+legacy-user-stylesheets-enabled = Ενεργό
+legacy-user-stylesheets-stylesheet-types = Φύλλο στυλ
+legacy-user-stylesheets-no-stylesheets-found = Δεν βρέθηκαν φύλλα στυλ
 security-software-title = Λογισμικό ασφαλείας
 security-software-type = Τύπος
 security-software-name = Όνομα
@@ -70,13 +74,14 @@ app-basics-launcher-process-status = Διεργασία εκκίνησης
 app-basics-multi-process-support = Παράθυρα πολυδιεργασιών
 app-basics-fission-support = Παράθυρα Fission
 app-basics-remote-processes-count = Απομακρυσμένες διεργασίες
-app-basics-enterprise-policies = Πολιτικές επιχειρήσεων
+app-basics-enterprise-policies = Εταιρικές πολιτικές
 app-basics-location-service-key-google = Κλειδί υπηρεσίας τοποθεσίας Google
 app-basics-safebrowsing-key-google = Κλειδί ασφαλούς περιήγησης Google
 app-basics-key-mozilla = Κλειδί υπηρεσίας τοποθεσίας Mozilla
 app-basics-safe-mode = Ασφαλής λειτουργία
 app-basics-memory-size = Μέγεθος μνήμης (RAM)
 app-basics-disk-available = Διαθέσιμος χώρος δίσκου
+app-basics-pointing-devices = Συσκευές κατάδειξης
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -182,6 +187,25 @@ media-codec-support-hw-decoding = Αποκωδικοποίηση υλικού
 media-codec-support-codec-name = Όνομα κωδικοποιητή
 media-codec-support-supported = Υποστηρίζεται
 media-codec-support-unsupported = Δεν υποστηρίζεται
+media-codec-support-error = Οι πληροφορίες υποστήριξης κωδικοποίησης δεν είναι διαθέσιμες. Δοκιμάστε ξανά μετά την αναπαραγωγή ενός αρχείου πολυμέσων.
+media-codec-support-lack-of-extension = Εγκατάσταση επέκτασης
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Πληροφορίες μονάδων αποκρυπτογράφησης περιεχομένου
+media-key-system-name = Όνομα συστήματος κλειδιών
+media-video-robustness = Ανθεκτικότητα βίντεο
+media-audio-robustness = Ανθεκτικότητα ήχου
+media-cdm-capabilities = Δυνατότητες
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Μη κρυπτογραφημένη έναρξη (Clear Lead)
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Συμβατό με HDCP 2.2
 
 ##
 
@@ -261,6 +285,7 @@ try-newer-driver = Αποκλείστηκε για το πρόγραμμα οδ�
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Παράμετροι ClearType
 compositing = Σύνθεση
+support-font-determination = Πληροφορίες ελέγχου ορατότητας γραμματοσειράς
 hardware-h264 = Αποκωδικοποίηση υλικού H264
 main-thread-no-omtc = κύριο νήμα, όχι OMTC
 yes = Ναι
@@ -390,6 +415,20 @@ support-printing-modified-settings = Τροποποιημένες ρυθμίσε
 support-printing-prefs-name = Όνομα
 support-printing-prefs-value = Τιμή
 
+## Remote Settings sections
+
+support-remote-settings-title = Απομακρυσμένες ρυθμίσεις
+support-remote-settings-status = Κατάσταση
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Δεν λειτουργεί
+support-remote-settings-last-check = Τελευταίος έλεγχος
+support-remote-settings-local-timestamp = Τοπική χρονική σήμανση
+support-remote-settings-sync-history = Ιστορικό
+support-remote-settings-sync-history-status = Κατάσταση
+support-remote-settings-sync-history-datetime = Ημερομηνία
+support-remote-settings-sync-history-infos = Πληροφορίες
+
 ## Normandy sections
 
 support-remote-experiments-title = Απομακρυσμένα πειράματα
@@ -399,3 +438,22 @@ support-remote-experiments-see-about-studies = Δείτε το <a data-l10n-name
 support-remote-features-title = Απομακρυσμένες δυνατότητες
 support-remote-features-name = Όνομα
 support-remote-features-status = Κατάσταση
+
+## Pointing devices
+
+pointing-device-mouse = Ποντίκι
+pointing-device-touchscreen = Οθόνη αφής
+pointing-device-pen-digitizer = Ψηφιοποιητής γραφίδας
+pointing-device-none = Δεν υπάρχουν συσκευές κατάδειξης
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Ανάλυση περιεχομένου (DLP)
+content-analysis-active = Ενεργή
+content-analysis-connected-to-agent = Έγινε σύνδεση με πάροχο
+content-analysis-agent-path = Διαδρομή παρόχου
+content-analysis-agent-failed-signature-verification = Αποτυχία επαλήθευσης υπογραφής παρόχου
+content-analysis-request-count = Αριθμός αιτημάτων

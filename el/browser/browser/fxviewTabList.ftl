@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = Άνοιγμα { $targetURI } σε νέα καρτέλα
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = Κλείσιμο του «{ $tabTitle }»
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = Απόρριψη «{ $tabTitle }»
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = Αποθήκευση στο { -pocket-brand-name }
     .accesskey = ο
 fxviewtabrow-copy-link = Αντιγραφή συνδέσμου
     .accesskey = σ
+fxviewtabrow-close-tab = Κλείσιμο καρτέλας
+    .accesskey = Κ
+fxviewtabrow-move-tab = Μετακίνηση καρτέλας
+    .accesskey = τ
+fxviewtabrow-move-tab-start = Μετακίνηση στην αρχή
+    .accesskey = χ
+fxviewtabrow-move-tab-end = Μετακίνηση στο τέλος
+    .accesskey = α
+fxviewtabrow-move-tab-window = Μετακίνηση σε νέο παράθυρο
+    .accesskey = π
+fxviewtabrow-send-tab = Αποστολή καρτέλας σε συσκευή
+    .accesskey = λ
+fxviewtabrow-pin-tab = Καρφίτσωμα καρτέλας
+    .accesskey = Κ
+fxviewtabrow-unpin-tab = Ξεκαρφίτσωμα καρτέλας
+    .accesskey = Ξ
+fxviewtabrow-mute-tab = Σίγαση καρτέλας
+    .accesskey = Σ
+fxviewtabrow-unmute-tab = Άρση σίγασης καρτέλας
+    .accesskey = ρ
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Επιλογές για «{ $tabTitle }»
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = Σίγαση του { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = Άρση σίγασης του { $tabTitle }
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Σίγαση καρτέλας
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Άρση σίγασης καρτέλας

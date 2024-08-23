@@ -27,9 +27,6 @@ toolbox-meatball-menu-noautohide-label = Vô hiệu hóa tự động ẩn popup
 toolbox-meatball-menu-pseudo-locale-accented = Kích hoạt ngôn ngữ “accented”
 toolbox-meatball-menu-pseudo-locale-bidi = Kích hoạt ngôn ngữ “bidi”
 
-##
-
-
 ## These labels are shown in the top-toolbar in the Browser Toolbox and Browser Console
 
 toolbox-mode-browser-toolbox-label = Chế độ công cụ trình duyệt
@@ -38,14 +35,10 @@ toolbox-mode-everything-label = Đa tiến trình
 toolbox-mode-everything-sub-label = (Chậm hơn)
 toolbox-mode-everything-container =
     .title = Gỡ lỗi mọi thứ trong tất cả tiến trình
-toolbox-mode-parent-process-label = Chỉ tiến trình mẹ
+toolbox-mode-parent-process-label = Chỉ tiến trình chính
 toolbox-mode-parent-process-sub-label = (Nhanh)
 toolbox-mode-parent-process-container =
-    .title = Chỉ tập trung vào các tài nguyên từ tiến trình mẹ.
-toolbox-always-on-top-enabled =
-    .title = Vô hiệu hóa cửa sổ luôn ở trên cùng (Thao tác này sẽ khởi động lại công cụ dành cho nhà phát triển)
-toolbox-always-on-top-disabled =
-    .title = Kích hoạt cửa sổ luôn ở trên cùng (Thao tác này sẽ khởi động lại công cụ dành cho nhà phát triển)
+    .title = Chỉ tập trung vào các tài nguyên từ tiến trình chính.
 toolbox-always-on-top-enabled2 = Tắt luôn ở trên cùng
     .title = Điều này sẽ khởi động lại Công cụ dành cho nhà phát triển
 toolbox-always-on-top-disabled2 = Bật luôn ở trên cùng

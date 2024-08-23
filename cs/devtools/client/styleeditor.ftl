@@ -20,7 +20,6 @@ styleeditor-save-button = Uložit
     .accesskey = U
 styleeditor-options-button =
     .tooltiptext = Možnosti Editoru stylů
-styleeditor-media-rules = pravidla @media
 styleeditor-at-rules = @-pravidla
 styleeditor-editor-textbox =
     .data-placeholder = Zde vložte CSS.
@@ -50,3 +49,9 @@ styleeditor-stylesheet-rule-count =
         [few] { $ruleCount } pravidla..
        *[other] { $ruleCount } pravidel.
     }
+# Title for the pretty print button in the editor footer.
+styleeditor-pretty-print-button =
+    .title = Naformátuje soubor stylů
+# Title for the pretty print button in the editor footer, when it's disabled
+styleeditor-pretty-print-button-disabled =
+    .title = Dokáže naformátovat pouze soubory CSS

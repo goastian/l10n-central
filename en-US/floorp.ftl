@@ -4,7 +4,8 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> It is a light, fast and secure browser committed to the privacy and security of users. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, to improve the web. Want to help? <label data-l10n-name="helpus-donateLink">Make a donation</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> is one of the domestic browsers developed in Japan. It is based on Firefox and continues to operate under <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, to improve the web. Want to help? <label data-l10n-name="helpus-donateLink">Make a donation</label>
+icon-creator = Icon creator <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> and <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = A list of <label data-l10n-name="about-contributor">contributors and Developers</label>
 
 #################################################################### about:preferences ####################################################################
@@ -17,6 +18,7 @@ design-header = { pane-design-title }
 feature-requires-restart = A restart is required to apply changes
 
 tab-width = Minimum width of tabs
+tab-height = Minimum height of tabs
 preferences-tabs-newtab-position = New tab position
 open-new-tab-use-default =
  .label = Open new tabs at default position
@@ -83,6 +85,9 @@ vertical-tabbar =
 native-vertical-tab-show-right =
  .label = Show Vertical Tab Bar on the right side of the window
 
+native-vertical-tab-show-padding =
+ .label = Enable padding at the top
+
 hover-vertical-tab =
  .label = Collapse Vertical Tab Bar
 floorp-show-vertical-tab-newtab-button =
@@ -107,15 +112,9 @@ navbar-settings = Navigation Bar
 show-nav-bar-bottom =
  .label = Show the Toolbar at the bottom of { -brand-short-name } (experimental)
 
-material-effect =
- .label = Allow Mica For Everyone to modify the browser design
 disable-extension-check-compatibility-option =
- .label = Do not check for compatibility with add-ons
+ .label = Do not check for compatibility with add-ons (deprecated)
 other-preference = Other Preferences
-
-enable-userscript =
- .label = Enable legacy components
-about-userscript = Enabling this feature may cause unexpected bugs or fatal errors.
 
 search-positon-top =
  .label = Display the Find Bar at the top of the page
@@ -154,10 +153,7 @@ floorp-fluentUI =
  .label = Microsoft Fluent UI (deprecated)
  
 floorp-fluerialUI =
- .label = { -brand-short-name } Fluerial UI (deprecated)
-
-floorp-gnomeUI =
- .label = GNOME Theme (deprecated)
+ .label = { -brand-short-name } Fluerial UI (New)
 
 ## Download Manager
 download-notification-preferences = Download Notifications
@@ -176,22 +172,6 @@ floorp-help-button-label = { -brand-short-name } Support
 
 appmenuitem-reboot =
  .label = Restart
-
-## UserAgent
-
-userAgent-preference = User Agent
-default-useragent-mode =
- .label = Use Firefox User Agent (Default)
-windows-chrome-useragent-mode =
- .label = Spoof Chrome on Windows
-macOS-chrome-useragent-mode =
- .label = Spoof Chrome on macOS
-linux-chrome-useragent-mode =
- .label = Spoof Chrome on Linux
-mobile-chrome-useragent-mode =
- .label = Spoof Chrome on iOS
-use-custom-useragent-mode =
- .label = Use Custom User Agent
 
 ## DMR UI
 download-mgr-UI =
@@ -298,8 +278,6 @@ max-memory =
 
 delete-border-and-roundup-option =
   .label = Round the corners of pages
-STG-smilar-workspaces-option =
-  .label = Make "Simple Tab Groups" add-on buttons look like Workspaces buttons
 
 ## DualTheme
 dualtheme-enable =
@@ -509,7 +487,7 @@ workspace-select-container = Select Container Tab
 workspace-customize = 
  .title = Customize Workspace
 
-floorp-no-workspace-conatiner =
+floorp-no-workspace-container =
   .label = No Container
 
 workspace-icon-article =
@@ -687,6 +665,18 @@ sidebar2-change-ua-panel =
 sidebar2-delete-panel =
   .label = Delete this Panel
 
+sidebar2-change-zoom-level =
+  .label = Change Zoom Level
+
+sidebar2-zoom-in =
+  .label = Zoom In
+
+sidebar2-zoom-out =
+  .label = Zoom Out
+
+sidebar2-reset-zoom =
+  .label = Reset Zoom
+
 sidebar2-close-button =
   .tooltiptext = Close Sidebar
 
@@ -756,6 +746,7 @@ bsb-context-add =
 
 bsb-context-link-add = 
   .label = Add link to Web Panel...
+
 #################################################################### menu panel ############################################################
 
 open-profile-dir = 
@@ -898,7 +889,7 @@ chage-view-mode = Toggle View/Edit Mode
 readonly-mode = Offline (Read-only)
 
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Astian Support
+default-bookmark-ablaze-support = Ablaze Support
 
 ######################################################################### Like Chrome Download mgr ###############################################################
 
@@ -920,6 +911,12 @@ workspaces-create-new-workspace-button =
 workspaces-manage-workspaces-button =
   .label = Manage Workspaces...
   .tooltiptext = Manage your Workspaces
+reorder-this-workspace-to-up =
+  .label = Move up this Workspace
+  .accesskey = B
+reorder-this-workspace-to-down =
+  .label = Move down this Workspace
+  .accesskey = A
 
 rename-this-workspace =
   .label = Rename Workspace
@@ -945,7 +942,7 @@ workspaces-toolbar-button = Workspaces
   .tooltiptext = Select a Workspace...
 
 ## Preferences
-enable-workspaces = 
+enable-workspaces =
     .label = Enable Workspaces
     .tooltiptext = Enable Workspaces
 workspace-notice = Workspaces will not work with this settings enabled unless the workspaces's button is placed on the toolbar. Use this setting if you want to disable Workspaces completely.
@@ -962,9 +959,11 @@ pane-workspaces-title = Workspaces
 
 floorp-workspaces-title = { -brand-short-name } Workspaces
 floorp-workspace-settings-button = Workspace Settings...
-
+floorp-preferences-label = Preferences
+floorp-extensions-label = Extensions
+floorp-private-label = Private
 change-to-close-workspace-popup-option = 
- .label = Close workspaces popup when selecting a Workspace
+ .label = Close Workspaces popup when selecting a Workspace
 manage-workspace-on-bms-option =
  .label = Manage Workspace on Browser Manager Sidebar
 show-workspace-name-option =
@@ -981,7 +980,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = Sign in to your Firefox Account
 welcome-to-floorp = Welcome to { -brand-short-name }!
-welcome-discribe-floorp = { -brand-short-name } is a fast and secure lightweight browser committed to user privacy and security.
+welcome-describe-floorp = { -brand-short-name } is a feature-rich, flexible browser that supports various environments and is based on Firefox.
 welcome-start-setup = Ready to dive in?
 welcome-skip-to-start-browsing = Skip to Start Browsing
 welcome-select-preferences-template = Choose a template
@@ -993,7 +992,7 @@ welcome-maximum-template = Advanced
 welcome-enable-most-of-features = Enable advanced features and settings. Recommended for experienced users.
 welcome-go-next-setup = Next
 welcome-select-browser-design = Select a Browser Design
-welcome-discribe-browser-design = You can choose one of the wonderful third-party { -brand-short-name } designs. OS-specific designs are also available in Preferences.
+welcome-describe-browser-design = You can choose one of the wonderful third-party { -brand-short-name } designs. OS-specific designs are also available in Preferences.
 welcome-design-lepton-name = Lepton Original Design
 welcome-design-photon-name = Lepton Photon Design
 welcome-design-ProtonFix-name = Lepton ProtonFix Design
@@ -1110,7 +1109,7 @@ floorp-custom-actions-open-general-preferences = Open general preferences
   .label = Open General Preferences
 floorp-custom-actions-open-privacy-preferences = Open privacy preferences
   .label = Open Privacy Preferences
-floorp-custom-actions-open-workspaces-preferences = Open workspaces preferences
+floorp-custom-actions-open-workspaces-preferences = Open Workspaces preferences
   .label = Open Workspaces Preferences
 floorp-custom-actions-open-containers-preferences = Open containers preferences
   .label = Open Containers Preferences
@@ -1136,8 +1135,10 @@ floorp-custom-actions-manage-history = Manage history
   .label = Manage history
 floorp-custom-actions-open-downloads = Open downloads
   .label = Open Downloads
-floorp-custom-actions-show-bsm = Show browser manager sidebar
-  .label = Show the Browser Manager Sidebar
+floorp-custom-actions-show-bms = Toggle browser manager sidebar
+  .label = Toggle the Browser Manager Sidebar
+floorp-custom-actions-show-current-panel = Toggle current panel
+  .label = Toggle Current Panel
 floorp-custom-actions-show-bookmark-sidebar = Show bookmark sidebar
   .label = Show Bookmarks Sidebar
 floorp-custom-actions-show-history-sidebar = Show history sidebar
@@ -1152,10 +1153,10 @@ floorp-custom-actions-show-sidebar = Toggle sidebar
   .label = Toggle sidebar
 floorp-custom-actions-toggle-sidebar = Toggle sidebar
   .label = Toggle sidebar
-floorp-custom-actions-open-previous-workspace = Open previous workspace
-  .label = Open previous workspace
-floorp-custom-actions-open-next-workspace = Open next workspace
-  .label = Open next workspace
+floorp-custom-actions-open-previous-workspace = Open previous Workspace
+  .label = Open previous Workspace
+floorp-custom-actions-open-next-workspace = Open next Workspace
+  .label = Open next Workspace
 floorp-custom-actions-show-panel-1 = Toggle panel 1
   .label = Toggle panel 1
 floorp-custom-actions-show-panel-2 = Toggle panel 2
@@ -1196,7 +1197,8 @@ floorp-custom-actions-rest-mode = Enable rest mode
   .label = Enable rest mode
 floorp-custom-actions-hide-user-interface = Toggle User Interface
   .label = Toggle User Interface
-
+floorp-custom-actions-toggle-navigation-panel = Toggle Navigation Panel
+  .label = Toggle Navigation Panel
 ##################################################################### Profile Switcher ###############################################################
 
 floorp-open-profile-with-new-instance = Launch
@@ -1221,14 +1223,21 @@ open-in_private-container =
 
 ######################################################################## Split View ###############################################################
 
-floorp-split-view-menu =
- .label = Open in split view
-splitview-show-on-right =
- .label = Show on right
-splitview-show-on-left =
-  .label = Show on left
-splitview-close-split-tab =
-  .label = Close split tab
+floorp-split-view-open-menu =
+ .label = Open in Split View
+floorp-split-view-open-menu-disabled =
+ .label = Need Unspliting and Unselected tab
+
+split-view-remove-button = Remove Split View
+
+split-view-title = Split View Settings
+split-view-position = Position
+split-view-flex-type = Flex Type
+split-view-position-top = Top Side
+split-view-position-left = Default
+split-view-position-right = Reverse
+split-view-flex-column = Vertical
+split-view-flex-row = Horizontal
 
 ######################################################################### Page Actions ###############################################################
 qrcode-generate-page-action-title = Scan QR Code with your Phone
@@ -1304,3 +1313,13 @@ floorp-notificationTitle-latest = { -brand-short-name } is up to date!
 floorp-notificationContent-latest = { -brand-short-name } is up to date. You are using the latest version of { -brand-short-name }.
 floorp-notificationTitle = New version of { -brand-short-name } is available!
 floorp-notificationContent = Click to download the latest version.
+
+######################################################################### vertical tab bar ###############################################################
+
+close-tabs-to-the-start-on-vertical-tab-bar =
+  .label = Close Tabs to Start
+  .accesskey = S
+
+close-tabs-to-the-end-on-vertical-tab-bar =
+  .label = Close Tabs to End
+  .accesskey = E

@@ -18,6 +18,10 @@ support-addons-type = Type
 support-addons-enabled = Activé
 support-addons-version = Version
 support-addons-id = ID
+legacy-user-stylesheets-title = Anciennes feuilles de style utilisateur
+legacy-user-stylesheets-enabled = Activées
+legacy-user-stylesheets-stylesheet-types = Feuilles de style
+legacy-user-stylesheets-no-stylesheets-found = Aucune feuille de style trouvée
 security-software-title = Logiciel de sécurité
 security-software-type = Type
 security-software-name = Nom
@@ -77,6 +81,7 @@ app-basics-key-mozilla = Clé du service de localisation de Mozilla
 app-basics-safe-mode = Mode sans échec
 app-basics-memory-size = Taille de la mémoire (RAM)
 app-basics-disk-available = Espace disque disponible
+app-basics-pointing-devices = Périphériques de pointage
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -85,7 +90,7 @@ show-dir-label =
     { PLATFORM() ->
         [macos] Afficher dans le Finder
         [windows] Ouvrir le dossier correspondant
-       *[other] Ouvrir le dossier correspondant
+       *[other] Ouvrir le répertoire correspondant
     }
 environment-variables-title = Variables d’environnement
 environment-variables-name = Nom
@@ -182,6 +187,25 @@ media-codec-support-hw-decoding = Décodage matériel
 media-codec-support-codec-name = Nom du codec
 media-codec-support-supported = Pris en charge
 media-codec-support-unsupported = Non pris en charge
+media-codec-support-error = Les informations sur la prise en charge des codecs ne sont pas disponibles. Réessayez après avoir lu un fichier multimédia.
+media-codec-support-lack-of-extension = Installer une extension
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informations sur les modules de déchiffrement de contenu
+media-key-system-name = Nom du système de clé
+media-video-robustness = Robustesse vidéo
+media-audio-robustness = Robustesse audio
+media-cdm-capabilities = Fonctions
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Début en clair
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = Compatible avec HDCP 2.0
 
 ##
 
@@ -261,6 +285,7 @@ try-newer-driver = Bloqué pour la version de votre pilote graphique. Essayez de
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Paramètres ClearType
 compositing = Composition
+support-font-determination = Informations de débogage pour la visibilité des polices
 hardware-h264 = Décodage matériel H264
 main-thread-no-omtc = Fil d’exécution principal, pas d’OMTC
 yes = Oui
@@ -322,6 +347,9 @@ has-seccomp-bpf = Seccomp-BPF (Filtrage des appels système)
 has-seccomp-tsync = Synchronisation du fil d’exécution Seccomp
 has-user-namespaces = Espace de noms utilisateur
 has-privileged-user-namespaces = Espace de noms utilisateur pour les processus privilégiés
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Cette fonctionnalité n’est pas autorisée par votre système. De ce fait, les fonctionnalités de sécurité de { -brand-short-name } peuvent être restreintes.
 can-sandbox-content = Bac à sable pour les processus de contenu
 can-sandbox-media = Bac à sable pour les plugins multimédia
 content-sandbox-level = Niveau du bac à sable pour les processus de contenu
@@ -390,6 +418,20 @@ support-printing-modified-settings = Paramètres d’impression modifiés
 support-printing-prefs-name = Nom
 support-printing-prefs-value = Valeur
 
+## Remote Settings sections
+
+support-remote-settings-title = Paramètres distants
+support-remote-settings-status = État
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Ne fonctionne pas
+support-remote-settings-last-check = Dernière vérification
+support-remote-settings-local-timestamp = Horodatage local
+support-remote-settings-sync-history = Historique
+support-remote-settings-sync-history-status = État
+support-remote-settings-sync-history-datetime = Date
+support-remote-settings-sync-history-infos = Informations
+
 ## Normandy sections
 
 support-remote-experiments-title = Expériences à distance
@@ -399,3 +441,22 @@ support-remote-experiments-see-about-studies = Consultez <a data-l10n-name="supp
 support-remote-features-title = Fonctionnalités distantes
 support-remote-features-name = Nom
 support-remote-features-status = État
+
+## Pointing devices
+
+pointing-device-mouse = Souris
+pointing-device-touchscreen = Écran tactile
+pointing-device-pen-digitizer = Stylet numériseur
+pointing-device-none = Aucun périphérique de pointage
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Analyse de contenu (DLP)
+content-analysis-active = Active
+content-analysis-connected-to-agent = Connecté à l’agent
+content-analysis-agent-path = Chemin de l’agent
+content-analysis-agent-failed-signature-verification = Échec de la vérification de la signature de l’agent
+content-analysis-request-count = Nombre de requêtes

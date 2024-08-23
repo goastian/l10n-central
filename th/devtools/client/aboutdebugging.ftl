@@ -11,7 +11,8 @@
 # Page title (ie tab title) for the Setup page
 about-debugging-page-title-setup-page = การดีบั๊ก - ตั้งค่า
 # Page title (ie tab title) for the Runtime page
-# { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
+# Variables:
+#   $selectedRuntimeId - ID of the current runtime, such as "this-firefox", "localhost:6080", etc.
 about-debugging-page-title-runtime-page = การดีบั๊ก - รันไทม์ / { $selectedRuntimeId }
 
 # Sidebar strings
@@ -20,9 +21,11 @@ about-debugging-page-title-runtime-page = การดีบั๊ก - รั�
 # Sidebar and in the Setup page.
 about-debugging-this-firefox-runtime-name = { -brand-shorter-name } นี้
 # Sidebar heading for selecting the currently running instance of Firefox
+# .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
 # Sidebar heading for connecting to some remote source
+# .name is processed by fluent-react / SidebarFixedItem
 about-debugging-sidebar-setup =
     .name = ตั้งค่า
 # Text displayed in the about:debugging sidebar when USB devices discovery is enabled.
@@ -56,10 +59,15 @@ about-debugging-sidebar-runtime-item-waiting-for-browser = กำลังรอ
 # computer.
 about-debugging-sidebar-runtime-item-unplugged = ถอดปลั๊กแล้ว
 # Title for runtime sidebar items that are related to a specific device (USB, WiFi).
+# Variables:
+#   $displayName (string) - Displayed name
+#   $deviceName (string) - Name of the device
 about-debugging-sidebar-runtime-item-name =
     .title = { $displayName } ({ $deviceName })
 # Title for runtime sidebar items where we cannot get device information (network
 # locations).
+# Variables:
+#   $displayName (string) - Displayed name
 about-debugging-sidebar-runtime-item-name-no-device =
     .title = { $displayName }
 # Text to show in the footer of the sidebar that links to a help page
@@ -80,7 +88,7 @@ about-debugging-setup-title = ตั้งค่า
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = กำหนดค่าวิธีการเชื่อมต่อที่คุณต้องการดีบั๊กอุปกรณ์ของคุณจากระยะไกล
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox2 = ใช้ <a>{ about-debugging-this-firefox-runtime-name }</a> เพื่อดีบั๊กส่วนขยายและตัวทำงานบริการบน { -brand-shorter-name } รุ่นนี้
+about-debugging-setup-this-firefox2 = ใช้ <a>{ about-debugging-this-firefox-runtime-name }</a> เพื่อดีบั๊กส่วนขยายและ Service Worker บน { -brand-shorter-name } รุ่นนี้
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = เชื่อมต่ออุปกรณ์
 # USB section of the Setup page
@@ -142,33 +150,40 @@ about-debugging-network-location-form-duplicate = โฮสต์ “{ $host-val
 # Below are the titles for the various categories of debug targets that can be found
 # on "runtime" pages of about:debugging.
 # Title of the temporary extensions category (only available for "This Firefox" runtime).
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-temporary-extensions =
     .name = ส่วนขยายชั่วคราว
 # Title of the extensions category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-extensions =
     .name = ส่วนขยาย
 # Title of the tabs category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-tabs =
     .name = แท็บ
 # Title of the service workers category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-service-workers =
-    .name = ตัวทำงานบริการ
+    .name = Service Worker
 # Title of the shared workers category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-shared-workers =
     .name = ตัวทำงานที่ใช้ร่วมกัน
 # Title of the other workers category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-other-workers =
     .name = ตัวทำงานอื่น ๆ
 # Title of the processes category.
+# .name is processed by fluent-react / DebugTargetPane
 about-debugging-runtime-processes =
-    .name = โปรเซส
+    .name = โพรเซส
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
 about-debugging-runtime-profile-button2 = ประสิทธิภาพโปรไฟล์
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to:
 # https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/index.html#service-workers-not-compatible
-about-debugging-runtime-service-workers-not-compatible = การกำหนดค่าเบราว์เซอร์ของคุณเข้ากันไม่ได้กับตัวทำงานบริการ <a>เรียนรู้เพิ่มเติม</a>
+about-debugging-runtime-service-workers-not-compatible = การกำหนดค่าเบราว์เซอร์ของคุณใช้ร่วมกับ Service Worker ไม่ได้ <a>เรียนรู้เพิ่มเติม</a>
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
@@ -176,7 +191,7 @@ about-debugging-runtime-service-workers-not-compatible = การกำหน�
 about-debugging-browser-version-too-old = เบราว์เซอร์ที่เชื่อมต่อมีรุ่นเก่า ({ $runtimeVersion }) รุ่นที่รองรับขั้นต่ำคือ ({ $minVersion }) นี่เป็นการตั้งค่าที่ไม่รองรับและอาจทำให้ DevTools ล้มเหลว โปรดอัปเดตเบราว์เซอร์ที่เชื่อมต่อ <a>การแก้ไขปัญหา</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
-about-debugging-browser-version-too-old-fennec = Firefox รุ่นนี้ไม่สามารถดีบั๊ก Firefox สำหรับ Android (68) ได้ เราแนะนำให้ติดตั้ง Firefox สำหรับ Android Nightly บนโทรศัพท์ของคุณเพื่อทำการทดสอบ <a>รายละเอียดเพิ่มเติม</a>
+about-debugging-browser-version-too-old-fennec = Midori รุ่นนี้ไม่สามารถดีบั๊ก Firefox สำหรับ Android (68) ได้ เราแนะนำให้ติดตั้ง Firefox สำหรับ Android Nightly บนโทรศัพท์ของคุณเพื่อทำการทดสอบ <a>รายละเอียดเพิ่มเติม</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
@@ -265,9 +280,11 @@ about-debugging-extension-backgroundscript-status-stopped = หยุดแล�
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
+# .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-push2 = ผลัก
     .disabledTitle = การผลักตัวทำงานบริการถูกปิดใช้งานอยู่สำหรับ { -brand-shorter-name } แบบหลายกระบวนการในขณะนี้
 # This string is displayed as a label of the button that starts a service worker.
+# .disabledTitle is processed by the fluent-react / ActionButton code.
 about-debugging-worker-action-start2 = เริ่ม
     .disabledTitle = การเริ่มตัวทำงานบริการถูกปิดใช้งานอยู่สำหรับ { -brand-shorter-name } แบบหลายกระบวนการในขณะนี้
 # This string is displayed as a label of the button that unregisters a service worker.
@@ -296,22 +313,16 @@ about-debugging-worker-push-service =
     .label = บริการผลัก
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
-    .title = การตรวจสอบตัวทำงานบริการถูกปิดใช้งานอยู่สำหรับ { -brand-shorter-name } แบบมัลติโปรเซสในขณะนี้
+    .title = การตรวจสอบ Service Worker ถูกปิดใช้งานอยู่สำหรับ { -brand-shorter-name } แบบมัลติโพรเซสในขณะนี้
 # Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
 about-debugging-zombie-tab-inspect-action-disabled =
     .title = แท็บยังไม่ได้โหลดอย่างเต็มที่และไม่สามารถตรวจสอบได้
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-main-process-name = โปรเซสหลัก
+about-debugging-multiprocess-toolbox-name = กล่องเครื่องมือมัลติโพรเซส
 # Displayed as description for the Main Process debug target in the Processes category.
 # Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-main-process-description2 = โปรเซสหลักสำหรับเบราว์เซอร์เป้าหมาย
-# Displayed as name for the Main Process debug target in the Processes category. Only for
-# remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-multiprocess-toolbox-name = กล่องเครื่องมือมัลติโปรเซส
-# Displayed as description for the Main Process debug target in the Processes category.
-# Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
-about-debugging-multiprocess-toolbox-description = โปรเซสหลักและโปรเซสเนื้อหาสำหรับเบราว์เซอร์เป้าหมาย
+about-debugging-multiprocess-toolbox-description = โพรเซสหลักและโพรเซสเนื้อหาสำหรับเบราว์เซอร์เป้าหมาย
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = ปิดข้อความ

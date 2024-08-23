@@ -2,28 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
-## The following feature name must be treated as a brand.
-##
-## They cannot be:
-## - Transliterated.
-## - Translated.
-##
-## Declension should be avoided where possible, leaving the original
-## brand unaltered in prominent UI positions.
-##
-## For further details, consult:
-## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
-
--profiler-brand-name = Firefox Profiler
-
-##
-
 # This is the title of the page
 about-logging-title = Tentang Pencatatan
 about-logging-page-title = Pengelola log
 about-logging-current-log-file = Berkas Log Terkini:
-about-logging-current-log-modules = Modul Log Terkini:
 about-logging-new-log-file = Berkas log baru:
 about-logging-currently-enabled-log-modules = Modul log aktif:
 about-logging-log-tutorial = Lihat <a data-l10n-name="logging">Pencatatan HTTP</a> untuk instruksi menggunakan alat ini.
@@ -51,6 +33,7 @@ about-logging-preset-networking-label = Jaringan
 about-logging-preset-networking-description = Log modul untuk mendiagnosis masalah jaringan
 about-logging-preset-media-playback-label = Pemutaran media
 about-logging-preset-media-playback-description = Modul log untuk mendiagnosis masalah pemutaran media (bukan masalah konferensi video)
+about-logging-preset-webrtc-label = WebRTC
 about-logging-preset-custom-label = Khusus
 about-logging-preset-custom-description = Modul log dipilih secara manual
 # Error handling

@@ -5,44 +5,39 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
+# These are the default window titles everywhere except macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
 # default - "Mozilla Firefox"
 # private - "Mozilla Firefox (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
 # Variables:
 #  $content-title (String): the title of the web content.
-browser-main-window =
+browser-main-window-window-titles =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (Navigazione anonima)
+    .data-title-private = { -brand-full-name } Navigazione anonima
     .data-content-title-default = { $content-title } – { -brand-full-name }
-    .data-content-title-private = { $content-title } – { -brand-full-name } (Navigazione anonima)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
+    .data-content-title-private = { $content-title } – { -brand-full-name } Navigazione anonima
+# These are the default window titles on macOS.
+# .data-title-default and .data-title-private are used when the web content
+# opened has no title:
 #
-# "default" – "Mozilla Firefox"
-# "private" – "Mozilla Firefox – (Private Browsing)"
 #
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox — (Private Browsing)"
+#
+# .data-content-title-default and .data-content-title-private are for use when
+# there *is* a content title.
+# Do not use the brand name in these, as we do on non-macOS.
 #
 # Also note the other subtle difference here: we use a `-` to separate the
 # brand name from `(Private Browsing)`, which does not happen on other OSes.
 #
 # Variables:
 #  $content-title (String): the title of the web content.
-browser-main-window-mac =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } – (Navigazione anonima)
-    .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } – (Navigazione anonima)
-browser-main-window-window-titles =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } Navigazione anonima
-    .data-content-title-default = { $content-title } – { -brand-full-name }
-    .data-content-title-private = { $content-title } – { -brand-full-name } Navigazione anonima
 browser-main-window-mac-window-titles =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } – Navigazione anonima
@@ -53,6 +48,8 @@ browser-main-window-mac-window-titles =
 # This should match the `data-title-default` attribute in both
 # `browser-main-window` and `browser-main-window-mac`.
 browser-main-window-title = { -brand-full-name }
+# The non-variable portion of this MUST match the translation of
+# "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = { -brand-shortcut-name } – Navigazione anonima
 
 ##
@@ -84,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = Apri il pannello dei permessi per la realtà virtuale
 urlbar-storage-access-anchor =
     .tooltiptext = Apri il pannello relativo ai permessi per la navigazione
-urlbar-translate-notification-anchor =
-    .tooltiptext = Traduci questa pagina
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Gestisci la condivisione delle finestre o dello schermo con il sito
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Apri il pannello con il messaggio relativo all’archiviazione non in linea per le app
 urlbar-password-notification-anchor =
     .tooltiptext = Apri il pannello per il salvataggio delle password
-urlbar-translated-notification-anchor =
-    .tooltiptext = Gestisci la traduzione della pagina
 urlbar-plugins-notification-anchor =
     .tooltiptext = Gestisci l’utilizzo dei plugin
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -109,9 +102,12 @@ urlbar-persistent-storage-notification-anchor =
 urlbar-addons-notification-anchor =
     .tooltiptext = Apri il pannello con il messaggio di installazione componente aggiuntivo
 urlbar-tip-help-icon =
-    .title = Ottieni assistenza
+    .title = Ricevi assistenza
 urlbar-search-tips-confirm = OK
 urlbar-search-tips-confirm-short = OK
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
 urlbar-tip-icon-description =
     .alt = Suggerimento:
 urlbar-result-menu-button =
@@ -125,7 +121,7 @@ urlbar-result-menu-remove-from-history =
     .label = Rimuovi dalla cronologia
     .accesskey = R
 urlbar-result-menu-tip-get-help =
-    .label = Ottieni assistenza
+    .label = Ricevi assistenza
     .accesskey = a
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
@@ -135,6 +131,7 @@ urlbar-result-menu-tip-get-help =
 
 urlbar-search-tips-onboard = Scrivi di meno e trova più risultati: cerca con { $engineName } direttamente dalla barra degli indirizzi.
 urlbar-search-tips-redirect-2 = Inizia le tue ricerche dalla barra degli indirizzi per visualizzare suggerimenti da { $engineName } e dalla cronologia di navigazione.
+# Make sure to match the name of the Search panel in settings.
 urlbar-search-tips-persist = Cercare è diventato ancora più semplice. Prova a rendere la tua ricerca più specifica qui nella barra degli indirizzi. Se invece preferisci visualizzare l’indirizzo, visita il pannello Ricerca nelle impostazioni.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -184,10 +181,6 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
-    .label = Gestisci estensione…
-page-action-remove-extension =
-    .label = Rimuovi estensione
 page-action-manage-extension2 =
     .label = Gestisci estensione…
     .accesskey = G
@@ -206,7 +199,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Adesso cerca con:
 search-one-offs-change-settings-compact-button =
@@ -259,38 +252,58 @@ search-one-offs-actions =
 ## The -cmd- strings are comma separated list of keywords that will match
 ## the action.
 
+# Opens the about:addons page in the home / recommendations section
 quickactions-addons = Visualizza componenti aggiuntivi
 quickactions-cmd-addons2 = componenti aggiuntivi
+# Opens the bookmarks library window
 quickactions-bookmarks2 = Gestisci segnalibri
 quickactions-cmd-bookmarks = segnalibri
+# Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = Cancella cronologia
 quickactions-cmd-clearhistory = cancella cronologia
+# Opens about:downloads page
 quickactions-downloads2 = Mostra download
 quickactions-cmd-downloads = download
+# Opens about:addons page in the extensions section
 quickactions-extensions = Gestisci estensioni
 quickactions-cmd-extensions = estensioni
+# Opens the devtools web inspector
 quickactions-inspector2 = Apri strumenti di sviluppo
 quickactions-cmd-inspector = analisi pagina, devtools, sviluppatori
+# Opens about:logins
 quickactions-logins2 = Gestisci password
 quickactions-cmd-logins = credenziali, password
+# Opens about:addons page in the plugins section
 quickactions-plugins = Gestisci plugin
 quickactions-cmd-plugins = plugin
+# Opens the print dialog
 quickactions-print2 = Stampa pagina
 quickactions-cmd-print = stampa
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = Salva pagina come PDF
+quickactions-cmd-savepdf = pdf
+# Opens a new private browsing window
 quickactions-private2 = Apri finestra anonima
 quickactions-cmd-private = navigazione anonima, incognito
+# Opens a SUMO article explaining how to refresh
 quickactions-refresh = Ripristina { -brand-short-name }
 quickactions-cmd-refresh = ripristina
+# Restarts the browser
 quickactions-restart = Riavvia { -brand-short-name }
 quickactions-cmd-restart = riavvia
+# Opens the screenshot tool
 quickactions-screenshot3 = Cattura schermata
 quickactions-cmd-screenshot = schermata, screenshot
+# Opens about:preferences
 quickactions-settings2 = Gestisci impostazioni
 quickactions-cmd-settings = impostazioni, preferenze, opzioni
+# Opens about:addons page in the themes section
 quickactions-themes = Gestisci temi
 quickactions-cmd-themes = temi
+# Opens a SUMO article explaining how to update the browser
 quickactions-update = Aggiorna { -brand-short-name }
 quickactions-cmd-update = aggiorna
+# Opens the view-source UI with current pages source
 quickactions-viewsource2 = Visualizza sorgente pagina
 quickactions-cmd-viewsource = visualizza sorgente, sorgente
 # Tooltip text for the help button shown in the result.
@@ -338,6 +351,7 @@ identity-connection-secure = Connessione sicura
 identity-connection-failure = Errore di connessione
 identity-connection-internal = Questa è una pagina sicura di { -brand-short-name }.
 identity-connection-file = Questa pagina è salvata sul dispositivo in uso.
+identity-connection-associated = Questa pagina è caricata da un’altra pagina.
 identity-extension-page = Questa pagina è caricata da un’estensione.
 identity-active-blocked = Alcuni elementi non sicuri di questa pagina sono stati bloccati da { -brand-short-name }.
 identity-custom-root = Connessione verificata da un certificato emesso da un’autorità non riconosciuta da Mozilla.
@@ -347,6 +361,7 @@ identity-weak-encryption = Questa pagina utilizza una crittografia debole.
 identity-insecure-login-forms = Gli accessi effettuati in questa pagina potrebbero essere vulnerabili.
 identity-https-only-connection-upgraded = (aggiornato a HTTPS)
 identity-https-only-label = Modalità solo HTTPS
+identity-https-only-label2 = Aggiorna automaticamente questo sito a una connessione sicura
 identity-https-only-dropdown-on =
     .label = Attiva
 identity-https-only-dropdown-off =
@@ -355,6 +370,8 @@ identity-https-only-dropdown-off-temporarily =
     .label = Disattivata temporaneamente
 identity-https-only-info-turn-on2 = Attivare la modalità solo HTTPS per fare in modo che { -brand-short-name } aggiorni la connessione quando possibile.
 identity-https-only-info-turn-off2 = Se la pagina non funziona correttamente, provare a disattivare per questo sito la modalità solo HTTPS per ricaricare utilizzando una connessione non sicura HTTP.
+identity-https-only-info-turn-on3 = Attiva l’aggiornamento a HTTPS per questo sito per fare in modo che { -brand-short-name } aggiorni la connessione quando possibile.
+identity-https-only-info-turn-off3 = Se la pagina non funziona correttamente, prova a disattivare l’aggiornamento a HTTPS per questo sito. Il sito verrà ricaricato usando una connessione HTTP non sicura.
 identity-https-only-info-no-upgrade = Impossibile aggiornare la connessione da HTTP.
 identity-permissions-storage-access-header = Cookie intersito
 identity-permissions-storage-access-hint = Questi soggetti possono utilizzare cookie intersito e dati dei siti web quando ti trovi in questo sito.
@@ -365,8 +382,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = La connessione con questo sito non è sicura.
 identity-connection-verified = La connessione con questo sito è sicura.
 identity-ev-owner-label = Certificato rilasciato a:
-identity-description-custom-root = Mozilla non riconosce il soggetto che ha emesso questo certificato. Potrebbe essere stato aggiunto dal sistema operativo o da un amministratore. <label data-l10n-name="link">Ulteriori informazioni</label>
-identity-description-custom-root2 = Mozilla non riconosce il soggetto che ha emesso questo certificato. Potrebbe essere stato aggiunto dal sistema operativo o da un amministratore.
+identity-description-custom-root2 = Ablaze non riconosce il soggetto che ha emesso questo certificato. Potrebbe essere stato aggiunto dal sistema operativo o da un amministratore.
 identity-remove-cert-exception =
     .label = Elimina eccezione
     .accesskey = E
@@ -374,17 +390,12 @@ identity-description-insecure = La connessione con questo sito non è privata. L
 identity-description-insecure-login-forms = Le credenziali di accesso inserite in questa pagina non sono sicure e potrebbero essere vulnerabili.
 identity-description-weak-cipher-intro = La connessione con questo sito web utilizza una crittografia debole e non è privata.
 identity-description-weak-cipher-risk = Altri soggetti potrebbero visualizzare le informazioni trasmesse o modificare il comportamento del sito.
-identity-description-active-blocked = Alcuni elementi non sicuri di questa pagina sono stati bloccati da { -brand-short-name }. <label data-l10n-name="link">Ulteriori informazioni</label>
 identity-description-active-blocked2 = Alcuni elementi non sicuri di questa pagina sono stati bloccati da { -brand-short-name }.
 identity-description-passive-loaded = La connessione non è privata e le informazioni trasmesse al sito potrebbero essere visibili ad altri soggetti.
-identity-description-passive-loaded-insecure = Alcuni elementi di questo sito web non sono sicuri (ad esempio immagini). <label data-l10n-name="link">Ulteriori informazioni</label>
-identity-description-passive-loaded-mixed = Nonostante alcuni elementi siano stati bloccati da { -brand-short-name }, in questa pagina sono ancora presenti elementi non sicuri (ad esempio immagini). <label data-l10n-name="link">Ulteriori informazioni</label>
 identity-description-passive-loaded-insecure2 = Alcuni elementi di questo sito web non sono sicuri (ad esempio immagini).
 identity-description-passive-loaded-mixed2 = Nonostante alcuni elementi siano stati bloccati da { -brand-short-name }, in questa pagina sono ancora presenti elementi non sicuri (ad esempio immagini).
 identity-description-active-loaded = La connessione con questo sito web non è sicura in quanto presenta contenuti non sicuri (ad esempio script).
 identity-description-active-loaded-insecure = Le informazioni inviate, come ad esempio password, messaggi, dati delle carte di credito, ecc. potrebbero essere visibili ad altri soggetti.
-identity-learn-more =
-    .value = Ulteriori informazioni
 identity-disable-mixed-content-blocking =
     .label = Disattiva temporaneamente protezione
     .accesskey = D
@@ -461,13 +472,6 @@ popup-select-window-or-screen =
     .label = Finestra o schermo:
     .accesskey = F
 popup-all-windows-shared = Tutte le finestre visibili sullo schermo verranno condivise.
-popup-screen-sharing-block =
-    .label = Blocca
-    .accesskey = B
-popup-screen-sharing-always-block =
-    .label = Blocca sempre
-    .accesskey = s
-popup-mute-notifications-checkbox = Disattiva notifiche dai siti web durante la condivisione
 
 ## WebRTC window or screen share tab switch warning
 
@@ -480,11 +484,15 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = Per utilizzare la scorciatoia da tastiera F12, aprire prima gli strumenti di sviluppo usando il menu “Sviluppo web”.
 enable-devtools-popup-description2 = Per utilizzare la scorciatoia da tastiera F12, aprire prima gli strumenti di sviluppo usando il menu ”Strumenti del browser”.
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = Chiudi
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Cerca o inserisci un indirizzo
 # This placeholder is used in search mode with search engines that search the
@@ -559,6 +567,13 @@ urlbar-result-action-search-w-engine = Cerca con { $engine }
 urlbar-result-action-sponsored = Sponsorizzato
 urlbar-result-action-switch-tab = Passa alla scheda
 urlbar-result-action-visit = Apri
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = Passa alla scheda · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = Apri indirizzo dagli appunti
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -587,6 +602,12 @@ urlbar-result-action-copy-to-clipboard = Copia
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = Cerca con { $engine }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -598,12 +619,12 @@ urlbar-result-action-search-actions = Cerca nelle azioni
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
 # A label shown above the search suggestions group in the urlbar results. It
-# should use title case.
+# should use sentence case.
 # Variables
 #  $engine (String): the name of the search engine providing the suggestions
 urlbar-group-search-suggestions =
@@ -611,6 +632,29 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = Azioni rapide
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = Ricerche recenti
+
+# The header shown above trending results.
+# Variables:
+#  $engine (String): the name of the search engine providing the trending suggestions
+urlbar-group-trending =
+  .label = Di tendenza su { $engine }
+
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show =
+    .label = Non mostrare ricerche di tendenza
+    .accesskey = z
+urlbar-result-menu-trending-why =
+    .label = Perché viene visualizzato questo elemento?
+    .accesskey = P
+
+# A message that replaces a result when the user dismisses all suggestions of a
+# particular type.
+urlbar-trending-dismissal-acknowledgment = Grazie per il tuo feedback. Le ricerche di tendenza non verranno più visualizzate.
 
 ## Reader View toolbar buttons
 
@@ -629,12 +673,11 @@ picture-in-picture-urlbar-button-open =
     .tooltiptext = Apri Picture-in-Picture ({ $shortcut })
 picture-in-picture-urlbar-button-close =
     .tooltiptext = Chiudi Picture-in-Picture ({ $shortcut })
-
 picture-in-picture-panel-header = Picture-in-Picture
 picture-in-picture-panel-headline = Questo sito web sconsiglia l’utilizzo di Picture-in-Picture
 picture-in-picture-panel-body = I video potrebbero non essere visualizzati come previsto dallo sviluppatore utilizzando Picture-in-Picture.
 picture-in-picture-enable-toggle =
-  .label = Attiva comunque
+    .label = Attiva comunque
 
 ## Full Screen and Pointer Lock UI
 
@@ -651,19 +694,6 @@ fullscreen-exit-mac-button = Esci da schermo intero (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.
 pointerlock-warning-no-domain = Questo documento sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>Una parte di questa pagina si è bloccata.</strong> Invia una segnalazione a { -brand-product-name } per comunicare questo problema e fare in modo che venga risolto più rapidamente.
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = Una parte di questa pagina si è bloccata. Invia una segnalazione a { -brand-product-name } per comunicare questo problema e fare in modo che venga risolto più rapidamente.
-crashed-subframe-learnmore-link =
-    .value = Ulteriori informazioni
-crashed-subframe-submit =
-    .label = Invia segnalazione
-    .accesskey = s
 
 ## Bookmarks panels, menus and toolbar
 
@@ -716,8 +746,6 @@ bookmarks-search =
     .label = Cerca nei segnalibri
 bookmarks-tools =
     .label = Strumenti per i segnalibri
-bookmarks-bookmark-edit-panel =
-    .label = Modifica segnalibro
 bookmarks-subview-edit-bookmark =
     .label = Modifica segnalibro…
 # The aria-label is a spoken label that should not include the word "toolbar" or
@@ -734,8 +762,6 @@ bookmarks-toolbar-placeholder =
 bookmarks-toolbar-placeholder-button =
     .label = Elementi della barra dei segnalibri
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = Aggiungi scheda corrente ai segnalibri
 bookmarks-subview-bookmark-tab =
     .label = Aggiungi scheda corrente ai segnalibri…
 
@@ -760,11 +786,6 @@ repair-text-encoding-button =
 
 ## Customize Toolbar Buttons
 
-# Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = Estensioni e temi
-    .tooltiptext = Gestisci estensioni e temi ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -814,13 +835,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = C
 
 panel-save-update-username = Nome utente
 panel-save-update-password = Password
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = Rimuovere { $name }?
-addon-removal-abuse-report-checkbox = Segnala questa estensione a { -vendor-short-name }
 
 ##
 
@@ -889,8 +903,6 @@ navbar-library =
     .tooltiptext = Visualizza cronologia, password salvate e altro ancora
 navbar-search =
     .title = Cerca
-navbar-accessibility-indicator =
-    .tooltiptext = Caratteristiche per l’accessibilità attive
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -908,13 +920,28 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>Vuoi riaprire le schede aperte in precedenza?</strong> È possibile ripristinare la sessione precedente dal menu <img data-l10n-name="icon"/> di { -brand-short-name }, nella sezione Cronologia.
 restore-session-startup-suggestion-button = Mostra come fare
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = La tua organizzazione ha bloccato l’accesso ai file locali su questo computer
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = Alcune informazioni vengono inviate automaticamente a { -vendor-short-name } da { -brand-short-name } per migliorarne l’utilizzo.
 data-reporting-notification-button =
     .label = Scegli cosa condividere
     .accesskey = S
+# Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = Navigazione anonima
+
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = Prevenzione perdita dati (DLP) tramite { $agentName }. Fai clic per ulteriori informazioni.
+content-analysis-panel-title = Protezione dati
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = La tua organizzazione utilizza { $agentName } per proteggersi da eventuali perdite di dati. <a data-l10n-name="info">Ulteriori informazioni</a>
 
 ## Unified extensions (toolbar) button
 
@@ -940,6 +967,24 @@ unified-extensions-button-quarantined =
         Estensioni
         Alcune estensioni non sono consentite
 
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = Termina sessione anonima
+    .tooltiptext = Termina sessione anonima
+reset-pbm-panel-heading = Terminare la sessione anonima?
+reset-pbm-panel-description = Chiudi tutte le schede anonime e cancella cronologia, cookie e tutti gli altri dati dei siti web.
+reset-pbm-panel-always-ask-checkbox =
+    .label = Chiedi sempre
+    .accesskey = C
+reset-pbm-panel-cancel-button =
+    .label = Annulla
+    .accesskey = A
+reset-pbm-panel-confirm-button =
+    .label = Elimina dati della sessione
+    .accesskey = E
+reset-pbm-panel-complete = Dati della sessione anonima eliminati
+
 ## Autorefresh blocker
 
 refresh-blocked-refresh-label = { -brand-short-name } ha impedito a questa pagina di ricaricarsi automaticamente.
@@ -950,16 +995,9 @@ refresh-blocked-allow =
 
 ## Firefox Relay integration
 
-firefox-relay-offer-why-relay = { -relay-brand-name } nasconde il tuo indirizzo email reale per proteggerti da violazioni di dati e posta indesiderata.
-firefox-relay-offer-how-we-integrate = Se continui potrai generare nuovi alias di posta elettronica con { -relay-brand-short-name } direttamente dal gestore password di { -brand-shorter-name }.
-# Variables:
-#  $sitename (String): name of the site where user enters their Relay mask
-#  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-does = Le email da <strong>{ $sitename }</strong> verranno inoltrate a <strong>{ $useremail }</strong>.
-
-## Popup Notification
-
 firefox-relay-offer-why-to-use-relay = I nostri alias di posta elettronica, sicuri e facili da utilizzare, proteggono la tua identità e bloccano lo spam nascondendo il tuo indirizzo reale.
+# Variables:
+#  $useremail (String): user email that will receive messages
 firefox-relay-offer-what-relay-provides = Tutte le email inviate al tuo alias verranno inoltrate a <strong>{ $useremail }</strong> (a meno che tu non decida di bloccarle).
 firefox-relay-offer-legal-notice = Facendo clic su “Utilizza alias di posta elettronica”, accetti le <label data-l10n-name="tos-url">Condizioni di utilizzo del servizio</label> e l’<label data-l10n-name="privacy-url">Informativa sulla privacy</label>.
 
@@ -968,6 +1006,11 @@ firefox-relay-offer-legal-notice = Facendo clic su “Utilizza alias di posta el
 popup-notification-addon-install-unsigned =
     .value = (non verificato)
 popup-notification-xpinstall-prompt-learn-more = Scopri come installare componenti aggiuntivi in completa sicurezza
+
+# Note: Access key is set to P to match "Private" in the corresponding localized label.
+popup-notification-addon-privatebrowsing-checkbox =
+    .label = Esegui in finestre anonime
+    .accesskey = a
 
 ## Pop-up warning
 
@@ -997,4 +1040,3 @@ popup-warning-button =
 #   $popupURI (String): the URI for the pop-up window
 popup-show-popup-menuitem =
     .label = Visualizza “{ $popupURI }”
-

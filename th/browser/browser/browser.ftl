@@ -5,39 +5,6 @@
 
 ## The main browser window's title
 
-# These are the default window titles everywhere except macOS. The first two
-# attributes are used when the web content opened has no title:
-#
-# default - "Mozilla Firefox"
-# private - "Mozilla Firefox (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } (การเรียกดูแบบส่วนตัว)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (การเรียกดูแบบส่วนตัว)
-# These are the default window titles on macOS. The first two are for use when
-# there is no content title:
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox — (Private Browsing)"
-#
-# The last two are for use when there *is* a content title.
-# Do not use the brand name in the last two attributes, as we do on non-macOS.
-#
-# Also note the other subtle difference here: we use a `-` to separate the
-# brand name from `(Private Browsing)`, which does not happen on other OSes.
-#
-# Variables:
-#  $content-title (String): the title of the web content.
-browser-main-window-mac =
-    .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (การเรียกดูแบบส่วนตัว)
-    .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (การเรียกดูแบบส่วนตัว)
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -103,7 +70,7 @@ urlbar-eme-notification-anchor =
 urlbar-web-authn-anchor =
     .tooltiptext = เปิดแผง ​Web Authentication
 urlbar-canvas-notification-anchor =
-    .tooltiptext = จัดการสิทธิ์อนุญาตการสกัดข้อมูลจาก canvas
+    .tooltiptext = จัดการการกำหนดสิทธิ์ในการสกัดข้อมูลจาก Canvas
 urlbar-web-rtc-share-microphone-notification-anchor =
     .tooltiptext = จัดการการแบ่งปันไมโครโฟนของคุณกับไซต์
 urlbar-default-notification-anchor =
@@ -114,16 +81,12 @@ urlbar-xr-notification-anchor =
     .tooltiptext = เปิดแผงสิทธิอนุญาตความจริงเสมือน
 urlbar-storage-access-anchor =
     .tooltiptext = เปิดแผงสิทธิอนุญาตกิจกรรมการเรียกดู
-urlbar-translate-notification-anchor =
-    .tooltiptext = แปลหน้านี้
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = จัดการการแบ่งปันหน้าต่างหรือหน้าจอของคุณกับไซต์
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = เปิดแผงข้อความที่เก็บข้อมูลออฟไลน์
 urlbar-password-notification-anchor =
     .tooltiptext = เปิดแผงข้อความบันทึกรหัสผ่าน
-urlbar-translated-notification-anchor =
-    .tooltiptext = จัดการการแปลหน้า
 urlbar-plugins-notification-anchor =
     .tooltiptext = จัดการการใช้ปลั๊กอิน
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -131,7 +94,7 @@ urlbar-web-rtc-share-devices-notification-anchor =
 # "Speakers" is used in a general sense that might include headphones or
 # another audio output connection.
 urlbar-web-rtc-share-speaker-notification-anchor =
-    .tooltiptext = จัดการการแบ่งปันลำโพงอื่น ๆ กับไซต์
+    .tooltiptext = จัดการการแบ่งปันลำโพงอื่นๆ กับไซต์
 urlbar-autoplay-notification-anchor =
     .tooltiptext = เปิดแผงการเล่นอัตโนมัติ
 urlbar-persistent-storage-notification-anchor =
@@ -218,10 +181,6 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
-page-action-manage-extension =
-    .label = จัดการส่วนขยาย…
-page-action-remove-extension =
-    .label = เอาส่วนขยายออก
 page-action-manage-extension2 =
     .label = จัดการส่วนขยาย…
     .accesskey = E
@@ -320,6 +279,9 @@ quickactions-cmd-plugins = ปลั๊กอิน
 # Opens the print dialog
 quickactions-print2 = พิมพ์หน้า
 quickactions-cmd-print = พิมพ์
+# Opens the print dialog at the save to PDF option
+quickactions-savepdf = บันทึกหน้าเป็น PDF
+quickactions-cmd-savepdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = เปิดหน้าต่างส่วนตัว
 quickactions-cmd-private = การเรียกดูแบบส่วนตัว
@@ -336,8 +298,8 @@ quickactions-cmd-screenshot = ภาพหน้าจอ
 quickactions-settings2 = จัดการการตั้งค่า
 quickactions-cmd-settings = การตั้งค่า, การกำหนดลักษณะ, ตัวเลือก
 # Opens about:addons page in the themes section
-quickactions-themes = จัดการชุดรูปแบบ
-quickactions-cmd-themes = ชุดรูปแบบ
+quickactions-themes = จัดการชุดตกแต่ง
+quickactions-cmd-themes = ชุดตกแต่ง
 # Opens a SUMO article explaining how to update the browser
 quickactions-update = อัปเดต { -brand-short-name }
 quickactions-cmd-update = อัปเดต
@@ -385,6 +347,7 @@ identity-connection-secure = การเชื่อมต่อปลอดภ
 identity-connection-failure = การเชื่อมต่อล้มเหลว
 identity-connection-internal = นี่คือหน้า { -brand-short-name } ที่ปลอดภัย
 identity-connection-file = หน้านี้ถูกจัดเก็บไว้ในคอมพิวเตอร์ของคุณ
+identity-connection-associated = หน้านี้ถูกโหลดจากหน้าอื่น
 identity-extension-page = หน้านี้ถูกโหลดจากส่วนขยาย
 identity-active-blocked = { -brand-short-name } ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย
 identity-custom-root = การเชื่อมต่อถูกตรวจสอบโดยผู้ออกใบรับรองที่ Mozilla ไม่รู้จัก
@@ -394,14 +357,17 @@ identity-weak-encryption = หน้านี้ใช้การเข้า�
 identity-insecure-login-forms = การเข้าสู่ระบบที่ป้อนบนหน้านี้อาจถูกบุกรุกได้
 identity-https-only-connection-upgraded = (อัปเกรดเป็น HTTPS)
 identity-https-only-label = โหมด HTTPS-Only
+identity-https-only-label2 = อัปเกรดไซต์นี้เป็นการเชื่อมต่อแบบปลอดภัยโดยอัตโนมัติ
 identity-https-only-dropdown-on =
     .label = เปิด
 identity-https-only-dropdown-off =
     .label = ปิด
 identity-https-only-dropdown-off-temporarily =
     .label = ปิดชั่วคราว
-identity-https-only-info-turn-on2 = เปิดโหมด HTTPS-Only หากคุณต้องการให้ { -brand-short-name } อัปเกรดการเชื่อมต่อเมื่อเป็นไปได้
-identity-https-only-info-turn-off2 = หากหน้าดูเหมือนจะพัง คุณอาจต้องปิดโหมด HTTPS-Only สำหรับไซต์นี้เพื่อโหลดใหม่โดยใช้ HTTP ที่ไม่ปลอดภัย
+identity-https-only-info-turn-on2 = เปิดโหมด HTTPS-Only ถ้าคุณต้องการให้ { -brand-short-name } อัปเกรดการเชื่อมต่อเมื่อเป็นไปได้
+identity-https-only-info-turn-off2 = ถ้าหน้าดูเหมือนจะใช้การไม่ได้ คุณอาจต้องปิดโหมด HTTPS-Only สำหรับไซต์นี้เพื่อโหลดใหม่โดยใช้ HTTP แบบไม่ปลอดภัย
+identity-https-only-info-turn-on3 = เปิดการอัปเกรด HTTPS สำหรับไซต์นี้ถ้าคุณต้องการให้ { -brand-short-name } อัปเกรดการเชื่อมต่อเมื่อเป็นไปได้
+identity-https-only-info-turn-off3 = ถ้าหน้าดูเหมือนจะใช้การไม่ได้ คุณอาจต้องปิดการอัปเกรด HTTPS สำหรับไซต์นี้เพื่อโหลดใหม่โดยใช้ HTTP แบบไม่ปลอดภัย
 identity-https-only-info-no-upgrade = ไม่สามารถอัปเกรดการเชื่อมต่อจาก HTTP ได้
 identity-permissions-storage-access-header = คุกกี้ข้ามไซต์
 identity-permissions-storage-access-hint = บุคคลเหล่านี้สามารถใช้คุกกี้ข้ามไซต์และข้อมูลไซต์ในขณะที่คุณอยู่บนไซต์นี้ได้
@@ -412,26 +378,20 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = คุณไม่ได้เชื่อมต่ออย่างปลอดภัยไปยังไซต์นี้
 identity-connection-verified = คุณได้เชื่อมต่ออย่างปลอดภัยไปยังไซต์นี้
 identity-ev-owner-label = ออกใบรับรองให้กับ:
-identity-description-custom-root = Mozilla ไม่รู้จักผู้ออกใบรับรองนี้ ซึ่งอาจถูกเพิ่มจากระบบปฏิบัติการของคุณหรือโดยผู้ดูแลระบบ <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
-identity-description-custom-root2 = Mozilla ไม่รู้จักผู้ออกใบรับรองนี้ ซึ่งอาจถูกเพิ่มจากระบบปฏิบัติการของคุณหรือโดยผู้ดูแลระบบ
+identity-description-custom-root2 = Ablaze ไม่รู้จักผู้ออกใบรับรองนี้ ซึ่งอาจถูกเพิ่มจากระบบปฏิบัติการของคุณหรือโดยผู้ดูแลระบบ
 identity-remove-cert-exception =
     .label = เอาข้อยกเว้นออก
     .accesskey = อ
 identity-description-insecure = การเชื่อมต่อของคุณไปยังไซต์นี้ไม่เป็นส่วนตัว ข้อมูลที่คุณแบ่งปันกับไซต์นี้สามารถดูได้โดยผู้อื่น (เช่น รหัสผ่าน, ข้อความ, บัตรเครดิต ฯลฯ)
 identity-description-insecure-login-forms = การเข้าสู่ระบบที่คุณป้อนบนหน้านี้ไม่ปลอดภัยและอาจถูกบุกรุกได้
 identity-description-weak-cipher-intro = การเชื่อมต่อของคุณไปยังเว็บไซต์นี้ใช้การเข้ารหัสที่อ่อนแอและไม่เป็นส่วนตัว
-identity-description-weak-cipher-risk = ผู้คนอื่น ๆ สามารถดูข้อมูลของคุณหรือเปลี่ยนแปลงลักษณะการทำงานของเว็บไซต์
-identity-description-active-blocked = { -brand-short-name } ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
+identity-description-weak-cipher-risk = คนอื่นๆ จะสามารถดูข้อมูลของคุณหรือปรับเปลี่ยนลักษณะการทำงานของเว็บไซต์ได้
 identity-description-active-blocked2 = { -brand-short-name } ได้ปิดกั้นบางส่วนของหน้านี้ที่ไม่ปลอดภัย
 identity-description-passive-loaded = การเชื่อมต่อของคุณไม่เป็นส่วนตัวและข้อมูลที่คุณแบ่งปันกับเว็บไซต์คนอื่นสามารถดูได้
-identity-description-passive-loaded-insecure = เว็บไซต์นี้มีเนื้อหาที่ไม่ปลอดภัย (อย่างเช่น ภาพ) <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
-identity-description-passive-loaded-mixed = ถึงแม้ว่า { -brand-short-name } ได้ปิดกั้นเนื้อหาบางส่วน แต่ก็ยังคงมีเนื้อหาในหน้าที่ไม่ปลอดภัย (อย่างเช่น ภาพ) <label data-l10n-name="link">เรียนรู้เพิ่มเติม</label>
 identity-description-passive-loaded-insecure2 = เว็บไซต์นี้มีเนื้อหาที่ไม่ปลอดภัย (อย่างเช่น ภาพ)
 identity-description-passive-loaded-mixed2 = ถึงแม้ว่า { -brand-short-name } ได้ปิดกั้นเนื้อหาบางส่วน แต่ก็ยังคงมีเนื้อหาในหน้าที่ไม่ปลอดภัย (อย่างเช่น ภาพ)
 identity-description-active-loaded = เว็บไซต์นี้ประกอบด้วยเนื้อหาที่เชื่อถือไม่ได้ (เช่น สคริปต์) และการเชื่อมต่อไปยังไซต์ก็ไม่เป็นส่วนตัว
 identity-description-active-loaded-insecure = ข้อมูลที่คุณแบ่งปันกับไซต์นี้สามารถดูได้โดยผู้อื่น (เช่น รหัสผ่าน, ข้อความ, บัตรเครดิต ฯลฯ)
-identity-learn-more =
-    .value = เรียนรู้เพิ่มเติม
 identity-disable-mixed-content-blocking =
     .label = ปิดใช้งานการป้องกันในตอนนี้
     .accesskey = ป
@@ -508,13 +468,6 @@ popup-select-window-or-screen =
     .label = หน้าต่างหรือหน้าจอ:
     .accesskey = ห
 popup-all-windows-shared = หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน
-popup-screen-sharing-block =
-    .label = ปิดกั้น
-    .accesskey = ป
-popup-screen-sharing-always-block =
-    .label = ปิดกั้นเสมอ
-    .accesskey = ส
-popup-mute-notifications-checkbox = ปิดเสียงการแจ้งเตือนเว็บไซต์ขณะแบ่งปัน
 
 ## WebRTC window or screen share tab switch warning
 
@@ -527,11 +480,13 @@ sharing-warning-disable-for-session =
 
 ## DevTools F12 popup
 
-enable-devtools-popup-description = หากต้องการใช้ทางลัด F12 ให้เปิด DevTools ก่อนผ่านเมนู Web Developer
-enable-devtools-popup-description2 = หากต้องการใช้ทางลัด F12 ให้เปิด DevTools ก่อนผ่านเมนู เครื่องมือสำหรับเบราว์เซอร์
+enable-devtools-popup-description2 = ถ้าต้องการใช้ทางลัด F12 ให้เปิด DevTools ก่อนผ่านเมนู เครื่องมือสำหรับเบราว์เซอร์
 
 ## URL Bar
 
+# This string is used as an accessible name to the "X" button that cancels a custom search mode (i.e. exits the Amazon.com search mode).
+urlbar-search-mode-indicator-close =
+    .aria-label = ปิด
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
@@ -608,6 +563,13 @@ urlbar-result-action-search-w-engine = ค้นหาด้วย { $engine }
 urlbar-result-action-sponsored = ได้รับการสนับสนุน
 urlbar-result-action-switch-tab = สลับไปยังแท็บ
 urlbar-result-action-visit = เยี่ยมชม
+# "Switch to tab with container" is used when the target tab is located in a
+# different container.
+# Variables
+# $container (String): the name of the target container
+urlbar-result-action-switch-tab-with-container = สลับไปยังแท็บ · <span>{ $container }</span>
+# Allows the user to visit a URL that was previously copied to the clipboard.
+urlbar-result-action-visit-from-clipboard = เยี่ยมชมจากคลิปบอร์ด
 # Directs a user to press the Tab key to perform a search with the specified
 # engine.
 # Variables
@@ -636,6 +598,12 @@ urlbar-result-action-copy-to-clipboard = คัดลอก
 #  $result (String): the string representation for a formula result
 urlbar-result-action-calculator-result = = { $result }
 
+## Strings used for buttons in the urlbar
+
+# Label prompting user to search with a particular search engine.
+#  $engine (String): the name of a search engine that searches a specific site
+urlbar-result-search-with = ค้นหาด้วย { $engine }
+
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
@@ -647,7 +615,7 @@ urlbar-result-action-search-actions = คำสั่งการค้นหา
 
 ## Labels shown above groups of urlbar results
 
-# A label shown above the "Midori Suggest" (bookmarks/history) group in the
+# A label shown above the "Firefox Suggest" (bookmarks/history) group in the
 # urlbar results.
 urlbar-group-firefox-suggest =
     .label = { -firefox-suggest-brand-name }
@@ -660,6 +628,11 @@ urlbar-group-search-suggestions =
 # A label shown above Quick Actions in the urlbar results.
 urlbar-group-quickactions =
     .label = คำสั่งด่วน
+# A label shown above the recent searches group in the urlbar results.
+# Variables
+#  $engine (String): the name of the search engine used to search.
+urlbar-group-recent-searches =
+    .label = การค้นหาล่าสุด
 
 ## Reader View toolbar buttons
 
@@ -680,6 +653,9 @@ picture-in-picture-urlbar-button-close =
     .tooltiptext = ปิดการแสดงภาพซ้อนภาพ ({ $shortcut })
 picture-in-picture-panel-header = ภาพที่เล่นควบคู่
 picture-in-picture-panel-headline = เว็บไซต์นี้ไม่แนะนำภาพที่เล่นควบคู่
+picture-in-picture-panel-body = วิดีโออาจไม่แสดงตามที่นักพัฒนาคาดไว้ในขณะที่เปิดใช้งานการแสดงภาพซ้อนภาพ
+picture-in-picture-enable-toggle =
+    .label = เปิดใช้งานต่อไป
 
 ## Full Screen and Pointer Lock UI
 
@@ -696,19 +672,6 @@ fullscreen-exit-mac-button = ออกจากภาพเต็มหน้า
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ได้ควบคุมตัวชี้ของคุณ กด Esc เพื่อดึงการควบคุมคืน
 pointerlock-warning-no-domain = เอกสารชิ้นนี้ได้ควบคุมตัวชี้ของคุณ กด Esc เพื่อดึงการควบคุมคืน
-
-## Subframe crash notification
-
-crashed-subframe-message = <strong>เนื้อหาบางส่วนของหน้านี้ขัดข้อง</strong> หากต้องการแจ้งให้ { -brand-product-name } ทราบเกี่ยวกับปัญหานี้เพื่อให้ได้รับการแก้ไขเร็วขึ้น โปรดส่งรายงาน
-# The string for crashed-subframe-title.title should match crashed-subframe-message,
-# but without any markup.
-crashed-subframe-title =
-    .title = เนื้อหาบางส่วนของหน้านี้ขัดข้อง หากต้องการแจ้งให้ { -brand-product-name } ทราบเกี่ยวกับปัญหานี้เพื่อให้ได้รับการแก้ไขเร็วขึ้น โปรดส่งรายงาน
-crashed-subframe-learnmore-link =
-    .value = เรียนรู้เพิ่มเติม
-crashed-subframe-submit =
-    .label = ส่งรายงาน
-    .accesskey = ส
 
 ## Bookmarks panels, menus and toolbar
 
@@ -761,8 +724,6 @@ bookmarks-search =
     .label = ค้นหาที่คั่นหน้า
 bookmarks-tools =
     .label = เครื่องมือที่คั่นหน้า
-bookmarks-bookmark-edit-panel =
-    .label = แก้ไขที่คั่นหน้านี้
 bookmarks-subview-edit-bookmark =
     .label = แก้ไขที่คั่นหน้านี้…
 # The aria-label is a spoken label that should not include the word "toolbar" or
@@ -778,9 +739,6 @@ bookmarks-toolbar-placeholder =
     .title = รายการแถบเครื่องมือที่คั่นหน้า
 bookmarks-toolbar-placeholder-button =
     .label = รายการแถบเครื่องมือที่คั่นหน้า
-# "Bookmark" is a verb, as in "Add current tab to bookmarks".
-bookmarks-current-tab =
-    .label = เพิ่มที่คั่นหน้าแท็บปัจจุบัน
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-subview-bookmark-tab =
     .label = เพิ่มที่คั่นหน้าสำหรับแท็บปัจจุบัน…
@@ -806,11 +764,6 @@ repair-text-encoding-button =
 
 ## Customize Toolbar Buttons
 
-# Variables:
-#  $shortcut (String): keyboard shortcut to open the add-ons manager
-toolbar-addons-themes-button =
-    .label = ส่วนเสริมและชุดรูปแบบ
-    .tooltiptext = จัดการส่วนเสริมและชุดรูปแบบของคุณ ({ $shortcut })
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
 toolbar-settings-button =
@@ -860,13 +813,6 @@ eme-notifications-drm-content-playing-dismiss-accesskey = ด
 
 panel-save-update-username = ชื่อผู้ใช้
 panel-save-update-password = รหัสผ่าน
-
-## Add-on removal warning
-
-# Variables:
-#  $name (String): The name of the addon that will be removed.
-addon-removal-title = ต้องการเอา { $name } ออกหรือไม่?
-addon-removal-abuse-report-checkbox = รายงานส่วนขยายนี้ไปยัง { -vendor-short-name }
 
 ##
 
@@ -935,8 +881,6 @@ navbar-library =
     .tooltiptext = ดูประวัติ, ที่คั่นหน้าที่บันทึกไว้ และอื่น ๆ
 navbar-search =
     .title = ค้นหา
-navbar-accessibility-indicator =
-    .tooltiptext = คุณลักษณะการช่วยการเข้าถึงถูกเปิดใช้งานอยู่
 # Name for the tabs toolbar as spoken by screen readers. The word
 # "toolbar" is appended automatically and should not be included in
 # in the string
@@ -954,6 +898,10 @@ tabs-toolbar-list-all-tabs =
 restore-session-startup-suggestion-message = <strong>ต้องการเปิดแท็บก่อนหน้าหรือไม่</strong> คุณสามารถเรียกคืนวาระก่อนหน้าได้จากเมนูแอปพลิเคชัน { -brand-short-name } <img data-l10n-name="icon"/> ภายใต้ ประวัติ
 restore-session-startup-suggestion-button = แสดงวิธีให้ฉันดู
 
+## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
+
+filepicker-blocked-infobar = องค์กรของคุณได้ปิดกั้นการเข้าถึงไฟล์ภายในเครื่องคอมพิวเตอร์นี้
+
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
 data-reporting-notification-message = { -brand-short-name } ส่งข้อมูลบางอย่างไปยัง { -vendor-short-name } โดยอัตโนมัติเพื่อให้เราสามารถปรับปรุงประสบการณ์ของคุณ
@@ -962,6 +910,15 @@ data-reporting-notification-button =
     .accesskey = ล
 # Label for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-label = การเรียกดูแบบส่วนตัว
+# Tooltip for the indicator shown in the window titlebar when content analysis is active.
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-indicator-tooltip =
+    .tooltiptext = ระบบป้องกันข้อมูลสูญหาย (DLP) โดย { $agentName } คลิกเพื่อดูข้อมูลเพิ่มเติม
+content-analysis-panel-title = การปกป้องข้อมูล
+# Variables:
+#   $agentName (String): The name of the DLP agent that is connected
+content-analysis-panel-text = องค์กรของคุณใช้ { $agentName } เพื่อป้องกันข้อมูลสูญหาย <a data-l10n-name="info">เรียนรู้เพิ่มเติม</a>
 
 ## Unified extensions (toolbar) button
 
@@ -981,6 +938,29 @@ unified-extensions-button-permissions-needed =
 ## Unified extensions button when some extensions are quarantined.
 ## Note that the new line is intentionally part of the tooltip.
 
+unified-extensions-button-quarantined =
+    .label = ส่วนขยาย
+    .tooltiptext =
+        ส่วนขยาย
+        ไม่ได้อนุญาตส่วนขยายบางตัว
+
+## Private browsing reset button
+
+reset-pbm-toolbar-button =
+    .label = จบวาระส่วนตัว
+    .tooltiptext = จบวาระส่วนตัว
+reset-pbm-panel-heading = จบวาระส่วนตัวของคุณหรือไม่?
+reset-pbm-panel-description = ปิดแท็บส่วนตัวทั้งหมดและลบประวัติ คุกกี้ และข้อมูลไซต์อื่น ๆ ทั้งหมด
+reset-pbm-panel-always-ask-checkbox =
+    .label = ถามฉันเสมอ
+    .accesskey = ส
+reset-pbm-panel-cancel-button =
+    .label = ยกเลิก
+    .accesskey = ย
+reset-pbm-panel-confirm-button =
+    .label = ลบข้อมูลวาระ
+    .accesskey = ล
+reset-pbm-panel-complete = ลบข้อมูลวาระส่วนตัวแล้ว
 
 ## Autorefresh blocker
 
@@ -991,15 +971,6 @@ refresh-blocked-allow =
     .accesskey = อ
 
 ## Firefox Relay integration
-
-firefox-relay-offer-why-relay = { -relay-brand-name } ปกปิดที่อยู่อีเมลที่แท้จริงของคุณเพื่อช่วยปกป้องคุณจากการรั่วไหลของข้อมูลและสแปม
-firefox-relay-offer-how-we-integrate = เมื่อดำเนินการต่อ คุณจะสามารถสร้างตัวปกปิดอีเมล { -relay-brand-short-name } ใหม่ได้โดยตรงจากตัวจัดการรหัสผ่าน { -brand-shorter-name } ของคุณ
-# Variables:
-#  $sitename (String): name of the site where user enters their Relay mask
-#  $useremail (String): user email that will receive messages
-firefox-relay-offer-what-relay-does = เราจะส่งต่ออีเมลทั้งหมดจาก <strong>{ $sitename }</strong> ไปยัง <strong>{ $useremail }</strong>
-
-## Popup Notification
 
 firefox-relay-offer-why-to-use-relay = ตัวปกปิดที่ปลอดภัยและใช้ง่ายของเราช่วยปกป้องข้อมูลประจำตัวของคุณและป้องกันสแปมด้วยการซ่อนที่อยู่อีเมลของคุณ
 # Variables:

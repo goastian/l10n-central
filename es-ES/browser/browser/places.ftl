@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Olvidar este sitio web
     .accesskey = v
+places-forget-domain-data =
+    .label = Olvidar este sitio web…
+    .accesskey = O
 places-sortby-name =
     .label = Ordenar por nombre
     .accesskey = r
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Editar carpeta…
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -134,14 +139,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Olvidar este sitio
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Esta acción eliminará todos los datos relacionados con { $hostOrBaseDomain } incluyendo el historial, contraseñas, cookies, caché y preferencias de contenido. ¿Está seguro de querer continuar?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Esta acción eliminará los datos relacionados con { $hostOrBaseDomain } incluyendo el historial, contraseñas, cookies, caché y preferencias de contenido. Los marcadores y contraseñas no se eliminarán. ¿Está seguro de querer continuar?
 places-forget-about-this-site-forget = Olvidar
-places-library =
-    .title = Catálogo
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Catálogo
 places-organize-button =

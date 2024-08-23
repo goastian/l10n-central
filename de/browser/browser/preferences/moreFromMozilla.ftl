@@ -11,18 +11,8 @@ more-from-moz-category =
 more-from-moz-subtitle = Sehen Sie sich andere { -vendor-short-name }-Produkte an, die ein gesundes Internet unterstützen.
 more-from-moz-firefox-mobile-title = { -brand-product-name } für Mobilgeräte
 more-from-moz-firefox-mobile-description = Der mobile Browser, für den Ihre Privatsphäre an erster Stelle steht.
-more-from-moz-firefox-mobile-description-advanced = Von der Blockierung von Trackern bis hin zur Bremse für nervige automatische Wiedergabe arbeiten die mobilen Browser von { -brand-product-name } Überstunden, um sicherzustellen, dass Sie das gute Internet kriegen.
 more-from-moz-mozilla-vpn-title = { -mozilla-vpn-brand-name }
 more-from-moz-mozilla-vpn-description = Entdecken Sie eine zusätzliche Ebene des anonymen Surfens und Schutzes.
-more-from-moz-mozilla-vpn-description-advanced = { -mozilla-vpn-brand-name } fügt eine weitere Ebene des anonymen Surfens und Schutzes hinzu. Und im Gegensatz zu einigen anderen VPNs ist es sicher und verfolgt Ihre Aktivitäten nicht.
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-title = { -rally-brand-name }
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-description = Setzen Sie Ihre Daten für ein besseres Internet für alle ein.
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-mozilla-rally-description-advanced = Spenden Sie Ihre Daten an Forschungsstudien, die darauf abzielen, ein sichereres, offeneres Internet zu schaffen, das Menschen hilft, nicht Big Tech.
-# This string is specific to the product Mozilla Rally which is US only.
-more-from-moz-button-mozilla-rally-2 = Bei { -rally-short-name } mitmachen
 more-from-moz-qr-code-box-firefox-mobile-title = Laden Sie ihn mit Ihrem Mobilgerät herunter. Richten Sie Ihre Kamera auf den QR-Code. Wenn ein Link angezeigt wird, tippen Sie darauf.
 more-from-moz-qr-code-box-firefox-mobile-button = Stattdessen eine E-Mail an Ihr Telefon senden
 more-from-moz-qr-code-firefox-mobile-img =
@@ -35,3 +25,10 @@ more-from-moz-learn-more-link = Weitere Informationen
 more-from-moz-firefox-relay-title = { -relay-brand-name }
 more-from-moz-firefox-relay-description = Schützen Sie Ihren Posteingang und Ihre Identität mit kostenloser E-Mail-Maskierung.
 more-from-moz-firefox-relay-button = { -relay-brand-short-name } holen
+
+## These strings are for the Mozilla Monitor card in about:preferences moreFromMozilla page
+
+more-from-moz-mozilla-monitor-title = { -mozmonitor-brand-name }
+more-from-moz-mozilla-monitor-us-description = Nehmen Sie Ihre offengelegten persönlichen Daten automatisch zurück.
+more-from-moz-mozilla-monitor-global-description = Erhalten Sie Warnungen, wenn Ihre Daten von einem Leck betroffen sind.
+more-from-moz-mozilla-monitor-button = { -monitor-brand-short-name } holen

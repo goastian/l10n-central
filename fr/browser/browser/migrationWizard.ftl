@@ -34,7 +34,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 Secure Browser
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge (anciennes versions)
-migration-wizard-migrator-display-name-firefox = Firefox
+migration-wizard-migrator-display-name-firefox = Midori
 migration-wizard-migrator-display-name-file-password-csv = Mots de passe depuis un fichier CSV
 migration-wizard-migrator-display-name-file-bookmarks = Marque-pages depuis un fichier HTML
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
@@ -42,6 +42,25 @@ migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
 migration-wizard-migrator-display-name-safari = Safari
 migration-wizard-migrator-display-name-vivaldi = Vivaldi
+migration-source-name-ie = Internet Explorer
+migration-source-name-edge = Microsoft Edge
+migration-source-name-chrome = Google Chrome
+migration-imported-safari-reading-list = Liste de lecture (depuis Safari)
+migration-imported-edge-reading-list = Liste de lecture (depuis Edge)
+
+## These strings are shown if the selected browser data directory is unreadable.
+## In practice, this tends to only occur on Linux when Firefox
+## is installed as a Snap.
+
+migration-no-permissions-message = { -brand-short-name } n’a pas accès aux profils d’autres navigateurs installés sur cet appareil.
+migration-no-permissions-instructions = Pour poursuivre l’importation des données d’un autre navigateur, accordez à { -brand-short-name } l’accès à son dossier de profil.
+migration-no-permissions-instructions-step1 = Sélectionnez « Continuer »
+# The second step in getting permissions to read data for the selected
+# browser type.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2 = Dans le sélecteur de fichier, accédez à <code>{ $permissionsPath }</code> et choisissez « Sélectionner »
 
 ## These strings will be displayed based on how many resources are selected to import
 
@@ -57,6 +76,7 @@ migration-bookmarks-option-label = Marque-pages
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = Favoris
 migration-logins-and-passwords-option-label = Identifiants et mots de passe enregistrés
+migration-passwords-option-label = Mots de passe enregistrés
 migration-history-option-label = Historique de navigation
 migration-extensions-option-label = Extensions
 migration-form-autofill-option-label = Données de remplissage automatique des formulaires
@@ -158,7 +178,14 @@ migration-list-payment-methods-label = moyens de paiement
 ##
 
 migration-wizard-progress-header = Importation des données
+# This header appears in the final page of the migration wizard only if
+# all resources were imported successfully.
 migration-wizard-progress-done-header = Données correctement importées
+# This header appears in the final page of the migration wizard if only
+# some of the resources were imported successfully. This is meant to be
+# distinct from migration-wizard-progress-done-header, which is only shown
+# if all resources were imported successfully.
+migration-wizard-progress-done-with-warnings-header = Importation des données terminée
 migration-wizard-progress-icon-in-progress =
     .aria-label = Importation…
 migration-wizard-progress-icon-completed =
@@ -219,6 +246,10 @@ migration-wizard-progress-partial-success-extensions =
         [one] { $matched } extension sur { $quantity }
        *[other] { $matched } extensions sur { $quantity }
     }
+migration-wizard-progress-extensions-support-link = Découvrez comment { -brand-product-name } identifie les extensions
+# Shown in the migration wizard if there are no matched extensions
+# on import from supported browsers.
+migration-wizard-progress-no-matched-extensions = Aucune extension identifiée
 migration-wizard-progress-extensions-addons-link = Parcourir les extensions pour { -brand-short-name }
 
 ##
@@ -251,8 +282,8 @@ migration-wizard-progress-success-formdata = Historique des formulaires
 #  $quantity (Number): the number of successfully imported payment methods
 migration-wizard-progress-success-payment-methods =
     { $quantity ->
-        [one] { $quantity } mode de paiement
-       *[other] { $quantity } modes de paiement
+        [one] { $quantity } moyen de paiement
+       *[other] { $quantity } moyens de paiement
     }
 migration-wizard-safari-permissions-sub-header = Pour importer les marque-pages et l’historique de navigation de Safari :
 migration-wizard-safari-instructions-continue = Sélectionnez « Continuer »

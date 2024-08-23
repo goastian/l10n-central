@@ -49,7 +49,7 @@ import-from-chromium =
     .label = „Chromium“
     .accesskey = u
 import-from-firefox =
-    .label = Firefox
+    .label = Midori
     .accesskey = F
 import-from-360se =
     .label = „360 Secure Browser“
@@ -63,9 +63,6 @@ import-items-page-title = Importuotini elementai
 import-items-description = Pasirinkite, ką importuoti:
 
 import-permissions-page-title = Suteikite leidimus { -brand-short-name }“
-
-# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
-import-permissions-description = „macOS“ reikalauja, kad leistumėte „{ -brand-short-name }“ pasiekti „Safari“ adresyną. Spustelėkite „Tęsti“, ir pasirinkite „Bookmarks.plist“ failą iš pasirodančio failų atvėrimo skydelio.
 
 import-migrating-page-title = Importuojama…
 
@@ -158,3 +155,4 @@ browser-data-session-checkbox =
     .label = Langai ir kortelės
 browser-data-session-label =
     .value = Langai ir kortelės
+

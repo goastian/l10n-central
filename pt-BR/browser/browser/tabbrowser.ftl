@@ -114,6 +114,14 @@ tabbrowser-confirm-caretbrowsing-title = Navegação com cursor do teclado
 tabbrowser-confirm-caretbrowsing-message = A tecla F7 ativa ou desativa a navegação com cursor do teclado. Este recurso coloca um cursor móvel em páginas web, permitindo selecionar texto usando o teclado. Quer ativar a navegação com cursor do teclado?
 tabbrowser-confirm-caretbrowsing-checkbox = Não mostrar mais este aviso.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Atenção
+tabbrowser-confirm-close-duplicate-tabs-text = A aba com atividade mais recente permanecerá aberta
+tabbrowser-confirm-close-all-duplicate-tabs-title = Fechar abas duplicadas?
+tabbrowser-confirm-close-all-duplicate-tabs-text = As abas duplicadas nesta janela serão fechadas. A aba com atividade mais recente permanecerá aberta.
+tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = Fechar abas
+
 ##
 
 # Variables:

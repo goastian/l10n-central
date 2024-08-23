@@ -56,14 +56,14 @@ neterror-dns-not-found-hint-firewall = 检查 { -brand-short-name } 是否有联
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = { -brand-short-name } 无法通过可信 DNS 解析器保护您对本网址的请求。原因如下：
-neterror-dns-not-found-trr-third-party-warning = 您可以继续使用不安全的 DNS 解析器，但第三方将有可能得知您访问过哪些网站。
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } 无法通过我们的安全 DNS 提供方来保护您对此网址的请求。原因如下：
 neterror-dns-not-found-trr-third-party-warning2 = 您可以继续使用默认 DNS 解析器，但第三方将有可能得知您访问过哪些网站。
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name } 无法连接到 { $trrDomain }。
 neterror-dns-not-found-trr-only-timeout = 连接到 { $trrDomain } 的时间超过预期。
 neterror-dns-not-found-trr-offline = 您未连接到互联网。
-neterror-dns-not-found-trr-unknown-host = { $trrDomain } 找不到此网站的地址。
 neterror-dns-not-found-trr-unknown-host2 = { $trrDomain } 找不到此网站。
 neterror-dns-not-found-trr-server-problem = { $trrDomain } 出现问题。
+neterror-dns-not-found-bad-trr-url = 无效网址。
 neterror-dns-not-found-trr-unknown-problem = 未知问题。
 
 ## Native fallback specific messages
@@ -71,6 +71,7 @@ neterror-dns-not-found-trr-unknown-problem = 未知问题。
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = { -brand-short-name } 无法通过可信 DNS 解析器保护您对本网址的请求。原因如下：
+neterror-dns-not-found-native-fallback-reason2 = { -brand-short-name } 无法通过我们的安全 DNS 提供方来保护您对此网址的请求。原因如下：
 neterror-dns-not-found-native-fallback-heuristic = 您的网络已禁用基于 HTTPS 的 DNS。
 neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } 无法连接至 { $trrDomain }。
 

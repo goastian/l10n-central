@@ -23,6 +23,9 @@ bookmark-overlay-folders-expander2 =
     .tooltiptext = Mostrar todas las carpetas de marcadores
 bookmark-overlay-folders-expander-hide =
     .tooltiptext = Ocultar
+# bookmark-overlay-folders-tree is used to provide an accessible name to the tree view of the Bookmarks directory, when it is expanded
+bookmark-overlay-folders-tree =
+    .aria-label = Carpetas
 bookmark-overlay-new-folder-button =
     .label = Nueva carpeta
     .accesskey = t

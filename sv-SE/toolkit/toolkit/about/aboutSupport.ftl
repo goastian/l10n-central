@@ -15,6 +15,10 @@ support-addons-type = Typ
 support-addons-enabled = Aktiverad
 support-addons-version = Version
 support-addons-id = ID
+legacy-user-stylesheets-title = Äldre stilmallar för användare
+legacy-user-stylesheets-enabled = Aktiv
+legacy-user-stylesheets-stylesheet-types = Stilmallar
+legacy-user-stylesheets-no-stylesheets-found = Inga stilmallar hittades
 security-software-title = Säkerhetsprogram
 security-software-type = Typ
 security-software-name = Namn
@@ -74,6 +78,7 @@ app-basics-key-mozilla = Nyckel Mozilla Location Service
 app-basics-safe-mode = Felsäkert läge
 app-basics-memory-size = Minnesstorlek (RAM)
 app-basics-disk-available = Tillgängligt diskutrymme
+app-basics-pointing-devices = Pekdon
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -179,6 +184,25 @@ media-codec-support-hw-decoding = Hårdvaruavkodning
 media-codec-support-codec-name = Namn på codec
 media-codec-support-supported = Stöds
 media-codec-support-unsupported = Stöds inte
+media-codec-support-error = Codec-supportinformation är inte tillgänglig. Försök igen efter att ha spelat upp en mediefil.
+media-codec-support-lack-of-extension = Installera tillägg
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Information om innehållsdekrypteringsmoduler
+media-key-system-name = Namn på nyckelsystem
+media-video-robustness = Videons robusthet
+media-audio-robustness = Ljudets robusthet
+media-cdm-capabilities = Förmågor
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Rensa inledning
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2-kompatibel
 
 ##
 
@@ -258,6 +282,7 @@ try-newer-driver = Blockeras på grund av grafikdrivrutinens version. Prova att 
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType-parametrar
 compositing = Komposition
+support-font-determination = Felsökningsinfo för teckensnitts synlighet
 hardware-h264 = H264 hårdvaruavkodning
 main-thread-no-omtc = huvudtråden, ingen OMTC
 yes = Ja
@@ -319,6 +344,9 @@ has-seccomp-bpf = Seccomp-BPF (Systemanropsfiltrering)
 has-seccomp-tsync = Seccomp-trådsynkronisering
 has-user-namespaces = Användarnamnområden
 has-privileged-user-namespaces = Användarnamnområden för privilegierade processer
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } — Den här funktionen är inte tillåten i ditt system. Detta kan begränsa säkerhetsfunktionerna i { -brand-short-name }.
 can-sandbox-content = Sandlåda för innehållsprocesser
 can-sandbox-media = Sandlåda för insticksmodul media
 content-sandbox-level = Sandlådenivå för innehållsprocess
@@ -387,6 +415,20 @@ support-printing-modified-settings = Ändrade utskriftsinställningar
 support-printing-prefs-name = Namn
 support-printing-prefs-value = Värde
 
+## Remote Settings sections
+
+support-remote-settings-title = Fjärrinställningar
+support-remote-settings-status = Status
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Fungerar inte
+support-remote-settings-last-check = Sista kontrollen
+support-remote-settings-local-timestamp = Lokal tidsstämpel
+support-remote-settings-sync-history = Historik
+support-remote-settings-sync-history-status = Status
+support-remote-settings-sync-history-datetime = Datum
+support-remote-settings-sync-history-infos = Info
+
 ## Normandy sections
 
 support-remote-experiments-title = Fjärrexperiment
@@ -396,3 +438,22 @@ support-remote-experiments-see-about-studies = Se <a data-l10n-name="support-abo
 support-remote-features-title = Fjärrfunktioner
 support-remote-features-name = Namn
 support-remote-features-status = Status
+
+## Pointing devices
+
+pointing-device-mouse = Mus
+pointing-device-touchscreen = Pekskärm
+pointing-device-pen-digitizer = Digital penna
+pointing-device-none = Inga pekdon
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Innehållsanalys (DLP)
+content-analysis-active = Aktiv
+content-analysis-connected-to-agent = Ansluten till Agent
+content-analysis-agent-path = Agentsökväg
+content-analysis-agent-failed-signature-verification = Agent misslyckades signaturverifiering
+content-analysis-request-count = Antal förfrågningar

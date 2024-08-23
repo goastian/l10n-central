@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = door { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Aanbeveling
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Aanbeveling
     .tooltiptext = Aanbeveling voor extensie
     .a11y-announcement = Aanbeveling voor extensie beschikbaar
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Aanbeveling
     .tooltiptext = Aanbeveling voor functie
     .a11y-announcement = Aanbeveling voor functie beschikbaar
@@ -61,6 +63,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Synchroniseer uw bladwijzers overal.
 cfr-doorhanger-bookmark-fxa-body = Goed gevonden! Zorg er nu voor dat u niet zonder bladwijzers zit op uw mobiele apparaten. Ga van start met { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body-2 = Goed gevonden! Zorg er nu voor dat u niet zonder deze bladwijzer zit op uw mobiele apparaten. Ga van start met een account.
 cfr-doorhanger-bookmark-fxa-link-text = Bladwijzers nu synchroniseren…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Knop Sluiten
@@ -106,28 +109,12 @@ cfr-doorhanger-doh-primary-button-2 = Oké
 cfr-doorhanger-doh-secondary-button = Uitschakelen
     .accesskey = U
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Uw privacy is belangrijk. { -brand-short-name } isoleert, of sandboxt, websites nu van elkaar, waardoor het voor hackers moeilijker wordt om wachtwoorden, creditcardnummers en andere gevoelige informatie te stelen.
-cfr-doorhanger-fission-header = Website-isolatie
-cfr-doorhanger-fission-primary-button = OK, begrepen
-    .accesskey = O
-cfr-doorhanger-fission-secondary-button = Meer info
-    .accesskey = M
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Video’s op deze website worden mogelijk in deze versie van { -brand-short-name } niet correct afgespeeld. Werk { -brand-short-name } nu bij voor volledige video-ondersteuning.
 cfr-doorhanger-video-support-header = Werk { -brand-short-name } bij om video af te spelen
 cfr-doorhanger-video-support-primary-button = Nu bijwerken
     .accesskey = w
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = Meer info
-    .title = Uitvouwen voor meer info over de functie
-spotlight-learn-more-expanded = Meer info
-    .title = Sluiten
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -142,20 +129,6 @@ spotlight-public-wifi-vpn-primary-button = Blijf privé met { -mozilla-vpn-brand
     .accesskey = B
 spotlight-public-wifi-vpn-link = Niet nu
     .accesskey = N
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Maak een testrit in onze krachtigste
-    privacy-ervaring ooit
-spotlight-total-cookie-protection-body = Totale cookiebescherming voorkomt dat trackers cookies gebruiken om u stiekem op het internet te volgen.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = { -brand-short-name } bouwt een hek rond cookies, waardoor ze worden beperkt tot de website waarop u zich bevindt, zodat trackers ze niet kunnen gebruiken om u te volgen. Als vroege gebruiker helpt u deze functie te optimaliseren, zodat we een beter internet voor iedereen kunnen blijven bouwen.
-spotlight-total-cookie-protection-primary-button = Totale cookiebescherming inschakelen
-spotlight-total-cookie-protection-secondary-button = Niet nu
 
 ## Emotive Continuous Onboarding
 
@@ -232,6 +205,9 @@ cfr-cbh-confirm-button = Cookiebanners weigeren
     .accesskey = w
 cfr-cbh-dismiss-button = Niet nu
     .accesskey = N
+cookie-banner-blocker-onboarding-header = { -brand-short-name } heeft zojuist een cookiebanner voor u geweigerd
+cookie-banner-blocker-onboarding-body = Minder afleiding, minder cookies die u volgen op deze website.
+cookie-banner-blocker-onboarding-learn-more = Meer info
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -249,3 +225,60 @@ fox-doodle-pin-secondary = Niet nu
 
 set-default-pdf-handler-headline = <strong>Uw PDF’s worden nu geopend in { -brand-short-name }.</strong> Bewerk of onderteken formulieren rechtstreeks in uw browser. Zoek naar ‘PDF’ in instellingen om te wijzigen.
 set-default-pdf-handler-primary = Begrepen
+
+## FxA sync CFR
+
+fxa-sync-cfr-header = Nieuw apparaat in de toekomst?
+fxa-sync-cfr-body = Zorg ervoor dat u uw nieuwste bladwijzers, wachtwoorden en tabbladen altijd bij de hand hebt wanneer u een nieuwe { -brand-product-name }-browser opent.
+fxa-sync-cfr-primary = Meer info
+    .accesskey = M
+fxa-sync-cfr-secondary = Later herinneren
+    .accesskey = L
+
+## Device Migration FxA Spotlight
+
+device-migration-fxa-spotlight-heavy-user-header = Vergeet geen reservekopie van uw gegevens te maken
+device-migration-fxa-spotlight-heavy-user-body = Zorg ervoor dat belangrijke informatie – zoals bladwijzers en wachtwoorden – wordt bijgewerkt en beschermd op al uw apparaten.
+device-migration-fxa-spotlight-heavy-user-primary-button = Aan de slag
+device-migration-fxa-spotlight-older-device-header = Gemoedsrust, van { -brand-product-name }
+device-migration-fxa-spotlight-older-device-body = Een account houdt uw belangrijke gegevens bijgewerkt en beschermd op elk apparaat dat u verbindt.
+device-migration-fxa-spotlight-older-device-primary-button = Een account aanmaken
+device-migration-fxa-spotlight-getting-new-device-header-2 = Nieuw apparaat in de toekomst?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Volg een paar eenvoudige stappen om uw bladwijzers, geschiedenis en wachtwoorden mee te nemen als u op een nieuw apparaat aan de slag gaat.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Hoe maak ik een reservekopie van mijn gegevens
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>{ -brand-short-name } uw standaard PDF-lezer maken?</strong> { -brand-short-name } gebruiken om PDF’s die op uw computer zijn opgeslagen te lezen en te bewerken.
+pdf-default-notification-set-default-button =
+    .label = Instellen als standaard
+pdf-default-notification-decline-button =
+    .label = Niet nu
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>{ -brand-short-name } openen telkens dat u uw computer herstart?</strong> U kunt nu { -brand-short-name } instellen om automatisch te openen wanneer u uw apparaat herstart.
+launch-on-login-learnmore = Meer info
+launch-on-login-infobar-confirm-button = Ja, { -brand-short-name } openen
+    .accesskey = J
+launch-on-login-infobar-reject-button = Niet nu
+    .accesskey = N
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>{ -brand-short-name } openen telkens dat u uw computer herstart?</strong> Zoek naar ‘opstarten’ in uw instellingen om uw opstartvoorkeuren te beheren.
+launch-on-login-infobar-final-reject-button = Nee bedankt
+    .accesskey = N
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Houd vervelende trackers van u af
+tail-fox-spotlight-subtitle = Zeg vaarwel tegen vervelende advertentietrackers en geniet van een veiligere, snelle internetervaring.
+tail-fox-spotlight-primary-button = Mijn koppelingen openen met { -brand-short-name }
+tail-fox-spotlight-secondary-button = Niet nu

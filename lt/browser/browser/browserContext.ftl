@@ -78,6 +78,9 @@ toolbar-button-fxaccount =
     .label = „{ -fxaccount-brand-name }“ paskyra
     .tooltiptext = „{ -fxaccount-brand-name }“ paskyra
 
+## Account toolbar Button
+
+
 ## Save Page
 
 main-context-menu-page-save =
@@ -86,38 +89,6 @@ main-context-menu-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-add =
-    .aria-label = Įrašyti į adresyną
-    .accesskey = y
-    .tooltiptext = Įtraukti šį tinklalapį į adresyną
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-edit-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-add-mac =
-    .label = Įtraukti į adresyną
-    .accesskey = t
-# This menuitem is only visible on macOS
-# Cannot be shown at the same time as main-context-menu-bookmark-add-mac,
-# so should probably have the same access key if possible.
-main-context-menu-bookmark-edit-mac =
-    .label = Redaguoti adresyno įrašą
-    .accesskey = t
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
-main-context-menu-bookmark-add-with-shortcut =
-    .aria-label = Įrašyti į adresyną
-    .accesskey = y
-    .tooltiptext = Įtraukti šį tinklalapį į adresyną ({ $shortcut })
-main-context-menu-bookmark-change =
-    .aria-label = Taisyti adresyno įrašą
-    .accesskey = y
-    .tooltiptext = Taisyti šį adresyno įrašą
-# Variables
-#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
-main-context-menu-bookmark-change-with-shortcut =
-    .aria-label = Taisyti adresyno įrašą
-    .accesskey = y
-    .tooltiptext = Taisyti šį adresyno įrašą ({ $shortcut })
 main-context-menu-bookmark-page =
     .aria-label = Įtraukti į adresyną…
     .accesskey = k
@@ -165,9 +136,6 @@ main-context-menu-open-link-new-window =
 main-context-menu-open-link-new-private-window =
     .label = Atverti saitą naujame privačiojo naršymo lange
     .accesskey = p
-main-context-menu-bookmark-link =
-    .label = Įtraukti saitą į adresyną
-    .accesskey = t
 main-context-menu-bookmark-link-2 =
     .label = Įtraukti į adresyną…
     .accesskey = k
@@ -191,6 +159,11 @@ main-context-menu-copy-phone =
 main-context-menu-copy-link-simple =
     .label = Kopijuoti saitą
     .accesskey = t
+# This command copies the link, removing additional
+# query parameters used to track users across sites.
+main-context-menu-strip-on-share-link =
+    .label = Kopijuoti saitą be sekimo dalies
+    .accesskey = u
 
 ## Media (video/audio) controls
 ##
@@ -307,12 +280,6 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = Išsiųsti garso įrašą el. paštu…
     .accesskey = s
-main-context-menu-plugin-play =
-    .label = Aktyvinti šį papildinį
-    .accesskey = A
-main-context-menu-plugin-hide =
-    .label = Slėpti šį papildinį
-    .accesskey = S
 main-context-menu-save-to-pocket =
     .label = Įrašyti tinklalapį į „{ -pocket-brand-name }“
     .accesskey = k
@@ -327,12 +294,16 @@ main-context-menu-send-to-device =
 main-context-menu-use-saved-login =
     .label = Naudoti įrašytą prisijungimą
     .accesskey = o
+# Displayed when there are saved passwords and the user clicks inside a username or password field
 main-context-menu-use-saved-password =
     .label = Naudoti įrašytą slaptažodį
     .accesskey = o
 
 ##
 
+main-context-menu-use-relay-mask =
+    .label = Naudoti „{ -relay-brand-short-name }“ el. pašto kaukę
+    .accesskey = e
 main-context-menu-suggest-strong-password =
     .label = Pasiūlyti stiprų slaptažodį…
     .accesskey = s
@@ -360,9 +331,6 @@ main-context-menu-frame-open-window =
 main-context-menu-frame-reload =
     .label = Atsiųsti kadrą iš naujo
     .accesskey = n
-main-context-menu-frame-bookmark =
-    .label = Įtraukti kadrą į adresyną
-    .accesskey = d
 main-context-menu-frame-add-bookmark =
     .label = Įtraukti į adresyną…
     .accesskey = k
@@ -378,9 +346,6 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Informacija apie kadrą
     .accesskey = I
-main-context-menu-print-selection =
-    .label = Spausdinti pažymėtą sritį
-    .accesskey = p
 main-context-menu-print-selection-2 =
     .label = Spausdinti pažymėtą sritį…
     .accesskey = t

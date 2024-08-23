@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Egyszerűbb kiemelők használata a prefers-reduced-motion beállítás mellett
 options-inspector-simplified-highlighters-tooltip =
     .title = Engedélyezi az egyszerűsített kiemelőket, ha a prefers-reduced-motion engedélyezett. A kitöltött téglalapok helyett vonalakat rajzol a kijelölt elemek köré, hogy elkerülje a villogó hatásokat.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Fókuszálás a következő beviteli mezőre az <kbd>Enter</kbd> megnyomásakor
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Ha engedélyezve van, akkor egy választó, tulajdonságnév vagy érték szerkesztésekor és az Enter gomb megnyomásakor a fókusz a következő bemenetre kerül.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -54,6 +59,15 @@ options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Színnevek
 
+## Web Console section
+
+# The heading
+options-webconsole-label = Webkonzol
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Osztott konzol engedélyezése
+options-webconsole-split-console-tooltip =
+    .title = Osztott konzol megnyitása az Escape gombbal
+
 ## Style Editor section
 
 # The heading
@@ -61,7 +75,7 @@ options-styleeditor-label = Stílusszerkesztő
 # The label for the checkbox that toggles autocompletion of css in the Style Editor
 options-stylesheet-autocompletion-label = CSS automatikus kiegészítése
 options-stylesheet-autocompletion-tooltip =
-    .title = CSS tulajdonságok, értékek és szelektorok automatikus kiegészítése a Stílusszerkesztőben gépelés közben
+    .title = A CSS tulajdonságok, értékek és választók automatikus kiegészítése a Stílusszerkesztőben gépelés közben
 
 ## Screenshot section
 

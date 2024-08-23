@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = 您目前使用 FIPS 模式。FIPS 模式�
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = 重設主控密碼
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = 重設主控密碼
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = 成功重設您的主控密碼。
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = 下載憑證
-    .style = width: 46em
 download-cert-window2 =
     .title = 下載憑證
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = 檢查憑證機構的憑證
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = 使用者識別需求
 client-auth-site-description = 此網站要求您提供可用來識別您自己的憑證:
 client-auth-choose-cert = 選擇一項憑證以做為識別:
+client-auth-send-no-certificate =
+    .label = 不要傳送憑證
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = 「{ $hostname }」要求您提供可用來識別您自己的憑證：
 client-auth-cert-details = 所選憑證的詳細資訊:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = 簽發給：{ $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = 序號：{ $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = 從 { $notBefore } 到 { $notAfter } 有效
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = 金鑰用途：{ $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = 電子郵件地址：{ $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = 簽發者：{ $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = 儲存於：{ $storedOn }
+client-auth-cert-remember-box =
+    .label = 記住此決定
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = 憑證備份密碼 (再輸入一次):
 set-password-reminder = 重要: 如果您忘了憑證備份密碼，將會無法回存備份。請多備一份到安全的地方。
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = 被保護的 Token 鑑別
-protected-auth-msg = 請鑑別此 Token，鑑別方法會隨 Token 類型而不同。
-protected-auth-token = Token:
 
 ## Protected authentication alert
 

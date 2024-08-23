@@ -2,22 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-sanitize-prefs =
-    .title = إعدادات مسح التأريخ
-    .style = width: 34em
 sanitize-prefs2 =
     .title = إعدادات مسح التأريخ
     .style = min-width: 34em
 sanitize-prefs-style =
     .style = width: 17em
-dialog-title =
-    .title = امسح التأريخ الحالي
-    .style = width: 34em
-# When "Time range to clear" is set to "Everything", this message is used for the
-# title instead of dialog-title.
-dialog-title-everything =
-    .title = امسح كل التأريخ
-    .style = width: 34em
 sanitize-dialog-title =
     .title = امسح التأريخ الحالي
     .style = min-width: 34em
@@ -71,6 +60,7 @@ item-cache =
 item-form-search-history =
     .label = تأريخ البحث و النماذج
     .accesskey = ث
+item-site-prefs-description = إعادة تعيين أذوناتك وتفضيلات الموقع إلى الإعدادات الأصلية
 data-section-label = البيانات
 item-site-settings =
     .label = إعدادات الموقع

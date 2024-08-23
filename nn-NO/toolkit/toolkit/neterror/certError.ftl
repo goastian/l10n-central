@@ -8,7 +8,7 @@ cert-error-intro = { $hostname } brukar eit ugyldig sikkerheitssertifikat.
 cert-error-mitm-intro = Nettstadar beviser identiteten sin via sertifikat, som vert skrivne ut av sertifikatstyremakter.
 cert-error-mitm-mozilla = { -brand-short-name } er støtta av den ideelle organisasjonen Mozilla, som driv ein heilt open database for sertifiseringsstyremakter (CA Store). Denne databasen hjelper til med å sikre at sertifiseringssstyremaktene følgjer beste praksis for brukarsikkerheit.
 cert-error-mitm-connection = { -brand-short-name } brukar CA-butikken til Mozilla for å stadfeste om eit samband er trygt, heller enn sertifikat som kjem frå operativsystemet til brukaren. Så om eit anti-virusprogram eller eit nettverk avlyttar ei tilkopling med eit stryggingssertifikat skrive ut av ein CA som ikkje finst i Mozillas CA-butikk, vert tilkoplinga sett på som utrygg.
-cert-error-trust-unknown-issuer-intro = Nokon prøver å etterlikne nettsida, og du bør ikkje fortsetje.
+cert-error-trust-unknown-issuer-intro = Nokon prøver å etterlikne nettsida, og du bør ikkje halde fram.
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 cert-error-trust-unknown-issuer = Nettstadar beviser identiteten sin via sertifikat. { -brand-short-name } stolar ikkje på { $hostname } fordi sertifikatutskrivaren er ukjend, sertifikatet er sjølvsignert, eller fordi serveren ikkje sender dei rette mellomsertifikata.
@@ -76,12 +76,6 @@ deniedPortAccess-title = Tilgang til denne adressa er avgrensa
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
 dnsNotFound-title = Hmm. Vi har problem med å finne nettstaden.
-# Variables:
-#   $hostname (string) - Hostname of the website to which the user was trying to connect.
-dns-not-found-trr-only-title = Muleg sikkerheitsrisiko for { $hostname }.
-# Variables:
-#   $hostname (string) - Hostname of the website to which the user was trying to connect.
-dns-not-found-native-fallback-title = Muleg sikkerheitsrisiko for { $hostname }.
 dns-not-found-trr-only-title2 = Muleg sikkerheitsrisiko ved å søkje opp dette domenet
 dns-not-found-native-fallback-title2 = Muleg sikkerheitsrisiko ved å søkje opp dette domenet
 fileNotFound-title = Fann ikkje fila

@@ -14,27 +14,6 @@ onboarding-welcome-header = Vítá vás { -brand-short-name }
 onboarding-start-browsing-button-label = Začít prohlížet
 onboarding-not-now-button-label = Teď ne
 mr1-onboarding-get-started-primary-button-label = Jdeme na to
-mr1-onboarding-welcome-header = Vítá vás { -brand-short-name }
-mr1-onboarding-set-default-pin-primary-button-label =
-    { -brand-short-name.case-status ->
-        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako můj hlavní prohlížeč
-       *[no-cases] Nastavit aplikaci { -brand-short-name } jako můj hlavní prohlížeč
-    }
-    .title =
-        { -brand-short-name.gender ->
-            [masculine] Nastaví { -brand-short-name(case: "acc") } jako výchozí prohlížeč a připne ho na lištu
-            [feminine] Nastaví { -brand-short-name(case: "acc") } jako výchozí prohlížeč a připne ji na lištu
-            [neuter] Nastaví { -brand-short-name(case: "acc") } jako výchozí prohlížeč a připne ho na lištu
-           *[other] Nastaví aplikaci { -brand-short-name } jako výchozí prohlížeč a připne ji na lištu
-        }
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label =
-    { -brand-short-name.case-status ->
-        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako můj výchozí prohlížeč
-       *[no-cases] Nastavit aplikaci { -brand-short-name } jako můj výchozí prohlížeč
-    }
-mr1-onboarding-set-default-secondary-button-label = Teď ne
 
 ## Custom Return To AMO onboarding strings
 
@@ -67,30 +46,6 @@ mr1-return-to-amo-add-extension-label = Přidat doplněk { $addon-name }
 
 ## Multistage onboarding strings (about:welcome pages)
 
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label =
-        Úvod: strana { $current } { NUMBER($totla) ->
-            [one] z { $total }
-            [few] ze { $total }
-           *[other] z { $total }
-        }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text = Začínáme
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — návrhářka nábytku a fanynka Firefoxu
 
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
@@ -101,84 +56,22 @@ onboarding-welcome-steps-indicator-label =
     .aria-label = Postup: krok { $current } z { $total }
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = Vypnout animace
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos]
-            { -brand-short-name.gender ->
-                [masculine] Mějte { -brand-short-name(case: "acc") } na dosah připnutý ve svém docku.
-                [feminine] Mějte { -brand-short-name(case: "acc") } na dosah připnutou ve svém docku.
-                [neuter] Mějte { -brand-short-name(case: "acc") } na dosah připnuté ve svém docku.
-               *[other] Mějte aplikaci { -brand-short-name } na dosah připnutou ve svém docku.
-            }
-       *[other]
-            { -brand-short-name.gender ->
-                [masculine] Mějte { -brand-short-name(case: "acc") } na dosah připnutý na své liště.
-                [feminine] Mějte { -brand-short-name(case: "acc") } na dosah připnutou na své liště.
-                [neuter] Mějte { -brand-short-name(case: "acc") } na dosah připnuté na své liště.
-               *[other] Mějte aplikaci { -brand-short-name } na dosah připnutou na své liště.
-            }
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Připnout do docku
-       *[other] Připnout na lištu
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
 # String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = Přihlásit se
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header =
-    { -brand-short-name.case-status ->
-        [with-cases] Nastavit { -brand-short-name(case: "acc") } jako výchozí prohlížeč
-       *[no-cases] Nastavit aplikaci { -brand-short-name } jako výchozí prohlížeč
-    }
-mr1-onboarding-default-subtitle = Rychlost, bezpečnost a soukromí především.
-mr1-onboarding-default-primary-button-label = Nastavit jako výchozí prohlížeč
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = Všechno, vždy a po ruce
-mr1-onboarding-import-subtitle = Importujte svá hesla, <br/>záložky a další
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = Importovat z prohlížeče { $previous }
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = Importovat z dříve používaného prohlížeče
-mr1-onboarding-import-secondary-button-label = Teď ne
-mr2-onboarding-colorway-header = Život v barvách
-mr2-onboarding-colorway-subtitle = Nové palety barev dostupné po omezenou dobu.
-mr2-onboarding-colorway-primary-button-label = Uložit paletu barev
-mr2-onboarding-colorway-secondary-button-label = Teď ne
-mr2-onboarding-colorway-label-soft = Jemná
-mr2-onboarding-colorway-label-balanced = Vyvážená
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = Výrazná
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = Automatický
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = Výchozí
 mr1-onboarding-theme-header = Přizpůsobení
 mr1-onboarding-theme-subtitle =
     { -brand-short-name.case-status ->
         [with-cases] Přizpůsobte si vzhled { -brand-short-name(case: "gen") }
        *[no-cases] Přizpůsobte si vzhled aplikace { -brand-short-name }
     }
-mr1-onboarding-theme-primary-button-label = Uložit vzhled
 mr1-onboarding-theme-secondary-button-label = Teď ne
+newtab-wallpaper-onboarding-title = Zkuste barevný nádech
+newtab-wallpaper-onboarding-subtitle = Vyberte si tapetu, která dodá každému novému panelu nový vzhled.
+newtab-wallpaper-onboarding-primary-button-label = Nastavit tapetu
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = Podle systému
 mr1-onboarding-theme-label-light = Světlý
@@ -232,26 +125,6 @@ mr1-onboarding-theme-description-alpenglow =
     .aria-description =
         Vzhled s barevným tématem
         pro tlačítka, nabídky a okna.
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = Použije tuto paletu barev.
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = Použít tuto paletu barev.
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = Vyzkoušet paletu barev { $colorwayName }.
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = Vyzkoušet paletu barev { $colorwayName }.
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = Vyzkoušet výchozí vzhledy.
 # Selector description for default themes
 mr2-onboarding-default-theme-label = Vyzkoušet výchozí vzhledy.
 
@@ -260,14 +133,6 @@ mr2-onboarding-default-theme-label = Vyzkoušet výchozí vzhledy.
 mr2-onboarding-thank-you-header = Děkujeme, že jste si vybrali nás
 mr2-onboarding-thank-you-text = { -brand-short-name } je nezávislý prohlížeč od neziskové organizace. Společně se snažíme udělat web bezpečnější, zdravější a s větším ohledem na soukromí.
 mr2-onboarding-start-browsing-button-label = Začít prohlížet
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -601,4 +466,52 @@ onboarding-device-migration-image-alt =
     .aria-label = Liška na obrazovce přenosného počítače mává. V notebooku je připojena myš.
 onboarding-device-migration-title = Vítejte zpět!
 onboarding-device-migration-subtitle = Přihlaste se ke svému { -fxaccount-brand-name(capitalization: "sentence", case: "dat") } a přeneste si své záložky, hesla a historii do nového zařízení.
+onboarding-device-migration-subtitle2 = Přihlaste se ke svému účtu a přeneste své záložky, hesla a historii na vaše nové zařízení.
 onboarding-device-migration-primary-button-label = Přihlásit se
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = Rádi vás udržujeme v bezpečí
+onboarding-easy-setup-security-and-privacy-subtitle = Náš neziskový prohlížeč pomáhá zabránit společnostem v tajném sledování vašeho prohlížení webu.
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = Bezpečný přenos dat mezi zařízeními
+onboarding-mobile-download-security-and-privacy-subtitle = Při synchronizaci { -brand-short-name } vaše hesla, záložky a další data šifruje. Navíc si můžete otevřít panely z jiných zařízení.
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } vám kryje záda
+onboarding-gratitude-security-and-privacy-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Děkujeme, že používáte { -brand-short-name(case: "acc") }, za kterým stojí nadace Mozilla Foundation. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro všechny.
+       *[no-cases] Děkujeme, že používáte aplikaci { -brand-short-name }, za kterým stojí nadace Mozilla Foundation. S vaší podporou pracujeme na tom, aby byl internet bezpečnější a přístupnější pro všechny.
+    }
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Jak dlouho používáte { -brand-short-name(case: "acc") }?
+       *[no-cases] Jak dlouho používáte aplikaci { -brand-short-name }?
+    }
+onboarding-new-user-familiarity-based-survey-title =
+    { -brand-short-name.case-status ->
+        [with-cases] Jak dobře znáte { -brand-short-name(case: "acc") }?
+       *[no-cases] Jak dobře znáte aplikaci { -brand-short-name }?
+    }
+onboarding-new-user-survey-subtitle =
+    { -brand-short-name.case-status ->
+        [with-cases] Vaše zpětná vazba pomáhá ještě více zlepšit { -brand-short-name(case: "acc") }.
+       *[no-cases] Vaše zpětná vazba pomáhá ještě více zlepšit aplikaci { -brand-short-name }.
+    }
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = Další
+onboarding-new-user-survey-legal-link-label = Výběrem “{ onboarding-new-user-survey-next-button-label }” souhlasíte se <a data-l10n-name="privacy_notice">zásadami ochrany osobních údajů</a> { -brand-product-name(case: "gen") }
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = Jsem nováček
+onboarding-new-user-survey-time-based-option-2 = Méně než 1 měsíc
+onboarding-new-user-survey-time-based-option-3 = Méně než 1 měsíc, pravidelně
+onboarding-new-user-survey-time-based-option-4 = Méně než 1 měsíc, příležitostně
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = Jsem nováček
+onboarding-new-user-survey-familiarity-based-option-2 = Několikrát jsem ho použil
+onboarding-new-user-survey-familiarity-based-option-3 = Znám jej velmi dobře
+onboarding-new-user-survey-familiarity-based-option-4 = V minulosti jsem jej používal, ale už je to nějaký čas

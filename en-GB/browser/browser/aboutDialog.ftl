@@ -12,8 +12,6 @@ update-updateButton =
     .label = Restart to Update { -brand-shorter-name }
     .accesskey = R
 update-checkingForUpdates = Checking for updates…
-update-downloading = <img data-l10n-name="icon"/>Downloading update — <label data-l10n-name="download-status"/>
-update-downloading-message = Downloading update — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = Applying update…
 update-failed = Update failed. <label data-l10n-name="failed-link">Download the latest version</label>
 update-failed-main = Update failed. <a data-l10n-name="failed-link-main">Download the latest version</a>
 update-adminDisabled = Updates disabled by your system administrator
+update-policy-disabled = Updates disabled by your organisation
 update-noUpdatesFound = { -brand-short-name } is up to date
 aboutdialog-update-checking-failed = Failed to check for updates.
 update-otherInstanceHandlingUpdates = { -brand-short-name } is being updated by another instance
-update-manual = Updates available at <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = Updates available at <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,8 +37,6 @@ aboutdialog-update-manual-with-link = Updates available at <label data-l10n-name
 settings-update-manual-with-link = Updates available at <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = You can not perform further updates on this system. <label data-l10n-name="unsupported-link">Learn more</label>
 update-restarting = Restarting…
-channel-description = You are currently on the <label data-l10n-name="current-channel"></label> update channel.
-update-internal-error = Unable to check for updates due to internal error. Updates available at <label data-l10n-name="manual-link"/>
 update-internal-error2 = Unable to check for updates due to internal error. Updates available at <label data-l10n-name="manual-link">{ $displayUrl }</label>
 
 ##

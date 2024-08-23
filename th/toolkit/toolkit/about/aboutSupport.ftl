@@ -15,6 +15,10 @@ support-addons-type = ชนิด
 support-addons-enabled = ถูกเปิดใช้งาน
 support-addons-version = รุ่น
 support-addons-id = ID
+legacy-user-stylesheets-title = สไตล์ชีตผู้ใช้แบบเดิม
+legacy-user-stylesheets-enabled = ใช้งานอยู่
+legacy-user-stylesheets-stylesheet-types = สไตล์ชีต
+legacy-user-stylesheets-no-stylesheets-found = ไม่พบสไตล์ชีต
 security-software-title = ซอฟต์แวร์ความปลอดภัย
 security-software-type = ชนิด
 security-software-name = ชื่อ
@@ -25,7 +29,7 @@ features-title = คุณลักษณะของ { -brand-short-name }
 features-name = ชื่อ
 features-version = รุ่น
 features-id = ID
-processes-title = โปรเซสระยะไกล
+processes-title = โพรเซสระยะไกล
 processes-type = ชนิด
 processes-count = ครั้ง
 app-basics-title = พื้นฐานแอปพลิเคชัน
@@ -54,19 +58,19 @@ app-basics-enabled-plugins = ปลั๊กอินที่เปิดใช
 app-basics-build-config = การกำหนดค่าการสร้าง
 app-basics-user-agent = ตัวแทนผู้ใช้
 app-basics-os = ระบบปฏิบัติการ
-app-basics-os-theme = ชุดรูปแบบของระบบปฏิบัติการ
+app-basics-os-theme = ชุดตกแต่งของระบบปฏิบัติการ
 # Rosetta is Apple's translation process to run apps containing x86_64
 # instructions on Apple Silicon. This should remain in English.
 app-basics-rosetta = แปลด้วย Rosetta
 app-basics-memory-use = หน่วยความจำที่ใช้
 app-basics-performance = ประสิทธิภาพ
-app-basics-service-workers = ตัวทำงานบริการที่ลงทะเบียน
+app-basics-service-workers = Service Worker ที่ลงทะเบียน
 app-basics-third-party = โมดูลบุคคลที่สาม
 app-basics-profiles = โปรไฟล์
-app-basics-launcher-process-status = โปรเซสของตัวเรียกใช้
-app-basics-multi-process-support = หน้าต่างแบบหลายโปรเซส
+app-basics-launcher-process-status = โพรเซสของตัวเรียกใช้
+app-basics-multi-process-support = หน้าต่างแบบหลายโพรเซส
 app-basics-fission-support = หน้าต่าง Fission
-app-basics-remote-processes-count = โปรเซสระยะไกล
+app-basics-remote-processes-count = โพรเซสระยะไกล
 app-basics-enterprise-policies = นโยบายองค์กร
 app-basics-location-service-key-google = คีย์ Google Location Service
 app-basics-safebrowsing-key-google = คีย์ Google Safebrowsing
@@ -74,6 +78,7 @@ app-basics-key-mozilla = คีย์ Mozilla Location Service
 app-basics-safe-mode = โหมดปลอดภัย
 app-basics-memory-size = ขนาดหน่วยความจำ (RAM)
 app-basics-disk-available = พื้นที่ที่เหลือในดิสก์:
+app-basics-pointing-devices = อุปกรณ์ชี้ตำแหน่ง
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -90,12 +95,12 @@ environment-variables-value = ค่า
 experimental-features-title = คุณลักษณะทดลอง
 experimental-features-name = ชื่อ
 experimental-features-value = ค่า
-modified-key-prefs-title = ค่ากำหนดสำคัญที่ถูกเปลี่ยนแปลง
+modified-key-prefs-title = ค่าปรับแต่งสำคัญที่ถูกปรับเปลี่ยน
 modified-prefs-name = ชื่อ
 modified-prefs-value = ค่า
 user-js-title = การกำหนดลักษณะ user.js
-user-js-description = โฟลเดอร์โปรไฟล์ของคุณมี <a data-l10n-name="user-js-link">ไฟล์ user.js</a> ซึ่งมีค่ากำหนดที่ไม่ได้ถูกสร้างโดย { -brand-short-name }
-locked-key-prefs-title = ค่ากำหนดสำคัญที่ถูกล็อค
+user-js-description = โฟลเดอร์โปรไฟล์ของคุณมี <a data-l10n-name="user-js-link">ไฟล์ user.js</a> ซึ่งมีค่าปรับแต่งที่ไม่ได้ถูกสร้างโดย { -brand-short-name }
+locked-key-prefs-title = ค่าปรับแต่งสำคัญที่ถูกล็อก
 locked-prefs-name = ชื่อ
 locked-prefs-value = ค่า
 graphics-title = กราฟิก
@@ -109,7 +114,7 @@ graphics-crash-guards-title = คุณสมบัติที่ถูกป�
 graphics-workarounds-title = วิธีการแก้ไข
 graphics-device-pixel-ratios = อัตราส่วนพิกเซลของอุปกรณ์ในหน้าต่าง
 # Windowing system in use on Linux (e.g. X11, Wayland).
-graphics-window-protocol = โปรโตคอลหน้าต่าง
+graphics-window-protocol = โพรโทคอลหน้าต่าง
 # Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
 graphics-desktop-environment = สภาพแวดล้อมเดสก์ท็อป
 place-database-title = ฐานข้อมูลสถานที่
@@ -138,7 +143,7 @@ sandbox-sys-call-index = #
 sandbox-sys-call-age = วินาทีที่แล้ว
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
-sandbox-sys-call-proc-type = ชนิดโปรเซส
+sandbox-sys-call-proc-type = ชนิดโพรเซส
 sandbox-sys-call-number = การเรียกของระบบ
 sandbox-sys-call-args = อาร์กิวเมนต์
 troubleshoot-mode-title = วินิจฉัยปัญหา
@@ -146,7 +151,7 @@ restart-in-troubleshoot-mode-label = โหมดแก้ไขปัญหา�
 clear-startup-cache-title = ลองล้างแคชเมื่อเริ่มการทำงาน
 clear-startup-cache-label = ล้างแคชเมื่อเริ่มการทำงาน…
 startup-cache-dialog-title2 = ต้องการเริ่มการทำงาน { -brand-short-name } ใหม่เพื่อล้างแคชการเริ่มการทำงานหรือไม่
-startup-cache-dialog-body2 = การดำเนินการนี้จะไม่เปลี่ยนการตั้งค่าของคุณหรือเอาส่วนขยายของคุณออก
+startup-cache-dialog-body2 = การกระทำนี้จะไม่เปลี่ยนการตั้งค่าของคุณหรือเอาส่วนขยายของคุณออก
 restart-button-label = เริ่มการทำงานใหม่
 
 ## Media titles
@@ -179,6 +184,25 @@ media-codec-support-hw-decoding = การถอดรหัสด้วยฮ�
 media-codec-support-codec-name = ชื่อตัวแปลงสัญญาณ
 media-codec-support-supported = รองรับ
 media-codec-support-unsupported = ไม่รองรับ
+media-codec-support-error = ข้อมูลการรองรับโคเดกไม่พร้อมใช้ โปรดลองอีกครั้งหลังจากเล่นไฟล์สื่อแล้ว
+media-codec-support-lack-of-extension = ติดตั้งส่วนขยาย
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = ข้อมูลโมดูลถอดรหัสเนื้อหา
+media-key-system-name = ชื่อระบบคีย์
+media-video-robustness = ความคงทนของข้อมูลภาพ
+media-audio-robustness = ความคงทนของข้อมูลเสียง
+media-cdm-capabilities = ความสามารถ
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = ส่วนนำที่ไม่เข้ารหัส (Clear Lead)
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = รองรับ HDCP 2.2
 
 ##
 
@@ -201,7 +225,7 @@ intl-regional-prefs = การกำหนดลักษณะภูมิภ�
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
-remote-debugging-title = การดีบั๊กระยะไกล (โปรโตคอล Chromium)
+remote-debugging-title = การดีบั๊กระยะไกล (โพรโทคอล Chromium)
 remote-debugging-accepting-connections = การยอมรับการเชื่อมต่อ
 remote-debugging-url = URL
 
@@ -238,6 +262,7 @@ try-newer-driver = ถูกปิดกั้นจากรุ่นไดร�
 # there are no good translations, these are only used in about:support
 clear-type-parameters = พารามิเตอร์ ClearType
 compositing = การจัดองค์ประกอบ
+support-font-determination = ข้อมูลดีบั๊กการมองเห็นแบบอักษร
 hardware-h264 = การถอดรหัสฮาร์ดแวร์ H264
 main-thread-no-omtc = เธรดหลัก ไม่มี OMTC
 yes = ใช่
@@ -285,7 +310,7 @@ d3d11layers-crash-guard = คอมโพสิเตอร์ D3D11
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = ตัวถอดรหัสวิดีโอ WMF VPX
 reset-on-next-restart = กลับค่าเดิมเมื่อเริ่มการทำงานใหม่ในครั้งถัดไป
-gpu-process-kill-button = สิ้นสุดโปรเซส GPU
+gpu-process-kill-button = สิ้นสุดโพรเซส GPU
 gpu-device-reset = การกลับค่าเดิมของอุปกรณ์
 gpu-device-reset-button = ทริกเกอร์การกลับค่าเดิมของอุปกรณ์
 uses-tiling = ใช้ Tiling
@@ -298,13 +323,13 @@ loaded-lib-versions = รุ่นที่ใช้อยู่
 has-seccomp-bpf = Seccomp-BPF (System Call Filtering)
 has-seccomp-tsync = Seccomp Thread Synchronization
 has-user-namespaces = เนมสเปซผู้ใช้
-has-privileged-user-namespaces = เนมสเปซผู้ใช้สำหรับโปรเซสที่ได้รับสิทธิ์
+has-privileged-user-namespaces = เนมสเปซผู้ใช้สำหรับโพรเซสที่ได้รับสิทธิ์
 can-sandbox-content = Content Process Sandboxing
 can-sandbox-media = Media Plugin Sandboxing
-content-sandbox-level = ระดับ Sandbox ของโปรเซสเนื้อหา
-effective-content-sandbox-level = ระดับ Sandbox ของโปรเซสเนื้อหาที่มีประสิทธิภาพ
+content-sandbox-level = ระดับแซนด์บอกซ์ของโพรเซสเนื้อหา
+effective-content-sandbox-level = ระดับแซนด์บอกซ์ของโพรเซสเนื้อหาที่มีประสิทธิภาพ
 content-win32k-lockdown-state = สถานะล็อกดาวน์ของ Win32k สำหรับการประมวลผลเนื้อหา
-support-sandbox-gpu-level = ระดับ Sandbox ของโปรเซส GPU
+support-sandbox-gpu-level = ระดับแซนด์บอกซ์ของโพรเซส GPU
 sandbox-proc-type-content = เนื้อหา
 sandbox-proc-type-file = เนื้อหาไฟล์
 sandbox-proc-type-media-plugin = ปลั๊กอินสื่อ
@@ -349,8 +374,8 @@ zooming-enabled = เปิดใช้งานการซูมโดยก�
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = การป้อนข้อมูลด้วยล้อแบบอะซิงโครนัสถูกปิดใช้งานเนื่องจากค่ากำหนดที่ไม่รองรับ: { $preferenceKey }
-touch-warning = การป้อนข้อมูลด้วยการสัมผัสแบบอะซิงโครนัสถูกปิดใช้งานเนื่องจากค่ากำหนดที่ไม่รองรับ: { $preferenceKey }
+wheel-warning = การป้อนข้อมูลด้วยล้อแบบไม่เข้าจังหวะถูกปิดใช้งานเนื่องจากไม่รองรับค่าปรับแต่ง: { $preferenceKey }
+touch-warning = การป้อนข้อมูลด้วยการสัมผัสแบบไม่เข้าจังหวะถูกปิดใช้งานเนื่องจากไม่รองรับค่าปรับแต่ง: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.
 
@@ -363,7 +388,7 @@ policies-error = ข้อผิดพลาด
 support-printing-title = การพิมพ์
 support-printing-troubleshoot = การแก้ไขปัญหา
 support-printing-clear-settings-button = ล้างการตั้งค่าการพิมพ์ที่บันทึกไว้
-support-printing-modified-settings = การตั้งค่าการพิมพ์ที่ถูกเปลี่ยนแปลง
+support-printing-modified-settings = การตั้งค่าการพิมพ์ที่ถูกปรับเปลี่ยน
 support-printing-prefs-name = ชื่อ
 support-printing-prefs-value = ค่า
 
@@ -376,3 +401,22 @@ support-remote-experiments-see-about-studies = ดูที่ <a data-l10n-name
 support-remote-features-title = คุณลักษณะระยะไกล
 support-remote-features-name = ชื่อ
 support-remote-features-status = สถานะ
+
+## Pointing devices
+
+pointing-device-mouse = เมาส์
+pointing-device-touchscreen = หน้าจอสัมผัส
+pointing-device-pen-digitizer = ปากกาดิจิตอล
+pointing-device-none = ไม่มีอุปกรณ์ชี้ตำแหน่ง
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = การวิเคราะห์เนื้อหา (DLP)
+content-analysis-active = ทำงานอยู่
+content-analysis-connected-to-agent = เชื่อมต่อกับตัวแทนแล้ว
+content-analysis-agent-path = เส้นทางตัวแทน
+content-analysis-agent-failed-signature-verification = ตัวแทนทำการตรวจสอบลายเซ็นไม่สำเร็จ
+content-analysis-request-count = จำนวนคำร้องขอ

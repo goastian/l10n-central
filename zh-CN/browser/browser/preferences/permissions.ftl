@@ -2,9 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-permissions-window =
-    .title = 例外
-    .style = width: 45em
 permissions-window2 =
     .title = 例外
     .style = min-width: 45em
@@ -19,7 +16,7 @@ permissions-disable-etp =
     .label = 添加例外
     .accesskey = E
 permissions-session =
-    .label = 在这次浏览期间允许
+    .label = 此次浏览期间允许
     .accesskey = S
 permissions-allow =
     .label = 允许
@@ -63,7 +60,7 @@ permissions-capabilities-listitem-allow =
 permissions-capabilities-listitem-block =
     .value = 阻止
 permissions-capabilities-listitem-allow-session =
-    .value = 在这次浏览期间允许
+    .value = 此次浏览期间允许
 permissions-capabilities-listitem-off =
     .value = 关闭
 permissions-capabilities-listitem-off-temporarily =
@@ -76,10 +73,6 @@ permissions-invalid-uri-label = 请输入合法的主机名
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-etp-window =
-    .title = 例外 - 增强型跟踪保护
-    .style = { permissions-window.style }
-permissions-exceptions-etp-desc = 你已关闭对下列网站的保护。
 permissions-exceptions-etp-window2 =
     .title = 例外 - 增强型跟踪保护
     .style = { permissions-window2.style }
@@ -87,29 +80,21 @@ permissions-exceptions-manage-etp-desc = 您可以指定为哪些网站关闭增
 
 ## Exceptions - Cookies
 
-permissions-exceptions-cookie-window =
-    .title = 例外 - Cookie 和网站数据
-    .style = { permissions-window.style }
 permissions-exceptions-cookie-window2 =
     .title = 例外 - Cookie 和网站数据
     .style = { permissions-window2.style }
-permissions-exceptions-cookie-desc = 您可以指定一律允许或不允许哪些网站使用 Cookie 和网站数据。请输入所要指定的完整网址，然后点击“阻止”、“在这次浏览期间允许”或“允许”。
+permissions-exceptions-cookie-desc = 您可以指定一律允许或不允许哪些网站使用 Cookie 和网站数据。请输入所要指定的完整网址，然后点击“阻止”、“此次浏览期间允许”或“允许”。
 
 ## Exceptions - HTTPS-Only Mode
 
-permissions-exceptions-https-only-window =
-    .title = 例外 - HTTPS-Only 模式
-    .style = { permissions-window.style }
 permissions-exceptions-https-only-window2 =
     .title = 例外 - HTTPS-Only 模式
     .style = { permissions-window2.style }
 permissions-exceptions-https-only-desc = 您可以关闭特定网站的 HTTPS-Only 模式。{ -brand-short-name } 将不再尝试将这些网站的连接升级为安全的 HTTPS。“例外”不会应用至隐私窗口。
+permissions-exceptions-https-only-desc2 = 您可以关闭特定网站的 HTTPS-Only 模式。{ -brand-short-name } 将不再尝试将这些网站的连接升级为安全的 HTTPS。
 
 ## Exceptions - Pop-ups
 
-permissions-exceptions-popup-window =
-    .title = 有特殊权限的网站 - 弹出式窗口
-    .style = { permissions-window.style }
 permissions-exceptions-popup-window2 =
     .title = 有特殊权限的网站 - 弹出式窗口
     .style = { permissions-window2.style }
@@ -117,19 +102,20 @@ permissions-exceptions-popup-desc = 您可以指定哪些网站可以打开弹�
 
 ## Exceptions - Saved Logins
 
-permissions-exceptions-saved-logins-window =
-    .title = 例外 - 已保存的登录信息
-    .style = { permissions-window.style }
 permissions-exceptions-saved-logins-window2 =
     .title = 例外 - 已保存的登录信息
     .style = { permissions-window2.style }
 permissions-exceptions-saved-logins-desc = 下列网站的登录信息将不被保存
 
+## Exceptions - Saved Passwords
+
+permissions-exceptions-saved-passwords-window =
+    .title = 例外 - 保存的密码
+    .style = { permissions-window2.style }
+permissions-exceptions-saved-passwords-desc = { -brand-short-name } 将不会保存这些网站的密码。
+
 ## Exceptions - Add-ons
 
-permissions-exceptions-addons-window =
-    .title = 有特殊权限的网站 - 附加组件安装
-    .style = { permissions-window.style }
 permissions-exceptions-addons-window2 =
     .title = 有特殊权限的网站 - 附加组件安装
     .style = { permissions-window2.style }
@@ -137,9 +123,6 @@ permissions-exceptions-addons-desc = 您可以指定哪些网站可以安装附�
 
 ## Site Permissions - Autoplay
 
-permissions-site-autoplay-window =
-    .title = 设置 - 自动播放
-    .style = { permissions-window.style }
 permissions-site-autoplay-window2 =
     .title = 设置 - 自动播放
     .style = { permissions-window2.style }
@@ -147,9 +130,6 @@ permissions-site-autoplay-desc = 您可以在此处管理不遵从默认自动�
 
 ## Site Permissions - Notifications
 
-permissions-site-notification-window =
-    .title = 设置 - 通知权限
-    .style = { permissions-window.style }
 permissions-site-notification-window2 =
     .title = 设置 - 通知权限
     .style = { permissions-window2.style }
@@ -160,9 +140,6 @@ permissions-site-notification-disable-desc = 所有列表外的网站将无法�
 
 ## Site Permissions - Location
 
-permissions-site-location-window =
-    .title = 设置 - 位置权限
-    .style = { permissions-window.style }
 permissions-site-location-window2 =
     .title = 设置 - 位置权限
     .style = { permissions-window2.style }
@@ -173,9 +150,6 @@ permissions-site-location-disable-desc = 所有列表外的网站将无法请求
 
 ## Site Permissions - Virtual Reality
 
-permissions-site-xr-window =
-    .title = 设置 - 虚拟现实权限
-    .style = { permissions-window.style }
 permissions-site-xr-window2 =
     .title = 设置 - 虚拟现实权限
     .style = { permissions-window2.style }
@@ -186,9 +160,6 @@ permissions-site-xr-disable-desc = 将阻止上述之外的网站请求使用您
 
 ## Site Permissions - Camera
 
-permissions-site-camera-window =
-    .title = 设置 - 摄像头权限
-    .style = { permissions-window.style }
 permissions-site-camera-window2 =
     .title = 设置 - 摄像头权限
     .style = { permissions-window2.style }
@@ -199,9 +170,6 @@ permissions-site-camera-disable-desc = 所有列表外的网站将无法请求�
 
 ## Site Permissions - Microphone
 
-permissions-site-microphone-window =
-    .title = 设置 - 麦克风权限
-    .style = { permissions-window.style }
 permissions-site-microphone-window2 =
     .title = 设置 - 麦克风权限
     .style = { permissions-window2.style }

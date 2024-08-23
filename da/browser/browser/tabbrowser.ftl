@@ -111,6 +111,11 @@ tabbrowser-confirm-caretbrowsing-title = Caret Browsing
 tabbrowser-confirm-caretbrowsing-message = Ved at trykke F7 kan du slå Caret Browsing til eller fra. Denne funktion placerer en bevægelig markør på websiden, hvilket giver dig mulighed for at markere tekst med tastaturet. Ønsker du at slå Caret Browsing til?
 tabbrowser-confirm-caretbrowsing-checkbox = Vis ikke denne dialogboks igen
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Vigtigt
+tabbrowser-confirm-close-duplicate-tabs-text = Vi lader det senest aktive faneblad være åbent
+
 ##
 
 # Variables:

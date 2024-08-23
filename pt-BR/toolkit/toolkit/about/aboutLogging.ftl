@@ -32,8 +32,25 @@ about-logging-with-profiler-stacks-checkbox = Ativar stack trace em mensagens de
 
 about-logging-preset-networking-label = Rede
 about-logging-preset-networking-description = Módulos de log para diagnosticar problemas de rede
+about-logging-preset-networking-cookie-label = Cookies
+about-logging-preset-networking-cookie-description = Módulos de log para diagnosticar problemas de cookies
+about-logging-preset-networking-websocket-label = WebSockets
+about-logging-preset-networking-websocket-description = Módulos de log para diagnosticar problemas de WebSocket
+about-logging-preset-networking-http3-label = HTTP/3
+about-logging-preset-networking-http3-description = Módulos de log para diagnosticar problemas de HTTP/3 e QUIC
+about-logging-preset-networking-http3-upload-speed-label = Velocidade de envio HTTP/3
+about-logging-preset-networking-http3-upload-speed-description = Módulos de log para diagnosticar problemas de velocidade de envio HTTP/3
 about-logging-preset-media-playback-label = Reprodução de mídia
 about-logging-preset-media-playback-description = Módulos de log para diagnosticar problemas de reprodução de mídia (não problemas de videoconferência)
+about-logging-preset-webrtc-label = WebRTC
+about-logging-preset-webrtc-description = Módulos de log para diagnosticar chamadas WebRTC
+about-logging-preset-webgpu-label = WebGPU
+about-logging-preset-webgpu-description = Módulos de log para diagnosticar problemas de WebGPU
+about-logging-preset-gfx-label = Gráficos
+about-logging-preset-gfx-description = Módulos de log para diagnosticar problemas gráficos
+# This is specifically "Microsoft Windows". Microsoft normally doesn't localize it, and we should follow their convention here.
+about-logging-preset-windows-label = Windows
+about-logging-preset-windows-description = Módulos de log para diagnosticar problemas específicos do Microsoft Windows
 about-logging-preset-custom-label = Personalizado
 about-logging-preset-custom-description = Módulos de log selecionados manualmente
 # Error handling

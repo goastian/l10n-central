@@ -17,3 +17,17 @@ webext-default-search-no =
 # Variables:
 #   $addonName (String): localized named of the extension that was just installed.
 addon-post-install-message = { $addonName } har lagts till.
+
+## A modal confirmation dialog to allow an extension on quarantined domains.
+
+# Variables:
+#   $addonName (String): localized name of the extension.
+webext-quarantine-confirmation-title = Kör { $addonName } på begränsade webbplatser?
+webext-quarantine-confirmation-line-1 = För att skydda dina uppgifter är detta tillägg inte tillåtet på den här webbplatsen.
+webext-quarantine-confirmation-line-2 = Tillåt det här tillägget om du litar på att det läser och ändrar dina data på webbplatser som begränsas av { -vendor-short-name }.
+webext-quarantine-confirmation-allow =
+    .label = Tillåt
+    .accesskey = T
+webext-quarantine-confirmation-deny =
+    .label = Tillåt inte
+    .accesskey = n

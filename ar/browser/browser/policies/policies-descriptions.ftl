@@ -12,6 +12,7 @@
 
 policy-3rdparty = ضبط السياسات التي يمكن لامتدادات الوِب WebExtensions الوصول إليها عبر chrome.storage.managed.
 policy-AppAutoUpdate = تفعيل/تعطيل تحديث التطبيق تلقائيًا.
+policy-AppUpdatePin = منع تحديث { -brand-short-name } خارج نطاق الإصدارة المحددة.
 policy-AppUpdateURL = ضبط مسار التحديث المخصّص للتطبيق.
 policy-Authentication = ضبط الاستيثاق المتكامل مع المواقع التي تدعمه.
 policy-BackgroundAppUpdate2 = تفعيل/تعطيل أداة التحديث في الخلفية.
@@ -30,14 +31,13 @@ policy-DisableDefaultBrowserAgent = امنع وكيل المتصفّح المب�
 policy-DisableDeveloperTools = منع الوصول إلى أدوات المطوّرين.
 policy-DisableFeedbackCommands = تعطيل أوامر إرسال الانطباعات في قائمة المساعدة (”أرسِل تعليقًا“ و ”أبلغ عن موقع مخادع“).
 policy-DisableFirefoxAccounts = تعطيل الخدمات التي تعتمد { -fxaccount-brand-name }، بما في ذلك المزامنة.
-# Midori Screenshots is the name of the feature, and should not be translated.
+# Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = تعطيل ميزة لقطات شاشة Firefox.
 policy-DisableFirefoxStudies = منع { -brand-short-name } من تشغيل الدارسات.
 policy-DisableForgetButton = منع الوصول إلى زر النسيان.
 policy-DisableFormHistory = عدم تذكّر تأريخ الاستمارات والبحث.
 policy-DisablePrimaryPasswordCreation = إن كان ”صحيح“، فلا يمكن إنشاء كلمة سر رئيسية.
 policy-DisablePasswordReveal = لا تسمح بكشف كلمات السر في جلسات الولوج المحفوظة.
-policy-DisablePocket = تعطيل ميزة حفظ الصفحات في Pocket.
 policy-DisablePocket2 = تعطيل ميزة حفظ الصفحات في { -pocket-brand-name }.
 policy-DisablePrivateBrowsing = تعطيل التصفح الخاص.
 policy-DisableProfileImport = تعطيل أمر القائمة الخاص باستيراد البيانات من المتصفحات الأخرى.
@@ -56,14 +56,14 @@ policy-DownloadDirectory = ضبط وقفل دليل التنزيل.
 policy-EnableTrackingProtection = تفعيل أو تعطيل حجب المحتوى وقفل الخيار إن لزم.
 # “lock” means that the user won’t be able to change this setting
 policy-EncryptedMediaExtensions = تفعيل أو تعطيل امتدادات الوسائط المعمّاة وقفل الخيار إن لزم.
+policy-ExemptDomainFileTypePairsFromFileTypeDownloadWarnings = تعطيل التحذيرات التي تعتمد على امتداد الملف لأنواع معينة من الملفات في النطاقات.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = تثبيت أو إزالة أو قفل حالة الامتدادات. يأخذ خيار التثبيت مسارات محلية أو شبكية كمعطيات. يأخذ خياري الإزالة والقفل معرّفات الامتدادات.
 policy-ExtensionSettings = إدارة كل ما يتعلّق بتثبيت الامتدادات.
 policy-ExtensionUpdate = تفعيل/تعطيل تحديث الامتدادات تلقائيًا.
-policy-FirefoxHome = ضبط صفحة المنزل داخل Firefox.
-policy-FlashPlugin = السماح باستخدام ملحقة فلاش أو منع ذلك.
+policy-FirefoxSuggest = اضبط { -firefox-suggest-brand-name }.
 policy-Handlers = ضبط طرائق التعامل مع التطبيقات المبدئية.
 policy-HardwareAcceleration = إن كان ”خطأ“، عطِّل التسريع العتادي.
 # “lock” means that the user won’t be able to change this setting
@@ -90,6 +90,7 @@ policy-OfferToSaveLoginsDefault = ضبط القيمة المبدئية فتسم�
 policy-OverrideFirstRunPage = الكتابة على صفحة ”أوّل تشغيل“. اضبط السياسة إلى فراغ إن أردت تعطيل الصفحة.
 policy-OverridePostUpdatePage = الكتابة على صفحة ”ما الجديد“ التي تأتي بعد التحديث. اضبط السياسة إلى فراغ إن أردت تعطيل صفحة ما بعد تثبيت التحديث.
 policy-PasswordManagerEnabled = تفعيل حفظ كلمات السر في مدير كلمات السر.
+policy-PasswordManagerExceptions = منع { -brand-short-name } من حفظ كلمات السر لمواقع معيّنة.
 # PDF.js and PDF should not be translated
 policy-PDFjs = تعطيل أو ضبط PDF.js، عارِض ملفات PDF المضمّن في { -brand-short-name }.
 policy-Permissions2 = ضبط تصاريح الكمرة والمِكرفون والمكان والتنبيهات والتشغيل التلقائي.
@@ -103,8 +104,6 @@ policy-SanitizeOnShutdown2 = مسح معلومات التنقّل عند الإ�
 policy-SearchBar = ضبط المكان المبدئي لشريط البحث. يمكن للمستخدم تخصيصه.
 policy-SearchEngines = ضبط إعدادات محرّك البحث. هذه السياسة متاحة في النسخة ممتدّة الدعم (ESR) لا غير.
 policy-SearchSuggestEnabled = تفعيل/تعطيل اقتراحات البحث.
-# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = تثبيت وحدات PKCS #11.
 policy-ShowHomeButton = عرض زر الصفحة الرئيسية في شريط الأدوات.
 policy-SSLVersionMax = ضبط إصدارة SSL العليا.
 policy-SSLVersionMin = ضبط إصدارة SSL الدنيا.

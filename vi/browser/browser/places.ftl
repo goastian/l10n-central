@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = Quên trang này
     .accesskey = F
+places-forget-domain-data =
+    .label = Quên trang này…
+    .accesskey = F
 places-sortby-name =
     .label = Sắp xếp theo tên
     .accesskey = r
@@ -77,6 +80,8 @@ places-edit-generic =
 places-edit-folder2 =
     .label = Chỉnh sửa thư mục…
     .accesskey = i
+# Variables
+#   $count (number) - Number of folders to delete
 places-delete-folder =
     .label =
         { $count ->
@@ -132,14 +137,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = Quên trang web này
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = Hành động này sẽ xóa tất cả dữ liệu liên quan đến { $hostOrBaseDomain } bao gồm lịch sử, mật khẩu, cookie, bộ nhớ đệm và tùy chỉnh nội dung. Bạn có chắc muốn tiếp tục?
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = Hành động này sẽ xóa dữ liệu liên quan đến { $hostOrBaseDomain } bao gồm lịch sử, cookie, bộ nhớ đệm và tùy chỉnh nội dung. Dấu trang và mật khẩu liên quan sẽ không bị xóa. Bạn có chắc muốn tiếp tục?
 places-forget-about-this-site-forget = Quên
-places-library =
-    .title = Thư viện
-    .style = width:700px; height:500px;
 places-library3 =
     .title = Thư viện
 places-organize-button =

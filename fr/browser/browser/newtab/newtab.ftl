@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-### Midori Home / New Tab strings for about:home / about:newtab.
+### Firefox Home / New Tab strings for about:home / about:newtab.
 
 newtab-page-title = Nouvel onglet
 newtab-settings-button =
@@ -45,6 +45,7 @@ newtab-topsites-add-search-engine-header = Ajouter un moteur de recherche
 newtab-topsites-add-shortcut-header = Nouveau raccourci
 newtab-topsites-edit-topsites-header = Modifier le site populaire
 newtab-topsites-edit-shortcut-header = Modifier le raccourci
+newtab-topsites-add-shortcut-label = Ajouter un raccourci
 newtab-topsites-title-label = Titre
 newtab-topsites-title-input =
     .placeholder = Saisir un titre
@@ -194,6 +195,7 @@ newtab-section-header-recent-activity = Activité récente
 # Variables:
 #   $provider (string) - Name of the corresponding content provider.
 newtab-section-header-pocket = Recommandations par { $provider }
+newtab-section-header-stories = Des articles qui font réfléchir
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -202,6 +204,8 @@ newtab-empty-section-highlights = Commencez à naviguer puis nous afficherons de
 # Variables:
 #   $provider (string) - Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Il n’y en a pas d’autres. Revenez plus tard pour plus d’articles de { $provider }. Vous ne voulez pas attendre ? Choisissez un sujet parmi les plus populaires pour découvrir d’autres articles intéressants sur le Web.
+# Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
+newtab-empty-section-topstories-generic = Il n’y en a pas d’autres. Revenez plus tard pour plus d’articles. Vous ne voulez pas attendre ? Choisissez un sujet parmi les plus populaires pour découvrir d’autres articles intéressants sur le Web.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -223,19 +227,6 @@ newtab-pocket-cta-button = Installer { -pocket-brand-name }
 newtab-pocket-cta-text = Enregistrez les articles que vous aimez dans { -pocket-brand-name }, et stimulez votre imagination avec des lectures fascinantes.
 newtab-pocket-pocket-firefox-family = { -pocket-brand-name } fait partie de la famille { -brand-product-name }
 # A save to Pocket button that shows over the card thumbnail on hover.
-newtab-pocket-save-to-pocket = Enregistrer dans { -pocket-brand-name }
-newtab-pocket-saved-to-pocket = Enregistré dans { -pocket-brand-name }
-# This is a button shown at the bottom of the Pocket section that loads more stories when clicked.
-newtab-pocket-load-more-stories-button = Afficher plus d’articles
-
-## Pocket Final Card Section.
-## This is for the final card in the Pocket grid.
-
-newtab-pocket-last-card-title = Vous avez fait le tour !
-newtab-pocket-last-card-desc = Revenez plus tard pour découvrir plus de contenu.
-newtab-pocket-last-card-image =
-    .alt = Vous avez fait le tour !
-# A save to Pocket button that shows over the card thumbnail on hover.
 newtab-pocket-save = Enregistrer
 newtab-pocket-saved = Enregistrée
 
@@ -254,6 +245,9 @@ newtab-error-fallback-refresh-link = Actualisez la page pour réessayer.
 
 newtab-custom-shortcuts-title = Raccourcis
 newtab-custom-shortcuts-subtitle = Sites que vous enregistrez ou visitez
+newtab-custom-shortcuts-toggle =
+    .label = Raccourcis
+    .description = Sites que vous enregistrez ou visitez
 # Variables
 #   $num (number) - Number of rows to display
 newtab-custom-row-selector =
@@ -264,9 +258,117 @@ newtab-custom-row-selector =
 newtab-custom-sponsored-sites = Raccourcis sponsorisés
 newtab-custom-pocket-title = Recommandé par { -pocket-brand-name }
 newtab-custom-pocket-subtitle = Contenu exceptionnel sélectionné par { -pocket-brand-name }, membre de la famille { -brand-product-name }
+newtab-custom-stories-toggle =
+    .label = Articles recommandés
+    .description = Contenu exceptionnel sélectionné par les membres de la gamme de produits { -brand-product-name }
 newtab-custom-pocket-sponsored = Articles sponsorisés
 newtab-custom-pocket-show-recent-saves = Afficher les éléments enregistrés récemment
 newtab-custom-recent-title = Activité récente
 newtab-custom-recent-subtitle = Une sélection de sites et de contenus récents
+newtab-custom-recent-toggle =
+    .label = Activité récente
+    .description = Une sélection de sites et de contenus récents
+newtab-custom-weather-toggle =
+    .label = Météo
+    .description = Les prévisions du jour en un coup d’œil
 newtab-custom-close-button = Fermer
 newtab-custom-settings = Gérer plus de paramètres
+
+## New Tab Wallpapers
+
+newtab-wallpaper-title = Fonds d’écran
+newtab-wallpaper-reset = Réinitialiser
+newtab-wallpaper-light-red-panda = Panda roux
+newtab-wallpaper-light-mountain = Montagne blanche
+newtab-wallpaper-light-sky = Ciel avec des nuages violets et roses
+newtab-wallpaper-light-color = Formes bleues, roses et jaunes
+newtab-wallpaper-light-landscape = Paysage de montagne avec une brume bleue
+newtab-wallpaper-light-beach = Plage avec palmier
+newtab-wallpaper-dark-aurora = Aurores boréales
+newtab-wallpaper-dark-color = Formes rouges et bleues
+newtab-wallpaper-dark-panda = Panda roux caché dans la forêt
+newtab-wallpaper-dark-sky = Paysage de ville avec un ciel nocturne
+newtab-wallpaper-dark-mountain = Paysage de montagne
+newtab-wallpaper-dark-city = Paysage de ville avec une teinte violette
+
+## Solid Colors
+
+newtab-wallpaper-category-title-colors = Couleurs unies
+newtab-wallpaper-blue = Bleu
+newtab-wallpaper-light-blue = Bleu clair
+newtab-wallpaper-light-purple = Violet clair
+newtab-wallpaper-light-green = Vert clair
+newtab-wallpaper-green = Vert
+newtab-wallpaper-beige = Beige
+newtab-wallpaper-yellow = Jaune
+newtab-wallpaper-orange = Orange
+newtab-wallpaper-pink = Rose
+newtab-wallpaper-light-pink = Rose clair
+newtab-wallpaper-red = Rouge
+newtab-wallpaper-dark-blue = Bleu foncé
+newtab-wallpaper-dark-purple = Violet foncé
+newtab-wallpaper-dark-green = Vert foncé
+newtab-wallpaper-brown = Marron
+
+## Abstract
+
+newtab-wallpaper-category-title-abstract = Abstrait
+newtab-wallpaper-abstract-green = Formes vertes
+newtab-wallpaper-abstract-blue = Formes bleues
+newtab-wallpaper-abstract-purple = Formes violettes
+newtab-wallpaper-abstract-orange = Formes oranges
+newtab-wallpaper-gradient-orange = Dégradé d’orange et de rose
+newtab-wallpaper-abstract-blue-purple = Formes bleues et violettes
+
+## Photographs
+
+newtab-wallpaper-category-title-photographs = Photos
+newtab-wallpaper-beach-at-sunrise = Plage au lever du soleil
+newtab-wallpaper-beach-at-sunset = Plage au coucher du soleil
+newtab-wallpaper-storm-sky = Ciel orageux
+newtab-wallpaper-sky-with-pink-clouds = Ciel avec des nuages roses
+newtab-wallpaper-red-panda-yawns-in-a-tree = Un panda roux qui baille sur un arbre
+newtab-wallpaper-white-mountains = Montagnes blanches
+# Variables
+#   $author_string (String) - The name of the creator of the photo.
+#   $webpage_string (String) - The name of the webpage where the photo is located.
+newtab-wallpaper-attribution = Photo de <a data-l10n-name="name-link">{ $author_string }</a> sur <a data-l10n-name="webpage-link">{ $webpage_string }</a>
+newtab-wallpaper-feature-highlight-header = Essayez une touche de couleur
+newtab-wallpaper-feature-highlight-content = Donnez un nouveau look à votre page Nouvel onglet avec des fonds d’écran.
+newtab-wallpaper-feature-highlight-button = J’ai compris
+# Tooltip for dismiss button
+feature-highlight-dismiss-button =
+    .title = Ignorer
+    .aria-label = Fermer la pop-up
+feature-highlight-wallpaper =
+    .title = { -newtab-wallpaper-feature-highlight-header }
+    .aria-label = { -newtab-wallpaper-feature-highlight-content }
+
+## New Tab Weather
+
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-see-forecast =
+    .title = Voir les prévisions sur { $provider }
+# Variables:
+#   $provider (string) - Service provider for weather data
+newtab-weather-sponsored = { $provider } ∙ Sponsorisé
+newtab-weather-menu-change-location = Changer de lieu
+newtab-weather-change-location-search-input = Rechercher un lieu
+newtab-weather-menu-weather-display = Affichage météo
+# Display options are:
+# - Simple: Displays a current weather condition icon and the current temperature
+# - Detailed: Include simple information plus a short text summary: e.g. "Mostly cloudy"
+newtab-weather-menu-weather-display-option-simple = Vue simplifiée
+newtab-weather-menu-change-weather-display-simple = Afficher la vue simplifiée
+newtab-weather-menu-weather-display-option-detailed = Vue détaillée
+newtab-weather-menu-change-weather-display-detailed = Afficher la vue détaillée
+newtab-weather-menu-temperature-units = Unité des températures
+newtab-weather-menu-temperature-option-fahrenheit = Fahrenheit
+newtab-weather-menu-temperature-option-celsius = Celsius
+newtab-weather-menu-change-temperature-units-fahrenheit = Passer en Fahrenheit
+newtab-weather-menu-change-temperature-units-celsius = Passer en Celsius
+newtab-weather-menu-hide-weather = Masquer la météo sur la page Nouvel onglet
+newtab-weather-menu-learn-more = En savoir plus
+# This message is shown if user is working offline
+newtab-weather-error-not-available = Les données météo ne sont pas disponibles pour le moment.

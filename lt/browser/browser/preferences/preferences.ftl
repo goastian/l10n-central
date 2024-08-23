@@ -44,6 +44,9 @@ category-experimental =
 pane-experimental-subtitle = Elkitės atsargiai
 pane-experimental-search-results-header = „{ -brand-short-name }“ eksperimentai: elkitės atsargiai
 pane-experimental-description2 = Išplėstinių nuostatų keitimas gali paveikti „{ -brand-short-name }“ veikimą arba saugumą.
+settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-category-labs =
+    .tooltiptext = { -firefoxlabs-brand-name }
 pane-experimental-reset =
     .label = Atstatyti numatytuosius
     .accesskey = A
@@ -62,17 +65,6 @@ should-restart-title = Perleisti „{ -brand-short-name }“
 should-restart-ok = Perleisti „{ -brand-short-name }“ dabar
 cancel-no-restart-button = Atsisakyti
 restart-later = Perleisti vėliau
-
-## Extension Control Notifications
-##
-## These strings are used to inform the user
-## about changes made by extensions to browser settings.
-##
-## <img data-l10n-name="icon"/> is going to be replaced by the extension icon.
-##
-## Variables:
-##   $name (String): name of the extension
-
 
 ## Extension Control Notifications
 ##
@@ -203,25 +195,15 @@ containers-remove-cancel-button = Palikti šį sudėtinį rodinį
 language-and-appearance-header = Kalba ir išvaizda
 preferences-web-appearance-header = Svetainių išvaizda
 preferences-web-appearance-description = Kai kurios svetainės pritaiko savo spalvų schemą pagal jūsų nustatymus. Pasirinkite, kurią spalvų schemą norėtumėte naudoti tokioms svetainėms.
-preferences-web-appearance-choice-browser = „{ -brand-short-name }“ grafinis apvalkalas
-preferences-web-appearance-choice-system = Sistemos grafinis apvalkalas
 preferences-web-appearance-choice-auto = Automatinis
 preferences-web-appearance-choice-light = Šviesus
 preferences-web-appearance-choice-dark = Tamsus
-preferences-web-appearance-choice-tooltip-browser =
-    .title = Priderinti jūsų „{ -brand-short-name }“ grafinio apvalkalo nustatymus svetainių fonui ir turiniui.
-preferences-web-appearance-choice-tooltip-system =
-    .title = Priderinti jūsų sistemos grafinio apvalkalo nustatymus svetainių fonui ir turiniui.
 preferences-web-appearance-choice-tooltip-auto =
     .title = Automatiškai keiskite svetainės foną ir turinį pagal sistemos nustatymus ir „{ -brand-short-name }“ grafinį apvalkalą.
 preferences-web-appearance-choice-tooltip-light =
     .title = Naudoti šviesias spalvas svetainių fonui ir turiniui.
 preferences-web-appearance-choice-tooltip-dark =
     .title = Naudoti tamsias spalvas svetainių fonui ir turiniui.
-preferences-web-appearance-choice-input-browser =
-    .aria-description = { preferences-web-appearance-choice-tooltip-browser.title }
-preferences-web-appearance-choice-input-system =
-    .aria-description = { preferences-web-appearance-choice-tooltip-system.title }
 preferences-web-appearance-choice-input-auto =
     .aria-description = { preferences-web-appearance-choice-tooltip-auto.title }
 preferences-web-appearance-choice-input-light =
@@ -231,6 +213,10 @@ preferences-web-appearance-choice-input-dark =
 # This can appear when using windows HCM or "Override colors: always" without
 # system colors.
 preferences-web-appearance-override-warning = Jūsų spalvų pasirinkimai pakeičia svetainių išvaizdą. <a data-l10n-name="colors-link">Tvarkyti spalvas</a>
+# This can appear when using windows HCM or "Override colors: always" without
+# system colors.
+preferences-web-appearance-override-warning2 =
+    .message = Jūsų spalvų pasirinkimai pakeičia svetainių išvaizdą.
 # This message contains one link. It can be moved within the sentence as needed
 # to adapt to your language, but should not be changed.
 preferences-web-appearance-footer = Tvarkykite { -brand-short-name } apvalkalus <a data-l10n-name="themes-link">prieduose ir grafiniuose apvalkaluose</a>
@@ -516,10 +502,6 @@ home-newtabs-mode-label = Naujos kortelės
 home-restore-defaults =
     .label = Atstatyti numatytąsias
     .accesskey = A
-# "Firefox" should be treated as a brand and kept in English,
-# while "Home" and "(Default)" can be localized.
-home-mode-choice-default =
-    .label = „Firefox“ pradžia (numatytoji)
 home-mode-choice-default-fx =
     .label = „{ -firefox-home-brand-name }“ (numatytasis)
 home-mode-choice-custom =
@@ -543,10 +525,8 @@ choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
 
-## Home Section - Midori Home Content Customization
+## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = „Firefox“ pradžios turinys
-home-prefs-content-description = Pasirinkite, kokį turinį norite matyti „Firefox“ pradžios ekrane
 home-prefs-content-header2 = „{ -firefox-home-brand-name }“ turinys
 home-prefs-content-description2 = Pasirinkite, kokio turinio norite savo „{ -firefox-home-brand-name }“ ekrane.
 home-prefs-search-header =
@@ -556,10 +536,6 @@ home-prefs-shortcuts-header =
 home-prefs-shortcuts-description = Jūsų įrašytos arba lankomos svetainės
 home-prefs-shortcuts-by-option-sponsored =
     .label = Rėmėjų leistukai
-
-## Variables:
-##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
-
 
 ## Variables:
 ##  $provider (string) - Name of the corresponding content provider, e.g "Pocket".
@@ -680,10 +656,6 @@ containers-settings-button =
 containers-remove-button =
     .label = Pašalinti
 
-## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
-## more discrete ("signed in" no longer means "and sync is connected").
-
-
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
@@ -702,13 +674,13 @@ sync-signedout-account-signin3 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Parsisiųskite „Firefox“, skirtą <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">„Android“</a> arba <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">„iOS“</a>, norėdami sinchronizuoti savo mobiliajame įrenginyje.
 
-## Firefox Account - Signed in
-
-
 ## Firefox account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Keisti profilio nuotrauką
+sync-profile-picture-with-alt =
+    .tooltiptext = Keisti profilio nuotrauką
+    .alt = Keisti profilio nuotrauką
 sync-sign-out =
     .label = Atsijungti…
     .accesskey = g
@@ -753,7 +725,6 @@ prefs-syncing-button =
 
 ## The list of things currently syncing.
 
-sync-currently-syncing-heading = Dabar sinchronizuojate šiuos elementus:
 sync-currently-syncing-bookmarks = Adresynas
 sync-currently-syncing-history = Žurnalas
 sync-currently-syncing-tabs = Atvertos kortelės
@@ -768,13 +739,6 @@ sync-change-options =
 
 ## The "Choose what to sync" dialog.
 
-sync-choose-what-to-sync-dialog =
-    .title = Pasirinkite, ką sinchronizuosite
-    .style = width: 36em; min-height: 35em;
-    .buttonlabelaccept = Įrašyti pakeitimus
-    .buttonaccesskeyaccept = r
-    .buttonlabelextra2 = Atsijungti…
-    .buttonaccesskeyextra2 = t
 sync-choose-what-to-sync-dialog3 =
     .title = Pasirinkite, ką sinchronizuosite
     .style = min-width: 36em;
@@ -850,6 +814,9 @@ pane-privacy-logins-and-passwords-header = Prisijungimai ir slaptažodžiai
 forms-ask-to-save-logins =
     .label = Klausti, ar norite įrašyti svetainių prisijungimus ir slaptažodžius
     .accesskey = r
+
+## Privacy Section - Passwords
+
 forms-exceptions =
     .label = Išimtys…
     .accesskey = š
@@ -860,8 +827,6 @@ forms-breach-alerts =
     .label = Rodyti įspėjimus apie slaptažodžius pažeistose svetainėse
     .accesskey = d
 forms-breach-alerts-learn-more-link = Sužinoti daugiau
-relay-integration =
-    .label = Įjunkite „{ -relay-brand-name }“ savo „{ -brand-short-name }“ slaptažodžių tvarkyklėje
 relay-integration-learn-more-link = Sužinoti daugiau
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -904,6 +869,9 @@ primary-password-os-auth-dialog-message-win = Norėdami sukurti pagrindinį slap
 # notes are only valid for English. Please test in your locale.
 primary-password-os-auth-dialog-message-macosx = sukurti pagrindinį slaptažodį
 master-password-os-auth-dialog-caption = { -brand-full-name }
+
+## Privacy section - Autofill
+
 
 ## Privacy Section - History
 
@@ -977,8 +945,6 @@ sitedata-option-block-cross-site-cookies =
     .label = Tarp svetainių veikiantys stebėjimo slapukai, o kitus tarp svetainių veikiančius slapukus izoliuoti
 sitedata-option-block-unvisited =
     .label = Slapukai iš neaplankytų svetainių
-sitedata-option-block-all-third-party =
-    .label = Visi trečiųjų šalių slapukai (gali sutrikti svetainių veikimas)
 sitedata-option-block-all =
     .label = Visi slapukai (sutriks svetainių veikimas)
 sitedata-clear =
@@ -992,6 +958,9 @@ sitedata-cookies-exceptions =
     .accesskey = m
 
 ## Privacy Section - Cookie Banner Handling
+
+
+## Privacy Section - Cookie Banner Blocking
 
 
 ## Privacy Section - Address Bar
@@ -1051,7 +1020,6 @@ content-blocking-etp-strict-desc = Stipresnė apsauga, tačiau gali sutrikti kai
 content-blocking-etp-custom-desc = Pasirinkite, kuriuos stebėjimo elementus ir scenarijus norite blokuoti.
 content-blocking-etp-blocking-desc = „{ -brand-short-name }“ blokuoja:
 content-blocking-private-windows = Stebėjimui naudojamas turinys privačiojo naršymo languose
-content-blocking-cross-site-cookies-in-all-windows = Tarp svetainių veikiantys slapukai visuose languose (įskaitant stebėjimo slapukus)
 content-blocking-cross-site-cookies-in-all-windows2 = Tarp svetainių veikiantys slapukai visuose languose
 content-blocking-cross-site-tracking-cookies = Tarp svetainių veikiantys stebėjimo slapukai
 content-blocking-all-cross-site-cookies-private-windows = Tarp svetainių veikiantys slapukai privačiuose languose
@@ -1060,14 +1028,8 @@ content-blocking-social-media-trackers = Socialinių tinklų stebėjimo elementa
 content-blocking-all-cookies = Visi slapukai
 content-blocking-unvisited-cookies = Slapukai iš nelankytų svetainių
 content-blocking-all-windows-tracking-content = Stebėjimui naudojamas turinys visuose languose
-content-blocking-all-third-party-cookies = Visi trečiųjų šalių slapukai
 content-blocking-cryptominers = Kriptovaliutų kasėjai
 content-blocking-fingerprinters = Skaitmeninių atspaudų stebėjimas
-# "Test pilot" is used as a verb. Possible alternatives:
-# "Be the first to try", "Join an early experiment".
-content-blocking-etp-standard-tcp-rollout-checkbox =
-    .label = Išbandykite mūsų galingiausią privatumo apsaugą
-    .accesskey = b
 
 # The tcp-rollout strings are no longer used for the rollout but for tcp-by-default in the standard section
 
@@ -1182,12 +1144,17 @@ addon-recommendations-link = Sužinoti daugiau
 collection-health-report-disabled = Duomenų siuntimas šiai darinio sąrankai yra išjungtas
 collection-backlogged-crash-reports-with-link = Leisti „{ -brand-short-name }“ siųsti sukauptus strigčių pranešimus jūsų vardu. <a data-l10n-name="crash-reports-link">Sužinoti daugiau</a>
     .accesskey = s
+collection-backlogged-crash-reports = Leisti „{ -brand-short-name }“ siųsti sukauptus strigčių pranešimus jūsų vardu.
+    .accesskey = s
 privacy-segmentation-section-header = Naujos funkcijos, kurios pagerina jūsų naršymą
 privacy-segmentation-section-description = Kai siūlome funkcijas, kurios naudoja jūsų duomenis, kad suteiktų jums asmeniškesnės patirties:
 privacy-segmentation-radio-off =
     .label = Naudoti „{ -brand-product-name }“ rekomendacijas
 privacy-segmentation-radio-on =
     .label = Rodyti detalią informaciją
+
+## Privacy Section - Website Advertising Preferences
+
 
 ## Privacy Section - Security
 ##

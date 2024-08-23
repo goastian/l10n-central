@@ -64,6 +64,9 @@ places-bookmarks-search =
 places-delete-domain-data =
     .label = このサイトの履歴を消去
     .accesskey = F
+places-forget-domain-data =
+    .label = このサイトの履歴を消去...
+    .accesskey = F
 places-sortby-name =
     .label = 名前順に並べ替える
     .accesskey = r
@@ -91,7 +94,7 @@ places-delete-page =
            *[other] ページを削除
         }
     .accesskey = D
-# Managed bookmarks are created by an administrator and cannot be changed by the user.
+# Managed bookmarks are created by enterprise policy and cannot be changed by the user.
 managed-bookmarks =
     .label = 管理ブックマーク
 # This label is used when a managed bookmarks folder doesn't have a name.
@@ -126,14 +129,8 @@ places-manage-bookmarks =
 places-forget-about-this-site-confirmation-title = このサイトのデータの消去について
 # Variables:
 # $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
-places-forget-about-this-site-confirmation-message = この操作は { $hostOrBaseDomain } に関連する履歴、パスワード、Cookie、キャッシュ、コンテンツの設定を含むすべてのデータを消去します。本当に消去してもよろしいですか？
-# Variables:
-# $hostOrBaseDomain (string) - The base domain (or host in case there is no base domain) for which data is being removed
 places-forget-about-this-site-confirmation-msg = この操作は { $hostOrBaseDomain } に関連する履歴、Cookie、キャッシュ、コンテンツの設定を含むデータを削除します。関連するブックマークとパスワードは削除されません。本当に削除してもよろしいですか？
 places-forget-about-this-site-forget = 消去
-places-library =
-    .title = ブラウジングライブラリー
-    .style = width:750px; height:500px;
 places-library3 =
     .title = ブラウジングライブラリー
 places-organize-button =

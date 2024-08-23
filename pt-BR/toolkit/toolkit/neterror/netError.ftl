@@ -56,14 +56,14 @@ neterror-dns-not-found-hint-firewall = Verificar se o { -brand-short-name } tem 
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = O { -brand-short-name } não pode proteger sua requisição para o endereço deste site através de nosso resolvedor confiável de DNS. Motivo:
-neterror-dns-not-found-trr-third-party-warning = Você pode continuar com um resolvedor de DNS que não é seguro. No entanto, um terceiro pode conseguir ver quais sites você visita.
+neterror-dns-not-found-trr-only-reason2 = O { -brand-short-name } não pode proteger sua requisição para o endereço deste site através de nosso provedor de DNS seguro. Motivo:
 neterror-dns-not-found-trr-third-party-warning2 = Você pode continuar com seu resolvedor de DNS padrão. No entanto, terceiros podem conseguir ver quais sites você visita.
 neterror-dns-not-found-trr-only-could-not-connect = O { -brand-short-name } não conseguiu se conectar com { $trrDomain }.
 neterror-dns-not-found-trr-only-timeout = A conexão com { $trrDomain } demorou mais do que o esperado.
 neterror-dns-not-found-trr-offline = Você não está conectado à internet.
-neterror-dns-not-found-trr-unknown-host = Um endereço deste site não foi encontrado por { $trrDomain }.
 neterror-dns-not-found-trr-unknown-host2 = Este site não foi encontrado por { $trrDomain }.
 neterror-dns-not-found-trr-server-problem = Houve um problema com { $trrDomain }.
+neterror-dns-not-found-bad-trr-url = URL inválida.
 neterror-dns-not-found-trr-unknown-problem = Problema não esperado.
 
 ## Native fallback specific messages
@@ -71,6 +71,7 @@ neterror-dns-not-found-trr-unknown-problem = Problema não esperado.
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-native-fallback-reason = O { -brand-short-name } não pode proteger sua requisição para o endereço deste site através de nosso resolvedor confiável de DNS. Motivo:
+neterror-dns-not-found-native-fallback-reason2 = O { -brand-short-name } não pode proteger sua requisição para o endereço deste site através de nosso provedor de DNS seguro. Motivo:
 neterror-dns-not-found-native-fallback-heuristic = O DNS sobre HTTPS foi desativado em sua rede.
 neterror-dns-not-found-native-fallback-not-confirmed2 = O { -brand-short-name } não conseguiu se conectar com { $trrDomain }.
 

@@ -24,9 +24,6 @@ pippki-pw-change2empty-in-fips-mode = Du är för närvarande i FIPS-läge. FIPS
 
 ## Reset Primary Password dialog
 
-reset-primary-password-window =
-    .title = Återställ huvudlösenord
-    .style = width: 40em
 reset-primary-password-window2 =
     .title = Återställ huvudlösenord
     .style = min-width: 40em
@@ -38,9 +35,6 @@ pippki-reset-password-confirmation-message = Ditt huvudlösenord har återställ
 
 ## Downloading cert dialog
 
-download-cert-window =
-    .title = Hämtar certifikat
-    .style = width: 46em
 download-cert-window2 =
     .title = Hämtar certifikat
     .style = min-width: 46em
@@ -56,11 +50,43 @@ download-cert-view-text = Undersök CA-certifikat
 
 ## Client Authorization Ask dialog
 
+
+## Client Authentication Ask dialog
+
 client-auth-window =
     .title = Begäran om användaridentifikation
 client-auth-site-description = Denna plats har begärt att du identifierar dig med ett certifikat:
 client-auth-choose-cert = Välj ett certifikat att ange som identifikation:
+client-auth-send-no-certificate =
+    .label = Skicka inte ett certifikat
+# Variables:
+# $hostname (String) - The domain name of the site requesting the client authentication certificate
+client-auth-site-identification = "{ $hostname }" har begärt att du ska identifiera dig med ett certifikat:
 client-auth-cert-details = Detaljer om valt certifikat:
+# Variables:
+# $issuedTo (String) - The subject common name of the currently-selected client authentication certificate
+client-auth-cert-details-issued-to = Utfärdat till: { $issuedTo }
+# Variables:
+# $serialNumber (String) - The serial number of the certificate (hexadecimal of the form "AA:BB:...")
+client-auth-cert-details-serial-number = Serienummer: { $serialNumber }
+# Variables:
+# $notBefore (String) - The date before which the certificate is not valid (e.g. Apr 21, 2023, 1:47:53 PM UTC)
+# $notAfter (String) - The date after which the certificate is not valid
+client-auth-cert-details-validity-period = Giltig från { $notBefore } till { $notAfter }
+# Variables:
+# $keyUsages (String) - A list of already-localized key usages for which the certificate may be used
+client-auth-cert-details-key-usages = Nyckelanvändningar: { $keyUsages }
+# Variables:
+# $emailAddresses (String) - A list of email addresses present in the certificate
+client-auth-cert-details-email-addresses = E-postadresser: { $emailAddresses }
+# Variables:
+# $issuedBy (String) - The issuer common name of the certificate
+client-auth-cert-details-issued-by = Utfärdad av: { $issuedBy }
+# Variables:
+# $storedOn (String) - The name of the token holding the certificate (for example, "OS Client Cert Token (Modern)")
+client-auth-cert-details-stored-on = Lagrad på: { $storedOn }
+client-auth-cert-remember-box =
+    .label = Kom ihåg detta beslut
 
 ## Set password (p12) dialog
 
@@ -72,13 +98,6 @@ set-password-backup-pw =
 set-password-repeat-backup-pw =
     .value = Lösenord för certifikatets säkerhetskopia (bekräftas):
 set-password-reminder = Viktigt: Om du glömmer detta lösenord kommer du inte att kunna återställa denna säkerhetskopia senare. Lagra detta lösenord på en säker plats.
-
-## Protected Auth dialog
-
-protected-auth-window =
-    .title = Skyddad informationsbärarautentisering
-protected-auth-msg = Var god autentisera till informationsbäraren. Autentiseringsmetoden beror på informationsbärarens typ.
-protected-auth-token = Informationsbärare:
 
 ## Protected authentication alert
 

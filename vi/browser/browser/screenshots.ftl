@@ -18,7 +18,7 @@ screenshots-copy-button-tooltip = Sao chép ảnh chụp màn hình vào bộ nh
 screenshots-download-button-title =
     .title = Tải xuống ảnh chụp màn hình
 screenshots-copy-button-title =
-    .title = Sao chép ảnh chụp màn hình vào khay nhớ tạm
+    .title = Sao chép ảnh chụp màn hình vào bộ nhớ tạm
 screenshots-cancel-button-title =
     .title = Hủy bỏ
 screenshots-retry-button-title =
@@ -46,3 +46,56 @@ screenshots-generic-error-title = Whoa! { -screenshots-brand-name } đã bị ho
 screenshots-generic-error-details = Chúng tôi không chắc những gì vừa xảy ra. Thử lại hoặc chụp một trang khác?
 screenshots-too-large-error-title = Ảnh chụp màn hình của bạn đã bị cắt vì nó quá lớn
 screenshots-too-large-error-details = Thử chọn vùng có cạnh dài nhất nhỏ hơn 32.700 pixel hoặc tổng diện tích 124.900.000 pixel.
+screenshots-component-retry-button =
+    .title = Thử chụp ảnh màn hình lại
+    .aria-label = Thử chụp ảnh màn hình lại
+screenshots-component-cancel-button =
+    .title =
+        { PLATFORM() ->
+            [macos] Hủy bỏ (esc)
+           *[other] Hủy bỏ (Esc)
+        }
+    .aria-label = Hủy bỏ
+# Variables
+#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
+screenshots-component-copy-button =
+    .title = Sao chép ({ $shortcut })
+    .aria-label = Sao chép
+screenshots-component-copy-button-label = Sao chép
+# Variables
+#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
+screenshots-component-download-button =
+    .title = Tải xuống ({ $shortcut })
+    .aria-label = Tải xuống
+screenshots-component-download-button-label = Tải xuống
+# Variables
+#   $shortcut (String) - A keyboard shortcut for copying the screenshot.
+screenshots-component-copy-button-2 = Sao chép
+    .title = Sao chép ({ $shortcut })
+    .aria-label = Sao chép
+# Variables
+#   $shortcut (String) - A keyboard shortcut for saving/downloading the screenshot.
+screenshots-component-download-button-2 = Tải xuống
+    .title = Tải xuống ({ $shortcut })
+    .aria-label = Tải xuống
+
+## The below strings are used to capture keydown events so the strings should
+## not be changed unless the keyboard layout in the locale requires it.
+
+screenshots-component-download-key = S
+screenshots-component-copy-key = C
+
+##
+
+# This string represents the selection size area
+# "x" here represents "by" (i.e 123 by 456)
+# Variables:
+#   $width (Number) - The width of the selection region in pixels
+#   $height (Number) - The height of the selection region in pixels
+screenshots-overlay-selection-region-size-2 = { $width } x { $height }
+# This string represents the selection size area
+# "×" here represents "by" (i.e 123 by 456)
+# Variables:
+#   $width (Number) - The width of the selection region in pixels
+#   $height (Number) - The height of the selection region in pixels
+screenshots-overlay-selection-region-size-3 = { $width } × { $height }

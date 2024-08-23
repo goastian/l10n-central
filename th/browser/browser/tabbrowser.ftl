@@ -87,6 +87,11 @@ tabbrowser-confirm-caretbrowsing-title = การเลื่อนดูด้
 tabbrowser-confirm-caretbrowsing-message = กด F7 เพื่อเปิดปิดการเลื่อนดูโดยแป้นพิมพ์ ในการเลื่อนดูแบบนี้ จะมีเคอร์เซอร์ที่เคลื่อนที่ได้อยู่บนหน้าเว็บทำให้คุณเลือกข้อความด้วยแป้นพิมพ์ได้ คุณต้องการเปิดการเลื่อนดูโดยแป้นพิมพ์หรือไม่?
 tabbrowser-confirm-caretbrowsing-checkbox = ไม่ต้องแสดงกล่องโต้ตอบนี้ให้ฉันเห็นอีก
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = ระวัง
+tabbrowser-confirm-close-duplicate-tabs-text = เราจะยังคงเปิดแท็บที่ใช้งานล่าสุดทิ้งไว้
+
 ##
 
 # Variables:

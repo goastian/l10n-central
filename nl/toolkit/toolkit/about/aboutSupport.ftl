@@ -18,6 +18,10 @@ support-addons-type = Type
 support-addons-enabled = Ingeschakeld
 support-addons-version = Versie
 support-addons-id = ID
+legacy-user-stylesheets-title = Verouderde gebruikersstijlbladen
+legacy-user-stylesheets-enabled = Actief
+legacy-user-stylesheets-stylesheet-types = Stijlbladen
+legacy-user-stylesheets-no-stylesheets-found = Geen stijlbladen gevonden
 security-software-title = Beveiligingssoftware
 security-software-type = Type
 security-software-name = Naam
@@ -73,10 +77,11 @@ app-basics-remote-processes-count = Externe processen
 app-basics-enterprise-policies = Bedrijfsbeleidsregels
 app-basics-location-service-key-google = Google-locatieservicesleutel
 app-basics-safebrowsing-key-google = Google Safe Browsing-sleutel
-app-basics-key-mozilla = Mozilla-locatieservicesleutel
+app-basics-key-mozilla = Ablaze-locatieservicesleutel
 app-basics-safe-mode = Veilige modus
 app-basics-memory-size = Geheugengrootte (RAM)
 app-basics-disk-available = Beschikbare schijfruimte
+app-basics-pointing-devices = Aanwijsapparaten
 # Variables:
 #   $value (number) - Amount of data being stored
 #   $unit (string) - The unit of data being stored (e.g. MB)
@@ -182,6 +187,25 @@ media-codec-support-hw-decoding = Hardware-decodering
 media-codec-support-codec-name = Codecnaam
 media-codec-support-supported = Ondersteund
 media-codec-support-unsupported = Niet ondersteund
+media-codec-support-error = Codec-ondersteuningsinformatie niet beschikbaar. Probeer het opnieuw na het afspelen van een mediabestand.
+media-codec-support-lack-of-extension = Extensie installeren
+
+## Media Content Decryption Modules (CDM)
+## See EME Spec for more explanation for following technical terms
+## https://w3c.github.io/encrypted-media/
+
+media-content-decryption-modules-title = Informatie over inhoudsontsleutelingsmodules
+media-key-system-name = Sleutelsysteemnaam
+media-video-robustness = Videorobuustheid
+media-audio-robustness = Audiorobuustheid
+media-cdm-capabilities = Mogelijkheden
+# Clear Lead isn't defined in the spec, which means the the first few seconds
+# are not encrypted. It allows playback to start without having to wait for
+# license response, improving video start time and user experience.
+media-cdm-clear-lead = Schone start
+# We choose 2.2 as this is the version which the video provider usually want to have in order to stream 4K video securely
+# HDCP version https://w3c.github.io/encrypted-media/#idl-def-hdcpversion
+media-hdcp-22-compatible = HDCP 2.2-compatibel
 
 ##
 
@@ -261,6 +285,7 @@ try-newer-driver = Geblokkeerd voor uw grafische stuurprogramma. Probeer uw graf
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType-parameters
 compositing = Samenstellen
+support-font-determination = Debuginformatie over lettertypezichtbaarheid
 hardware-h264 = Hardwarematige H264-decodering
 main-thread-no-omtc = hoofdthread, geen OMTC
 yes = Ja
@@ -322,6 +347,9 @@ has-seccomp-bpf = Seccomp-BPF (Systeemaanroepfiltering)
 has-seccomp-tsync = Seccomp-threadsynchronisatie
 has-user-namespaces = Namespaces van gebruiker
 has-privileged-user-namespaces = Namespaces van gebruiker voor bevoegde processen
+# Variables
+# $status (string) - Boolean value of hasUserNamespaces (should only be false when support-user-namespaces-unavailable is used)
+support-user-namespaces-unavailable = { $status } – Deze functie is niet toegestaan door uw systeem. Dit kan beveiligingsfuncties van { -brand-short-name } beperken.
 can-sandbox-content = Inhoudsproces-sandboxing
 can-sandbox-media = Mediaplug-in-sandboxing
 content-sandbox-level = Sandboxniveau van inhoudsproces
@@ -390,6 +418,20 @@ support-printing-modified-settings = Gewijzigde afdrukinstellingen
 support-printing-prefs-name = Naam
 support-printing-prefs-value = Waarde
 
+## Remote Settings sections
+
+support-remote-settings-title = Externe instellingen
+support-remote-settings-status = Status
+support-remote-settings-status-ok = OK
+# Status when synchronization is not working.
+support-remote-settings-status-broken = Werkt niet
+support-remote-settings-last-check = Laatste controle
+support-remote-settings-local-timestamp = Lokale tijdstempel
+support-remote-settings-sync-history = Geschiedenis
+support-remote-settings-sync-history-status = Status
+support-remote-settings-sync-history-datetime = Datum
+support-remote-settings-sync-history-infos = Informatie
+
 ## Normandy sections
 
 support-remote-experiments-title = Externe experimenten
@@ -399,3 +441,22 @@ support-remote-experiments-see-about-studies = Zie <a data-l10n-name="support-ab
 support-remote-features-title = Externe functies
 support-remote-features-name = Naam
 support-remote-features-status = Status
+
+## Pointing devices
+
+pointing-device-mouse = Muis
+pointing-device-touchscreen = Aanraakscherm
+pointing-device-pen-digitizer = Pen Digitizer
+pointing-device-none = Geen aanwijsapparaten
+
+## Content Analysis (DLP)
+
+# DLP stands for Data Loss Prevention, an industry term for external software
+# that enterprises can set up to prevent sensitive data from being transferred
+# to external websites.
+content-analysis-title = Inhoudsanalyse (DLP)
+content-analysis-active = Actief
+content-analysis-connected-to-agent = Verbonden met agent
+content-analysis-agent-path = Pad naar agent
+content-analysis-agent-failed-signature-verification = Agent kon geen handtekeningverificatie uitvoeren
+content-analysis-request-count = Aantal aanvragen

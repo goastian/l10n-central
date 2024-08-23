@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Περισσότερες πληροφορίες σχετικά με την Ενισχυμένη προστασία από καταγραφή
 protections-panel-etp-on-header = Η Ενισχυμένη προστασία από καταγραφή είναι ΕΝΕΡΓΗ σε αυτόν τον ιστότοπο
 protections-panel-etp-off-header = Η Ενισχυμένη προστασία από καταγραφή είναι ΑΝΕΝΕΡΓΗ σε αυτόν τον ιστότοπο
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Ενισχυμένη προστασία από καταγραφή
+    .description = Ενεργή για αυτόν τον ιστότοπο
+    .aria-label = Ενισχυμένη προστασία από καταγραφή: Ενεργή για το { $host }
+protections-panel-etp-toggle-off =
+    .label = Ενισχυμένη προστασία από καταγραφή
+    .description = Ανενεργή για αυτόν τον ιστότοπο
+    .aria-label = Ενισχυμένη προστασία από καταγραφή: Ανενεργή για το { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Δεν λειτουργεί ο ιστότοπος;
 # The heading/title of the sub-panel view
@@ -33,16 +47,20 @@ protections-panel-site-not-working-view =
 ## a tooltip explaining why these items were not blocked in the page.
 
 protections-panel-not-blocking-why-label = Γιατί;
-protections-panel-not-blocking-why-etp-on-tooltip = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, μερικά κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μην λειτουργούν.
+protections-panel-not-blocking-why-etp-on-tooltip = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, μερικά κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μη λειτουργούν.
 protections-panel-not-blocking-why-etp-off-tooltip = Έχουν φορτωθεί όλοι οι ιχνηλάτες του ιστοτόπου επειδή η προστασία είναι ανενεργή.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Ο αποκλεισμός αυτών μπορεί να προκαλέσει τη δυσλειτουργία ορισμένων στοιχείων σε κάποιους ιστοτόπους. Χωρίς τους ιχνηλάτες, μερικά κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μη λειτουργούν.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Έχουν φορτωθεί όλοι οι ιχνηλάτες του ιστοτόπου επειδή η προστασία είναι ανενεργή.
 
 ##
 
-protections-panel-no-trackers-found = Δεν εντοπίστηκαν ιχνηλάτες γνωστοί στο { -brand-short-name } σε αυτή τη σελίδα.
+protections-panel-no-trackers-found = Δεν εντοπίστηκαν ιχνηλάτες γνωστοί στο { -brand-short-name } σε αυτήν τη σελίδα.
 protections-panel-content-blocking-tracking-protection = Περιεχόμενο καταγραφής
 protections-panel-content-blocking-socialblock = Ιχνηλάτες κοινωνικών δικτύων
-protections-panel-content-blocking-cryptominers-label = Cryptominers
-protections-panel-content-blocking-fingerprinters-label = Fingerprinters
+protections-panel-content-blocking-cryptominers-label = Cryptominer
+protections-panel-content-blocking-fingerprinters-label = Fingerprinter
 
 ## In the protections panel, Content Blocking category items are in three sections:
 ##   "Blocked" for categories being blocked in the current page,
@@ -75,10 +93,10 @@ protections-panel-site-not-working-view-send-report = Αποστολή αναφ�
 
 ##
 
-protections-panel-cross-site-tracking-cookies = Αυτά τα cookies σάς ακολουθούν από ιστότοπο σε ιστότοπο για να συλλέξουν δεδομένα σχετικά με τη δραστηριότητά σας στο διαδίκτυο. Δημιουργούνται από τρίτους, όπως εταιρείες διαφημίσεων και ανάλυσης.
+protections-panel-cross-site-tracking-cookies = Αυτά τα cookie σάς ακολουθούν από ιστότοπο σε ιστότοπο για να συλλέξουν δεδομένα σχετικά με τη δραστηριότητά σας στο διαδίκτυο. Δημιουργούνται από τρίτους, όπως εταιρείες διαφημίσεων και ανάλυσης.
 protections-panel-cryptominers = Τα cryptominers χρησιμοποιούν την υπολογιστική ισχύ του συστήματός σας για να εξορύξουν κρυπτονομίσματα. Τα σενάρια εξόρυξης κρυπτονομισμάτων εξαντλούν την μπαταρία σας, επιβραδύνουν τον υπολογιστή σας, ενώ ενδέχεται να δείτε αυξημένες χρεώσεις στο λογαριασμό τους ρεύματος.
 protections-panel-fingerprinters = Τα fingerprinter συλλέγουν ρυθμίσεις από το πρόγραμμα περιήγησης και τον υπολογιστή σας για να δημιουργήσουν ένα προφίλ για εσάς. Με τη χρήση αυτού του ψηφιακού αποτυπώματος, μπορούν να σας παρακολουθούν σε διάφορους ιστοτόπους.
-protections-panel-tracking-content = Οι ιστότοποι ενδέχεται να φορτώνουν εξωτερικές διαφημίσεις, βίντεο και άλλο περιεχόμενο με κώδικα καταγραφής. Η φραγή περιεχομένου καταγραφής μπορεί να συμβάλλει στην ταχύτερη φόρτωση των ιστοτόπων, αλλά ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μην λειτουργούν.
+protections-panel-tracking-content = Οι ιστότοποι ενδέχεται να φορτώνουν εξωτερικές διαφημίσεις, βίντεο και άλλο περιεχόμενο με κώδικα καταγραφής. Η φραγή περιεχομένου καταγραφής μπορεί να συμβάλλει στην ταχύτερη φόρτωση των ιστοτόπων, αλλά ορισμένα κουμπιά, φόρμες και πεδία σύνδεσης ενδέχεται να μη λειτουργούν.
 protections-panel-social-media-trackers = Τα κοινωνικά δίκτυα τοποθετούν ιχνηλάτες σε άλλους ιστοτόπους για να καταγράφουν ό,τι κάνετε και βλέπετε στο διαδίκτυο. Αυτό επιτρέπει στις εταιρείες κοινωνικών δικτύων να μάθουν περισσότερα για εσάς πέρα από αυτά που κοινοποιείτε στα προφίλ σας.
 protections-panel-description-shim-allowed = Οι παρακάτω ιχνηλάτες της σελίδας επιτρέπονται μερικώς λόγω της αλληλεπίδρασής σας μαζί τους.
 protections-panel-description-shim-allowed-learn-more = Μάθετε περισσότερα
@@ -104,18 +122,41 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 
 # Cookie Banner Handling
 
-protections-panel-cookie-banner-handling-header = Μείωση μηνυμάτων για cookies
+protections-panel-cookie-banner-handling-header = Μείωση μηνυμάτων για cookie
+protections-panel-cookie-banner-blocker-header = Αποκλεισμός μηνυμάτων για cookie
 protections-panel-cookie-banner-handling-enabled = Ενεργή για αυτόν τον ιστότοπο
 protections-panel-cookie-banner-handling-disabled = Ανενεργή για αυτόν τον ιστότοπο
 protections-panel-cookie-banner-handling-undetected = Ο ιστότοπος δεν υποστηρίζεται
 protections-panel-cookie-banner-view-title =
-    .title = Μείωση μηνυμάτων για cookies
+    .title = Μείωση μηνυμάτων για cookie
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
-protections-panel-cookie-banner-view-turn-off-for-site = Απενεργοποίηση μείωσης μηνυμάτων για cookies στο { $host };
-protections-panel-cookie-banner-view-turn-on-for-site = Ενεργοποίηση μείωσης μηνυμάτων για cookies στο { $host };
-protections-panel-cookie-banner-view-cookie-clear-warning = Το { -brand-short-name } θα απαλείψει τα cookies του ιστοτόπου και θα ανανεώσει τη σελίδα. Η απαλοιφή όλων των cookies ενδέχεται να σας αποσυνδέσει ή να αδειάσει τα καλάθια αγορών.
-protections-panel-cookie-banner-view-turn-on-description = Το { -brand-short-name } προσπαθεί να απορρίψει αυτόματα όλα τα αιτήματα για cookies σε υποστηριζόμενους ιστότοπους.
+protections-panel-cookie-banner-view-turn-off-for-site = Απενεργοποίηση μείωσης μηνυμάτων για cookie στο { $host };
+protections-panel-cookie-banner-view-turn-on-for-site = Ενεργοποίηση μείωσης μηνυμάτων για cookie στο { $host };
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Αποκλεισμός μηνυμάτων για cookie
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Απενεργοποίηση αποκλεισμού μηνυμάτων για cookie στο { $host };
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Ενεργοποίηση αποκλεισμού μηνυμάτων για cookie σε αυτόν τον ιστότοπο;
+protections-panel-cookie-banner-view-cookie-clear-warning = Το { -brand-short-name } θα απαλείψει τα cookie του ιστοτόπου και θα ανανεώσει τη σελίδα. Η απαλοιφή όλων των cookie ενδέχεται να σας αποσυνδέσει από λογαριασμούς ή να αδειάσει τα καλάθια αγορών σας.
+protections-panel-cookie-banner-view-turn-on-description = Το { -brand-short-name } προσπαθεί να απορρίψει αυτόματα όλα τα αιτήματα για cookie σε υποστηριζόμενους ιστοτόπους.
 protections-panel-cookie-banner-view-cancel = Ακύρωση
 protections-panel-cookie-banner-view-turn-off = Απενεργοποίηση
 protections-panel-cookie-banner-view-turn-on = Ενεργοποίηση
+protections-panel-cookie-banner-blocker-view-turn-on-description = Ενεργοποιήστε το και το { -brand-short-name } θα προσπαθεί να απορρίπτει αυτόματα τα μηνύματα για cookie σε αυτόν τον ιστότοπο.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Ακύρωση
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Απενεργοποίηση
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Ενεργοποίηση
+protections-panel-report-broken-site =
+    .label = Αναφορά προβληματικού ιστοτόπου
+    .title = Αναφορά προβληματικού ιστοτόπου
+
+## Protections panel info message
+
+cfr-protections-panel-header = Περιήγηση χωρίς παρακολούθηση
+cfr-protections-panel-body = Κρατήστε τα δεδομένα σας για τον εαυτό σας. Το { -brand-short-name } σας προστατεύει από πολλούς από τους πιο συνηθισμένους ιχνηλάτες που ακολουθούν ό,τι κάνετε στο διαδίκτυο.
+cfr-protections-panel-link-text = Μάθετε περισσότερα

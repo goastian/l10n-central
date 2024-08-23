@@ -127,6 +127,11 @@ tabbrowser-confirm-caretbrowsing-title = Przeglądanie z użyciem kursora
 tabbrowser-confirm-caretbrowsing-message = Naciśnięcie klawisza F7 włącza lub wyłącza tryb przeglądania z użyciem kursora. Opcja ta wyświetla ruchomy kursor na stronach WWW, pozwalając na zaznaczanie tekstu przy pomocy klawiatury. Czy włączyć opcję przeglądania z użyciem kursora?
 tabbrowser-confirm-caretbrowsing-checkbox = Nie pytaj ponownie.
 
+## Confirmation dialog for closing all duplicate tabs
+
+tabbrowser-confirm-close-duplicate-tabs-title = Uwaga
+tabbrowser-confirm-close-duplicate-tabs-text = Ostatnia aktywna karta nie zostanie zamknięta
+
 ##
 
 # Variables:

@@ -29,10 +29,6 @@ third-party-tag-background = 백그라운드
     .title =
         이 모듈은 백그라운드에서 로드되었기 때문에 
         애플리케이션을 차단하지 않았습니다.
-third-party-unsigned-icon =
-    .title = 이 모듈은 서명되지 않음
-third-party-warning-icon =
-    .title = 이 모듈의 코드에서 { -brand-short-name } 충돌이 발생했습니다.
 third-party-icon-unsigned =
     .title = 이 모듈은 서명되지 않음
     .alt = 이 모듈은 서명되지 않음
@@ -63,14 +59,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         이 { -brand-short-name } 실행에 대해 차단 목록이 비활성화되어 있지만 
         현재 차단된 것으로 표시되어 있습니다. 차단을 해제하려면 누르세요.
+third-party-button-to-block-module = 이 모듈 차단
+    .title = 이 모듈 차단
+    .aria-label = 이 모듈 차단
+third-party-button-to-unblock-module = 이 모듈 차단 해제
+    .title = 현재 차단되었습니다. 차단을 해제하려면 누르세요.
+    .aria-label = 현재 차단되었습니다. 차단을 해제하려면 누르세요.
+third-party-button-to-unblock-module-disabled = 이 모듈 차단 해제 (현재 차단 목록 비활성화됨)
+    .title =
+        이 { -brand-short-name } 실행에 대해 차단 목록이 비활성화되어 있지만 
+        현재 차단됨으로 표시되어 있습니다. 차단을 해제하려면 누르세요.
+    .aria-label =
+        이 { -brand-short-name } 실행에 대해 차단 목록이 비활성화되어 있지만 
+        현재 차단됨으로 표시되어 있습니다. 차단을 해제하려면 누르세요.
 third-party-button-expand =
     .title = 자세한 정보 표시
 third-party-button-collapse =
     .title = 자세한 정보 접기
-third-party-requires-restart = 차단된 제3자 모듈을 변경하려면 { -brand-short-name }를 다시 시작해야 합니다.
 third-party-blocking-requires-restart = 제3자 모듈을 차단하려면 { -brand-short-name }를 다시 시작해야 합니다.
 third-party-should-restart-title = { -brand-short-name } 다시 시작
-third-party-should-restart-ok = 지금 { -brand-short-name } 다시 시작
 third-party-restart-now = 지금 다시 시작
 third-party-restart-later = 나중에 다시 시작
 third-party-blocked-by-builtin =

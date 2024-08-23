@@ -15,6 +15,10 @@ fxviewtabrow-time = { DATETIME($time, timeStyle: "short") }
 fxviewtabrow-tabs-list-tab =
     .title = { $targetURI } in einem neuen Tab öffnen
 # Variables:
+#   $tabTitle (string) - Title of tab being closed
+fxviewtabrow-close-tab-button =
+    .title = { $tabTitle } schließen
+# Variables:
 #   $tabTitle (string) - Title of tab being dismissed
 fxviewtabrow-dismiss-tab-button =
     .title = { $tabTitle } schließen
@@ -39,3 +43,42 @@ fxviewtabrow-save-to-pocket = In { -pocket-brand-name } speichern
     .accesskey = o
 fxviewtabrow-copy-link = Link kopieren
     .accesskey = L
+fxviewtabrow-close-tab = Tab schließen
+    .accesskey = s
+fxviewtabrow-move-tab = Tab verschieben
+    .accesskey = v
+fxviewtabrow-move-tab-start = An Anfang verschieben
+    .accesskey = A
+fxviewtabrow-move-tab-end = An Ende verschieben
+    .accesskey = E
+fxviewtabrow-move-tab-window = In neues Fenster verschieben
+    .accesskey = n
+fxviewtabrow-send-tab = Tab an Gerät senden
+    .accesskey = s
+fxviewtabrow-pin-tab = Tab anheften
+    .accesskey = h
+fxviewtabrow-unpin-tab = Tab ablösen
+    .accesskey = b
+fxviewtabrow-mute-tab = Tab stummschalten
+    .accesskey = m
+fxviewtabrow-unmute-tab = Stummschaltung für Tab aufheben
+    .accesskey = m
+# Variables:
+#   $tabTitle (string) - Title of the tab to which the context menu is associated
+fxviewtabrow-options-menu-button =
+    .title = Optionen für { $tabTitle }
+# Variables:
+#   $tabTitle (string) - Title of tab being muted
+fxviewtabrow-mute-tab-button =
+    .title = { $tabTitle } stummschalten
+# Variables:
+#   $tabTitle (string) - Title of tab being unmuted
+fxviewtabrow-unmute-tab-button =
+    .title = Stummschaltung für { $tabTitle } beenden
+
+## Strings below are to be used without context (tab title/URL) on mute/unmute buttons
+
+fxviewtabrow-mute-tab-button-no-context =
+    .title = Tab stummschalten
+fxviewtabrow-unmute-tab-button-no-context =
+    .title = Stummschaltung für Tab aufheben

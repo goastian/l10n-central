@@ -7,27 +7,54 @@
 
 autofill-manage-addresses-title = Sparade adresser
 autofill-manage-addresses-list-header = Adresser
-
 autofill-manage-credit-cards-title = Sparade kreditkort
 autofill-manage-credit-cards-list-header = Kreditkort
-
+autofill-manage-payment-methods-title = Sparade betalningsmetoder
+autofill-manage-cards-list-header = Kort
 autofill-manage-dialog =
     .style = min-width: 560px
 autofill-manage-remove-button = Ta bort
 autofill-manage-add-button = Lägg till…
 autofill-manage-edit-button = Redigera…
 
-##
+## The address capture doorhanger
 
+address-capture-save-doorhanger-header = Spara adress?
+address-capture-save-doorhanger-description = Spara information i { -brand-short-name } så att du snabbt kan fylla i formulär.
+address-capture-update-doorhanger-header = Uppdatera adress?
+address-capture-edit-doorhanger-header = Redigera adress
+address-capture-save-button =
+    .label = Spara
+    .accessKey = S
+address-capture-not-now-button =
+    .label = Inte nu
+    .accessKey = n
+address-capture-cancel-button =
+    .label = Avbryt
+    .accessKey = A
+address-capture-update-button =
+    .label = Uppdatera
+    .accessKey = U
+address-capture-manage-address-button =
+    .label = Adressinställningar
+address-capture-learn-more-button =
+    .label = Läs mer
 # The dialog title for creating addresses in browser preferences.
 autofill-add-new-address-title = Lägg till ny adress
+address-capture-open-menu-button =
+    .aria-label = Öppna meny
+address-capture-edit-address-button =
+    .aria-label = Redigera adress
+# The dialog title for creating addresses in browser preferences.
+autofill-add-address-title = Lägg till adress
 # The dialog title for editing addresses in browser preferences.
 autofill-edit-address-title = Redigera adress
-
+autofill-address-name = Namn
 autofill-address-given-name = Förnamn
 autofill-address-additional-name = Mellannamn
 autofill-address-family-name = Efternamn
 autofill-address-organization = Organisation
+autofill-address-street-address = Gatuadress
 autofill-address-street = Gatuadress
 
 ## address-level-3 (Sublocality) names
@@ -81,19 +108,25 @@ autofill-address-eircode = Eircode
 
 ##
 
+
+##
+
 autofill-address-country = Land eller region
+autofill-address-country-only = Land
 autofill-address-tel = Telefon
 autofill-address-email = E-post
-
 autofill-cancel-button = Avbryt
 autofill-save-button = Spara
 autofill-country-warning-message = Autofyll av formulär är för närvarande endast tillgänglig för vissa länder.
-
 # The dialog title for creating credit cards in browser preferences.
 autofill-add-new-card-title = Lägg till nytt kreditkort
 # The dialog title for editing credit cards in browser preferences.
 autofill-edit-card-title = Redigera kreditkort
-
+autofill-message-tooltip = Visa meddelande om autofyll
+# The dialog title for creating credit cards in browser preferences.
+autofill-add-card-title = Lägg till kort
+# The dialog title for editing credit cards in browser preferences.
+autofill-edit-card-title2 = Redigera kort
 # In macOS, this string is preceded by the operating system with "Firefox is trying to ",
 # and has a period added to its end. Make sure to test in your locale.
 autofill-edit-card-password-prompt =
@@ -102,7 +135,6 @@ autofill-edit-card-password-prompt =
         [windows] { -brand-short-name } försöker visa kreditkortsinformation. Bekräfta åtkomst till detta Windows-konto nedan.
        *[other] { -brand-short-name } försöker visa kreditkortsinformation.
     }
-
 autofill-card-number = Kortnummer
 autofill-card-invalid-number = Ange ett giltigt kortnummer
 autofill-card-name-on-card = Namn på kort

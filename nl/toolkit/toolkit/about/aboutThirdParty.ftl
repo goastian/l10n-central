@@ -29,10 +29,6 @@ third-party-tag-background = Achtergrond
     .title =
         Deze module heeft de toepassing niet geblokkeerd, omdat deze in de
         achtergrond is geladen.
-third-party-unsigned-icon =
-    .title = Deze module is niet ondertekend
-third-party-warning-icon =
-    .title = { -brand-short-name } is in code van deze module gecrasht.
 third-party-icon-unsigned =
     .title = Deze module is niet ondertekend
     .alt = Deze module is niet ondertekend
@@ -63,14 +59,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         Momenteel gemarkeerd als geblokkeerd, hoewel de blokkeerlijst is uitgeschakeld voor deze run
         van { -brand-short-name }. Klik om te deblokkeren.
+third-party-button-to-block-module = Deze module blokkeren
+    .title = Deze module blokkeren
+    .aria-label = Deze module blokkeren
+third-party-button-to-unblock-module = Deze module deblokkeren
+    .title = Momenteel geblokkeerd. Klik om te deblokkeren.
+    .aria-label = Momenteel geblokkeerd. Klik om te deblokkeren.
+third-party-button-to-unblock-module-disabled = Deze module deblokkeren (blokkeerlijst momenteel uitgeschakeld)
+    .title =
+        Momenteel gemarkeerd als geblokkeerd, hoewel de blokkeerlijst is uitgeschakeld voor deze run
+        van { -brand-short-name }. Klik om deze te deblokkeren.
+    .aria-label =
+        Momenteel gemarkeerd als geblokkeerd, hoewel de blokkeerlijst is uitgeschakeld voor deze run
+        van { -brand-short-name }. Klik om deze te deblokkeren.
 third-party-button-expand =
     .title = Detailinformatie tonen
 third-party-button-collapse =
     .title = Detailinformatie samenvouwen
-third-party-requires-restart = { -brand-short-name } dient opnieuw te starten om te wijzigen welke modules van derden worden geblokkeerd.
 third-party-blocking-requires-restart = Om een externe module te blokkeren, moet { -brand-short-name } opnieuw worden gestart.
 third-party-should-restart-title = { -brand-short-name } herstarten
-third-party-should-restart-ok = { -brand-short-name } nu herstarten
 third-party-restart-now = Nu herstarten
 third-party-restart-later = Later herstarten
 third-party-blocked-by-builtin =

@@ -27,10 +27,6 @@ third-party-tag-shellex = ส่วนขยายของ Shell
     .title = โมดูลชนิดนี้จะถูกโหลดเมื่อคุณเปิดกล่องโต้ตอบไฟล์ของระบบ
 third-party-tag-background = เบื้องหลัง
     .title = โมดูลนี้ไม่ปิดกั้นแอปพลิเคชันเพราะถูกโหลดในเบื้องหลัง
-third-party-unsigned-icon =
-    .title = โมดูลนี้ไม่มีการลงลายเซ็น
-third-party-warning-icon =
-    .title = { -brand-short-name } ขัดข้องในรหัสจากโมดูลนี้
 third-party-icon-unsigned =
     .title = โมดูลนี้ไม่มีการลงลายเซ็น
     .alt = โมดูลนี้ไม่มีการลงลายเซ็น
@@ -61,14 +57,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         ขณะนี้ถูกทำเครื่องหมายว่าปิดกั้นอยู่ แม้ว่ารายการปิดกั้นจะถูกปิดใช้งานในการเรียกใช้
         { -brand-short-name } ครั้งนี้ก็ตาม คลิกเพื่อเลิกปิดกั้น
+third-party-button-to-block-module = ปิดกั้นโมดูลนี้
+    .title = ปิดกั้นโมดูลนี้
+    .aria-label = ปิดกั้นโมดูลนี้
+third-party-button-to-unblock-module = เลิกปิดกั้นโมดูลนี้
+    .title = ขณะนี้ถูกปิดกั้นอยู่ คลิกเพื่อเลิกปิดกั้น
+    .aria-label = ขณะนี้ถูกปิดกั้นอยู่ คลิกเพื่อเลิกปิดกั้น
+third-party-button-to-unblock-module-disabled = เลิกปิดกั้นโมดูลนี้ (รายการปิดกั้นถูกปิดใช้งานอยู่ในขณะนี้)
+    .title =
+        ขณะนี้ถูกทำเครื่องหมายว่าปิดกั้นอยู่ แม้ว่ารายการปิดกั้นจะถูกปิดใช้งานในการเรียกใช้
+        { -brand-short-name } ครั้งนี้ คลิกเพื่อเลิกปิดกั้นโมดูล
+    .aria-label =
+        ขณะนี้ถูกทำเครื่องหมายว่าปิดกั้นอยู่ แม้ว่ารายการปิดกั้นจะถูกปิดใช้งานในการเรียกใช้
+        { -brand-short-name } ครั้งนี้ คลิกเพื่อเลิกปิดกั้นโมดูล
 third-party-button-expand =
     .title = แสดงข้อมูลโดยละเอียด
 third-party-button-collapse =
     .title = ยุบข้อมูลโดยละเอียด
-third-party-requires-restart = { -brand-short-name } ต้องเริ่มการทำงานใหม่เพื่อเปลี่ยนโมดูลของบุคคลที่สามที่จะถูกปิดกั้น
 third-party-blocking-requires-restart = หากต้องการบล็อกโมดูลของบุคคลที่สาม { -brand-short-name } ต้องเริ่มการทำงานใหม่
 third-party-should-restart-title = เริ่มการทำงาน { -brand-short-name } ใหม่
-third-party-should-restart-ok = เริ่มการทำงาน { -brand-short-name } ใหม่ตอนนี้
 third-party-restart-now = เริ่มการทำงานใหม่ตอนนี้
 third-party-restart-later = เริ่มการทำงานใหม่ภายหลัง
 third-party-blocked-by-builtin =

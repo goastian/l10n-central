@@ -29,12 +29,30 @@ protections-panel-site-not-working = Funktioniert die Website nicht richtig?
 protections-panel-site-not-working-view =
     .title = Funktioniert die Website nicht richtig?
 
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Verbesserter Tracking-Schutz
+    .description = Aktiviert für diese Website
+    .aria-label = Verbesserter Tracking-Schutz: Aktiviert für { $host }
+protections-panel-etp-toggle-off =
+    .label = Verbesserter Tracking-Schutz
+    .description = Deaktiviert für diese Website
+    .aria-label = Verbesserter Tracking-Schutz: Deaktiviert für { $host }
+
 ## The "Allowed" header also includes a "Why?" link that, when hovered, shows
 ## a tooltip explaining why these items were not blocked in the page.
 
 protections-panel-not-blocking-why-label = Warum?
 protections-panel-not-blocking-why-etp-on-tooltip = Das Blockieren könnte Probleme mit Inhalten einiger Websites verursachen. Ohne Skripte zur Aktivitätenverfolgung funktionieren einige Schaltflächen, Formulare und Anmeldefelder vielleicht nicht.
 protections-panel-not-blocking-why-etp-off-tooltip = Alle Elemente zur Aktivitätenverfolgung auf dieser Website wurden geladen, da der Schutz deaktiviert ist.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Das Blockieren könnte Probleme mit Inhalten einiger Websites verursachen. Ohne Skripte zur Aktivitätenverfolgung funktionieren einige Schaltflächen, Formulare und Anmeldefelder vielleicht nicht.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Alle Elemente zur Aktivitätenverfolgung auf dieser Website wurden geladen, da der Schutz deaktiviert ist.
 
 ##
 
@@ -90,7 +108,6 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Problem mit Website melden
 protections-panel-content-blocking-breakage-report-view-description = Das Blockieren bestimmter Skripte zur Aktivitätenverfolgung kann bei einigen Websites zu Problemen führen. Wenn Sie Probleme melden, helfen Sie { -brand-short-name } für alle besser zu machen. Beim Senden des Berichts werden eine Adresse sowie Informationen über Ihre Browser-Einstellungen an Mozilla gesendet. <label data-l10n-name="learn-more">Weitere Informationen</label>
-protections-panel-content-blocking-breakage-report-view-description2 = Das Blockieren bestimmter Skripte zur Aktivitätenverfolgung kann bei einigen Websites zu Problemen führen. Wenn Sie Probleme melden, helfen Sie { -brand-short-name } für alle besser zu machen. Beim Senden des Berichts werden eine Adresse sowie Informationen über Ihre Browser-Einstellungen an { -vendor-short-name } gesendet.
 protections-panel-content-blocking-breakage-report-view-collection-url = Adresse
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = Adresse
@@ -105,6 +122,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Reduzierung von Cookie-Bannern
+protections-panel-cookie-banner-blocker-header = Cookie-Banner-Blocker
 protections-panel-cookie-banner-handling-enabled = Für diese Website aktiviert
 protections-panel-cookie-banner-handling-disabled = Für diese Website deaktiviert
 protections-panel-cookie-banner-handling-undetected = Website derzeit nicht unterstützt
@@ -114,8 +132,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Cookie-Banner-Reduzierung für { $host } deaktivieren?
 protections-panel-cookie-banner-view-turn-on-for-site = Cookie-Banner-Reduzierung für diese Website aktivieren?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Blocker für Cookie-Banner
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Cookie-Banner-Blocker für { $host } deaktivieren?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Cookie-Banner-Blocker für diese Website aktivieren?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } löscht die Cookies dieser Website und aktualisiert die Seite. Das Löschen aller Cookies kann Sie abmelden oder Warenkörbe leeren.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } versucht, alle Cookie-Anforderungen auf unterstützten Websites automatisch abzulehnen.
 protections-panel-cookie-banner-view-cancel = Abbrechen
 protections-panel-cookie-banner-view-turn-off = Deaktivieren
 protections-panel-cookie-banner-view-turn-on = Aktivieren
+protections-panel-cookie-banner-blocker-view-turn-on-description = Aktivieren und { -brand-short-name } wird versuchen, Cookie-Banner auf dieser Website automatisch abzulehnen.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Abbrechen
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Deaktivieren
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Aktivieren
+protections-panel-report-broken-site =
+    .label = Problem mit Website melden
+    .title = Problem mit Website melden
+
+## Protections panel info message
+
+cfr-protections-panel-header = Surfen ohne verfolgt zu werden
+cfr-protections-panel-body = Behalten Sie die Kontrolle über Ihre Daten. { -brand-short-name } schützt Sie vor den verbreitetsten Skripten, welche Ihre Online-Aktivitäten verfolgen.
+cfr-protections-panel-link-text = Weitere Informationen

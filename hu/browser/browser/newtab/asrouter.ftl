@@ -28,11 +28,13 @@ cfr-doorhanger-extension-author = szerző: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Javaslat
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = Javaslat
     .tooltiptext = Kiegészítőjavaslat
     .a11y-announcement = Kiegészítőjavaslat érhető el
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
+# .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = Javaslat
     .tooltiptext = Funkciójavaslat
     .a11y-announcement = Funkciójavaslat érhető el
@@ -61,6 +63,7 @@ cfr-doorhanger-extension-total-users =
 
 cfr-doorhanger-bookmark-fxa-header = Szinkronizálja a könyvjelzőit mindenhol.
 cfr-doorhanger-bookmark-fxa-body = Nagyszerű találat! Ne maradjon könyvjelzők nélkül a mobileszközein sem. Kezdjen egy { -fxaccount-brand-name }kal.
+cfr-doorhanger-bookmark-fxa-body-2 = Nagyszerű találat! Ne maradjon könyvjelzők nélkül a mobileszközein sem. Kezdjen egy fiókkal.
 cfr-doorhanger-bookmark-fxa-link-text = Könyvjelzők szinkronizálása most…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Bezárás gomb
@@ -106,28 +109,12 @@ cfr-doorhanger-doh-primary-button-2 = Rendben
 cfr-doorhanger-doh-secondary-button = Letiltás
     .accesskey = t
 
-## Fission Experiment Message
-
-cfr-doorhanger-fission-body-approved = Számít az adatvédelme. A { -brand-short-name } mostantól elkülöníti egymástól a webhelyeket, ami megnehezíti a hackerek számára a jelszavak, bankkártyaszámok és egyéb kényes információk ellopását.
-cfr-doorhanger-fission-header = Oldalak elkülönítése
-cfr-doorhanger-fission-primary-button = Rendben, értem
-    .accesskey = R
-cfr-doorhanger-fission-secondary-button = További tudnivalók
-    .accesskey = T
-
 ## Full Video Support CFR message
 
 cfr-doorhanger-video-support-body = Előfordulhat, hogy az oldalon található videók nem játszhatók le a { -brand-short-name } ezen verziójában. A teljes videótámogatásért frissítse most a { -brand-short-name(case: "accusative") }.
 cfr-doorhanger-video-support-header = A videó lejátszásához frissítse a { -brand-short-name(case: "accusative") }
 cfr-doorhanger-video-support-primary-button = Frissítés most
     .accesskey = F
-
-## Spotlight modal shared strings
-
-spotlight-learn-more-collapsed = További tudnivalók
-    .title = Kinyitás, hogy többet tudjon meg a funkcióról
-spotlight-learn-more-expanded = További tudnivalók
-    .title = Bezárás
 
 ## VPN promotion dialog for public Wi-Fi users
 ##
@@ -142,20 +129,6 @@ spotlight-public-wifi-vpn-primary-button = Maradjon privát a { -mozilla-vpn-bra
     .accesskey = M
 spotlight-public-wifi-vpn-link = Most nem
     .accesskey = n
-
-## Total Cookie Protection Rollout
-
-# "Test pilot" is used as a verb. Possible alternatives: "Be the first to try",
-# "Join an early experiment". This header text can be explicitly wrapped.
-spotlight-total-cookie-protection-header =
-    Tesztelje az eddigi leghatékonyabb
-    adatvédelmi élményt
-spotlight-total-cookie-protection-body = A Teljes sütivédelem megakadályozza, hogy a nyomkövetők a sütiket arra használhassák, hogy kövessék a világhálón.
-# "Early access" for this feature rollout means it's a "feature preview" or
-# "soft launch" as not everybody will get it yet.
-spotlight-total-cookie-protection-expanded = A { -brand-short-name } kerítést épít a sütik köré, oly módon korlátozva őket, hogy a nyomkövetők ne használhassák az Ön követésére. A korai hozzáféréssel segít nekünk optimalizálni a funkciót, így egy mindenki számára jobb webet építhetünk.
-spotlight-total-cookie-protection-primary-button = A Teljes sütivédelem bekapcsolása
-spotlight-total-cookie-protection-secondary-button = Most nem
 
 ## Emotive Continuous Onboarding
 
@@ -232,6 +205,9 @@ cfr-cbh-confirm-button = Sütibannerek elutasítása
     .accesskey = u
 cfr-cbh-dismiss-button = Most nem
     .accesskey = n
+cookie-banner-blocker-onboarding-header = A { -brand-short-name } épp most utasított el egy sütibannert Önnek
+cookie-banner-blocker-onboarding-body = Kevesebb zavaró tényező, kevesebb süti, amely követné ezen az oldalon.
+cookie-banner-blocker-onboarding-learn-more = További tudnivalók
 
 ## These strings are used in the Fox doodle Pin/set default spotlights
 
@@ -261,7 +237,48 @@ fxa-sync-cfr-secondary = Figyelmeztetés később
 
 ## Device Migration FxA Spotlight
 
-device-migration-fxa-spotlight-header = Régebbi eszközt használ?
-device-migration-fxa-spotlight-body = Készítsen biztonsági mentést az adatairól, hogy ne veszítsen el olyan fontos információkat, mint a könyvjelzők és a jelszavak – különösen, ha új eszközre vált.
-device-migration-fxa-spotlight-primary-button = Hogyan kell biztonsági mentést készíteni az adatokról
-device-migration-fxa-spotlight-link = Figyelmeztetés később
+device-migration-fxa-spotlight-heavy-user-header = Ne felejtsen el biztonsági mentést készíteni az adatairól
+device-migration-fxa-spotlight-heavy-user-body = Győződjön meg arról, hogy a fontos információk – mint a könyvjelzők és jelszavak – legyenek naprakészek és védettek az összes eszközén.
+device-migration-fxa-spotlight-heavy-user-primary-button = Első lépések
+device-migration-fxa-spotlight-older-device-header = Nyugalom, a { -brand-product-name }tól
+device-migration-fxa-spotlight-older-device-body = Egy fiók naprakészen tartja a fontos információit, és védi őket az összes csatlakoztatott eszközén.
+device-migration-fxa-spotlight-older-device-primary-button = Fiók létrehozása
+device-migration-fxa-spotlight-getting-new-device-header-2 = Új eszköz a jövőben?
+device-migration-fxa-spotlight-getting-new-device-body-2 = Kövessen néhány egyszerű lépést, hogy magával vigye a könyvjelzőit, előzményeit és jelszavait, amikor új eszközt kezd használni.
+device-migration-fxa-spotlight-getting-new-device-primary-button = Hogyan kell biztonsági mentést készíteni az adatokról
+
+## Set as Default PDF Reader Infobar
+
+# The question portion of the following message should have the <strong> and </strong> tags surrounding it.
+pdf-default-notification-message = <strong>Legyen a { -brand-short-name } az alapértelmezett PDF-olvasó?</strong> Használja a { -brand-short-name(case: "accusative") } a számítógépére mentett PDF-ek olvasásához és szerkesztéséhez.
+pdf-default-notification-set-default-button =
+    .label = Beállítás alapértelmezettként
+pdf-default-notification-decline-button =
+    .label = Most nem
+
+## Launch on login infobar notification
+
+launch-on-login-infobar-message = <strong>Mindig megnyissa a { -brand-short-name(case: "accusative") } a számítógép újraindításakor?</strong> Most már beállíthatja, hogy a { -brand-short-name } automatikusan elinduljon, ha újraindítja az eszközét.
+launch-on-login-learnmore = További tudnivalók
+launch-on-login-infobar-confirm-button = Igen, nyissa meg a { -brand-short-name(case: "accusative") }
+    .accesskey = I
+launch-on-login-infobar-reject-button = Most nem
+    .accesskey = n
+
+## These string variants are used when the “launch on login” infobar
+## notification is displayed for a second time.
+
+launch-on-login-infobar-final-message = <strong>Mindig megnyissa a { -brand-short-name(case: "accusative") } a számítógép újraindításakor?</strong> Az indítási beállítások kezeléséhez keressen rá az „indítás” szóra a beállításokban.
+launch-on-login-infobar-final-reject-button = Köszönöm, nem
+    .accesskey = n
+
+## Tail Fox Set Default Spotlight
+
+# This title is displayed together with the picture of a running fox with a long tail.
+# In English, this is a figure of speech meaning 'stop something from following you'.
+# If the localization of this message is challenging, consider using a simplified
+# alternative as a reference for translation: 'Keep unwanted trackers away'.
+tail-fox-spotlight-title = Rázza le a bosszantó nyomkövetőket
+tail-fox-spotlight-subtitle = Mondjon búcsút a bosszantó hirdetéskövetőknek, és élvezze a biztonságosabb, gyorsabb internetezést.
+tail-fox-spotlight-primary-button = Saját hivatkozások megnyitása a { -brand-short-name(case: "instrumental") }
+tail-fox-spotlight-secondary-button = Most nem

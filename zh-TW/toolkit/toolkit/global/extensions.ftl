@@ -12,8 +12,8 @@
 
 webext-perms-header = 要安裝 { $extension } 嗎？
 webext-perms-header-with-perms = 要安裝 { $extension } 嗎？此擴充套件將有下列權限:
-webext-perms-header-unsigned = 要安裝 { $extension } 嗎？此擴充套件尚未經過驗證。惡意的擴充套件可偷走您的個人資訊，或讓您的電腦成為有害軟體散佈的溫床。請只在信任此套件的來源時才安裝。
-webext-perms-header-unsigned-with-perms = 要安裝 { $extension } 嗎？此擴充套件尚未經過驗證。惡意的擴充套件可偷走您的個人資訊，或讓您的電腦成為有害軟體散佈的溫床。請只在信任此元件的來源時才安裝。此擴充套件將有下列權限:
+webext-perms-header-unsigned = 要安裝 { $extension } 嗎？此擴充套件尚未經過驗證。惡意的擴充套件可偷走您的個人資訊，或讓您的電腦成為有害軟體散布的溫床。請只在信任此套件的來源時才安裝。
+webext-perms-header-unsigned-with-perms = 要安裝 { $extension } 嗎？此擴充套件尚未經過驗證。惡意的擴充套件可偷走您的個人資訊，或讓您的電腦成為有害軟體散布的溫床。請只在信任此元件的來源時才安裝。此擴充套件將有下列權限：
 webext-perms-sideload-header = 已安裝 { $extension }
 webext-perms-optional-perms-header = { $extension } 要求更多權限。
 
@@ -89,7 +89,7 @@ webext-site-perms-description-gated-perms-midi =
 ##   $hostname (String): will be replaced by the DNS host name for which a webextension enables permissions.
 
 webext-site-perms-header-with-perms = 要安裝 { $extension } 嗎？此擴充套件將把下列功能授予 { $hostname }:
-webext-site-perms-header-unsigned-with-perms = 要安裝 { $extension } 嗎？此擴充套件尚未經過驗證。惡意的擴充套件可偷走您的個人資訊，或讓您的電腦成為有害軟體散佈的溫床。請只在信任此元件的來源時才安裝。此擴充套件將授予 { $hostname } 下列功能:
+webext-site-perms-header-unsigned-with-perms = 要安裝 { $extension } 嗎？此擴充套件尚未經過驗證。惡意的擴充套件可偷走您的個人資訊，或讓您的電腦成為有害軟體散布的溫床。請只在信任此元件的來源時才安裝。此擴充套件將授予 { $hostname } 下列功能：
 
 ## These should remain in sync with permissions.NAME.label in sitePermissions.properties
 

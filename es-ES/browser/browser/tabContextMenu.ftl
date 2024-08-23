@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Añadir pestañas a marcadores…
     .accesskey = k
-bookmark-tab =
-    .label = Añadir pestaña a marcadores
-    .accesskey = A
 tab-context-bookmark-tab =
     .label = Añadir pestaña a marcadores…
     .accesskey = m
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Cerrar múltiples pestañas
     .accesskey = m
+tab-context-close-duplicate-tabs =
+    .label = Cerrar pestañas duplicadas
+    .accesskey = u
 tab-context-share-url =
     .label = Compartir
     .accesskey = m
@@ -106,7 +106,6 @@ tab-context-move-tabs =
            *[other] Mover pestañas
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

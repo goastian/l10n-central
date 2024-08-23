@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = 为标签页添加书签…
     .accesskey = k
-bookmark-tab =
-    .label = 为标签页添加书签
-    .accesskey = B
 tab-context-bookmark-tab =
     .label = 将标签页加入书签…
     .accesskey = B
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = 批量关闭标签页
     .accesskey = M
+tab-context-close-duplicate-tabs =
+    .label = 关闭重复标签页
+    .accesskey = u
 tab-context-share-url =
     .label = 共享
     .accesskey = h
@@ -103,7 +103,6 @@ tab-context-move-tabs =
            *[other] 移动标签页
         }
     .accesskey = v
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

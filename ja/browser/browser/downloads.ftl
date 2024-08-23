@@ -102,13 +102,13 @@ downloads-cmd-remove-from-history =
     .label = 履歴から削除
     .accesskey = e
 downloads-cmd-clear-list =
-    .label = プレビューパネルの消去
+    .label = プレビューパネルを消去
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = ダウンロード履歴をすべて消去
     .accesskey = C
 downloads-cmd-delete-file =
-    .label = 削除
+    .label = ファイルを削除
     .accesskey = D
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
@@ -150,11 +150,6 @@ downloads-open-file =
 ##   $seconds (number) - Amount of seconds left till the file opens.
 ##   $minutes (number) - Amount of minutes till the file opens.
 
-downloading-file-opens-in-hours-and-minutes = { $hours } 時間 { $minutes } 分後に開きます...
-downloading-file-opens-in-minutes = { $minutes } 分後に開きます...
-downloading-file-opens-in-minutes-and-seconds = { $minutes } 分 { $seconds } 秒後に開きます...
-downloading-file-opens-in-seconds = { $seconds } 秒後に開きます...
-downloading-file-opens-in-some-time = ダウンロードが完了したら開きます...
 downloading-file-opens-in-hours-and-minutes-2 =
     .value = { $hours } 時間 { $minutes } 分後に開きます...
 downloading-file-opens-in-minutes-2 =

@@ -43,6 +43,11 @@ options-inspector-draggable-properties-tooltip =
 options-inspector-simplified-highlighters-label = Utilize marcadores mais simples com preferência por movimento reduzido
 options-inspector-simplified-highlighters-tooltip =
     .title = Ativa marcadores simplificados quando a preferência por movimento reduzido (prefers-reduced-motion) está ativa. Desenha linhas em vez de retângulos preenchidos em torno de elementos destacados para evitar efeitos intermitentes.
+# The label for the checkbox option to make the Enter key move the focus to the next input
+# when editing a property name or value in the Inspector rules view
+options-inspector-rules-focus-next-on-enter-label = Focar próxima entrada no <kbd>Enter</kbd>
+options-inspector-rules-focus-next-on-enter-tooltip =
+    .title = Quando ativado, ao pressionar a tecla Enter ao editar um seletor, um nome ou valor de uma propriedade irá mover o foco para a próxima entrada.
 
 ## "Default Color Unit" options for the Inspector
 
@@ -53,6 +58,15 @@ options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
 options-default-color-unit-hwb = HWB
 options-default-color-unit-name = Nomes de cores
+
+## Web Console section
+
+# The heading
+options-webconsole-label = Consola web
+# The label for the checkbox that toggle whether the Split console is enabled
+options-webconsole-split-console-label = Ativar consola dividida
+options-webconsole-split-console-tooltip =
+    .title = Abra a Consola Dividida com a tecla Escape
 
 ## Style Editor section
 
@@ -113,6 +127,10 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Ativar depuração remota
 options-enable-remote-tooltip2 =
     .title = Ao ativar esta opção irá permitir a depuração remota desta instância do navegador
+# The label for checkbox that enables F12 as a shortcut to open DevTools
+options-enable-f12-label = Utilize a tecla F12 para abrir ou fechar as DevTools
+options-enable-f12-tooltip =
+    .title = Ao ativar esta opção irá vincular a tecla F12 para abrir ou fechar a caixa de ferramentas de DevTools
 # The label for checkbox that toggles custom formatters for objects
 options-enable-custom-formatters-label = Ativar formatadores personalizados
 options-enable-custom-formatters-tooltip =

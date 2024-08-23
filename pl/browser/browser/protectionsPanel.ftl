@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Więcej informacji o wzmocnionej ochronie przed śledzeniem
 protections-panel-etp-on-header = Wzmocniona ochrona przed śledzeniem jest włączona na tej witrynie
 protections-panel-etp-off-header = Wzmocniona ochrona przed śledzeniem jest wyłączona na tej witrynie
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Wzmocniona ochrona przed śledzeniem
+    .description = Włączona na tej witrynie
+    .aria-label = Wzmocniona ochrona przed śledzeniem: włączona na witrynie { $host }
+protections-panel-etp-toggle-off =
+    .label = Wzmocniona ochrona przed śledzeniem
+    .description = Wyłączona na tej witrynie
+    .aria-label = Wzmocniona ochrona przed śledzeniem: wyłączona na witrynie { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Strona nie działa?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Dlaczego?
 protections-panel-not-blocking-why-etp-on-tooltip = Blokowanie tych elementów może powodować niepoprawne działanie niektórych stron. Bez elementów śledzących niektóre przyciski, formularze i pola logowania mogą nie działać.
 protections-panel-not-blocking-why-etp-off-tooltip = Wszystkie elementy śledzące na tej stronie zostały wczytane, ponieważ ochrona jest wyłączona.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Blokowanie tych elementów może powodować niepoprawne działanie niektórych stron. Bez elementów śledzących niektóre przyciski, formularze i pola logowania mogą nie działać.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Wszystkie elementy śledzące na tej stronie zostały wczytane, ponieważ ochrona jest wyłączona.
 
 ##
 
@@ -105,6 +123,7 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Ograniczanie informacji o ciasteczkach
+protections-panel-cookie-banner-blocker-header = Blokowanie informacji o ciasteczkach
 protections-panel-cookie-banner-handling-enabled = Włączone na tej witrynie
 protections-panel-cookie-banner-handling-disabled = Wyłączone na tej witrynie
 protections-panel-cookie-banner-handling-undetected = Witryna obecnie nie jest obsługiwana
@@ -114,8 +133,30 @@ protections-panel-cookie-banner-view-title =
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Wyłączyć ograniczanie informacji o ciasteczkach na witrynie { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Włączyć ograniczanie informacji o ciasteczkach na tej witrynie?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Blokowanie informacji o ciasteczkach
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Wyłączyć blokowanie informacji o ciasteczkach na witrynie { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Włączyć blokowanie informacji o ciasteczkach na witrynie { $host }?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } usunie ciasteczka tej witryny i odświeży stronę. Usunięcie wszystkich ciasteczek może spowodować wylogowanie ze strony lub opróżnienie koszyka w sklepie.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } próbuje automatycznie odrzucać wszystkie prośby o akceptację ciasteczek na obsługiwanych witrynach.
 protections-panel-cookie-banner-view-cancel = Anuluj
 protections-panel-cookie-banner-view-turn-off = Wyłącz
 protections-panel-cookie-banner-view-turn-on = Włącz
+protections-panel-cookie-banner-blocker-view-turn-on-description = Włącz, a { -brand-short-name } spróbuje automatycznie odrzucać prośby o akceptację ciasteczek na tej witrynie.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Anuluj
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Wyłącz
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Włącz
+protections-panel-report-broken-site =
+    .label = Zgłoś niepoprawnie działającą stronę
+    .title = Zgłoś niepoprawnie działającą stronę
+
+## Protections panel info message
+
+cfr-protections-panel-header = Przeglądaj bez wścibskich oczu
+cfr-protections-panel-body = Zachowaj prywatność swoich danych. { -brand-short-name } chroni Cię przed wieloma najczęściej występującymi elementami śledzącymi, które monitorują, co robisz w Internecie.
+cfr-protections-panel-link-text = Więcej informacji

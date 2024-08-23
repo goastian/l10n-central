@@ -6,8 +6,6 @@ addons-page-title = Tilleggshandsamar
 search-header =
     .placeholder = Søk på addons.mozilla.org
     .searchbuttonlabel = Søk
-search-header-shortcut =
-    .key = f
 
 ## Variables
 ##   $domain - Domain name where add-ons are available (e.g. addons.mozilla.org)
@@ -110,7 +108,7 @@ disabled-unsigned-heading =
     .value = Nokre tillegg er slått av
 disabled-unsigned-description = Desse utvidingane har ikkje blitt kontrollert for bruk i { -brand-short-name }. Du kan <label data-l10n-name="find-addons">finne erstatningar</label> eller spørje utviklaren om å få dei stadfesta.
 disabled-unsigned-learn-more = Les meir om tiltaka våre for å halde deg trygg på nettet.
-disabled-unsigned-devinfo = Utviklarar som er interesserte i å få utvidingane sine stadfesta kan fortsetje ved å lese <label data-l10n-name="learn-more">manualen vår</label>.
+disabled-unsigned-devinfo = Utviklarar som er interesserte i å få utvidingane sine stadfesta kan halde fram ved å lese <label data-l10n-name="learn-more">manualen vår</label>.
 plugin-deprecation-description = Saknar du noko? Nokre programtillegg er ikkje lenger støtta av { -brand-short-name }. <label data-l10n-name="learn-more">Les meir.</label>
 legacy-warning-show-legacy = Vis forelda utvidingar
 legacy-extensions =
@@ -158,11 +156,20 @@ addon-sitepermission-host = Nettstadløyve for { $host }
 
 extensions-warning-safe-mode = Alle tillegg er avslegne av trygg-modus.
 extensions-warning-check-compatibility = Kompatiblitetskonroll er avslegen. Du har kanskje ikkje-kompatible tillegg.
+extensions-warning-safe-mode2 =
+    .message = Alle tillegg er avslegne av trygg-modus.
+extensions-warning-check-compatibility2 =
+    .message = Kompatiblitetskonroll er avslegen. Du har kanskje ikkje-kompatible tillegg.
 extensions-warning-check-compatibility-button = Slå på
     .title = Slå på kompatibilitetskontroll
 extensions-warning-update-security = Tryggingskontroll av tilleggsoppdateringar er slått av. Du er sårbar for skadelege oppdateringar.
+extensions-warning-update-security2 =
+    .message = Tryggingskontroll av tilleggsoppdateringar er slått av. Du er sårbar for skadelege oppdateringar.
 extensions-warning-update-security-button = Slå på
     .title = Slå på tryggingskontroll av tilleggsoppdateringar
+extensions-warning-imported-addons2 =
+    .message = Fullfør installasjonen av utvidingar som vart importerte til { -brand-short-name }.
+extensions-warning-imported-addons-button = Installer utvidingar
 
 ## Strings connected to add-on updates
 
@@ -213,6 +220,9 @@ shortcuts-no-addons = Du har ingen utvidinga aktiverte.
 shortcuts-no-commands = Følgjande utvidingar har ikkje snarvegar:
 shortcuts-input =
     .placeholder = Skriv inn ein snarveg
+# Accessible name for a trashcan icon button that removes an existent shortcut
+shortcuts-remove-button =
+    .aria-label = Fjern snarveg
 shortcuts-browserAction2 = Aktiver verktøylinjeknapp
 shortcuts-pageAction = Aktiver sidehandling
 shortcuts-sidebarAction = Vis/gøym sidepanelet
@@ -227,6 +237,11 @@ shortcuts-duplicate = Duplisert hurtigtast
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
 shortcuts-duplicate-warning-message = { $shortcut } blir brukt som ein hurtigtast i meir enn eitt tilfelle. Dublerte hurtigtastar kan vere årsak til uventa oppførsel.
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message2 =
+    .message = { $shortcut } blir brukt som ein hurtigtast i meir enn eitt tilfelle. Dublerte hurtigtastar kan vere årsak til uventa oppførsel.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -256,6 +271,11 @@ discopane-intro =
 discopane-notice-recommendations =
     Nokre av desse tilrådingane er målretta deg. Dei er baserte på andre
     utvidingar du har installert, profilinnstillingar og statistikk for bruk.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations2 =
+    .message =
+        Nokre av desse tilrådingane er målretta deg. Dei er baserte på andre
+        utvidingar du har installert, profilinnstillingar og statistikk for bruk.
 discopane-notice-learn-more = Les meir
 privacy-policy = Personvernpraksis
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -301,9 +321,6 @@ permissions-addon-button = Løyve
 extension-enabled-heading = Slått på
 extension-disabled-heading = Slått av
 theme-enabled-heading = Slått på
-theme-disabled-heading = Slått av
-theme-monochromatic-heading = Fargesamansetjingar
-theme-monochromatic-subheading = Levande nye fargesamansetjingar frå { -brand-product-name }. Tilgjengeleg for ein avgrensa periode.
 theme-disabled-heading2 = Lagra tema
 plugin-enabled-heading = Slått på
 plugin-disabled-heading = Slått av
@@ -322,6 +339,9 @@ addon-detail-homepage-label = Heimeside
 addon-detail-rating-label = Vurdering
 # Message for add-ons with a staged pending update.
 install-postponed-message = Denne utvidinga vert oppdatert når { -brand-short-name } startar på nytt.
+# Message for add-ons with a staged pending update.
+install-postponed-message2 =
+    .message = Denne utvidinga vert oppdatert når { -brand-short-name } startar på nytt.
 install-postponed-button = Oppdater no
 # The average rating that the add-on has received.
 # Variables:
@@ -346,6 +366,10 @@ addon-detail-reviews-link =
 # Variables:
 #   $addon (string) - Name of the add-on
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> er fjerna.
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description2 =
+    .message = { $addon } er fjerna.
 pending-uninstall-undo-button = Angre
 addon-detail-updates-label = Tillat automatiske oppdateringar
 addon-detail-updates-radio-default = Standard
@@ -353,6 +377,10 @@ addon-detail-updates-radio-on = På
 addon-detail-updates-radio-off = Av
 addon-detail-update-check-label = Sjå etter oppdateringar
 install-update-button = Oppdater
+# aria-label associated to the updates row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-updates =
+    .aria-label = { addon-detail-updates-label }
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
@@ -361,6 +389,24 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Når det er tillate, vil utvidinga få tilgang til aktivitetane dine på nettet medan du brukar privat nettlesing. <a data-l10n-name="learn-more">Les meir</a>
 addon-detail-private-browsing-allow = Tillat
 addon-detail-private-browsing-disallow = Ikkje tillat
+# aria-label associated to the private browsing row to help screen readers to announce the group
+# of input controls being entered.
+addon-detail-group-label-private-browsing =
+    .aria-label = { detail-private-browsing-label }
+
+## "sites with restrictions" (internally called "quarantined") are special domains
+## where add-ons are normally blocked for security reasons.
+
+# Used as a description for the option to allow or block an add-on on quarantined domains.
+addon-detail-quarantined-domains-label = Køyr på nettstadar med restriksjonar
+# Used as help text part of the quarantined domains UI controls row.
+addon-detail-quarantined-domains-help = Når tillate, vil utvidinga ha tilgang til nettstadar avgrensa av { -vendor-short-name }. Tillat berre dersom du stolar på denne utvidinga.
+# Used as label and tooltip text on the radio inputs associated to the quarantined domains UI controls.
+addon-detail-quarantined-domains-allow = Tillat
+addon-detail-quarantined-domains-disallow = Ikkje tillat
+# aria-label associated to the quarantined domains exempt row to help screen readers to announce the group.
+addon-detail-group-label-quarantined-domains =
+    .aria-label = { addon-detail-quarantined-domains-label }
 
 ## This is the tooltip text for the recommended badges for an extension in about:addons. The
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
@@ -415,23 +461,41 @@ addon-page-options-button =
 
 ## Detail notifications
 ## Variables:
-##   $name (String): name of the add-on.
-
-
-## Detail notifications
-## Variables:
 ##   $name (string) - Name of the add-on.
 
 # Variables:
 #   $version (string) - Application version.
 details-notification-incompatible = { $name } er ikkje kompatibel med { -brand-short-name } { $version }.
+# Variables:
+#   $version (string) - Application version.
+details-notification-incompatible2 =
+    .message = { $name } er ikkje kompatibel med { -brand-short-name } { $version }.
 details-notification-incompatible-link = Meir informasjon
 details-notification-unsigned-and-disabled = { $name } har ikkje blitt stadfesta for bruk i { -brand-short-name } og er slått av.
+details-notification-unsigned-and-disabled2 =
+    .message = { $name } har ikkje blitt stadfesta for bruk i { -brand-short-name } og er slått av.
 details-notification-unsigned-and-disabled-link = Meir informasjon
 details-notification-unsigned = { $name } kunne ikkje stadfestast for bruk i { -brand-short-name }. Fortset med varsemd.
+details-notification-unsigned2 =
+    .message = { $name } kunne ikkje stadfestast for bruk i { -brand-short-name }. Fortset med varsemd.
 details-notification-unsigned-link = Meir informasjon
 details-notification-blocked = { $name } er slått av grunna tryggings- eller stabilitetsomsyn.
+details-notification-blocked2 =
+    .message = { $name } er slått av grunna tryggings- eller stabilitetsomsyn.
 details-notification-blocked-link = Meir informasjon
 details-notification-softblocked = { $name } har kjende tryggings- eller stabilitetsproblem.
+details-notification-softblocked2 =
+    .message = { $name } har kjende tryggings- eller stabilitetsproblem.
 details-notification-softblocked-link = Meir informasjon
 details-notification-gmp-pending = { $name } vert installert snart.
+details-notification-gmp-pending2 =
+    .message = { $name } vert installert snart.
+
+## Gecko Media Plugins (GMPs)
+
+plugins-gmp-license-info = Lisensinformasjon
+plugins-gmp-privacy-info = Personverninformasjon
+plugins-openh264-name = OpenH264 video-kodek er levert av Cisco Systems, Inc.
+plugins-openh264-description = Dette programtillegget er automatisk installert av Mozilla for å følgja WebRTC-spesifikasjonar og for å tillate WebRTC-kall med einingar som brukar videokodeken H.264. Gå til http://www.openh264.org/ for å skjå kjeldekoden og lesa meir om implementeringa.
+plugins-widevine-name = Widevine Content Decryption Module levert av Google Inc.
+plugins-widevine-description = Dette programtillegget gjer det mogleg å spele av krypterte media i samsvar med spesifikasjonane for Encrypted Media Extensions. Krypterte medium vert vanlegvis brukte av nettsider for å verne mot kopiering av betalt medieinnhald. Gå til https://www.w3.org/TR/encrypted-media/ for meir informasjon om Encrypted Media Extensions.

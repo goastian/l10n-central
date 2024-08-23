@@ -13,6 +13,7 @@
 onboarding-welcome-header = { -brand-short-name } にようこそ
 onboarding-start-browsing-button-label = ブラウジングを開始
 onboarding-not-now-button-label = 後で
+mr1-onboarding-get-started-primary-button-label = はじめましょう
 
 ## Custom Return To AMO onboarding strings
 
@@ -37,98 +38,22 @@ mr1-return-to-amo-add-extension-label = { $addon-name } を追加
 # Variables:
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
-onboarding-welcome-steps-indicator =
-    .aria-label = はじめる: { $current } / { $total } ページ
-# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
-# Variables:
-#   $current (Int) - Number of the current page
-#   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator-label =
     .aria-label = 完了まで: { $current } / { $total }
-# "Hero Text" displayed on left side of welcome screen.
-# The "Fire" in "Fire starts here" plays on the "Fire" in "Firefox".
-# It also signals the passion users bring to Firefox, how they use
-# Firefox to pursue those passions, as well as the boldness in their
-# choice to use Firefox over a larger competitor browser.
-# An alternative title for localization is: "It starts here".
-# This text can be formatted to span multiple lines as needed.
-mr1-welcome-screen-hero-text =
-    Fire starts
-    here
-# Caption for background image in about:welcome. "Soraya Osorio" is the name
-# of the person and shouldn't be translated.
-# In case your language needs to adapt the nouns to a gender, Soraya is a female name (she/her).
-# You can see the picture in about:welcome in Nightly 90.
-mr1-onboarding-welcome-image-caption = Soraya Osorio — 家具デザイナー、Firefox ファン
 # This button will open system settings to turn on prefers-reduced-motion
 mr1-onboarding-reduce-motion-button-label = アニメーションをオフにする
-
-## Title and primary button strings differ between platforms as they
-## match the OS' application context menu item action where Windows uses "pin"
-## and "taskbar" while macOS "keep" and "Dock" (proper noun).
-
-# Title used on welcome page when Firefox is not pinned
-mr1-onboarding-pin-header =
-    { PLATFORM() ->
-        [macos] すぐアクセスできるよう { -brand-short-name } を Dock に追加しましょう
-       *[other] すぐアクセスできるよう { -brand-short-name } をタスクバーにピン留めしましょう
-    }
-# Primary button string used on welcome page when Firefox is not pinned.
-mr1-onboarding-pin-primary-button-label =
-    { PLATFORM() ->
-        [macos] Dock に追加
-       *[other] タスクバーにピン留め
-    }
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-# This string will be used on welcome page primary button label
-# when Firefox is both pinned and default
-mr1-onboarding-get-started-primary-button-label = はじめましょう
-mr1-onboarding-welcome-header = { -brand-short-name } にようこそ
-mr1-onboarding-set-default-pin-primary-button-label = { -brand-short-name } を優先ブラウザーに設定する
-    .title = { -brand-short-name } を既定のブラウザーに設定して、タスクバーにピン留めしましょう
-# This string will be used on welcome page primary button label
-# when Firefox is not default but already pinned
-mr1-onboarding-set-default-only-primary-button-label = { -brand-short-name } を既定のブラウザーに設定する
-mr1-onboarding-set-default-secondary-button-label = 後で
+# String for the Firefox Accounts button
 mr1-onboarding-sign-in-button-label = ログイン
-
-## Title, subtitle and primary button string used on set default onboarding screen
-## when Firefox is not default browser
-
-mr1-onboarding-default-header = { -brand-short-name } を既定のブラウザーに設定
-mr1-onboarding-default-subtitle = 高速、安全、プライベートなブラウザーにお任せください。
-mr1-onboarding-default-primary-button-label = 既定のブラウザーに設定する
-
-## Multistage MR1 onboarding strings (about:welcome pages)
-
-mr1-onboarding-import-header = すべて持ってこられます
-mr1-onboarding-import-subtitle = パスワードやブックマークなどを<br/>インポートできます。
 # The primary import button label will depend on whether we can detect which browser was used to download Firefox.
 # Variables:
 #   $previous (Str) - Previous browser name, such as Edge, Chrome
 mr1-onboarding-import-primary-button-label-attribution = { $previous } からインポート
-# This string will be used in cases where we can't detect the previous browser name.
-mr1-onboarding-import-primary-button-label-no-attribution = 以前のブラウザーからインポート
-mr1-onboarding-import-secondary-button-label = 後で
-mr2-onboarding-colorway-header = 色のある日常
-mr2-onboarding-colorway-subtitle = 鮮やかで刺激的なテーマコレクション Colorway の新作が期間限定で登場。
-mr2-onboarding-colorway-primary-button-label = Colorway を保存
-mr2-onboarding-colorway-secondary-button-label = 後で
-mr2-onboarding-colorway-label-soft = 穏やか
-mr2-onboarding-colorway-label-balanced = バランス
-# "Bold" is used in the sense of bravery or courage, not in the sense of
-# emphasized text.
-mr2-onboarding-colorway-label-bold = 大胆
-# Automatic theme uses operating system color settings
-mr2-onboarding-theme-label-auto = 自動
-# This string will be used for Default theme
-mr2-onboarding-theme-label-default = 既定
 mr1-onboarding-theme-header = 自分らしく
 mr1-onboarding-theme-subtitle = テーマで { -brand-short-name } をパーソナライズできます。
-mr1-onboarding-theme-primary-button-label = テーマを保存
 mr1-onboarding-theme-secondary-button-label = 後で
+newtab-wallpaper-onboarding-title = カラフルな壁紙を試しましょう
+newtab-wallpaper-onboarding-subtitle = 壁紙を選んで新しいタブをカラフルに彩りましょう。
+newtab-wallpaper-onboarding-primary-button-label = 壁紙を設定
 # System theme uses operating system color settings
 mr1-onboarding-theme-label-system = システムテーマ
 mr1-onboarding-theme-label-light = Light
@@ -166,26 +91,6 @@ mr1-onboarding-theme-tooltip-alpenglow =
 # Input description for Alpenglow theme
 mr1-onboarding-theme-description-alpenglow =
     .aria-description = ダイナミックでカラフルな外観のボタン、メニュー、ウィンドウを使用します。
-# Tooltip displayed on hover of non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-tooltip =
-    .title = この Colorway を使います。
-# Selector description for non-default colorway theme
-# variations e.g. soft, balanced, bold
-mr2-onboarding-theme-description =
-    .aria-description = この Colorway を使います。
-# Tooltip displayed on hover of colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-tooltip =
-    .title = { $colorwayName } という Colorway を見てみます。
-# Selector description for colorway
-# Variables:
-#   $colorwayName (String) - Name of colorway
-mr2-onboarding-colorway-label = { $colorwayName } という Colorway を見てみます。
-# Tooltip displayed on hover of default themes
-mr2-onboarding-default-theme-tooltip =
-    .title = 既定のテーマを見てみます。
 # Selector description for default themes
 mr2-onboarding-default-theme-label = 既定のテーマを見てみます。
 
@@ -194,14 +99,6 @@ mr2-onboarding-default-theme-label = 既定のテーマを見てみます。
 mr2-onboarding-thank-you-header = ありがとうございます
 mr2-onboarding-thank-you-text = { -brand-short-name } は非営利を背景とする独立したブラウザーです。私たちはユーザーとともにウェブをより安全、健全にし、個人情報を保護していきます。
 mr2-onboarding-start-browsing-button-label = ブラウジングを開始
-
-## Multistage live language reloading onboarding strings (about:welcome pages)
-##
-## The following language names are generated by the browser's Intl.DisplayNames API.
-##
-## Variables:
-##   $negotiatedLanguage (String) - The name of the langpack's language, e.g. "Español (ES)"
-
 
 ## Multistage live language reloading onboarding strings (about:welcome pages)
 ##
@@ -236,7 +133,7 @@ fx100-thank-you-hero-text =
     100
     Thank
     <span data-l10n-name="zap">You</span>
-fx100-thank-you-subtitle = 100 番目のリリースです！ よりよい健全なインターネットの構築へのご協力に感謝します。
+fx100-thank-you-subtitle = 100 番目のリリースです！ より良い健全なインターネットの構築へのご協力に感謝します。
 fx100-thank-you-pin-primary-button-label =
     { PLATFORM() ->
         [macos] { -brand-short-name } を Dock に追加
@@ -245,7 +142,7 @@ fx100-thank-you-pin-primary-button-label =
 fx100-upgrade-thanks-header = 100 Thank You
 # Message shown with a start-browsing button. Emphasis <em> should be for "you"
 # but "Thank" can be used instead if there's no "you" in the translation.
-fx100-upgrade-thank-you-body = { -brand-short-name } の 100 番目のリリースです。よりよい健全なインターネットの構築へのご協力に感謝します。
+fx100-upgrade-thank-you-body = { -brand-short-name } の 100 番目のリリースです。より良い健全なインターネットの構築へのご協力に感謝します。
 # Message shown with either a pin-to-taskbar or set-default button.
 fx100-upgrade-thanks-keep-body = 100 番目のリリースです！ 私たちのコミュニティへの参加に感謝します。次の 100 番目まで { -brand-short-name } を 1 クリックで使えるようにしましょう。
 mr2022-onboarding-secondary-skip-button-label = この手順をスキップ
@@ -350,8 +247,8 @@ mr2022-onboarding-colorway-tooltip-dreamer2 =
 mr2022-onboarding-colorway-description-dreamer = <b>Dreamer</b>: 大胆に幸運を引き寄せろ。夢を掲げるあなたの姿は人の勇気を呼び覚ます。
 mr2022-onboarding-colorway-label-innovator = Innovator
 mr2022-onboarding-colorway-tooltip-innovator2 =
-    .title = Innovator (橙)
-mr2022-onboarding-colorway-description-innovator = <b>Innovator</b>: あらゆる場所で機会を掴め。あなたがもたらす革新は周囲の人生を震わせる。
+    .title = Innovator (オレンジ)
+mr2022-onboarding-colorway-description-innovator = <b>Innovator</b>: あらゆる場所で機会をつかめ。あなたがもたらす革新は周囲の人生を震わせる。
 
 ## MR2022 Multistage Mobile Download screen strings
 
@@ -375,14 +272,14 @@ mr2022-upgrade-onboarding-pin-private-window-primary-button-label =
 
 mr2022-onboarding-privacy-segmentation-title = 私たちはいつもあなたのプライバシーを尊重します
 mr2022-onboarding-privacy-segmentation-subtitle = 知的なサジェストからスマートな検索まで、より良いパーソナルな { -brand-product-name } の開発を続けます。
-mr2022-onboarding-privacy-segmentation-text-cta = よりよいユーザー体験のために、あなたのデータを使用する新機能を提案されたときはどうしましょうか？
+mr2022-onboarding-privacy-segmentation-text-cta = より良いユーザー体験のために、あなたのデータを使用する新機能を提案されたときはどうしましょうか？
 mr2022-onboarding-privacy-segmentation-button-primary-label = { -brand-product-name } のおすすめを利用する
 mr2022-onboarding-privacy-segmentation-button-secondary-label = 詳細情報を表示する
 
 ## MR2022 Multistage Gratitude screen strings
 
 mr2022-onboarding-gratitude-title = より良いウェブ構築の助けになります
-mr2022-onboarding-gratitude-subtitle = Ablaze が提供する { -brand-short-name } のご利用ありがとうございます。あなたのご協力とともに、よりオープンでアクセシブルな、すべての人にとってのより良いインターネットの構築に努めます。
+mr2022-onboarding-gratitude-subtitle = Ablaze Foundation が提供する { -brand-short-name } のご利用ありがとうございます。あなたのご協力とともに、よりオープンでアクセシブルな、すべての人にとってのより良いインターネットの構築に努めます。
 mr2022-onboarding-gratitude-primary-button-label = 新機能を確認する
 mr2022-onboarding-gratitude-secondary-button-label = ブラウジングを開始する
 
@@ -418,4 +315,38 @@ onboarding-device-migration-image-alt =
     .aria-label = ラップトップコンピューターの画面上のキツネがウェーブしています。ラップトップにマウスが接続されています。
 onboarding-device-migration-title = おかえりなさい！
 onboarding-device-migration-subtitle = { -fxaccount-brand-name(capitalization: "sentence") } にログインして、ブックマークやパスワード、履歴を新しい端末とともに持ち歩きましょう。
+onboarding-device-migration-subtitle2 = アカウントにログインして、ブックマークやパスワード、履歴を新しい端末とともに持ち歩きましょう。
 onboarding-device-migration-primary-button-label = ログイン
+
+## The following screens have been updated to use security and privacy focused strings:
+
+# Easy setup screen
+onboarding-easy-setup-security-and-privacy-title = あなたの安全を守ります
+onboarding-easy-setup-security-and-privacy-subtitle = 私たちの非営利組織によるブラウザーがウェブ上であなたを秘密裏に付け回す企業を阻止します。
+
+# Mobile download screen
+onboarding-mobile-download-security-and-privacy-title = 端末を切り替える時も暗号化されます
+onboarding-mobile-download-security-and-privacy-subtitle = 同期した端末でも { -brand-short-name } があなたのパスワードやブックマークを暗号化して保護します。さらに開いているタブを他の端末から持ち出すことができます。
+
+# Gratitude screen
+onboarding-gratitude-security-and-privacy-title = { -brand-short-name } はあなたの味方です
+onboarding-gratitude-security-and-privacy-subtitle = Ablaze Foundation による { -brand-short-name } をご使用くださりありがとうございます。あなたのご支援によって、私たちはインターネットをすべての人々のために安全でアクセシブルなものにすることができます。
+
+## New user time and familiarity survey strings
+
+onboarding-new-user-time-based-survey-title = { -brand-short-name } をどのくらい長く使っていますか？
+onboarding-new-user-familiarity-based-survey-title = { -brand-short-name } にどのくらい親しんでいますか？
+onboarding-new-user-survey-subtitle = あなたのフィードバックが { -brand-short-name } をより良くします。
+# When translating "next" it means the next screen in onboarding.
+onboarding-new-user-survey-next-button-label = 次へ
+onboarding-new-user-survey-legal-link-label = “{ onboarding-new-user-survey-next-button-label }” を選択すると、{ -brand-product-name } の <a data-l10n-name="privacy_notice">プライバシー通知</a> に同意したものとみなされます。
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-time-based-option-1 = 初めて使う
+onboarding-new-user-survey-time-based-option-2 = 使い始めて 1 か月未満
+onboarding-new-user-survey-time-based-option-3 = 1 か月以上、よく使う
+onboarding-new-user-survey-time-based-option-4 = 1 か月以上、たまに使う
+# When translating "brand new" it means completely new.
+onboarding-new-user-survey-familiarity-based-option-1 = 初めて使う
+onboarding-new-user-survey-familiarity-based-option-2 = 何度か使っている
+onboarding-new-user-survey-familiarity-based-option-3 = よく使っている
+onboarding-new-user-survey-familiarity-based-option-4 = 以前使ったことがあり、久しぶりに使う

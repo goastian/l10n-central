@@ -50,9 +50,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Aggiungi schede ai segnalibri…
     .accesskey = b
-bookmark-tab =
-    .label = Aggiungi scheda ai segnalibri…
-    .accesskey = A
 tab-context-bookmark-tab =
     .label = Aggiungi scheda ai segnalibri…
     .accesskey = A
@@ -71,6 +68,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Chiudi più schede
     .accesskey = u
+tab-context-close-duplicate-tabs =
+    .label = Chiudi schede duplicate
+    .accesskey = e
 tab-context-share-url =
     .label = Condividi
     .accesskey = o
@@ -98,7 +98,7 @@ tab-context-move-tabs =
             [1] Sposta scheda
            *[other] Sposta schede
         }
-    .accesskey = S
+    .accesskey = t
 
 tab-context-send-tabs-to-device =
     .label =
@@ -107,3 +107,4 @@ tab-context-send-tabs-to-device =
            *[other] Invia { $tabCount } schede a dispositivo
         }
     .accesskey = n
+

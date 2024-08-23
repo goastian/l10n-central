@@ -117,7 +117,6 @@ about-processes-frame-name-many = 子帧（{ $number }）：{ $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = 未知角色
-about-processes-utility-actor-audio-decoder = 音频解码器
 about-processes-utility-actor-audio-decoder-generic = 通用音频解码器
 about-processes-utility-actor-audio-decoder-applemedia = Apple 媒体音频解码器
 about-processes-utility-actor-audio-decoder-wmf = Windows 媒体框架音频解码器
@@ -125,6 +124,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation 媒体�
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = Oracle
 about-processes-utility-actor-windows-utils = Windows 工具
+about-processes-utility-actor-windows-file-dialog = Windows 文件对话框
 
 ## Displaying CPU (percentage and total)
 ## Variables:

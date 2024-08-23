@@ -23,6 +23,20 @@ protections-panel-etp-more-info =
     .aria-label = Meer informatie over Verbeterde bescherming tegen volgen
 protections-panel-etp-on-header = Verbeterde bescherming tegen volgen is AAN voor deze website
 protections-panel-etp-off-header = Verbeterde bescherming tegen volgen is UIT voor deze website
+
+## Text for the toggles shown when ETP is enabled/disabled for a given site.
+## .description is transferred into a separate paragraph by the moz-toggle
+## custom element code.
+##   $host (String): the hostname of the site that is being displayed.
+
+protections-panel-etp-toggle-on =
+    .label = Verbeterde bescherming tegen volgen
+    .description = Aan voor deze website
+    .aria-label = Verbeterde bescherming tegen volgen: aan voor { $host }
+protections-panel-etp-toggle-off =
+    .label = Verbeterde bescherming tegen volgen
+    .description = Uit voor deze website
+    .aria-label = Verbeterde bescherming tegen volgen: uit voor { $host }
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Werkt de website niet?
 # The heading/title of the sub-panel view
@@ -35,6 +49,10 @@ protections-panel-site-not-working-view =
 protections-panel-not-blocking-why-label = Waarom?
 protections-panel-not-blocking-why-etp-on-tooltip = Door deze te blokkeren werken elementen van sommige websites mogelijk niet. Zonder trackers werken sommige knoppen, formulieren en aanmeldvelden mogelijk niet.
 protections-panel-not-blocking-why-etp-off-tooltip = Alle trackers op deze website zijn geladen omdat beschermingen zijn uitgeschakeld.
+protections-panel-not-blocking-why-etp-on-tooltip-label =
+    .label = Door deze te blokkeren werken elementen van sommige websites mogelijk niet. Zonder trackers werken sommige knoppen, formulieren en aanmeldvelden mogelijk niet.
+protections-panel-not-blocking-why-etp-off-tooltip-label =
+    .label = Alle trackers op deze website zijn geladen omdat beschermingen zijn uitgeschakeld.
 
 ##
 
@@ -90,6 +108,7 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view =
     .title = Niet-werkende website melden
 protections-panel-content-blocking-breakage-report-view-description = Het blokkeren van bepaalde trackers kan problemen met bepaalde websites veroorzaken. Door deze problemen te melden, helpt u { -brand-short-name } voor iedereen te verbeteren. Als u dit rapport verzendt, wordt zowel een URL als informatie over uw browserinstellingen naar Mozilla verzonden. <label data-l10n-name="learn-more">Meer info</label>
+protections-panel-content-blocking-breakage-report-view-description2 = Het blokkeren van bepaalde trackers kan problemen met bepaalde websites veroorzaken. Door deze problemen te melden, helpt u { -brand-short-name } voor iedereen te verbeteren. Als u dit rapport verzendt, wordt zowel een URL als informatie over uw browserinstellingen naar { -vendor-short-name } verzonden.
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
@@ -104,19 +123,40 @@ protections-panel-content-blocking-breakage-report-view-send-report =
 # Cookie Banner Handling
 
 protections-panel-cookie-banner-handling-header = Reductie van cookiebanners
+protections-panel-cookie-banner-blocker-header = Blokkering van cookiebanners
 protections-panel-cookie-banner-handling-enabled = Aan voor deze website
 protections-panel-cookie-banner-handling-disabled = Uit voor deze website
 protections-panel-cookie-banner-handling-undetected = Website wordt momenteel niet ondersteund
 protections-panel-cookie-banner-view-title =
     .title = Reductie van cookiebanners
-protections-panel-cookie-banner-view-go-back =
-    .aria-label = Terug
 # Variables
 #  $host (String): the hostname of the site that is being displayed.
 protections-panel-cookie-banner-view-turn-off-for-site = Reductie van cookiebanners uitschakelen voor { $host }?
 protections-panel-cookie-banner-view-turn-on-for-site = Reductie van cookiebanners inschakelen voor deze website?
+protections-panel-cookie-banner-blocker-view-title =
+    .title = Blokkering van cookiebanners
+# Variables
+#  $host (String): the hostname of the site that is being displayed.
+protections-panel-cookie-banner-blocker-view-turn-off-for-site = Blokkering van cookiebanners uitschakelen voor { $host }?
+protections-panel-cookie-banner-blocker-view-turn-on-for-site = Blokkering van cookiebanners inschakelen voor deze website?
 protections-panel-cookie-banner-view-cookie-clear-warning = { -brand-short-name } wist de cookies voor deze website en vernieuwt de pagina. Als alle cookies worden gewist, wordt u mogelijk afgemeld of worden winkelwagentjes geleegd.
 protections-panel-cookie-banner-view-turn-on-description = { -brand-short-name } probeert alle cookieverzoeken op ondersteunde websites automatisch te weigeren.
 protections-panel-cookie-banner-view-cancel = Annuleren
 protections-panel-cookie-banner-view-turn-off = Uitschakelen
 protections-panel-cookie-banner-view-turn-on = Inschakelen
+protections-panel-cookie-banner-blocker-view-turn-on-description = Schakel dit in en { -brand-short-name } zal proberen cookiebanners op deze website automatisch te weigeren.
+protections-panel-cookie-banner-view-cancel-label =
+    .label = Annuleren
+protections-panel-cookie-banner-view-turn-off-label =
+    .label = Uitschakelen
+protections-panel-cookie-banner-view-turn-on-label =
+    .label = Inschakelen
+protections-panel-report-broken-site =
+    .label = Niet-werkende website melden
+    .title = Niet-werkende website melden
+
+## Protections panel info message
+
+cfr-protections-panel-header = Surf zonder te worden gevolgd
+cfr-protections-panel-body = Houd uw gegevens voor uzelf. { -brand-short-name } beschermt u tegen veel van de meest voorkomende trackers die volgen wat u online doet.
+cfr-protections-panel-link-text = Meer info

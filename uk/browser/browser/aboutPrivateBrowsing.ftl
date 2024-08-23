@@ -28,7 +28,7 @@ about-private-browsing-hide-activity-1 = Приховати активність
 about-private-browsing-prominent-cta = Зберігайте приватність з { -mozilla-vpn-brand-name }
 about-private-browsing-focus-promo-cta = Завантажити { -focus-brand-name }
 about-private-browsing-focus-promo-header = { -focus-brand-name }: приватний перегляд у дорозі
-about-private-browsing-focus-promo-text = Наш спеціалізований мобільний застосунок для приватного перегляду щоразу очищає вашу історію та куки.
+about-private-browsing-focus-promo-text = Наш спеціалізований мобільний застосунок для приватного перегляду щоразу очищає вашу історію і файли cookie.
 
 ## The following strings will be used for experiments in Fx99 and Fx100
 
@@ -40,11 +40,11 @@ about-private-browsing-focus-promo-text-c = { -focus-brand-name } щоразу �
 # in a private window.
 # Variables:
 #   $engineName (String) - The engine name that will currently be used for the private window.
-about-private-browsing-search-banner-title = { $engineName } є вашим типовим пошуковим засобом у приватних вікнах
+about-private-browsing-search-banner-title = { $engineName } – ваша типова пошукова система в приватних вікнах
 about-private-browsing-search-banner-description =
     { PLATFORM() ->
-        [windows] Щоб обрати інший пошуковий засіб, відкрийте <a data-l10n-name="link-options">Налаштування</a>
-       *[other] Щоб обрати інший пошуковий засіб, відкрийте <a data-l10n-name="link-options">Налаштування</a>
+        [windows] Щоб обрати іншу пошукову систему, відкрийте <a data-l10n-name="link-options">Налаштування</a>
+       *[other] Щоб обрати іншу пошукову систему, відкрийте <a data-l10n-name="link-options">Налаштування</a>
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = Закрити
@@ -56,25 +56,25 @@ about-private-browsing-promo-close-button =
 about-private-browsing-pin-promo-header = Свобода приватного перегляду одним натиском
 about-private-browsing-pin-promo-link-text =
     { PLATFORM() ->
-        [macos] Закріпити в док
+        [macos] Закріпити в Dock
        *[other] Закріпити на панелі завдань
     }
-about-private-browsing-pin-promo-title = Жодних збережених кук чи історії на комп'ютері. Переглядайте без думки, що за вами хтось спостерігає.
+about-private-browsing-pin-promo-title = Жодних збережених файлів cookie чи історії на комп'ютері. Переглядайте без думки, що за вами хтось спостерігає.
 
 ## Strings used in a promotion message for cookie banner reduction
 
 # Simplified version of the headline if the original text doesn't work
 # in your language: `See fewer cookie requests`.
-about-private-browsing-cookie-banners-promo-header = Геть банери про куки!
-about-private-browsing-cookie-banners-promo-button = Зменшити кількість банерів кук
-about-private-browsing-cookie-banners-promo-message = Дайте можливість { -brand-short-name } автоматично відповідати на спливні вікна кук, щоб вони не заважали вам під час онлайн-перегляду. { -brand-short-name } відхилить усі запити, якщо це можливо.
+about-private-browsing-cookie-banners-promo-header = Приберіть банери про файли cookie!
+about-private-browsing-cookie-banners-promo-button = Зменшити кількість банерів про файли cookie
+about-private-browsing-cookie-banners-promo-message = Дозвольте { -brand-short-name } автоматично відповідати на спливні запити про файли cookie, щоб вони не заважали вам під час онлайн-перегляду. { -brand-short-name } відхилить усі запити, якщо це можливо.
 # Simplified version of the headline if the original text doesn't work
 # in your language: `{ -brand-short-name } will show fewer cookie requests`
-about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } піклується про банери кук для вас
-about-private-browsing-cookie-banners-promo-body = Тепер ми автоматично відхиляємо багато банерів кук, щоб за вами менше стежили та ви могли користуватися інтернетом без відволікання.
+about-private-browsing-cookie-banners-promo-heading = { -brand-short-name } оброблятиме запити про файли cookie для вас
+about-private-browsing-cookie-banners-promo-body = Тепер ми автоматично відхиляємо багато банерів про файли cookie, щоб зменшити стеження за вами і дати змогу не відволікатися під час користування інтернетом.
 
 ## Strings for Felt Privacy v1 experiments in 119
 
 about-private-browsing-felt-privacy-v1-info-header = Не залишайте слідів на цьому пристрої
-about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } видаляє ваші куки, історію та дані сайтів, коли ви закриваєте всі приватні вікна.
+about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } видаляє ваші файли cookie, історію та дані сайтів, коли ви закриваєте всі приватні вікна.
 about-private-browsing-felt-privacy-v1-info-link = Хто може бачити мою діяльність?

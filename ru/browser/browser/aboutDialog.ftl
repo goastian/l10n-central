@@ -12,8 +12,6 @@ update-updateButton =
     .label = Перезапустить { -brand-shorter-name } для обновления
     .accesskey = е
 update-checkingForUpdates = Проверка наличия обновлений…
-update-downloading = <img data-l10n-name="icon"/>Загрузка обновления — <label data-l10n-name="download-status"/>
-update-downloading-message = Загрузка обновления — <label data-l10n-name="download-status"/>
 
 ## Variables:
 ##   $transfer (string) - Transfer progress.
@@ -27,11 +25,10 @@ update-applying = Применение обновления…
 update-failed = Обновление не удалось. <label data-l10n-name="failed-link">Загрузите последнюю версию</label>
 update-failed-main = Обновление не удалось. <a data-l10n-name="failed-link-main">Загрузите последнюю версию</a>
 update-adminDisabled = Обновления отключены вашим системным администратором
+update-policy-disabled = Обновления отключены вашей организацией
 update-noUpdatesFound = Установлена последняя версия { -brand-short-name }
 aboutdialog-update-checking-failed = Не удалось проверить наличие обновлений.
 update-otherInstanceHandlingUpdates = Обновление производится другим процессом { -brand-short-name }
-update-manual = Обновления доступны на <label data-l10n-name="manual-link"/>
-aboutdialog-update-manual = Обновления доступны на <a data-l10n-name="manual-link"/>
 
 ## Variables:
 ##   $displayUrl (String): URL to page with download instructions. Example: www.mozilla.org/firefox/nightly/
@@ -40,8 +37,6 @@ aboutdialog-update-manual-with-link = Обновления доступны на
 settings-update-manual-with-link = Обновления доступны на <a data-l10n-name="manual-link">{ $displayUrl }</a>
 update-unsupported = Вы не можете производить дальнейшие обновления на этой системе. <label data-l10n-name="unsupported-link">Подробнее</label>
 update-restarting = Перезапуск…
-channel-description = Сейчас вы находитесь на канале обновлений <label data-l10n-name="current-channel"></label>.{ " " }
-update-internal-error = Не удалось проверить наличие обновлений из-за внутренней ошибки. Обновления доступны по адресу <label data-l10n-name="manual-link"/>
 update-internal-error2 = Не удалось проверить наличие обновлений из-за внутренней ошибки. Обновления доступны по адресу <label data-l10n-name="manual-link">{ $displayUrl }</label>
 
 ##

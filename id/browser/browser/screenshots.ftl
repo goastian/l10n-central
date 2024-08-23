@@ -46,3 +46,15 @@ screenshots-generic-error-title = Wah! { -screenshots-brand-name } mendadak kaca
 screenshots-generic-error-details = Kami tidak yakin akan apa yang terjadi. Ingin mencoba lagi atau merekam gambar dari laman yang berbeda?
 screenshots-too-large-error-title = Tangkapan layar Anda dipotong karena terlalu besar
 screenshots-too-large-error-details = Coba pilih bidang yang lebih kecil dari 32.700 piksel pada sisi terpanjangnya atau total luas 124.900.000 piksel.
+screenshots-component-retry-button =
+    .title = Coba tangkap layar lagi
+    .aria-label = Coba tangkap layar lagi
+screenshots-component-copy-button-label = Salin
+screenshots-component-download-button-label = Unduh
+
+## The below strings are used to capture keydown events so the strings should
+## not be changed unless the keyboard layout in the locale requires it.
+
+
+##
+

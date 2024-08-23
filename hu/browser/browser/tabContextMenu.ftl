@@ -54,9 +54,6 @@ unpin-selected-tabs =
 bookmark-selected-tabs =
     .label = Lapok könyvjelzőzése…
     .accesskey = k
-bookmark-tab =
-    .label = Lap könyvjelzőzése
-    .accesskey = k
 tab-context-bookmark-tab =
     .label = Lap könyvjelzőzése…
     .accesskey = k
@@ -75,6 +72,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Több lap bezárása
     .accesskey = T
+tab-context-close-duplicate-tabs =
+    .label = Ismétlődő lapok bezárása
+    .accesskey = I
 tab-context-share-url =
     .label = Megosztás
     .accesskey = M
@@ -106,7 +106,6 @@ tab-context-move-tabs =
            *[other] Lapok áthelyezése
         }
     .accesskey = h
-
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

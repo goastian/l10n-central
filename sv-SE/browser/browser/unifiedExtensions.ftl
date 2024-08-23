@@ -41,3 +41,10 @@ unified-extensions-context-menu-move-widget-down =
 
 unified-extensions-mb-quarantined-domain-title = Vissa tillägg är inte tillåtna
 unified-extensions-mb-quarantined-domain-message = Endast vissa tillägg som övervakas av { -vendor-short-name } är tillåtna på den här webbplatsen för att skydda dina data.
+unified-extensions-mb-quarantined-domain-message-2 = För att skydda din data kan vissa tillägg inte läsa eller ändra data på den här webbplatsen. Använd tilläggets inställningar för att tillåta på webbplatser som begränsas av { -vendor-short-name }.
+# .heading is processed by moz-message-bar to be used as a heading attribute
+unified-extensions-mb-quarantined-domain-message-3 =
+    .heading = Vissa tillägg är inte tillåtna
+    .message = För att skydda din data kan vissa tillägg inte läsa eller ändra data på den här webbplatsen. Använd tilläggets inställningar för att tillåta på webbplatser som begränsas av { -vendor-short-name }.
+unified-extensions-mb-quarantined-domain-learn-more = Läs mer
+    .aria-label = Läs mer: Vissa tillägg är inte tillåtna

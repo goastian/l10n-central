@@ -30,10 +30,6 @@ third-party-tag-background = Bakgrund
         Den här modulen blockerade inte applikationen eftersom den
         laddades i bakgrunden. 
         i bakgrunden.
-third-party-unsigned-icon =
-    .title = Denna modul är inte signerad
-third-party-warning-icon =
-    .title = { -brand-short-name } kraschade i koden för den här modulen.
 third-party-icon-unsigned =
     .title = Denna modul är inte signerad
     .alt = Denna modul är inte signerad
@@ -64,14 +60,25 @@ third-party-button-to-unblock-disabled =
     .aria-label =
         Markeras för närvarande som blockerad, även om blockeringslistan är inaktiverad för denna körning
         av { -brand-short-name }. Klicka för att avblockera den.
+third-party-button-to-block-module = Blockera denna modul
+    .title = Blockera denna modul
+    .aria-label = Blockera denna modul
+third-party-button-to-unblock-module = Avblockera denna modul
+    .title = För närvarande blockerad. Klicka för att avblockera den.
+    .aria-label = För närvarande blockerad. Klicka för att avblockera den.
+third-party-button-to-unblock-module-disabled = Avblockera den här modulen (blockeringslista är för närvarande inaktiverad)
+    .title =
+        Markerad som blockerad för närvarande, även om blockeringslistan är inaktiverad för denna körning
+        av { -brand-short-name }. Klicka för att avblockera den.
+    .aria-label =
+        Markerad som blockerad för närvarande, även om blockeringslistan är inaktiverad för denna körning
+        av { -brand-short-name }. Klicka för att avblockera den.
 third-party-button-expand =
     .title = Visa detaljerad information
 third-party-button-collapse =
     .title = Dölj detaljerad information
-third-party-requires-restart = { -brand-short-name } måste startas om för att ändra vilka tredjepartsmoduler som blockeras.
 third-party-blocking-requires-restart = För att blockera en tredjepartsmodul måste { -brand-short-name } startas om.
 third-party-should-restart-title = Starta om { -brand-short-name }
-third-party-should-restart-ok = Starta om { -brand-short-name } nu
 third-party-restart-now = Starta om nu
 third-party-restart-later = Starta om senare
 third-party-blocked-by-builtin =

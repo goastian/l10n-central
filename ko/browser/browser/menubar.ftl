@@ -9,6 +9,12 @@
 # NOTE: For Engineers, please don't re-use these strings outside of the menubar.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't reuse these strings outside of the menubar.
+
+
 ## Application Menu (macOS only)
 
 menu-application-preferences =
@@ -139,6 +145,8 @@ menu-view-history-button =
     .label = 기록
 menu-view-synced-tabs-sidebar =
     .label = 동기화된 탭
+menu-view-megalist-sidebar =
+    .label = 비밀번호
 menu-view-full-zoom =
     .label = 확대/축소
     .accesskey = Z
@@ -219,8 +227,9 @@ menu-history-undo-menu =
     .label = 최근에 닫은 탭
 menu-history-undo-window-menu =
     .label = 최근에 닫은 창
-menu-history-reopen-all-tabs = 모든 탭 다시 열기
-menu-history-reopen-all-windows = 모든 창 다시 열기
+# "Search" is a verb, as in "Search in History"
+menu-history-search =
+    .label = 기록 검색
 
 ## Bookmarks Menu
 
@@ -229,14 +238,13 @@ menu-bookmarks-menu =
     .accesskey = B
 menu-bookmarks-manage =
     .label = 북마크 관리
-menu-bookmark-current-tab =
-    .label = 현재 탭 북마크
-menu-bookmark-edit =
-    .label = 이 북마크 편집
 menu-bookmark-tab =
     .label = 현재 탭 북마크…
 menu-edit-bookmark =
     .label = 이 북마크 편집…
+# "Search" is a verb, as in "Search in bookmarks"
+menu-bookmarks-search =
+    .label = 북마크 검색
 menu-bookmarks-all-tabs =
     .label = 모든 탭 북마크…
 menu-bookmarks-toolbar =
@@ -341,3 +349,5 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 이 사이트는 가짜 사이트가 아닙니다…
     .accesskey = d
+menu-report-broken-site =
+    .label = 깨진 사이트 신고

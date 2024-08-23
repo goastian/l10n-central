@@ -5,17 +5,10 @@
 
 ## Permission Dialog
 ## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-
-
-## Permission Dialog
-## Variables:
-##  $host - the hostname that is initiating the request
-##  $scheme - the type of link that's being opened.
-##  $appName - Name of the application that will be opened.
-##  $extension - Name of extension that initiated the request
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
+##  $appName (string) - Name of the application that will be opened.
+##  $extension (string) - Name of extension that initiated the request
 
 permission-dialog-description = Разрешить этому сайту открыть ссылку { $scheme }?
 permission-dialog-description-file = Разрешить этому файлу открыть ссылку { $scheme }?
@@ -25,10 +18,15 @@ permission-dialog-description-app = Разрешить этому сайту о�
 permission-dialog-description-host-app = Разрешить { $host } открыть ссылку { $scheme } используя { $appName }?
 permission-dialog-description-file-app = Разрешить этому файлу открыть ссылку { $scheme } используя { $appName }?
 permission-dialog-description-extension-app = Разрешить расширению { $extension } открыть ссылку { $scheme } используя { $appName }?
+permission-dialog-description-system-app = Открыть ссылку { $scheme } с помощью { $appName }?
+permission-dialog-description-system-noapp = Открыть ссылку { $scheme }?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
+## Variables:
+##  $host (string) - The hostname that is initiating the request
+##  $scheme (string) - The type of link that's being opened.
 
 permission-dialog-remember = Всегда разрешать <strong>{ $host }</strong> открывать ссылки <strong>{ $scheme }</strong>
 permission-dialog-remember-file = Всегда разрешать этому файлу открывать ссылки <strong>{ $scheme }</strong>
@@ -47,7 +45,7 @@ permission-dialog-set-change-app-link = Выбрать другое прилож
 
 ## Chooser dialog
 ## Variables:
-##  $scheme - the type of link that's being opened.
+##  $scheme (string) - The type of link that's being opened.
 
 chooser-window =
     .title = Выбрать приложение

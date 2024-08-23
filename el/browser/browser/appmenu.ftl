@@ -77,6 +77,10 @@ appmenu-remote-tabs-turn-on-sync =
 appmenu-remote-tabs-showmore =
     .label = Εμφάνιση περισσότερων καρτελών
     .tooltiptext = Εμφάνιση περισσότερων καρτελών αυτής της συσκευής
+# This is shown as the label for an element to show inactive tabs from this device.
+appmenu-remote-tabs-show-inactive-tabs =
+    .label = Ανενεργές καρτέλες
+    .tooltiptext = Δείτε τις ανενεργές καρτέλες αυτής της συσκευής
 # This is shown beneath the name of a device when that device has no open tabs
 appmenu-remote-tabs-notabs = Καμία ανοικτή καρτέλα
 # This is shown when Sync is configured but syncing tabs is disabled.
@@ -94,6 +98,7 @@ appmenuitem-fxa-toolbar-sync-now2 = Συγχρονισμός τώρα
 appmenuitem-fxa-sign-in = Σύνδεση στο { -brand-product-name }
 appmenuitem-fxa-manage-account = Διαχείριση λογαριασμού
 appmenu-fxa-header2 = { -fxaccount-brand-name }
+appmenu-account-header = Λογαριασμός
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
 # 3 hours ago, etc.)
@@ -128,8 +133,6 @@ profiler-popup-button-recording =
 profiler-popup-button-capturing =
     .label = Εργαλείο προφίλ
     .tooltiptext = Το εργαλείο προφίλ καταγράφει ένα προφίλ
-profiler-popup-title =
-    .value = { -profiler-brand-name }
 profiler-popup-header-text = { -profiler-brand-name }
 profiler-popup-reveal-description-button =
     .aria-label = Αποκάλυψη περισσότερων πληροφοριών
@@ -166,12 +169,12 @@ profiler-popup-capture-shortcut =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
+# devtools/client/performance-new/shared/background.sys.mjs
 # Please take care that the same values are also defined in devtools' perftools.ftl.
 
 profiler-popup-presets-web-developer-description = Προτεινόμενη προεπιλογή για τον έλεγχο σφαλμάτων των περισσότερων εφαρμογών ιστού με χαμηλό κόστος.
@@ -193,6 +196,9 @@ profiler-popup-presets-power-description = Προκαθορισμένη ρύθμ
 # "Power" is used in the sense of energy (electricity used by the computer).
 profiler-popup-presets-power-label =
     .label = Ενέργεια
+profiler-popup-presets-debug-description = Προκαθορισμένη ρύθμιση για έλεγχο σφαλμάτων στο { -brand-shorter-name }. Υψηλός φόρτος, μην τη χρησιμοποιείτε για εργασίες υψηλών επιδόσεων, αλλά για την εστίαση στην κατανόηση της συμπεριφοράς του προγράμματος περιήγησης.
+profiler-popup-presets-debug-label =
+    .label = Έλεγχος σφαλμάτων
 profiler-popup-presets-custom-label =
     .label = Προσαρμογή
 
@@ -200,8 +206,6 @@ profiler-popup-presets-custom-label =
 
 appmenu-manage-history =
     .label = Διαχείριση ιστορικού
-appmenu-reopen-all-tabs = Επαναφορά όλων των καρτελών
-appmenu-reopen-all-windows = Επαναφορά όλων των παραθύρων
 appmenu-restore-session =
     .label = Επαναφορά προηγούμενης συνεδρίας
 appmenu-clear-history =
@@ -260,6 +264,18 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = Προσαρμογή γραμμής εργαλείων…
-appmenu-developer-tools-subheader = Εργαλεία φυλλομετρητή
+appmenu-developer-tools-subheader = Εργαλεία προγράμματος περιήγησης
 appmenu-developer-tools-extensions =
     .label = Επεκτάσεις για προγραμματιστές
+appmenuitem-report-broken-site =
+    .label = Αναφορά προβληματικού ιστοτόπου
+
+## Panel for privacy and security products
+
+appmenuitem-sign-in-account = Συνδεθείτε στον λογαριασμό σας
+appmenuitem-monitor-title = { -monitor-brand-short-name }
+appmenuitem-monitor-description = Λάβετε ειδοποιήσεις παραβίασης δεδομένων
+appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-description = Αποκρύψτε το πραγματικό email και το τηλέφωνό σας
+appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
+appmenuitem-vpn-description = Προστατέψτε το διαδικτυακό σας απόρρητο

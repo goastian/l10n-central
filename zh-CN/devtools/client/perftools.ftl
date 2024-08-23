@@ -54,8 +54,8 @@ perftools-request-to-get-profile-and-stop-profiler = 正在抓取性能分析
 ##
 
 perftools-button-start-recording = 开始记录
-perftools-button-capture-recording = 抓取中
-perftools-button-cancel-recording = 取消抓取
+perftools-button-capture-recording = 捕获记录
+perftools-button-cancel-recording = 取消记录
 perftools-button-save-settings = 保存设置并返回
 perftools-button-restart = 重新启动
 perftools-button-add-directory = 添加路径
@@ -74,8 +74,6 @@ perftools-thread-renderer =
     .title = 启用 WebRender 时，用于执行 OpenGL 调用的线程
 perftools-thread-render-backend =
     .title = WebRender 的 RenderBackend 线程
-perftools-thread-paint-worker =
-    .title = 启用非主线程绘制时，进行绘制的线程
 perftools-thread-timer =
     .title = 线程处理定时器（setTimeout、setInterval、nsITimer）
 perftools-thread-style-thread =
@@ -120,7 +118,12 @@ perftools-onboarding-close-button =
 
 
 # Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/popup/background.jsm.js
+# devtools/client/performance-new/shared/background.jsm.js
+# The same labels and descriptions are also defined in appmenu.ftl.
+
+
+# Presets and their l10n IDs are defined in the file
+# devtools/client/performance-new/shared/background.sys.mjs
 # The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = Web 开发者
@@ -136,6 +139,8 @@ perftools-presets-networking-description = 排查 { -brand-shorter-name } 网络
 # "Power" is used in the sense of energy (electricity used by the computer).
 perftools-presets-power-label = 功耗
 perftools-presets-power-description = 排查 { -brand-shorter-name } 功耗 Bug 时使用，开销较低。
+perftools-presets-debug-label = 调试
+perftools-presets-debug-description = 在 { -brand-shorter-name } 中调试时使用。开销较高，请勿用于性能用途，仅应用于了解浏览器行为。
 perftools-presets-custom-label = 自定义
 
 ##

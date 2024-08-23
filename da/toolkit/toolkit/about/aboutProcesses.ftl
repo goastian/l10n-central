@@ -120,7 +120,6 @@ about-processes-frame-name-many = Subframes ({ $number }): { $shortUrl }
 ## Utility process actor names
 
 about-processes-utility-actor-unknown = Ukendt aktør
-about-processes-utility-actor-audio-decoder = Lyd-dekoder
 about-processes-utility-actor-audio-decoder-generic = Generisk lyd-dekoder
 about-processes-utility-actor-audio-decoder-applemedia = Apple Media-lyd-dekoder
 about-processes-utility-actor-audio-decoder-wmf = Windows Media Framework-lyd-dekoder
@@ -128,6 +127,7 @@ about-processes-utility-actor-mf-media-engine = Windows Media Foundation Media E
 # "Oracle" refers to an internal Firefox process and should be kept in English
 about-processes-utility-actor-js-oracle = JavaScript Oracle
 about-processes-utility-actor-windows-utils = Windows Utils
+about-processes-utility-actor-windows-file-dialog = Fil-dialog i Windows
 
 ## Displaying CPU (percentage and total)
 ## Variables:
