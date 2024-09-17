@@ -35,5 +35,5 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Midori
--vendor-short-name = Astian
-trademarkInfo = Midori 및 Midori 로고는 미국 Astian, Inc의 소유이며, 미국 및 그 외의 나라에 등록된 상표입니다.
+Astian
+trademarkInfo = Midori 및 Firefox 로고는 미국 Mozilla Foundation의 소유이며, 미국 및 그 외의 나라에 등록된 상표입니다.

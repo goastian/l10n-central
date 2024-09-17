@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Ativar Tema Duplo
+    .label = Ativar tema duplo (obsoleto)
+floorp-enable-dualtheme-description = A funcionalidade Tema duplo pode causar problemas com extensões. Utilize-a com cuidado.
 newtab-background = { -brand-short-name } Fundo Home
 newtab-background-random-image = 
     .label = Imagens aleatórias do Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Evite que o Facebook o rastreie através da web. A ex
 
 fingerprint-header = Resistir Fingerprinting e endereços IP vazados
 block-fingerprint = A impressão digital é um mecanismo de rastreamento que depende das características únicas do seu navegador e do seu sistema operacional. Esta seção contém configurações para melhorar ainda mais esta proteção além do bloqueio padrão.
-enable-firefox-fingerprint-protections = Ativar uma forte proteção contra impressão digital
+enable-firefox-fingerprint-protections =
+    .label = Ativar uma forte proteção contra impressão digital
 about-firefox-fingerprint-protection = Habilitar a proteção pelo Firefox inclui o modo de luz forçada, desabilitando algumas APIs, etc. Alguns sites podem estar quebrados.
 fingerprint-Protection = 
     .label = Proteção anti-impressão digital
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Abrir na vista dividida
+floorp-split-view-fixed-menu = 
+    .label = Dividir este separador num separador sem vista dividida
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

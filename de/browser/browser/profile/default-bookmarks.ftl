@@ -23,7 +23,7 @@ default-bookmarks-firefox-heading = Midori Browser
 default-bookmarks-firefox-get-help = Hilfe erhalten
 
 # link title for https://www.mozilla.org/firefox/customize/
-default-bookmarks-firefox-customize = Midori anpassen
+default-bookmarks-firefox-customize = Floorp anpassen
 
 # link title for https://www.mozilla.org/contribute/
 default-bookmarks-firefox-community = Mitmachen

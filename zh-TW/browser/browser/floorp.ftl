@@ -15,7 +15,7 @@ category-design =
 design-header = { pane-design-title }
 feature-requires-restart = 需要重啟以套用變更
 tab-width = 分頁的最小寬度
-tab-height = Minimum height of tabs
+tab-height = 分頁的最小高度
 preferences-tabs-newtab-position = 新分頁位置
 open-new-tab-use-default = 
     .label = 在預設位置開啟新分頁
@@ -123,7 +123,7 @@ firefox-photon-lepton =
 floorp-fluentUI = 
     .label = Microsoft Fluent UI (已終止支援)
 floorp-fluerialUI = 
-    .label = { -brand-short-name } Fluerial UI (New)
+    .label = { -brand-short-name } Fluerial UI (新版)
 
 ## Download Manager
 
@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = 啟用雙重主題
+    .label = 啟用雙重主題 (已終止支援)
+floorp-enable-dualtheme-description = 雙重主題功能可能引起部分擴充套件出現問題。請謹慎使用。
 newtab-background = { -brand-short-name } 主頁背景
 newtab-background-random-image = 
     .label = 來自Unsplash的隨機圖像
@@ -374,11 +375,11 @@ about-Securefox = 默認連接 HTTPS。完全站點區隔的cookies防護。強�
 default-label = Yokoffing Default
 about-default = 所有的必備功能。無任何故障。這個 user.js 由你作主。
 Fastfox-label = Yokoffing Fastfox
-about-Fastfox = 提升強化 Midori 的瀏覽速度，與 Chrome 對比也毫不遜色！
+about-Fastfox = 提升強化 Floorp 的瀏覽速度，與 Chrome 對比也毫不遜色！
 Peskyfox-label = Yokoffing Peskyfox
 about-Peskyfox = 最佳化新分頁。移除 Pocket。復原 緊密(不支援) 密度選項。停止網站通知，彈窗以及其他煩瑣提示。
 Smoothfox-label = Yokoffing Smoothfox
-about-Smoothfox = 在 Midori 上實現類似 Edge 一般順滑的頁面滾動效果 —— 更舒適的瀏覽體驗。
+about-Smoothfox = 在 Floorp 上實現類似 Edge 一般順滑的頁面滾動效果 —— 更舒適的瀏覽體驗。
 select-workspace = 選擇工作空間
 workspace-select-icon = 選擇工作空間圖示
     .label = 選擇工作空間圖示
@@ -524,7 +525,8 @@ about-Facebook-Container = 阻止臉書在網絡上追蹤你。Facebook Containe
 
 fingerprint-header = 制止數位指紋以及 IP 位址洩漏
 block-fingerprint = 數位指紋是一種以採集您的瀏覽器及系統的獨特設定的跟蹤機制。此區域提供比預設防護更加強化隱私的防護選項。
-enable-firefox-fingerprint-protections = 開啟強力數位指紋防護
+enable-firefox-fingerprint-protections =
+    .label = 開啟強力數位指紋防護
 about-firefox-fingerprint-protection = 由 Firefox 提供的防護，將強制使用亮色模式，屏蔽部分 API 連結。部分網站頁面可能會出現錯誤。
 fingerprint-Protection = 
     .label = 數位指紋防護
@@ -1040,6 +1042,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = 在分割視圖中開啟
+floorp-split-view-fixed-menu = 
+    .label = 將此分頁固定在尚未使用分割視圖的分頁中
 floorp-split-view-open-menu-disabled = 
     .label = 需要有未分割及未選中的分頁以進行分割視圖
 split-view-remove-button = 移除分割視圖

@@ -33,4 +33,4 @@
 -brand-full-name = Midori Browser
 -brand-product-name = Midori
 -vendor-short-name = Astian
-trademarkInfo = Midori e i logo di Midori sono marchi registrati di Astian, Inc.
+trademarkInfo = Midori e i logo di Firefox sono marchi registrati di Mozilla Foundation.

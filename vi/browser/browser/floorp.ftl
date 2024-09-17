@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Bật chủ đề đôi
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = Ảnh nền của { -brand-short-name }
 newtab-background-random-image = 
     .label = Ảnh ngẫu nhiên từ Unsplash
@@ -374,7 +375,7 @@ about-Securefox = Sử dụng HTTPS theo mặc định. Bảo vệ cookie toàn 
 default-label = Yokoffing Default
 about-default = Những thứ cần thiết. Đây là tập tin user.js của bạn.
 Fastfox-label = Yokoffing Fastfox
-about-Fastfox = Tăng cường đáng kể tốc độ duyệt web của Midori. Thách thức sức mạnh của Chrome!
+about-Fastfox = Tăng cường đáng kể tốc độ duyệt web của Floorp. Thách thức sức mạnh của Chrome!
 Peskyfox-label = Yokoffing Peskyfox
 about-Peskyfox = Sắp xếp gọn gàng giao diện trang thẻ mới. Gỡ bỏ Pocket. Khôi phục chế độ thu gọn như một tùy chọn. Ngừng thông báo trang web, pop-up và những phiền toái khác.
 Smoothfox-label = Yokoffing Smoothfox
@@ -524,7 +525,8 @@ about-Facebook-Container = Ngăn chặn Facebook theo dõi bạn khi đang ở t
 
 fingerprint-header = Ngăn ngừa Fingerprinting và lộ địa chỉ IP
 block-fingerprint = Fingerprinting là một cơ chế theo dõi dựa trên các đặc điểm duy nhất của trình duyệt và hệ điều hành của bạn. Phần này chứa các thiết lập để tăng cường bảo vệ hơn nữa so với trình chặn mặc định.
-enable-firefox-fingerprint-protections = Bật trình bảo vệ mạnh hơn trước Fingerprinting
+enable-firefox-fingerprint-protections =
+    .label = Bật trình bảo vệ mạnh hơn trước Fingerprinting
 about-firefox-fingerprint-protection = Bật bảo vệ do Firefox bao gồm bắt buộc dùng chế độ sáng, vô hiệu hoá một số APIs, etc. Một vài trang có thể bị lỗi.
 fingerprint-Protection = 
     .label = Bảo vệ chống Fingerprinting
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

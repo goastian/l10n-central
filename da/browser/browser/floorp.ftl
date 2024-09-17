@@ -15,7 +15,7 @@ category-design =
 design-header = { pane-design-title }
 feature-requires-restart = Genstart er påkrævet for at anvende ændringer
 tab-width = Minimumsbredde på faner
-tab-height = Minimum height of tabs
+tab-height = Minimumshøjde på faner
 preferences-tabs-newtab-position = Ny faneposition
 open-new-tab-use-default = 
     .label = Åbn nye faner på standardposition
@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Aktivér Dobbelt Tema
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } Hjem Baggrund
 newtab-background-random-image = 
     .label = Tilfældige billeder fra Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Forhindre Facebook i at spore dig rundt på nettet. F
 
 fingerprint-header = Modstå lækager fra fingeraftryk og IP adresse
 block-fingerprint = Fingerprint er en sporingsmekanisme, der er afhængig af de unikke funktioner i din browser og operativsystem. Dette afsnit indeholder indstillinger for yderligere at forbedre denne beskyttelse ud over standard blokering.
-enable-firefox-fingerprint-protections = Aktiver stærk beskyttelse mod fingeraftryk
+enable-firefox-fingerprint-protections =
+    .label = Aktiver stærk beskyttelse mod fingeraftryk
 about-firefox-fingerprint-protection = Aktivering af beskyttelse af Firefox omfatter tvungen lystilstand, deaktivering af nogle API'er, osv. Nogle websteder kan være brudt.
 fingerprint-Protection = 
     .label = Beskyttelse mod fingeraftryk
@@ -721,7 +723,7 @@ memo-new-title = Ny Note
 chage-view-mode = Skift Vis/Rediger Tilstand
 readonly-mode = Offline (Skrivebeskyttet)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze Support
+default-bookmark-ablaze-support = Astian Support
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 
@@ -921,8 +923,8 @@ floorp-custom-actions-open-bookmarks-manager = Åbn bogmærke- håndtering
     .label = Åbn Bogmærker Manager
 floorp-custom-actions-show-bookmark-toolbar = Skift bogmærkeværktøjslinje
     .label = Slå Bogmærkelinje Til/Fra
-floorp-custom-actions-open-general-preferences = Åbn generelle præferencer
-    .label = Åbn Generelle Præferencer
+floorp-custom-actions-open-general-preferences = Åbn generelle indstillinger
+    .label = Åbn Generelle Indstillinger
 floorp-custom-actions-open-privacy-preferences = Åbn privatlivsindstillinger
     .label = Åbn Privatlivsindstillinger
 floorp-custom-actions-open-workspaces-preferences = Open Workspaces preferences
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = デュアルテーマを有効にする
+    .label = デュアルテーマを有効にする (非推奨)
+floorp-enable-dualtheme-description = デュアルテーマ機能は、拡張機能に問題を引き起こす可能性があります。ご注意ください。
 newtab-background = { -brand-short-name } Home の背景
 newtab-background-random-image = 
     .label = ランダムな Unsplash の画像
@@ -524,7 +525,8 @@ about-Facebook-Container = Facebook がウェブ上であなたを追跡する�
 
 fingerprint-header = フィンガープリント & IP アドレスの漏洩対策
 block-fingerprint = フィンガープリントは、ブラウザーとオペレーティングシステム固有の機能に依存する追跡メカニズムです。このセクションには、既定のブロック機能を超えたより強力な保護を行うための設定が含まれています。
-enable-firefox-fingerprint-protections = フィンガープリントに対する強力な保護を有効にする
+enable-firefox-fingerprint-protections =
+    .label = フィンガープリントに対する強力な保護を有効にする
 about-firefox-fingerprint-protection = Firefox によるフィンガープリント保護を有効すると、ライトモードの強制、一部の API を無効にするなどのデメリットがあります。また、一部のサイトの表示が崩れる可能性があります。
 fingerprint-Protection = 
     .label = フィンガープリント保護
@@ -712,7 +714,7 @@ memo-title-input-placeholder = ここにタイトルを入力
 memo-input-placeholder = ここにメモを入力または貼り付け
 delete-memo = 削除
 save-memo = 保存
-memo-welcome-title = Midori Notes へようこそ！
+memo-welcome-title = Floorp Notes へようこそ！
 memo-first-tip = { -brand-short-name } Notes へようこそ！使い方を説明します。
 memo-second-tip = { -brand-short-name } Notes は、デバイス間で同期できるメモ機能です。 同期を有効にするには、Mozilla アカウントで { -brand-short-name } にサインインする必要があります。
 memo-third-tip = { -brand-short-name } Notes は { -brand-short-name } に保存され、Firefox Sync を使用してデバイス間で同期されます。 Firefox Sync は、同期の内容を Mozilla アカウントのパスワードで暗号化するため、誰にもその内容を知られることはありません。
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = 分割ビューで開く
+floorp-split-view-fixed-menu = 
+    .label = 分割ビューを持たないタブでこのタブを固定表示
 floorp-split-view-open-menu-disabled = 
     .label = 分割ビューに使用していない未選択のタブが必要です
 split-view-remove-button = 分割ビューを解除

@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = デュアルテーマを有効にする
+    .label = デュアルテーマを有効にする (非推奨)
+floorp-enable-dualtheme-description = デュアルテーマ機能は、拡張機能に問題を引き起こす可能性があります。ご注意ください。
 newtab-background = { -brand-short-name } Home の背景
 newtab-background-random-image = 
     .label = ランダムな Unsplash の画像
@@ -374,7 +375,7 @@ about-Securefox = HTTPS を既定で有効に。サイト分離による Total C
 default-label = Yokoffing Default
 about-default = 必要なものはすべて。壊れることはありません。これが、あなたの user.js です。
 Fastfox-label = Yokoffing Fastfox
-about-Fastfox = Midori の閲覧速度を大幅に向上させます。Chrome に差をつけろ！
+about-Fastfox = Floorp の閲覧速度を大幅に向上させます。Chrome に差をつけろ！
 Peskyfox-label = Yokoffing Peskyfox
 about-Peskyfox = 新規タブページを整理。Pocket を削除。コンパクトモードをオプションで復活。ウェブページの通知、ポップアップ、その他の迷惑行為を停止。
 Smoothfox-label = Yokoffing Smoothfox
@@ -524,7 +525,8 @@ about-Facebook-Container = Facebook がウェブ上であなたを追跡する�
 
 fingerprint-header = フィンガープリント & IP アドレスの漏洩対策
 block-fingerprint = フィンガープリントは、ブラウザーとオペレーティングシステム固有の機能に依存する追跡メカニズムです。このセクションには、デフォルトのブロック機能を超えたより強力な保護を行うための設定が含まれています。
-enable-firefox-fingerprint-protections = フィンガープリントに対する強力な保護を有効にする
+enable-firefox-fingerprint-protections =
+    .label = フィンガープリントに対する強力な保護を有効にする
 about-firefox-fingerprint-protection = Firefox によるフィンガープリント保護を有効すると、ライトモードの強制、一部の API を無効にするなどのデメリットがあります。また、一部のサイトの表示が崩れる可能性があります。
 fingerprint-Protection = 
     .label = フィンガープリント保護
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = 分割ビューで開く
+floorp-split-view-fixed-menu = 
+    .label = 分割ビューを持たないタブでこのタブを固定表示
 floorp-split-view-open-menu-disabled = 
     .label = 分割ビューに使用していない未選択のタブが必要です
 split-view-remove-button = 分割ビューを解除

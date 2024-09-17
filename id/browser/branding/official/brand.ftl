@@ -36,4 +36,4 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Midori
 -vendor-short-name = Astian
-trademarkInfo = Midori dan logo Midori adalah merek dagang Astian, Inc.
+trademarkInfo = Midori dan logo Firefox adalah merek dagang Mozilla Foundation.

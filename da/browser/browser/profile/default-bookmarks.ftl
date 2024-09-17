@@ -38,10 +38,10 @@ default-bookmarks-nightly-heading = Om Firefox Nightly
 default-bookmarks-nightly-blog = Blog om Firefox Nightly
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
-default-bookmarks-bugzilla = Astian Bug Tracker
+default-bookmarks-bugzilla = Ablaze Bug Tracker
 
 # Nightly builds only, link title for https://developer.mozilla.org/
-default-bookmarks-mdn = Astian Developer Network
+default-bookmarks-mdn = Ablaze Developer Network
 
 # Nightly builds only, link title for https://addons.mozilla.org/firefox/addon/nightly-tester-tools/
 default-bookmarks-nightly-tester-tools = Nightly test-værktøjer

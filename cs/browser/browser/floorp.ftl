@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Povolit dvojité téma
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } Domů
 newtab-background-random-image = 
     .label = Náhodné obrázky z Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Zabránit Facebooku, aby vás sledoval po celém webu
 
 fingerprint-header = Odhalit otisk prstu a uniknout IP adresy
 block-fingerprint = Fingerprint je sledovací mechanismus, který spoléhá na jedinečné vlastnosti vašeho prohlížeče a operačního systému. Tato sekce obsahuje nastavení pro další zvýšení této ochrany nad rámec výchozího blokování.
-enable-firefox-fingerprint-protections = Povolit silnou ochranu proti snímání otisků prstů
+enable-firefox-fingerprint-protections =
+    .label = Povolit silnou ochranu proti snímání otisků prstů
 about-firefox-fingerprint-protection = Povolení ochrany ze strany Firefoxu zahrnuje vynucený světelný režim, zakázání některých API, atd. Některé stránky mohou být rozbité.
 fingerprint-Protection = 
     .label = Ochrana proti snímání otisků prstů
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

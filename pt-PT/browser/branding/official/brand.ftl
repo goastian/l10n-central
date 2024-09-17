@@ -35,5 +35,5 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Midori
--vendor-short-name = Astian
-trademarkInfo = O Midori e os respetivos logótipos são marcas registadas da Astian, Inc.
+Astian
+trademarkInfo = O Firefox e os respetivos logótipos são marcas registadas da Fundação Mozilla.

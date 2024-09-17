@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Įjungti dvigubini stilių
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = „{ -brand-short-name }“ pagrindinis fonas
 newtab-background-random-image = 
     .label = Įvairius vaizdus iš „Unsplash“
@@ -524,7 +525,8 @@ about-Facebook-Container = Neleiskite „Facebook“ sekti jūsų internete. „
 
 fingerprint-header = Atsispirti pirštų atspaudų paėmimui ir IP adresų nutekėjimui
 block-fingerprint = Pirštų atspaudai - sekimo mechanizmas, pagrįstas unikaliomis jūsų naršyklės ir operacinės sistemos funkcijomis. Šiame skyriuje pateikiami nustatymai, kuriais galima dar labiau sustiprinti šią apsaugą, palyginus su numatytuoju blokavimu.
-enable-firefox-fingerprint-protections = Įgalinti stiprią apsaugą nuo pirštų atspaudų
+enable-firefox-fingerprint-protections =
+    .label = Įgalinti stiprią apsaugą nuo pirštų atspaudų
 about-firefox-fingerprint-protection = Įjungus „Firefox“ apsauga, tai apima priverstinio šviesos rėžimas, išjungiama kai kurių API ir t. t.. Kai kurie puslapiai gali neveikti.
 fingerprint-Protection = 
     .label = Apsauga nuo pirštų atspaudų
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

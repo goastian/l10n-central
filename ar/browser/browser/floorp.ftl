@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = تمكين السمة الثنائية
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = خلفية الصفحة الرئيسية { -brand-short-name }
 newtab-background-random-image = 
     .label = صور عشوائية من Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = منع الفيسبوك من تعقبك حول الو
 
 fingerprint-header = مقاومة تسرب بصمات الأصابع وعنوان IP
 block-fingerprint = البصمة هي آلية تتبع تعتمد على الميزات الفريدة للمتصفح ونظام التشغيل الخاص بك. يحتوي هذا القسم على إعدادات لزيادة تعزيز هذه الحماية بما يتجاوز الحظر الافتراضي.
-enable-firefox-fingerprint-protections = تمكين حماية قوية ضد البصمة
+enable-firefox-fingerprint-protections =
+    .label = تمكين حماية قوية ضد البصمة
 about-firefox-fingerprint-protection = الحماية التمكينية من قبل فايرفوكس تشمل وضع الإضاءة القسرية، وتعطيل بعض API، إلخ. يمكن كسر بعض المواقع.
 fingerprint-Protection = 
     .label = الحماية المضادة للبصمات
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

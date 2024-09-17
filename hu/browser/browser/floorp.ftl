@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Kettős téma engedélyezése
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } Home Háttér
 newtab-background-random-image = 
     .label = Véletlenszerű képek az Unsplash-ről
@@ -524,7 +525,8 @@ about-Facebook-Container = Megakadályozhatja, hogy a Facebook nyomon kövesse �
 
 fingerprint-header = Ellenáll az ujjlenyomatok és IP-címek kiszivárgásának
 block-fingerprint = Az ujjlenyomatvétel egy olyan nyomkövető mechanizmus, amely az Ön böngészőjének és operációs rendszerének egyedi jellemzőire támaszkodik. Ez a szakasz olyan beállításokat tartalmaz, amelyekkel tovább fokozhatja ezt a védelmet az alapértelmezett blokkoláson túl.
-enable-firefox-fingerprint-protections = Erős védelem az ujjlenyomatok ellen
+enable-firefox-fingerprint-protections =
+    .label = Erős védelem az ujjlenyomatok ellen
 about-firefox-fingerprint-protection = A védelem Firefox által történő engedélyezése magában foglalja a kényszerített világos üzemmódot, egyes API-k letiltását stb. Egyes webhelyek meghibásodhatnak.
 fingerprint-Protection = 
     .label = Ujjlenyomat elleni védelem
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

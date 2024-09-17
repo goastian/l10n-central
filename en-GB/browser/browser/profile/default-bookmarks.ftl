@@ -32,10 +32,10 @@ default-bookmarks-firefox-community = Get Involved
 default-bookmarks-firefox-about = About Us
 
 # Firefox Nightly links folder name
-default-bookmarks-nightly-heading = Midori Nightly Resources
+default-bookmarks-nightly-heading = Floorp Nightly Resources
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Midori Nightly blog
+default-bookmarks-nightly-blog = Floorp Nightly blog
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Ablaze Bug Tracker

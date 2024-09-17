@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Çift Temayı Etkinleştir
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } Ana Sayfa Arka Plan
 newtab-background-random-image = 
     .label = Unsplash'tan rastgele görseller
@@ -524,7 +525,8 @@ about-Facebook-Container = Facebook'un sizi web'de izlemesini önleyin. Facebook
 
 fingerprint-header = Parmak izi ve IP adresi sızıntılarına karşı direnç
 block-fingerprint = Parmak izi, tarayıcınızın ve işletim sisteminizin benzersiz özelliklerine dayanan bir izleme mekanizmasıdır. Bu bölüm, varsayılan engellemenin ötesinde bu korumayı daha da geliştirmek için ayarlar içerir.
-enable-firefox-fingerprint-protections = Parmak izine karşı güçlü koruma sağlayın
+enable-firefox-fingerprint-protections =
+    .label = Parmak izine karşı güçlü koruma sağlayın
 about-firefox-fingerprint-protection = Firefox tarafından korumayı etkinleştirmek, zorunlu ışık modunu, bazı API'leri devre dışı bırakmayı vb. içerir. Bazı siteler bozulabilir.
 fingerprint-Protection = 
     .label = Parmak izi bırakmayan korumalar
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

@@ -35,5 +35,5 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Midori
--vendor-short-name = Astian
-trademarkInfo = Midori og Midori-logoane er varemerke som høyrer til Astian, Inc.
+Astian
+trademarkInfo = Midori og Firefox-logoane er varemerke som høyrer til Mozilla Foundation.

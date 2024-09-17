@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Ενεργοποίηση Διπλής Θέματος
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } Αρχικό Φόντο
 newtab-background-random-image = 
     .label = Τυχαίες εικόνες από το Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Η επέκταση Facebook Container σας βοη�
 
 fingerprint-header = Αντισταθείτε στις διαρροές δακτυλικών αποτυπωμάτων & διεύθυνσης IP
 block-fingerprint = Η λήψη δακτυλικών αποτυπωμάτων είναι ένας μηχανισμός παρακολούθησης που βασίζεται στα μοναδικά χαρακτηριστικά του προγράμματος περιήγησης και του λειτουργικού σας συστήματος. Αυτή η ενότητα περιέχει ρυθμίσεις για την περαιτέρω ενίσχυση αυτής της προστασίας πέρα από το προεπιλεγμένο κλείδωμα.
-enable-firefox-fingerprint-protections = Ενεργοποίηση ισχυρής προστασίας έναντι δακτυλικών αποτυπωμάτων
+enable-firefox-fingerprint-protections =
+    .label = Ενεργοποίηση ισχυρής προστασίας έναντι δακτυλικών αποτυπωμάτων
 about-firefox-fingerprint-protection = Ενεργοποιώντας την προστασία από τον Firefox περιλαμβάνει τη λειτουργία αναγκαστικού φωτός, απενεργοποιώντας μερικά API, κλπ. Μερικές τοποθεσίες μπορεί να σπάσουν.
 fingerprint-Protection = 
     .label = Προστασία αντι-δακτυλικών αποτυπωμάτων
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

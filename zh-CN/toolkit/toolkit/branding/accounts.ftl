@@ -4,4 +4,4 @@
 
 # “Account” can be localized, “Firefox” must be treated as a brand,
 # and kept in English.
--fxaccount-brand-name = Midori 账户
+-fxaccount-brand-name = Astian 账户

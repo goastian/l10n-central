@@ -15,7 +15,7 @@ category-design =
 design-header = { pane-design-title }
 feature-requires-restart = Ein Neustart ist erforderlich, um die Änderungen zu übernehmen
 tab-width = Minimale Tab-Breite
-tab-height = Minimum height of tabs
+tab-height = Minimale Tab-Höhe
 preferences-tabs-newtab-position = Neue Tab-Position
 open-new-tab-use-default = 
     .label = Neue Tabs an der Standardposition öffnen
@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Duales Thema aktivieren
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name }-Startseite Hintergrund
 newtab-background-random-image = 
     .label = Zufällige Bilder von Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Verhindern Sie Facebook daran, Sie im Web zu verfolge
 
 fingerprint-header = Widerstehen von Fingerprinting & IP-Adressenlecks
 block-fingerprint = Fingerprinting ist ein Tracking-Mechanismus, der sich auf die einzigartigen Eigenschaften Ihres Browsers und Betriebssystems stützt. Dieser Abschnitt enthält Einstellungen, mit denen Sie diesen Schutz über die standardmäßige Blockierung hinaus weiter verbessern können.
-enable-firefox-fingerprint-protections = Aktiviere starken Schutz gegen Fingerabdrücke
+enable-firefox-fingerprint-protections =
+    .label = Aktiviere starken Schutz gegen Fingerabdrücke
 about-firefox-fingerprint-protection = Die Aktivierung des Schutzes durch Firefox umfasst den erzwungenen Light-Modus, die Deaktivierung einiger APIs usw. Einige Websites funktionieren unter Umständen nicht wie erwartet.
 fingerprint-Protection = 
     .label = Anti-Fingerprinting-Schutz
@@ -721,7 +723,7 @@ memo-new-title = Neue Notiz
 chage-view-mode = Ansicht/Bearbeiten-Modus umschalten
 readonly-mode = Offline (schreibgeschützt)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Hilfe zu Midori
+default-bookmark-ablaze-support = Hilfe zu Floorp
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

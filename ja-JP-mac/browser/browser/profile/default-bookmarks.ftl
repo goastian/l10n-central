@@ -13,7 +13,7 @@ default-bookmarks-toolbarfolder = ブックマークツールバーフォルダ�
 default-bookmarks-toolbarfolder-description = このフォルダーの中身がブックマークツールバーに表示されます
 
 # link title for https://www.mozilla.org/firefox/central/
-default-bookmarks-getting-started = Midori を使いこなそう
+default-bookmarks-getting-started = Floorp を使いこなそう
 
 # Firefox links folder name
 default-bookmarks-firefox-heading = Midori Browser
@@ -22,7 +22,7 @@ default-bookmarks-firefox-heading = Midori Browser
 default-bookmarks-firefox-get-help = ヘルプを表示
 
 # link title for https://www.mozilla.org/firefox/customize/
-default-bookmarks-firefox-customize = Midori をカスタマイズしてみよう
+default-bookmarks-firefox-customize = Floorp をカスタマイズしてみよう
 
 # link title for https://www.mozilla.org/contribute/
 default-bookmarks-firefox-community = Ablaze のコミュニティ
@@ -31,10 +31,10 @@ default-bookmarks-firefox-community = Ablaze のコミュニティ
 default-bookmarks-firefox-about = Ablaze について
 
 # Firefox Nightly links folder name
-default-bookmarks-nightly-heading = Midori Nightly Resources
+default-bookmarks-nightly-heading = Floorp Nightly Resources
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Midori Nightly blog
+default-bookmarks-nightly-blog = Floorp Nightly blog
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Ablaze Bug Tracker

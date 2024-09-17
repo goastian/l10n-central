@@ -36,4 +36,4 @@
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Midori
 -vendor-short-name = Astian
-trademarkInfo = متصفّح Midori وشعاراته علامات تجارية لمؤسسة Astian & Developer.
+trademarkInfo = متصفّح Firefox وشعاراته علامات تجارية لمؤسسة Mozilla.

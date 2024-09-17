@@ -9,22 +9,22 @@ icon-creator = Créateurs des icônes, <label data-l10n-name="browser-logo-twitt
 contributors = Une liste de <label data-l10n-name="about-contributor">contributeurs et développeurs</label>
 #################################################################### about:preferences ####################################################################
 
-pane-design-title = Conception
+pane-design-title = Apparence
 category-design = 
     .tooltiptext = { pane-design-title }
 design-header = { pane-design-title }
 feature-requires-restart = Un redémarrage est nécessaire pour appliquer les modifications
 tab-width = Largeur minimale des onglets
-tab-height = Minimum height of tabs
-preferences-tabs-newtab-position = Position du nouvel onglet
+tab-height = Hauteur minimale des onglets
+preferences-tabs-newtab-position = Position des nouveaux onglets
 open-new-tab-use-default = 
-    .label = Ouvrir de nouveaux onglets à la position par défaut
+    .label = Ouvrir les nouveaux onglets à la position par défaut
 open-new-tab-at-the-end = 
-    .label = Ouvrir de nouveaux onglets à la fin de la barre d'onglets
+    .label = Ouvrir les nouveaux onglets à la fin de la barre d'onglets
 open-new-tab-next-to-current = 
-    .label = Ouvrir de nouveaux onglets à côté de l'onglet actuel
+    .label = Ouvrir les nouveaux onglets à côté de l'onglet actuel
 multirow-tabs-limit = 
-    .label = Activer la limite de lignes pour les onglets multilignes
+    .label = Activer la limite de lignes pour les onglets multiligne
 multirow-tabs-newtab = 
     .label = Placer le bouton "Ouvrir un nouvel onglet" à la fin de la dernière rangée d'onglets
 multirow-tabs-value = Nombre de lignes lorsque les onglets multilignes sont activés
@@ -123,7 +123,7 @@ firefox-photon-lepton =
 floorp-fluentUI = 
     .label = Microsoft Fluent UI (obsolète)
 floorp-fluerialUI = 
-    .label = { -brand-short-name } Fluerial UI (New)
+    .label = { -brand-short-name } Interface Fluerial (Nouveau)
 
 ## Download Manager
 
@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Activer le double thème
+    .label = Activer le Double Thème (obsolète)
+floorp-enable-dualtheme-description = La fonction "Double Thème" peut causer des problèmes avec les extensions. Utiliser avec précaution.
 newtab-background = Arrière-plan d'accueil { -brand-short-name }
 newtab-background-random-image = 
     .label = Images aléatoires de Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Empêcher Facebook de vous suivre sur internet. L'ext
 
 fingerprint-header = Résistance aux fuites d'empreintes et d'adresses IP
 block-fingerprint = L'empreinte est un mécanisme de suivi qui repose sur les caractéristiques uniques de votre navigateur et de votre système d'exploitation. Cette section contient des paramètres permettant d'améliorer cette protection au-delà du blocage par défaut.
-enable-firefox-fingerprint-protections = Activer une protection forte contre la prise d'empreintes
+enable-firefox-fingerprint-protections =
+    .label = Activer une protection forte contre la prise d'empreintes
 about-firefox-fingerprint-protection = L'activation de la protection par Firefox comprend le mode clair forcé, la désactivation de certaines API, etc. Certains sites peuvent cesser de fonctionner.
 fingerprint-Protection = 
     .label = Protection contre les empreintes
@@ -1038,17 +1040,19 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Ouvrir en vue partagée
+floorp-split-view-fixed-menu = 
+    .label = Séparer cet onglet dans un onglet sans vue partagée
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
-split-view-remove-button = Remove Split View
-split-view-title = Split View Settings
-split-view-position = Position
-split-view-flex-type = Flex Type
-split-view-position-top = Top Side
-split-view-position-left = Default
-split-view-position-right = Reverse
-split-view-flex-column = Vertical
-split-view-flex-row = Horizontal
+split-view-remove-button = Désactiver la vue partagée
+split-view-title = Paramètres de la vue partagée
+split-view-position = Emplacement
+split-view-flex-type = Alignement
+split-view-position-top = Au-dessus
+split-view-position-left = Normal
+split-view-position-right = Inversé
+split-view-flex-column = Verticale
+split-view-flex-row = Horizontale
 ######################################################################### Page Actions ###############################################################
 qrcode-generate-page-action-title = Scannez le QR Code avec votre téléphone
 qrcode-generate-page-action = 

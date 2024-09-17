@@ -23,5 +23,5 @@
 # This brand name can be used in messages where the product name needs to
 # remain unchanged across different versions (Nightly, Beta, etc.).
 -brand-product-name = Midori
--vendor-short-name = Astian
-trademarkInfo = Midori の名称は開発者個人の日本における商標です。
+Astian
+trademarkInfo = Midori は開発者個人の日本における商標です。Ablaze ロゴおよび Midori ロゴは著作権で保護されています。

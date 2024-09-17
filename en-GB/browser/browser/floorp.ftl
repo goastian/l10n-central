@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Enable Dual Theme
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } Home Background
 newtab-background-random-image = 
     .label = Random images from Unsplash
@@ -524,7 +525,8 @@ about-Facebook-Container = Prevent Facebook from tracking you around the web. Fa
 
 fingerprint-header = Resist Fingerprinting & IP address leaks
 block-fingerprint = Fingerprinting is a tracking mechanism that relies on the unique features of your browser and operating system. This section contains settings to further enhance this protection beyond the default blocking.
-enable-firefox-fingerprint-protections = Enable strong protection against fingerprinting
+enable-firefox-fingerprint-protections =
+    .label = Enable strong protection against fingerprinting
 about-firefox-fingerprint-protection = Enabling protection by Firefox includes forced light mode, disabling some APIs, etc. Some sites may be broken.
 fingerprint-Protection = 
     .label = Anti-fingerprinting protections
@@ -721,7 +723,7 @@ memo-new-title = New Note
 chage-view-mode = Toggle View/Edit Mode
 readonly-mode = Offline (Read-only)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze Support
+default-bookmark-ablaze-support = Astian Support
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 
@@ -799,7 +801,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = Sign in to your Firefox Account
 welcome-to-floorp = Welcome to { -brand-short-name }!
-welcome-describe-floorp = { -brand-short-name } is a feature-rich, flexible browser that supports various environments and is based on Firefox.
+welcome-describe-floorp = { -brand-short-name } is a fast and secure lightweight browser committed to user privacy and security..
 welcome-start-setup = Ready to dive in?
 welcome-skip-to-start-browsing = Skip to Start Browsing
 welcome-select-preferences-template = Choose a template
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View

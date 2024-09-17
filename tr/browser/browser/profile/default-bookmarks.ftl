@@ -17,13 +17,13 @@ default-bookmarks-toolbarfolder-description = Yer imleri araç çubuğunda görm
 default-bookmarks-getting-started = İlk Adım
 
 # Firefox links folder name
-default-bookmarks-firefox-heading = Ablaze Midori
+default-bookmarks-firefox-heading = Midori Browser
 
 # link title for https://www.mozilla.org/firefox/help/
 default-bookmarks-firefox-get-help = Yardım Alın
 
 # link title for https://www.mozilla.org/firefox/customize/
-default-bookmarks-firefox-customize = Midori’u Özelleştirin
+default-bookmarks-firefox-customize = Floorp’u Özelleştirin
 
 # link title for https://www.mozilla.org/contribute/
 default-bookmarks-firefox-community = Katkıda Bulunun
@@ -32,10 +32,10 @@ default-bookmarks-firefox-community = Katkıda Bulunun
 default-bookmarks-firefox-about = Hakkımızda
 
 # Firefox Nightly links folder name
-default-bookmarks-nightly-heading = Midori Nightly Kaynakları
+default-bookmarks-nightly-heading = Floorp Nightly Kaynakları
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Midori Nightly blog
+default-bookmarks-nightly-blog = Floorp Nightly blog
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Ablaze Hata Takipçisi

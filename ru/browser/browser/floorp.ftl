@@ -15,8 +15,8 @@ category-design =
 design-header = { pane-design-title }
 feature-requires-restart = Для применения изменений требуется перезапуск
 tab-width = Минимальная ширина вкладок
-tab-height = Minimum height of tabs
-preferences-tabs-newtab-position = Позиция новой вкладки
+tab-height = Минимальная высота вкладок
+preferences-tabs-newtab-position = Положение новых вкладок
 open-new-tab-use-default = 
     .label = Открывать новые вкладки по умолчанию
 open-new-tab-at-the-end = 
@@ -123,7 +123,7 @@ firefox-photon-lepton =
 floorp-fluentUI = 
     .label = Microsoft Fluent UI (устаревший)
 floorp-fluerialUI = 
-    .label = { -brand-short-name } Fluerial UI (New)
+    .label = { -brand-short-name } Fluerial UI (Новый)
 
 ## Download Manager
 
@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = Включить двойную тему
+    .label = Включить двойную тему (устарело)
+floorp-enable-dualtheme-description = Функция Dual Theme может вызвать проблемы с расширениями. Используйте ее с осторожностью.
 newtab-background = Фоновое изображение на домашней странице { -brand-short-name }
 newtab-background-random-image = 
     .label = Случайное изображение с Unsplash
@@ -524,8 +525,9 @@ about-Facebook-Container = Запретите Facebook следить за ва�
 
 fingerprint-header = Защита от фингерпринтинга и утечки IP-адреса
 block-fingerprint = Фингерпринтинг – это механизм отслеживания, который опирается на уникальные особенности вашего браузера и операционной системы. Этот раздел содержит настройки для дальнейшего усиления защиты помимо блокировки по умолчанию.
-enable-firefox-fingerprint-protections = Включить надёжную защиту от фингерпринтинга
-about-firefox-fingerprint-protection = Включение защиты в Midori активирует принудительную светлую тему, отключает некоторые API и т.д. Некоторые сайты могут отображаться некорректно.
+enable-firefox-fingerprint-protections =
+    .label = Включить надёжную защиту от фингерпринтинга
+about-firefox-fingerprint-protection = Включение защиты в Floorp активирует принудительную светлую тему, отключает некоторые API и т.д. Некоторые сайты могут отображаться некорректно.
 fingerprint-Protection = 
     .label = Защита от фингерпринтинга
 html5-canvas-prompt-settings = 
@@ -907,7 +909,7 @@ floorp-custom-actions-enter-into-offline-mode = Войти в режим офф�
     .label = Войти в режим оффлайн
 floorp-custom-actions-open-screen-capture = Открыть инструмент захвата экрана
     .label = Сделать скриншот
-floorp-custom-actions-show-pip = Отображать картинку в картинке
+floorp-custom-actions-show-pip = Включить режим «картинка в картинке»
     .label = Отображать картинку в картинке
 floorp-custom-actions-bookmark-this-page = Добавить страницу в закладки
     .label = Добавить страницу в закладки
@@ -1038,13 +1040,15 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Открыть в режиме раздельного просмотра
+floorp-split-view-fixed-menu = 
+    .label = Разделить эту вкладку во вкладке без разделенного вида
 floorp-split-view-open-menu-disabled = 
-    .label = Need Unspliting and Unselected tab
-split-view-remove-button = Remove Split View
+    .label = Нужно снять выделение и отменить выбор вкладки
+split-view-remove-button = Удалить разделенный вид
 split-view-title = Настройки раздельного просмотра
 split-view-position = Расположение
 split-view-flex-type = Тип разметки
-split-view-position-top = Top Side
+split-view-position-top = Верхняя часть
 split-view-position-left = По умолчанию
 split-view-position-right = Обратный
 split-view-flex-column = Вертикальный

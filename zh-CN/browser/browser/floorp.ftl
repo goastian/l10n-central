@@ -225,7 +225,8 @@ delete-border-and-roundup-option =
 ## DualTheme
 
 dualtheme-enable = 
-    .label = 启用双重主题
+    .label = Enable Dual Theme (Deprecated)
+floorp-enable-dualtheme-description = Dual Theme feature may cause problems with extensions. Please use with caution.
 newtab-background = { -brand-short-name } 主页背景
 newtab-background-random-image = 
     .label = 来自 Unsplash 的随机图片
@@ -524,7 +525,8 @@ about-Facebook-Container = 阻止 Facebook 在网络上跟踪您。Facebook 容�
 
 fingerprint-header = 阻止指纹识别和 IP 地址泄漏
 block-fingerprint = 指纹识别是一种依赖于您的浏览器和操作系统独特特征的跟踪机制。本节包含一些设置，可用于在默认屏蔽之外进一步增强此保护。
-enable-firefox-fingerprint-protections = 开启强大的指纹识别保护
+enable-firefox-fingerprint-protections =
+    .label = 开启强大的指纹识别保护
 about-firefox-fingerprint-protection = Firefox 提供的保护包括强制使用浅色模式、禁用某些 API 等。这可能导致某些网站无法正常工作。
 fingerprint-Protection = 
     .label = 防指纹识别保护
@@ -1038,6 +1040,8 @@ open-in_private-container =
 
 floorp-split-view-open-menu = 
     .label = Open in Split View
+floorp-split-view-fixed-menu = 
+    .label = Split this Tab in a Tab without Split View
 floorp-split-view-open-menu-disabled = 
     .label = Need Unspliting and Unselected tab
 split-view-remove-button = Remove Split View
