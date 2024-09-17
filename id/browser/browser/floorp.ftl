@@ -801,7 +801,7 @@ sharemode-menuitem =
 
 welcome-login-to-firefox-account = Masuk ke Akun Firefox Anda
 welcome-to-floorp = Selamat datang di { -brand-short-name }!
-welcome-describe-floorp = { -brand-short-name } is a feature-rich, flexible browser that supports various environments and is based on Firefox.
+welcome-describe-floorp = { -brand-short-name } is a fast and secure lightweight browser committed to user privacy and security.
 welcome-start-setup = Siap untuk memasuki?
 welcome-skip-to-start-browsing = Lewati untuk Mulai Menjelajah
 welcome-select-preferences-template = Pilih templat
