@@ -27,9 +27,9 @@
 ## For further details, consult:
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
--brand-shorter-name = Floorp
--brand-short-name = Floorp
--brand-shortcut-name = Floorp
+-brand-shorter-name = Midori
+-brand-short-name = Midori
+-brand-shortcut-name = Midori
 
 -brand-full-name = Midori Browser
 # This brand name can be used in messages where the product name needs to
