@@ -16,17 +16,17 @@
 ## https://mozilla-l10n.github.io/styleguides/mozilla_general/#brands-copyright-and-trademark
 
 -facebook-container-brand-name = Facebook Container
--lockwise-brand-name = Floorp Lockwise
+-lockwise-brand-name = Midori Lockwise
 -lockwise-brand-short-name = Lockwise
 -monitor-brand-name = Firefox Monitor
 -monitor-brand-short-name = Monitor
 -mozmonitor-brand-name = Mozilla Monitor
 -pocket-brand-name = Pocket
--send-brand-name = Floorp Send
--screenshots-brand-name = Floorp Screenshots
+-send-brand-name = Midori Send
+-screenshots-brand-name = Midori Screenshots
 -mozilla-vpn-brand-name = Mozilla VPN
--profiler-brand-name = Floorp Profiler
--translations-brand-name = Floorp Translations
+-profiler-brand-name = Midori Profiler
+-translations-brand-name = Midori Translations
 -focus-brand-name = Firefox Focus
 -relay-brand-name = Firefox Relay
 -relay-brand-short-name = Relay
@@ -37,15 +37,15 @@
 -fakespot-brand-full-name = Fakespot by Mozilla
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Floorp 建議
+-firefox-suggest-brand-name = Midori 建議
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-home-brand-name = Floorp 首頁
+-firefox-home-brand-name = Midori 首頁
 # View" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefoxview-brand-name = Floorp View
+-firefoxview-brand-name = Midori View
 # Firefox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefoxlabs-brand-name = Floorp 實驗室
+-firefoxlabs-brand-name = Midori 實驗室

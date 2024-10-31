@@ -35,7 +35,7 @@ default-bookmarks-firefox-about = Om oss
 default-bookmarks-nightly-heading = Resurs för Firefox Nightly
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Floorp Nightly blogg
+default-bookmarks-nightly-blog = Midori Nightly blogg
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
 default-bookmarks-bugzilla = Ablaze Bug Tracker

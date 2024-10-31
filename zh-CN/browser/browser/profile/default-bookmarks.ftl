@@ -32,16 +32,16 @@ default-bookmarks-firefox-community = 参与进来
 default-bookmarks-firefox-about = 关于我们
 
 # Firefox Nightly links folder name
-default-bookmarks-nightly-heading = Floorp Nightly 资源
+default-bookmarks-nightly-heading = Midori Nightly 资源
 
 # Nightly builds only, link title for https://blog.nightly.mozilla.org/
-default-bookmarks-nightly-blog = Floorp Nightly 博客
+default-bookmarks-nightly-blog = Midori Nightly 博客
 
 # Nightly builds only, link title for https://bugzilla.mozilla.org/
-default-bookmarks-bugzilla = Ablaze 缺陷跟踪网站
+default-bookmarks-bugzilla = Astian 缺陷跟踪网站
 
 # Nightly builds only, link title for https://developer.mozilla.org/
-default-bookmarks-mdn = Ablaze 开发者网络
+default-bookmarks-mdn = Astian 开发者网络
 
 # Nightly builds only, link title for https://addons.mozilla.org/firefox/addon/nightly-tester-tools/
 default-bookmarks-nightly-tester-tools = Nightly 测试者工具

@@ -103,7 +103,7 @@
         [ins] Firefoxem Send
     }
     .gender = masculine
--screenshots-brand-name = Floorp Screenshots
+-screenshots-brand-name = Midori Screenshots
 -mozilla-vpn-brand-name =
     { $case ->
        *[nom] Mozilla VPN
@@ -126,7 +126,7 @@
        *[nom] Firefox Profiler
     }
     .gender = masculine
--translations-brand-name = Floorp Translations
+-translations-brand-name = Midori Translations
 -focus-brand-name =
     { $case ->
        *[nom] Firefox Focus
@@ -290,4 +290,4 @@
 # experimental and in-development features, and turn those features on and off.
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefoxlabs-brand-name = Floorp Labs
+-firefoxlabs-brand-name = Midori Labs
