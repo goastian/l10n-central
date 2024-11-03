@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> é um dos navegadores domésticos desenvolvidos no Japão. Ele é baseado no Firefox e continua a operar sob <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, para melhorar a web. Quer ajudar? <label data-l10n-name="helpus-donateLink">Faça uma doação</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> É um browser leve, rápido e seguro, comprometido com a privacidade e segurança do utilizador. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, para melhorar a web. Quer ajudar? <label data-l10n-name="helpus-donateLink">Faça uma doação</label>
 icon-creator = Criador de ícones <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> and <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Uma lista de colaboradores e desenvolvedores do <label data-l10n-name="about-contributor"></label>
 #################################################################### about:preferences ####################################################################

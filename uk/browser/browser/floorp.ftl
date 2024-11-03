@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> один з вітчизняних браузерів, розроблений в Японії. Він заснований на Firefox і продовжує працювати під <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, щоб покращити Інтернет. Хочете допомогти? <label data-l10n-name="helpus-donateLink">Зробіть пожертву</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Це швидкий і безпечний легкий браузер, який дбає про конфіденційність і безпеку користувачів. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, щоб покращити Інтернет. Хочете допомогти? <label data-l10n-name="helpus-donateLink">Зробіть пожертву</label>
 icon-creator = Автор ікон <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> та <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Список контриб'юторів <label data-l10n-name="about-contributor">та розробників</label>
 #################################################################### about:preferences ####################################################################

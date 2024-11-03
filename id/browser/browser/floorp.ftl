@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> adalah salah satu peramban domestik yang dikembangkan di Jepang. Peramban ini didasarkan pada Firefox dan terus beroperasi di bawah <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, untuk meningkatkan web. Ingin membantu? <label data-l10n-name="helpus-donateLink">Berikan donasi</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Ini adalah browser ringan yang cepat dan aman yang berkomitmen terhadap privasi dan keamanan pengguna. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, untuk meningkatkan web. Ingin membantu? <label data-l10n-name="helpus-donateLink">Berikan donasi</label>
 icon-creator = Pencipta ikon <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> dan <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Daftar kontributor dan pengembang <label data-l10n-name="about-contributor"></label>
 #################################################################### about:preferences ####################################################################

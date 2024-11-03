@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> هو أحد مستكشفات الانترنت المحلية المطورة في اليابان. يعتمد على FireFox ويعمل بموجب <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>لتحسين شبكة الويب. هل ترغب في المساعدة؟ <label data-l10n-name="helpus-donateLink">تبرع من هنا</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> إنه متصفح خفيف الوزن وسريع وآمن وملتزم بخصوصية المستخدم وأمانه. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>لتحسين شبكة الويب. هل ترغب في المساعدة؟ <label data-l10n-name="helpus-donateLink">تبرع من هنا</label>
 icon-creator = تصميم الأيقونة من قبل <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> و<label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = قائمة بـ<label data-l10n-name="about-contributor">المساهمين والمطورين</label>
 #################################################################### about:preferences ####################################################################

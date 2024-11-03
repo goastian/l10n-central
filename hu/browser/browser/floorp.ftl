@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> a Japánban kifejlesztett hazai böngészők egyike. Alapja a Firefox, és továbbra is a <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>alatt működik, hogy javítsa a webet. Szeretne segíteni? <label data-l10n-name="helpus-donateLink">Adományozzon:</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Ez egy gyors és biztonságos, könnyű böngésző, amely elkötelezett a felhasználói adatvédelem és biztonság mellett. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>alatt működik, hogy javítsa a webet. Szeretne segíteni? <label data-l10n-name="helpus-donateLink">Adományozzon:</label>
 icon-creator = Az ikonok alkotója <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> és <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = A <label data-l10n-name="about-contributor">közreműködők és fejlesztők listája</label>
 #################################################################### about:preferences ####################################################################

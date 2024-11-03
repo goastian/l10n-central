@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> は、日本で開発される国産ブラウザーのひとつです。ウェブをより良くするために、Firefox をベースとして <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下で開発が進められています。支援したいですか？<label data-l10n-name="helpus-donateLink">寄付を検討してください！</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> これは、ユーザーのプライバシーとセキュリティに重点を置いた、高速で安全な軽量ブラウザです。 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> の下で開発が進められています。支援したいですか？<label data-l10n-name="helpus-donateLink">寄付を検討してください！</label>
 icon-creator = アイコン作成者: <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> と <label data-l10n-name="brand-logo-twitter">@mwxdxx</label>
 contributors = <label data-l10n-name="about-contributor">貢献者・開発者</label> のリストもご確認ください
 #################################################################### about:preferences ####################################################################

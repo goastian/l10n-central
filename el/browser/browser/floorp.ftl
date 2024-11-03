@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> είναι ένα από τα εγχώρια προγράμματα περιήγησης που αναπτύχθηκαν στην Ιαπωνία. Βασίζεται στο Firefox και συνεχίζει να λειτουργεί κάτω από το <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>για τη βελτίωση του ιστού. Θέλετε να βοηθήσετε? <label data-l10n-name="helpus-donateLink">Κάντε μια δωρεά</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Είναι ένα γρήγορο και ασφαλές, ελαφρύ πρόγραμμα περιήγησης που δεσμεύεται για το απόρρητο και την ασφάλεια των χρηστών. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>για τη βελτίωση του ιστού. Θέλετε να βοηθήσετε? <label data-l10n-name="helpus-donateLink">Κάντε μια δωρεά</label>
 icon-creator = Δημιουργός εικονιδίων <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> και <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Μια λίστα με <label data-l10n-name="about-contributor">συνεισφέροντες και Προγραμματιστές</label>
 #################################################################### about:preferences ####################################################################

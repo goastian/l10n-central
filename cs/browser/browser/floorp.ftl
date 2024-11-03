@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> je jedním z domácích prohlížečů vyvinutých v Japonsku. Je založen na Firefoxu a nadále funguje pod <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>pro vylepšení webu. Chcete pomoci? <label data-l10n-name="helpus-donateLink">Poskytněte příspěvek</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Jedná se o rychlý a bezpečný odlehčený prohlížeč oddaný soukromí a zabezpečení uživatelů. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>pro vylepšení webu. Chcete pomoci? <label data-l10n-name="helpus-donateLink">Poskytněte příspěvek</label>
 icon-creator = Vytváření ikon <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> a <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Seznam <label data-l10n-name="about-contributor">přispěvatelů a vývojářů</label>
 #################################################################### about:preferences ####################################################################

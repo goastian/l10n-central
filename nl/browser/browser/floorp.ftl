@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> is een browser ontwikkeld in Japan. Het is gebaseerd op Firefox en wordt ontwikkeld door <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, om het web te verbeteren. Wil je helpen? <label data-l10n-name="helpus-donateLink">Doneer!</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Het is een snelle en veilige lichtgewicht browser die zich inzet voor de privacy en veiligheid van gebruikers. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, om het web te verbeteren. Wil je helpen? <label data-l10n-name="helpus-donateLink">Doneer!</label>
 icon-creator = Icoon ontwerpers <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> en <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Een lijst van <label data-l10n-name="about-contributor">bijdragers en developers</label>
 #################################################################### about:preferences ####################################################################

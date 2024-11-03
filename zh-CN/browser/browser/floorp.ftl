@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 是一款由日本开发的国产浏览器。 它基于 Firefox 开发，并由 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在提升网络浏览体验。 想要帮助我们吗？ 请考虑 <label data-l10n-name="helpus-donateLink">捐赠支持</label> 。
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 它是一款快速、安全的轻量级浏览器，致力于用户隐私和安全。 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label> 运营，旨在提升网络浏览体验。 想要帮助我们吗？ 请考虑 <label data-l10n-name="helpus-donateLink">捐赠支持</label> 。
 icon-creator = 图标设计师： <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> 和 <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = 查看 <label data-l10n-name="about-contributor">贡献者与开发者名单</label>
 #################################################################### about:preferences ####################################################################

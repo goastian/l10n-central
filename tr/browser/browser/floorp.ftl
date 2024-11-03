@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Japonya'da yerel olarak geliştirilen internet tarayıcılardan biridir. Firefox tabanlıdır ve web'i iyileştirmek amacıyla <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>altında geliştirilmeye devam etmektedir. Yardımda bulunmak ister misiniz? <label data-l10n-name="helpus-donateLink">Bağış yapın</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Kullanıcı gizliliğine ve güvenliğine önem veren hızlı ve güvenli, hafif bir tarayıcıdır. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>altında geliştirilmeye devam etmektedir. Yardımda bulunmak ister misiniz? <label data-l10n-name="helpus-donateLink">Bağış yapın</label>
 icon-creator = İkon yaratıcısı <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> ve <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = <label data-l10n-name="about-contributor">'a katkıda bulunanların ve Geliştiricilerin listesi</label>
 #################################################################### about:preferences ####################################################################

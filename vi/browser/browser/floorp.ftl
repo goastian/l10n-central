@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>là một trong những trình duyệt được phát triển tại Nhật Bản. Trình duyệt được dưa trên firefox và tiếp tục vận hành dưới <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, đễ hỗ trợ sự phát triển của web. Bạn muốn giúp đỡ?<label data-l10n-name="helpus-donateLink">Đóng góp</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label>Đây là một trình duyệt nhẹ, nhanh và an toàn, cam kết đảm bảo quyền riêng tư và bảo mật của người dùng. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, đễ hỗ trợ sự phát triển của web. Bạn muốn giúp đỡ?<label data-l10n-name="helpus-donateLink">Đóng góp</label>
 icon-creator = Biểu tượng được thiết kể bởi <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label>và<label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = Danh sách<label data-l10n-name="about-contributor">nhà hảo tâm và lập trình viên</label>
 #################################################################### about:preferences ####################################################################

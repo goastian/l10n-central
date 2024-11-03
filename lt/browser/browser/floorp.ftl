@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> yra viena iš Japonijoje sukurtų vietinių naršyklių. Ji sukurta "Firefox" pagrindu ir toliau veikia pagal <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, siekiant tobulinti žiniatinklį. Norite padėti? <label data-l10n-name="helpus-donateLink">Paaukokite</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> Tai greita ir saugi lengva naršyklė, skirta vartotojų privatumui ir saugumui. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>, siekiant tobulinti žiniatinklį. Norite padėti? <label data-l10n-name="helpus-donateLink">Paaukokite</label>
 icon-creator = Ikonų kūrėjas <label data-l10n-name="browser-logo-twitter">@CutterKnife_</label> ir <label data-l10n-name="brand-logo-twitter">@mwxdxx.</label>
 contributors = <label data-l10n-name="about-contributor">autorių ir kūrėjų sąrašas</label>
 #################################################################### about:preferences ####################################################################

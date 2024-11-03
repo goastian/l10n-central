@@ -4,7 +4,7 @@
 
 ###################################################################### about:Dialog #################################################################################
 
-about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 는 일본에서 개발되는 웹 브라우저이에요. Firefox를 기반으로 <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>에서 더 나은 웹을 만들기 위해 만들어지고 있어요. 도움을 주고 싶으신가요? <label data-l10n-name="helpus-donateLink">기부를 고려해 주세요!</label>
+about-floorp = <label data-l10n-name="floorp-browser-link">{ -brand-product-name }</label> 사용자 개인 정보 보호 및 보안을 위해 최선을 다하는 빠르고 안전한 경량 브라우저입니다. <label data-l10n-name="ablaze-Link">{ -vendor-short-name }</label>에서 더 나은 웹을 만들기 위해 만들어지고 있어요. 도움을 주고 싶으신가요? <label data-l10n-name="helpus-donateLink">기부를 고려해 주세요!</label>
 icon-creator = 아이콘 제작자 : <label data-l10n-name="browser-logo-twitter">@CutterKnife_ 님</label> 와 <label data-l10n-name="brand-logo-twitter">@mwxdxx 님</label>
 contributors = <label data-l10n-name="about-contributor">기여자 및 개발자 목록</label>도 확인 부탁드려요!
 #################################################################### about:preferences ####################################################################
