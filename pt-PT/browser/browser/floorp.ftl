@@ -723,7 +723,7 @@ memo-new-title = Nova anotação
 chage-view-mode = Alternar Modo de Visualização/Edição
 readonly-mode = Offline (Somente Leitura)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Suporte ablaze
+default-bookmark-ablaze-support = Suporte Astian
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

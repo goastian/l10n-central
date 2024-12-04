@@ -723,7 +723,7 @@ memo-new-title = Catatan Baru
 chage-view-mode = Alihkan Mode Tampilan/Edit
 readonly-mode = Offline (Hanya-baca)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Dukungan Ablaze
+default-bookmark-ablaze-support = Dukungan Astian
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

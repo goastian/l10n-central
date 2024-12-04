@@ -723,7 +723,7 @@ memo-new-title = Neue Notiz
 chage-view-mode = Ansicht/Bearbeiten-Modus umschalten
 readonly-mode = Offline (schreibgeschützt)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Hilfe zu Floorp
+default-bookmark-ablaze-support = Hilfe zu Midori
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

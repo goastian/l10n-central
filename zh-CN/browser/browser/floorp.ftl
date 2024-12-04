@@ -723,7 +723,7 @@ memo-new-title = 新建笔记
 chage-view-mode = 切换查看/编辑模式
 readonly-mode = 离线 (只读)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze 支持
+default-bookmark-ablaze-support = Astian 支持
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

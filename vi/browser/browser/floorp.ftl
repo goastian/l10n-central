@@ -723,7 +723,7 @@ memo-new-title = Ghi chú mới
 chage-view-mode = Chế độ xem / chỉnh sửa
 readonly-mode = Chế độ không kết nối mạng (chỉ đọc)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Hỗ trợ Ablaze
+default-bookmark-ablaze-support = Hỗ trợ Astian
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

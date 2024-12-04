@@ -723,7 +723,7 @@ memo-new-title = Nouvelle note
 chage-view-mode = Basculer en mode Vue/Édition
 readonly-mode = Hors ligne (lecture seule)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Support Ablaze
+default-bookmark-ablaze-support = Support Astian
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

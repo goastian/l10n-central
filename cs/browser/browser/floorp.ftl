@@ -723,7 +723,7 @@ memo-new-title = Nová poznámka
 chage-view-mode = Přepnout režim zobrazení/úpravy
 readonly-mode = Offline (pouze pro čtení)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze podpora
+default-bookmark-ablaze-support = Astian podpora
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

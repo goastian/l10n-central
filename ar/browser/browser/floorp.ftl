@@ -723,7 +723,7 @@ memo-new-title = ملاحظة جديدة
 chage-view-mode = تبديل وضع العرض/التعديل
 readonly-mode = غير متصل (مقروء فقط)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = دعم Ablaze
+default-bookmark-ablaze-support = دعم Astian
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

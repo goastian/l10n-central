@@ -723,7 +723,7 @@ memo-new-title = Yeni Not
 chage-view-mode = Görünüm/Düzenleme Modunu Değiştir
 readonly-mode = Çevrimdışı (Salt okunur)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze Destek
+default-bookmark-ablaze-support = Astian Destek
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

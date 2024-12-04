@@ -893,6 +893,7 @@ readonly-mode = Offline (Read-only)
 
 ######################################################################### Default bookmarks ###############################################################
 default-bookmark-ablaze-support = Astian Support
+default-bookmark-ablaze-donate = Donate to Midori
 
 ######################################################################### Like Chrome Download mgr ###############################################################
 

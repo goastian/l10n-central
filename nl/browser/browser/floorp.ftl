@@ -723,7 +723,7 @@ memo-new-title = Nieuwe notitie
 chage-view-mode = Toggle View/Edit Mode
 readonly-mode = Offline (alleen lezen)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze ondersteuning
+default-bookmark-ablaze-support = Astian ondersteuning
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

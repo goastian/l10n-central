@@ -723,7 +723,7 @@ memo-new-title = Új jegyzet
 chage-view-mode = Nézet/szerkesztési mód váltása
 readonly-mode = Offline (csak olvasható)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze támogatás
+default-bookmark-ablaze-support = Astian támogatás
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

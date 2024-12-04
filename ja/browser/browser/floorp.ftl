@@ -723,7 +723,7 @@ memo-new-title = 新しいメモ
 chage-view-mode = 編集/表示モード切り替え
 readonly-mode = オフライン (読み取り専用)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = Ablaze サポート
+default-bookmark-ablaze-support = Astian サポート
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 

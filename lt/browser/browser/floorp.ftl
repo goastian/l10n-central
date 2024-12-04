@@ -723,7 +723,7 @@ memo-new-title = Naujas užrašas
 chage-view-mode = Perjungti peržiūros / redagavimo režimą
 readonly-mode = Neprisijungęs (galima tik skaityti)
 ######################################################################### Default bookmarks ###############################################################
-default-bookmark-ablaze-support = „Ablaze“ susisiekimas
+default-bookmark-ablaze-support = „Astian“ susisiekimas
 ######################################################################### Like Chrome Download mgr ###############################################################
 
 floorp-delete-all-downloads = 
