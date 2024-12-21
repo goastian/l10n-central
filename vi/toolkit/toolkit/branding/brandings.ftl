@@ -37,7 +37,7 @@
 -fakespot-brand-full-name = Fakespot bởi Mozilla
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Đề xuất của Firefox
+-firefox-suggest-brand-name = Đề xuất của Midori
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name = Trang chủ Firefox

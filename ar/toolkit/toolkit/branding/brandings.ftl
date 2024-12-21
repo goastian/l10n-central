@@ -32,7 +32,7 @@
 -relay-brand-short-name = Relay
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = يقترح Floorp
+-firefox-suggest-brand-name = يقترح Midori
 # Firefox Labs is the name for a page in Settings to allow users to learn about
 # experimental and in-development features, and turn those features on and off.
 # The "Labs" portion can be localized, “Firefox” must be treated as a brand

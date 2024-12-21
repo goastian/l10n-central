@@ -37,7 +37,7 @@
 -fakespot-brand-full-name = Fakespot від Mozilla
 # “Suggest” can be localized, “Firefox” must be treated as a brand
 # and kept in English.
--firefox-suggest-brand-name = Пропозиції Firefox
+-firefox-suggest-brand-name = Пропозиції Midori
 # ”Home" can be localized, “Firefox” must be treated as a brand
 # and kept in English.
 -firefox-home-brand-name =
