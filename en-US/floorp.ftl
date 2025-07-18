@@ -1329,3 +1329,33 @@ close-tabs-to-the-start-on-vertical-tab-bar =
 close-tabs-to-the-end-on-vertical-tab-bar =
   .label = Close Tabs to End
   .accesskey = E
+
+## New identity.
+
+# File menu items use title case for English (US).
+menu-new-identity =
+    .label = New Identity
+    .accesskey = I
+
+# App menu (hamburger menu) items use sentence case for English (US).
+appmenuitem-new-identity =
+    .label = New identity
+
+# Uses sentence case for English (US).
+# ".label" is the accessible name, and is visible in the overflow menu and when
+# customizing the toolbar.
+# ".tooltiptext" will be identical to the label.
+toolbar-new-identity =
+    .label = New identity
+    .tooltiptext = { toolbar-new-identity.label }
+
+## New identity dialog.
+
+new-identity-dialog-title = Reset your identity?
+new-identity-dialog-description = { -brand-short-name } will close all windows and tabs. All website sessions will be lost.
+new-identity-dialog-never-ask-checkbox =
+    .label = Never ask me again
+new-identity-dialog-confirm =
+    .label = Restart { -brand-short-name }
+
+## New identity: blocked home page notification.
